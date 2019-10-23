@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/pikaday.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.scrollbar.css" />
+    <link type="text/css" rel="stylesheet" href="scss/materialize.css" />
+    <title>Welcome To ClientPoint</title>
+    <!-- Custom CSS start here  -->
+
+</head>
+
+<body class="fullHeight">
+
+    <!-- Main Content start here  -->
+    <div id="content" class="m-0">
+        <div class="content-common">
+            <div class="clientPoint-file">
+                <div class="login">
+                    <div class="loginLeftPanel">
+                        <a href="javascript:void(0);" class="login-logo">
+                            <img src="images/login-logo.svg" alt="">
+                        </a>
+                        <div class="loginLeftContent">
+                            <h1>Hey Lyndsay, welcome <br /> to ClientPoint!</h1>
+                            <p>Start by creating your login.</p>
+                            <a href="javascript:void(0);" class="nextStepArrow"></a>
+                        </div>
+                        <div class="loginLinks">
+                            <a href="javascript:void(0);" class="links">Need Help?</a>
+                            <a href="javascript:void(0);" class="links">Contact Support</a>
+                        </div>
+                    </div>
+                    <div class="loginRightPanel">
+                        <div class="loginStep">
+                            <ul class="tabs">
+                                <li class="tab col s3">
+                                    <a href="#LoginInformation" class="activeStep">
+                                        <span class="stepCount">1</span>
+                                        Your Login Information
+                                        <em class="greyBoreder"></em>
+                                    </a>
+
+                                </li>
+
+                                <li class="tab col s3">
+                                    <a href="#SetupProfile">
+                                        <span class="stepCount">2</span>
+                                        Setup Your Profile
+                                        <em class="greyBoreder"></em>
+                                    </a>
+                                </li>
+                                <li class="tab col s3">
+                                    <a href="#InviteTeam">
+                                        <span class="stepCount">3</span>
+                                        Invite Your Team
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="loginTabContent">
+
+
+                            <!-- Login Information Tab start here  -->
+                            <div id="LoginInformation" class="col s12">
+                                <div class="loginForm">
+                                    <form class="col s12">
+                                        <div class="wrapper scrollbar-dynamic">
+                                            <div class="page-content">
+                                                <div class="content">
+                                                    <div class="demo">
+                                                        <div class="scrollbar-inner">
+                                                                <div class="loginCommonWidth">
+                                                            <div class="row mb-0">
+                                                                <div class="input-field col s12">
+                                                                    <input placeholder="Company name...."
+                                                                        id="company_name" type="text" class="validate">
+                                                                    <label for="company_name">Put your company name here
+                                                                        if
+                                                                        you have
+                                                                        one:</label>
+                                                                </div>
+                                                                <div class="input-field col s12">
+                                                                    <input placeholder="Email address..."
+                                                                        id="work_email" type="email" class="validate">
+                                                                    <label for="work_email">Enter your work
+                                                                        email</label>
+                                                                    <span class="quizIcon"></span>
+                                                                </div>
+                                                                <div class="input-field col s12">
+                                                                    <input placeholder="Password…" id="secure_password"
+                                                                        type="password" class="validate">
+                                                                    <label for="secure_password">Now create a secure
+                                                                        password you can
+                                                                        remember
+                                                                        <span>*</span></label>
+                                                                    <span class="quizIcon"></span>
+                                                                </div>
+                                                                <div class="input-field col s12 mb-0">
+                                                                    <input placeholder="Confirm password…"
+                                                                        id="confirm_password" type="password"
+                                                                        class="validate">
+                                                                    <label for="confirm_password">Confirm password
+                                                                        <span>*</span></label>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn waves-effect waves-light" type="submit" name="action">Onward
+                                            <i class="material-icons">
+                                                arrow_forward
+                                            </i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Login Information Tab end here  -->
+                            <!-- Setup Your Profile Tab start here  -->
+                            <div id="SetupProfile" class="col s12">
+                                <div class="loginForm">
+                                    <form class="col s12">
+                                        <div class="wrapper scrollbar-dynamic">
+                                            <div class="page-content">
+                                                <div class="content">
+                                                    <div class="demo">
+                                                        <div class="scrollbar-inner">
+                                                                <div class="loginCommonWidth">
+                                                            <div class="row mb-0">
+                                                                <div class="input-field col s12">
+                                                                    <input placeholder="Full name..." id="yourFullName"
+                                                                        type="text" class="validate">
+                                                                    <label for="yourFullName">Your full name</label>
+                                                                </div>
+                                                                <div class="input-field col s12">
+                                                                    <input placeholder="Title..." id="title"
+                                                                        type="email" class="validate">
+                                                                    <label for="title">Your title if you have
+                                                                        one</label>
+                                                                    <!-- <span class="quizIcon"></span> -->
+                                                                </div>
+                                                                <div class="input-field col s12 mb-0">
+                                                                    <input placeholder="Phone number..."
+                                                                        id="phone_number" type="tel" class="validate">
+                                                                    <label for="phone_number">Your phone number
+                                                                        <span>*</span>
+                                                                    </label>
+                                                                    <span class="quizIcon"></span>
+                                                                </div>
+                                                                <div class="input-field col s12 fileMargin">
+                                                                    <label>Upload your profile picture</label>
+                                                                    <div class="file-field input-field">
+                                                                        <a class="filePlus modal-trigger"
+                                                                            href="#fileUploadModal">
+                                                                            <i class="material-icons">
+                                                                                add
+                                                                            </i>
+                                                                            <!-- <input type="file" multiple> -->
+                                                                        </a>
+                                                                        <div class="file-path-wrapper p-0">
+                                                                            <input class="file-path validate"
+                                                                                type="text"
+                                                                                placeholder="Upload one or more files">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="agreeCheck">
+                                                                <label>
+                                                                    <input type="checkbox" class="filled-in" />
+                                                                    <span>I have read and agree to the Terms of Service
+                                                                        and Privacy
+                                                                        Policy.</span>
+                                                                </label>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="btn waves-effect waves-light disabled" type="submit"
+                                            name="action">Continue to Final Step. Hooray!
+                                            <i class="material-icons">
+                                                arrow_forward
+                                            </i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Setup Your Profile Tab end here  -->
+                            <div id="InviteTeam" class="col s12">
+                                <div class="loginForm fullWidth">
+                                    <form class="col s12">
+                                        <div class="wrapper scrollbar-dynamic">
+                                            <div class="page-content">
+                                                <div class="content">
+                                                    <div class="demo">
+                                                        <div class="scrollbar-inner">
+                                                            <div class="loginCommonWidth teamWidth">
+                                                            <div class="row mb-0">
+                                                                <div class="input-field col l4 m4 s12">
+                                                                    <input placeholder="Full name..."
+                                                                        id="yourFullNameTeam" type="text"
+                                                                        class="validate">
+                                                                    <label for="yourFullNameTeam">Full Name</label>
+                                                                </div>
+                                                                <div class="input-field col l4 m4 s12">
+                                                                    <input placeholder="Email address..." id="emailTeam"
+                                                                        type="email" class="validate">
+                                                                    <label for="emailTeam">Email</label>
+                                                                </div>
+                                                                <div class="input-field col l4 m4 s12">
+                                                                    <input placeholder="Confirm email..."
+                                                                        id="confirmEmail" type="email" class="validate">
+                                                                    <label for="confirmEmail">Confirm Email</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-0">
+                                                                <div class="input-field col l4 m4 s12 small-space">
+                                                                    <input placeholder="Full name..."
+                                                                        id="yourFullNameTeamOne" type="text"
+                                                                        class="validate">
+                                                                    <label for="yourFullNameTeamOne">Full Name</label>
+                                                                </div>
+                                                                <div class="input-field col l4 m4 s12 small-space">
+                                                                    <input placeholder="Email address..."
+                                                                        id="emailTeamOne" type="email" class="validate">
+                                                                    <label for="emailTeamOne">Email</label>
+                                                                </div>
+                                                                <div class="input-field col l4 m4 s12 small-space">
+                                                                    <input placeholder="Confirm email..."
+                                                                        id="confirmEmailOne" type="email"
+                                                                        class="validate">
+                                                                    <label for="confirmEmailOne">Confirm Email</label>
+                                                                </div>
+                                                            </div>
+                                                            <a class="addRecipent" href="javascript:void(0);">
+                                                                <i class="material-icons">
+                                                                    add
+                                                                </i>
+                                                                Add more recipients
+                                                            </a>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="btn waves-effect waves-light" type="submit" name="action">Let’s
+                                            get
+                                            started!
+                                            <i class="material-icons">
+                                                arrow_forward
+                                            </i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- File Upload Modal start here -->
+
+    <div id="fileUploadModal" class="modal">
+        <div class="modal-header">
+            <span class="shareIcon"></span>
+            <a class="modal-close"><i class="material-icons">
+                    close
+                </i>
+            </a>
+        </div>
+        <div class="modal-content">
+            <h4>Upload your image</h4>
+            <div class="uploadFileChoose">
+                <div class="uploadChooseContent">
+                    <span class="fileImage"></span>
+                    <p>Click to choose a file or drag and drop it here.</p>
+                    <input type="file">
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="javascript:void(0);" class="btn-flat ml-auto modal-close">Cancel</a>
+            <a href="javascript:void(0);" class="waves-effect waves-green btn btn-round disabled ">Upload Image</a>
+        </div>
+    </div>
+
+    <!-- File Upload Modal start here -->
+
+    <!-- Main Content end here  -->
+
+    <!-- Javascript files start here -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.scrollbar-inner').scrollbar();
+        });
+    </script>
+
+</body>
+
+</html>

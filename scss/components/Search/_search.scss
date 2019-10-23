@@ -1,0 +1,88 @@
+@import "../variables";
+@import "../mixin";
+@import "../extend";
+
+/* Search CSS start here */
+
+.searchResult {
+	@include absolute(top 5rem left auto right auto bottom auto);
+	width: 25.5rem;
+	box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.1);
+	background: color("shades", "white");
+	opacity: $zero;
+	visibility: $visibilty-hidden;
+	.search-row {
+		@include margin-padding(all, null, all, 0.9rem 1.5625rem);
+		@include flexbox();
+		@include flex-wrap($wrap);
+		//align-items: $align-items-center;
+	}
+	.resultsIcon {
+		background: #702c63 url(../images/common-icons.svg) no-repeat -322px -1378px;
+		@include w-h-rem(20px, 20px);
+		border-radius: 0.3125rem;
+		@include margin-padding(all, 0 0.9375rem 0 0, all, null);
+	}
+	h5 {
+		@include font-rem(14px, 18px);
+		@include font-weight(medium);
+		@include margin-padding(all, 0 0 0.375rem, all, null);
+		color: color("grey", "darken-4");
+	}
+	p {
+		@include font-rem(11px, 13px);
+		color: color("grey", "darken-1");
+		@include margin-padding(all, 0, all, null);
+	}
+	.searchResultContent {
+		flex: 1;
+	}
+	.resultsSearchIcon {
+		background: url(../images/common-icons.svg) no-repeat -241px -1378px;
+		@include w-h-rem(27px, 27px);
+		border-radius: 0.3125rem;
+		@include margin-padding(all, 0 0.9375rem 0 0, all, null);
+	}
+	.topSearchRow {
+		background: #eaf6ff;
+		@include margin-padding(all, null, all, 0.85rem 1.5625rem);
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+		h6 {
+			@include font-rem(14px, 20px);
+			color: color("blue-grey", "darken-1");
+			@include margin-padding(all, 0, all, null);
+		}
+	}
+	.suitCaseIcon {
+		background: #00b0dc url(../images/common-icons.svg) no-repeat -389px -1380px;
+	}
+	.userIcon {
+		background: #19e4b1 url(../images/common-icons.svg) no-repeat -28px -1456px;
+	}
+	.commentIcon {
+		background: #676ad4 url(../images/common-icons.svg) no-repeat -91.7px -1455px;
+	}
+	.editIcon {
+		background: #f7ba0f url(../images/common-icons.svg) no-repeat -174.8px -1451px;
+	}
+}
+.searchResult.open {
+	opacity: 1;
+	visibility: $visibilty-visible;
+}
+.hidden {
+	display: none !important;
+}
+.serachArrow {
+	@include absolute(top 1.8rem left auto right 0.7rem bottom auto);
+	color: color("grey", "darken-1");
+	.material-icons {
+		font-size: 20px;
+	}
+}
+.serachArrow.changeColor {
+	color: color("indigo", "base");
+}
+/* Search CSS end here */

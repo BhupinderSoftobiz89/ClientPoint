@@ -1,0 +1,97 @@
+/* Switch
+   ========================================================================== */
+
+.switch,
+.switch * {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.switch label {
+  cursor: pointer;
+  font-size:16px;
+  color: #53547D;
+}
+
+.switch label input[type=checkbox] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+  &:checked + .lever {
+    background-color: $secondary-color;
+
+    &:before, &:after {
+      left: 20px;
+    }
+
+    &:after {
+      background-color: $whiteBg;
+      border: 1px solid $switch-color;
+    }
+  }
+}
+
+.switch label .lever {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: $switch-unchecked-lever-bg;
+  border-radius: $switch-radius;
+  margin-right: 10px;
+  transition: background 0.3s ease;
+  vertical-align: middle;
+  margin: -3px 12px 0 0;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease, transform .1s ease;
+    border: 1px solid #d4d4de;
+  }
+
+  &:before {
+    background-color: transparentize($switch-bg-color, .85);
+  }
+
+  &:after {
+    background-color: $switch-unchecked-bg;
+    
+
+    //box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// Switch active style
+input[type=checkbox]:checked:not(:disabled) ~ .lever:active::before,
+input[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::before {
+  transform: scale(2.4);
+  background-color: transparentize($switch-bg-color, .85);
+  border: none;
+}
+
+input[type=checkbox]:not(:disabled) ~ .lever:active:before,
+input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
+  transform: scale(2.4);
+  background-color: rgba(0,0,0,.08);
+  border: none;
+}
+
+// Disabled Styles
+.switch input[type=checkbox][disabled] + .lever {
+  cursor: default;
+  background-color: rgba(0,0,0,.12);
+}
+
+.switch label input[type=checkbox][disabled] + .lever:after,
+.switch label input[type=checkbox][disabled]:checked + .lever:after {
+  background-color: $input-disabled-solid-color;
+}

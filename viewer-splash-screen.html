@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/pikaday.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.scrollbar.css" />
+    <link type="text/css" rel="stylesheet" href="scss/materialize.css" />
+    <title>Welcome To ClientPoint</title>
+    <!-- Custom CSS start here  -->
+
+</head>
+
+<body class="fullHeight">
+
+    <!-- Main Content start here  -->
+    <div id="content" class="m-0">
+        <div class="content-common">
+            <div class="clientPoint-file">
+                <div class="clientpointPreview">
+                    <div class="clientPointPowerdBy">
+                        <div class="poweredByMarvel">
+                            <a href="#!" class="marvelLogo">
+                                <img src="images/marvel-logo.svg" alt="">
+                            </a>
+                            <span class="borderMarvel"></span>
+                            <a href="#!" class="encomLink">Presenting to Encom International</a>
+                        </div>
+                        <div class="PowerdByRightPanel">
+                            <div class="PowerdByLogo">
+                                <img src="./images/powered-logo-clientpoint.svg" alt="">
+                            </div>
+                            <div class="sentByDropdown">
+                                <h5>Sent by Miles Morales</h5>
+                                <i class="material-icons downArrowPowered dropdown-trigger"
+                                    data-target="viewerUserDropdown">
+                                    arrow_drop_down
+                                </i>
+                                <ul id="viewerUserDropdown" class="dropdown-content viewerUserDropdownContent">
+                                    <li>
+                                        <div class="userInfoViewer">
+                                            <div class="viewerUserimg">
+                                                <img src="./images/viewerUser-img.png" alt="">
+                                            </div>
+                                            <h6>Miles Morales</h6>
+                                            <p>Senior Sales Manager at Marvel Studios</p>
+                                        </div>
+                                    </li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li><a href="javascript:void(0);"><span class="emailIcon"></span>
+                                            milesm@marvel.com</a></li>
+                                    <li><a href="javascript:void(0);"><span class="phoneIcon"></span> 555-555-5555</a>
+                                    </li>
+                                    <li><a href="javascript:void(0);"><span class="mobileIcon"></span> 555-555-5555</a>
+                                    </li>
+                                    <li><a href="javascript:void(0);"><span class="linkedInIcon"></span>
+                                            linkedin/username</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splashViewer">
+                        <div class="splashForm">
+                            <div class="splashLogo">
+                                <a href="javascript:void(0);">
+                                    <img src="images/viewerSplah-logo.svg" alt="">
+                                </a>
+                            </div>
+                            <form class="splashFormCenter">
+                                <h5>Please enter your email to view your content</h5>
+                                <div class="row mb-0">
+                                    <div class="input-field col s12">
+                                        <input placeholder="Email…." id="email_address" type="email" class="validate">
+                                        <label for="email_address">Email Address</label>
+                                    </div>
+                                    <div class="input-field col s12 mt-0">
+                                            <button class="btn waves-effect waves-light btn-round" type="submit" name="action">
+                                                    View Document
+                                                </button>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Now Modal start here -->
+
+    <div id="signNowModal" class="modal signInModalContent">
+        <div class="modal-header">
+            <span class="signatureIcon"></span>
+            <h4>Signature</h4>
+            <a class="modal-close">
+                <i class="material-icons">
+                    close
+                </i>
+            </a>
+        </div>
+        <div class="modal-content">
+            <h6>By signing below you have read and accept this proposal:</h6>
+            <form class="signForm">
+                <div class="form-fields">
+                    <label>
+                        Print name
+                    </label>
+                    <input type="text" class="fullName" placeholder="Full name…">
+                </div>
+                <div class="typeIt">
+                    <div class="typeItLabelRow">
+                        <label>
+                            <span class="typeIcon"></span> Type it
+                        </label>
+                        <label>
+                            <span class="drawIcon"></span> Draw it
+                        </label>
+                    </div>
+                    <div class="clickToSign">
+                        Click to Sign
+                    </div>
+
+                </div>
+                <div class="form-fields">
+                    <label>
+                        Comments (Optional)
+                    </label>
+                    <textarea cols="30" rows="10" class="commentTextarea"></textarea>
+                </div>
+                <div class="form-fields mt-20">
+                    <label>
+                        PO Number (Optional)
+                    </label>
+                    <input type="tel" class="phNumber">
+                </div>
+                <button type="submit" class="btn btn-round termsbtn">I accpet the term of of this agreement</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Now Modal end here -->
+
+    <div class="proposalTrial">
+        <p>Change the way you do proposals. <a href="javascript:void(0);" class="trialLink">SIgn up for a free
+                ClientPoint trial today.</a></p>
+    </div>
+
+    <!-- Main Content end here  -->
+
+    <!-- Javascript files start here -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.scrollbar-inner').scrollbar();
+        });
+    </script>
+
+</body>
+
+</html>

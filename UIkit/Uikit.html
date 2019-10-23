@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/pikaday.css" />
+    <link type="text/css" rel="stylesheet" href="../css/jquery.scrollbar.css" />
+    <link type="text/css" rel="stylesheet" href="../scss/materialize.css" />
+    <title>Welcome To ClientPoint</title>
+    <!-- Custom CSS start here  -->
+
+<body>
+
+    <!---- Sidebar nav start here  ---->
+
+    <nav class="sidebarNav sidebarNavClose">
+        <a href="#" class="navMenuOuter">
+            <span class="navMenu"></span>
+        </a>
+        <ul>
+            <li><a href="#" class="sidebarclick"><span class="commonIconbg fileIcon"></span>Dashboard</a></li>
+            <li><a href="#"><span class="commonIconbg prieviewIcon"></span>Content Libray</a></li>
+            <li><a href="#"><span class="commonIconbg clientIcon"></span>ClientPoints</a></li>
+            <li><a href="#"><span class="commonIconbg settingIcon"></span>Settings</a></li>
+        </ul>
+
+    </nav>
+
+    <aside class="sidebarSubmenu openNav">
+        <ul>
+            <a href="#" class="arrow-back" onclick="arrowback();"><i class="material-icons">
+                    keyboard_backspace
+                </i></a>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">ClientPoint</a></li>
+            <li><a href="#" class="active">Details</a></li>
+        </ul>
+    </aside>
+    <!---- Sidebar nav end here  ---->
+
+    <!---- Header start here  ---->
+
+    <header class="page-header d-flex">
+        <div class="searchbox">
+            <input type="submit" class="searchBtn" value="">
+            <input type="search" class="searchInput" placeholder="Search">
+        </div>
+        <div class="searchResponsive">
+            <a href="#" class="mobileSearch"></a>
+        </div>
+        <aside class="newClientPoint">
+            <a class="waves-teal btn-flat">New ClientPoint</a>
+            <a class="userLoginPanel" href="#">
+                <span class="userFetaures"><strong>Upgrade now</strong> to unlock more features!</span>
+                <span class="userAvtar"><img class="responsive-img" src="../images/user-img.png" alt=""></span>
+                <span class="userName">Miles Morales</span>
+                <i class="material-icons">
+                    arrow_drop_down
+                </i>
+            </a>
+        </aside>
+    </header>
+
+    <!---- Header end here  ---->
+
+
+    <!---- Main Content start here  ---->
+
+    <section id="content" class="">
+
+        <div class="uikit">
+            <div class="uikit-row">
+                <div class="row">
+                    <!-- Typography -->
+                    <div class="col s4">
+                        <div class="uikitbox">
+                            <h3>Typography</h3>
+                            <div class="uikitinnerbox">
+                                <h1>Heading h1</h1>
+                                <h2>Heading h2</h2>
+                                <h3>Heading h3</h3>
+                                <h4>Heading h4</h4>
+                                <h5>Heading h5</h5>
+                                <h6>Heading h6</h6>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Buttons -->
+                    <div class="col s4">
+                        <div class="uikitbox">
+                            <h3>Buttons</h3>
+                            <div class="uikitinnerbox">
+                                <a class="waves-effect waves-light btn btn-round btn-large mr-2 ">Button Round</a>
+                                <a class="waves-effect waves-light btn btn-round mr-2 ">Button Round</a>
+                                <a class="waves-effect waves-light btn btn-round btn-small"><i
+                                        class="material-icons left">cloud</i>button</a>
+                                <a class="waves-effect waves-light btn border-btn btn-round btn-large mt-2 mr-2 ">Button
+                                    Round</a>
+                                <a class="waves-effect waves-light btn border-btn btn-round mt-2 mr-2 ">Button Round</a>
+                                <a class="waves-effect waves-light btn border-btn btn-round btn-small mt-2"><i
+                                        class="material-icons left">cloud</i> Button Round</a>
+                                <a class="waves-effect waves-light btn btn-large mt-2 mr-2 ">Button
+                                    Round</a>
+                                <a class="waves-effect waves-light btn mt-2 mr-2 ">Button Round</a>
+                                <a class="waves-effect waves-light btn btn-small mt-2"><i
+                                        class="material-icons left">cloud</i> Button Round</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Form Radio Btn, Switch, Checkbox  -->
+                    <div class="col s4">
+                        <div class="uikitbox">
+                            <h3>Toggles</h3>
+                            <div class="uikitinnerbox">
+                                <h5>Checkbox</h5>
+                                <div class="row">
+                                    <div class="col s4">
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in" />
+                                                <span>Filled in</span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col s4">
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in" checked="checked" />
+                                                <span>Filled in</span>
+                                            </label>
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <h5>Switch</h5>
+                                <div class="row">
+                                    <div class="col s4">
+                                        <div class="switch">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span class="lever"></span>
+                                                On
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col s4">
+                                        <div class="switch">
+                                            <label>
+                                                <input disabled type="checkbox">
+                                                <span class="lever"></span>
+                                                Disable
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h5>Radio Button</h5>
+                                <div class="row">
+                                    <div class="col s4">
+                                        <p>
+                                            <label>
+                                                <input class="with-gap" name="group1" type="radio" />
+                                                <span>Radio Button</span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col s4">
+                                        <p>
+                                            <label>
+                                                <input class="with-gap" name="group1" type="radio" />
+                                                <span>Radio Button</span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uikit-row">
+                <div class="row">
+                    <!-- Input Fields -->
+                    <div class="col s4">
+                        <div class="uikitbox">
+                            <h3>Inputs</h3>
+                            <div class="uikitinnerbox">
+                                <div class="input-field">
+                                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                    <label for="first_name">Empty</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                    <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                                </div>
+                                <div class="spacer"></div>
+                                <div class="input-field">
+                                    <select>
+                                        <option value="" selected>Choose your option</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                    <label>Materialize Select</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modals -->
+                    <div class="col s4">
+                        <div class="uikitbox">
+                            <h3>Modals</h3>
+                            <div class="uikitinnerbox">
+
+                                <!-- Modal Trigger -->
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+                                <!-- Modal Structure -->
+                                <div id="modal1" class="modal">
+                                    <div class="modal-header">
+                                        <span class="shareIcon"><i class="material-icons">
+                                                share
+                                            </i></span>
+                                        <h4>Modal Header</h4>
+                                        <a class="modal-close"><i class="material-icons">
+                                                close
+                                            </i></a>
+                                    </div>
+                                    <div class="modal-content">
+                                        <div class="tabs-header">
+                                            <ul class="tabs">
+                                                <li class="tab"><a href="#test3">Test 1</a></li>
+                                                <li class="tab"><a class="active" href="#test4">Test 2</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tabContent">
+                                            <div id="test3" class="col s12">Test 1</div>
+                                            <div id="test4" class="col s12">Test 2</div>
+                                        </div>
+
+                                    </div>
+                                    <!-- <div class="modal-footer">
+
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s4">
+                        <div class="uikitbox">
+                            <h3>Tabs</h3>
+                            <div class="uikitinnerbox">
+                                <div class="tabs-header">
+                                    <ul class="tabs">
+                                        <li class="tab"><a href="#test1">Test 1</a></li>
+                                        <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tabContent">
+                                    <div id="test1" class="col s12">Test 1</div>
+                                    <div id="test2" class="col s12">Test 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="uikit-row">
+                <div class="row">
+                    <!-- New Proposal Button Bar -->
+                    <div class="col s12">
+                        <div class="uikitbox">
+                            <h3>New Proposal Button Bar</h3>
+                            <div class="uikitinnerbox">
+
+                                <div class="newperposalclientbar">
+                                    <div class="commonDefaultSearch">
+                                        <input type="submit" class="searchBtn" value="">
+                                        <input type="search" class="searchCommon" placeholder="Search">
+                                    </div>
+                                    <div class="newperposalclientbar-right">
+                                        <a href="javascript:void(0)" class="fileMenu">
+                                            <i class="material-icons">
+                                                add
+                                            </i>FILE</a>
+                                        <a href="javascript:void(0)" class="fileMenu">
+                                            <i class="material-icons">
+                                                add
+                                            </i>SECTION</a>
+                                        <a href="javascript:void(0)" class="fileMenu">
+                                            <i class="material-icons">
+                                                more_horiz
+                                            </i></a>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modals -->
+
+
+
+
+                </div>
+            </div>
+
+            <div class="uikit-row">
+                <div class="row">
+                    <!-- New ClientPoint Title -->
+                    <div class="col s12">
+                        <div class="uikitbox">
+                            <h3>New ClientPoint Title</h3>
+                            <div class="uikitinnerbox">
+
+                                <div class="newClientPointTitleBar">
+                                    <div class="clientpointTitle">
+                                        <h4>ClientPoint Title</h4>
+                                    </div>
+                                    <div class="newClientPointTitleBar-right">
+                                        <aside class="clientMenu">
+                                            <a href="#" class="clientMenuCommon clientMenuShare"></a>
+                                            <a href="#" class="clientMenuCommon clientMenuComment"></a>
+                                            <a href="#" class="clientMenuCommon clientMenuPdf"></a>
+                                            <a href="#" class="clientMenuCommon clientMenuNewsletter"></a>
+                                        </aside>
+                                        <a class="waves-effect waves-light btn btn-round">Save</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uikit-row">
+                <div class="row">
+                    <!-- Title Bar - Proposal -->
+                    <div class="col s12">
+                        <div class="uikitbox">
+                            <h3>Title Bar - Proposal </h3>
+                            <div class="uikitinnerbox">
+                                <div class="perposalDefaultbar">
+                                    <h4>ClientPoints <span class="dropdown-trigger" data-target="dropdown1"><i
+                                                class="material-icons ">
+                                                arrow_drop_down
+                                            </i></span></h4>
+                                    <ul id='dropdown1' class='dropdown-content'>
+                                        <li><a href="#!">My ClientPoints</a></li>
+                                        <li><a href="#!">Recieved ClientPoints</a></li>
+                                    </ul>
+                                    <div class="perposalDefaultbar-right">
+                                        <div class="calenderDate">
+                                            <a href="javasscript:void(0)" class="prevDate">
+                                            </a>
+                                            <span class="calenderDateText">Jul 29 - Aug 5</span>
+                                            <a href="javasscript:void(0)" class="nextDate">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uikit-row">
+                <div class="row">
+                    <!-- DropDown  -->
+                    <div class="col s12">
+                        <div class="uikitbox">
+                            <h3>Filters </h3>
+                            <div class="uikitinnerbox">
+                                <div class="filtersCommon">
+                                    <div class="d-flex">
+                                        <span class="filterIcon"></span>
+                                        <h5 class="m-0">Filter by:</h5>
+                                        <div class="type">
+                                            <h5>Type</h5>
+                                            <a href="#!" class="commonDropdownFilter dropdown-trigger"
+                                                data-target='dropdownFilter'>
+                                                <i class="material-icons">
+                                                    arrow_drop_down
+                                                </i>
+                                            </a>
+                                            <ul id="dropdownFilter" class='dropdown-content filterDropdown'>
+                                                <li tabindex="0">
+                                                    <label>
+                                                        <input type="checkbox" class="filled-in">
+                                                        <span>All</span>
+                                                    </label>
+                                                </li>
+                                                <li tabindex="0">
+                                                    <label>
+                                                        <input type="checkbox" class="filled-in">
+                                                        <span>Activities</span>
+                                                    </label>
+                                                </li>
+                                                <li tabindex="0">
+                                                    <label>
+                                                        <input type="checkbox" class="filled-in">
+                                                        <span>Notes</span>
+                                                    </label>
+                                                </li>
+                                                <li tabindex="0">
+                                                    <label>
+                                                        <input type="checkbox" class="filled-in">
+                                                        <span>Comments</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="calenderDatesCommon d-flex ml-auto">
+                                            <div class="calenderDate d-flex">
+                                                <a href="javasscript:void(0)" class="prevDateIcon">
+                                                </a>
+                                                <span class="calenderDateTextUi">Jul 29 - Aug 5</span>
+                                                <a href="javasscript:void(0)" class="nextDateUi">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="calenederFilter ml-15">
+                                            <span class="calenderIconUi"></span>
+                                            <a href="javascript:void(0);"
+                                                class="hoverdropdown DropdownArrow dropdown-trigger"
+                                                data-alignment="left" data-target='CalenderDropdownUi'><i
+                                                    class="material-icons">
+                                                    arrow_drop_down
+                                                </i></a>
+
+
+                                            <ul id='CalenderDropdownUi'
+                                                class='dropdown-content CalenderDropDownContentUi'>
+                                                <li class="calenderHeader">
+                                                    <div class="calenderHeader-row">
+                                                        <span class="from">From</span>
+                                                        <span class="dateCalenderUi"><a class="calenderDateIconUi"
+                                                                href="javascript:void(0);"></a>July 29, 2019</span>
+                                                    </div>
+                                                    <div class="calenderHeader-row">
+                                                        <span class="from">To</span>
+                                                        <span class="dateCalenderUi"><a class="calenderDateIconUi"
+                                                                href="javascript:void(0);" id="datepicker"></a>August 5,
+                                                            2019</span>
+                                                    </div>
+                                                </li>
+                                                <li><a href="javascript:void(0);">Most Recent</a></li>
+                                                <li><a href="javascript:void(0);" class="active">Yesterday</a></li>
+                                                <li><a href="javascript:void(0);">This Month</a></li>
+                                                <li><a href="javascript:void(0);">Past Month</a></li>
+                                                <li><a href="javascript:void(0);">Past 3 Months</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uikit-row">
+                <div class="row">
+                    <!-- DropDown  -->
+                    <div class="col s12">
+                        <div class="uikitbox">
+                            <h3>Option DropDown </h3>
+                            <div class="uikitinnerbox">
+                                <a class='dropdown-trigger optionBtn' href='#' data-target="optionDropdownUi"></a>
+                                <ul id="optionDropdownUi" class='dropdown-content viewedDropDown-content'>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="shareIcon"></span>
+                                            Share
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="commentIcon">
+                                            </span>
+                                            Comment
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="prieviewIcon"></span>
+                                            Preview
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="printIcon"></span>
+                                            Print
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="sendIcon"></span>
+                                            Send
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="editIcon"></span>
+                                            Edit
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <!---- Main Content end here  ---->
+
+
+
+    <!-- Javascript files start here -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/materialize.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/jquery.scrollbar.min.js"></script>
+    <script src="../js/pikaday.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.scrollbar-inner').scrollbar();
+        });
+    </script>
+    <script>
+        var picker = new Pikaday(
+            {
+                field: document.getElementById('datepicker'),
+                firstDay: 1,
+                minDate: new Date(),
+                maxDate: new Date(2020, 12, 31),
+                yearRange: [2000, 2020]
+            });
+    </script>
+</body>
+
+</html>

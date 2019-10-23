@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/pikaday.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.scrollbar.css" />
+    <link type="text/css" rel="stylesheet" href="scss/materialize.css" />
+    <title>Welcome To ClientPoint</title>
+    <!-- Custom CSS start here  -->
+
+</head>
+
+<body>
+    <!-- Sidebar nav start here  -->
+
+    <nav class="sidebarNav sidebarNavClose">
+        <div class="navMenuOuter menu btn6 navMenu" data-menu="6">
+            <div class="icon"></div>
+        </div>
+        <ul>
+            <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="tab-1">
+                <a href="#dashboard_nav" class="sidebarclick">
+                    <span class="commonIconbg fileIcon"></span>
+                    Dashboard
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
+                <a href="#library_nav" class="sidebarclick">
+                    <span class="commonIconbg prieviewIcon"></span>
+                    Content Libray
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="tab-3">
+                <a href="#clientPoint_nav" class="sidebarclick">
+                    <span class="commonIconbg clientIcon"></span>
+                    ClientPoints
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="tab-4">
+                <a href="#Setting_nav" class="sidebarclick">
+                    <span class="commonIconbg settingIcon"></span>
+                    Settings
+                </a>
+            </li>
+        </ul>
+        <a href="javascript:void(0)" class="clientPointLogo">
+            <img class="logoSmall" src="./images/ClientPoint-Logo.svg" alt="">
+            <img class="logoBig" src="./images/clientpoint-logo-big.svg" alt="">
+        </a>
+    </nav>
+
+    <div class="sidebar_nav">
+        <aside id="tab-1" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">ClientPoint</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-2" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Users & Permissions</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
+                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
+                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Advanced Settings</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-3" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#" class="active">Analytics</a></li>
+                <li><a href="#">ClientPoint</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-4" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Users & Permissions</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
+                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
+                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Advanced Settings</a></li>
+            </ul>
+        </aside>
+    </div>
+    <!-- Sidebar nav end here  -->
+
+    <!-- Header start here  -->
+    <header class="page-header d-flex">
+        <div class="searchbox">
+            <input type="submit" class="searchBtn" value="">
+            <input type="search" class="searchInput" placeholder="Search" data-search id="myInput" value="">
+            <a href="javascript:void(0);" class="serachArrow">
+                <i class="material-icons">
+                    arrow_forward
+                </i>
+            </a>
+        </div>
+        <div class="searchResponsive">
+            <a href="#" class="mobileSearch"></a>
+        </div>
+        <div class="searchResult">
+            <div class="searchMain items">
+                <a data-filter-item data-filter-name="encom" class="topSearchRow">
+                    <span class="resultsSearchIcon"></span>
+                    <h6>“encom”</h6>
+                </a>
+                <a data-filter-item data-filter-name="ClientPoint" class="search-row" href="javasvript:void(0);">
+                    <span class="resultsIcon"></span>
+                    <div class="searchResultContent">
+                        <h5>Encom Q2 Marketing ClientPoint</h5>
+                        <p>ClientPoint</p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="Account" class="search-row" href="javasvript:void(0);">
+                    <span class="resultsIcon suitCaseIcon"></span>
+                    <div class="searchResultContent">
+                        <h5>Encom</h5>
+                        <p>Account</p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="Contact" class="search-row" href="javasvript:void(0);">
+                    <span class="resultsIcon userIcon"></span>
+                    <div class="searchResultContent">
+                        <h5>Kevin Flynn</h5>
+                        <p>Contact • <strong>Encom</strong></p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="Edward" class="search-row" href="javasvript:void(0);">
+                    <span class="resultsIcon userIcon"></span>
+                    <div class="searchResultContent">
+                        <h5>Edward Dillinger</h5>
+                        <p>Contact • <strong>Encom</strong></p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="Bradley" class="search-row" href="javasvript:void(0);">
+                    <span class="resultsIcon userIcon"></span>
+                    <div class="searchResultContent">
+                        <h5>Alan Bradley</h5>
+                        <p>Contact • <strong>Encom</strong></p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="ipsum" class="search-row" href="javasvript:void(0);">
+                    <span class="resultsIcon commentIcon"></span>
+                    <div class="searchResultContent">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed <strong>Encom</strong> dousan…
+                        </h5>
+                        <p>Comment • Kevin Flynn</p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="dolor" class="search-row" href="javasvript:void(0);">
+                    <span class="resultsIcon editIcon"></span>
+                    <div class="searchResultContent">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed <strong>Encom</strong> dousan…
+                        </h5>
+                        <p>Notes • Peter Parker</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <aside class="newClientPoint">
+            <a class="waves-teal btn-flat">New ClientPoint</a>
+            <a class="userLoginPanel dropdown-trigger" href="#" data-target="userDropDown">
+                <span class="userFetaures"><strong>Upgrade now</strong> to unlock more features!</span>
+                <span class="userAvtar"><img class="responsive-img" src="./images/user-img.png" alt=""></span>
+                <span class="userName">Miles Morales</span>
+                <i class="material-icons">
+                    arrow_drop_down
+                </i>
+            </a>
+            <ul id="userDropDown" class="dropdown-content UserDropdownLogin">
+                <li><a href="#!">
+                        <div class="userLoginHeader">
+                            <img src="./images/user-avtar.png" alt="">
+                            <div class="userInfo">
+                                <h6>Miles Morales</h6>
+                                <p>milesm@arachnid.com</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider" tabindex="-1"></li>
+                <li>
+                    <a href="#!">
+                        <span class="profileIcon"></span>
+                        View Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span class="supportIcon"></span>
+                        Support
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span class="logoutIcon"></span>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </header>
+    <!-- Header end here  -->
+    <!-- Main Content start here  -->
+    <div id="content">
+        <div class="content-common">
+            <div class="clientPoint-file ">
+                <div class="creatingPerposal fullHeight">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Main Content end here  -->
+
+    <!-- Javascript files start here -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/pikaday.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.scrollbar-inner').scrollbar();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#myInput').on('keyup', function () {
+                var searchVal = $(this).val();
+                var filterItems = $('[data-filter-item]');
+                var searchResult = $('.searchResult');
+                var serachArrow = $('.serachArrow');
+                if (searchVal != '') {
+                    $('.serachArrow').addClass('changeColor');
+                    searchResult.addClass('open');
+                    filterItems.addClass('hidden');
+                    $('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').removeClass('hidden');
+                } else {
+                    $('.serachArrow').removeClass('changeColor');
+                    filterItems.removeClass('hidden');
+                    searchResult.removeClass('open');
+                }
+            });
+        });
+    </script>
+    <script>
+        var picker = new Pikaday(
+            {
+                field: document.getElementById('datepicker'),
+                firstDay: 1,
+                minDate: new Date(),
+                maxDate: new Date(2020, 12, 31),
+                yearRange: [2000, 2020]
+            });
+    </script>
+
+</body>
+
+</html>

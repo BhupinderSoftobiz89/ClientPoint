@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="css/pikaday.css">
+    <link type="text/css" rel="stylesheet" href="scss/materialize.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.scrollbar.css" />
+    <title>Welcome To ClientPoint</title>
+    <!-- Custom CSS start here  -->
+
+</head>
+
+<body>
+
+    <!-- Sidebar nav start here  -->
+
+    <nav class="sidebarNav sidebarNavClose">
+        <div class="navMenuOuter menu btn6 navMenu" data-menu="6">
+            <div class="icon "></div>
+        </div>
+        <ul>
+                <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="tab-1"><a href="#dashboard_nav" class="sidebarclick"><span
+                            class="commonIconbg fileIcon"></span>Dashboard</a>
+    
+                </li>
+                <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2"><a href="#library_nav" class="sidebarclick"><span
+                            class="commonIconbg prieviewIcon"></span>Content Libray</a></li>
+                <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="tab-3"><a href="#clientPoint_nav" class="sidebarclick"><span
+                            class="commonIconbg clientIcon"></span>ClientPoints</a></li>
+                <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="tab-4"><a href="#Setting_nav" class="sidebarclick"><span
+                            class="commonIconbg settingIcon"></span>Settings</a></li>
+            </ul>
+        <a href="javascript:void(0)" class="clientPointLogo">
+            <img class="logoSmall" src="./images/ClientPoint-Logo.svg" alt="">
+            <img class="logoBig" src="./images/clientpoint-logo-big.svg" alt="">
+        </a>
+    </nav>
+
+    <div class="sidebar_nav">
+        <aside id="tab-1" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">ClientPoint</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-2" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Users & Permissions</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
+                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
+                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Advanced Settings</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-3" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">ClientPoint</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-4" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();"><i class="material-icons">
+                            keyboard_backspace
+                        </i></a>
+                </li>
+                <li><a href="#">Users & Permissions</a></li>
+                <li><a href="#" class="active">Themes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
+                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
+                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Advanced Settings</a></li>
+            </ul>
+        </aside>
+    </div>
+    <!-- Sidebar nav end here  -->
+
+    <!-- Header start here  -->
+    <header class="page-header d-flex">
+            <div class="searchbox">
+                <input type="submit" class="searchBtn" value="">
+                <input type="search" class="searchInput" placeholder="Search">
+            </div>
+            <div class="searchResponsive">
+                <a href="#" class="mobileSearch"></a>
+            </div>
+            <aside class="newClientPoint">
+                <a class="waves-teal btn-flat">New ClientPoint</a>
+                <a class="userLoginPanel dropdown-trigger" href="#" data-target="userDropDown"> 
+                    <span class="userFetaures"><strong>Upgrade now</strong> to unlock more features!</span>
+                    <span class="userAvtar"><img class="responsive-img" src="./images/user-img.png" alt=""></span>
+                    <span class="userName">Miles Morales</span>
+                    <i class="material-icons">
+                        arrow_drop_down
+                    </i>
+                </a>
+                <ul id="userDropDown" class="dropdown-content UserDropdownLogin">
+                    <li><a href="#!">
+                            <div class="userLoginHeader">
+                                <img src="./images/user-avtar.png" alt="">
+                                <div class="userInfo">
+                                    <h6>Miles Morales</h6>
+                                    <p>milesm@arachnid.com</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <a href="#!">
+                            <span class="profileIcon"></span>
+                            View Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <span class="supportIcon"></span>
+                            Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <span class="logoutIcon"></span>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </header>
+        <!-- Header end here  -->
+    <!-- Main Content start here  -->
+    <div id="content">
+        <article class="content-common">
+            <div class="clientPoint-file heightAuto">
+                <article class="newClientPointTitleBar theme-padding">
+                    <div class="clientpointTitle">
+                        <a href="javascript:void(0);" class="backArrowNav"></a>
+                        <h4>Theme Name <span class="default">Default</span></h4>
+                    </div>
+                    <div class="newClientPointTitleBar-right">
+                        <a class=" btn-flat cancel-btn">Cancel</a>
+                        <a class="waves-effect waves-light btn btn-round themeBtn">Save Changes</a>
+                    </div>
+                </article>
+
+                <div class="themeContent p-0">
+                    <div class="themeSetting">
+                        <ul class="collapsible">
+                            <li>
+                                <div class="collapsible-header">
+                                    <div class="heading-collapse">
+                                        <h4>Theme Files</h4>
+                                        <h6>Select Company logo and pdf files</h6>
+                                    </div>
+                                    <div class="accordionBtn">
+                                        <a href="javascript:void(0);" class="minus"><i class="material-icons">
+                                                remove
+                                            </i></a>
+                                        <a href="javascript:void(0);" class="plus"><i class="material-icons">
+                                                add
+                                            </i></a>
+                                    </div>
+                                </div>
+                                <div class="collapsible-body">
+                                    <div class="themeAccordionContent">
+                                        <div class="row">
+                                            <div class="col l6 m6 s12">
+                                                <h4>Company Logo</h4>
+                                                <h6>Company logo for login and full page picture cover page</h6>
+                                            </div>
+                                            <div class="col l6 m6 s12">
+                                                <div class="row mb-0">
+                                                    <div class="input-field col s12">
+                                                        <input value="Click to choose a file" id="first_name2"
+                                                            type="text" class="validate">
+                                                        <span class="inputFileUpload"><input type="file"></span>
+                                                        <label class="active" for="first_name2">Upload image (Less than
+                                                            200k, jpg, 196x108)</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-0">
+                                            <div class="col l6 m6 s12">
+                                                <h4>PDF background of TOC</h4>
+                                                <h6>Upload a PDF to be used as a background for TOC</h6>
+                                            </div>
+                                            <div class="col l6 m6 s12">
+                                                <div class="row mb-0">
+                                                    <div class="input-field col s12">
+                                                        <input value="Click to choose a file" id="uploadPdf"
+                                                            type="text" class="validate">
+                                                        <span class="inputFileUpload"><input type="file"></span>
+                                                        <label class="active" for="uploadPdf">Upload PDF</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <div class="heading-collapse">
+                                        <h4>Viewer Theme Style</h4>
+                                        <h6>Select colors, Fonts and other options to style your theme
+                                        </h6>
+                                    </div>
+                                    <div class="accordionBtn">
+                                        <a href="javascript:void(0);" class="minus"><i class="material-icons">
+                                                remove
+                                            </i></a>
+                                        <a href="javascript:void(0);" class="plus"><i class="material-icons">
+                                                add
+                                            </i></a>
+                                    </div>
+                                </div>
+                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <div class="heading-collapse">
+                                        <h4>Advanced Settings</h4>
+                                        <h6>Email setup, E-signature message, Document overlay header/footer and custom
+                                            css.</h6>
+                                    </div>
+                                    <div class="accordionBtn">
+                                        <a href="javascript:void(0);" class="minus"><i class="material-icons">
+                                                remove
+                                            </i></a>
+                                        <a href="javascript:void(0);" class="plus"><i class="material-icons">
+                                                add
+                                            </i></a>
+                                    </div>
+                                </div>
+                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+    </div>
+    <!-- Main Content end here  -->
+
+    <!-- Javascript files start here -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/pikaday.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.scrollbar-inner').scrollbar();
+        });
+    </script>
+    <script>
+        var picker = new Pikaday(
+            {
+                field: document.getElementById('datepicker'),
+                firstDay: 1,
+                minDate: new Date(),
+                maxDate: new Date(2020, 12, 31),
+                yearRange: [2000, 2020]
+            });
+    </script>
+</body>
+
+</html>

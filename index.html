@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="scss/materialize.css" />
+    <title>Welcome To ClientPoint</title>
+    <!-- Custom CSS start here  -->
+
+</head>
+
+<body>
+    <!-- Sidebar nav start here -->
+    <nav class="sidebarNav sidebarNavClose">
+        <div class="navMenuOuter menu btn6 navMenu" data-menu="6">
+            <div class="icon "></div>
+        </div>
+        <ul>
+            <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="tab-1">
+                <a href="#dashboard_nav" class="sidebarclick">
+                    <span class="commonIconbg fileIcon"></span>
+                    Dashboard
+                </a>
+
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
+                <a href="#library_nav" class="sidebarclick">
+                    <span class="commonIconbg prieviewIcon"></span>
+                    Content Libray
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="tab-3">
+                <a href="#clientPoint_nav" class="sidebarclick">
+                    <span class="commonIconbg clientIcon"></span>
+                    ClientPoints
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="tab-4">
+                <a href="#Setting_nav" class="sidebarclick">
+                    <span class="commonIconbg settingIcon"></span>Settings
+                </a>
+            </li>
+        </ul>
+        <a href="javascript:void(0)" class="clientPointLogo">
+            <img class="logoSmall" src="./images/ClientPoint-Logo.svg" alt="">
+            <img class="logoBig" src="./images/clientpoint-logo-big.svg" alt="">
+        </a>
+    </nav>
+
+    <div class="sidebar_nav">
+        <aside id="tab-1" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">ClientPoint</a></li>
+                <li><a href="#" class="active">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-2" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Users & Permissions</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
+                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
+                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Advanced Settings</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-3" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">ClientPoint</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-4" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Users & Permissions</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
+                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
+                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Advanced Settings</a></li>
+            </ul>
+        </aside>
+    </div>
+    <!-- Sidebar nav end here  -->
+
+    <!-- Header start here  -->
+    <header class="page-header d-flex">
+        <div class="searchbox">
+            <input type="submit" class="searchBtn" value="">
+            <input type="search" class="searchInput" placeholder="Search">
+        </div>
+        <div class="searchResponsive">
+            <a href="#" class="mobileSearch"></a>
+        </div>
+        <aside class="newClientPoint">
+            <a class="waves-teal btn-flat">New ClientPoint</a>
+            <a class="userLoginPanel dropdown-trigger" href="#" data-target="userDropDown"> 
+                <span class="userFetaures"><strong>Upgrade now</strong> to unlock more features!</span>
+                <span class="userAvtar"><img class="responsive-img" src="./images/user-img.png" alt=""></span>
+                <span class="userName">Miles Morales</span>
+                <i class="material-icons">
+                    arrow_drop_down
+                </i>
+            </a>
+            <ul id="userDropDown" class="dropdown-content UserDropdownLogin">
+                <li><a href="#!">
+                        <div class="userLoginHeader">
+                            <img src="./images/user-avtar.png" alt="">
+                            <div class="userInfo">
+                                <h6>Miles Morales</h6>
+                                <p>milesm@arachnid.com</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider" tabindex="-1"></li>
+                <li>
+                    <a href="#!">
+                        <span class="profileIcon"></span>
+                        View Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span class="supportIcon"></span>
+                        Support
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span class="logoutIcon"></span>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </header>
+    <!-- Header end here  -->
+
+
+    <!-- Main Content start here  -->
+
+    <div id="content" class="">
+        <div class="content-common">
+            <div class="clientDetailsContent">
+                <div class="titlerow">
+                    <input type="text" placeholder="New ClientPoint" class="newClientPointInput">
+                    <aside class="ml-auto newClientBtn">
+                        <a class=" btn-flat">Cancel</a>
+                        <a class="waves-effect waves-light btn">Save & Continue</a>
+                    </aside>
+                </div>
+
+                <div class="detailInfo">
+                    <article class="information">
+                        <div class="information-row">
+                            <article class="information-heading">
+                                <img src="./images/info-shape.svg" alt="">
+                                <h6> INFO</h6>
+                            </article>
+                            <div class="infoCommon">
+                                <form class="infoForm">
+                                    <div class="row mb-15">
+                                        <div class="input-field col l6 m12 s12 paddingNone">
+                                            <input placeholder="Client name..." id="first_name" type="text"
+                                                class="validate" value="">
+                                            <label for="first_name">Client</label>
+                                        </div>
+                                        <div class="input-field col l6 m12 s12 paddingNone">
+                                            <select>
+                                                <option value="" selected>New</option>
+                                                <option value="1">Archive</option>
+                                                <option value="2">eBrochure</option>
+                                                <option value="3">lost</option>
+                                                <option value="3">pending</option>
+                                                <option value="3">templates</option>
+                                                <option value="3">trash</option>
+                                                <option value="3">won</option>
+                                            </select>
+                                            <label>Status</label>
+                                        </div>
+                                        <div class="input-field col l6 m12 s12 paddingNone">
+                                            <input placeholder="Revenue..." id="status" type="text" class="validate"
+                                                value="">
+                                            <label for="first_name">Revenue</label>
+                                        </div>
+                                        <div class="input-field col l6 m12 s12 paddingNone">
+                                            <input placeholder="MM/DD/YYYY" id="date" type="text" class="validate"
+                                                value="">
+                                            <label for="first_name">EXPIRATION DATE</label>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="information-row">
+                            <article class="information-heading">
+                                <img src="./images/avtar-grey.svg" alt="">
+                                <h6>Recipients (0)</h6>
+                                <a href="#" class="btnImportCrm"><img src="./images/ImportCrmIcon.svg" alt=""> IMPORT
+                                    CRM</a>
+                            </article>
+                            <div class="reciepent">
+                                <div class="reciepent-row">
+                                    <div class="reciepent-row-repeate">
+                                        <span class="reciepent-user">
+                                            <img src="./images/Recipents-Avatar-2.png" alt="">
+                                        </span>
+                                        <div class="reciepent-content">
+                                            <h6>Kevin Flynn</h6>
+                                            <p>flynn@encom.com</p>
+                                        </div>
+                                        <a class="dropdown-trigger removeReciepent" href='javascript:void(0);'
+                                            data-target='dropdown1'></a>
+
+                                    </div>
+                                    <ul id="dropdown1" class="dropdown-content">
+                                        <li><a href="javascript:void(0);"><span class="deleteIcon"></span>Remove
+                                                Recipient</a></li>
+                                    </ul>
+                                    <div class="reciepent-row-repeate">
+                                        <span class="reciepent-user">
+                                            <img src="./images/Recipents-Avatar-3.png" alt="">
+                                        </span>
+                                        <div class="reciepent-content">
+                                            <h6>Edward Dillinger</h6>
+                                            <p>edward@encom.com</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="reciepent-row-repeate">
+                                        <span class="reciepent-user">
+                                            <img src="./images/Recipents-Avatar-1.png" alt="">
+                                        </span>
+                                        <div class="reciepent-content">
+                                            <h6>Alan Bradley</h6>
+                                            <p>alan@encom.com</p>
+                                        </div>
+
+                                    </div>
+                                    <a class="waves-effect waves-light btn modal-trigger"
+                                        href="#modal1"><span>+</span>Add Recipient</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="information-row">
+                            <div class="row">
+                                <div class="col l6 m12 s12">
+                                    <article class="information-heading">
+                                        <img src="./images/setting.svg" alt="">
+                                        <h6>Viewer Options</h6>
+                                    </article>
+                                    <div class="reciepent">
+                                        <div class="reciepent-row">
+                                            <div class="switch">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    <span class="lever"></span>Comments
+                                                </label>
+                                            </div>
+                                            <div class="switch">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    <span class="lever"></span>Prompt for email
+                                                </label>
+                                            </div>
+                                            <div class="switch">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    <span class="lever"></span>Download & print
+                                                </label>
+                                            </div>
+                                            <div class="switch">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    <span class="lever"></span>Disable GDPR
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l6 m12 s12">
+                                    <article class="information-heading">
+                                        <img src="./images/advanceSetting.svg" alt="">
+                                        <h6 class="advanceHeadingMargin">Advance Settings</h6>
+                                        <a class="waves-effect waves-light btn btn-round">Upgrade now!</a>
+                                    </article>
+                                    <div class="reciepent">
+                                        <div class="reciepent-row">
+                                            <div class="switch">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    <span class="lever"></span>Recipient upload
+                                                </label>
+                                            </div>
+                                            <div class="reciepent-Select-margin"></div>
+                                            <div class="input-field">
+                                                <select>
+                                                    <option value="" selected>English</option>
+                                                    <option value="1">French</option>
+                                                </select>
+                                                <label>Viewer Language <img src="./images/lock-icon.svg" alt=""></label>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+                    <aside class="InfoSidebarRight">
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Main Content end here  -->
+
+    <!-- Add Recipent Modal start here  -->
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal AddRecipientModal">
+        <div class="modal-header">
+            <span class="shareIcon"></span>
+            <h4>Add Recipient</h4>
+            <a class="modal-close"><i class="material-icons">
+                    close
+                </i></a>
+        </div>
+        <div class="modal-content">
+            <div class="AddRecipientContent">
+                <div class="AddRecipientContent-row">
+                    <div class="row">
+                        <div class="col l4 m4 s12">
+                            <div class="input-field col s12">
+                                <input placeholder="Full Name" id="full_name" type="text" class="validate">
+                                <label for="full_name">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="col l4 m4 s12">
+                            <div class="input-field col s12">
+                                <input placeholder="Email address…" id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="col l4 m4 s12">
+                            <div class="input-field col s12">
+                                <input placeholder="Confirm email…" id="confirmEmail" type="email" class="validate">
+                                <label for="confirmEmail">Confirm Email</label>
+                            </div>
+                        </div>
+                        <div class="col l4 m4 s12">
+                            <div class="input-field col s12 mb-0">
+                                <input placeholder="Office phone..." id="officeNumber" type="tel" class="validate">
+                                <label for="officeNumber">Office Phone</label>
+                            </div>
+                        </div>
+                        <div class="col l4 m4 s12">
+                            <div class="input-field col s12 mb-0">
+                                <input placeholder="Mobile phone…" id="mobilePhone" type="tel" class="validate">
+                                <label for="mobilePhone">Mobile Phone</label>
+                            </div>
+                        </div>
+                        <div class="col l4 m4 s12">
+                            <div class="input-field col s12 mb-0">
+                                <input placeholder="Mobile phone…" id="linkedIn" type="text" class="validate">
+                                <label for="linkedIn">LinkedIn</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="AddRecipientContent-row">
+                    <div class="row">
+                        <div class="col l4 m4 s12">
+                            <div class="input-field col s12">
+                                <input placeholder="Full Name" id="full_name_sub" type="text" class="validate">
+                                <label for="full_name_sub">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="col l4 m4 s12">
+                            <div class="input-field col s12">
+                                <input placeholder="Email address…" id="email_sub" type="email" class="validate">
+                                <label for="email_sub">Email</label>
+                            </div>
+                        </div>
+                        <div class="col l4 m4 s12">
+                            <div class="input-field col s12">
+                                <input placeholder="Confirm email…" id="confirmEmail_sub" type="email" class="validate">
+                                <label for="confirmEmail_sub">Confirm Email</label>
+                            </div>
+                        </div>
+                        <div class="col l4 m4 s12 mb-0">
+                            <div class="input-field col s12">
+                                <input placeholder="Office phone..." id="officeNumber_sub" type="tel" class="validate">
+                                <label for="officeNumber_sub">Office Phone</label>
+                            </div>
+                        </div>
+                        <div class="col l4 m4 s12 mb-0">
+                            <div class="input-field col s12">
+                                <input placeholder="Mobile phone…" id="mobilePhone_sub" type="tel" class="validate">
+                                <label for="mobilePhone_sub">Mobile Phone</label>
+                            </div>
+                        </div>
+                        <div class="col l4 m4 s12 mb-0">
+                            <div class="input-field col s12">
+                                <input placeholder="Mobile phone…" id="linkedIn_sub" type="text" class="validate">
+                                <label for="linkedIn_sub">LinkedIn</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="btn-flat"><i class="material-icons">
+                    add
+                </i>Add more recipients</a>
+            <div class="btn-row">
+                <a class="waves-effect waves-light btn btn-round mr-2">Add Recipient</a>
+                <a class="btn-flat">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Add Recipent Modal end here  -->
+
+
+    <!-- Javascript files start here -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

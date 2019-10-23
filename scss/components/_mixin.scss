@@ -1,0 +1,471 @@
+@import "../components/variables";
+
+// Mixin Start here 
+
+
+// Border Radius Mixin
+
+// @mixin border-radius($top-left, $top-right, $bottom-right, $bottom-left){
+//     -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
+//        -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;
+//         -ms-border-radius: $top-left $top-right $bottom-right $bottom-left;
+//             border-radius: $top-left $top-right $bottom-right $bottom-left;  
+//   }
+
+
+// Gradient Mixin
+
+@mixin navGradient($args...) {
+    background: -o-linear-gradient($args); 
+    background: -moz-linear-gradient($args); 
+    background: -webkit-linear-gradient($args); 
+     background: linear-gradient($args); 
+   }
+   
+
+// Display Mixin
+
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin inlineflex() {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+
+@mixin align-items-center($align-items-center) {
+  -webkit-transform: $align-items-center;
+  -ms-transform: $align-items-center;
+  transform: $align-items-center;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+     -moz-flex-wrap: $wrap;
+      -ms-flex-wrap: $wrap;
+          flex-wrap: $wrap;
+}
+@mixin justify-content($justifycenter) {
+  -webkit-justify-content: $justifycenter;
+     -moz-justify-content: $justifycenter;
+      -ms-justify-content: $justifycenter;
+          justify-content: $justifycenter;
+            -ms-flex-pack: $justifycenter;
+}
+
+
+// Box shadow Mixin
+
+@mixin box-shadow($leftshadow, $topshadow, $blurshadow, $colorShadow ) {
+  -webkit-box-shadow: $leftshadow $topshadow $blurshadow $colorShadow;
+    -moz-box-shadow: $leftshadow $topshadow $blurshadow $colorShadow;
+      box-shadow: $leftshadow $topshadow $blurshadow $colorShadow;
+
+}
+
+// Transition Mixin
+
+@mixin transition($transiton) {
+  -webkit-transition: $transiton;
+  -moz-transition: $transiton;
+  -ms-transition: $transiton;
+  -o-transition: $transiton;
+  transition: $transiton;
+}
+
+// Padding And Margin Mixin
+
+@mixin margin-padding($m-direction, $m-amount, $p-direction, $p-amount) {
+  @if $m-direction == all {
+    margin: $m-amount;
+  } @else {
+    margin-#{$m-direction}: $m-amount;
+  }
+  @if $p-direction == all {
+    padding: $p-amount;
+  } @else {
+    padding-#{$p-direction}: $p-amount;
+  }
+}
+
+// Position Mixin
+
+@mixin center($position) {
+  position: absolute;
+  
+  @if $position == 'vertical' {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  @else if $position == 'horizontal' {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+  }
+  @else if $position == 'both' {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Clearfix Mixin
+
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// Pixels Mixin
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// // Width and Height Px to Rem
+
+// @function whPxtoRem($size) {
+//   $remSize: $size / 16px;
+//   @return $remSize * 1rem;
+// }
+
+// @mixin whPxtoRem($size) {
+//   font-size: $size;
+//   font-size: calculateRem($size);
+// }
+
+// Gradient Mixin
+
+@mixin background-gradient($start-color, $middle-color, $end-color, $orientation) { 
+  background: $start-color;
+
+  @if $orientation == 'vertical' {
+    background: -webkit-linear-gradient(top, $start-color, $middle-color, $end-color);
+    background: linear-gradient(to bottom, $start-color, $middle-color, $end-color);
+  } @else if $orientation == 'horizontal' {
+    background: -moz-gradient(171deg, $start-color, $middle-color, $end-color);
+    background: -o-(171deg, $start-color, $middle-color, $end-color);
+    background: -ms-(171deg, $start-color, $middle-color, $end-color);
+    background: -webkit-linear-gradient(171deg, $start-color, $middle-color, $end-color);
+    background: linear-gradient(171deg, $start-color, $middle-color, $end-color);
+  } @else {
+    background: -webkit-radial-gradient(center, ellipse cover, $start-color, $middle-color, $end-color);
+    background: radial-gradient(ellipse at center, $start-color, $middle-color, $end-color);
+  }
+}
+
+// Usage
+
+// .gradient {
+//   @include background-gradient(#07c, #06f, vertical);
+// }
+
+// Multiple Elements Mixin
+
+@mixin spacing ($margin, $border, $padding) {
+  margin: $margin;
+  border: $border;
+  padding: $padding;
+}
+
+// Opacity Mixin
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity = $opacity-ie);
+}
+
+
+// Position Mixin
+
+@mixin position($position, $args) {
+  @each $o in top right bottom left {
+    $i: index($args, $o);
+    @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number {
+      #{$o}: nth($args, $i + 1);
+    }
+  }
+  position: $position;
+}
+
+// Positioning helpers
+@mixin absolute($args: '') {
+  @include position(absolute, $args);
+}
+
+@mixin fixed($args: '') {
+  @include position(fixed, $args);
+}
+
+@mixin relative($args: '') {
+  @include position(relative, $args);
+}
+
+// KeyFrame Mixins
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// Center Block Mixin
+
+@mixin center-block {
+  display: $display-block;
+  margin-left: $margin-left-auto;
+  margin-right: $margin-right-auto;
+}
+
+// Input Placeholder Mixin
+
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+// Appearence Mixin
+
+@mixin appearance($val: none) {
+	-webkit-appearance: $val;
+	-moz-appearance: $val;
+	appearance: $val;
+}
+
+// Truncate Three dots Mixin
+
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Font weight Mixin
+
+@mixin font-weight($weight) {
+  $weights: (
+    thin: 100,
+    extra-light: 200,
+    ultra-light: 200,
+    light: 300,
+    normal: 400,
+    book: 400,
+    regular: 400,
+    medium: 500,
+    semi-bold: 600,
+    demi-bold: 600,
+    bold: 700,
+    extra-bold: 800,
+    ultra-bold: 900,
+    heavy: 900,
+    black: 900,
+  );
+  
+  $output: $weight;
+  @if map-has-key($weights, $weight) {
+    $output: map-get($weights, $weight);
+  }
+  
+  font-weight: $output;
+}
+
+// Usage
+
+// .font-weight {
+//   @include  font-weight(thin);
+// }
+
+
+/* Font size and line height mixin */
+
+@mixin font-rem($font-size, $line-height: 0) {
+  font-size: $font-size;
+  font-size: ($font-size / $rem-base-font) * 1rem;
+  @if ($line-height > 0) {
+    line-height: $line-height;
+    line-height: ($line-height / $rem-base-font) * 1rem;
+  }
+}
+
+
+/* Width height px to rem mixin */
+
+@mixin w-h-rem($width, $height: 0) {
+  width: $width;
+  width: ($width / $rem-base-font) * 1rem;
+  @if ($height > 0) {
+    height: $height;
+    height: ($height / $rem-base-font) * 1rem;
+  }
+}
+
+// Usage
+
+// .font-size {
+//   @include font-rem(20px, 25px);
+// }
+
+
+
+// Radius Mixin with Size
+
+@mixin square($size, $radius: 0) {
+  width: $size;
+  height: $size;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+
+// Usage 
+
+// .avatar {
+//   @include square(100px, $radius: 4px);
+// }
+
+
+// Common Properties for Height, Posioning
+
+@mixin order($height, $selectors...) {
+  @for $i from 0 to length($selectors) {
+    #{nth($selectors, $i + 1)} {
+      height: $height;
+      margin-top: $i * $height;
+    }
+  }
+}
+
+// Usage 
+//@include order(150px, "input.name", "input.address", "input.zip");
+
+// Filter Mixin
+
+@mixin prefix($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+  #{$property}: $value;
+}
+
+// Usage
+
+// .gray {
+//   @include prefix(filter, grayscale(50%), moz webkit);
+// }
+
+// Avtar Mixin
+
+@mixin avatar($size, $circle: false) {
+  width: $size;
+  height: $size;
+
+  @if $circle {
+    border-radius: $size / 2;
+  }
+}
+
+// Usage
+
+// .square-av { @include avatar(100px, $circle: false); }
+// .circle-av { @include avatar(100px, $circle: true); }
+
+// Triangle Mixin
+
+
+@mixin triangle($size, $color, $direction) {
+  height: 0;
+  width: 0;
+
+  border-color: transparent;
+  border-style: solid;
+  border-width: $size / 2;
+
+  @if $direction == up {
+    border-bottom-color: $color;
+  } @else if $direction == right {
+    border-left-color: $color;
+  } @else if $direction == down {
+    border-top-color: $color;
+  } @else if $direction == left {
+    border-right-color: $color;
+  } @else {
+    @error "Unknown direction #{$direction}.";
+  }
+}
+
+// Usage
+
+// .next {
+//   @include triangle(5px, black, right);
+// }
+
+
+// Transform Mixin
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+//  Usage
+
+// .box { @include transform(rotate(30deg)); }
+
+// Border Radius Mixin
+
+@mixin border-radius($pixel...) {
+  border-radius: $pixel;
+  -moz-border-radius:$pixel;
+  -webkit-border-radius:$pixel;
+  -ms-border-radius:$pixel;
+}
+
+// Usage
+
+// @include border-radius(10px 5px 20px 10px);
+
+
+
+
+

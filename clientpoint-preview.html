@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/pikaday.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.scrollbar.css" />
+    <link type="text/css" rel="stylesheet" href="scss/materialize.css" />
+    <title>Welcome To ClientPoint</title>
+    <!-- Custom CSS start here  -->
+
+</head>
+
+<body class="fullHeight">
+    <!-- Main Content start here  -->
+    <div id="content" class="m-0">
+        <div class="content-common">
+            <div class="clientPoint-file">
+                <div class="clientpointPreview">
+                    <div class="clientPointPowerdBy">
+                        <div class="poweredByMarvel">
+                            <a href="#!" class="marvelLogo">
+                                <img src="images/marvel-logo.svg" alt="">
+                            </a>
+                            <span class="borderMarvel"></span>
+                            <a href="#!" class="encomLink">Presenting to Encom International</a>
+                        </div>
+                        <div class="PowerdByRightPanel">
+                            <div class="PowerdByLogo">
+                                <img src="./images/powered-logo-clientpoint.svg" alt="">
+                            </div>
+                            <div class="sentByDropdown">
+                                <h5>Sent by Miles Morales</h5>
+                                <i class="material-icons downArrowPowered dropdown-trigger"
+                                    data-target="viewerUserDropdown">
+                                    arrow_drop_down
+                                </i>
+                                <ul id="viewerUserDropdown" class="dropdown-content viewerUserDropdownContent">
+                                    <li>
+                                        <div class="userInfoViewer">
+                                            <div class="viewerUserimg">
+                                                <img src="./images/viewerUser-img.png" alt="">
+                                            </div>
+                                            <h6>Miles Morales</h6>
+                                            <p>Senior Sales Manager at Marvel Studios</p>
+                                        </div>
+                                    </li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li>
+                                        <a href="javascript:void(0);"><span class="emailIcon"></span>
+                                            milesm@marvel.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><span class="phoneIcon"></span> 555-555-5555</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><span class="mobileIcon"></span> 555-555-5555</a>
+                                    </li>
+                                    <li><a href="javascript:void(0);">
+                                            <span class="linkedInIcon"></span>
+                                            linkedin/username
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="powerdByToggle">
+                        <div class="powerdByToggleInner">
+                            <div class="powerdByToggleLinks">
+                                <ul>
+                                    <li>
+                                        <a data-tab="Comments" href="javascript:void(0);" class="viewerLinks">
+                                            <span class="powerdCommentIcon"></span> Comments
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-tab="Uploads" href="javascript:void(0);" class="viewerLinks">
+                                            <span class="powerdUploadIcon"></span> Uploads
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-tab="Print" href="javascript:void(0);" class="viewerLinks">
+                                            <span class="powerdPrintIcon"></span> Print
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-tab="Share" href="javascript:void(0);" class="viewerLinks">
+                                            <span class="powerdShareIcon"></span> Share
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Comments Sidebar Start here  -->
+                                <div class="viewerSidebarCommon" id="Comments">
+                                    <div class="printSidebar">
+                                        <div class="viewerSidebarHeader">
+                                            <a href="javascript:void(0);" class="viewerBackArrow"
+                                                onclick="closeSidebar();"></a>
+                                            <h5>Comments</h5>
+                                        </div>
+                                        <div class="commentBox">
+                                            <textarea cols="30" rows="10"
+                                                placeholder="Write your comment here"></textarea>
+                                            <button class="waves-effect waves-light btn btn-round">Submit</button>
+                                        </div>
+                                        <div class="outerScrollViewer">
+                                            <div class="wrapper scrollbar-dynamic">
+                                                <div class="page-content">
+                                                    <div class="content">
+                                                        <div class="demo">
+                                                            <div class="scrollbar-inner">
+                                                                <div class="viewerSidebarContent">
+                                                                    <div class="pastComments">
+                                                                        <div class="pastCommentsHeader">
+                                                                            <span class="commentIcon"></span>
+                                                                            <h4>Past Comments</h4>
+                                                                        </div>
+                                                                        <div class="comment-row">
+                                                                            <h5>Miles Morales wrote:</h5>
+                                                                            <p><a href="javascript:void(0);"
+                                                                                    class="commentlink">@KevinFlynn</a>
+                                                                                Ut enim ad minim veniam, quis
+                                                                                nostrud exercitation ullamco laboris
+                                                                                nisi ut aliquip ex ea commodo consequat.
+                                                                                <a href="javascript:void(0);"
+                                                                                    class="commentlink">@EdwardDillinger</a>
+                                                                                Duis aute irure dolor
+                                                                                in reprehenderit in voluptate velit esse
+                                                                                cillum dolore eu fugiat nulla pariatur.
+                                                                            </p>
+                                                                            <div class="dateComments">
+                                                                                <h6>MM/DD/YYYY 00:00 AM • while viewing
+                                                                                    <a href="javascript:void(0);"
+                                                                                        class="commentlink">Services</a>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="comment-row">
+                                                                            <h5>Kevin Flynn wrote:</h5>
+                                                                            <p><a href="javascript:void(0);"
+                                                                                    class="commentlink">@MilesMorales</a>
+                                                                                Ut enim ad minim veniam, quis
+                                                                                nostrud exercitation ullamco laboris
+                                                                                nisi ut aliquip ex ea commodo consequat.
+                                                                                <a href="javascript:void(0);"
+                                                                                    class="commentlink">@EdwardDillinger</a>
+                                                                                Duis aute irure dolor
+                                                                                in reprehenderit in voluptate velit esse
+                                                                                cillum dolore eu fugiat nulla pariatur.
+                                                                            </p>
+                                                                            <div class="dateComments">
+                                                                                <h6>MM/DD/YYYY 00:00 AM • while viewing
+                                                                                    <a href="javascript:void(0);"
+                                                                                        class="commentlink">Services</a>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="comment-row">
+                                                                            <h5>Miles Morales wrote:</h5>
+                                                                            <p><a href="javascript:void(0);"
+                                                                                    class="commentlink">@KevinFlynn</a>
+                                                                                Ut enim ad minim veniam, quis
+                                                                                nostrud exercitation ullamco laboris
+                                                                                nisi ut aliquip ex ea commodo consequat.
+                                                                                <a href="javascript:void(0);"
+                                                                                    class="commentlink">@EdwardDillinger</a>
+                                                                                Duis aute irure dolor
+                                                                                in reprehenderit in voluptate velit esse
+                                                                                cillum dolore eu fugiat nulla pariatur.
+                                                                            </p>
+                                                                            <div class="dateComments">
+                                                                                <h6>MM/DD/YYYY 00:00 AM • while viewing
+                                                                                    <a href="javascript:void(0);"
+                                                                                        class="commentlink">Services</a>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comments Sidebar Start here  -->
+                                <!-- Uploads Sidebar Start here  -->
+                                <div class="viewerSidebarCommon" id="Uploads">
+                                    <div class="printSidebar">
+                                        <div class="viewerSidebarHeader">
+                                            <a href="javascript:void(0);" class="viewerBackArrow"
+                                                onclick="closeSidebar();"></a>
+                                            <h5>Upload</h5>
+                                        </div>
+                                        <div class="outerScrollViewer">
+                                            <div class="wrapper scrollbar-dynamic">
+                                                <div class="page-content">
+                                                    <div class="content">
+                                                        <div class="demo">
+                                                            <div class="scrollbar-inner">
+                                                                <div class="uploadAttachement">
+                                                                    <div class="uploadAttachementHeader">
+                                                                        <span class="attachementIcon"></span>
+                                                                        <h5>Upload an Attachment</h5>
+                                                                    </div>
+                                                                    <div class="selectFile">
+                                                                        <div class="file">
+                                                                            <input type="file">
+                                                                            <span class="selectPlaceholder">Select a
+                                                                                file to upload</span>
+                                                                        </div>
+                                                                        <div class="addFilesUpload">
+                                                                            <span class="fileIcon"></span>
+                                                                            <h5>filename.docx</h5>
+                                                                            <span class="fileSize">2MB</span>
+                                                                            <a href="javascript:void(0);"
+                                                                                class="removeFile">
+                                                                                <i class="material-icons">
+                                                                                    close
+                                                                                </i>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="addFilesUpload">
+                                                                            <span class="fileIcon"></span>
+                                                                            <h5>filename.docx</h5>
+                                                                            <span class="fileSize">2MB</span>
+                                                                            <a href="javascript:void(0);"
+                                                                                class="removeFile">
+                                                                                <i class="material-icons">
+                                                                                    close
+                                                                                </i>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="addFilesUpload">
+                                                                            <span class="fileIcon"></span>
+                                                                            <h5>filename.docx</h5>
+                                                                            <span class="fileSize">2MB</span>
+                                                                            <a href="javascript:void(0);"
+                                                                                class="removeFile">
+                                                                                <i class="material-icons">
+                                                                                    close
+                                                                                </i>
+                                                                            </a>
+                                                                        </div>
+                                                                        <a class="btn-flat addMoreFile">
+                                                                            <i class="material-icons">
+                                                                                add
+                                                                            </i>
+                                                                            Add More Files
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="uploadText">
+                                                                        <p>Attachments are not viewable online, but can
+                                                                            be up to 1GB and downloaded by the
+                                                                            recipient.
+                                                                        </p>
+                                                                        <button
+                                                                            class="waves-effect waves-light btn btn-round">Upload</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Uploads Sidebar Start here  -->
+                                <!-- Print Sidebar Start here  -->
+                                <div class="viewerSidebarCommon" id="Print">
+                                    <div class="printSidebar">
+                                        <div class="viewerSidebarHeader">
+                                            <a href="javascript:void(0);" class="viewerBackArrow"
+                                                onclick="closeSidebar();"></a>
+                                            <h5>Print & Save</h5>
+                                        </div>
+                                        <div class="outerScrollViewer">
+                                            <div class="wrapper scrollbar-dynamic">
+                                                <div class="page-content">
+                                                    <div class="content">
+                                                        <div class="demo">
+                                                            <div class="scrollbar-inner">
+                                                                <div class="viewerSidebarContent">
+                                                                    <p>Select the files you would like to
+                                                                        download and hit save! You can also
+                                                                        download or print all the files in this
+                                                                        ClientPoint.
+                                                                    </p>
+                                                                    <ul class="collapsible">
+                                                                        <li class="active">
+                                                                            <div class="collapsible-header">
+                                                                                <div class="collapseTopRow">
+                                                                                    <span class="fileIcon"></span>
+                                                                                    <h6>ClientPoint Files </h6>
+                                                                                    <span class="fileCount">(21
+                                                                                        Files)</span>
+                                                                                    <span class="accordion-arrow">
+                                                                                        <i class="material-icons">
+                                                                                            arrow_drop_down
+                                                                                        </i>
+                                                                                    </span>
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <div class="collapsible-body">
+                                                                                <div class="printContent">
+                                                                                    <div class="printContentSaveHead">
+                                                                                        <div class="selectCheck">
+                                                                                            <div class="selectAll">
+                                                                                                <label>
+                                                                                                    <input
+                                                                                                        type="checkbox"
+                                                                                                        class="filled-in"
+                                                                                                        checked="checked" />
+                                                                                                    <span>Select
+                                                                                                        All</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                            <div class="saveSelect">
+                                                                                                <span
+                                                                                                    class="saveIcon"></span>
+                                                                                                <h6>SAVE SELECT
+                                                                                                </h6>
+                                                                                                <a href="javascript:void(0);"
+                                                                                                    class="saveDropdownIcon dropdown-trigger"
+                                                                                                    data-target="printDropdown"></a>
+                                                                                                <ul id='printDropdown'
+                                                                                                    class='dropdown-content printDropdownContent'>
+                                                                                                    <li><a
+                                                                                                            href="javascript:void(0);"><span
+                                                                                                                class="downloadIcon"></span>Download
+                                                                                                            All</a>
+                                                                                                    </li>
+                                                                                                    <li><a
+                                                                                                            href="javascript:void(0);"><span
+                                                                                                                class="printIcon"></span>Print</a>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="saveBorder">
+                                                                                    </div>
+                                                                                    <div class="docSaveRow">
+                                                                                        <label class="check">
+                                                                                            <input type="checkbox"
+                                                                                                class="filled-in" />
+                                                                                            <span></span>
+                                                                                        </label>
+                                                                                        <span class="pdfIcon"></span>
+                                                                                        <p>Document Name</p>
+                                                                                        <span class="eyeIcon"></span>
+                                                                                    </div>
+                                                                                    <div class="docSaveRow">
+                                                                                        <label class="check">
+                                                                                            <input type="checkbox"
+                                                                                                class="filled-in" />
+                                                                                            <span></span>
+                                                                                        </label>
+                                                                                        <span class="pdfIcon"></span>
+                                                                                        <p>Document Name</p>
+                                                                                        <span class="eyeIcon"></span>
+                                                                                    </div>
+                                                                                    <div class="docSaveRow">
+                                                                                        <label class="check">
+                                                                                            <input type="checkbox"
+                                                                                                class="filled-in" />
+                                                                                            <span></span>
+                                                                                        </label>
+                                                                                        <span class="pdfIcon"></span>
+                                                                                        <p>Document Name</p>
+                                                                                        <span class="eyeIcon"></span>
+                                                                                    </div>
+                                                                                    <div class="docSaveRow">
+                                                                                        <label class="check">
+                                                                                            <input type="checkbox"
+                                                                                                class="filled-in" />
+                                                                                            <span></span>
+                                                                                        </label>
+                                                                                        <span class="pdfIcon"></span>
+                                                                                        <p>Document Name</p>
+                                                                                        <span class="eyeIcon"></span>
+                                                                                    </div>
+                                                                                    <div class="docSaveRow">
+                                                                                        <label class="check">
+                                                                                            <input type="checkbox"
+                                                                                                class="filled-in" />
+                                                                                            <span></span>
+                                                                                        </label>
+                                                                                        <span class="pdfIcon"></span>
+                                                                                        <p>Document Name</p>
+                                                                                        <span class="eyeIcon"></span>
+                                                                                    </div>
+                                                                                    <div class="docSaveRow">
+                                                                                        <label class="check">
+                                                                                            <input type="checkbox"
+                                                                                                class="filled-in" />
+                                                                                            <span></span>
+                                                                                        </label>
+                                                                                        <span class="pdfIcon"></span>
+                                                                                        <p>Document Name</p>
+                                                                                        <span class="eyeIcon"></span>
+                                                                                    </div>
+                                                                                    <div class="docSaveRow">
+                                                                                        <label class="check">
+                                                                                            <input type="checkbox"
+                                                                                                class="filled-in" />
+                                                                                            <span></span>
+                                                                                        </label>
+                                                                                        <span class="pdfIcon"></span>
+                                                                                        <p>Document Name</p>
+                                                                                        <span class="eyeIcon"></span>
+                                                                                    </div>
+                                                                                    <div class="docSaveRow">
+                                                                                        <label class="check">
+                                                                                            <input type="checkbox"
+                                                                                                class="filled-in" />
+                                                                                            <span></span>
+                                                                                        </label>
+                                                                                        <span class="pdfIcon"></span>
+                                                                                        <p>Document Name</p>
+                                                                                        <span class="eyeIcon"></span>
+                                                                                    </div>
+                                                                                    <div class="docSaveRow">
+                                                                                        <label class="check">
+                                                                                            <input type="checkbox"
+                                                                                                class="filled-in" />
+                                                                                            <span></span>
+                                                                                        </label>
+                                                                                        <span class="pdfIcon"></span>
+                                                                                        <p>Document Name</p>
+                                                                                        <span class="eyeIcon"></span>
+                                                                                    </div>
+                                                                                    <div class="docSaveRow">
+                                                                                        <label class="check">
+                                                                                            <input type="checkbox"
+                                                                                                class="filled-in" />
+                                                                                            <span></span>
+                                                                                        </label>
+                                                                                        <span class="pdfIcon"></span>
+                                                                                        <p>Document Name</p>
+                                                                                        <span class="eyeIcon"></span>
+                                                                                    </div>
+                                                                                    <div class="docSaveRow">
+                                                                                        <label class="check">
+                                                                                            <input type="checkbox"
+                                                                                                class="filled-in" />
+                                                                                            <span></span>
+                                                                                        </label>
+                                                                                        <span class="pdfIcon"></span>
+                                                                                        <p>Document Name</p>
+                                                                                        <span class="eyeIcon"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <!-- <li>
+                                                        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                                                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                                        </li>
+                                                        <li>
+                                                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                                                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                                        </li> -->
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Print Sidebar Start here  -->
+                                <!-- Share Sidebar Start here  -->
+                                <div class="viewerSidebarCommon" id="Share">
+                                    <div class="printSidebar">
+                                        <div class="viewerSidebarHeader">
+                                            <a href="javascript:void(0);" class="viewerBackArrow"
+                                                onclick="closeSidebar();"></a>
+                                            <h5>Share</h5>
+                                        </div>
+                                        <div class="outerScrollViewer">
+                                            <div class="wrapper scrollbar-dynamic">
+                                                <div class="page-content">
+                                                    <div class="content">
+                                                        <div class="demo">
+                                                            <div class="scrollbar-inner">
+                                                                <div class="shareProposal">
+                                                                    <div class="sharePerposalHeader">
+                                                                        <span class="shareIcon"></span>
+                                                                        <h5>Share Proposal</h5>
+                                                                    </div>
+                                                                    <div class="shareEmail">
+                                                                        <div class="toSenderRow">
+                                                                            <span class="toText">To</span>
+                                                                            <input type="email" class="toSend"
+                                                                                placeholder="recipient email address...">
+                                                                        </div>
+                                                                        <div class="toSenderRow">
+                                                                            <span class="toText">From</span>
+                                                                            <input type="email" class="toSend"
+                                                                                placeholder="" value="miles@encom.com">
+                                                                        </div>
+                                                                        <div class="writeMsg">
+                                                                            <textarea cols="30" rows="10"
+                                                                                placeholder="Write your message here"></textarea>
+                                                                            <button type="submit"
+                                                                                class="waves-effect waves-light btn btn-round">Submit</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Share Sidebar Start here  -->
+                            </div>
+                            <div class="SignNow">
+                                <a class="waves-effect waves-light btn btn-round signUp modal-trigger"
+                                    href="#signNowModal">Sign Now</a>
+                                <a class="waves-effect waves-light btn btn-round dark-bg-btn dropdown-trigger"
+                                    data-target='dropdown1'>100%
+                                    <i class="material-icons">
+                                        arrow_drop_down
+                                    </i>
+                                </a>
+                                <ul id="dropdown1" class="dropdown-content zoomDropDown">
+                                    <li><a href="#!">Fit</a></li>
+                                    <li><a href="#!">50%</a></li>
+                                    <li><a href="#!">75%</a></li>
+                                    <li><a href="#!">90%</a></li>
+                                    <li><a href="#!" class="active">100%</a></li>
+                                    <li><a href="#!">125%</a></li>
+                                    <li><a href="#!">150%</a></li>
+                                    <li><a href="#!">200%</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="creatingPerposal cereatProposalHeight">
+                    <div class="creatingPerposalLeft">
+                        <!-- <p>Start creating your proposal now by adding a files or start from a <a
+                                href="javascript:void(0);" class="templateLink">template.</a></p> -->
+                        <!-- <div class="editingHeading">
+                            <div class="pageCount">
+                                1 / 8
+                            </div>
+                            <a class="editing" href="javascript:void(0);">
+                                <span class="EditIcon"></span>Editing
+                            </a>
+                        </div> -->
+                        <div class="prevNextBtn">
+                            <a href="javascript:void(0);" class="prevSection"><span class="prevIcon"></span>Previous
+                                Section</a>
+                            <a href="javascript:void(0);" class="nextSection">
+                                Next Section
+                                <span class="nextIcon"></span>
+                            </a>
+                        </div>
+
+                        <div class="outerScroll">
+                            <div class="wrapper scrollbar-dynamic">
+                                <div class="page-content">
+                                    <div class="content">
+                                        <div class="demo">
+                                            <div class="scrollbar-inner">
+                                                <div class="clientpointEditing rightMarginPreview">
+                                                    <p>Nullam non nisi est sit amet facilisis magna. Neque convallis a
+                                                        cras semper auctor. Orci eu lobortis elementum nibh tellus
+                                                        molestie nunc non blandit. Ac orci phasellus egestas tellus
+                                                        rutrum tellus pellentesque eu tincidunt. Lacus sed turpis
+                                                        tincidunt id aliquet risus feugiat in ante. Sagittis id
+                                                        consectetur purus ut faucibus pulvinar elementum integer enim.
+                                                        Augue interdum velit euismod in pellentesque massa placerat duis
+                                                        ultricies. Condimentum lacinia quis vel eros donec ac odio.
+                                                        Fringilla urna porttitor rhoncus dolor purus. Ultricies mi eget
+                                                        mauris pharetra. Aliquet nibh praesent tristique magna sit amet
+                                                        purus gravida. A pellentesque sit amet porttitor eget dolor.
+                                                        Etiam non quam lacus suspendisse faucibus interdum posuere.
+                                                        Egestas erat imperdiet sed euismod nisi porta lorem mollis
+                                                        aliquam. Ipsum dolor sit amet consectetur adipiscing elit ut.
+                                                        Consectetur libero id faucibus nisl tincidunt eget nullam non.
+                                                        Fringilla urna porttitor rhoncus dolor purus non.</p>
+                                                    <h6 class="acceptProposal">By signing below you have read and
+                                                        accepted
+                                                        this proposal:</h6>
+                                                    <div class="signatureForm">
+                                                        <div class="row">
+                                                            <div class="input-field col s12">
+                                                                <div class="signImg">
+                                                                    <img src="images/sign-img.svg" alt="">
+                                                                </div>
+                                                                <input id="last_name" type="text" class="validate"
+                                                                    value="Click to Sign">
+                                                                <a
+                                                                    class="waves-effect waves-light btn btn-round btn-small clearSignature">
+                                                                    Clear Signature
+                                                                </a>
+                                                                <label for="last_name">Signature</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="input-field col l6 m6 s12">
+                                                                <input placeholder="Full name…" id="Print_name"
+                                                                    type="text" class="validate" value="Kevin Flynn">
+                                                                <label for="Print_name">Print name</label>
+                                                            </div>
+                                                            <div class="input-field col l6 m6 s12">
+                                                                <input id="Date" type="text" class="validate"
+                                                                    placeholder="MM/DD/YYY" value="08/08/2019">
+                                                                <label for="Date">Date</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="creatingPerposalRight perposalPostionRight creatingPerposalRightMove">
+                        <ul class="collapsible">
+                            <li>
+                                <div class="tableOfContent">
+                                    <span class="tabelBook"></span> Table of Content
+                                    <a href="javascript:void(0);" class="toggleBackArrow"></a>
+                                </div>
+                                <div class="collapsible-header">
+                                    Introduction
+                                    <i class="material-icons arrowAccordion">
+                                        arrow_drop_down
+                                    </i>
+                                </div>
+                                <div class="collapsible-body">
+                                    <a href="javascript:void(0);" class="IntroDuctionRow active">
+                                        <span class="penIcon"></span>
+                                        <span class="PDFIcon"></span> Cover Letter
+                                        <span class="checkIcon"></span>
+                                        <span class="downloadIcon ml-auto"></span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="IntroDuctionRow">
+                                        <span class="penIcon"></span><span class="PDFIcon"></span>About
+                                        <span class="editBtns">
+                                            <span class="editBtn"></span>
+                                            <span class="dotBtn dropdown-trigger" data-target='dropdown2'></span>
+                                        </span>
+                                        <span class="downloadIcon"></span>
+                                    </a>
+                                    <ul id='dropdown2' class='dropdown-content'>
+                                        <li><a href="#!">Delete</a></li>
+                                        <li><a href="#!">Rename</a></li>
+                                        <li><a href="#!">Move</a></li>
+                                        <li class="divider" tabindex="-1"></li>
+                                        <li>
+                                            <div class="switchInline">Downloadable
+                                                <div class="switch">
+                                                    <label>
+                                                        <input checked type="checkbox">
+                                                        <span class="lever"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="switchInline">eSignature
+                                                <div class="switch">
+                                                    <label>
+                                                        <input disabled type="checkbox">
+                                                        <span class="lever"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="javascript:void(0);" class="IntroDuctionRow">
+                                        <span class="penIcon"></span><span class="PDFIcon"></span>Company Mission
+                                        <span class="downloadIcon ml-auto"></span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="IntroDuctionRow">
+                                        <span class="penIcon"></span>
+                                        <span class="powerPointIcon"></span> Case Study
+                                        <span class="downloadIcon ml-auto"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    Services & Pricing
+                                    <i class="material-icons arrowAccordion">
+                                        arrow_drop_down
+                                    </i>
+                                </div>
+                                <div class="collapsible-body">
+                                    <a href="#" class="IntroDuctionRow">
+                                        <span class="penIcon"></span>
+                                        <span class="PDFIcon"></span> Services
+                                        <span class="downloadIcon ml-auto"></span>
+                                    </a>
+                                    <a href="#" class="IntroDuctionRow">
+                                        <span class="penIcon"></span>
+                                        <span class="excelIcon"></span> Product Quote
+                                        <span class="downloadIcon ml-auto"></span>
+                                    </a>
+                                    <a href="#" class="IntroDuctionRow">
+                                        <span class="penIcon"></span>
+                                        <span class="excelIcon"></span> Service Quote
+                                        <span class="downloadIcon ml-auto"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    Conclusion <i class="material-icons arrowAccordion">
+                                        arrow_drop_down
+                                    </i></div>
+                                <div class="collapsible-body">
+                                    <a href="#" class="IntroDuctionRow">
+                                        <span class="penIcon"></span>
+                                        <span class="wordIcon"></span> Work Scope
+                                        <span class="downloadIcon ml-auto"></span>
+                                    </a>
+                                    <a href="#" class="IntroDuctionRow">
+                                        <span class="penIcon"></span>
+                                        <span class="wordIcon"></span> Service Agreement
+                                        <span class="downloadIcon ml-auto"></span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="showtableContentArrow">
+                            Table of Content
+                            <a href="javascript:void(0);" class="toggleBackArrow"></a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Now Modal start here -->
+
+    <div id="signNowModal" class="modal signInModalContent">
+        <div class="modal-header">
+            <span class="signatureIcon"></span>
+            <h4>Signature</h4>
+            <a class="modal-close">
+                <i class="material-icons">
+                    close
+                </i>
+            </a>
+        </div>
+        <div class="modal-content">
+            <h6>By signing below you have read and accept this proposal:</h6>
+            <form class="signForm">
+                <div class="form-fields">
+                    <label>
+                        Print name
+                    </label>
+                    <input type="text" class="fullName" placeholder="Full name…">
+                </div>
+                <div class="typeIt">
+                    <div class="typeItLabelRow">
+                        <label>
+                            <span class="typeIcon"></span> Type it
+                        </label>
+                        <label>
+                            <span class="drawIcon"></span> Draw it
+                        </label>
+                    </div>
+                    <div class="clickToSign">
+                        Click to Sign
+                    </div>
+                </div>
+                <div class="form-fields">
+                    <label>
+                        Comments (Optional)
+                    </label>
+                    <textarea cols="30" rows="10" class="commentTextarea"></textarea>
+                </div>
+                <div class="form-fields mt-20">
+                    <label>
+                        PO Number (Optional)
+                    </label>
+                    <input type="tel" class="phNumber">
+                </div>
+                <button type="submit" class="btn btn-round termsbtn">I accpet the term of of this agreement</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Now Modal end here -->
+
+    <div class="proposalTrial">
+        <p>Change the way you do proposals.
+            <a href="javascript:void(0);" class="trialLink">SIgn up for a free
+                ClientPoint trial today.
+            </a>
+        </p>
+    </div>
+
+    <!-- Main Content end here  -->
+
+    <!-- Javascript files start here -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.scrollbar-inner').scrollbar();
+        });
+    </script>
+</body>
+
+</html>

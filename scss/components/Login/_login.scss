@@ -1,0 +1,441 @@
+@import "../variables";
+@import "../mixin";
+@import "../extend";
+
+/* Login page start here  */
+
+.login {
+	@include flexbox();
+	@include flex-wrap($wrap);
+	height: $height-hundred-per;
+	.loginLeftPanel {
+		background: url(../images/login-bg.jpg) no-repeat top center;
+		background-size: $full-width $full-width;
+		max-width: 40.9%;
+		flex: 0 0 40.9%;
+		height: $height-hundred-per;
+		@include margin-padding(all, null, all, 64px 75px 35px 75px);
+		@include relative;
+	}
+	.loginLeftContent {
+		@include margin-padding(all, 143px 0 0 0, all, null);
+		h1 {
+			@include font-rem(34px, 46px);
+			color: color("shades", "white");
+			@include font-weight(bold);
+			@include margin-padding(all, 0 0 20px 0, all, null);
+		}
+		p {
+			@include font-rem(16px, 26px);
+			color: color("shades", "white");
+			@include margin-padding(all, 0 0 20px 0, all, null);
+		}
+		.nextStepArrow {
+			background: url(../images/common-icons.svg) no-repeat -174px -1308px;
+			width: 1.2rem;
+			height: 1.3rem;
+			margin-right: 1rem;
+			display: $display-inline-block;
+		}
+	}
+	.loginLinks {
+		@include absolute(top auto left auto bottom 30px);
+		.links {
+			@include font-rem(14px, 20px);
+			color: color("shades", "white");
+			@include margin-padding(all, 0 15px 0 0, all, null);
+		}
+	}
+	.loginRightPanel {
+		background: color("shades", "white");
+		max-width: 59.1%;
+		flex: 0 0 59.1%;
+		@include margin-padding(all, null, all, 64px 0 0 0);
+		@include relative;
+		// height: $height-hundred-per;
+		height: 100%;
+		.loginStep {
+			ul {
+				@include inlineflex();
+				@include flex-wrap($wrap);
+				align-items: $align-items-center;
+				@include relative();
+				@include margin-padding(all, null, all, 0 0 0 64px);
+				background: color("shades", "white");
+				height: $height-hundred-per;
+				li {
+					@include margin-padding(all, 0 0 10px 0, all, null);
+					@include flexbox();
+					@include flex-wrap($wrap);
+					align-items: $align-items-center;
+					a {
+						@include flexbox();
+						@include flex-wrap($wrap);
+						align-items: $align-items-center;
+						//justify-content: $justifycenter;
+						@include font-rem(14px, 20px);
+						color: color("grey", "lighten-3");
+						@include relative();
+						z-index: 1;
+						background: color("shades", "white");
+						text-shadow: $none;
+						@include font-weight(normal);
+						span {
+							justify-content: $justifycenter;
+							@include flexbox();
+							@include flex-wrap($wrap);
+							align-items: $align-items-center;
+							color: color("shades", "white");
+							@include font-weight(medium);
+							@include margin-padding(all, 0 16px 0 0, all, null);
+						}
+					}
+					.active {
+						color: $recipentlabelColor;
+						.stepCount {
+							background: color("indigo", "base");
+						}
+						.greyBoreder {
+							background: color("indigo", "base");
+						}
+					}
+					.greyBoreder {
+						content: "";
+						width: 60px;
+						height: 1px;
+						background: color("grey", "lighten-3");
+						@include margin-padding(all, 0 16px, all, null);
+					}
+				}
+			}
+			.stepCount {
+				$size: 33px;
+				width: $size;
+				height: $size;
+				border-radius: $size/2;
+				background: color("grey", "lighten-3");
+			}
+
+			.indicator {
+				display: $none;
+			}
+		}
+	}
+	.loginForm {
+		// max-width: 567px;
+		width: $full-width;
+		// @include margin-padding(all, 0 auto 0, all, null);
+
+		height: $height-hundred-per;
+		form {
+			height: $height-hundred-per;
+		}
+		.input-field {
+			margin-bottom: 2.8rem;
+			.quizIcon {
+				background: url(../images/common-icons.svg) no-repeat -245px -1306px;
+				width: 1.2rem;
+				height: 1.3rem;
+				margin-right: 1rem;
+				@include absolute(top auto right 0);
+			}
+			label {
+				@include font-rem(14px, 24px);
+				color: $recipentlabelColor;
+				text-transform: $text-capitalize;
+				@include font-weight(normal);
+				span {
+					color: color("red", "base");
+					@include font-rem(14px);
+				}
+			}
+			input {
+				border-bottom: 2px solid color("grey", "lighten-3");
+				@include font-rem(14px);
+				&:focus {
+					border-bottom: 2px solid color("green", "base");
+				}
+				@include input-placeholder {
+					color: color("grey", "lighten-3");
+				}
+			}
+			.invalid {
+				border-bottom: 2px solid color("red", "base");
+			}
+		}
+		// .input-field > label:not(.label-icon).active {
+		// 	-webkit-transform: translateY(-31px);
+		// 	transform: translateY(-31px);
+		// }
+		.btn.disabled {
+			background: #dfdfdf !important;
+		}
+		.btn {
+			@include flexbox();
+			@include flex-wrap($wrap);
+			align-items: $align-items-center;
+			justify-content: $justifycenter;
+			width: $full-width;
+			@include absolute(top auto left 0 bottom 0);
+			@include font-rem(22px, 26px);
+			@include font-weight(medium);
+			color: color("shades", "white");
+			box-shadow: $none;
+			@include margin-padding(all, null, all, 35px);
+			letter-spacing: 1px;
+			height: $height-auto;
+			@include background-gradient(#5f63ff, #d653dd, #d8094a, horizontal);
+			.material-icons {
+				@include font-rem(22px, 26px);
+				margin-left: 10px;
+			}
+		}
+		// .onWardArrow {
+		//     background: url(../images/common-icons.svg) no-repeat -321px -1305px;
+		//     width: 1.6rem;
+		//     height: 1.3rem;
+		//     margin-left: 0.6rem;
+		// }
+		.file-path-wrapper {
+			input {
+				border-bottom: 2px solid #d4d4de;
+				font-size: 14px;
+				font-size: 1rem;
+				padding-left: 78px;
+				height: 107px;
+			}
+		}
+	}
+}
+.getting-started {
+	@include margin-padding(all, 60px 0 0 0, all, null);
+	p {
+		@include font-rem(16px, 26px);
+		color: color("shades", "white");
+		text-align: $text-center;
+		@include margin-padding(all, 0 0 20px 0, all, null);
+	}
+	.getting-started-row {
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+		justify-content: $justifycenter;
+		.btn {
+			max-width: 288px;
+		}
+		.visit-btn {
+			background: color("shades", "white");
+			@include font-rem(14px, 16px);
+			color: color("grey", "darken-4");
+			height: $height-auto;
+			letter-spacing: 0.7px;
+			text-transform: $text-uppercase;
+			@include margin-padding(all, 10px, all, 14px 10px);
+			border: 2px solid color("shades", "white");
+			&:hover {
+				background: color("indigo", "base");
+				color: color("shades", "white");
+				border: 2px solid color("indigo", "base");
+			}
+		}
+		.contact-btn {
+			background: color("shades", "transparent");
+			@include font-rem(14px, 16px);
+			color: color("shades", "white");
+			height: $height-auto;
+			letter-spacing: 0.7px;
+			text-transform: $text-uppercase;
+			@include margin-padding(all, 10px, all, 14px 10px);
+			border: 2px solid color("shades", "white");
+			&:hover {
+				background: color("indigo", "base");
+				color: color("shades", "white");
+				border: 2px solid color("indigo", "base");
+			}
+		}
+	}
+}
+.splashFormCenter {
+	h1 {
+		text-align: $text-center;
+		@include font-rem(34px, 46px);
+		@include margin-padding(all, 0 0 50px 0, all, null);
+		@include font-weight(bold);
+		color: color("grey", "darken-4");
+	}
+	.invalid {
+		border-bottom: 1px solid color("red", "base") !important;
+	}
+}
+.loginPadding {
+	@include margin-padding(all, null, all, 62px 98px 62px 117px !important);
+}
+.urlexten {
+	@include font-rem(14px, 24px);
+	@include font-weight(medium);
+	color: $recipentlabelColor;
+	text-transform: $text-capitalize;
+}
+.agreeCheck {
+	span {
+		@include font-rem(14px, 24px);
+		color: $recipentlabelColor;
+	}
+}
+.filePlus {
+	width: 65px;
+	height: 65px;
+	line-height: 65px;
+	@include flexbox();
+	@include flex-wrap($wrap);
+	align-items: $align-items-center;
+	justify-content: $justifycenter;
+	border: 1px dashed color("grey", "lighten-3");
+	@include absolute(top 29px);
+	// top: 29px;
+	.material-icons {
+		color: color("indigo", "base");
+	}
+}
+.fileMargin {
+	@include margin-padding(all, 10px 0 0 0 !important, all, null);
+	.input-field {
+		margin-bottom: 2rem !important;
+	}
+}
+.fullWidth {
+	max-width: $full-width !important;
+}
+.addRecipent {
+	@include flexbox();
+	@include flex-wrap($wrap);
+	align-items: $align-items-center;
+	@include font-rem(13px, 20px);
+	color: color("indigo", "base");
+	text-transform: $text-uppercase;
+	@include font-weight(bold);
+	.material-icons {
+		font-size: 18px;
+		margin-right: 6px;
+	}
+}
+.small-space {
+	margin-bottom: 1.6rem !important;
+}
+#fileUploadModal {
+	max-width: 664px;
+	.modal-header {
+		@include margin-padding(all, null, all, 2.6rem 2.4375rem 1.3rem 4.9rem);
+		.shareIcon {
+			background: url(../images/common-icons.svg) no-repeat -242px -192px;
+			width: 1.5rem;
+			height: 1.85rem;
+			margin-right: 11px;
+		}
+		.material-icons {
+			color: color("grey", "darken-4");
+		}
+	}
+	.modal-content {
+		@include margin-padding(all, null, all, 0.7rem 4.375rem 1.3rem 4.9rem);
+		h4 {
+			@include font-rem(24px, 34px);
+			color: color("grey", "darken-4");
+			@include font-weight(semi-bold);
+			@include margin-padding(all, 0 0 43px 0, all, null);
+		}
+	}
+	.uploadFileChoose {
+		border: 1px dashed color("grey", "lighten-3");
+		height: 294px;
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+		justify-content: $justifycenter;
+		@include relative();
+		.fileImage {
+			background: url(../images/common-icons.svg) no-repeat -380px -1287px;
+			width: 2.8rem;
+			height: 2.8rem;
+			margin-right: 1rem;
+			display: $display-inline-block;
+		}
+		p {
+			@include font-rem(16px, 28px);
+			color: $recipentlabelColor;
+			@include margin-padding(all, 10px 0 0 0, all, null);
+		}
+	}
+	.uploadChooseContent {
+		text-align: $text-center;
+		padding: 15px;
+		.progress {
+			max-width: 283px;
+			@include margin-padding(all, 0 auto, all, null);
+			background: color("grey", "lighten-5");
+			height: 8px;
+			border-radius: 5px;
+			.determinate {
+				background: color("indigo", "base");
+			}
+		}
+	}
+	input[type="file"] {
+		@include absolute(top 0 right auto bottom auto left 0);
+		width: $full-width;
+		height: $height-hundred-per;
+		opacity: $zero;
+	}
+	.modal-footer {
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+		@include margin-padding(all, null, all, 0 4.375rem 3.375rem 4.9rem);
+		.btn-flat {
+			@include font-rem(14px, 16px);
+			@include margin-padding(all, 0 30px 0 0, all, null);
+			color: $recipentlabelColor;
+			&:focus {
+				background: color("shades", "transparent");
+			}
+		}
+		.btn-round {
+			margin-right: 0 !important;
+			padding: 0 1.6rem;
+		}
+	}
+	.btn.disabled {
+		background: color("grey", "lighten-5");
+		color: color("grey", "darken-1") !important;
+	}
+}
+.d-none {
+	display: $diplay-none;
+}
+.loginTabContent {
+	height: calc(100% - 153px);
+	.scrollbar-inner > .scroll-element.scroll-y {
+		right: 0;
+	}
+}
+#LoginInformation,
+#SetupProfile,
+#InviteTeam {
+	height: 100%;
+}
+.loginCommonWidth {
+	max-width: 698px;
+	margin: auto;
+	padding: 120px 64px 80px;
+}
+.teamWidth {
+	max-width: 100% !important;
+	margin: auto;
+}
+.fullWidth {
+	width: $full-width;
+}
+.uploadMargin {
+	margin-bottom: 7px !important;
+}
+/* Login page end here  */

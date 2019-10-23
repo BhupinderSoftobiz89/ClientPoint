@@ -1,0 +1,48 @@
+@import "../variables";
+@import "../mixin";
+@import "../extend";
+
+/* Add User CSS start here */
+
+.addUserHeader {
+	@include flexbox();
+	@include flex-wrap($wrap);
+	align-items: $align-items-center;
+	background: color("indigo", "accent-4");
+    @include margin-padding(all, null, all, 17px 50px);
+    .addUserLeftpanel {
+        @include flexbox();
+	@include flex-wrap($wrap);
+	align-items: $align-items-center;
+    }
+	.userIcon {
+        background: url(../images/common-icons.svg) no-repeat -174px -1385px;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 13px;
+	}
+	h1 {
+		@include font-rem(18px, 34px);
+		@include font-weight(semi-bold);
+        color: color("shades", "white");
+        @include margin-padding(all, 0, all, null);
+    }
+    .addUserButtons {
+        @include margin-padding(all, 0 0 0 auto, all, null);
+        .btn {
+            border: 1px solid color('shades','transparent');
+            @include font-rem(14px);
+            @include font-weight(medium);
+            letter-spacing: 0.4375px;
+            min-width: 175px;
+        }
+        .cancel-btn {
+            border: 1px solid color('shades','white');
+            background: color('shades','transparent');
+            @include margin-padding(all, 0 20px 0 0, all, null);
+            // padding: 0 59px;
+        }
+    }
+}
+
+/* Add User CSS end here */

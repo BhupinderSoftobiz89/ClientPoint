@@ -1,0 +1,81 @@
+@import "../components/variables";
+@import "../components/mixin";
+@import "../components/extend";
+
+
+#content {
+    margin: 5rem 0 0 5rem;
+    @include transition($transiton);
+    height: $height-hundred-per;
+}
+.ml-auto{
+    margin-left: $margin-left-auto!important;
+}
+.pl-0 {
+    padding-left: $padding-left-zero;
+}
+.SidebarOpenMargin {
+    margin-left: 19rem !important;
+}
+.content-common {
+    @include flexbox();
+    @include flex-wrap($wrap);
+    height: $height-hundred-per;
+}
+
+
+// Custom Scrollbar
+
+
+.wrapper {
+    height: 100%;
+    //overflow: auto;
+    width: 100%;
+}
+.wrapper.scrollbar-dynamic {
+    max-height: none;
+}
+.page-content {
+    // margin: 0 auto;
+    // max-width: 1600px;
+    //padding: 25px;
+    height: 100%;
+}
+.content .demo {
+    height: 100%;
+	//padding: 25px;
+}
+.content {
+    //max-width: 1200px;
+    height: 100%;
+}
+
+.content .demo {
+    //border: 1px solid #CCC;
+}
+
+.content .demo .inner-content {
+    //border: 1px solid #CCC;
+    //max-height: 170px;
+    width: 600px;
+}
+
+.content .demo > div {
+    // max-height: 333px;
+    height: calc(100% - 0px);
+    overflow: auto;
+}
+.content .demo .permanent {
+    min-width: 800px;
+}
+.controls {
+    padding: 0 0 10px;
+}
+.controls span {
+    cursor: pointer; padding: 2px 8px;
+}
+.controls span.active {
+    background: #4698CE;
+    color: #fff;
+    cursor: default;
+}

@@ -1,0 +1,71 @@
+@import "../components/variables";
+@import "../components/mixin";
+
+// Inheritence start here 
+
+%btn {
+    background: $btnPrimaryColor;
+    border-radius: $border-radius-thirty;
+    @include box-shadow(0, 2px, 7px, rgba(0, 0, 0, 0.15));
+    font-size: $font-size-fourteen;
+    &:hover {
+        @include box-shadow(0, 2px, 7px, rgba(0, 0, 0, 0.15));
+    }
+}
+%border-btn {
+    border: 1px solid $btnPrimaryColor;
+    border-radius: $border-radius-thirty;
+    background: $background-none;
+    color:$default-color;
+    box-shadow: $none;
+    font-weight: $font-weight-500;
+  
+}
+
+%inputFieldCommon {
+    border-bottom: 2px solid #EFEFF3;
+    margin: $zero;
+}
+
+
+
+
+
+
+// Ui Kit Buttons
+
+%btnChangebg {
+    background: color("indigo", "base");
+    &:hover {
+        background: color("indigo", "lighten-1");
+    }
+}
+
+%btn-round {
+    border-radius:$border-radius-thirty;
+    font-size: $font-size-fourteen;
+}
+
+%borderbtn {
+    background: color("shades", "transparent");
+    border: 1px solid color("indigo", "lighten-1");
+    color: color("indigo", "lighten-1");
+    // height: 40px;
+    // line-height: 40px;
+    padding: 0 1.5rem;
+    &:hover {
+        color: color("shades", "white");
+    }
+}
+
+
+// Label 
+
+
+%labelCommon {
+    font-size: $label-font-size;
+    font-weight:$font-weight-500;
+    color: $label-color;
+    text-transform:$text-uppercase;
+    color: color("grey", "darken-1");
+}
