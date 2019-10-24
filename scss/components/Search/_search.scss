@@ -36,6 +36,7 @@
 	}
 	.searchResultContent {
 		flex: 1;
+		height: $height-hundred-per;
 	}
 	.resultsSearchIcon {
 		background: url(../images/common-icons.svg) no-repeat -241px -1378px;
@@ -65,7 +66,7 @@
 		background: #676ad4 url(../images/common-icons.svg) no-repeat -91.7px -1455px;
 	}
 	.editIcon {
-		background: #f7ba0f url(../images/common-icons.svg) no-repeat -174.8px -1451px;
+		background: #f7ba0f url(../images/common-icons.svg) no-repeat -176px -1454px;
 	}
 }
 .searchResult.open {
@@ -84,5 +85,250 @@
 }
 .serachArrow.changeColor {
 	color: color("indigo", "base");
+}
+.searchResultContent {
+	width: $full-width;
+	height: $height-hundred-per;
+	.searchResultHeader {
+		@include margin-padding(all, null, all, 1.5rem 2.5rem 1.5rem 1.875rem);
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+		h1 {
+			@include font-rem(18px, 24px);
+			color: color("grey", "darken-4");
+			@include margin-padding(all, 0, all, null);
+		}
+		.closeResult {
+			color: color("indigo", "base");
+			@include margin-padding(all, 0 0 0 auto, all, null);
+		}
+	}
+	.tabs {
+		border-bottom: 1px solid color("grey", "lighten-3");
+		@include margin-padding(all, null, all, 0 0 0 1.875rem);
+		li {
+			a {
+				@include flexbox();
+				@include flex-wrap($wrap);
+				align-items: $align-items-center;
+			}
+		}
+		.badge {
+			background: color("grey", "lighten-5");
+			border-radius: 1.875rem;
+			text-shadow: $none;
+			color: color("blue-grey", "darken-1");
+		}
+	}
+	.tabContent {
+		@include margin-padding(all, null, all, 1.875rem);
+		height: $height-hundred-per;
+	}
+	.collapsible {
+		border: $none;
+		@include margin-padding(all, 0, all, null);
+		box-shadow: $none;
+		li {
+			@include box-shadow(0, 2px, 7px, rgba(84, 86, 90, 0.2));
+			@include border-radius(5px);
+			@include margin-padding(all, 0 0 1.875rem 0, all, null);
+			&:last-child {
+				@include margin-padding(all, 0, all, null);
+			}
+		}
+		.contactIcon {
+			background: #19e4b1 url(../images/common-icons.svg) no-repeat -28px -1456px;
+			@include w-h-rem(20px, 20px);
+			border-radius: 0.3125rem;
+			@include margin-padding(all, 0 0.9375rem 0 0, all, null);
+		}
+		.collapsible-header {
+			@include flexbox();
+			@include flex-wrap($wrap);
+			align-items: $align-items-center;
+			@include border-radius(5px);
+			border-bottom: 1px solid color("grey", "lighten-5");
+			h5 {
+				@include font-rem(16px, 26px);
+				@include margin-padding(all, 0, all, null);
+				text-transform: $text-uppercase;
+				letter-spacing: 0.5px;
+				color: color("grey", "darken-4");
+				@include font-weight(bold);
+			}
+		}
+		.rotateArrow {
+			@include margin-padding(all, 0 0 0 auto, all, null);
+			@include flexbox();
+			@include flex-wrap($wrap);
+			align-items: $align-items-center;
+			@include transition(all 0.5s);
+			.material-icons {
+				@include font-rem(31px);
+				color: color("indigo", "base");
+				@include margin-padding(all, 0, all, null);
+			}
+		}
+		li.active {
+			.rotateArrow {
+				@include transform(rotate(180deg));
+			}
+			.collapsible-header {
+				@include border-radius(5px 5px 0 0);
+			}
+		}
+		.collapsible-body {
+			border: $none;
+			@include margin-padding(all, null, all, 0);
+		}
+		table {
+			tr {
+				border-bottom: $none;
+			}
+			th {
+				@include margin-padding(all, null, all, 1.25rem);
+				border-bottom: 1px solid color("grey", "lighten-5");
+				text-transform: $text-uppercase;
+				@include font-rem(13px);
+				color: color("grey", "darken-4");
+			}
+			td {
+				@include font-rem(15px);
+				color: color("blue-grey", "darken-1");
+				@include margin-padding(all, null, all, 0.5rem 1.25rem);
+			}
+			td,
+			th {
+				@include w-h-rem(350px);
+			}
+		}
+		.userImage {
+			display: $display-inline-block;
+			vertical-align: $verticle-align-middle;
+			@include margin-padding(all, 0 1rem 0 0, all, null);
+		}
+		.linkUser {
+			@include font-rem(15px);
+			color: color("indigo", "base");
+			@include font-weight(medium);
+			vertical-align: $verticle-align-middle;
+		}
+		.linkedIn {
+			display: $display-inline-block;
+			background: url(../images/common-icons.svg) no-repeat -30px -1230px;
+			width: 1.3rem;
+			height: 1.4rem;
+			margin-left: 0.6875rem;
+			vertical-align: $verticle-align-middle;
+		}
+		.sortIcon {
+			display: $display-inline-block;
+			background: url(../images/common-icons.svg) no-repeat -252px -1459px;
+			@include w-h-rem(10px, 10px);
+			@include margin-padding(all, 0 0 0 0.5rem, all, null);
+		}
+		.resultsIcon {
+			background: #702c63 url(../images/common-icons.svg) no-repeat -322px -1378px;
+			@include w-h-rem(20px, 20px);
+			border-radius: 0.3125rem;
+			@include margin-padding(all, 0 0.9375rem 0 0, all, null);
+		}
+		.suitCaseIcon {
+			background: #00b0dc url(../images/common-icons.svg) no-repeat -389px -1380px;
+		}
+		.commentIcon {
+			background: #676ad4 url(../images/common-icons.svg) no-repeat -91.7px -1455px;
+		}
+		.editIcon {
+			background: #f7ba0f url(../images/common-icons.svg) no-repeat -176px -1454px;
+		}
+
+		.statusPending {
+			background: color("yellow", "darken-3");
+			color: color("shades", "white");
+			@include border-radius(3px);
+			@include font-rem(13px, 24px);
+			@include font-weight(500);
+			@include margin-padding(all, null, all, 0.2rem 1.25rem);
+		}
+	}
+	.comment-row {
+		@include margin-padding(all, null, all, 1.25rem);
+		border-bottom: 1px solid color('grey','lighten-5');
+		&:last-child {
+			border-bottom: $none;
+		}
+		h5 {
+			@include margin-padding(all, 0 0 0.75rem, all, null);
+			@include font-rem(16px, 24px);
+			color:color('blue-grey','darken-1');
+			span {
+				@include font-weight(500);
+				color:color('indigo','base');
+			}
+		}
+		.commentContent {
+			@include flexbox();
+			@include flex-wrap($wrap);
+			p {
+			@include font-rem(16px, 24px);
+			color:color('grey','darken-4');
+			@include margin-padding(all, 0 0 1.25rem, all, null);
+			}
+		}
+		.imgbox {
+			@include margin-padding(all, 0 1rem 0 0, all, null);
+		}
+		h6 {
+			@include font-rem(16px, 24px);
+			color:color('blue-grey','darken-1');
+			@include margin-padding(all, 0 0 0.3125rem, all, null);
+		}
+		.author {
+			color:color('indigo','base');
+			@include font-weight(medium);
+		}
+	.commentRightText {
+		flex: 1;
+	}
+	.replyBtn {
+		@include flexbox();
+		@include flex-wrap($wrap);
+		@include font-rem(14px, 16px);
+		letter-spacing: 0.7px;
+		color:color('grey','darken-4');
+		@include font-weight(medium);
+		text-transform: $text-uppercase;
+	}
+	.replyArrow {
+
+		background: url(../images/common-icons.svg) no-repeat -170px -500px;
+		width: 1rem;
+		height: 1rem;
+		margin-left: 0.6rem;
+	}
+	}
+}
+.fullHeightContent {
+	height: $height-hundred-per !important;
+}
+.tabHeight {
+    height: calc(100% - 119px);
+}
+.searchTab {
+    height: calc(100% - 71px);
+}
+.tabContentHeight {
+	height: calc(100% - 48px);
+}
+.searchTab .scrollbar-inner > .scroll-element.scroll-y {
+    right: 3px;
+}
+.table-responsive {
+	overflow: $auto;
+	table {
+		white-space: $white-spacenowrap;
+	}
 }
 /* Search CSS end here */

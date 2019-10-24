@@ -4,473 +4,487 @@
 // Media for 1200px
 
 @media (max-width: 1200px) {
-  .page-header .userFetaures {
-    display: $diplay-none;
-  }
-  .page-header .userLoginPanel {
-    margin-left: inherit;
-  }
-  .page-header .newClientPoint .btn-flat {
-    margin-left: $margin-left-auto;
-  }
+	.page-header .userFetaures {
+		display: $diplay-none;
+	}
+	.page-header .userLoginPanel {
+		margin-left: inherit;
+	}
+	.page-header .newClientPoint .btn-flat {
+		margin-left: $margin-left-auto;
+	}
 }
 
 // Media for 991px
 
 @media (max-width: 991px) {
-  .page-header .userName {
-    display: $diplay-none;
-  }
-  .clientPoint-file .creatingPerposal .creatingPerposalLeft,
-  .clientPoint-file .creatingPerposal .creatingPerposalRight {
-    width: $full-width !important;
-  }
-  .clientPoint-file .creatingPerposal {
-    height: $height-auto;
-  }
-  .dropdown-backdrop {
-    position: static;
-    z-index: 0;
-  }
-  .dropdown.custom:hover .dropdown-menu {
-    visibility: visible;
-    display: block;
-    border-radius: 0;
-  }
-  .powerdByToggleLinks {
-    display: $display-block;
-    width: $full-width;
-  }
-  .clientpointPreview .powerdByToggleInner .SignNow {
-    margin-left: inherit;
-    margin-top: 20px;
-  }
-  .clientpointPreview .PowerdByRightPanel {
-    margin-left: inherit;
-  }
-  .clientpointPreview .poweredByMarvel {
-    margin: 10px 0;
-    flex: 0 0 100%;
-  }
-  .creatingPerposalRight.perposalPostionRight {
-    right: 0;
-    position: relative;
-    height: $height-auto;
-    margin: 0;
-  }
-  .showtableContentArrow.showArrow {
-    display: none;
-  }
-  .outerScroll .clientpointEditing {
-    height: 100% !important;
-  }
-  .splashViewer .splashFormCenter {
-    padding: 30px;
-    margin-bottom: 100px;
-  }
-  .splashViewer .splashForm {
-    top: 200px;
-    -webkit-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0);
-  }
-  .overlay {
-    top: 0;
-    z-index: 4;
-  }
-  .viewerSidebarCommon {
-    top: 0;
-    height: 100%;
-    z-index: 5;
-  }
-  .login .loginLeftPanel {
-    max-width: 100%;
-    flex: 0 0 100%;
-    padding: 20px;
-}
-.login .loginRightPanel .loginStep ul li {
-  flex: 0 0 100%;
-}
-.login .loginRightPanel {
-max-width: 100%;
-flex: 0 0 100%;
-padding: 60px 0;
-height: 100%;
-}
-.login .loginRightPanel .loginStep ul li .border {
-width: 1px;
-height: 60px;
-}
-.login .loginForm {
-  max-width: 100%;
-  width: 100%;
-  margin: 20px auto 0;
-  
-  .row {
-    padding:0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-.login .loginRightPanel .loginStep ul {
-  padding-left: 20px;
-}
-.login {
-  height: auto;
-}
-.login .loginLinks {
-  bottom: auto;
-  position: relative;
-}
-.splashForm.loginSpace {
-  top: 50px;
-}
-.loginPadding {
-  padding: 30px !important;
-}
-.splashForm.loginSpace .splashFormCenter {
-  padding: 30px;
-  margin-bottom: 30px;
-}
-.getting-started {
-  margin: 0;
-}
-.loginCommonWidth {
-  padding: 0px 20px 30px;
-  max-width: 100%;
-}
-.login .loginRightPanel {
-  padding: 20px 0 0;
-}
-.login .loginRightPanel .loginStep ul li .greyBoreder {
-  display: $none;
-}
-.login .loginForm .btn, .login .loginForm .btn-large, .login .loginForm .btn-small {
-  position: relative;
-}
-.themeAdvancedSettings .themeAdvancedtabs .collapsible-body {
-  padding: 0rem 2rem;
-}
-.themeSetting .collapsible-header h6 {
-  line-height: normal;
-}
-.login .loginLeftContent {
-  margin: 50px 0;
-}
+	.page-header .userName {
+		display: $diplay-none;
+	}
+	.clientPoint-file .creatingPerposal .creatingPerposalLeft,
+	.clientPoint-file .creatingPerposal .creatingPerposalRight {
+		width: $full-width !important;
+	}
+	.clientPoint-file .creatingPerposal {
+		height: $height-auto;
+	}
+	.dropdown-backdrop {
+		position: static;
+		z-index: 0;
+	}
+	.dropdown.custom:hover .dropdown-menu {
+		visibility: visible;
+		display: block;
+		border-radius: 0;
+	}
+	.powerdByToggleLinks {
+		display: $display-block;
+		width: $full-width;
+	}
+	.clientpointPreview .powerdByToggleInner .SignNow {
+		margin-left: inherit;
+		margin-top: 20px;
+	}
+	.clientpointPreview .PowerdByRightPanel {
+		margin-left: inherit;
+	}
+	.clientpointPreview .poweredByMarvel {
+		margin: 10px 0;
+		flex: 0 0 100%;
+	}
+	.creatingPerposalRight.perposalPostionRight {
+		right: 0;
+		position: relative;
+		height: $height-auto;
+		margin: 0;
+	}
+	.showtableContentArrow.showArrow {
+		display: none;
+	}
+	.outerScroll .clientpointEditing {
+		height: 100% !important;
+	}
+	.splashViewer .splashFormCenter {
+		padding: 30px;
+		margin-bottom: 100px;
+	}
+	.splashViewer .splashForm {
+		top: 200px;
+		-webkit-transform: translate(-50%, 0%);
+		transform: translate(-50%, 0);
+	}
+	.overlay {
+		top: 0;
+		z-index: 4;
+	}
+	.viewerSidebarCommon {
+		top: 0;
+		height: 100%;
+		z-index: 5;
+	}
+	.login .loginLeftPanel {
+		max-width: 100%;
+		flex: 0 0 100%;
+		padding: 20px;
+	}
+	.login .loginRightPanel .loginStep ul li {
+		flex: 0 0 100%;
+	}
+	.login .loginRightPanel {
+		max-width: 100%;
+		flex: 0 0 100%;
+		padding: 60px 0;
+		height: 100%;
+	}
+	.login .loginRightPanel .loginStep ul li .border {
+		width: 1px;
+		height: 60px;
+	}
+	.login .loginForm {
+		max-width: 100%;
+		width: 100%;
+		margin: 20px auto 0;
+
+		.row {
+			padding: 0;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	.login .loginRightPanel .loginStep ul {
+		padding-left: 20px;
+	}
+	.login {
+		height: auto;
+	}
+	.login .loginLinks {
+		bottom: auto;
+		position: relative;
+	}
+	.splashForm.loginSpace {
+		top: 50px;
+	}
+	.loginPadding {
+		padding: 30px !important;
+	}
+	.splashForm.loginSpace .splashFormCenter {
+		padding: 30px;
+		margin-bottom: 30px;
+	}
+	.getting-started {
+		margin: 0;
+	}
+	.loginCommonWidth {
+		padding: 0px 20px 30px;
+		max-width: 100%;
+	}
+	.login .loginRightPanel {
+		padding: 20px 0 0;
+	}
+	.login .loginRightPanel .loginStep ul li .greyBoreder {
+		display: $none;
+	}
+	.login .loginForm .btn,
+	.login .loginForm .btn-large,
+	.login .loginForm .btn-small {
+		position: relative;
+	}
+	.themeAdvancedSettings .themeAdvancedtabs .collapsible-body {
+		padding: 0rem 2rem;
+	}
+	.themeSetting .collapsible-header h6 {
+		line-height: normal;
+	}
+	.login .loginLeftContent {
+		margin: 50px 0;
+	}
+	.searchTab {
+		.tabs {
+			overflow: $auto;
+		}
+	}
 }
 
 // Media for 768px
 
 @media (max-width: 768px) {
-  .detailInfo .information,
-  .InfoSidebarRight {
-    max-width: $full-width;
-    flex: 0 0 $full-width;
-  }
-  .page-header .searchbox {
-    display: $diplay-none;
-  }
-  .page-header .searchResponsive {
-    margin-right: $margin-right-auto;
-    display: $display-block;
-  }
-  .clientDetailsContent .titlerow .newClientPointInput {
-    width: $full-width;
-    margin: 0 0 1.5625rem;
-  }
-  .newClientBtn {
-    margin-left: inherit !important;
-  }
-  .page-header .newClientPoint {
-    padding: 0 1.5rem 0 0;
-    width: auto;
-    margin-left: auto;
-  }
-  .sidebarSubmenu {
-    z-index: 2;
-  }
-  .SidebarOpenMargin {
-    margin-left: 5rem !important;
-  }
-  .clientpointTitle {
-    width: $full-width;
-  }
-  .newClientPointTitleBar .clientMenu {
-    margin-left: inherit;
-  }
-  .newClientPointTitleBar .newClientPointTitleBar-right {
-    width: $full-width;
-    margin-left: inherit;
-  }
-  .clientpointTitle {
-    margin-bottom: 1.25rem;
-  }
-  .newperposalclientbar .newperposalclientbar-right {
-    width: $full-width;
-    margin-top: 1.25rem;
-  }
-  #content.contentMargin {
-    margin-left: 5rem;
-  }
-  .newClientPointTitleBar .clientSearchtitle {
-    padding: 1rem 1.8125rem;
-    height: 50px;
-  }
-  .analytics-filter .calenderDate {
-    margin-left: inherit;
-    margin-top: 17px;
-  }
-  .filterRightpanel {
-    margin-left: inherit;
-    flex: 0 0 100%;
-  }
-  .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col {
-    max-width: 100%;
-    flex: 0 0 100%;
-    border-right: none;
-    border-bottom: 1px solid #efeff3;
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-  .ipAddress {
-    padding: $zero;
-  }
-  .newperposalclientbar .dropdown-content {
-    top: 100% !important;
-  }
-  .themeAdvancedSettings .themeAdvancedtabs .tabs {
-    overflow: auto;
-  }
-  .themeAdvancedSettings .themeAdvancedtabs .collapsible-body {
-    padding: 0rem 2rem;
-  }
-  .rightMarginPreview {
-    margin: 0;
-    padding: 2.5rem 2rem 2.5rem 2rem;
-  }
-  .outerScroll .scrollbar-inner > .scroll-element.scroll-y {
-    right: 6px;
-  }
-  .viewerSidebarCommon {
-    width: 100%;
-  }
-  .splashViewer .splashLogo {
-    margin: 0 0 30px 0;
-  }
-  // .proposalTrial {
-  //     position: relative;
-  // }
-  .getting-started .getting-started-row {
-    display: block;
-    text-align: center;
-}
-.login .loginLeftContent {
-  margin: 40px 0 40px 0;
-}
-.loginContentScroll {
-  height: auto;
-}
+	.detailInfo .information,
+	.InfoSidebarRight {
+		max-width: $full-width;
+		flex: 0 0 $full-width;
+	}
+	.page-header .searchbox {
+		display: $diplay-none;
+	}
+	.page-header .searchResponsive {
+		margin-right: $margin-right-auto;
+		display: $display-block;
+	}
+	.clientDetailsContent .titlerow .newClientPointInput {
+		width: $full-width;
+		margin: 0 0 1.5625rem;
+	}
+	.newClientBtn {
+		margin-left: inherit !important;
+	}
+	.page-header .newClientPoint {
+		padding: 0 1.5rem 0 0;
+		width: auto;
+		margin-left: auto;
+	}
+	.sidebarSubmenu {
+		z-index: 2;
+	}
+	.SidebarOpenMargin {
+		margin-left: 5rem !important;
+	}
+	.clientpointTitle {
+		width: $full-width;
+	}
+	.newClientPointTitleBar .clientMenu {
+		margin-left: inherit;
+	}
+	.newClientPointTitleBar .newClientPointTitleBar-right {
+		width: $full-width;
+		margin-left: inherit;
+	}
+	.clientpointTitle {
+		margin-bottom: 1.25rem;
+	}
+	.newperposalclientbar .newperposalclientbar-right {
+		width: $full-width;
+		margin-top: 1.25rem;
+	}
+	#content.contentMargin {
+		margin-left: 5rem;
+	}
+	.newClientPointTitleBar .clientSearchtitle {
+		padding: 1rem 1.8125rem;
+		height: 50px;
+	}
+	.analytics-filter .calenderDate {
+		margin-left: inherit;
+		margin-top: 17px;
+	}
+	.filterRightpanel {
+		margin-left: inherit;
+		flex: 0 0 100%;
+	}
+	.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col {
+		max-width: 100%;
+		flex: 0 0 100%;
+		border-right: none;
+		border-bottom: 1px solid #efeff3;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+	.ipAddress {
+		padding: $zero;
+	}
+	.newperposalclientbar .dropdown-content {
+		top: 100% !important;
+	}
+	.themeAdvancedSettings .themeAdvancedtabs .tabs {
+		overflow: auto;
+	}
+	.themeAdvancedSettings .themeAdvancedtabs .collapsible-body {
+		padding: 0rem 2rem;
+	}
+	.rightMarginPreview {
+		margin: 0;
+		padding: 2.5rem 2rem 2.5rem 2rem;
+	}
+	.outerScroll .scrollbar-inner > .scroll-element.scroll-y {
+		right: 6px;
+	}
+	.viewerSidebarCommon {
+		width: 100%;
+	}
+	.splashViewer .splashLogo {
+		margin: 0 0 30px 0;
+	}
+	// .proposalTrial {
+	//     position: relative;
+	// }
+	.getting-started .getting-started-row {
+		display: block;
+		text-align: center;
+	}
+	.login .loginLeftContent {
+		margin: 40px 0 40px 0;
+	}
+	.loginContentScroll {
+		height: auto;
+	}
 
-.login .loginLeftContent h1 {
-  font-size: 2rem;
-}
-.login .loginForm .btn, .login .loginForm .btn-large, .login .loginForm .btn-small {
-  font-size: 1.2rem;
-  padding: 20px;
-  position: relative;
-}
-.fullHeight {
-  height: auto !important;
-}
-.addUserHeader .addUserLeftpanel {
-  flex: 0 0 100%;
-}
-.addUserHeader .addUserButtons .btn {
-  margin-top: 15px;
-}
-.addUserHeader .addUserButtons {
-  margin: 0;
-}
-#fileUploadModal .modal-header {
-  padding: 1.5rem 2rem 1rem 2rem;
-}
-#fileUploadModal .modal-content {
-  padding: 0.7rem 2rem 1.3rem 2rem;
-}
-#fileUploadModal .modal-footer {
-  padding: 0 2rem 2rem 2rem;
-}
-#fileUploadModal .uploadFileChoose {
-  height: 150px;
-}
-#fileUploadModal .modal-content h4 {
-  margin: 0 0 20px 0;
-}
+	.login .loginLeftContent h1 {
+		font-size: 2rem;
+	}
+	.login .loginForm .btn,
+	.login .loginForm .btn-large,
+	.login .loginForm .btn-small {
+		font-size: 1.2rem;
+		padding: 20px;
+		position: relative;
+	}
+	.fullHeight {
+		height: auto !important;
+	}
+	.addUserHeader .addUserLeftpanel {
+		flex: 0 0 100%;
+	}
+	.addUserHeader .addUserButtons .btn {
+		margin-top: 15px;
+	}
+	.addUserHeader .addUserButtons {
+		margin: 0;
+	}
+	#fileUploadModal .modal-header {
+		padding: 1.5rem 2rem 1rem 2rem;
+	}
+	#fileUploadModal .modal-content {
+		padding: 0.7rem 2rem 1.3rem 2rem;
+	}
+	#fileUploadModal .modal-footer {
+		padding: 0 2rem 2rem 2rem;
+	}
+	#fileUploadModal .uploadFileChoose {
+		height: 150px;
+	}
+	#fileUploadModal .modal-content h4 {
+		margin: 0 0 20px 0;
+	}
 
-.loginForm .input-field.col label {
-  left: 0;
-} 
-#shareModal .tabContent {
-  padding: 0 2rem 1rem 2rem;
-}
-#shareModal .modal-header {
-  padding: 2.3rem 1.875rem 1rem 2rem;
-}
-#shareModal .tabs-header {
-  padding-left: 30px;
-}
-#commentModal .tabContent {
-  padding: 0 2rem 1.875rem 2rem;
-}
-#commentModal .tabs-header {
-  padding-left: 30px;
-}
-#commentModal .modal-header {
-    padding: 2.3rem 1.875rem 1rem 2rem;
-}
-#AddSection .modal-content {
-  padding: 0 1.875rem 0 2rem;
-}
-#AddSection .modal-header {
-  padding: 2.3rem 1.875rem 2.1rem 2rem;
-}
-.addNotesModal .searchTabHeader {
-  padding-right: 3rem;
-  padding-left: 2rem;
-}
-.addNotesModal .mylibraryContent p {
-  padding-left: 2rem;
-  padding-right: 3rem;
-}
-.treeview {
-  padding-left: 2rem;
-}
-.splashViewer .btn, .splashViewer .btn-large, .splashViewer .btn-small {
-  height: 49px;
-  font-size: 1.2rem;
-  line-height: 2rem;
-}
-.themeSetting .collapsible-header {
-  padding: 1rem;
-}
-.themeContent  .heading-collapse {
-  width: 80%;
-}
-.themeContent .theme-list .theme-list-row {
-  padding: 1rem;
-}
-.themeContent {
-  padding: 1.875rem 2rem;
-}
-.AddRecipientModal .modal-content {
-  padding: 0 1.5rem;
-}
-.AddRecipientModal .modal-header {
-  padding: 1.5rem;
-}
-.AddRecipientModal .AddRecipientContent-row {
-  padding: 1.5rem 0.5rem 0;
-}
-.modal-footer {
-  padding: 0 1.5rem 1rem;
-}
-.proposalTrial {
-  position: relative;
-}
-.clientpointEditing {
-  padding: 1.5rem 0 1.5rem 2rem;
-}
-.clientpointEditing p {
-  padding-right: 1.5rem;
-}
-.tabs .tab {
-  flex-grow: inherit;
-}
+	.loginForm .input-field.col label {
+		left: 0;
+	}
+	#shareModal .tabContent {
+		padding: 0 2rem 1rem 2rem;
+	}
+	#shareModal .modal-header {
+		padding: 2.3rem 1.875rem 1rem 2rem;
+	}
+	#shareModal .tabs-header {
+		padding-left: 30px;
+	}
+	#commentModal .tabContent {
+		padding: 0 2rem 1.875rem 2rem;
+	}
+	#commentModal .tabs-header {
+		padding-left: 30px;
+	}
+	#commentModal .modal-header {
+		padding: 2.3rem 1.875rem 1rem 2rem;
+	}
+	#AddSection .modal-content {
+		padding: 0 1.875rem 0 2rem;
+	}
+	#AddSection .modal-header {
+		padding: 2.3rem 1.875rem 2.1rem 2rem;
+	}
+	.addNotesModal .searchTabHeader {
+		padding-right: 3rem;
+		padding-left: 2rem;
+	}
+	.addNotesModal .mylibraryContent p {
+		padding-left: 2rem;
+		padding-right: 3rem;
+	}
+	.treeview {
+		padding-left: 2rem;
+	}
+	.splashViewer .btn,
+	.splashViewer .btn-large,
+	.splashViewer .btn-small {
+		height: 49px;
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+	.themeSetting .collapsible-header {
+		padding: 1rem;
+	}
+	.themeContent .heading-collapse {
+		width: 80%;
+	}
+	.themeContent .theme-list .theme-list-row {
+		padding: 1rem;
+	}
+	.themeContent {
+		padding: 1.875rem 2rem;
+	}
+	.AddRecipientModal .modal-content {
+		padding: 0 1.5rem;
+	}
+	.AddRecipientModal .modal-header {
+		padding: 1.5rem;
+	}
+	.AddRecipientModal .AddRecipientContent-row {
+		padding: 1.5rem 0.5rem 0;
+	}
+	.modal-footer {
+		padding: 0 1.5rem 1rem;
+	}
+	.proposalTrial {
+		position: relative;
+	}
+	.clientpointEditing {
+		padding: 1.5rem 0 1.5rem 2rem;
+	}
+	.clientpointEditing p {
+		padding-right: 1.5rem;
+	}
+	.tabs .tab {
+		flex-grow: inherit;
+	}
 }
 
 // Media for 570px
 
 @media (max-width: 570px) {
-  .reciepent {
-    padding: $zero;
+	.reciepent {
+		padding: $zero;
+	}
+	.infoCommon {
+		padding: $zero;
+	}
+	.paddingNone {
+		padding: $zero !important;
+		label {
+			left: 0 !important;
+		}
+	}
+	.newClientPointTitleBar .newClientPointTitleBar-right .btn-round {
+		// margin-top: 1.25rem;
+	}
+	.newClientPointTitleBar .clientMenu {
+		width: $full-width;
+	}
+	.row.mb-15 {
+		margin: 0;
+	}
+	.clientpointPreview .PowerdByLogo {
+		margin: 0;
+	}
+	.clientpointPreview .powerdByToggleInner .powerdByToggleLinks ul {
+		display: list-item;
+	}
+	.clientpointPreview .powerdByToggleInner .powerdByToggleLinks ul li a {
+		padding: 15px 0px 0 0;
+	}
+	.clientpointPreview .PowerdByLogo {
+		margin: 10px 0;
+		display: block;
+		flex: 0 0 100%;
+	}
+	.clientpointPreview .sentByDropdown {
+		margin: 0;
+	}
+	.themeContent .theme-list .theme-list-row .themebtns {
+		margin-left: inherit;
+	}
+	.themeContent .theme-list .theme-list-row .editBtn,
+	.themeContent .theme-list .theme-list-row .DuplicateBtn {
+		font-size: 0.9rem;
+		padding: 0 7px;
+		height: 30px;
+		line-height: 30px;
+	}
+	.login .loginForm .input-field {
+		padding: 0;
+	}
+	.btn-row {
+		margin-top: 0;
   }
-  .infoCommon {
-    padding: $zero;
-  }
-  .paddingNone {
-    padding: $zero !important;
-    label {
-      left: 0 !important;
-    }
-  }
-  .newClientPointTitleBar .newClientPointTitleBar-right .btn-round {
-    // margin-top: 1.25rem;
-  }
-  .newClientPointTitleBar .clientMenu {
-    width: $full-width;
-  }
-  .row.mb-15 {
-    margin: 0;
-  }
-  .clientpointPreview .PowerdByLogo {
-    margin: 0;
-  }
-  .clientpointPreview .powerdByToggleInner .powerdByToggleLinks ul {
-    display: list-item;
-  }
-  .clientpointPreview .powerdByToggleInner .powerdByToggleLinks ul li a {
-    padding: 15px 0px 0 0;
-  }
-  .clientpointPreview .PowerdByLogo {
-    margin: 10px 0;
-    display: block;
+  .searchResultContent .comment-row .imgbox {
     flex: 0 0 100%;
-  }
-  .clientpointPreview .sentByDropdown {
-    margin: 0;
-  }
-  .themeContent .theme-list .theme-list-row .themebtns {
-    margin-left: inherit;
-}
-.themeContent .theme-list .theme-list-row .editBtn, .themeContent .theme-list .theme-list-row .DuplicateBtn {
-  font-size: 0.9rem;
-  padding: 0 7px;
-  height: 30px;
-  line-height: 30px;
-}
-.login .loginForm .input-field {
- padding: 0;
-}
-.btn-row {
-  margin-top: 0;
 }
 }
 
 // Media For extra small 480
 
 @media (max-width: 480px) {
-  .page-header .newClientPoint .btn-flat {
-    font-size: 0;
-    background-position: -376px -6px;
-    width: 20px;
-    padding: 0;
-    border: $border-none;
-    margin-right: 0.625rem;
-  }
-  .page-header .newClientPoint .btn-flat:hover {
-    background-color: transparent;
-    background-position: -376px -6px;
-  }
-  .timeSpent .timeSpentRight {
-    width: 60%;
-  }
-  .timeSpent .timeSpentLeft {
-    width: 40%;
-  }
-  .powerdByToggleInner .SignNow .signUp {
-    padding: 0 2rem;
-  }
-
+	.page-header .newClientPoint .btn-flat {
+		font-size: 0;
+		background-position: -376px -6px;
+		width: 20px;
+		padding: 0;
+		border: $border-none;
+		margin-right: 0.625rem;
+	}
+	.page-header .newClientPoint .btn-flat:hover {
+		background-color: transparent;
+		background-position: -376px -6px;
+	}
+	.timeSpent .timeSpentRight {
+		width: 60%;
+	}
+	.timeSpent .timeSpentLeft {
+		width: 40%;
+	}
+	.powerdByToggleInner .SignNow .signUp {
+		padding: 0 2rem;
+	}
 }
 
 /* Responsive CSS end here */
