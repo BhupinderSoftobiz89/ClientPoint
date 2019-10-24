@@ -22,7 +22,7 @@
   .creatingPerposal {
     @include flexbox();
     @include flex-wrap($wrap);
-    height: calc(100% - 164px);
+    height: calc(100% - 143px);
     .creatingPerposalLeft {
       background: color("grey", "lighten-4");
       width: 64.7%;
