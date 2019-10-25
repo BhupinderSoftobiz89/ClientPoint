@@ -17708,10 +17708,6 @@ input[type=range]::-ms-thumb {
   margin-left: auto;
 }
 
-.libraryTable .switch label .lever {
-  margin: -5px 0 0 0;
-}
-
 .libraryTable .eSignatureContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17724,6 +17720,11 @@ input[type=range]::-ms-thumb {
 .libraryTable .eSignatureContent label {
   opacity: 1 !important;
   visibility: visible !important;
+  margin: 0 1.7rem 0 0;
+}
+
+.libraryTable .eSignatureContent .switch label .lever {
+  margin: -5px 0 0 0;
 }
 
 /* Search CSS end here */

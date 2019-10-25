@@ -370,9 +370,7 @@
 			}
 		}
 	}
-	.switch label .lever {
-		@include margin-padding(all, -5px 0 0 0, all, null);
-	}
+	
 	.eSignatureContent {
 		@include flexbox();
 		@include flex-wrap($wrap);
@@ -380,6 +378,10 @@
 		label {
 			opacity: 1 !important;
 			visibility: visible !important;
+			@include margin-padding(all, 0 1.7rem 0 0, all, null);
+		}
+		.switch label .lever {
+			@include margin-padding(all, -5px 0 0 0, all, null);
 		}
 	}
 }
