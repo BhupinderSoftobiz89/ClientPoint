@@ -397,6 +397,9 @@
 	.tabs .tab {
 		flex-grow: inherit;
 	}
+	.newClientPointTitleBar .library-header-right {
+		justify-content: flex-start;
+	}
 }
 
 // Media for 570px
@@ -413,9 +416,6 @@
 		label {
 			left: 0 !important;
 		}
-	}
-	.newClientPointTitleBar .newClientPointTitleBar-right .btn-round {
-		// margin-top: 1.25rem;
 	}
 	.newClientPointTitleBar .clientMenu {
 		width: $full-width;
@@ -458,6 +458,9 @@
   }
   .searchResultContent .comment-row .imgbox {
     flex: 0 0 100%;
+}
+.newClientPointTitleBar .library-header-right .commonDefaultSearch {
+    margin: 0 1.25rem 1rem 0;
 }
 }
 

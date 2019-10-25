@@ -18321,6 +18321,11 @@ input[type=range]::-ms-thumb {
         -ms-flex-positive: inherit;
             flex-grow: inherit;
   }
+  .newClientPointTitleBar .library-header-right {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 @media (max-width: 570px) {
@@ -18381,6 +18386,9 @@ input[type=range]::-ms-thumb {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+  }
+  .newClientPointTitleBar .library-header-right .commonDefaultSearch {
+    margin: 0 1.25rem 1rem 0;
   }
 }
 
