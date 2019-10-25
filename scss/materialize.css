@@ -11209,51 +11209,6 @@ input[type=range]::-ms-thumb {
   position: relative;
 }
 
-.clientPoint-file .creatingPerposal .creatingPerposalRight .collapsible-body .IntroDuctionRow .editBtns {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.clientPoint-file .creatingPerposal .creatingPerposalRight .collapsible-body .IntroDuctionRow .editBtns .editBtn {
-  background: url(../images/common-icons.svg) no-repeat -382px -346px;
-  width: 1.2rem;
-  height: 1.6rem;
-  margin-left: 0.8rem;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.clientPoint-file .creatingPerposal .creatingPerposalRight .collapsible-body .IntroDuctionRow .editBtns .dotBtn {
-  background: url(../images/common-icons.svg) no-repeat -23px -423px;
-  width: 18px;
-  height: 18px;
-  margin-left: 2.2rem;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-}
-
-.clientPoint-file .creatingPerposal .creatingPerposalRight .collapsible-body .IntroDuctionRow .editBtns .dotBtn:hover:after {
-  position: absolute;
-  content: "";
-  background: #efeff3 url(../images/common-icons.svg) no-repeat -78px -412px;
-  top: -11px;
-  left: -10px;
-  border-radius: 30rem;
-  width: 40px;
-  height: 40px;
-}
-
 .clientPoint-file .creatingPerposal .creatingPerposalRight .collapsible-body .IntroDuctionRow:hover {
   background: #FAFAFB;
 }
@@ -11326,6 +11281,51 @@ input[type=range]::-ms-thumb {
   margin-left: 0.8rem;
   display: inline-block;
   vertical-align: middle;
+}
+
+.clientPoint-file .creatingPerposal .creatingPerposalRight .editBtns {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.clientPoint-file .creatingPerposal .creatingPerposalRight .editBtns .editBtn {
+  background: url(../images/common-icons.svg) no-repeat -382px -346px;
+  width: 1.2rem;
+  height: 1.6rem;
+  margin-left: 0.8rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.clientPoint-file .creatingPerposal .creatingPerposalRight .editBtns .dotBtn {
+  background: url(../images/common-icons.svg) no-repeat -23px -423px;
+  width: 18px;
+  height: 18px;
+  margin-left: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.clientPoint-file .creatingPerposal .creatingPerposalRight .editBtns .dotBtn:hover:after {
+  position: absolute;
+  content: "";
+  border-radius: 30rem;
+  background: #efeff3 url(../images/common-icons.svg) no-repeat -82px -416px;
+  top: -7px;
+  left: -6px;
+  width: 30px;
+  height: 30px;
 }
 
 /* Add A File Modal start here  */
@@ -16933,42 +16933,42 @@ input[type=range]::-ms-thumb {
   background: url(../images/common-icons.svg) no-repeat -170px -897px;
   width: 1.4rem;
   height: 1.4rem;
-  margin-right: 17px;
+  margin-right: 0.8rem;
 }
 
 .viewedDropDown-content .commentIcon {
   background: url(../images/common-icons.svg) no-repeat -243px -897px;
   width: 1.4rem;
   height: 1.4rem;
-  margin-right: 17px;
+  margin-right: 0.8rem;
 }
 
 .viewedDropDown-content .prieviewIcon {
   background: url(../images/common-icons.svg) no-repeat -26px -976px;
   width: 1.4rem;
   height: 1.4rem;
-  margin-right: 17px;
+  margin-right: 0.8em;
 }
 
 .viewedDropDown-content .printIcon {
   background: url(../images/common-icons.svg) no-repeat -93px -976px;
   width: 1.4rem;
   height: 1.4rem;
-  margin-right: 17px;
+  margin-right: 0.8rem;
 }
 
 .viewedDropDown-content .sendIcon {
   background: url(../images/common-icons.svg) no-repeat -167px -976px;
   width: 1.4rem;
   height: 1.4rem;
-  margin-right: 17px;
+  margin-right: 0.8rem;
 }
 
 .viewedDropDown-content .editIcon {
   background: url(../images/common-icons.svg) no-repeat -244px -976px;
   width: 1.4rem;
   height: 1.4rem;
-  margin-right: 17px;
+  margin-right: 0.8rem;
 }
 
 .dashboardScrollHeight {
@@ -17353,6 +17353,10 @@ input[type=range]::-ms-thumb {
   color: #696A8E;
 }
 
+.searchResultContent .tabs .tab {
+  margin-right: 2.5rem;
+}
+
 .searchResultContent .tabContent {
   padding: 1.875rem;
   height: 100%;
@@ -17455,32 +17459,6 @@ input[type=range]::-ms-thumb {
   padding: 0;
 }
 
-.searchResultContent .collapsible table tr {
-  border-bottom: none;
-}
-
-.searchResultContent .collapsible table th {
-  padding: 1.25rem;
-  border-bottom: 1px solid #EFEFF3;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-size: 0.92857rem;
-  color: #181A51;
-}
-
-.searchResultContent .collapsible table td {
-  font-size: 15px;
-  font-size: 1.07143rem;
-  color: #696A8E;
-  padding: 0.5rem 1.25rem;
-}
-
-.searchResultContent .collapsible table td,
-.searchResultContent .collapsible table th {
-  width: 350px;
-  width: 25rem;
-}
-
 .searchResultContent .collapsible .userImage {
   display: inline-block;
   vertical-align: middle;
@@ -17502,16 +17480,6 @@ input[type=range]::-ms-thumb {
   height: 1.4rem;
   margin-left: 0.6875rem;
   vertical-align: middle;
-}
-
-.searchResultContent .collapsible .sortIcon {
-  display: inline-block;
-  background: url(../images/common-icons.svg) no-repeat -252px -1459px;
-  width: 10px;
-  width: 0.71429rem;
-  height: 10px;
-  height: 0.71429rem;
-  margin: 0 0 0 0.5rem;
 }
 
 .searchResultContent .collapsible .resultsIcon {
@@ -17666,7 +17634,291 @@ input[type=range]::-ms-thumb {
   white-space: nowrap;
 }
 
+.dataTable {
+  background: #FFFFFF;
+}
+
+.dataTable table tr {
+  border-bottom: none;
+}
+
+.dataTable table th {
+  padding: 1rem;
+  border-bottom: 1px solid #EFEFF3;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-size: 0.92857rem;
+  color: #181A51;
+}
+
+.dataTable table td {
+  font-size: 15px;
+  font-size: 1.07143rem;
+  color: #696A8E;
+  padding: 0.7rem 1.25rem;
+}
+
+.dataTable table td,
+.dataTable table th {
+  width: 350px;
+  width: 25rem;
+}
+
+.dataTable .sortIcon {
+  display: inline-block;
+  background: url(../images/common-icons.svg) no-repeat -252px -1459px;
+  width: 10px;
+  width: 0.71429rem;
+  height: 10px;
+  height: 0.71429rem;
+  margin: 0 0 0 0.5rem;
+}
+
+.libraryTable label {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.libraryTable tr:hover label {
+  opacity: 1;
+  visibility: visible;
+}
+
+.libraryTable .viewedDropDown-content {
+  min-width: 15.7rem;
+  margin: 0;
+  padding: 0.8rem 0 0 !important;
+}
+
+.libraryTable .viewedDropDown-content li {
+  margin: 0;
+  padding: 0 !important;
+}
+
+.libraryTable .viewedDropDown-content li a {
+  padding: 0.7rem 1.25rem !important;
+}
+
+.libraryTable .viewedDropDown-content .eSignature {
+  border-top: 1px solid #EFEFF3;
+  margin: 0.5rem 0 0 0;
+}
+
+.libraryTable .viewedDropDown-content .eSignature .switch {
+  margin-left: auto;
+}
+
+.libraryTable .switch label .lever {
+  margin: -5px 0 0 0;
+}
+
+.libraryTable .eSignatureContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 1.3rem 1.25rem !important;
+}
+
+.libraryTable .eSignatureContent label {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 /* Search CSS end here */
+/* Font size and line height mixin */
+/* Width height px to rem mixin */
+/* Font size and line height mixin */
+/* Width height px to rem mixin */
+.clientDetailsContent .titlerow .btn, .clientDetailsContent .titlerow .btn-large, .clientDetailsContent .titlerow .btn-small, .btn-round {
+  background: #5f63ff;
+  border-radius: 30rem;
+  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+}
+
+.clientDetailsContent .titlerow .btn:hover, .clientDetailsContent .titlerow .btn-large:hover, .clientDetailsContent .titlerow .btn-small:hover, .btn-round:hover {
+  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+}
+
+.reciepent-row .btn, .reciepent-row .btn-large, .reciepent-row .btn-small {
+  border: 1px solid #5f63ff;
+  border-radius: 30rem;
+  background: transparent;
+  color: #5f63ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-weight: 500;
+}
+
+.input-field input[type="text"] {
+  border-bottom: 2px solid #EFEFF3;
+  margin: 0;
+}
+
+.btn, .btn-large, .btn-small {
+  background: #5F63FF;
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover {
+  background: #777AFC;
+}
+
+.btn-round {
+  border-radius: 30rem;
+  font-size: 1rem;
+}
+
+.border-btn {
+  background: transparent;
+  border: 1px solid #777AFC;
+  color: #777AFC;
+  padding: 0 1.5rem;
+}
+
+.border-btn:hover {
+  color: #FFFFFF;
+}
+
+.input-field, .input-field label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #a9a9be;
+  text-transform: uppercase;
+  color: #A9A9BE;
+}
+
+/* Library CSS start here */
+.newClientPointTitleBar .library-header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.newClientPointTitleBar .library-header-right .commonDefaultSearch {
+  margin: 0 1.25rem 0 0;
+}
+
+.newClientPointTitleBar .library-header-right .btn-round {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1.625rem;
+}
+
+.newClientPointTitleBar .library-header-right .btn-round .material-icons {
+  margin: 0 0 0 0.5rem;
+}
+
+.tileIcon {
+  display: inline-block;
+  background: url(../images/common-icons.svg) no-repeat -320px -1454px;
+  width: 20px;
+  width: 1.42857rem;
+  height: 20px;
+  height: 1.42857rem;
+}
+
+.folderIconLibrary {
+  display: inline-block;
+  background: url(../images/common-icons.svg) no-repeat -242px -199px;
+  width: 25px;
+  width: 1.78571rem;
+  height: 18px;
+  height: 1.28571rem;
+  margin: 0 0.3rem 0 0;
+  vertical-align: middle;
+}
+
+.libraryLinks {
+  background: url(../images/common-icons.svg) no-repeat -315px -339px;
+  display: inline-block;
+  width: 30px;
+  width: 2.14286rem;
+  height: 30px;
+  height: 2.14286rem;
+  vertical-align: middle;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+}
+
+.libraryLinks:hover, .libraryLinks:focus, .libraryLinks:active {
+  background: #efeff3 url(../images/common-icons.svg) no-repeat -315px -339px;
+}
+
+.libraryTable table tr:hover {
+  background: #FAFAFB;
+}
+
+.libraryTable table th {
+  padding: 1rem 1.875rem;
+}
+
+.libraryTable table td {
+  padding: 0.7rem 1.875rem;
+}
+
+.libraryTable table label {
+  vertical-align: middle;
+  display: inline-block;
+  width: 17px;
+  width: 1.21429rem;
+  height: 17px;
+  height: 1.21429rem;
+  margin: 0 0.7rem 0 0;
+}
+
+.libraryTable .duplicateIcon {
+  background: url(../images/common-icons.svg) no-repeat -169px -663px;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.8rem;
+  display: inline-block;
+}
+
+.libraryTable .editIcon {
+  background: url(../images/common-icons.svg) no-repeat -246px -663px;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.8rem;
+}
+
+.libraryTable .downloadIcon {
+  width: 1.4rem;
+  height: 1.6rem;
+  background: url(../images/common-icons.svg) no-repeat -324px -1227px;
+  margin-right: 0.8rem;
+}
+
+.libraryTable .templateIcon {
+  background: url(../images/common-icons.svg) no-repeat -390px -1452px;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.8rem;
+}
+
+.libraryTable .deleteIcon {
+  background: url(../images/common-icons.svg) no-repeat -30px -1524px;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.8rem;
+}
+
+/* Library CSS end here */
 /* Responsive CSS start here */
 @media (max-width: 1200px) {
   .page-header .userFetaures {

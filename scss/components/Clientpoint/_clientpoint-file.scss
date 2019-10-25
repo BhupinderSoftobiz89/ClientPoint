@@ -98,42 +98,7 @@
           border-left: 7px solid color("shades", "transparent");
           min-height: 50.75px;
           position: $position-relative;
-          .editBtns {
-            margin-left: $margin-left-auto;
-            @include flexbox();
-            @include flex-wrap($wrap);
-            position: $position-relative;
-            align-items: $align-items-center;
-            opacity: $zero;
-            visibility: $visibilty-hidden;
-            .editBtn {
-              background: url(../images/common-icons.svg) no-repeat -382px -346px;
-              width: 1.2rem;
-              height: 1.6rem;
-              margin-left: 0.8rem;
-              display: $display-inline-block;
-              vertical-align: $verticle-align-middle;
-            }
-            .dotBtn {
-              background: url(../images/common-icons.svg) no-repeat -23px -423px;
-              width: 18px;
-              height: 18px;
-              margin-left: 2.2rem;
-              display: $display-inline-block;
-              vertical-align: $verticle-align-middle;
-              position: $position-relative;
-              &:hover:after {
-                position: $position-absolute;
-                content: "";
-                background: #efeff3 url(../images/common-icons.svg) no-repeat -78px -412px;
-                top: -11px;
-                left: -10px;
-                border-radius: $border-radius-thirty;
-                width: 40px;
-                height: 40px;
-              }
-            }
-          }
+  
           &:hover {
             background: color("grey", "lighten-4");
 
@@ -194,6 +159,42 @@
           margin-left: 0.8rem;
           display: $display-inline-block;
           vertical-align: $verticle-align-middle;
+        }
+      }
+      .editBtns {
+        margin-left: $margin-left-auto;
+        @include flexbox();
+        @include flex-wrap($wrap);
+        position: $position-relative;
+        align-items: $align-items-center;
+        opacity: $zero;
+        visibility: $visibilty-hidden;
+        .editBtn {
+          background: url(../images/common-icons.svg) no-repeat -382px -346px;
+          width: 1.2rem;
+          height: 1.6rem;
+          margin-left: 0.8rem;
+          display: $display-inline-block;
+          vertical-align: $verticle-align-middle;
+        }
+        .dotBtn {
+          background: url(../images/common-icons.svg) no-repeat -23px -423px;
+          width: 18px;
+          height: 18px;
+          margin-left: 1rem;
+          display: $display-inline-block;
+          vertical-align: $verticle-align-middle;
+          position: $position-relative;
+          &:hover:after {
+            position: $position-absolute;
+            content: "";
+            border-radius: $border-radius-thirty;
+            background: #efeff3 url(../images/common-icons.svg) no-repeat -82px -416px;
+            top: -7px;
+            left: -6px;
+            width: 30px;
+            height: 30px;
+          }
         }
       }
     }

@@ -1,0 +1,101 @@
+@import "../variables";
+@import "../mixin";
+@import "../extend";
+
+
+/* Library CSS start here */
+.newClientPointTitleBar {
+    .library-header-right {
+        @include flexbox();
+        //@include flex-wrap($wrap);
+        align-items: $align-items-center;
+        flex: auto;
+        justify-content: flex-end;
+        .commonDefaultSearch {
+            @include margin-padding(all, 0 1.25rem 0 0, all, null);
+        }
+        .btn-round {
+            @include flexbox();
+            @include margin-padding(all, null, all, 0 1.625rem);
+            .material-icons {
+                @include margin-padding(all, 0 0 0 0.5rem, all, null);
+            }
+        }
+    }
+}
+.tileIcon {
+    display: $display-inline-block;
+    background: url(../images/common-icons.svg) no-repeat -320px -1454px;
+    @include w-h-rem(20px, 20px);
+}
+.folderIconLibrary {
+    display: $display-inline-block;
+    background: url(../images/common-icons.svg) no-repeat -242px -199px;
+    @include w-h-rem(25px, 18px);
+    @include margin-padding(all, 0 0.3rem 0 0, all, null);
+    vertical-align: $verticle-align-middle;
+}
+.libraryLinks {
+    background: url(../images/common-icons.svg) no-repeat -315px -339px;
+    display: $display-inline-block;
+    @include w-h-rem(30px, 30px);
+    vertical-align: $verticle-align-middle;
+    @include border-radius(100%);
+    &:hover, &:focus, &:active {
+        background:#efeff3 url(../images/common-icons.svg) no-repeat -315px -339px;
+    }
+
+}
+.libraryTable  {
+    table {
+        tr {
+            &:hover {
+                background: color('grey','lighten-4');
+            }
+        }
+        th {
+            @include margin-padding(all, null, all, 1rem 1.875rem);
+        }
+        td {
+            @include margin-padding(all, null, all, 0.7rem 1.875rem);
+        }
+        label {
+            vertical-align: $verticle-align-middle;
+            display: $display-inline-block;
+            @include w-h-rem(17px, 17px);
+            @include margin-padding(all, 0 0.7rem 0 0, all, null);
+        }
+    }
+    .duplicateIcon {
+        background: url(../images/common-icons.svg) no-repeat -169px -663px;
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 0.8rem;
+        display: $display-inline-block;
+    }
+   .editIcon {
+        background: url(../images/common-icons.svg) no-repeat -246px -663px;
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 0.8rem;
+    }
+    .downloadIcon {
+        width: 1.4rem;
+        height: 1.6rem;
+        background: url(../images/common-icons.svg) no-repeat -324px -1227px;
+        margin-right: 0.8rem;
+    }
+    .templateIcon {
+        background: url(../images/common-icons.svg) no-repeat -390px -1452px;
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 0.8rem;
+    }
+    .deleteIcon {
+        background: url(../images/common-icons.svg) no-repeat -30px -1524px;
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 0.8rem;
+    }
+}
+/* Library CSS end here */
