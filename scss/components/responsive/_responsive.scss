@@ -400,6 +400,29 @@
 	.newClientPointTitleBar .library-header-right {
 		justify-content: flex-start;
 	}
+	.modal .modal-header {
+		padding: 1.875rem 1rem 1.3rem 2rem;
+	}
+	.replyModalContent .modal-content {
+		padding: 0 2rem 1.3rem 2rem;
+	}
+	.replyModalContent .modal-footer {
+		padding: 0 2rem 2.1rem 2rem;
+	}
+	.replyModalContent .modal-footer .btn-round {
+		margin-left: 1rem;
+	}
+	.replyModalContent .modal-content textarea {
+		height: 9rem;
+		padding: 1rem;
+	}
+	.replyModalContent .replyText {
+		padding:1rem;
+	}
+	.replyModalContent .replyText p {
+		font-size: 1rem;
+		line-height: 1.6rem;
+	}
 }
 
 // Media for 570px

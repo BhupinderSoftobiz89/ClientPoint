@@ -14909,7 +14909,6 @@ input[type=range]::-ms-thumb {
 }
 
 .analyticsPadding {
-  padding: 20px !important;
   background: #FAFAFB;
 }
 
@@ -15233,6 +15232,195 @@ input[type=range]::-ms-thumb {
   width: 250px;
 }
 
+/* Reply Modal start here */
+.replyModalContent {
+  max-width: 52.5rem;
+}
+
+.replyModalContent .shareIcon {
+  background: url(../images/common-icons.svg) no-repeat -88px -1523px;
+  width: 2rem;
+  height: 1.85rem;
+  margin-right: 11px;
+}
+
+.replyModalContent .modal-content {
+  padding: 0 3.125rem 1.3rem 3.125rem;
+}
+
+.replyModalContent .modal-content h6 {
+  font-size: 12px;
+  font-size: 0.85714rem;
+  line-height: 24px;
+  line-height: 1.71429rem;
+  letter-spacing: 0.25px;
+  color: #A9A9BE;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 1.25rem 0 0.625rem 0;
+}
+
+.replyModalContent .modal-content textarea {
+  height: 12.5rem;
+  padding: 1.25rem;
+  border: 1px solid #D4D4DE;
+  color: #5F63FF;
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 20px;
+  line-height: 1.42857rem;
+  font-weight: 500;
+}
+
+.replyModalContent .modal-content textarea.placeholder {
+  color: #5F63FF;
+}
+
+.replyModalContent .modal-content textarea:-moz-placeholder {
+  color: #5F63FF;
+}
+
+.replyModalContent .modal-content textarea::-moz-placeholder {
+  color: #5F63FF;
+}
+
+.replyModalContent .modal-content textarea:-ms-input-placeholder {
+  color: #5F63FF;
+}
+
+.replyModalContent .modal-content textarea::-webkit-input-placeholder {
+  color: #5F63FF;
+}
+
+.replyModalContent .modal-content textarea:focus {
+  outline: none;
+}
+
+.replyModalContent .replyText {
+  background: #FAFAFB;
+  padding: 1.25rem 1.875rem;
+  border: 1px solid #D4D4DE;
+}
+
+.replyModalContent .replyText p {
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 24px;
+  line-height: 1.71429rem;
+  color: #53547D;
+  margin: 0;
+}
+
+.replyModalContent .link {
+  color: #5F63FF;
+}
+
+.replyModalContent .modal-footer {
+  padding: 0 3.125rem 2.1rem 3.5rem;
+}
+
+.replyModalContent .modal-footer .btn-row {
+  margin-top: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.replyModalContent .modal-footer .btn-flat {
+  margin-top: 0;
+}
+
+.replyModalContent .modal-footer .btn-round {
+  background: #EFEFF3;
+  color: #A9A9BE;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0 1.4rem;
+  margin-left: 2.5rem;
+  margin-right: 0 !important;
+  margin-top: 0;
+}
+
+.replyModalContent .textReplyArea {
+  height: 12.5rem;
+  padding: 1.25rem;
+  border: 1px solid #D4D4DE;
+  color: #5F63FF;
+}
+
+.replyModalContent .textReplyArea p {
+  margin: 0;
+  color: #696A8E;
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 20px;
+  line-height: 1.42857rem;
+}
+
+.replyModalContent #dropdownReply {
+  min-width: 14.5rem;
+}
+
+.replyModalContent #dropdownReply li {
+  border-bottom: 1px solid #EFEFF3;
+}
+
+.replyModalContent #dropdownReply li:hover {
+  background: transparent;
+}
+
+.replyModalContent #dropdownReply li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.6875rem 1.25rem;
+}
+
+.replyModalContent #dropdownReply .userImg {
+  max-width: 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+  margin: 0 0.625rem 0 0;
+}
+
+.replyModalContent #dropdownReply .userInfo h6 {
+  font-size: 13px;
+  font-size: 0.92857rem;
+  line-height: 24px;
+  line-height: 1.71429rem;
+  color: #5F63FF;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.replyModalContent #dropdownReply .userInfo p {
+  font-size: 11px;
+  font-size: 0.78571rem;
+  line-height: 18px;
+  line-height: 1.28571rem;
+  color: #696A8E;
+  margin: 0;
+}
+
+.creatingPerposal .scrollbar-inner > .scroll-element.scroll-y {
+  right: 0;
+}
+
+.anaytics-overview {
+  height: calc(100% - 61px);
+}
+
+.analyticsOverviewView {
+  padding: 1.25rem;
+}
+
+/* Reply Modal end here */
 /* Analytics Overview Page end here */
 /* Font size and line height mixin */
 /* Width height px to rem mixin */
@@ -18325,6 +18513,29 @@ input[type=range]::-ms-thumb {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .modal .modal-header {
+    padding: 1.875rem 1rem 1.3rem 2rem;
+  }
+  .replyModalContent .modal-content {
+    padding: 0 2rem 1.3rem 2rem;
+  }
+  .replyModalContent .modal-footer {
+    padding: 0 2rem 2.1rem 2rem;
+  }
+  .replyModalContent .modal-footer .btn-round {
+    margin-left: 1rem;
+  }
+  .replyModalContent .modal-content textarea {
+    height: 9rem;
+    padding: 1rem;
+  }
+  .replyModalContent .replyText {
+    padding: 1rem;
+  }
+  .replyModalContent .replyText p {
+    font-size: 1rem;
+    line-height: 1.6rem;
   }
 }
 

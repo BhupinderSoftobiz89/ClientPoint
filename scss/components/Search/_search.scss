@@ -69,6 +69,8 @@
 		background: #f7ba0f url(../images/common-icons.svg) no-repeat -176px -1454px;
 	}
 }
+
+
 .searchResult.open {
 	opacity: 1;
 	visibility: $visibilty-visible;
@@ -205,7 +207,7 @@
 			margin-left: 0.6875rem;
 			vertical-align: $verticle-align-middle;
 		}
-	
+
 		.resultsIcon {
 			background: #702c63 url(../images/common-icons.svg) no-repeat -322px -1378px;
 			@include w-h-rem(20px, 20px);
@@ -233,26 +235,26 @@
 	}
 	.comment-row {
 		@include margin-padding(all, null, all, 1.25rem);
-		border-bottom: 1px solid color('grey','lighten-5');
+		border-bottom: 1px solid color("grey", "lighten-5");
 		&:last-child {
 			border-bottom: $none;
 		}
 		h5 {
 			@include margin-padding(all, 0 0 0.75rem, all, null);
 			@include font-rem(16px, 24px);
-			color:color('blue-grey','darken-1');
+			color: color("blue-grey", "darken-1");
 			span {
 				@include font-weight(500);
-				color:color('indigo','base');
+				color: color("indigo", "base");
 			}
 		}
 		.commentContent {
 			@include flexbox();
 			@include flex-wrap($wrap);
 			p {
-			@include font-rem(16px, 24px);
-			color:color('grey','darken-4');
-			@include margin-padding(all, 0 0 1.25rem, all, null);
+				@include font-rem(16px, 24px);
+				color: color("grey", "darken-4");
+				@include margin-padding(all, 0 0 1.25rem, all, null);
 			}
 		}
 		.imgbox {
@@ -260,47 +262,47 @@
 		}
 		h6 {
 			@include font-rem(16px, 24px);
-			color:color('blue-grey','darken-1');
+			color: color("blue-grey", "darken-1");
 			@include margin-padding(all, 0 0 0.3125rem, all, null);
 		}
 		.author {
-			color:color('indigo','base');
+			color: color("indigo", "base");
 			@include font-weight(medium);
 		}
-	.commentRightText {
-		flex: 1;
-	}
-	.replyBtn {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		@include font-rem(14px, 16px);
-		letter-spacing: 0.7px;
-		color:color('grey','darken-4');
-		@include font-weight(medium);
-		text-transform: $text-uppercase;
-	}
-	.replyArrow {
-		background: url(../images/common-icons.svg) no-repeat -170px -500px;
-		width: 1rem;
-		height: 1rem;
-		margin-left: 0.6rem;
-	}
+		.commentRightText {
+			flex: 1;
+		}
+		.replyBtn {
+			@include flexbox();
+			@include flex-wrap($wrap);
+			@include font-rem(14px, 16px);
+			letter-spacing: 0.7px;
+			color: color("grey", "darken-4");
+			@include font-weight(medium);
+			text-transform: $text-uppercase;
+		}
+		.replyArrow {
+			background: url(../images/common-icons.svg) no-repeat -170px -500px;
+			width: 1rem;
+			height: 1rem;
+			margin-left: 0.6rem;
+		}
 	}
 }
 .fullHeightContent {
 	height: $height-hundred-per !important;
 }
 .tabHeight {
-    height: calc(100% - 119px);
+	height: calc(100% - 119px);
 }
 .searchTab {
-    height: calc(100% - 71px);
+	height: calc(100% - 71px);
 }
 .tabContentHeight {
 	height: calc(100% - 48px);
 }
 .searchTab .scrollbar-inner > .scroll-element.scroll-y {
-    right: 3px;
+	right: 3px;
 }
 .table-responsive {
 	overflow: $auto;
@@ -310,7 +312,7 @@
 }
 
 .dataTable {
-	background: color('shades','white');
+	background: color("shades", "white");
 	table {
 		tr {
 			border-bottom: $none;
@@ -359,18 +361,17 @@
 			@include margin-padding(all, 0, all, 0 !important);
 			a {
 				@include margin-padding(all, null, all, 0.7rem 1.25rem !important);
-				
 			}
 		}
 		.eSignature {
-			border-top:1px solid color('grey','lighten-5');
+			border-top: 1px solid color("grey", "lighten-5");
 			@include margin-padding(all, 0.5rem 0 0 0, all, null);
 			.switch {
 				margin-left: $margin-left-auto;
 			}
 		}
 	}
-	
+
 	.eSignatureContent {
 		@include flexbox();
 		@include flex-wrap($wrap);
@@ -385,6 +386,5 @@
 		}
 	}
 }
-
 
 /* Search CSS end here */
