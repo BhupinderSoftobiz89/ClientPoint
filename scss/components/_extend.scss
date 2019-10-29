@@ -1,4 +1,4 @@
-@import "../components/variables";
+// @import "../components/variables";
 @import "../components/mixin";
 
 // Inheritence start here 
@@ -19,18 +19,12 @@
     color:$default-color;
     box-shadow: $none;
     font-weight: $font-weight-500;
-  
 }
 
 %inputFieldCommon {
     border-bottom: 2px solid #EFEFF3;
     margin: $zero;
 }
-
-
-
-
-
 
 // Ui Kit Buttons
 
@@ -58,9 +52,7 @@
     }
 }
 
-
 // Label 
-
 
 %labelCommon {
     font-size: $label-font-size;

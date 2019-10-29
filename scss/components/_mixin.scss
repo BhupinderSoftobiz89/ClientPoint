@@ -1,5 +1,3 @@
-@import "../components/variables";
-
 // Mixin Start here 
 
 
@@ -315,7 +313,7 @@
 // }
 
 
-/* Font size and line height mixin */
+// Font size and line height mixin
 
 @mixin font-rem($font-size, $line-height: 0) {
   font-size: $font-size;
@@ -327,7 +325,7 @@
 }
 
 
-/* Width height px to rem mixin */
+// Width height px to rem mixin
 
 @mixin w-h-rem($width, $height: 0) {
   width: $width;

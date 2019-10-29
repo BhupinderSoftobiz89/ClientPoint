@@ -334,170 +334,170 @@ $height-hundred-per: 100%;
 
 // Position Variables
 
-$position-fixed: fixed;
-$position-relative: relative;
-$position-absolute: absolute;
-$left-zero: 0;
-$right-zero: 0;
-$top-zero: 0;
-$headerleftposition: 4.667rem;
-$left-auto: auto;
+$position-fixed: fixed !default;
+$position-relative: relative !default;
+$position-absolute: absolute !default;
+$left-zero: 0 !default;
+$right-zero: 0 !default;
+$top-zero: 0 !default;
+$headerleftposition: 4.667rem !default;
+$left-auto: auto !default;
 
 // Primary color
 
-$navPrimaryBg: #353898;
-$whiteBg: #fff;
-$blackColor: #333;
-$btnPrimaryColor: #5f63ff;
-$default-color: #5f63ff;
-$whiteColor: #fff;
-$leftshadow: 0px;
-$topshadow: 2px;
-$blurshadow: 7px;
-$colorShadow: rgba(0, 0, 0, 0.15);
-$background-none: transparent;
+$navPrimaryBg: #353898 !default;
+$whiteBg: #fff !default;
+$blackColor: #333 !default;
+$btnPrimaryColor: #5f63ff !default;
+$default-color: #5f63ff !default;
+$whiteColor: #fff !default;
+$leftshadow: 0px !default;
+$topshadow: 2px !default;
+$blurshadow: 7px !default;
+$colorShadow: rgba(0, 0, 0, 0.15) !default;
+$background-none: transparent !default;
 // Display Variables
 
-$display-block: block;
-$diplay-none: none;
-$display-list-item: list-item;
-$display-inline-block: inline-block;
+$display-block: block !default;
+$diplay-none: none !default;
+$display-list-item: list-item !default;
+$display-inline-block: inline-block !default;
 // height variables
 
-$height-auto: auto;
-$header-height: 5rem;
+$height-auto: auto !default;
+$header-height: 5rem !default;
 
 // width variables
 
-$full-width: 100%;
-$half-width: 50%;
-$width-auto: auto;
+$full-width: 100% !default;
+$half-width: 50% !default;
+$width-auto: auto !default;
 $auto: auto;
 
 // box sizing Variable
 
-$box-sizing: border-box;
+$box-sizing: border-box !default;
 
-$zero: 0;
+$zero: 0 !default;
 
 // Font family
 
-$font-stack: "Roboto", sans-serif;
-$font-size-fourteen: 1rem;
-$font-size-sixteen: 1.2rem;
-$font-size-twenty: 1.25rem;
-$font-size-fifteen: 1.09rem;
-$label-font-size: 1rem;
-$font-size-tweleve: 0.75rem;
+$font-stack: "Roboto", sans-serif !default;
+$font-size-fourteen: 1rem !default;
+$font-size-sixteen: 1.2rem !default;
+$font-size-twenty: 1.25rem !default;
+$font-size-fifteen: 1.09rem !default;
+$label-font-size: 1rem !default;
+$font-size-tweleve: 0.75rem !default;
 $rem-base-font: 14px !default;
 
 // border variables
 
-$border-none: none;
-$border-radius-thirty: 30rem;
-$border-radius-5: 5px;
-$border-radius-hundred: 100%;
+$border-none: none !default;
+$border-radius-thirty: 30rem !default;
+$border-radius-5: 5px !default;
+$border-radius-hundred: 100% !default;
 
 // background variables
 
-$background-none: transparent;
+$background-none: transparent !default;
 
-$none: none;
+$none: none !default;
 
 // Align items variables
 
-$align-items-center: center;
-$align-item-end: flex-end;
-$align-item-start: flex-start;
-$wrap: wrap;
-$justifycenter: center;
-$text-center: center;
-$verticle-align-middle: middle;
-$justify-content-end: flex-end;
+$align-items-center: center !default;
+$align-item-end: flex-end !default;
+$align-item-start: flex-start !default;
+$wrap: wrap !default;
+$justifycenter: center !default;
+$text-center: center !default;
+$verticle-align-middle: middle !default;
+$justify-content-end: flex-end !default;
 
 // Font weight varibles
 
-$font-weight-500: 500;
-$font-weight-600: 600;
-$font-weight-bold: bold;
-$font-weight-normal: normal;
-$font-style-italic: italic;
+$font-weight-500: 500 !default;
+$font-weight-600: 600 !default;
+$font-weight-bold: bold !default;
+$font-weight-normal: normal !default;
+$font-style-italic: italic !default;
 
 // margin variables
 
-$margin-left-auto: auto;
-$margin-right-auto: auto;
-$margin-auto: auto;
-$mb-15: 15px !important;
-$reciepent-Select-margin: 40px;
+$margin-left-auto: auto !default;
+$margin-right-auto: auto !default;
+$margin-auto: auto !default;
+$mb-15: 15px !important !default;
+$reciepent-Select-margin: 40px !default;
 
 // Padding Variables
 
-$padding-left-zero: 0 !important;
+$padding-left-zero: 0 !important !default;
 
 // text decoration variables
 
-$text-decoration-underline: underline;
-$text-decoration-none: none;
-$text-uppercase: uppercase;
-$text-capitalize: capitalize;
-$text-left: left;
+$text-decoration-underline: underline !default;
+$text-decoration-none: none !default;
+$text-uppercase: uppercase !default;
+$text-capitalize: capitalize !default;
+$text-left: left !default;
 
 // Form Variables
 
-$label-color: #a9a9be;
+$label-color: #a9a9be !default;
 
 // $input-focus-color:$default-color;
 
 // Border color
-$border-color: #efeff3;
+$border-color: #efeff3 !default;
 
 // line height variables
 
-$line-height-normal: normal;
-$line-height-twentysix: 26px;
-$line-height-twentyfour: 24px;
-$line-height-twenty: 20px;
-$line-height-sixteen: 16px;
+$line-height-normal: normal !default;
+$line-height-twentysix: 26px !default;
+$line-height-twentyfour: 24px !default;
+$line-height-twenty: 20px !default;
+$line-height-sixteen: 16px !default;
 
 // transition
 
-$transiton: all 0.5s;
+$transiton: all 0.5s !default;
 
 // white space variable
 
-$white-spacenowrap: nowrap;
+$white-spacenowrap: nowrap !default;
 
 // Overflow Variables
 
-$overflow-y-visible: visible;
+$overflow-y-visible: visible !default;
 
-$recipentlabelColor: #474874;
+$recipentlabelColor: #474874 !default;
 
 // Cursor Variables
 
-$cursor-pointer: pointer;
+$cursor-pointer: pointer !default;
 
 // List Hover Color
 
-$hoverColor: #eaf6ff;
+$hoverColor: #eaf6ff !default;
 
 // Box sizing Variables
 
-$box-sizing: border-box;
+$box-sizing: border-box !default;
 
 // Box shadow Variables
 
-$box-shadow-none: none;
+$box-shadow-none: none !default;
 
 // Visibility Variables
 
-$visibilty-hidden: hidden;
-$visibilty-visible: visible;
+$visibilty-hidden: hidden !default;
+$visibilty-visible: visible !default;
 
 // Viewer Experience Gradient
 
-$viewerGradient: 170.65deg, #5f63ff -7.34%, #d653dd 55.66%, #d8094a 116.59%;
+$viewerGradient: 170.65deg, #5f63ff -7.34%, #d653dd 55.66%, #d8094a 116.59% !default;
 
 
 $red:red !global;
