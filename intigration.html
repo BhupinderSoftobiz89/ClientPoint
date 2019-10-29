@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/jquery.scrollbar.css" />
+    <link type="text/css" rel="stylesheet" href="scss/materialize.css" />
+    <title>Welcome To ClientPoint</title>
+    <!-- Custom CSS start here  -->
+
+</head>
+
+<body>
+
+    <!-- Sidebar nav start here  -->
+
+    <nav class="sidebarNav sidebarNavClose">
+        <div class="navMenuOuter menu btn6 navMenu" data-menu="6">
+            <div class="icon "></div>
+        </div>
+        <ul>
+            <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="tab-1">
+                <a href="#dashboard_nav" class="sidebarclick">
+                    <span class="commonIconbg fileIcon"></span>
+                    Dashboard
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
+                <a href="#library_nav" class="sidebarclick">
+                    <span class="commonIconbg prieviewIcon"></span>
+                    Content Libray
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="tab-3">
+                <a href="#clientPoint_nav" class="sidebarclick">
+                    <span class="commonIconbg clientIcon"></span>
+                    ClientPoints
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="tab-4">
+                <a href="#Setting_nav" class="sidebarclick">
+                    <span class="commonIconbg settingIcon"></span>
+                    Settings
+                </a>
+            </li>
+        </ul>
+        <a href="javascript:void(0)" class="clientPointLogo">
+            <img class="logoSmall" src="./images/ClientPoint-Logo.svg" alt="img">
+            <img class="logoBig" src="./images/clientpoint-logo-big.svg" alt="img">
+        </a>
+    </nav>
+    <div class="sidebar_nav">
+        <aside id="tab-1" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">ClientPoint</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-2" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Users & Permissions</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
+                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
+                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Advanced Settings</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-3" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">ClientPoint</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-4" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Users & Permissions</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
+                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
+                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#" class="active">Advanced Settings</a></li>
+            </ul>
+        </aside>
+    </div>
+    <!-- Sidebar nav end here  -->
+
+    <!-- Header start here  -->
+    <header class="page-header d-flex">
+        <div class="searchbox">
+            <input type="submit" class="searchBtn" value="">
+            <input type="search" class="searchInput" placeholder="Search">
+        </div>
+        <div class="searchResponsive">
+            <a href="#" class="mobileSearch"></a>
+        </div>
+        <aside class="newClientPoint">
+            <a class="waves-teal btn-flat">New ClientPoint</a>
+            <a class="userLoginPanel dropdown-trigger" href="#" data-target="userDropDown">
+                <span class="userFetaures"><strong>Upgrade now</strong> to unlock more features!</span>
+                <span class="userAvtar"><img class="responsive-img" src="./images/user-img.png" alt="img"></span>
+                <span class="userName">Miles Morales</span>
+                <i class="material-icons">
+                    arrow_drop_down
+                </i>
+            </a>
+            <ul id="userDropDown" class="dropdown-content UserDropdownLogin">
+                <li><a href="#!">
+                        <div class="userLoginHeader">
+                            <img src="./images/user-avtar.png" alt="img">
+                            <div class="userInfo">
+                                <h6>Miles Morales</h6>
+                                <p>milesm@arachnid.com</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider" tabindex="-1"></li>
+                <li>
+                    <a href="#!">
+                        <span class="profileIcon"></span>
+                        View Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span class="supportIcon"></span>
+                        Support
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span class="logoutIcon"></span>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </header>
+    <!-- Header end here  -->
+    <!-- Main Content start here  -->
+    <div id="content">
+        <article class="content-common">
+            <div class="clientPoint-file">
+                <div class="newClientPointTitleBar">
+                    <div class="clientpointTitle">
+                        <h4>Integrations</h4>
+                    </div>
+                </div>
+                <div class="intigration">
+                    <div class="wrapper scrollbar-dynamic">
+                        <div class="page-content">
+                            <div class="content">
+                                <div class="demo">
+                                    <div class="scrollbar-inner">
+                                        <div class="intigrationContent">
+                                            <h5>API and Tracking Op</h5>
+                                            <div class="intigration-row">
+                                                <span class="logo">
+                                                    <img src="./images/intigration-logo.svg" alt="img">
+                                                </span>
+                                                <div class="intigrat-row-content">
+                                                    <div class="intigratInnerContent">
+                                                        <h6>ClientPoint API Keys</h6>
+                                                        <p>Connect your ClientPoint with API Keys</p>
+                                                    </div>
+                                                    <a class="waves-effect waves-light btn btn-round border-btn">Unlock
+                                                        now!</a>
+                                                </div>
+                                            </div>
+                                            <div class="intigration-row">
+                                                <span class="logo">
+                                                    <img src="./images/intigration-logo.svg" alt="img">
+                                                </span>
+                                                <div class="intigrat-row-content">
+                                                    <div class="intigratInnerContent">
+                                                        <h6>Third Party Tracking Code</h6>
+                                                        <p>Track all activity on your portal using third party tracking
+                                                            code.</p>
+                                                    </div>
+                                                    <a class="waves-effect waves-light btn btn-round border-btn">Unlock
+                                                        now!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="intigrationContent">
+                                            <h5>CRM Integrations</h5>
+                                            <div class="intigration-row">
+                                                <span class="logo">
+                                                    <img class="responsive-img" src="./images/HubSpot_Logo.svg" alt="img">
+                                                </span>
+                                                <div class="intigrat-row-content">
+                                                    <div class="intigratInnerContent">
+                                                        <h6>Hubspot</h6>
+                                                        <p>Hubspot is an inbound marketing and sales platform that helps
+                                                            companies attract visitors, convert leads, and close
+                                                            customers</p>
+                                                    </div>
+                                                    <a class="waves-effect waves-light btn btn-round">Connect</a>
+                                                </div>
+                                            </div>
+                                            <div class="intigration-row">
+                                                <span class="logo">
+                                                    <img src="./images/intigration-logo.svg" alt="img">
+                                                </span>
+                                                <div class="intigrat-row-content">
+                                                    <div class="intigratInnerContent">
+                                                        <h6>Pipedrive</h6>
+                                                        <p>Pipedrive is a Sales CRM & pipeline management tool that
+                                                            helps you focus on actions that matter.</p>
+                                                    </div>
+                                                    <a class="waves-effect waves-light btn btn-round border-btn">Unlock
+                                                        now!</a>
+                                                </div>
+                                            </div>
+                                            <div class="intigration-row">
+                                                <span class="logo">
+                                                    <img src="./images/intigration-logo.svg" alt="img">
+                                                </span>
+                                                <div class="intigrat-row-content">
+                                                    <div class="intigratInnerContent">
+                                                        <h6>Get Base</h6>
+                                                        <p>Next-generation CRM software for leading sales teams</p>
+                                                    </div>
+                                                    <a class="waves-effect waves-light btn btn-round border-btn">Unlock
+                                                        now!</a>
+                                                </div>
+                                            </div>
+                                            <div class="intigration-row">
+                                                <span class="logo">
+                                                    <img src="./images/intigration-logo.svg" alt="img">
+                                                </span>
+                                                <div class="intigrat-row-content">
+                                                    <div class="intigratInnerContent">
+                                                        <h6>NetSuite</h6>
+                                                        <p>NetSuite is the world’s leading provider of cloud-based
+                                                            business management software</p>
+                                                    </div>
+                                                    <a class="waves-effect waves-light btn btn-round border-btn">Unlock
+                                                        now!</a>
+                                                </div>
+                                            </div>
+                                            <div class="intigration-row">
+                                                <span class="logo">
+                                                    <img src="./images/intigration-logo.svg" alt="img">
+                                                </span>
+                                                <div class="intigrat-row-content">
+                                                    <div class="intigratInnerContent">
+                                                        <h6>SalesForce CRM</h6>
+                                                        <p>Salesforce is the customer success platform that helps
+                                                            companies connect with customers, partners, and employees in
+                                                            entirely new ways.</p>
+                                                    </div>
+                                                    <a class="waves-effect waves-light btn btn-round border-btn">Unlock
+                                                        now!</a>
+                                                </div>
+                                            </div>
+                                            <div class="intigration-row">
+                                                <span class="logo">
+                                                    <img src="./images/intigration-logo.svg" alt="img">
+                                                </span>
+                                                <div class="intigrat-row-content">
+                                                    <div class="intigratInnerContent">
+                                                        <h6>Microsoft Dynamics CRM</h6>
+                                                        <p>Bring CRM and EARP capabilities together with Microsoft
+                                                            Dynamics CRM— intelligent business applications that help
+                                                            run your business end to end in the cloud.</p>
+                                                    </div>
+                                                    <a class="waves-effect waves-light btn btn-round border-btn">Unlock
+                                                        now!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+    <!-- Main Content end here  -->
+
+    <!-- Javascript files start here -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/pikaday.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.scrollbar-inner').scrollbar();
+        });
+    </script>
+    <script>
+        var picker = new Pikaday(
+            {
+                field: document.getElementById('datepicker'),
+                firstDay: 1,
+                minDate: new Date(),
+                maxDate: new Date(2020, 12, 31),
+                yearRange: [2000, 2020]
+            });
+    </script>
+</body>
+
+</html>

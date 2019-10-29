@@ -423,6 +423,12 @@
 		font-size: 1rem;
 		line-height: 1.6rem;
 	}
+	.intigration .intigrat-row-content .btn {
+		margin: 1rem 0 0 0;
+	}
+	.intigratInnerContent {
+		flex: 0 0 100%;
+	}
 }
 
 // Media for 570px
@@ -484,6 +490,10 @@
 }
 .newClientPointTitleBar .library-header-right .commonDefaultSearch {
     margin: 0 1.25rem 1rem 0;
+}
+.intigration .intigrat-row-content {
+    flex: 0 0 100%;
+    margin-top: 1.5rem;
 }
 }
 
