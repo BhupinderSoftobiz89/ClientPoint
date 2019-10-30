@@ -10944,6 +10944,10 @@ input[type=range]::-ms-thumb {
   z-index: 4;
 }
 
+#CommentsClientPoint .outerScrollViewer {
+  height: calc(100% - 246px);
+}
+
 /* Clientpoint Detials page end here */
 /* client Point File page start here */
 .clientPoint-file {
