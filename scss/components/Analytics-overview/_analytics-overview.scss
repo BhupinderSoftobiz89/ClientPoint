@@ -717,7 +717,6 @@
 			@include flexbox();
 			@include flex-wrap($wrap);
 			align-items: $align-items-center;
-			margin-bottom: 1.375rem;
 			.pdfIcon {
 				background: url(../images/common-icons.svg) no-repeat -168px -345px;
 				width: 1.3rem;
@@ -748,6 +747,7 @@
 		}
 		.q2Marketing-content {
 			overflow: auto;
+			@include margin-padding(all, 1.375rem 0 0 0, all, null);
 			table {
 				tr {
 					border: $none;

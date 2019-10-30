@@ -1,0 +1,42 @@
+/* Comment Expanded CSS start here */
+.comment-expended {
+	@include margin-padding(all, 0 0 2.1875rem, all, null);
+}
+.ipAddress {
+	.replyComment {
+		.replyComment-row {
+			max-width: 76.74%;
+			flex: 0 0 76.74%;
+			border: 1px solid color("grey", "lighten-3");
+			background: color("shades", "white");
+			@include margin-padding(all, 0 0 1.25rem, all, 1.25rem 1.875rem);
+			&:last-child {
+				@include margin-padding(all, 1.25rem 0 0, all, null);
+			}
+			&:nth-child(even) {
+				background: color("grey", "lighten-5");
+			}
+			h5 {
+				@include font-rem(14px, 24px);
+				color: color("grey", "darken-4");
+				@include margin-padding(all, 0 0 0.625rem, all, null);
+				@include font-weight(semi-bold);
+			}
+			p {
+				@include font-rem(16px, 20px);
+				color: color("blue-grey", "darken-1");
+				@include margin-padding(all, 0 0 0.625rem, all, null);
+			}
+			h6 {
+				@include font-rem(14px, 24px);
+				@include font-weight(medium);
+				color: color("grey", "darken-1");
+				@include margin-padding(all, 0, all, null);
+			}
+		}
+	}
+}
+.commentLink {
+	@include font-weight(medium);
+}
+/* Comment Expanded CSS start here */

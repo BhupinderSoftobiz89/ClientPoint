@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/pikaday.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.scrollbar.css" />
+    <link type="text/css" rel="stylesheet" href="scss/materialize.css" />
+    <title>Welcome To ClientPoint</title>
+    <!-- Custom CSS start here  -->
+
+</head>
+
+<body>
+    <!-- Sidebar nav start here  -->
+
+    <nav class="sidebarNav sidebarNavClose">
+        <div class="navMenuOuter menu btn6 navMenu" data-menu="6">
+            <div class="icon"></div>
+        </div>
+        <ul>
+            <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="tab-1">
+                <a href="#dashboard_nav" class="sidebarclick">
+                    <span class="commonIconbg fileIcon"></span>
+                    Dashboard
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
+                <a href="#library_nav" class="sidebarclick">
+                    <span class="commonIconbg prieviewIcon"></span>
+                    Content Libray
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="tab-3">
+                <a href="#clientPoint_nav" class="sidebarclick">
+                    <span class="commonIconbg clientIcon"></span>
+                    ClientPoints
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="tab-4">
+                <a href="#Setting_nav" class="sidebarclick">
+                    <span class="commonIconbg settingIcon"></span>
+                    Settings
+                </a>
+            </li>
+        </ul>
+        <a href="javascript:void(0)" class="clientPointLogo">
+            <img class="logoSmall" src="./images/ClientPoint-Logo.svg" alt="">
+            <img class="logoBig" src="./images/clientpoint-logo-big.svg" alt="">
+        </a>
+    </nav>
+
+    <div class="sidebar_nav">
+        <aside id="tab-1" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">ClientPoint</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-2" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Users & Permissions</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
+                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
+                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Advanced Settings</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-3" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#" class="active">Analytics</a></li>
+                <li><a href="#">ClientPoint</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-4" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="#" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="#">Users & Permissions</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
+                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
+                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Advanced Settings</a></li>
+            </ul>
+        </aside>
+    </div>
+    <!-- Sidebar nav end here  -->
+
+    <!-- Header start here  -->
+    <header class="page-header d-flex">
+        <div class="searchbox">
+            <input type="submit" class="searchBtn" value="">
+            <input type="search" class="searchInput" placeholder="Search">
+        </div>
+        <div class="searchResponsive">
+            <a href="#" class="mobileSearch"></a>
+        </div>
+        <aside class="newClientPoint">
+            <a class="waves-teal btn-flat">New ClientPoint</a>
+            <a class="userLoginPanel dropdown-trigger" href="#" data-target="userDropDown">
+                <span class="userFetaures"><strong>Upgrade now</strong> to unlock more features!</span>
+                <span class="userAvtar"><img class="responsive-img" src="./images/user-img.png" alt=""></span>
+                <span class="userName">Miles Morales</span>
+                <i class="material-icons">
+                    arrow_drop_down
+                </i>
+            </a>
+            <ul id="userDropDown" class="dropdown-content UserDropdownLogin">
+                <li><a href="#!">
+                        <div class="userLoginHeader">
+                            <img src="./images/user-avtar.png" alt="">
+                            <div class="userInfo">
+                                <h6>Miles Morales</h6>
+                                <p>milesm@arachnid.com</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider" tabindex="-1"></li>
+                <li>
+                    <a href="#!">
+                        <span class="profileIcon"></span>
+                        View Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span class="supportIcon"></span>
+                        Support
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span class="logoutIcon"></span>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </header>
+    <!-- Header end here  -->
+    <!-- Main Content start here  -->
+    <div id="content">
+        <div class="content-common">
+            <div class="clientPoint-file ">
+                <div class="creatingPerposal fullHeight">
+                    <!-- Analytics Leftpanel start -->
+                    <article class="creatingPerposalLeft no-bg fullHeight">
+                        <div class="analytics-filter">
+                            <span class="filterIcon"></span>
+                            <h5>Filter by:</h5>
+                            <div class="filterRightpanel">
+                                <div class="calenderDate">
+                                    <a href="javasscript:void(0)" class="prevDate">
+                                    </a>
+                                    <span class="calenderDateText">Jul 29 - Aug 5</span>
+                                    <a href="javasscript:void(0)" class="nextDate">
+                                    </a>
+                                </div>
+                                <div class="calenederFilter">
+                                    <span class="calenderIcon"></span>
+                                    <a href="javascript:void(0);" class="hoverdropdown DropdownArrow dropdown-trigger"
+                                        data-alignment="left" data-target='CalenderDropdown'>
+                                        <i class="material-icons">
+                                            arrow_drop_down
+                                        </i>
+                                    </a>
+                                    <ul id='CalenderDropdown' class='dropdown-content CalenderDropDownContent'>
+                                        <li class="calenderHeader">
+                                            <div class="calenderHeader-row">
+                                                <span class="from">From</span>
+                                                <span class="dateCalender">
+                                                    <a class="calenderDateIcon" href="javascript:void(0);"></a>
+                                                    July 29, 2019
+                                                </span>
+                                            </div>
+                                            <div class="calenderHeader-row">
+                                                <span class="from">To</span>
+                                                <span class="dateCalender"><a class="calenderDateIcon"
+                                                        href="javascript:void(0);" id="datepicker"></a>
+                                                    August 5,
+                                                    2019
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li><a href="javascript:void(0);">Most Recent</a></li>
+                                        <li><a href="javascript:void(0);" class="active">Yesterday</a></li>
+                                        <li><a href="javascript:void(0);">This Month</a></li>
+                                        <li><a href="javascript:void(0);">Past Month</a></li>
+                                        <li><a href="javascript:void(0);">Past 3 Months</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="anaytics-overview dashboardScrollHeight">
+                            <div class="wrapper scrollbar-dynamic">
+                                <div class="page-content">
+                                    <div class="content">
+                                        <div class="demo">
+                                            <div class="scrollbar-inner">
+                                                <div class="anaytics-row">
+                                                    <h4>Today, August 1, 2019</h4>
+                                                    <div class="anaytics-overview-row anaytics-overviewbg addbg">
+                                                        <div class="border-row">
+                                                            <div class="anaytics-overview-header">
+                                                                <h6>MM/DD/YYYY 00:00 AM</h6>
+                                                                <a href="javascript:void(0);"
+                                                                    class="viewMore viewMoreClick"><span>View
+                                                                        More</span> <i class="material-icons">
+                                                                        arrow_right
+                                                                    </i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="anaytics-overview-content">
+                                                                <p><a href="javascript:void(0);" class="authLink">Kevin
+                                                                        Flynn</a>
+                                                                    commented on <a href="javascript:void(0);"
+                                                                        class="authLink">Q2 Marketing ClientPoint</a>
+                                                                </p>
+
+                                                                <div class="ipAddress p-0">
+                                                                    <div class="comment-expended">
+                                                                        <p><a href="javascript:void(0);"
+                                                                                class="commentLink">@MilesMorales</a>
+                                                                            Lorem ipsum dolor sit amet, consectetur
+                                                                            adipiscing elit, sed do eiusmod tempor
+                                                                            incididunt ut labore et dolore magna aliqua.
+                                                                            Ut enim ad minim veniam, quis nostrud
+                                                                            exercitation ullamco laboris nisi ut aliquip
+                                                                            ex ea commodo consequat. Duis aute irure
+                                                                            dolor in reprehenderit in voluptate velit
+                                                                            esse cillum dolore eu fugiat nulla pariatur.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="replyComment">
+                                                                        <div class="replyComment-row">
+                                                                            <h5>Miles Morales wrote:</h5>
+                                                                            <p><a href="javascript:void(0);"
+                                                                                    class="commentLink">@KevinFlynn</a>
+                                                                                Ut enim ad minim veniam, quis nostrud
+                                                                                exercitation ullamco laboris nisi ut
+                                                                                aliquip ex ea commodo consequat. <a
+                                                                                    href="javascript:void(0);"
+                                                                                    class="commentLink">@EdwardDillinger</a>
+                                                                                Duis aute irure dolor in reprehenderit
+                                                                                in voluptate velit esse cillum dolore eu
+                                                                                fugiat nulla pariatur. </p>
+                                                                            <h6>MM/DD/YYYY 00:00 AM</h6>
+                                                                        </div>
+                                                                        <div class="replyComment-row">
+                                                                            <h5>Kevin Flynn wrote:</h5>
+                                                                            <p><a href="javascript:void(0);"
+                                                                                    class="commentLink">@MilesMorales</a>
+                                                                                Ut enim ad minim veniam, quis nostrud
+                                                                                exercitation ullamco laboris nisi ut
+                                                                                aliquip ex ea commodo consequat.</p>
+                                                                            <h6>MM/DD/YYYY 00:00 AM</h6>
+                                                                        </div>
+                                                                        <div class="replyComment-row">
+                                                                            <h5>Miles Morales wrote:</h5>
+                                                                            <p><a href="javascript:void(0);"
+                                                                                    class="commentLink">@KevinFlynn</a>
+                                                                                Ut enim ad minim veniam, quis nostrud
+                                                                                exercitation ullamco laboris nisi ut
+                                                                                aliquip ex ea commodo consequat.</p>
+                                                                            <h6>MM/DD/YYYY 00:00 AM</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="javascript:void(0);" class="replyBtn">Reply
+                                                                        <span class="replyArrow"></span></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="anaytics-overview-footer">
+                                                                <div class="anaytics-overview-footer-row">
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="emailIcon"></span>
+                                                                        <h6>Alan@encom.com</h6>
+                                                                    </div>
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="phoneIcon"></span>
+                                                                        <h6>555-555-5555</h6>
+                                                                    </div>
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="mobileIcon"></span>
+                                                                        <h6>555-555-5555</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="anaytics-overview-row">
+                                                        <div class="border-row">
+                                                            <div class="anaytics-overview-header">
+                                                                <h6>MM/DD/YYYY 00:00 AM</h6>
+                                                                <a href="javascript:void(0);" class="viewMore">View More
+                                                                    <i class="material-icons">
+                                                                        arrow_right
+                                                                    </i></a>
+                                                            </div>
+                                                            <div class="anaytics-overview-content">
+                                                                <p>
+                                                                    <a href="javascript:void(0);" class="authLink">Q2
+                                                                        Marketing
+                                                                        ClientPoint</a> was hand delivered by
+                                                                    <strong>Alan Bradley</strong>
+                                                                    to <strong>Edward Dillinger.</strong>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="anaytics-overview-row">
+                                                        <div class="border-row">
+                                                            <div class="anaytics-overview-header">
+                                                                <h6>MM/DD/YYYY 00:00 AM</h6>
+                                                                <a href="javascript:void(0);" class="viewMore">View More
+                                                                    <i class="material-icons">
+                                                                        arrow_right
+                                                                    </i></a>
+                                                            </div>
+                                                            <div class="anaytics-overview-content">
+                                                                <h4>Kevin Flynn wrote:</h4>
+                                                                <p><a href="javascript:void(0);"
+                                                                        class="authLink">@MilesMorales</a> Lorem
+                                                                    ipsum dolor sit amet, consectetur adipiscing elit,
+                                                                    sed do eiusmod tempor incididunt ut labore et dolore
+                                                                    magna aliqua. Ut
+                                                                    enim ad minim veniam, quis nostrud exercitation
+                                                                    ullamco laboris nisi ut
+                                                                    aliquip ex ea commodo consequat. Duis aute irure
+                                                                    dolor in reprehenderit
+                                                                    in voluptate velit esse cillum dolore eu fugiat
+                                                                    nulla pariatur. </p>
+                                                                <div class="analyticsShadow">
+
+                                                                </div>
+                                                                <a href="javascript:void(0);" class="replyBtn">Reply
+                                                                    <span class="replyArrow"></span></a>
+
+                                                            </div>
+                                                            <div class="anaytics-overview-footer">
+                                                                <div class="anaytics-overview-footer-row">
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="emailIcon"></span>
+                                                                        <h6>Alan@encom.com</h6>
+                                                                    </div>
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="phoneIcon"></span>
+                                                                        <h6>555-555-5555</h6>
+                                                                    </div>
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="mobileIcon"></span>
+                                                                        <h6>555-555-5555</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="anaytics-row">
+                                                    <h4>July 31, 2019</h4>
+                                                    <div class="anaytics-overview-row">
+                                                        <div class="border-row">
+                                                            <div class="anaytics-overview-header">
+                                                                <h6>MM/DD/YYYY 00:00 AM</h6>
+                                                                <a href="javascript:void(0);" class="viewMore">View More
+                                                                    <i class="material-icons">
+                                                                        arrow_right
+                                                                    </i></a>
+                                                            </div>
+                                                            <div class="anaytics-overview-content">
+                                                                <h4>Kevin Flynn wrote:</h4>
+                                                                <p><a href="javascript:void(0);"
+                                                                        class="authLink">@PeterParker</a> Lorem
+                                                                    ipsum dolor sit amet, consectetur adipiscing elit,
+                                                                    sed do eiusmod tempor incididunt ut labore et dolore
+                                                                    magna aliqua. Ut
+                                                                    enim ad minim veniam, quis nostrud exercitation
+                                                                    ullamco laboris nisi ut
+                                                                    aliquip ex ea commodo consequat. Duis aute irure
+                                                                    dolor in reprehenderit
+                                                                    in voluptate velit esse cillum dolore eu fugiat
+                                                                    nulla pariatur. </p>
+                                                                <div class="analyticsShadow">
+                                                                </div>
+                                                                <a href="javascript:void(0);" class="replyBtn">Reply
+                                                                    <span class="replyArrow"></span></a>
+                                                            </div>
+                                                            <div class="anaytics-overview-footer">
+                                                                <div class="anaytics-overview-footer-row">
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="emailIcon"></span>
+                                                                        <h6>Alan@encom.com</h6>
+                                                                    </div>
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="phoneIcon"></span>
+                                                                        <h6>555-555-5555</h6>
+                                                                    </div>
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="mobileIcon"></span>
+                                                                        <h6>555-555-5555</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="anaytics-overview-row">
+                                                        <div class="border-row">
+                                                            <div class="anaytics-overview-header">
+                                                                <h6>MM/DD/YYYY 00:00 AM</h6>
+                                                                <a href="javascript:void(0);" class="viewMore">View More
+                                                                    <i class="material-icons">
+                                                                        arrow_right
+                                                                    </i></a>
+                                                            </div>
+                                                            <div class="anaytics-overview-content">
+                                                                <p><a href="javascript:void(0);" class="authLink">Alan
+                                                                        Bradley</a> from <a href="javascript:void(0);"
+                                                                        class="authLink">Encom</a> viewed the
+                                                                    ClientPoint.</p>
+                                                            </div>
+                                                            <div class="anaytics-overview-footer">
+                                                                <div class="anaytics-overview-footer-row">
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="emailIcon"></span>
+                                                                        <h6>Alan@encom.com</h6>
+                                                                    </div>
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="phoneIcon"></span>
+                                                                        <h6>555-555-5555</h6>
+                                                                    </div>
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="mobileIcon"></span>
+                                                                        <h6>555-555-5555</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="anaytics-overview-row">
+                                                        <div class="border-row">
+                                                            <div class="anaytics-overview-header">
+                                                                <h6>MM/DD/YYYY 00:00 AM</h6>
+                                                                <a href="javascript:void(0);" class="viewMore">View More
+                                                                    <i class="material-icons">
+                                                                        arrow_right
+                                                                    </i></a>
+                                                            </div>
+                                                            <div class="anaytics-overview-content">
+                                                                <p><a href="javascript:void(0);" class="authLink">Kevin
+                                                                        Flynn</a> from <a href="javascript:void(0);"
+                                                                        class="authLink">Encom</a> viewed the
+                                                                    ClientPoint.</p>
+                                                            </div>
+                                                            <div class="anaytics-overview-footer">
+                                                                <div class="anaytics-overview-footer-row">
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="emailIcon"></span>
+                                                                        <h6>Alan@encom.com</h6>
+                                                                    </div>
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="phoneIcon"></span>
+                                                                        <h6>555-555-5555</h6>
+                                                                    </div>
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="mobileIcon"></span>
+                                                                        <h6>555-555-5555</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="anaytics-overview-row">
+                                                        <div class="border-row">
+                                                            <div class="anaytics-overview-header">
+                                                                <h6>MM/DD/YYYY 00:00 AM</h6>
+                                                                <a href="javascript:void(0);" class="viewMore">View More
+                                                                    <i class="material-icons">
+                                                                        arrow_right
+                                                                    </i></a>
+                                                            </div>
+                                                            <div class="anaytics-overview-content">
+                                                                <p><a href="javascript:void(0);" class="authLink">Alan
+                                                                        Bradley</a> from <a href="javascript:void(0);"
+                                                                        class="authLink">Encom</a> viewed the
+                                                                    ClientPoint.</p>
+                                                            </div>
+                                                            <div class="anaytics-overview-footer">
+                                                                <div class="anaytics-overview-footer-row">
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="emailIcon"></span>
+                                                                        <h6>Alan@encom.com</h6>
+                                                                    </div>
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="phoneIcon"></span>
+                                                                        <h6>555-555-5555</h6>
+                                                                    </div>
+                                                                    <div class="anaytics-overview-col">
+                                                                        <span class="mobileIcon"></span>
+                                                                        <h6>555-555-5555</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Analytics Leftpanel end -->
+                    <!-- Analytics Rightpanel start -->
+                    <aside class="creatingPerposalRight analyticsPadding fullHeight">
+                        <div class="analyticsOverviewView">
+                            <div class="activityBoard">
+                                <div class="ativityHeader">
+                                    Activity Board
+                                    <span class="thisWeek">This Week</span>
+                                    <i class="material-icons">
+                                        arrow_drop_down
+                                    </i>
+                                </div>
+                                <div class="activity-list">
+                                    <a href="javascript:void(0);" class="activity-row">
+                                        <h6>Created</h6>
+                                        <span class="count">3</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="activity-row active">
+                                        <h6>Sent</h6>
+                                        <span class="count">2</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="activity-row">
+                                        <h6>Viewed</h6>
+                                        <span class="count">2</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="activity-row">
+                                        <h6>Viewers</h6>
+                                        <span class="count">2</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="activity-row">
+                                        <h6>Comments</h6>
+                                        <span class="count">5</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="activity-row">
+                                        <h6>Signed</h6>
+                                        <span class="count">2</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="activity-row">
+                                        <h6>Won</h6>
+                                        <span class="count">2</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="activity-row">
+                                        <h6>Unsent</h6>
+                                        <span class="count">1</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="activity-row">
+                                        <h6>Amount Won</h6>
+                                        <span class="count">$50,000</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="activity-row">
+                                        <h6>Amount Pending</h6>
+                                        <span class="count">$200,000</span>
+                                    </a>
+                                </div>
+                                <div class="recentylyCreated">
+                                    <h4>Recently Created</h4>
+                                    <div class="created-row">
+                                        <div class="created-row-head">
+                                            <h5>Client Name</h5>
+                                            <a href='#' data-target="viewedDropdown"
+                                                class="dropDownicon dropdown-trigger">
+                                            </a>
+                                            <ul id="viewedDropdown" class="dropdown-content viewedDropDown-content">
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <span class="shareIcon"></span>
+                                                        Share
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <span class="commentIcon">
+                                                        </span>
+                                                        Comment
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <span class="prieviewIcon"></span>
+                                                        Preview
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <span class="printIcon"></span>
+                                                        Print
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <span class="sendIcon"></span>
+                                                        Send
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <span class="editIcon"></span>
+                                                        Edit
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="createdContent">
+                                            <h6>Proposal Title Lorem Ipsum</h6>
+                                            <div class="status">
+                                                <div class="statusLeft">
+                                                    <h5>Status:</h5>
+                                                    <span class="badge">Sent</span>
+                                                </div>
+                                                <div class="lastViewed">
+                                                    <h5>Last Viewed:</h5>
+                                                    <h6>MM-DD-YYYY 00:00 AM</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="created-row">
+                                        <div class="created-row-head">
+                                            <h5>Client Name</h5>
+                                            <a href="javascript:void(0);" class="dropDownicon">
+                                            </a>
+                                        </div>
+                                        <div class="createdContent">
+                                            <h6>Proposal Title Lorem Ipsum</h6>
+                                            <div class="status">
+                                                <div class="statusLeft">
+                                                    <h5>Status:</h5>
+                                                    <span class="badge badge-yellow">Sent</span>
+                                                </div>
+                                                <div class="lastViewed">
+                                                    <h5>Last Viewed:</h5>
+                                                    <h6>MM-DD-YYYY 00:00 AM</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- Analytics Rightpanel end -->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Add File Modal start here  -->
+    <div id="addFile" class="modal addNotesModal">
+        <div class="modal-header">
+            <span class="shareIcon"></span>
+            <h4>Add a File</h4>
+            <a class="modal-close"><i class="material-icons">
+                    close
+                </i></a>
+        </div>
+        <div class="tabs-header">
+            <ul class="tabs">
+                <li class="tab"><a href="#MyLibrary" class="active">My Library</a></li>
+                <li class="tab"><a href="#Mytemplates">My templates</a></li>
+                <li class="tab"><a href="#Uploads">Uploads</a></li>
+                <li class="tab"><a href="#Recent">Recent</a></li>
+                <li class="tab"><a href="#FromWebsite">From Website</a></li>
+                <li class="tab"><a href="#VideoFromWebcam">Video from Webcam</a></li>
+                <li class="ScrollOuterArrow">
+                    <a href="javascript:void(0);" class="ScrollArrow"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- My Library Tab start here  -->
+        <div id="MyLibrary">
+            <div class="tabContent">
+                <div class="mylibraryContent">
+                    <div class="wrapper scrollbar-dynamic">
+                        <div class="page-content">
+                            <div class="content">
+                                <div class="demo">
+                                    <div class="scrollbar-inner">
+                                        <div class="searchTabHeader">
+                                            <div class="commonDefaultSearch">
+                                                <input type="submit" class="searchBtn" value="">
+                                                <input type="search" class="searchCommon" placeholder="Search">
+                                            </div>
+                                            <a href="javascript:void(0)" class="gridLink"><img
+                                                    src="./images/grid-icon.svg" alt=""></a>
+                                        </div>
+                                        <p>Files</p>
+                                        <div class="treeview">
+                                            <ul>
+                                                <li><span class="arrow"><span class="folder"></span> About</span>
+                                                    <ul>
+                                                        <li><span class="fileIcon"></span>File</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li><span class="arrow"><span class="folder"></span>Case Studies</span>
+                                                    <ul>
+                                                        <li><span class="arrow"><span class="folder"></span>Product
+                                                                Quote</span>
+                                                            <ul>
+                                                                <li><span class="fileIcon"></span>File Name</li>
+                                                                <li><span class="fileIcon"></span>File Name</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li><span class="arrow"><span class="folder"></span>Pricing</span>
+                                                    <ul>
+                                                        <li><span class="fileIcon"></span>File Name</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-row">
+                    <a class="waves-effect waves-light btn btn-round mr-2">Add Files</a>
+                    <a class="btn-flat">Cancel</a>
+                </div>
+            </div>
+        </div>
+        <!-- My Library Tab end here  -->
+        <!-- My Template Tab start here  -->
+        <div id="Mytemplates">
+            <div class="tabContent">
+                <div class="mylibraryContent">
+                    <div class="wrapper scrollbar-dynamic">
+                        <div class="page-content">
+                            <div class="content">
+                                <div class="demo">
+                                    <div class="scrollbar-inner">
+                                        <div class="searchTabHeader">
+                                            <div class="commonDefaultSearch">
+                                                <input type="submit" class="searchBtn" value="">
+                                                <input type="search" class="searchCommon" placeholder="Search">
+                                            </div>
+                                            <a href="javascript:void(0)" class="gridLink"><img
+                                                    src="./images/grid-icon.svg" alt=""></a>
+                                        </div>
+                                        <p>Templates</p>
+                                        <div class="templates">
+                                            <ul>
+                                                <li><a href="javascript:void(0);"><span
+                                                            class="templateIcon"></span>Introduction</a></li>
+                                                <li><a href="javascript:void(0);"><span class="templateIcon"></span>Case
+                                                        Studies</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-row">
+                    <a class="waves-effect waves-light btn btn-round mr-2">Add Files</a>
+                    <a class="btn-flat">Cancel</a>
+                </div>
+            </div>
+        </div>
+        <!-- My Template Tab end here  -->
+        <!-- Uploads Tab start here  -->
+        <div id="Uploads">
+            <div class="tabContent mb-0">
+                <div class="mylibraryContent">
+                    <div class="wrapper scrollbar-dynamic">
+                        <div class="page-content">
+                            <div class="content">
+                                <div class="demo">
+                                    <div class="scrollbar-inner">
+                                        <div class="searchTabHeader">
+                                            <div class="commonDefaultSearch">
+                                                <input type="submit" class="searchBtn" value="">
+                                                <input type="search" class="searchCommon" placeholder="Search">
+                                            </div>
+                                            <a href="javascript:void(0)" class="gridLink"><img
+                                                    src="./images/grid-icon.svg" alt=""></a>
+                                        </div>
+                                        <div class="chooseFilePadding">
+                                            <div class="chooseFile">
+                                                <p> <span><input type="file"> Click to choose a
+                                                        file</span> or drag and drop it here.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="uploadFilesShow">
+                                            <div class="fileName">
+                                                <div class="addFilesName-row">
+                                                    <span class="FileIcon"></span>File Name
+
+                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                            class="material-icons">
+                                                            clear
+                                                        </i></a>
+                                                </div>
+                                                <div class="addFilesName-row">
+                                                    <span class="FileIcon"></span>File Name
+
+                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                            class="material-icons">
+                                                            clear
+                                                        </i></a>
+                                                </div>
+                                            </div>
+                                            <a class="addMoreFiles" href="javascript:void(0);">
+                                                <i class="material-icons">
+                                                    add
+                                                </i>Add More Files
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-row">
+                    <a class="waves-effect waves-light btn btn-round mr-2">Add Files</a>
+                    <a class="btn-flat">Cancel</a>
+                </div>
+            </div>
+        </div>
+        <!-- Uploads Tab end here  -->
+        <!-- Recent Tab start here  -->
+        <div id="Recent">
+            <div class="tabContent heightAuto">
+                <div class="mylibraryContent">
+                    <div class="wrapper scrollbar-dynamic">
+                        <div class="page-content">
+                            <div class="content">
+                                <div class="demo">
+                                    <div class="scrollbar-inner">
+                                        <div class="searchTabHeader">
+                                            <div class="commonDefaultSearch">
+                                                <input type="submit" class="searchBtn" value="">
+                                                <input type="search" class="searchCommon" placeholder="Search">
+                                            </div>
+                                            <a href="javascript:void(0)" class="gridLink"><img
+                                                    src="./images/grid-icon.svg" alt=""></a>
+                                        </div>
+                                        <p>Last Week</p>
+                                        <div class="uploadFilesShow">
+                                            <div class="fileName">
+                                                <div class="addFilesName-row">
+                                                    <span class="FileIcon"></span>File Name
+                                                </div>
+                                                <div class="addFilesName-row">
+                                                    <span class="FileIcon"></span>File Name
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-row">
+                    <a class="waves-effect waves-light btn btn-round mr-2">Add Files</a>
+                    <a class="btn-flat">Cancel</a>
+                </div>
+            </div>
+        </div>
+        <!-- Recent Tab end here  -->
+        <!-- From Website Tab end here  -->
+        <div id="FromWebsite">
+            <div class="tabContent webtabheight">
+                <div class="mylibraryContent">
+                    <div class="wrapper scrollbar-dynamic">
+                        <div class="page-content">
+                            <div class="content">
+                                <div class="demo">
+                                    <div class="scrollbar-inner">
+
+                                        <div class="websiteUrlSerach">
+                                            <input type="text" placeholder="Website url...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-row">
+                    <a class="waves-effect waves-light btn btn-round mr-2">Add Url</a>
+                    <a class="btn-flat">Cancel</a>
+                </div>
+            </div>
+        </div>
+        <!-- From Website Tab end here  -->
+        <!-- Video from Webcam Tab end here  -->
+        <div id="VideoFromWebcam">
+            <div class="tabContent mb-0">
+                <div class="mylibraryContent">
+                    <div class="wrapper scrollbar-dynamic">
+                        <div class="page-content">
+                            <div class="content">
+                                <div class="demo">
+                                    <div class="scrollbar-inner">
+                                        <div class="searchTabHeader">
+                                            <div class="commonDefaultSearch">
+                                                <input type="submit" class="searchBtn" value="">
+                                                <input type="search" class="searchCommon" placeholder="Search">
+                                            </div>
+                                            <a href="javascript:void(0)" class="gridLink"><img
+                                                    src="./images/grid-icon.svg" alt=""></a>
+                                        </div>
+                                        <div class="chooseFilePadding">
+                                            <div class="chooseFile">
+                                                <p> <span><input type="file"> Click to choose a
+                                                        file</span> or drag and drop it here.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="uploadFilesShow">
+                                            <div class="fileName">
+                                                <div class="addFilesName-row">
+                                                    <span class="FileIcon"></span>File Name
+
+                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                            class="material-icons">
+                                                            clear
+                                                        </i></a>
+                                                </div>
+                                                <div class="addFilesName-row">
+                                                    <span class="FileIcon"></span>File Name
+
+                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                            class="material-icons">
+                                                            clear
+                                                        </i></a>
+                                                </div>
+                                            </div>
+                                            <a class="addMoreFiles" href="javascript:void(0);">
+                                                <i class="material-icons">
+                                                    add
+                                                </i>Add More Files
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-row">
+                    <a class="waves-effect waves-light btn btn-round mr-2">Add Files</a>
+                    <a class="btn-flat">Cancel</a>
+                </div>
+            </div>
+        </div>
+        <!-- Video from Webcam Tab end here  -->
+
+    </div>
+
+    <!-- Add File Modal end here  -->
+
+    <!-- Add A section Modal start here -->
+
+    <div id="AddSection" class="modal">
+        <div class="modal-header">
+            <span class="bookIcon"></span>
+            <h4>Add a section</h4>
+            <a class="modal-close"><i class="material-icons">
+                    close
+                </i></a>
+        </div>
+        <div class="modal-content">
+            <h4>Please enter a section title</h4>
+            <input type="text" placeholder="Section title">
+
+            <div class="folderradio">
+                <h4>Files in this folder are visible to:</h4>
+                <label>
+                    <input class="with-gap" name="group1" type="radio" />
+                    <span>Everyone</span>
+                </label>
+                <label>
+                    <input class="with-gap" name="group1" type="radio" />
+                    <span>Recipients Only</span>
+                </label>
+                <label>
+                    <input class="with-gap" name="group1" type="radio" />
+                    <span>Hidden Externally</span>
+                </label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-row">
+                <a class="waves-effect waves-light btn btn-round mr-2">Submit</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add A section Modal end here -->
+
+    <!-- Share Modal start here  -->
+    <div id="shareModal" class="modal">
+        <div class="modal-header">
+            <span class="shareIcon"></span>
+            <h4>Share</h4>
+            <a class="modal-close"><i class="material-icons">
+                    close
+                </i></a>
+        </div>
+        <div class="tabs-header">
+            <ul class="tabs">
+                <li class="tab"><a href="#URL" class="active">URL</a></li>
+                <li class="tab"><a href="#Email">Email</a></li>
+            </ul>
+        </div>
+        <!-- URL tab start here  -->
+        <div id="URL">
+            <div class="tabContent">
+                <div class="privateShare">
+                    <h4>Copy this private URL to share:</h4>
+                    <div class="copyUrl">
+                        <input type="text" placeholder="http://clientpoint.net/CMJ111">
+                        <input type="submit" class="copybtn" value="Copy">
+                    </div>
+                    <div class="text-center">
+                        <a href="javascript:void(0);" target="_blank" class="neWindow">Open in new window</a>
+                    </div>
+                    <div class="settings">
+                        <h6>Settings</h6>
+                        <div class="setting-row">
+                            <span>Allow commenting</span>
+                            <div class="switch">
+                                <label>
+                                    <input checked type="checkbox">
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="setting-row">
+                            <span>Password protect</span>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                            <div class="enterPassword">
+                                <input type="text" placeholder="Enter Password">
+                                <input type="submit" class="savePasswordBtn" value="Save Password">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- URL tab end here  -->
+        <!-- Email Tab start here  -->
+        <div id="Email">
+            <div class="tabContent">
+                <div class="emailContent">
+                    <div class="emailAddress">
+                        <label>To</label>
+                        <input type="text" placeholder="recipient email address...">
+                    </div>
+                    <div class="subjectEmail">
+                        <label>Subject</label>
+                        <input type="text" placeholder="ClientPoint Title" value="ClientPoint Title">
+                    </div>
+                    <div class="emailText">
+                        <p>Hello,</p>
+                        <p>1. Please view your document. </p>
+                        <p>2. Eros in cursus turpis massa tincidunt dui ut ornare. Urna cursus eget nunc scelerisque.
+                        </p>
+                        <p>3. Amet nisl purus in mollis nunc sed id semper risus. Cras pulvinar mattis nunc sed blandit
+                            libero volutpat sed cras. Neque viverra justo nec ultrices dui sapien eget mi proin.</p>
+                        <p>Thank you,</p>
+                        <p>Miles Morales</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer ">
+                <div class="btn-row justify-content-end">
+                    <a class="btn-flat">Cancel</a>
+                    <a class="waves-effect waves-light btn btn-round mr-2">Send</a>
+                </div>
+            </div>
+        </div>
+        <!-- Email Tab start here  -->
+    </div>
+
+    <!-- Share Modal end here  -->
+
+    <!-- Comment Modal start here -->
+    <!-- Modal Structure -->
+    <div id="commentModal" class="modal">
+        <div class="modal-header">
+            <span class="shareIcon"></span>
+            <h4>Comment</h4>
+            <a class="modal-close"><i class="material-icons">
+                    close
+                </i></a>
+        </div>
+
+        <div class="tabs-header">
+            <ul class="tabs">
+                <li class="tab"><a href="#Comments" class="active">Comments</a></li>
+                <li class="tab"><a href="#Notes">Notes</a></li>
+            </ul>
+        </div>
+        <!-- Comment tab start here  -->
+        <div id="Comments">
+            <div class="tabContent">
+                <textarea class="commenteTexarea"
+                    placeholder="Write your comment here. It will shared external with recipients." name="comments"
+                    maxlength="1000" cols="25" rows="6"></textarea>
+            </div>
+            <div class="modal-footer ">
+                <div class="btn-row justify-content-end">
+                    <a class="btn-flat">Cancel</a>
+                    <a class="waves-effect waves-light btn btn-round mr-2">Send Message</a>
+                </div>
+            </div>
+        </div>
+        <!-- Comment tab start here  -->
+
+        <!-- Notes tab start here  -->
+        <div id="Notes">
+            <div class="tabContent">
+                <textarea class="commenteTexarea"
+                    placeholder="Write your note here. It will only be shared internal with your team member."
+                    name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+            </div>
+            <div class="modal-footer ">
+                <div class="btn-row justify-content-end">
+                    <a class="btn-flat">Cancel</a>
+                    <a class="waves-effect waves-light btn btn-round mr-2">Add Note</a>
+                </div>
+            </div>
+        </div>
+        <!-- Notes tab start here  -->
+    </div>
+    <!-- Comment Modal end here -->
+
+
+
+
+    <!-- Main Content end here  -->
+
+    <!-- Javascript files start here -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/pikaday.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.scrollbar-inner').scrollbar();
+        });
+    </script>
+    <script>
+        var picker = new Pikaday(
+            {
+                field: document.getElementById('datepicker'),
+                firstDay: 1,
+                minDate: new Date(),
+                maxDate: new Date(2020, 12, 31),
+                yearRange: [2000, 2020]
+            });
+    </script>
+</body>
+
+</html>

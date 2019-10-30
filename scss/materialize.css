@@ -2608,7 +2608,7 @@ ul:not(.browser-default) > li {
 }
 
 a {
-  color: #039be5;
+  color: #5F63FF;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -14762,7 +14762,6 @@ input[type=range]::-ms-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1.375rem;
 }
 
 .ipAddress .q2Marketing .q2Marketing-header .pdfIcon {
@@ -14800,6 +14799,7 @@ input[type=range]::-ms-thumb {
 
 .ipAddress .q2Marketing .q2Marketing-content {
   overflow: auto;
+  margin: 1.375rem 0 0 0;
 }
 
 .ipAddress .q2Marketing .q2Marketing-content table tr {
@@ -17604,6 +17604,64 @@ input[type=range]::-ms-thumb {
 }
 
 /* Library CSS end here */
+/* Comment Expanded CSS start here */
+.comment-expended {
+  margin: 0 0 2.1875rem;
+}
+
+.ipAddress .replyComment .replyComment-row {
+  max-width: 76.74%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 76.74%;
+          flex: 0 0 76.74%;
+  border: 1px solid #D4D4DE;
+  background: #FFFFFF;
+  margin: 0 0 1.25rem;
+  padding: 1.25rem 1.875rem;
+}
+
+.ipAddress .replyComment .replyComment-row:last-child {
+  margin: 1.25rem 0 0;
+}
+
+.ipAddress .replyComment .replyComment-row:nth-child(even) {
+  background: #EFEFF3;
+}
+
+.ipAddress .replyComment .replyComment-row h5 {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.71429rem;
+  color: #181A51;
+  margin: 0 0 0.625rem;
+  font-weight: 600;
+}
+
+.ipAddress .replyComment .replyComment-row p {
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 20px;
+  line-height: 1.42857rem;
+  color: #696A8E;
+  margin: 0 0 0.625rem;
+}
+
+.ipAddress .replyComment .replyComment-row h6 {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.71429rem;
+  font-weight: 500;
+  color: #A9A9BE;
+  margin: 0;
+}
+
+.commentLink {
+  font-weight: 500;
+}
+
+/* Comment Expanded CSS start here */
 /* Responsive CSS start here */
 @media (max-width: 1200px) {
   .page-header .userFetaures {
@@ -17767,6 +17825,12 @@ input[type=range]::-ms-thumb {
   }
   .searchTab .tabs {
     overflow: auto;
+  }
+  .ipAddress .replyComment .replyComment-row {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
 

@@ -161,6 +161,10 @@
 			overflow: $auto;
 		}
 	}
+	.ipAddress .replyComment .replyComment-row {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
 }
 
 // Media for 768px
