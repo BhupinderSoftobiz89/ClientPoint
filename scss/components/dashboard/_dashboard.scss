@@ -13,7 +13,7 @@
 .activityBoard {
 	background: color("shades", "white");
 	@include border-radius(5px);
-	.ativityHeader {
+	.activityHeader {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
@@ -25,6 +25,7 @@
 		font-weight: $font-weight-600;
 		border-bottom: 1px solid color("grey", "lighten-5");
 		padding: 19px 20px;
+		width: $full-width;
 		.material-icons {
 			margin-right: $zero;
 			color: color("indigo", "base");
@@ -75,34 +76,34 @@
 	.recentylyCreated {
 		@include margin-padding(all, null, all, 20px 0 0);
 		h4 {
-            @include font-rem(14px, 24px);
-            color: color('grey','darken-4');
-            text-transform: $text-uppercase;
-            @include font-weight(bold);
-            @include margin-padding(all, 0 0 10px, all, 0 20px);
+			@include font-rem(14px, 24px);
+			color: color("grey", "darken-4");
+			text-transform: $text-uppercase;
+			@include font-weight(bold);
+			@include margin-padding(all, 0 0 10px, all, 0 20px);
 		}
-    }
-    .created-row {
+	}
+	.created-row {
 		@include margin-padding(all, null, all, 13px 30px);
-		border-bottom: 1px solid color('grey','lighten-5');
+		border-bottom: 1px solid color("grey", "lighten-5");
 		&:hover {
-			background: color('grey','lighten-4');
+			background: color("grey", "lighten-4");
 		}
 		&:last-child {
 			border-bottom: $none;
 		}
-        .created-row-head {
-            align-items: $align-items-center;
+		.created-row-head {
+			align-items: $align-items-center;
 			@include flexbox();
 			@include flex-wrap($wrap);
-            h5 {
+			h5 {
 				@include margin-padding(all, 0, all, null);
 				@include font-rem(12px, 24px);
-				color: color('grey','darken-1');
+				color: color("grey", "darken-1");
 				@include font-weight(500);
 				text-transform: $text-uppercase;
 				letter-spacing: 0.25px;
-            }    
+			}
 		}
 		.dropDownicon {
 			width: 30px;
@@ -119,53 +120,52 @@
 			&:hover,
 			&:focus,
 			&:active {
-			  background: #efeff3 url(../images/common-icons.svg) no-repeat -315px -339px;
+				background: #efeff3 url(../images/common-icons.svg) no-repeat -315px -339px;
 			}
-		  }
-		  .createdContent {
-			  h6 {
-				  @include font-rem(16px, 24px);
-				  color:color('grey','darken-4');
-				  @include margin-padding(all, 0 0 10px, all, null);
-			  }
-		  }
+		}
+		.createdContent {
+			h6 {
+				@include font-rem(16px, 24px);
+				color: color("grey", "darken-4");
+				@include margin-padding(all, 0 0 10px, all, null);
+			}
+		}
 	}
 	.status {
 		align-items: $align-items-center;
-			@include flexbox();
-			@include flex-wrap($wrap);
-			.statusLeft {
-				@include margin-padding(all, 0 3.375rem 0 0, all, null);
-			}
-			h5 {
+		@include flexbox();
+		@include flex-wrap($wrap);
+		.statusLeft {
+			@include margin-padding(all, 0 3.375rem 0 0, all, null);
+		}
+		h5 {
+			@include margin-padding(all, 0, all, null);
+			@include font-rem(12px, 24px);
+			color: color("grey", "darken-1");
+			@include font-weight(500);
+			text-transform: $text-uppercase;
+			letter-spacing: 0.25px;
+		}
+		.badge {
+			background: #00b0dc;
+			color: color("shades", "white");
+			@include border-radius(5px);
+			@include font-rem(13px, 24px);
+			@include font-weight(500);
+			height: $height-auto;
+			@include margin-padding(all, 0, all, null);
+			min-width: 7rem;
+		}
+		.badge-yellow {
+			background: #ffa400;
+		}
+		.lastViewed {
+			h6 {
+				@include font-rem(14px, 24px);
+				color: color("grey", "darken-2");
 				@include margin-padding(all, 0, all, null);
-				@include font-rem(12px, 24px);
-				color: color('grey','darken-1');
-				@include font-weight(500);
-				text-transform: $text-uppercase;
-				letter-spacing: 0.25px;
 			}
-			.badge {
-				background: #00B0DC;
-				color:color('shades','white');
-				@include border-radius(5px);
-				@include font-rem(13px, 24px);
-				@include font-weight(500);
-				height: $height-auto;
-				@include margin-padding(all, 0, all, null);
-				min-width: 7rem;
-			}
-			.badge-yellow {
-				background: #FFA400;
-			}
-			.lastViewed {
-				h6 {
-					@include font-rem(14px, 24px);
-					color:color('grey','darken-2');
-					@include margin-padding(all, 0, all, null);
-				}	
-			}
-		
+		}
 	}
 }
 .viewedDropDown-content {
@@ -173,11 +173,11 @@
 	@include margin-padding(all, null, all, 22px 30px 19px !important);
 	li {
 		@include font-rem(14px, 20px);
-		color: color('grey','darken-4');
+		color: color("grey", "darken-4");
 		min-height: inherit;
 		@include margin-padding(all, 0 0 21px, all, 0);
 		&:hover {
-			background: color('shades', 'transparent');
+			background: color("shades", "transparent");
 		}
 		&:last-child {
 			@include margin-padding(all, 0, all, null);
@@ -187,9 +187,8 @@
 			@include flexbox();
 			@include flex-wrap($wrap);
 			@include font-rem(14px, 20px);
-			color: color('grey','darken-4');
+			color: color("grey", "darken-4");
 			@include margin-padding(all, null, all, 0);
-		
 		}
 	}
 	.shareIcon {
@@ -231,9 +230,74 @@
 }
 
 .dashboardScrollHeight {
-    height: calc(100% - 62px);
+	height: calc(100% - 62px);
 }
-.dashboardScrollHeight  .scrollbar-inner > .scroll-element.scroll-y {
-    right: 0;
+.dashboardScrollHeight .scrollbar-inner > .scroll-element.scroll-y {
+	right: 0;
+}
+.activityBoard {
+	.collapsible-header {
+		border: $none !important;
+		@include margin-padding(all, null, all, 0 !important);
+		background: color("shades", "transparent") !important;
+	}
+	li.active {
+		.material-icons {
+			@include transform(rotate(180deg));
+		}
+	}
+	.activity-list {
+		.active {
+			border-left: 3px solid #5f63ff !important;
+		}
+	}
+}
+.justYetPara {
+	@include font-rem(14px, 26px);
+	color: color("blue-grey", "darken-1");
+}
+.justLink {
+	// color:color('indigo','base');
+	text-decoration: $text-decoration-underline;
+	@include font-weight(medium);
+}
+.filterExpended {
+	display: $none;
+	@include margin-padding(all, 0 0 1.875rem, all, null);
+	.fiterExpeded-row {
+		@include margin-padding(all, 0 0 1.25rem 0, all, null);
+		label {
+			span {
+				@include font-rem(14px);
+				color: color('grey','darken-4');
+				@include font-weight(medium);
+			}
+		}
+	}
+	[type="checkbox"] + span:not(.lever) {
+		padding-left: 27px;
+	}
+	.btn-flat {
+		color:color('indigo','base');
+		letter-spacing: 0.7px;
+		@include font-weight(medium);
+	}
+}
+.filterBorder {
+	border:$none;
+	border-bottom:1px solid color('grey','lighten-5');
+	@include margin-padding(all, 1.875rem 0 0, all, null);
+}
+.filterArrowDropdown {
+	height: 21px;
+	.material-icons {
+		@include transform(rotate(180deg));
+		@include transition(all 0.5s);
+	}
+}
+.filterArrowDropdown.active {
+	.material-icons {
+		@include transform(rotate(0deg));
+	}
 }
 /* Dashboard CSS end here */

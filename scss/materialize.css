@@ -16534,7 +16534,7 @@ input[type=range]::-ms-thumb {
   -ms-border-radius: 5px;
 }
 
-.activityBoard .ativityHeader {
+.activityBoard .activityHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16551,9 +16551,10 @@ input[type=range]::-ms-thumb {
   font-weight: 600;
   border-bottom: 1px solid #EFEFF3;
   padding: 19px 20px;
+  width: 100%;
 }
 
-.activityBoard .ativityHeader .material-icons {
+.activityBoard .activityHeader .material-icons {
   margin-right: 0;
   color: #5F63FF;
   font-size: 1.9rem;
@@ -16735,7 +16736,7 @@ input[type=range]::-ms-thumb {
 }
 
 .activityBoard .status .badge {
-  background: #00B0DC;
+  background: #00b0dc;
   color: #FFFFFF;
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -16752,7 +16753,7 @@ input[type=range]::-ms-thumb {
 }
 
 .activityBoard .status .badge-yellow {
-  background: #FFA400;
+  background: #ffa400;
 }
 
 .activityBoard .status .lastViewed h6 {
@@ -16853,6 +16854,82 @@ input[type=range]::-ms-thumb {
 
 .dashboardScrollHeight .scrollbar-inner > .scroll-element.scroll-y {
   right: 0;
+}
+
+.activityBoard .collapsible-header {
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.activityBoard li.active .material-icons {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.activityBoard .activity-list .active {
+  border-left: 3px solid #5f63ff !important;
+}
+
+.justYetPara {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.85714rem;
+  color: #696A8E;
+}
+
+.justLink {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.filterExpended {
+  display: none;
+  margin: 0 0 1.875rem;
+}
+
+.filterExpended .fiterExpeded-row {
+  margin: 0 0 1.25rem 0;
+}
+
+.filterExpended .fiterExpeded-row label span {
+  font-size: 14px;
+  font-size: 1rem;
+  color: #181A51;
+  font-weight: 500;
+}
+
+.filterExpended [type="checkbox"] + span:not(.lever) {
+  padding-left: 27px;
+}
+
+.filterExpended .btn-flat {
+  color: #5F63FF;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+}
+
+.filterBorder {
+  border: none;
+  border-bottom: 1px solid #EFEFF3;
+  margin: 1.875rem 0 0;
+}
+
+.filterArrowDropdown {
+  height: 21px;
+}
+
+.filterArrowDropdown .material-icons {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.filterArrowDropdown.active .material-icons {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 /* Dashboard CSS end here */

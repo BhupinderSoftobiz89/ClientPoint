@@ -208,6 +208,17 @@ function closeSidebar() {
   $('.viewerLinks.current').removeClass('current');
 }
 
+// Filter Dropdown
+
+$('.filterArrowDropdown').click(function(){
+  //alert();
+  if($(this).hasClass('active')) {
+    $(this).removeClass('active');
+  } else {
+    $(this).addClass('active');
+  }
+  $('.filterExpended').slideToggle();
+})
 
 
 
