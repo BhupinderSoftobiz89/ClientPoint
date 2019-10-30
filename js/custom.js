@@ -143,7 +143,7 @@ $('.marketingArrow').click(function () {
   } else {
     $('.marketingArrow').addClass('current');
   }
-})
+});
 
 
 // ClientPoint Title Toggle
@@ -153,19 +153,7 @@ $('.editTitle').click(function () {
 })
 $('.closeBtn').click(function () {
   $('.clientSearchtitle').css('display', 'none');
-})
-
-// Powered By toggle
-
-// $('.sentByDropdown').click(function(){
-//   $('.powerdByToggle').slideToggle();
-//   if($(this).hasClass('downArrowPowered')) {
-//     $(this).removeClass('downArrowPowered');
-//   } else {
-//     $(this).addClass('downArrowPowered');
-//   }
-// })
-
+});
 
 // Clientpoint Sidebar Table Toggle
 
@@ -179,13 +167,13 @@ $('.toggleBackArrow').click(function () {
     $('.creatingPerposalLeft').css('width', '64.7%');
     $('.showtableContentArrow').removeClass('showArrow');
   }
-})
+});
 
 $('.showtableContentArrow').click(function () {
   $('.creatingPerposalLeft').css('width', '64.7%');
   $('.showtableContentArrow').removeClass('showArrow');
   $('.perposalPostionRight').addClass('creatingPerposalRightMove');
-})
+});
 
 // Viwer Nav sidebar
 
@@ -201,7 +189,7 @@ $('.viewerLinks').click(function () {
   } else {
     $('body').remove('.overlay');
   }
-})
+});
 function closeSidebar() {
   $('.viewerSidebarCommon').removeClass('viewerSidebarOpen');
   $('.overlay').remove();
@@ -210,16 +198,27 @@ function closeSidebar() {
 
 // Filter Dropdown
 
-$('.filterArrowDropdown').click(function(){
-  //alert();
-  if($(this).hasClass('active')) {
+$('.filterArrowDropdown').click(function () {
+  if ($(this).hasClass('active')) {
     $(this).removeClass('active');
   } else {
     $(this).addClass('active');
   }
   $('.filterExpended').slideToggle();
-})
+});
 
+
+function valueChnaged() {
+  // alert();
+  if ($('.switcherChecked').is(":checked")) {
+    $(".clientpointPreview").show();
+    $('.switcherText').html("Hide Top Bar");
+  }
+  else {
+    $(".clientpointPreview").hide();
+    $('.switcherText').html("Show Top Bar");
+  }
+}
 
 
 

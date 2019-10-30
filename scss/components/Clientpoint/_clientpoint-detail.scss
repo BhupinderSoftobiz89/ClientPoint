@@ -362,4 +362,16 @@
     }
   }
 }
+.clientpointPreview {
+  width: $full-width;
+}
+.removeTopSpace {
+  top: $zero !important;
+  height: $height-hundred-per !important;
+  z-index: 6 !important;
+}
+.topBarClientPoint .overlay {
+  top: 0;
+  z-index: 4;
+}
 /* Clientpoint Detials page end here */
