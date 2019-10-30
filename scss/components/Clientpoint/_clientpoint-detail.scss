@@ -3,12 +3,12 @@
 .clientDetailsContent {
 	flex: 1;
 	.titlerow {
-		padding: 1.4rem 1.8125rem;
+    @include margin-padding(all, null, all, 1.4rem 1.8125rem);
 		border-bottom: 1px solid #efeff3;
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
-		background: $whiteBg;
+    background: color('shades','white');
 		h5 {
 			color: #181a51;
 			font-size: $font-size-twenty;
@@ -39,8 +39,8 @@
 			background-position: -241px -127px;
 		}
 		.btn {
-			@extend %btn;
-			padding: 0 1.4375rem;
+      @extend %btn;
+      @include margin-padding(all, null, all, 0 1.4375rem);
 			font-size: $font-size-fourteen;
 			font-weight: $font-weight-500;
 		}
@@ -157,11 +157,10 @@
 		color: #696a8e;
 		font-size: $font-size-fourteen;
 		// line-height: 24px;
-		margin-bottom: 25px;
-		margin-top: $zero;
+    @include margin-padding(all, 0 0 1.5625rem 0, all, null);
 	}
 	.switch {
-		margin-bottom: 25px;
+    @include margin-padding(all, 0 0 1.5625rem 0, all, null);
 	}
 }
 .reciepent {
@@ -169,7 +168,7 @@
 	margin-bottom: 30px;
 }
 .select-wrapper + label {
-	transform: scale(1);
+  transform: scale(1);
 }
 .advanceHeadingMargin {
 	margin-left: 1.3125rem;
@@ -184,10 +183,9 @@
 .information-heading .btn-round {
 	font-size: $font-size-tweleve;
 	text-transform: $text-capitalize;
-	padding: 0.36rem 0.75rem;
 	line-height: $line-height-normal !important;
 	height: $height-auto !important;
-	margin-left: 1.3125rem;
+  @include margin-padding(all, 0 0 0 1.3125rem, all, 0.36rem 0.75rem);
 }
 .reciepent-Select-margin {
 	margin-top: $reciepent-Select-margin;
@@ -223,8 +221,7 @@
 	}
 	.AddRecipientContent-row {
 		border: 1px solid color("grey", "lighten-3");
-		margin-bottom: 1.4rem;
-		padding: 1.9rem 0.7rem 0;
+    @include margin-padding(all, 0 0 1.4rem 0, all, 1.9rem 0.7rem 0);
 	}
 	.modal-close {
 		.material-icons {

@@ -6,7 +6,7 @@
 	width: 25.5rem;
 	box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.1);
 	background: color("shades", "white");
-	opacity: $zero;
+	@include opacity(0);
 	visibility: $visibilty-hidden;
 	.search-row {
 		@include margin-padding(all, null, all, 0.9rem 1.5625rem);
@@ -17,7 +17,7 @@
 	.resultsIcon {
 		background: #702c63 url(../images/common-icons.svg) no-repeat -322px -1378px;
 		@include w-h-rem(20px, 20px);
-		border-radius: 0.3125rem;
+		@include border-radius(0.3125rem);
 		@include margin-padding(all, 0 0.9375rem 0 0, all, null);
 	}
 	h5 {
@@ -38,7 +38,7 @@
 	.resultsSearchIcon {
 		background: url(../images/common-icons.svg) no-repeat -241px -1378px;
 		@include w-h-rem(27px, 27px);
-		border-radius: 0.3125rem;
+		@include border-radius(0.3125rem);
 		@include margin-padding(all, 0 0.9375rem 0 0, all, null);
 	}
 	.topSearchRow {
@@ -69,17 +69,17 @@
 
 
 .searchResult.open {
-	opacity: 1;
+	@include opacity(1);
 	visibility: $visibilty-visible;
 }
 .hidden {
-	display: none !important;
+	display: $none !important;
 }
 .serachArrow {
 	@include absolute(top 1.8rem left auto right 0.7rem bottom auto);
 	color: color("grey", "darken-1");
 	.material-icons {
-		font-size: 20px;
+		@include font-rem(20px);
 	}
 }
 .serachArrow.changeColor {
@@ -142,7 +142,7 @@
 		.contactIcon {
 			background: #19e4b1 url(../images/common-icons.svg) no-repeat -28px -1456px;
 			@include w-h-rem(20px, 20px);
-			border-radius: 0.3125rem;
+			@include border-radius(0.3125rem);
 			@include margin-padding(all, 0 0.9375rem 0 0, all, null);
 		}
 		.collapsible-header {
@@ -340,13 +340,13 @@
 }
 .libraryTable {
 	label {
-		opacity: $zero;
+		@include opacity(0);
 		visibility: $visibilty-hidden;
 	}
 	tr {
 		&:hover {
 			label {
-				opacity: 1;
+				@include opacity(1);
 				visibility: $visibilty-visible;
 			}
 		}

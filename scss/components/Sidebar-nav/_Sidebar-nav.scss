@@ -99,7 +99,7 @@
 				&:hover {
 					color: rgba(255, 255, 255, 1);
 					.lockIcon {
-						opacity: 1;
+						@include opacity(1);
 					}
 				}
 			}
@@ -221,7 +221,7 @@
 	margin-left: 0.6rem;
 	display: $display-inline-block;
 	vertical-align: $verticle-align-middle;
-	opacity: 0.35;
+	@include opacity(0.35);
 }
 .current {
 	left: 70px !important;
@@ -267,10 +267,7 @@
 	color: color("grey", "darken-4");
 	line-height: 8px;
 	min-height: 30px;
-	//height: 28px;
-	//max-height: 18px;
 	padding: 10px 16px !important;
-  //left: 55px !important;
 }
 
 

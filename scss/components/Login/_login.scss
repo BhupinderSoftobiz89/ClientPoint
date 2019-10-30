@@ -380,7 +380,7 @@
 		@include absolute(top 0 right auto bottom auto left 0);
 		width: $full-width;
 		height: $height-hundred-per;
-		opacity: $zero;
+		@include opacity(0);
 	}
 	.modal-footer {
 		@include flexbox();

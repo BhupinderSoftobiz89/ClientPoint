@@ -187,7 +187,7 @@
 	input[type="file"] {
 		width: 20px;
 		height: 20px;
-		opacity: 0;
+		@include opacity(0);
 		position: $position-absolute;
 		right: $zero;
 		cursor: pointer;
@@ -435,12 +435,12 @@
 			}
 		}
 		.disable-text {
-			opacity: 0.4;
+			@include opacity(0.4);
 		}
 		[type="checkbox"].filled-in:disabled:checked + span:not(.lever):after {
 			background-color: #5e63ff;
 			border-color: #5e63ff;
-			opacity: 0.4;
+			@include opacity(0.4);
 		}
 	}
 }

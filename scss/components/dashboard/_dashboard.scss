@@ -233,7 +233,7 @@
 	height: calc(100% - 62px);
 }
 .dashboardScrollHeight .scrollbar-inner > .scroll-element.scroll-y {
-	right: 0;
+	right: $zero;
 }
 .activityBoard {
 	.collapsible-header {

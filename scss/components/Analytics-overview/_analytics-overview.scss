@@ -145,10 +145,13 @@
 				background: color("shades", "white");
 				box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
 				margin-bottom: 1.375rem;
+				&:last-child {
+					@include margin-padding(all, 0, all, null);
+				}
 			}
 			li.active {
 				.rotateArrow {
-					transform: rotate(180deg);
+					@include transform(180deg);
 				}
 			}
 			.collapsible-header {
@@ -166,7 +169,7 @@
 					margin-right: $zero;
 					color: color("indigo", "base");
 					font-size: 1.9rem;
-					transition: $transiton;
+					@include transition(all 0.5s);
 				}
 			}
 		}
@@ -235,14 +238,14 @@
 				font-size: 1.9rem;
 
 				.material-icons {
-					transition: all 0.5s;
+					@include transition(all 0.5s);
 				}
 			}
 		}
 		.btn-round {
 			@include inlineflex();
 			.material-icons {
-				margin-right: 5px;
+				@include margin-padding(all, 0 5px 0 0, all, null);
 			}
 		}
 	}
@@ -255,13 +258,13 @@
 			color: color("grey", "darken-4");
 			font-size: $font-size-fourteen;
 			line-height: $line-height-twentyfour;
-			margin: 0 0 20px;
+			@include margin-padding(all, 0 0 1.25rem 0, all, null);
 		}
 		.top-file-row {
 			@include flexbox();
 			@include flex-wrap($wrap);
 			align-items: $align-item-start;
-			margin-bottom: 1.375rem;
+			@include margin-padding(all, 0 0 1.375rem 0, all, null);
 			&:last-child {
 				margin-bottom: $zero;
 			}
@@ -291,8 +294,7 @@
 		.engagement-row {
 			@include flexbox();
 			align-items: $align-items-center;
-			padding: 0 2rem;
-			margin-bottom: 1.375rem;
+			@include margin-padding(all, 0 0 1.375rem 0, all, 0 2rem);
 			&:last-child {
 				margin-bottom: $zero;
 			}
@@ -317,7 +319,7 @@
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
-	padding-bottom: 28px;
+	@include margin-padding(all, null, all, 0 0 1.75rem 0);
 	h5 {
 		font-size: $font-size-sixteen;
 		line-height: $line-height-twentyfour;
@@ -328,11 +330,10 @@
 		background: url(../images/common-icons.svg) no-repeat -324px -496px;
 		width: 1.2rem;
 		height: 1.2rem;
-		margin-right: 0.6rem;
+		@include margin-padding(all, 0 0.6rem 0 0, all, null);
 	}
 	.type {
-		margin-left: 10px;
-		margin-right: 20px;
+		@include margin-padding(all, 0 1.25rem 0 0.625rem, all, null);
 		h5 {
 			@include flexbox();
 			@include flex-wrap($wrap);
@@ -356,7 +357,7 @@
 		}
 		.hoverdropdown {
 			margin-left: 3px;
-			border-radius: 2px;
+			@include border-radius(2px);
 			width: 20px;
 			height: 20px;
 			@include flexbox();
@@ -377,7 +378,7 @@
 			top: 100% !important;
 			padding: 16px 17px;
 			left: auto !important;
-			right: 0;
+			right: $zero;
 			li {
 				min-height: inherit;
 				margin-bottom: 1.3rem;
@@ -388,7 +389,7 @@
 					background: color("shades", "transparent");
 				}
 				a {
-					padding: 0;
+					@include margin-padding(all, null, all, 0);
 				}
 				label {
 					span {
@@ -416,12 +417,12 @@
 			margin: 0 1.6rem;
 		}
 		.nextDate {
-			border-radius: 0.125rem;
+			@include border-radius(0.125rem);
 			border: 1px solid color("grey", "lighten-5");
 			width: 2.36rem;
 			height: 2.36rem;
 			background: #fafafb url(../images/common-icons.svg) no-repeat -86px -192px;
-			margin-right: 2.3125rem;
+			@include margin-padding(all, 0 2.3125rem 0 0, all, null);
 		}
 	}
 	.calenederFilter {
@@ -433,7 +434,7 @@
 			background: url(../images/common-icons.svg) no-repeat -243px -495px;
 			width: 1.5rem;
 			height: 1.4rem;
-			margin-right: 0rem;
+			@include margin-padding(all, 0 0 0 0, all, null);
 		}
 		.DropdownArrow {
 			line-height: 12px;
@@ -443,7 +444,7 @@
 			min-width: 255px;
 			top: 100% !important;
 			left: auto !important;
-			right: 0;
+			right: $zero;
 		}
 		.calenderHeader {
 			.calenderHeader-row {
@@ -512,7 +513,7 @@
 
 		.hoverdropdown {
 			margin-left: 3px;
-			border-radius: 2px;
+			@include border-radius(2px);
 			width: 20px;
 			height: 20px;
 			@include flexbox();
@@ -531,8 +532,8 @@
 	}
 	.type {
 		.hoverdropdown {
-			margin-left: 3px;
-			border-radius: 2px;
+			@include margin-padding(all, 0 0 0 3px, all, null);
+			@include border-radius(2px);
 			width: 20px;
 			height: 20px;
 			@include flexbox();
@@ -564,7 +565,7 @@
 					background: color("shades", "transparent");
 				}
 				a {
-					padding: 0;
+					padding: $zero;
 				}
 				label {
 					span {
@@ -602,10 +603,10 @@
 	}
 }
 .timeSpent {
-	margin-top: 10px;
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-item-start;
+	@include margin-padding(all, 0.625rem 0 0 0, all, null);
 	.timeSpentLeft {
 		width: 30%;
 		span {
@@ -665,17 +666,17 @@
 .viewers-content.contentShow {
 	height: 49px;
 	overflow: hidden;
-	transition: all 0.5s;
+	@include transition(all 0.5s);
 }
 .collapseArrow.rotateArrowdrop .material-icons {
-	transform: rotate(180deg);
+	@include transform(180deg);
 }
 .top-file-row.topFileCollapse {
 	height: 26px;
 	overflow: hidden;
 }
 .fileArrow.fileArrowRotate {
-	transform: rotate(180deg);
+	@include transform(180deg);
 }
 
 .ipAddress {
@@ -688,7 +689,7 @@
 			@include flex-wrap($wrap);
 			align-items: $align-items-center;
 			border-bottom: 1px solid color("grey", "lighten-5");
-			padding: 10px 0;
+			@include margin-padding(all, null, all, 0.625rem 0);
 			&:last-child {
 				border-bottom: $none;
 			}
@@ -735,18 +736,18 @@
 				line-height: 21px;
 				.material-icons {
 					font-size: 25px;
-					transform: rotate(180deg);
-					transition: $transiton;
+					@include transform(180deg);
+					@include transition(all 0.5s);
 				}
 			}
 			.marketingArrow.current {
 				.material-icons {
-					transform: rotate(0deg);
+					@include transform(0deg);
 				}
 			}
 		}
 		.q2Marketing-content {
-			overflow: auto;
+			overflow: $auto;
 			@include margin-padding(all, 1.375rem 0 0 0, all, null);
 			table {
 				tr {
@@ -756,17 +757,17 @@
 					font-weight: $font-weight-600;
 					text-transform: $text-uppercase;
 					line-height: $line-height-twentyfour;
-					padding: 0 10px 0.75rem 10px;
+					@include margin-padding(all, null, all, 0 10px 0.75rem 10px);
 					border-bottom: 1px solid color("grey", "lighten-5");
-					font-size: 14px;
-					white-space: nowrap;
+					white-space: $white-spacenowrap;
+					@include font-rem(14px);
 				}
 				td {
 					line-height: $line-height-twentyfour;
 					font-size: $font-size-fifteen;
 					color: color("blue-grey", "darken-1");
-					padding: 0 10px;
-					white-space: nowrap;
+					@include margin-padding(all, null, all, 0 10px);
+					white-space: $white-spacenowrap;
 					.eyeIcon {
 						background: url(../images/common-icons.svg) no-repeat -168px -577px;
 						width: 1.3rem;
@@ -779,7 +780,7 @@
 				.progress {
 					height: 7px;
 					background-color: #efeff3;
-					border-radius: 0;
+					@include border-radius(0);
 					margin: 1rem 0 0 0;
 					.determinate {
 						background-color: #19e4b1;
@@ -802,18 +803,18 @@
 	background: color("grey", "lighten-4");
 }
 .anaytics-overview-row.anaytics-overviewbg .viewMoreClick .material-icons {
-	transform: rotate(-90deg);
+	@include transform(-90deg);
 }
 .anaytics-overview-row.anaytics-overviewbg.addbg .viewMoreClick .material-icons {
-	transform: rotate(0);
+	@include transform(0deg);
 }
 .newClientPointTitleBar {
-	position: $position-relative;
+	@include relative();
 
 	&:hover {
 		.editTitle {
-			opacity: 1;
-			visibility: visible;
+			@include opacity(1);
+			visibility: $visibilty-visible;
 		}
 	}
 	.clientSearchtitle {
@@ -887,7 +888,7 @@
 	height: 240px;
 }
 .tabelFixedBody .scrollbar-inner > .scroll-element.scroll-y {
-	right: 0;
+	right: $zero;
 }
 .tabelFixedHeader th:nth-child(1),
 .tabelFixedBody td:nth-child(1) {
@@ -959,20 +960,20 @@
 	.modal-footer {
 		padding: 0 3.125rem 2.1rem 3.5rem;
 		.btn-row {
-			margin-top: 0;
+			margin-top: $zero;
 			justify-content: $justify-content-end;
 		}
 		.btn-flat {
-			margin-top: 0;
+			margin-top: $zero;
 		}
 		.btn-round {
 			background: color("grey", "lighten-5");
 			color: color("grey", "darken-1");
 			box-shadow: $none;
-			padding: 0 1.4rem;
-			margin-left: 2.5rem;
-			margin-right: 0 !important;
-			margin-top: 0;
+			// margin-left: 2.5rem;
+			// margin-right: $zero !important;
+			// margin-top: $zero;
+			@include margin-padding(all, 0 0 0 2.5rem , all, 0 1.4rem);
 		}
 	}
 	.textReplyArea {
@@ -990,16 +991,15 @@
 	#dropdownReply {
 		min-width: 14.5rem;
 		li {
-      border-bottom: 1px solid color('grey','lighten-5');
-      &:hover {
-        background:color('shades','transparent');
-       
-      }
+			border-bottom: 1px solid color("grey", "lighten-5");
+			&:hover {
+				background: color("shades", "transparent");
+			}
 			a {
 				@include flexbox();
 				@include flex-wrap($wrap);
-        align-items: $align-items-center;
-        @include margin-padding(all, null, all, 0.6875rem 1.25rem);
+				align-items: $align-items-center;
+				@include margin-padding(all, null, all, 0.6875rem 1.25rem);
 			}
 		}
 		.userImg {
@@ -1010,27 +1010,27 @@
 		.userInfo {
 			h6 {
 				@include font-rem(13px, 24px);
-        color: color("indigo", "base");
-        @include margin-padding(all, 0, all, null);
-        text-transform: $text-capitalize;
+				color: color("indigo", "base");
+				@include margin-padding(all, 0, all, null);
+				text-transform: $text-capitalize;
 			}
 			p {
-        @include font-rem(11px, 18px);
-        color: color("blue-grey", "darken-1");
-        @include margin-padding(all, 0, all, null);
+				@include font-rem(11px, 18px);
+				color: color("blue-grey", "darken-1");
+				@include margin-padding(all, 0, all, null);
 			}
 		}
 	}
 }
 
 .creatingPerposal .scrollbar-inner > .scroll-element.scroll-y {
-  right: $zero;
+	right: $zero;
 }
 .anaytics-overview {
-  height: calc(100% - 61px);
+	height: calc(100% - 61px);
 }
 .analyticsOverviewView {
-  @include margin-padding(all, null, all, 1.25rem);
+	@include margin-padding(all, null, all, 1.25rem);
 }
 /* Reply Modal end here */
 
