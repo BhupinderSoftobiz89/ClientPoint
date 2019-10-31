@@ -39,6 +39,10 @@
   font-weight: $font-weight-500;
   text-transform: $text-uppercase;
   @extend %labelCommon;
+ 
+  label {
+    font-size: 1rem;
+  }
 }
 .select-wrapper li span {
   color: color("grey", "darken-4");
@@ -138,8 +142,10 @@
   position: $position-relative;
   .newperposalclientbar-right {
     margin-left: $margin-left-auto;
+    @include flex-wrap($wrap);
     @include flexbox();
     align-items: $align-items-center;
+
     .fileMenu {
       @include flexbox();
       align-items: $align-items-center;

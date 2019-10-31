@@ -5,7 +5,7 @@
 	height: $height-hundred-per;
 	@include navGradient(0deg, #8b8eff, #5f63ff);
 	position: $position-fixed;
-	z-index: 3;
+	z-index: 5;
 	top: $top-zero;
 	@include transition($transiton);
 	.navMenuOuter {

@@ -12,7 +12,7 @@
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
 	border-bottom: 1px solid #efeff3;
-	z-index: 2;
+	z-index: 4;
 	@include transition($transiton);
 	.searchbox {
 		max-width: 24rem;

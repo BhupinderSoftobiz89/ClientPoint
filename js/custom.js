@@ -209,7 +209,6 @@ $('.filterArrowDropdown').click(function () {
 
 
 function valueChnaged() {
-  // alert();
   if ($('.switcherChecked').is(":checked")) {
     $(".clientpointPreview").show();
     $('.switcherText').html("Hide Top Bar");
@@ -220,6 +219,20 @@ function valueChnaged() {
   }
 }
 
+
+function editOptions() {
+  if ($('.filled-in').is(":checked")) {
+    // alert();
+    $(".tableOptions").addClass('hideOptions');
+  }
+  else {
+    $(".tableOptions").removeClass('hideOptions');
+  }
+}
+
+function removeOptions() {
+  $(".tableOptions").removeClass('hideOptions');
+}
 
 
 

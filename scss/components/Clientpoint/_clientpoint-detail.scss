@@ -231,13 +231,13 @@
 	.input-field {
 		margin-bottom: 1.2rem;
 		label {
-			font-size: 14px;
+			font-size: 1rem;
 			text-transform: $text-capitalize;
 			color: $recipentlabelColor;
 		}
 		input,
 		input[type="text"] {
-			font-size: 14px;
+			font-size: 1rem;
 			border-bottom: 2px solid color("grey", "lighten-3");
 		}
 		input[type="text"]::placeholder {

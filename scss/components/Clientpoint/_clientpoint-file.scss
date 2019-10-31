@@ -1,457 +1,457 @@
 /* client Point File page start here */
 
 .clientPoint-file {
-  width: $full-width;
-  height: $height-hundred-per;
-  .newClientPointTitleBar {
-    padding: 1.6rem 1.8125rem;
-    margin: $zero;
-    border-bottom: 1px solid color("grey", "lighten-5");
-    h4 {
-      margin: $zero;
-    }
-  }
-  .newperposalclientbar {
-    padding: 1.1rem 1.8125rem;
-    @include flex-wrap($wrap);
-  }
-  .creatingPerposal {
-    @include flexbox();
-    @include flex-wrap($wrap);
-    height: calc(100% - 143px);
-    .creatingPerposalLeft {
-      background: color("grey", "lighten-4");
-      width: 64.7%;
-      padding: 1.875rem;
-      border-right: 1px solid color("grey", "lighten-5");
-      height: $height-hundred-per;
-      transition: $transiton;
-      @include relative;
-      p {
-        color: color("blue-grey", "darken-1");
-      }
-      .templateLink {
-        color: color("indigo", "base");
-        text-decoration: $text-decoration-underline;
-        &:hover {
-          text-decoration: $text-decoration-none;
-        }
-      }
-    }
-    .creatingPerposalRight {
-      width: 35.3%;
-      padding: $zero;
-      p {
-        color: color("blue-grey", "darken-1");
-      }
-      .collapsible {
-        border-top: $border-none;
-        border-right: $border-none;
-        border-left: $border-none;
-        margin: $zero;
-        box-shadow: $box-shadow-none;
-        li {
-          transition: $transiton;
-        }
-      }
-      .collapsible-header {
-        border-top: 2px solid #efeff3;
-        border-bottom: $none;
-        font-size: $font-size-fifteen;
-        @include flexbox();
-        @include flex-wrap($wrap);
-        align-items: $align-items-center;
-        padding: 0.8rem 2rem 0.8rem 1.8rem;
-        transition: $transiton;
-        .bookIcon {
-          background: url(../images/common-icons.svg) no-repeat -91px -345px;
-          width: 1.125rem;
-          height: 1.5rem;
-          margin-right: 1.375rem;
-        }
-        .arrowAccordion {
-          margin-left: $margin-left-auto;
-          color: color("indigo", "base");
-          font-size: 31px;
-          margin-right: $zero;
-          transition: $transiton;
-        }
-      }
-      li.active {
-        .material-icons.arrowAccordion {
-          transform: rotate(180deg);
-        }
-      }
-      .collapsible-body {
-        padding: $zero;
-        border-bottom: $border-radius-thirty;
-        .IntroDuctionRow {
-          @include flexbox();
-          @include flex-wrap($wrap);
-          font-size: $font-size-fifteen;
-          color: color("grey", "darken-2");
-          padding: 0.95rem 2rem 0.95rem 1.8rem;
-          border-left: 7px solid color("shades", "transparent");
-          min-height: 50.75px;
-          position: $position-relative;
-  
-          &:hover {
-            background: color("grey", "lighten-4");
+	width: $full-width;
+	height: $height-hundred-per;
+	.newClientPointTitleBar {
+		padding: 1.6rem 1.8125rem;
+		margin: $zero;
+		border-bottom: 1px solid color("grey", "lighten-5");
+		h4 {
+			margin: $zero;
+		}
+	}
+	.newperposalclientbar {
+		padding: 1.1rem 1.8125rem;
+		@include flex-wrap($wrap);
+	}
+	.creatingPerposal {
+		@include flexbox();
+		@include flex-wrap($wrap);
+		height: calc(100% - 153px);
+		.creatingPerposalLeft {
+			background: color("grey", "lighten-4");
+			width: 64.7%;
+			padding: 1.875rem;
+			border-right: 1px solid color("grey", "lighten-5");
+			height: $height-hundred-per;
+			transition: $transiton;
+			@include relative;
+			p {
+				color: color("blue-grey", "darken-1");
+			}
+			.templateLink {
+				color: color("indigo", "base");
+				text-decoration: $text-decoration-underline;
+				&:hover {
+					text-decoration: $text-decoration-none;
+				}
+			}
+		}
+		.creatingPerposalRight {
+			width: 35.3%;
+			padding: $zero;
+			p {
+				color: color("blue-grey", "darken-1");
+			}
+			.collapsible {
+				border-top: $border-none;
+				border-right: $border-none;
+				border-left: $border-none;
+				margin: $zero;
+				box-shadow: $box-shadow-none;
+				li {
+					transition: $transiton;
+				}
+			}
+			.collapsible-header {
+				border-top: 2px solid #efeff3;
+				border-bottom: $none;
+				font-size: $font-size-fifteen;
+				@include flexbox();
+				@include flex-wrap($wrap);
+				align-items: $align-items-center;
+				padding: 0.8rem 2rem 0.8rem 1.8rem;
+				transition: $transiton;
+				.bookIcon {
+					background: url(../images/common-icons.svg) no-repeat -91px -345px;
+					width: 1.125rem;
+					height: 1.5rem;
+					margin-right: 1.375rem;
+				}
+				.arrowAccordion {
+					margin-left: $margin-left-auto;
+					color: color("indigo", "base");
+					font-size: 31px;
+					margin-right: $zero;
+					transition: $transiton;
+				}
+			}
+			li.active {
+				.material-icons.arrowAccordion {
+					transform: rotate(180deg);
+				}
+			}
+			.collapsible-body {
+				padding: $zero;
+				border-bottom: $border-radius-thirty;
+				.IntroDuctionRow {
+					@include flexbox();
+					@include flex-wrap($wrap);
+					font-size: $font-size-fifteen;
+					color: color("grey", "darken-2");
+					padding: 0.95rem 2rem 0.95rem 1.8rem;
+					border-left: 7px solid color("shades", "transparent");
+					min-height: 50.75px;
+					position: $position-relative;
 
-            .editBtns {
-              opacity: 1;
-              visibility: $visibilty-visible;
-            }
-          }
-          .dropdown-content {
-            top: 32px !important;
-            height: auto !important;
-            right: -11px !important;
-            left: auto !important;
-            min-width: 230px;
-            padding: 21px 0 0;
-            li {
-              min-height: auto;
-              &:hover {
-                background: color("shades", "transparent");
-              }
-              a {
-                font-size: $font-size-fourteen;
-                line-height: $line-height-normal;
-                padding: 0 25px 21px;
-                color: color("grey", "darken-4");
-                @include flexbox();
-                @include flex-wrap($wrap);
-                align-items: $align-items-center;
-                .switch {
-                  margin-left: $margin-left-auto;
-                }
-              }
-            }
-            .divider {
-              background-color: color("grey", "lighten-5");
-              margin-bottom: 20px;
-            }
-          }
-        }
+					&:hover {
+						background: color("grey", "lighten-4");
 
-        .active {
-          font-weight: $font-weight-600;
-          border-left: 7px solid color("indigo", "base");
-          color: color("grey", "darken-4");
-        }
-        .PDFIcon {
-          background: url(../images/common-icons.svg) no-repeat -169px -346px;
-          width: 1.3rem;
-          height: 1.6rem;
-          margin-right: 1rem;
-          display: $display-inline-block;
-          vertical-align: $verticle-align-middle;
-        }
-        .downloadIcon {
-          background: url(../images/common-icons.svg) no-repeat -242px -346px;
-          width: 1.75rem;
-          height: 1.6rem;
-          margin-left: 0.8rem;
-          display: $display-inline-block;
-          vertical-align: $verticle-align-middle;
-        }
-      }
-      .editBtns {
-        margin-left: $margin-left-auto;
-        @include flexbox();
-        @include flex-wrap($wrap);
-        position: $position-relative;
-        align-items: $align-items-center;
-        opacity: $zero;
-        visibility: $visibilty-hidden;
-        .editBtn {
-          background: url(../images/common-icons.svg) no-repeat -382px -346px;
-          width: 1.2rem;
-          height: 1.6rem;
-          margin-left: 0.8rem;
-          display: $display-inline-block;
-          vertical-align: $verticle-align-middle;
-        }
-        .dotBtn {
-          background: url(../images/common-icons.svg) no-repeat -23px -423px;
-          width: 18px;
-          height: 18px;
-          margin-left: 1rem;
-          display: $display-inline-block;
-          vertical-align: $verticle-align-middle;
-          position: $position-relative;
-          &:hover:after {
-            position: $position-absolute;
-            content: "";
-            border-radius: $border-radius-thirty;
-            background: #efeff3 url(../images/common-icons.svg) no-repeat -82px -416px;
-            top: -7px;
-            left: -6px;
-            width: 30px;
-            height: 30px;
-          }
-        }
-      }
-    }
-  }
+						.editBtns {
+							opacity: 1;
+							visibility: $visibilty-visible;
+						}
+					}
+					.dropdown-content {
+						top: 32px !important;
+						height: auto !important;
+						right: -11px !important;
+						left: auto !important;
+						min-width: 230px;
+						padding: 21px 0 0;
+						li {
+							min-height: auto;
+							&:hover {
+								background: color("shades", "transparent");
+							}
+							a {
+								font-size: $font-size-fourteen;
+								line-height: $line-height-normal;
+								padding: 0 25px 21px;
+								color: color("grey", "darken-4");
+								@include flexbox();
+								@include flex-wrap($wrap);
+								align-items: $align-items-center;
+								.switch {
+									margin-left: $margin-left-auto;
+								}
+							}
+						}
+						.divider {
+							background-color: color("grey", "lighten-5");
+							margin-bottom: 20px;
+						}
+					}
+				}
+
+				.active {
+					font-weight: $font-weight-600;
+					border-left: 7px solid color("indigo", "base");
+					color: color("grey", "darken-4");
+				}
+				.PDFIcon {
+					background: url(../images/common-icons.svg) no-repeat -169px -346px;
+					width: 1.3rem;
+					height: 1.6rem;
+					margin-right: 1rem;
+					display: $display-inline-block;
+					vertical-align: $verticle-align-middle;
+				}
+				.downloadIcon {
+					background: url(../images/common-icons.svg) no-repeat -242px -346px;
+					width: 1.75rem;
+					height: 1.6rem;
+					margin-left: 0.8rem;
+					display: $display-inline-block;
+					vertical-align: $verticle-align-middle;
+				}
+			}
+			.editBtns {
+				margin-left: $margin-left-auto;
+				@include flexbox();
+				@include flex-wrap($wrap);
+				position: $position-relative;
+				align-items: $align-items-center;
+				opacity: $zero;
+				visibility: $visibilty-hidden;
+				.editBtn {
+					background: url(../images/common-icons.svg) no-repeat -382px -346px;
+					width: 1.2rem;
+					height: 1.6rem;
+					margin-left: 0.8rem;
+					display: $display-inline-block;
+					vertical-align: $verticle-align-middle;
+				}
+				.dotBtn {
+					background: url(../images/common-icons.svg) no-repeat -23px -423px;
+					width: 18px;
+					height: 18px;
+					margin-left: 1rem;
+					display: $display-inline-block;
+					vertical-align: $verticle-align-middle;
+					position: $position-relative;
+					&:hover:after {
+						position: $position-absolute;
+						content: "";
+						border-radius: $border-radius-thirty;
+						background: #efeff3 url(../images/common-icons.svg) no-repeat -82px -416px;
+						top: -7px;
+						left: -6px;
+						width: 30px;
+						height: 30px;
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Add A File Modal start here  */
 
 .addNotesModal {
-  max-width: 64.3rem;
-  max-height: inherit;
-  overflow: inherit;
-  .shareIcon {
-    background: url(../images/common-icons.svg) no-repeat -167px -192px;
-    width: 1.5rem;
-    height: 1.85rem;
-    margin-right: 11px;
-  }
-  .commonDefaultSearch {
-    max-width: 16.5rem;
-  }
-  .searchTabHeader {
-    @include flexbox();
-    @include flex-wrap($wrap);
-    align-items: $align-items-center;
-    padding-right: 3.6rem;
-    padding-left: 3.125rem;
-    .gridLink {
-      width: 20px;
-      height: 20px;
-      margin-left: auto;
-    }
-  }
-  .mylibraryContent {
-    p {
-      font-weight: $font-weight-500;
-      text-transform: $text-uppercase;
-      color: color("grey", "darken-1");
-      line-height: 1.5rem;
-      margin-top: 1.6rem;
-      padding-left: 3.125rem;
-      padding-right: 3.6rem;
-    }
-  }
-  .tabContent {
-    height: 333px;
-    //overflow: auto;
-    padding: 0 0 1.875rem 0;
-    margin-bottom: 18px;
-  }
-  .modal-footer {
-    border-top: 1px solid color("grey", "lighten-3");
-    margin-top: 0;
-    padding: 0 3.5rem 1.7rem;
-  }
-  .modal-header {
-    padding: 2.2rem 1.875rem 1.3rem 2.9375rem;
-  }
-  .chooseFile {
-    border: 1px dashed color("grey", "lighten-3");
-    padding: 2.8rem 2.5rem;
-    margin: 2.1rem 0 0;
-    p {
-      color: $recipentlabelColor;
-      line-height: $line-height-twenty;
-      text-transform: $text-capitalize;
-      font-weight: $font-weight-normal;
-      text-align: $text-center;
-      margin: $zero;
-      text-decoration: $text-decoration-underline;
-      a {
-        color: color("indigo", "base");
-      }
-    }
-    input[type="file"] {
-      position: $position-absolute;
-      opacity: $zero;
-      cursor: $cursor-pointer;
-    }
-  }
-  .webtabheight {
-    height: $height-auto;
-    padding: $zero;
-    margin: 40px 0;
-  }
-  .mylibraryContent {
-    height: $height-hundred-per;
-  }
+	max-width: 64.3rem;
+	max-height: inherit;
+	overflow: inherit;
+	.shareIcon {
+		background: url(../images/common-icons.svg) no-repeat -167px -192px;
+		width: 1.5rem;
+		height: 1.85rem;
+		margin-right: 11px;
+	}
+	.commonDefaultSearch {
+		max-width: 16.5rem;
+	}
+	.searchTabHeader {
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+		padding-right: 3.6rem;
+		padding-left: 3.125rem;
+		.gridLink {
+			width: 20px;
+			height: 20px;
+			margin-left: auto;
+		}
+	}
+	.mylibraryContent {
+		p {
+			font-weight: $font-weight-500;
+			text-transform: $text-uppercase;
+			color: color("grey", "darken-1");
+			line-height: 1.5rem;
+			margin-top: 1.6rem;
+			padding-left: 3.125rem;
+			padding-right: 3.6rem;
+		}
+	}
+	.tabContent {
+		height: 333px;
+		//overflow: auto;
+		padding: 0 0 1.875rem 0;
+		margin-bottom: 18px;
+	}
+	.modal-footer {
+		border-top: 1px solid color("grey", "lighten-3");
+		margin-top: 0;
+		padding: 0 3.5rem 1.7rem;
+	}
+	.modal-header {
+		padding: 2.2rem 1.875rem 1.3rem 2.9375rem;
+	}
+	.chooseFile {
+		border: 1px dashed color("grey", "lighten-3");
+		padding: 2.8rem 2.5rem;
+		margin: 2.1rem 0 0;
+		p {
+			color: $recipentlabelColor;
+			line-height: $line-height-twenty;
+			text-transform: $text-capitalize;
+			font-weight: $font-weight-normal;
+			text-align: $text-center;
+			margin: $zero;
+			text-decoration: $text-decoration-underline;
+			a {
+				color: color("indigo", "base");
+			}
+		}
+		input[type="file"] {
+			position: $position-absolute;
+			opacity: $zero;
+			cursor: $cursor-pointer;
+		}
+	}
+	.webtabheight {
+		height: $height-auto;
+		padding: $zero;
+		margin: 40px 0;
+	}
+	.mylibraryContent {
+		height: $height-hundred-per;
+	}
 }
 .treeview {
-  padding-left: 3.125rem;
-  padding-right: 3.6rem;
-  ul {
-    margin: $zero;
-    padding: $zero;
-  }
-  li {
-    padding-left: 10px;
-    list-style: none;
-    color: color("grey", "darken-2");
-    font-size: $font-size-sixteen;
+	padding-left: 3.125rem;
+	padding-right: 3.6rem;
+	ul {
+		margin: $zero;
+		padding: $zero;
+	}
+	li {
+		padding-left: 10px;
+		list-style: none;
+		color: color("grey", "darken-2");
+		font-size: $font-size-sixteen;
 
-    ul {
-      display: $diplay-none;
+		ul {
+			display: $diplay-none;
 
-      li {
-        // @include  flexbox();
-        // align-items: $align-items-center;
-        padding-left: 34px;
-        line-height: 40px;
-        position: $position-relative;
-        &:hover:after {
-          content: "";
-          position: $position-absolute;
-          left: -54px;
-          right: 0;
-          width: 250%;
-          background: $hoverColor;
-          top: 0;
-          height: 40px;
-          z-index: -1;
-        }
-        ul {
-          li {
-            position: $position-relative;
-            padding-left: 64px;
-            &:hover:after {
-              content: "";
-              position: $position-absolute;
-              left: -88px;
-              right: 0;
-              width: 125%;
-              background: $hoverColor;
-              top: 0;
-              height: 40px;
-              z-index: -1;
-            }
-          }
-        }
-      }
-    }
-    .arrow {
-      position: $position-relative;
-      line-height: 40px;
-      @include flexbox();
-      cursor: pointer;
-      //margin-right:0.9375rem;
-      align-items: $align-items-center;
-      &:before {
-        transition: all 0.5s;
-        content: "";
-        display: $display-inline-block;
-        width: 15px;
-        height: 18px;
-        background: url(../images/common-icons.svg) no-repeat -327px -199px;
-        margin-right: 0.9375rem;
-      }
-      &:hover:after {
-        content: "";
-        position: $position-absolute;
-        left: -54px;
-        right: 0;
-        width: 125%;
-        background: $hoverColor;
-        top: 0;
-        height: 40px;
-        z-index: -1;
-        font-weight: $font-weight-bold;
-      }
-    }
-    .folder {
-      content: "";
-      display: $display-inline-block;
-      width: 22px;
-      height: 20px;
-      background: url(../images/common-icons.svg) no-repeat -242px -199px;
-      margin-right: 0.9375rem;
-    }
+			li {
+				// @include  flexbox();
+				// align-items: $align-items-center;
+				padding-left: 34px;
+				line-height: 40px;
+				position: $position-relative;
+				&:hover:after {
+					content: "";
+					position: $position-absolute;
+					left: -54px;
+					right: 0;
+					width: 250%;
+					background: $hoverColor;
+					top: 0;
+					height: 40px;
+					z-index: -1;
+				}
+				ul {
+					li {
+						position: $position-relative;
+						padding-left: 64px;
+						&:hover:after {
+							content: "";
+							position: $position-absolute;
+							left: -88px;
+							right: 0;
+							width: 125%;
+							background: $hoverColor;
+							top: 0;
+							height: 40px;
+							z-index: -1;
+						}
+					}
+				}
+			}
+		}
+		.arrow {
+			position: $position-relative;
+			line-height: 40px;
+			@include flexbox();
+			cursor: pointer;
+			//margin-right:0.9375rem;
+			align-items: $align-items-center;
+			&:before {
+				transition: all 0.5s;
+				content: "";
+				display: $display-inline-block;
+				width: 15px;
+				height: 18px;
+				background: url(../images/common-icons.svg) no-repeat -327px -199px;
+				margin-right: 0.9375rem;
+			}
+			&:hover:after {
+				content: "";
+				position: $position-absolute;
+				left: -54px;
+				right: 0;
+				width: 125%;
+				background: $hoverColor;
+				top: 0;
+				height: 40px;
+				z-index: -1;
+				font-weight: $font-weight-bold;
+			}
+		}
+		.folder {
+			content: "";
+			display: $display-inline-block;
+			width: 22px;
+			height: 20px;
+			background: url(../images/common-icons.svg) no-repeat -242px -199px;
+			margin-right: 0.9375rem;
+		}
 
-    .fileIcon {
-      content: "";
-      display: $display-inline-block;
-      width: 16px;
-      height: 20px;
-      background: url(../images/common-icons.svg) no-repeat -382px -196px;
-      margin-right: 0.9375rem;
-    }
-  }
-  .rotateArrow {
-    .arrow {
-      &:before {
-        transform: rotate(90deg);
-      }
-    }
-  }
-  .arrow.arrowDown:before {
-    transform: rotate(90deg);
-  }
+		.fileIcon {
+			content: "";
+			display: $display-inline-block;
+			width: 16px;
+			height: 20px;
+			background: url(../images/common-icons.svg) no-repeat -382px -196px;
+			margin-right: 0.9375rem;
+		}
+	}
+	.rotateArrow {
+		.arrow {
+			&:before {
+				transform: rotate(90deg);
+			}
+		}
+	}
+	.arrow.arrowDown:before {
+		transform: rotate(90deg);
+	}
 }
 .ScrollOuterArrow {
-  width: 11rem;
-  height: 3.4rem;
-  background: linear-gradient(to left, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
-  position: $position-absolute;
-  top: $zero;
-  right: 0;
-  padding-right: 30px;
-  @include flexbox();
-  justify-content: flex-end;
+	width: 11rem;
+	height: 3.4rem;
+	background: linear-gradient(to left, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+	position: $position-absolute;
+	top: $zero;
+	right: 0;
+	padding-right: 30px;
+	@include flexbox();
+	justify-content: flex-end;
 }
 .ScrollArrow {
-  width: 2.5rem;
-  height: 2.5rem;
-  background: url(../images/common-icons.svg) no-repeat -84px -259px;
-  position: $position-relative;
-  right: $zero;
-  top: 6px;
-  @include flexbox();
-  align-items: $align-items-center;
+	width: 2.5rem;
+	height: 2.5rem;
+	background: url(../images/common-icons.svg) no-repeat -84px -259px;
+	position: $position-relative;
+	right: $zero;
+	top: 6px;
+	@include flexbox();
+	align-items: $align-items-center;
 }
 .tabContent.heightAuto {
-  height: 195px;
-  margin: $zero;
+	height: 195px;
+	margin: $zero;
 }
 .templateIcon {
-  content: "";
-  display: $display-inline-block;
-  width: 22px;
-  height: 20px;
-  background: url(../images/common-icons.svg) no-repeat -166px -266px;
-  margin-right: 0.9375rem;
+	content: "";
+	display: $display-inline-block;
+	width: 22px;
+	height: 20px;
+	background: url(../images/common-icons.svg) no-repeat -166px -266px;
+	margin-right: 0.9375rem;
 }
 .templates {
-  ul {
-    padding: $zero;
-    margin: $zero;
-    li {
-      color: color("grey", "darken-2");
-      font-size: $font-size-sixteen;
-      a {
-        color: color("grey", "darken-2");
-        font-size: $font-size-sixteen;
-        @include flexbox();
-        align-items: $align-items-center;
-        line-height: 40px;
-        padding: 0 3.6rem 0 3.125rem;
-        &:hover {
-          background: $hoverColor;
-        }
-        &:hover,
-        &:active {
-          background: $hoverColor;
-          font-weight: $font-weight-500;
-        }
-      }
-    }
-  }
+	ul {
+		padding: $zero;
+		margin: $zero;
+		li {
+			color: color("grey", "darken-2");
+			font-size: $font-size-sixteen;
+			a {
+				color: color("grey", "darken-2");
+				font-size: $font-size-sixteen;
+				@include flexbox();
+				align-items: $align-items-center;
+				line-height: 40px;
+				padding: 0 3.6rem 0 3.125rem;
+				&:hover {
+					background: $hoverColor;
+				}
+				&:hover,
+				&:active {
+					background: $hoverColor;
+					font-weight: $font-weight-500;
+				}
+			}
+		}
+	}
 }
 .chooseFilePadding {
-  padding-right: 3.6rem;
-  padding-left: 3.125rem;
+	padding-right: 3.6rem;
+	padding-left: 3.125rem;
 }
 
 #MyLibrary,
@@ -460,82 +460,82 @@
 #Recent,
 #FromWebsite,
 #FromWebsite {
-  .modal-footer {
-    .btn-round {
-      padding: 0 3.4rem;
-    }
-  }
+	.modal-footer {
+		.btn-round {
+			padding: 0 3.4rem;
+		}
+	}
 }
 .uploadFilesShow {
-  margin-top: 16px;
-  .FileIcon {
-    content: "";
-    display: $display-inline-block;
-    width: 22px;
-    height: 20px;
-    background: url(../images/common-icons.svg) no-repeat -245px -266px;
-    margin-right: 0.9375rem;
-  }
-  .addFilesName-row {
-    padding-right: 3.6rem;
-    padding-left: 3.125rem;
-    padding-top: 0.55rem;
-    padding-bottom: 0.55rem;
-    @include flexbox();
-    align-items: $align-items-center;
-    color: color("grey", "darken-2");
-    font-size: $font-size-sixteen;
-    &:hover {
-      background: $hoverColor;
-    }
-    &:hover,
-    &:active {
-      background: $hoverColor;
-      font-weight: $font-weight-500;
-    }
-  }
-  .closeFile {
-    margin-left: $margin-left-auto;
-    .material-icons {
-      color: color("indigo", "base");
-      @include flexbox();
-      align-items: $align-items-center;
-    }
-  }
+	margin-top: 16px;
+	.FileIcon {
+		content: "";
+		display: $display-inline-block;
+		width: 22px;
+		height: 20px;
+		background: url(../images/common-icons.svg) no-repeat -245px -266px;
+		margin-right: 0.9375rem;
+	}
+	.addFilesName-row {
+		padding-right: 3.6rem;
+		padding-left: 3.125rem;
+		padding-top: 0.55rem;
+		padding-bottom: 0.55rem;
+		@include flexbox();
+		align-items: $align-items-center;
+		color: color("grey", "darken-2");
+		font-size: $font-size-sixteen;
+		&:hover {
+			background: $hoverColor;
+		}
+		&:hover,
+		&:active {
+			background: $hoverColor;
+			font-weight: $font-weight-500;
+		}
+	}
+	.closeFile {
+		margin-left: $margin-left-auto;
+		.material-icons {
+			color: color("indigo", "base");
+			@include flexbox();
+			align-items: $align-items-center;
+		}
+	}
 }
 .addMoreFiles {
-  margin-top: 20px;
-  @include flexbox();
-  align-items: $align-items-center;
-  padding-right: 3.6rem;
-  padding-left: 3.125rem;
-  font-weight: $font-weight-600;
-  color: color("grey", "darken-4");
-  text-transform: $text-uppercase;
-  .material-icons {
-    color: color("indigo", "base");
-    font-size: $font-size-twenty;
-    margin-right: 10px;
-  }
+	margin-top: 20px;
+	@include flexbox();
+	align-items: $align-items-center;
+	padding-right: 3.6rem;
+	padding-left: 3.125rem;
+	font-weight: $font-weight-600;
+	color: color("grey", "darken-4");
+	text-transform: $text-uppercase;
+	.material-icons {
+		color: color("indigo", "base");
+		font-size: $font-size-twenty;
+		margin-right: 10px;
+	}
 }
 .websiteUrlSerach {
-  padding-left: 3.125rem;
-  padding-right: 3.6rem;
-  input[type="text"] {
-    height: 44px;
-    border: 1px solid #d8d8d8;
-    border-radius: $border-radius-thirty;
-    padding: 0 20px;
-    margin: $zero;
-    font-size: $font-size-sixteen;
-    font-weight: $font-weight-normal;
-    font-style: $font-style-italic;
-    box-sizing: $box-sizing;
-    &:focus {
-      border: 1px solid #d8d8d8 !important;
-      box-shadow: $box-shadow-none;
-    }
-  }
+	padding-left: 3.125rem;
+	padding-right: 3.6rem;
+	input[type="text"] {
+		height: 44px;
+		border: 1px solid #d8d8d8;
+		border-radius: $border-radius-thirty;
+		padding: 0 20px;
+		margin: $zero;
+		font-size: $font-size-sixteen;
+		font-weight: $font-weight-normal;
+		font-style: $font-style-italic;
+		box-sizing: $box-sizing;
+		&:focus {
+			border: 1px solid #d8d8d8 !important;
+			box-shadow: $box-shadow-none;
+		}
+	}
 }
 
 /* Add A File Modal end here  */
@@ -543,1454 +543,1454 @@
 /* ClientPoint Content Start here */
 
 .editingHeading {
-  @include flexbox();
-  @include flex-wrap($wrap);
-  align-items: $align-items-center;
-  margin-bottom: 20px;
-  .pageCount {
-    font-size: $font-size-sixteen;
-    color: color("grey", "darken-4");
-    line-height: $line-height-twentysix;
-  }
-  .editing {
-    margin-left: $margin-left-auto;
-    font-weight: $font-weight-600;
-    text-transform: $text-uppercase;
-    color: color("grey", "darken-4");
-    @include flexbox();
-    align-items: $align-items-center;
-    .EditIcon {
-      width: 1.2rem;
-      height: 1.2rem;
-      background: url(../images/common-icons.svg) no-repeat -26px -348px;
-      margin-right: 0.75rem;
-    }
-  }
+	@include flexbox();
+	@include flex-wrap($wrap);
+	align-items: $align-items-center;
+	margin-bottom: 20px;
+	.pageCount {
+		font-size: $font-size-sixteen;
+		color: color("grey", "darken-4");
+		line-height: $line-height-twentysix;
+	}
+	.editing {
+		margin-left: $margin-left-auto;
+		font-weight: $font-weight-600;
+		text-transform: $text-uppercase;
+		color: color("grey", "darken-4");
+		@include flexbox();
+		align-items: $align-items-center;
+		.EditIcon {
+			width: 1.2rem;
+			height: 1.2rem;
+			background: url(../images/common-icons.svg) no-repeat -26px -348px;
+			margin-right: 0.75rem;
+		}
+	}
 }
 .clientpointEditing {
-  border: 1px solid #ededed;
-  background: color("shades", "white");
-  padding: 2.5rem 0 2.5rem 2.5rem;
-  height: calc(100% - 56px);
-  p {
-    font-size: $font-size-sixteen;
-    color: color("blue-grey", "darken-2") !important;
-    line-height: 34px;
-    padding-right: 2.5rem;
-  }
+	border: 1px solid #ededed;
+	background: color("shades", "white");
+	padding: 2.5rem 0 2.5rem 2.5rem;
+	height: calc(100% - 56px);
+	p {
+		font-size: $font-size-sixteen;
+		color: color("blue-grey", "darken-2") !important;
+		line-height: 34px;
+		padding-right: 2.5rem;
+	}
 
-  .page-content {
-    height: 100%;
-  }
-  .content {
-    height: 100%;
-  }
-  .demo {
-    height: 100%;
-  }
-  // .scroll-wrapper{
-  //     max-height: 100% !important;
-  // }
-  .WordSearch {
-    background: rgba(247, 186, 15, 0.39);
-    padding: 0 4px;
-  }
+	.page-content {
+		height: 100%;
+	}
+	.content {
+		height: 100%;
+	}
+	.demo {
+		height: 100%;
+	}
+	// .scroll-wrapper{
+	//     max-height: 100% !important;
+	// }
+	.WordSearch {
+		background: rgba(247, 186, 15, 0.39);
+		padding: 0 4px;
+	}
 }
 
 /* Add A section Modal Start here */
 #AddSection {
-  max-width: 737px;
-  .bookIcon {
-    background: url(../images/common-icons.svg) no-repeat -167px -416px;
-    width: 1.5rem;
-    height: 1.85rem;
-    margin-right: 11px;
-  }
-  .modal-header {
-    padding: 2.3rem 1.875rem 2.1rem 3.5rem;
-  }
-  .modal-content {
-    padding: 0 1.875rem 0 3.5rem;
-    h4 {
-      text-transform: $text-uppercase;
-      font-size: $font-size-fourteen;
-      font-weight: $font-weight-500;
-      color: color("grey", "darken-1");
-      line-height: $line-height-twentyfour;
-      margin-bottom: 1.1rem;
-    }
-    input[type="text"] {
-      background: color("grey", "lighten-4");
-      padding: 10px;
-      box-sizing: $box-sizing;
-      height: 44px;
-      border-bottom: 1px solid color("grey", "lighten-3");
-      font-size: $font-size-fourteen;
-      margin-bottom: 2.5rem;
-      @include input-placeholder {
+	max-width: 737px;
+	.bookIcon {
+		background: url(../images/common-icons.svg) no-repeat -167px -416px;
+		width: 1.5rem;
+		height: 1.85rem;
+		margin-right: 11px;
+	}
+	.modal-header {
+		padding: 2.3rem 1.875rem 2.1rem 3.5rem;
+	}
+	.modal-content {
+		padding: 0 1.875rem 0 3.5rem;
+		h4 {
+			text-transform: $text-uppercase;
+			font-size: $font-size-fourteen;
+			font-weight: $font-weight-500;
+			color: color("grey", "darken-1");
+			line-height: $line-height-twentyfour;
+			margin-bottom: 1.1rem;
+		}
+		input[type="text"] {
+			background: color("grey", "lighten-4");
+			padding: 10px;
+			box-sizing: $box-sizing;
+			height: 44px;
+			border-bottom: 1px solid color("grey", "lighten-3");
+			font-size: $font-size-fourteen;
+			margin-bottom: 2.5rem;
+			@include input-placeholder {
 				color: color("grey", "darken-1");
 			}
-    }
-  }
-  .folderradio {
-    h4 {
-      margin-bottom: 1.563rem;
-    }
-    label {
-      span {
-        font-size: $font-size-fourteen;
-      }
-      margin-right: 1.875rem;
-    }
-  }
-  .modal-footer {
-    padding: 0 3.5rem 2rem;
-    .btn-row {
-      margin-top: 2.1rem;
-    }
-    .btn-round {
-      padding: 0 4rem;
-    }
-  }
+		}
+	}
+	.folderradio {
+		h4 {
+			margin-bottom: 1.563rem;
+		}
+		label {
+			span {
+				font-size: $font-size-fourteen;
+			}
+			margin-right: 1.875rem;
+		}
+	}
+	.modal-footer {
+		padding: 0 3.5rem 2rem;
+		.btn-row {
+			margin-top: 2.1rem;
+		}
+		.btn-round {
+			padding: 0 4rem;
+		}
+	}
 }
 /* Add A section Modal end here */
 
 /* Share Modal start here */
 
 #shareModal {
-  max-width: 737px;
-  max-height: 90%;
-  .shareIcon {
-    background: url(../images/common-icons.svg) no-repeat -245px -412px;
-    width: 1.5rem;
-    height: 1.85rem;
-    margin-right: 11px;
-  }
-  .modal-header {
-    padding: 2.3rem 1.875rem 2.1rem 3.5rem;
-  }
-  .tabs .tab a {
-    padding: 0 11px;
-  }
-  .tabs .tab {
-    margin-right: 2rem;
-  }
-  .tabs-header {
-    padding-left: 50px;
-  }
-  .tabContent {
-    padding: 0 3.125rem 1.875rem 3.5rem;
-  }
-  .privateShare {
-    h4 {
-      text-align: $text-center;
-      text-transform: $text-uppercase;
-      color: color("grey", "darken-1");
-      font-size: $font-size-fourteen;
-      font-weight: $font-weight-500;
-      line-height: $line-height-twentyfour;
-      margin-bottom: 0.7rem;
-      letter-spacing: 0.291667px;
-    }
-    .copyUrl {
-      position: $position-relative;
-      border: 1px solid color("grey", "lighten-3");
-      border-radius: $border-radius-thirty;
-      margin-bottom: 16px;
-      height: 55px;
-      input[type="submit"] {
-        position: $position-absolute;
-        right: -1px;
-        top: -1px;
-        max-width: 150px;
-        width: $full-width;
-        border: $border-none;
-        height: 55px;
-        border-radius: 0 30px 30px 0;
-        background: color("indigo", "base");
-        color: color("shades", "white");
-        text-transform: $text-uppercase;
-        font-size: $font-size-sixteen;
-        cursor: $cursor-pointer;
-        &:focus {
-          outline: $none;
-        }
-      }
-      input[type="text"] {
-        border: $border-none;
-        height: 55px;
-        padding: 0 1.563rem;
-        font-size: $font-size-sixteen;
-        color: color("blue-grey", "darken-1");
-        box-sizing: $box-sizing;
-        @include input-placeholder {
-          color: color("blue-grey", "darken-1");
-        }
-      }
-      // input[type="text"]::placeholder {
-      //   color: color("blue-grey", "darken-1");
-      //   opacity: 1;
-      // }
+	max-width: 737px;
+	max-height: 90%;
+	.shareIcon {
+		background: url(../images/common-icons.svg) no-repeat -245px -412px;
+		width: 1.5rem;
+		height: 1.85rem;
+		margin-right: 11px;
+	}
+	.modal-header {
+		padding: 2.3rem 1.875rem 2.1rem 3.5rem;
+	}
+	.tabs .tab a {
+		padding: 0 11px;
+	}
+	.tabs .tab {
+		margin-right: 2rem;
+	}
+	.tabs-header {
+		padding-left: 50px;
+	}
+	.tabContent {
+		padding: 0 3.125rem 1.875rem 3.5rem;
+	}
+	.privateShare {
+		h4 {
+			text-align: $text-center;
+			text-transform: $text-uppercase;
+			color: color("grey", "darken-1");
+			font-size: $font-size-fourteen;
+			font-weight: $font-weight-500;
+			line-height: $line-height-twentyfour;
+			margin-bottom: 0.7rem;
+			letter-spacing: 0.291667px;
+		}
+		.copyUrl {
+			position: $position-relative;
+			border: 1px solid color("grey", "lighten-3");
+			border-radius: $border-radius-thirty;
+			margin-bottom: 16px;
+			height: 55px;
+			input[type="submit"] {
+				position: $position-absolute;
+				right: -1px;
+				top: -1px;
+				max-width: 150px;
+				width: $full-width;
+				border: $border-none;
+				height: 55px;
+				border-radius: 0 30px 30px 0;
+				background: color("indigo", "base");
+				color: color("shades", "white");
+				text-transform: $text-uppercase;
+				font-size: $font-size-sixteen;
+				cursor: $cursor-pointer;
+				&:focus {
+					outline: $none;
+				}
+			}
+			input[type="text"] {
+				border: $border-none;
+				height: 55px;
+				padding: 0 1.563rem;
+				font-size: $font-size-sixteen;
+				color: color("blue-grey", "darken-1");
+				box-sizing: $box-sizing;
+				@include input-placeholder {
+					color: color("blue-grey", "darken-1");
+				}
+			}
+			// input[type="text"]::placeholder {
+			//   color: color("blue-grey", "darken-1");
+			//   opacity: 1;
+			// }
 
-      // input[type="text"]:-ms-input-placeholder {
-      //   color: color("blue-grey", "darken-1");
-      // }
+			// input[type="text"]:-ms-input-placeholder {
+			//   color: color("blue-grey", "darken-1");
+			// }
 
-      // input[type="text"]::-ms-input-placeholder {
-      //   color: color("blue-grey", "darken-1");
-      // }
-    }
-  }
-  .neWindow {
-    color: color("indigo", "base");
-    line-height: $line-height-twentyfour;
-    display: $display-inline-block;
-  }
-  .settings {
-    margin-top: 1.563rem;
-    h6 {
-      text-transform: $text-uppercase;
-      color: color("grey", "darken-1");
-      font-size: $font-size-fourteen;
-      font-weight: $font-weight-500;
-      line-height: $line-height-twentyfour;
-      margin-bottom: 1.5rem;
-    }
-    .setting-row {
-      @include flexbox();
-      align-items: $align-items-center;
-      @include flex-wrap($wrap);
-      border-bottom: 1px solid color("grey", "lighten-3");
-      padding-bottom: 15px;
-      margin-bottom: 15px;
-      span {
-        font-size: $font-size-sixteen;
-        line-height: $line-height-twentyfour;
-        color: color("grey", "darken-2");
-      }
-      .switch {
-        margin-left: $margin-left-auto;
-        label {
-          .lever {
-            margin: -3px 0 0 0;
-          }
-        }
-      }
-    }
-  }
-  .enterPassword {
-    flex: 0 0 100%;
-    max-width: $full-width;
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    margin-top: 1.563rem;
-    input[type="text"] {
-      max-width: 300px;
-      margin-right: 1.563rem;
-      background: color("grey", "lighten-4");
-      padding: 10px;
-      box-sizing: $box-sizing;
-      height: 44px;
-      border-bottom: 1px solid color("grey", "lighten-3");
-      font-size: $font-size-fourteen;
-      @include input-placeholder {
+			// input[type="text"]::-ms-input-placeholder {
+			//   color: color("blue-grey", "darken-1");
+			// }
+		}
+	}
+	.neWindow {
+		color: color("indigo", "base");
+		line-height: $line-height-twentyfour;
+		display: $display-inline-block;
+	}
+	.settings {
+		margin-top: 1.563rem;
+		h6 {
+			text-transform: $text-uppercase;
+			color: color("grey", "darken-1");
+			font-size: $font-size-fourteen;
+			font-weight: $font-weight-500;
+			line-height: $line-height-twentyfour;
+			margin-bottom: 1.5rem;
+		}
+		.setting-row {
+			@include flexbox();
+			align-items: $align-items-center;
+			@include flex-wrap($wrap);
+			border-bottom: 1px solid color("grey", "lighten-3");
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+			span {
+				font-size: $font-size-sixteen;
+				line-height: $line-height-twentyfour;
+				color: color("grey", "darken-2");
+			}
+			.switch {
+				margin-left: $margin-left-auto;
+				label {
+					.lever {
+						margin: -3px 0 0 0;
+					}
+				}
+			}
+		}
+	}
+	.enterPassword {
+		flex: 0 0 100%;
+		max-width: $full-width;
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		margin-top: 1.563rem;
+		input[type="text"] {
+			max-width: 300px;
+			margin-right: 1.563rem;
+			background: color("grey", "lighten-4");
+			padding: 10px;
+			box-sizing: $box-sizing;
+			height: 44px;
+			border-bottom: 1px solid color("grey", "lighten-3");
+			font-size: $font-size-fourteen;
+			@include input-placeholder {
 				color: color("grey", "darken-1");
 			}
-    }
-    // input[type="text"]::placeholder {
-    //   color: color("grey", "darken-1");
-    //   opacity: 1;
-    // }
+		}
+		// input[type="text"]::placeholder {
+		//   color: color("grey", "darken-1");
+		//   opacity: 1;
+		// }
 
-    // input[type="text"]:-ms-input-placeholder {
-    //   color: color("grey", "darken-1");
-    // }
+		// input[type="text"]:-ms-input-placeholder {
+		//   color: color("grey", "darken-1");
+		// }
 
-    // input[type="text"]::-ms-input-placeholder {
-    //   color: color("grey", "darken-1");
-    // }
-  }
-  .savePasswordBtn {
-    border: $border-none;
-    background: color("shades", "transparent");
-    cursor: $cursor-pointer;
-    text-transform: $text-uppercase;
-    font-weight: $font-weight-600;
-    color: color("indigo", "base");
-    letter-spacing: 0.7px;
-  }
-  .emailContent {
-    border: 1px solid #f2f3f3;
-    .emailAddress,
-    .subjectEmail {
-      @include flexbox();
-      align-items: $align-items-center;
-      @include flex-wrap($wrap);
-      padding: 1.1rem 2.188rem;
-      border-bottom: 1px solid #f2f3f3;
-      label {
-        font-size: $font-size-fourteen;
-        color: color("blue-grey", "darken-1");
-        margin-right: 20px;
-      }
-      input[type="text"] {
-        width: $width-auto;
-        flex: 1;
-        border: $border-none;
-        height: 24px;
-        margin: $zero;
-        font-size: $font-size-fourteen;
-        color: color("grey", "darken-4");
-      }
-    }
-  }
-  .emailText {
-    padding: 1.1rem 2.188rem;
-    p {
-      color: color("grey", "darken-4");
-    }
-  }
-  #Email {
-    .justify-content-end {
-      justify-content: $justify-content-end;
-    }
-    .modal-footer {
-      padding: 0 3.125rem 2.1rem 3.5rem;
-      .btn-row {
-        margin-top: 0;
-      }
-      .btn-round {
-        padding: 0 4rem;
-        margin-left: 2.5rem;
-        margin-right: 0 !important;
-      }
-    }
-  }
+		// input[type="text"]::-ms-input-placeholder {
+		//   color: color("grey", "darken-1");
+		// }
+	}
+	.savePasswordBtn {
+		border: $border-none;
+		background: color("shades", "transparent");
+		cursor: $cursor-pointer;
+		text-transform: $text-uppercase;
+		font-weight: $font-weight-600;
+		color: color("indigo", "base");
+		letter-spacing: 0.7px;
+	}
+	.emailContent {
+		border: 1px solid #f2f3f3;
+		.emailAddress,
+		.subjectEmail {
+			@include flexbox();
+			align-items: $align-items-center;
+			@include flex-wrap($wrap);
+			padding: 1.1rem 2.188rem;
+			border-bottom: 1px solid #f2f3f3;
+			label {
+				font-size: $font-size-fourteen;
+				color: color("blue-grey", "darken-1");
+				margin-right: 20px;
+			}
+			input[type="text"] {
+				width: $width-auto;
+				flex: 1;
+				border: $border-none;
+				height: 24px;
+				margin: $zero;
+				font-size: $font-size-fourteen;
+				color: color("grey", "darken-4");
+			}
+		}
+	}
+	.emailText {
+		padding: 1.1rem 2.188rem;
+		p {
+			color: color("grey", "darken-4");
+		}
+	}
+	#Email {
+		.justify-content-end {
+			justify-content: $justify-content-end;
+		}
+		.modal-footer {
+			padding: 0 3.125rem 2.1rem 3.5rem;
+			.btn-row {
+				margin-top: 0;
+			}
+			.btn-round {
+				padding: 0 4rem;
+				margin-left: 2.5rem;
+				margin-right: 0 !important;
+			}
+		}
+	}
 }
 
 /* Share Modal end here */
 
 .text-center {
-  text-align: $text-center;
+	text-align: $text-center;
 }
 
 /* Comment Modal start here */
 
 #commentModal {
-  max-width: 737px;
-  .modal-header {
-    padding: 2.3rem 1.875rem 2.1rem 3.5rem;
-  }
-  .tabContent {
-    padding: 0 3.125rem 1.875rem 3.5rem;
-  }
-  .tabs-header {
-    padding-left: 50px;
-    margin-bottom: 1.9rem;
-  }
-  .shareIcon {
-    background: url(../images/common-icons.svg) no-repeat -320px -411px;
-    width: 1.5rem;
-    height: 1.85rem;
-    margin-right: 11px;
-  }
-  .tabs {
-    .tab {
-      margin-right: 3.3rem;
-      a {
-        padding: 0 0.75rem;
-      }
-    }
-  }
-  .commenteTexarea {
-    height: 12.7rem;
-    border: 1px solid color("grey", "lighten-3");
-    font-size: $font-size-fourteen;
-    color: color("grey", "darken-1");
-    padding: 1.375rem;
-    resize: $none;
-    @include input-placeholder {
-      color: color("grey", "darken-1");
-    }
-    &:focus {
-      outline: $none;
-    }
-  }
-  // textarea::placeholder {
-  //   color: color("grey", "darken-1");
-  //   opacity: 1;
-  // }
+	max-width: 737px;
+	.modal-header {
+		padding: 2.3rem 1.875rem 2.1rem 3.5rem;
+	}
+	.tabContent {
+		padding: 0 3.125rem 1.875rem 3.5rem;
+	}
+	.tabs-header {
+		padding-left: 50px;
+		margin-bottom: 1.9rem;
+	}
+	.shareIcon {
+		background: url(../images/common-icons.svg) no-repeat -320px -411px;
+		width: 1.5rem;
+		height: 1.85rem;
+		margin-right: 11px;
+	}
+	.tabs {
+		.tab {
+			margin-right: 3.3rem;
+			a {
+				padding: 0 0.75rem;
+			}
+		}
+	}
+	.commenteTexarea {
+		height: 12.7rem;
+		border: 1px solid color("grey", "lighten-3");
+		font-size: $font-size-fourteen;
+		color: color("grey", "darken-1");
+		padding: 1.375rem;
+		resize: $none;
+		@include input-placeholder {
+			color: color("grey", "darken-1");
+		}
+		&:focus {
+			outline: $none;
+		}
+	}
+	// textarea::placeholder {
+	//   color: color("grey", "darken-1");
+	//   opacity: 1;
+	// }
 
-  // textarea:-ms-input-placeholder {
-  //   color: color("grey", "darken-1");
-  // }
+	// textarea:-ms-input-placeholder {
+	//   color: color("grey", "darken-1");
+	// }
 
-  // textarea::-ms-input-placeholder {
-  //   color: color("grey", "darken-1");
-  // }
-  .justify-content-end {
-    justify-content: $justify-content-end;
-  }
-  .modal-footer {
-    padding: 0 3.125rem 2.1rem 3.5rem;
-    .btn-row {
-      margin-top: 0;
-    }
-    .btn-flat {
-      margin-top: 0;
-    }
-    .btn-round {
-      background: color("grey", "lighten-5");
-      color: color("grey", "darken-1");
-      box-shadow: $none;
-      padding: 0 1.4rem;
-      margin-left: 2.5rem;
-      margin-right: 0 !important;
-      margin-top: 0;
-    }
-  }
+	// textarea::-ms-input-placeholder {
+	//   color: color("grey", "darken-1");
+	// }
+	.justify-content-end {
+		justify-content: $justify-content-end;
+	}
+	.modal-footer {
+		padding: 0 3.125rem 2.1rem 3.5rem;
+		.btn-row {
+			margin-top: 0;
+		}
+		.btn-flat {
+			margin-top: 0;
+		}
+		.btn-round {
+			background: color("grey", "lighten-5");
+			color: color("grey", "darken-1");
+			box-shadow: $none;
+			padding: 0 1.4rem;
+			margin-left: 2.5rem;
+			margin-right: 0 !important;
+			margin-top: 0;
+		}
+	}
 }
 .switchInline {
-  @include flexbox();
-  align-items: $align-items-center;
-  @include flex-wrap($wrap);
-  padding: 0 25px 21px;
-  .switch {
-    margin-left: auto;
-  }
+	@include flexbox();
+	align-items: $align-items-center;
+	@include flex-wrap($wrap);
+	padding: 0 25px 21px;
+	.switch {
+		margin-left: auto;
+	}
 }
 
 /* Clientpoint Preview page start here */
 
 .clientpointPreview {
-  //@include relative;
-  .clientPointPowerdBy {
-    background: color("grey", "darken-4");
-    width: $full-width;
-    min-height: 50px;
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    @include margin-padding(all, null null, all, 0 0 0 40px);
-    @include relative();
-    z-index: 3;
-  }
-  .PowerdByRightPanel {
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    margin-left: $margin-left-auto;
-  }
-  .sentByDropdown {
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    background: color("indigo", "accent-4");
-    min-height: 50px;
-    @include margin-padding(all, 0 0 0 29px, all, 0px 0 0 30px);
-    cursor: $cursor-pointer;
-    h5 {
-      color: color("shades", "white");
-      @include font-rem(16px, 50px);
-      //line-height: $line-height-twenty;
-      @include margin-padding(all, 0, null, null);
-    }
-    .material-icons {
-      color: color("shades", "white");
-      width: 40px;
-      text-align: center;
-      transition: $transiton;
-      margin-right: 28px;
-    }
-  }
-  .PowerdByLogo {
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-  }
-  // .powerdByToggle {
-  //     display: $diplay-none;
-  // }
+	//@include relative;
+	.clientPointPowerdBy {
+		background: color("grey", "darken-4");
+		width: $full-width;
+		min-height: 50px;
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		@include margin-padding(all, null null, all, 0 0 0 40px);
+		@include relative();
+		z-index: 3;
+	}
+	.PowerdByRightPanel {
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		margin-left: $margin-left-auto;
+	}
+	.sentByDropdown {
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		background: color("indigo", "accent-4");
+		min-height: 50px;
+		@include margin-padding(all, 0 0 0 29px, all, 0px 0 0 30px);
+		cursor: $cursor-pointer;
+		h5 {
+			color: color("shades", "white");
+			@include font-rem(16px, 50px);
+			//line-height: $line-height-twenty;
+			@include margin-padding(all, 0, null, null);
+		}
+		.material-icons {
+			color: color("shades", "white");
+			width: 40px;
+			text-align: center;
+			transition: $transiton;
+			margin-right: 28px;
+		}
+	}
+	.PowerdByLogo {
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+	}
+	// .powerdByToggle {
+	//     display: $diplay-none;
+	// }
 
-  .sentByDropdown.downArrowPowered {
-    .material-icons {
-      transform: rotate(180deg);
-    }
-  }
-  .poweredByMarvel {
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    .borderMarvel {
-      border-right: 1px solid color("indigo", "accent-4");
-      display: $display-inline-block;
-      @include margin-padding(all, 0 20px, all, null null);
-      height: 25px;
-    }
-    .encomLink {
-      @include font-size(16px);
-      color: color("shades", "white");
-      line-height: $line-height-twentyfour;
-    }
-  }
+	.sentByDropdown.downArrowPowered {
+		.material-icons {
+			transform: rotate(180deg);
+		}
+	}
+	.poweredByMarvel {
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		.borderMarvel {
+			border-right: 1px solid color("indigo", "accent-4");
+			display: $display-inline-block;
+			@include margin-padding(all, 0 20px, all, null null);
+			height: 25px;
+		}
+		.encomLink {
+			@include font-size(16px);
+			color: color("shades", "white");
+			line-height: $line-height-twentyfour;
+		}
+	}
 }
 
 .powerdByToggleInner {
-  background: color("indigo", "accent-4");
-  @include flexbox();
-  align-items: $align-items-center;
-  @include flex-wrap($wrap);
-  @include margin-padding(all, null, all, 17px 30px 17px 40px);
-  .powerdByToggleLinks {
-    //@include margin-padding(all, null, all, 17px 30px 17px 0);
+	background: color("indigo", "accent-4");
+	@include flexbox();
+	align-items: $align-items-center;
+	@include flex-wrap($wrap);
+	@include margin-padding(all, null, all, 17px 30px 17px 40px);
+	.powerdByToggleLinks {
+		//@include margin-padding(all, null, all, 17px 30px 17px 0);
 
-    ul {
-      @include flexbox();
-      align-items: $align-items-center;
-      @include flex-wrap($wrap);
-      @include margin-padding(all, 0, null, null);
-      li {
-        @include flexbox();
-        align-items: $align-items-center;
-        @include flex-wrap($wrap);
-        font-weight: $font-weight-500;
-        text-transform: $text-uppercase;
-        @include font-size(16px);
-        letter-spacing: 0.4375px;
+		ul {
+			@include flexbox();
+			align-items: $align-items-center;
+			@include flex-wrap($wrap);
+			@include margin-padding(all, 0, null, null);
+			li {
+				@include flexbox();
+				align-items: $align-items-center;
+				@include flex-wrap($wrap);
+				font-weight: $font-weight-500;
+				text-transform: $text-uppercase;
+				@include font-size(16px);
+				letter-spacing: 0.4375px;
 
-        a {
-          color: color("shades", "white");
-          @include margin-padding(all, null, all, 0 40px 0 0);
-          @include flexbox();
-          align-items: $align-items-center;
-          @include flex-wrap($wrap);
-        }
-        .viewerLinks {
-          opacity: 0.35;
-        }
-        .powerdCommentIcon {
-          background: url(../images/common-icons.svg) no-repeat -93px -1062px;
-          width: 1.5rem;
-          height: 1.5rem;
-          margin-right: 7px;
-        }
-        .powerdUploadIcon {
-          background: url(../images/common-icons.svg) no-repeat -169px -1061px;
-          width: 1.5rem;
-          height: 1.5rem;
-          margin-right: 7px;
-        }
-        .powerdPrintIcon {
-          background: url(../images/common-icons.svg) no-repeat -242px -1063px;
-          width: 1.5rem;
-          height: 1.5rem;
-          margin-right: 7px;
-        }
-        .powerdShareIcon {
-          background: url(../images/common-icons.svg) no-repeat -322px -1063px;
-          width: 1.5rem;
-          height: 1.5rem;
-          margin-right: 7px;
-        }
-      }
-    }
-  }
-  .SignNow {
-    margin-left: $margin-left-auto;
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    .signUp {
-      letter-spacing: 0.4375px;
-      padding: 0 3.7rem;
-      @include margin-padding(all, 0 20px 0 0, all, null null);
-    }
-    .dark-bg-btn {
-      @include flexbox();
-      align-items: $align-items-center;
-      background: color("indigo", "darken-3");
-      .material-icons {
-        @include margin-padding(all, 0 0 0 8px, all, null null);
-      }
-    }
-  }
+				a {
+					color: color("shades", "white");
+					@include margin-padding(all, null, all, 0 40px 0 0);
+					@include flexbox();
+					align-items: $align-items-center;
+					@include flex-wrap($wrap);
+				}
+				.viewerLinks {
+					opacity: 0.35;
+				}
+				.powerdCommentIcon {
+					background: url(../images/common-icons.svg) no-repeat -93px -1062px;
+					width: 1.5rem;
+					height: 1.5rem;
+					margin-right: 7px;
+				}
+				.powerdUploadIcon {
+					background: url(../images/common-icons.svg) no-repeat -169px -1061px;
+					width: 1.5rem;
+					height: 1.5rem;
+					margin-right: 7px;
+				}
+				.powerdPrintIcon {
+					background: url(../images/common-icons.svg) no-repeat -242px -1063px;
+					width: 1.5rem;
+					height: 1.5rem;
+					margin-right: 7px;
+				}
+				.powerdShareIcon {
+					background: url(../images/common-icons.svg) no-repeat -322px -1063px;
+					width: 1.5rem;
+					height: 1.5rem;
+					margin-right: 7px;
+				}
+			}
+		}
+	}
+	.SignNow {
+		margin-left: $margin-left-auto;
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		.signUp {
+			letter-spacing: 0.4375px;
+			padding: 0 3.7rem;
+			@include margin-padding(all, 0 20px 0 0, all, null null);
+		}
+		.dark-bg-btn {
+			@include flexbox();
+			align-items: $align-items-center;
+			background: color("indigo", "darken-3");
+			.material-icons {
+				@include margin-padding(all, 0 0 0 8px, all, null null);
+			}
+		}
+	}
 }
 .clientpointEditing {
-  h6.acceptProposal {
-    color: color("grey", "darken-2");
-    @include font-size(20px);
-    font-weight: $font-weight-500;
-    line-height: 34px;
-    @include margin-padding(all, 0 0 39px, all, null null);
-  }
+	h6.acceptProposal {
+		color: color("grey", "darken-2");
+		@include font-size(20px);
+		font-weight: $font-weight-500;
+		line-height: 34px;
+		@include margin-padding(all, 0 0 39px, all, null null);
+	}
 }
 .signatureForm {
-  .input-field label {
-    color: color("grey", "darken-2");
-    font-weight: $font-weight-600;
-  }
-  .clearSignature {
-    @include absolute(top 0 right 12px);
-    @include font-size(12px);
-    height: 25px;
-    line-height: 25px;
-    text-transform: $text-uppercase;
-    padding: 0 1.2rem;
-  }
+	.input-field label {
+		color: color("grey", "darken-2");
+		font-weight: $font-weight-600;
+	}
+	.clearSignature {
+		@include absolute(top 0 right 12px);
+		@include font-size(12px);
+		height: 25px;
+		line-height: 25px;
+		text-transform: $text-uppercase;
+		padding: 0 1.2rem;
+	}
 }
 .outerScroll {
-  height: $height-hundred-per;
-  .scrollbar-inner > .scroll-element.scroll-y {
-    right: $zero;
-  }
-  .clientpointEditing {
-    height: 100vh !important;
-  }
+	height: $height-hundred-per;
+	.scrollbar-inner > .scroll-element.scroll-y {
+		right: $zero;
+	}
+	.clientpointEditing {
+		height: 100vh !important;
+	}
 }
 
 .rightMarginPreview {
-  @include margin-padding(all, 0 50px 0 50px, all, 2.5rem 4rem 2.5rem 4rem);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+	@include margin-padding(all, 0 50px 0 50px, all, 2.5rem 4rem 2.5rem 4rem);
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
 }
 .fullHeight {
-  height: $height-hundred-per;
-  overflow-x: hidden;
+	height: $height-hundred-per;
+	overflow-x: hidden;
 }
 .cereatProposalHeight {
-  height: calc(100% - 120px) !important;
-  .creatingPerposalLeft {
-    background: color("shades", "transparent") !important;
-  }
+	height: calc(100% - 120px) !important;
+	.creatingPerposalLeft {
+		background: color("shades", "transparent") !important;
+	}
 }
 
 .tableOfContent {
-  @include flexbox();
-  align-items: $align-items-center;
-  @include flex-wrap($wrap);
-  @include margin-padding(all, null null, all, 1rem 2rem 1rem 1.8rem);
-  @include font-size(18px);
-  font-weight: $font-weight-500;
-  color: color("grey", "darken-4");
-  .tabelBook {
-    background: url(../images/common-icons.svg) no-repeat -388px -1063px;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 7px;
-  }
-  .toggleBackArrow {
-    background: url(../images/common-icons.svg) no-repeat -23px -1152px;
-    width: 2.2rem;
-    height: 1.8rem;
-    margin-left: $margin-left-auto;
-  }
+	@include flexbox();
+	align-items: $align-items-center;
+	@include flex-wrap($wrap);
+	@include margin-padding(all, null null, all, 1rem 2rem 1rem 1.8rem);
+	@include font-size(18px);
+	font-weight: $font-weight-500;
+	color: color("grey", "darken-4");
+	.tabelBook {
+		background: url(../images/common-icons.svg) no-repeat -388px -1063px;
+		width: 1.5rem;
+		height: 1.5rem;
+		margin-right: 7px;
+	}
+	.toggleBackArrow {
+		background: url(../images/common-icons.svg) no-repeat -23px -1152px;
+		width: 2.2rem;
+		height: 1.8rem;
+		margin-left: $margin-left-auto;
+	}
 }
 .showtableContentArrow {
-  @include flexbox();
-  align-items: $align-items-center;
-  @include flex-wrap($wrap);
-  @include fixed(top 200px right -35px);
-  writing-mode: vertical-rl;
-  width: 35px;
-  height: 156px;
-  background: color("indigo", "base");
-  color: color("shades", "white");
-  @include margin-padding(all, null null, all, 36px 1px 0);
-  transition: $transiton;
-  cursor: $cursor-pointer;
-  .toggleBackArrow {
-    background: url(../images/common-icons.svg) no-repeat -82px -1158px;
-    width: 2.2rem;
-    height: 2rem;
-    margin-left: $margin-left-auto;
-    @include absolute(top 8px right 6px);
-  }
+	@include flexbox();
+	align-items: $align-items-center;
+	@include flex-wrap($wrap);
+	@include fixed(top 200px right -35px);
+	writing-mode: vertical-rl;
+	width: 35px;
+	height: 156px;
+	background: color("indigo", "base");
+	color: color("shades", "white");
+	@include margin-padding(all, null null, all, 36px 1px 0);
+	transition: $transiton;
+	cursor: $cursor-pointer;
+	.toggleBackArrow {
+		background: url(../images/common-icons.svg) no-repeat -82px -1158px;
+		width: 2.2rem;
+		height: 2rem;
+		margin-left: $margin-left-auto;
+		@include absolute(top 8px right 6px);
+	}
 }
 .showtableContentArrow.showArrow {
-  right: 2px;
+	right: 2px;
 }
 .creatingPerposalRight.perposalPostionRight.creatingPerposalRightMove {
-  right: 0;
-  position: relative;
-  margin-right: $zero;
-  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.15);
+	right: 0;
+	position: relative;
+	margin-right: $zero;
+	box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.15);
 }
 .creatingPerposalRight.perposalPostionRight {
-  @include fixed(top auto right 0);
-  height: $height-hundred-per;
-  transition: $transiton;
-  @include margin-padding(all, 0 -900px 0 0, all, null null);
+	@include fixed(top auto right 0);
+	height: $height-hundred-per;
+	transition: $transiton;
+	@include margin-padding(all, 0 -900px 0 0, all, null null);
 }
 .excelIcon {
-  background: url(../images/common-icons.svg) no-repeat -167px -741px;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0 7px 0 0;
+	background: url(../images/common-icons.svg) no-repeat -167px -741px;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0 7px 0 0;
 }
 .powerPointIcon {
-  background: url(../images/common-icons.svg) no-repeat -241px -740px;
-  width: 1.5rem;
-  height: 1.7rem;
-  margin: 0 7px 0 0;
+	background: url(../images/common-icons.svg) no-repeat -241px -740px;
+	width: 1.5rem;
+	height: 1.7rem;
+	margin: 0 7px 0 0;
 }
 .wordIcon {
-  background: url(../images/common-icons.svg) no-repeat -93px -740px;
-  width: 2rem;
-  height: 1.8rem;
-  margin: 0 7px 0 0;
+	background: url(../images/common-icons.svg) no-repeat -93px -740px;
+	width: 2rem;
+	height: 1.8rem;
+	margin: 0 7px 0 0;
 }
 .signImg {
-  @include absolute(top 10px left -95px right 0);
-  width: 96px;
+	@include absolute(top 10px left -95px right 0);
+	width: 96px;
 }
 
 /* Sign Now Page start here */
 .signInModalContent {
-  max-width: 737px;
-  max-height: 100%;
-  .signatureIcon {
-    background: url(../images/common-icons.svg) no-repeat -168px -1154px;
-    width: 1.7rem;
-    height: 1.4rem;
-    margin-right: 9px;
-  }
-  .modal-header {
-    @include margin-padding(all, null null, all, 1.875rem 3.125rem 1.3rem 4rem);
-  }
-  .modal-content {
-    @include margin-padding(all, null null, all, 0 3.125rem 0 4rem);
-    h6 {
-      @include font-size(17px);
-      line-height: $line-height-twentysix;
-      color: color("grey", "darken-4");
-      @include margin-padding(all, 16px 0 10px 0, all, null null);
-    }
-    .form-fields {
-      @include margin-padding(all, 30px 0 0 0, all, null null);
-      .fullName {
-        background: color("grey", "lighten-4");
-        border-bottom: 1px solid color("grey", "lighten-3");
-        @include margin-padding(all, 0, all, 10px);
-        height: 44px;
-        box-sizing: $box-sizing;
-        @include font-size(16px);
-        &:focus {
-          box-shadow: $none;
-          border-bottom: 1px solid color("green", "base");
-        }
-      }
-      label {
-        text-transform: $text-uppercase;
-        @include font-size(16px);
-        line-height: $line-height-twentyfour;
-        @include font-weight(medium);
-        color: color("grey", "darken-2");
-        @include margin-padding(all, 0 0 5px 0, all, null);
-        display: $display-block;
-      }
-      .phNumber {
-        border: 1px solid color("grey", "lighten-3") !important;
-        @include margin-padding(all, 0, all, 10px);
-        box-sizing: $box-sizing;
-        &:focus {
-          outline: $none;
-        }
-      }
-    }
-  }
-  .typeIt {
-    @include margin-padding(all, 33px 0 0 0, all, null);
-    .typeItLabelRow {
-      @include flexbox();
-      align-items: $align-items-center;
-      @include flex-wrap($wrap);
-      @include margin-padding(all, 0 0 20px 0, all, null);
-    }
-    label {
-      @include font-size(16px);
-      @include font-weight(medium);
-      line-height: 16px;
-      @include flexbox();
-      align-items: $align-items-center;
-      @include flex-wrap($wrap);
-      @include margin-padding(all, 0 25px 0 0, all, null);
-      &:first-child {
-        color: color("indigo", "base");
-      }
-    }
-    .typeIcon {
-      background: url(../images/common-icons.svg) no-repeat -243px -1152px;
-      width: 1.4rem;
-      height: 1.4rem;
-      margin-right: 5px;
-    }
-    .drawIcon {
-      background: url(../images/common-icons.svg) no-repeat -323px -1152px;
-      width: 1.3rem;
-      height: 1.4rem;
-      margin-right: 5px;
-    }
-    .clickToSign {
-      height: 113px;
-      border: 1px dashed color("indigo", "base");
-      @include flexbox();
-      align-items: $align-items-center;
-      @include flex-wrap($wrap);
-      justify-content: $justifycenter;
-      @include font-size(16px);
-      @include font-weight(medium);
-      color: color("indigo", "base");
-    }
-  }
-  .commentTextarea {
-    height: 75px;
-    border: 1px solid color("grey", "lighten-3");
-    resize: $none;
-    @include margin-padding(all, null null, all, 10px);
-    &:focus {
-      outline: $none;
-    }
-  }
-  .termsbtn {
-    @include margin-padding(all, 20px 0 37px 0, all, null null);
-    letter-spacing: 0.7px;
-    @include font-weight(medium);
-    height: 44px;
-    line-height: 44px;
-    padding: 0 1.8rem;
-  }
+	max-width: 737px;
+	max-height: 100%;
+	.signatureIcon {
+		background: url(../images/common-icons.svg) no-repeat -168px -1154px;
+		width: 1.7rem;
+		height: 1.4rem;
+		margin-right: 9px;
+	}
+	.modal-header {
+		@include margin-padding(all, null null, all, 1.875rem 3.125rem 1.3rem 4rem);
+	}
+	.modal-content {
+		@include margin-padding(all, null null, all, 0 3.125rem 0 4rem);
+		h6 {
+			@include font-size(17px);
+			line-height: $line-height-twentysix;
+			color: color("grey", "darken-4");
+			@include margin-padding(all, 16px 0 10px 0, all, null null);
+		}
+		.form-fields {
+			@include margin-padding(all, 30px 0 0 0, all, null null);
+			.fullName {
+				background: color("grey", "lighten-4");
+				border-bottom: 1px solid color("grey", "lighten-3");
+				@include margin-padding(all, 0, all, 10px);
+				height: 44px;
+				box-sizing: $box-sizing;
+				@include font-size(16px);
+				&:focus {
+					box-shadow: $none;
+					border-bottom: 1px solid color("green", "base");
+				}
+			}
+			label {
+				text-transform: $text-uppercase;
+				@include font-size(16px);
+				line-height: $line-height-twentyfour;
+				@include font-weight(medium);
+				color: color("grey", "darken-2");
+				@include margin-padding(all, 0 0 5px 0, all, null);
+				display: $display-block;
+			}
+			.phNumber {
+				border: 1px solid color("grey", "lighten-3") !important;
+				@include margin-padding(all, 0, all, 10px);
+				box-sizing: $box-sizing;
+				&:focus {
+					outline: $none;
+				}
+			}
+		}
+	}
+	.typeIt {
+		@include margin-padding(all, 33px 0 0 0, all, null);
+		.typeItLabelRow {
+			@include flexbox();
+			align-items: $align-items-center;
+			@include flex-wrap($wrap);
+			@include margin-padding(all, 0 0 20px 0, all, null);
+		}
+		label {
+			@include font-size(16px);
+			@include font-weight(medium);
+			line-height: 16px;
+			@include flexbox();
+			align-items: $align-items-center;
+			@include flex-wrap($wrap);
+			@include margin-padding(all, 0 25px 0 0, all, null);
+			&:first-child {
+				color: color("indigo", "base");
+			}
+		}
+		.typeIcon {
+			background: url(../images/common-icons.svg) no-repeat -243px -1152px;
+			width: 1.4rem;
+			height: 1.4rem;
+			margin-right: 5px;
+		}
+		.drawIcon {
+			background: url(../images/common-icons.svg) no-repeat -323px -1152px;
+			width: 1.3rem;
+			height: 1.4rem;
+			margin-right: 5px;
+		}
+		.clickToSign {
+			height: 113px;
+			border: 1px dashed color("indigo", "base");
+			@include flexbox();
+			align-items: $align-items-center;
+			@include flex-wrap($wrap);
+			justify-content: $justifycenter;
+			@include font-size(16px);
+			@include font-weight(medium);
+			color: color("indigo", "base");
+		}
+	}
+	.commentTextarea {
+		height: 75px;
+		border: 1px solid color("grey", "lighten-3");
+		resize: $none;
+		@include margin-padding(all, null null, all, 10px);
+		&:focus {
+			outline: $none;
+		}
+	}
+	.termsbtn {
+		@include margin-padding(all, 20px 0 37px 0, all, null null);
+		letter-spacing: 0.7px;
+		@include font-weight(medium);
+		height: 44px;
+		line-height: 44px;
+		padding: 0 1.8rem;
+	}
 }
 .mt-20 {
-  @include margin-padding(all, 20px 0 0 0 !important, all, null null);
+	@include margin-padding(all, 20px 0 0 0 !important, all, null null);
 }
 .checkIcon {
-  background: url(../images/common-icons.svg) no-repeat -387px -1148px;
-  width: 1.7rem;
-  height: 1.6rem;
-  margin-left: 9px;
+	background: url(../images/common-icons.svg) no-repeat -387px -1148px;
+	width: 1.7rem;
+	height: 1.6rem;
+	margin-left: 9px;
 }
 .IntroDuctionRow.active {
-  background: color("grey", "lighten-4");
+	background: color("grey", "lighten-4");
 }
 .zoomDropDown {
-  min-width: 180px;
-  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.1);
-  li {
-    @include font-size(14px);
-    line-height: $line-height-twenty;
-    text-align: $text-center;
-    color: color("grey", "darken-4");
-    min-height: 40px;
-    a {
-      color: color("grey", "darken-4");
-      text-align: $text-center;
-      @include margin-padding(all, null null, all, 9px 16px);
-      &:hover {
-        background: color("grey", "lighten-4");
-        color: color("indigo", "base");
-      }
-    }
-    .active {
-      background: color("grey", "lighten-4");
-      color: color("indigo", "base");
-    }
-  }
+	min-width: 180px;
+	box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.1);
+	li {
+		@include font-size(14px);
+		line-height: $line-height-twenty;
+		text-align: $text-center;
+		color: color("grey", "darken-4");
+		min-height: 40px;
+		a {
+			color: color("grey", "darken-4");
+			text-align: $text-center;
+			@include margin-padding(all, null null, all, 9px 16px);
+			&:hover {
+				background: color("grey", "lighten-4");
+				color: color("indigo", "base");
+			}
+		}
+		.active {
+			background: color("grey", "lighten-4");
+			color: color("indigo", "base");
+		}
+	}
 }
 
 .viewerUserDropdownContent {
-  min-width: 292px;
-  text-align: $text-center;
-  .userInfoViewer {
-    @include margin-padding(all, null null, all, 20px);
-    .viewerUserimg {
-      width: 100px;
-      height: 100px;
-      @include margin-padding(all, 0 auto 20px, all, null null);
+	min-width: 292px;
+	text-align: $text-center;
+	.userInfoViewer {
+		@include margin-padding(all, null null, all, 20px);
+		.viewerUserimg {
+			width: 100px;
+			height: 100px;
+			@include margin-padding(all, 0 auto 20px, all, null null);
 
-      img {
-        box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
-        border-radius: 100%;
-        width: 100px;
-        height: 100px;
-      }
-    }
-    h6 {
-      color: color("indigo", "base");
-      text-align: $text-center;
-      @include font-rem(16px, 22px);
-      @include font-weight(medium);
-      @include margin-padding(all, 0 0 9px, all, null null);
-    }
-    p {
-      @include font-rem(14px, 22px);
-      @include margin-padding(all, 0, all, null null);
-      color: color("grey", "darken-1");
-    }
-  }
-  .divider {
-    background: color("grey", "lighten-5");
-    margin-bottom: 20px;
-  }
-  li {
-    @include font-rem(14px, 24px);
-    color: color("grey", "darken-4");
-    min-height: inherit;
-    &:hover {
-      background: color("shades", "transparent");
-    }
-    a {
-      color: color("grey", "darken-4");
-      @include flexbox();
-      align-items: $align-items-center;
-      @include flex-wrap($wrap);
-      @include font-rem(14px, 24px);
-      @include margin-padding(all, null, all, 0 60px 15px 60px);
-    }
-  }
-  .emailIcon {
-    width: 1.3rem;
-    height: 1.25rem;
-    background: url(../images/common-icons.svg) no-repeat -382px -412px;
-    margin-right: 0.9375rem;
-  }
-  .phoneIcon {
-    width: 1.3rem;
-    height: 1.25rem;
-    background: url(../images/common-icons.svg) no-repeat -26px -500px;
-    margin-right: 0.9375rem;
-  }
-  .mobileIcon {
-    width: 1.3rem;
-    height: 1.25rem;
-    background: url(../images/common-icons.svg) no-repeat -93px -497px;
-    margin-right: 0.9375rem;
-  }
-  .linkedInIcon {
-    width: 1.3rem;
-    height: 1.25rem;
-    background: url(../images/common-icons.svg) no-repeat -30px -1231px;
-    margin-right: 0.9375rem;
-  }
+			img {
+				box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
+				border-radius: 100%;
+				width: 100px;
+				height: 100px;
+			}
+		}
+		h6 {
+			color: color("indigo", "base");
+			text-align: $text-center;
+			@include font-rem(16px, 22px);
+			@include font-weight(medium);
+			@include margin-padding(all, 0 0 9px, all, null null);
+		}
+		p {
+			@include font-rem(14px, 22px);
+			@include margin-padding(all, 0, all, null null);
+			color: color("grey", "darken-1");
+		}
+	}
+	.divider {
+		background: color("grey", "lighten-5");
+		margin-bottom: 20px;
+	}
+	li {
+		@include font-rem(14px, 24px);
+		color: color("grey", "darken-4");
+		min-height: inherit;
+		&:hover {
+			background: color("shades", "transparent");
+		}
+		a {
+			color: color("grey", "darken-4");
+			@include flexbox();
+			align-items: $align-items-center;
+			@include flex-wrap($wrap);
+			@include font-rem(14px, 24px);
+			@include margin-padding(all, null, all, 0 60px 15px 60px);
+		}
+	}
+	.emailIcon {
+		width: 1.3rem;
+		height: 1.25rem;
+		background: url(../images/common-icons.svg) no-repeat -382px -412px;
+		margin-right: 0.9375rem;
+	}
+	.phoneIcon {
+		width: 1.3rem;
+		height: 1.25rem;
+		background: url(../images/common-icons.svg) no-repeat -26px -500px;
+		margin-right: 0.9375rem;
+	}
+	.mobileIcon {
+		width: 1.3rem;
+		height: 1.25rem;
+		background: url(../images/common-icons.svg) no-repeat -93px -497px;
+		margin-right: 0.9375rem;
+	}
+	.linkedInIcon {
+		width: 1.3rem;
+		height: 1.25rem;
+		background: url(../images/common-icons.svg) no-repeat -30px -1231px;
+		margin-right: 0.9375rem;
+	}
 }
 .proposalTrial {
-  background: color("indigo", "base");
-  @include fixed(top auto left 0 right 0 bottom 0);
-  width: $full-width;
-  text-align: $text-center;
-  @include margin-padding(all, 0, all, 16px);
-  z-index: 1;
-  //display:$diplay-none;
-  p {
-    @include margin-padding(all, 0, all, null null);
-    @include font-rem(14px, 18px);
-    color: color("shades", "white");
-  }
-  a {
-    color: color("shades", "white");
-    text-decoration: $text-decoration-underline;
-  }
+	background: color("indigo", "base");
+	@include fixed(top auto left 0 right 0 bottom 0);
+	width: $full-width;
+	text-align: $text-center;
+	@include margin-padding(all, 0, all, 16px);
+	z-index: 1;
+	//display:$diplay-none;
+	p {
+		@include margin-padding(all, 0, all, null null);
+		@include font-rem(14px, 18px);
+		color: color("shades", "white");
+	}
+	a {
+		color: color("shades", "white");
+		text-decoration: $text-decoration-underline;
+	}
 }
 
 /* Viewer Sidebar start here */
 
 .viewerSidebarCommon {
-  @include fixed(top 120px left -900px right null bottom null);
-  height: calc(100% - 120px);
-  width: 450px;
-  background: color("shades", "white");
-  box-shadow: 5px -5px 20px rgba(0, 0, 0, 0.2);
-  @include transition(all 0.5s);
-  z-index: 3;
-  .viewerSidebarHeader {
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    @include margin-padding(all, null, all, 21px 32px);
-    border-bottom: 1px solid color("grey", "lighten-3");
-    h5 {
-      @include font-rem(16px, 24px);
-      color: color("grey", "darken-4");
-      @include margin-padding(all, 0, all, null);
-      @include font-weight(medium);
-      text-transform: $text-capitalize;
-      letter-spacing: $zero;
-    }
-    .viewerBackArrow {
-      width: 1.3rem;
-      height: 1.25rem;
-      background: url(../images/common-icons.svg) no-repeat -92px -1231px;
-      @include margin-padding(all, 0 1.375rem 0 0, all, 0);
-    }
-  }
-  .viewerSidebarContent {
-    @include margin-padding(all, 0, all, 0 41px 0 30px);
-    height: calc(100% - 67px);
-  }
-  p {
-    @include font-rem(14px, 20px);
-    color: color("blue-grey", "darken-1");
-    @include margin-padding(all, 0 0 16px 0, all, null);
-    @include font-weight(normal);
-    text-transform: $text-capitalize;
-    letter-spacing: normal;
-  }
-  .collapsible {
-    border: $none;
-    box-shadow: $none;
-    li {
-      letter-spacing: normal;
-      text-transform: $text-capitalize;
-      width: $full-width;
-    }
-    li.active {
-      .material-icons {
-        @include transform(rotate(180deg));
-      }
-    }
-    .collapsible-header {
-      border-bottom: $none;
-      @include margin-padding(all, null, all, 1rem 0);
-      @include flex-wrap($wrap);
-      width: $full-width;
-      h6 {
-        @include font-rem(16px, 24px);
-        color: color("grey", "darken-4");
-        @include margin-padding(all, 0, all, null);
-        @include font-weight(medium);
-        text-transform: $text-capitalize;
-      }
-      .fileCount {
-        @include font-rem(14px, 24px);
-        color: color("grey", "darken-1");
-        @include margin-padding(all, 0 0 0 5px, all, null);
-        @include font-weight(normal);
-      }
-      .accordion-arrow {
-        margin-left: $margin-left-auto;
-        @include flexbox();
-        align-items: $align-items-center;
-        @include flex-wrap($wrap);
+	@include fixed(top 120px left -900px right null bottom null);
+	height: calc(100% - 120px);
+	width: 450px;
+	background: color("shades", "white");
+	box-shadow: 5px -5px 20px rgba(0, 0, 0, 0.2);
+	@include transition(all 0.5s);
+	z-index: 3;
+	.viewerSidebarHeader {
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		@include margin-padding(all, null, all, 21px 32px);
+		border-bottom: 1px solid color("grey", "lighten-3");
+		h5 {
+			@include font-rem(16px, 24px);
+			color: color("grey", "darken-4");
+			@include margin-padding(all, 0, all, null);
+			@include font-weight(medium);
+			text-transform: $text-capitalize;
+			letter-spacing: $zero;
+		}
+		.viewerBackArrow {
+			width: 1.3rem;
+			height: 1.25rem;
+			background: url(../images/common-icons.svg) no-repeat -92px -1231px;
+			@include margin-padding(all, 0 1.375rem 0 0, all, 0);
+		}
+	}
+	.viewerSidebarContent {
+		@include margin-padding(all, 0, all, 0 41px 0 30px);
+		height: calc(100% - 67px);
+	}
+	p {
+		@include font-rem(14px, 20px);
+		color: color("blue-grey", "darken-1");
+		@include margin-padding(all, 0 0 16px 0, all, null);
+		@include font-weight(normal);
+		text-transform: $text-capitalize;
+		letter-spacing: normal;
+	}
+	.collapsible {
+		border: $none;
+		box-shadow: $none;
+		li {
+			letter-spacing: normal;
+			text-transform: $text-capitalize;
+			width: $full-width;
+		}
+		li.active {
+			.material-icons {
+				@include transform(rotate(180deg));
+			}
+		}
+		.collapsible-header {
+			border-bottom: $none;
+			@include margin-padding(all, null, all, 1rem 0);
+			@include flex-wrap($wrap);
+			width: $full-width;
+			h6 {
+				@include font-rem(16px, 24px);
+				color: color("grey", "darken-4");
+				@include margin-padding(all, 0, all, null);
+				@include font-weight(medium);
+				text-transform: $text-capitalize;
+			}
+			.fileCount {
+				@include font-rem(14px, 24px);
+				color: color("grey", "darken-1");
+				@include margin-padding(all, 0 0 0 5px, all, null);
+				@include font-weight(normal);
+			}
+			.accordion-arrow {
+				margin-left: $margin-left-auto;
+				@include flexbox();
+				align-items: $align-items-center;
+				@include flex-wrap($wrap);
 
-        .material-icons {
-          width: 40px;
-          color: color("indigo", "base");
-          @include margin-padding(all, 0, all, null);
-          @include font-rem(31px);
-          @include transition(all 0.5s);
-        }
-      }
-      .collapseTopRow {
-        width: $full-width;
-        @include flexbox();
-        align-items: $align-items-center;
-        @include flex-wrap($wrap);
-      }
-    }
-    .fileIcon {
-      width: 1.3rem;
-      height: 1.6rem;
-      background: url(../images/common-icons.svg) no-repeat -172px -1227px;
-      margin-right: 1rem;
-    }
-    .collapsible-body {
-      @include margin-padding(all, null, all, 0);
-      border: $none;
-      width: $full-width;
-      .printDropdownContent {
-        min-width: 192px;
-        @include margin-padding(all, null, all, 28px 34px 27px 30px !important);
-        li {
-          color: color("grey", "darken-4");
-          @include font-rem(14px, 20px);
-          min-height: auto;
-          @include margin-padding(all, 0 0 25px 0, all, 0);
-          text-transform: $text-capitalize;
-          @include font-weight(normal);
-          &:hover {
-            background: color("shades", "transparent");
-          }
-          &:last-child {
-            @include margin-padding(all, 0, all, null);
-          }
-          a {
-            @include flexbox();
-            align-items: $align-items-center;
-            @include flex-wrap($wrap);
-            color: color("grey", "darken-4");
-            @include font-rem(14px, 20px);
-            @include margin-padding(all, null, all, 0 !important);
-          }
-        }
-      }
-    }
-  }
+				.material-icons {
+					width: 40px;
+					color: color("indigo", "base");
+					@include margin-padding(all, 0, all, null);
+					@include font-rem(31px);
+					@include transition(all 0.5s);
+				}
+			}
+			.collapseTopRow {
+				width: $full-width;
+				@include flexbox();
+				align-items: $align-items-center;
+				@include flex-wrap($wrap);
+			}
+		}
+		.fileIcon {
+			width: 1.3rem;
+			height: 1.6rem;
+			background: url(../images/common-icons.svg) no-repeat -172px -1227px;
+			margin-right: 1rem;
+		}
+		.collapsible-body {
+			@include margin-padding(all, null, all, 0);
+			border: $none;
+			width: $full-width;
+			.printDropdownContent {
+				min-width: 192px;
+				@include margin-padding(all, null, all, 28px 34px 27px 30px !important);
+				li {
+					color: color("grey", "darken-4");
+					@include font-rem(14px, 20px);
+					min-height: auto;
+					@include margin-padding(all, 0 0 25px 0, all, 0);
+					text-transform: $text-capitalize;
+					@include font-weight(normal);
+					&:hover {
+						background: color("shades", "transparent");
+					}
+					&:last-child {
+						@include margin-padding(all, 0, all, null);
+					}
+					a {
+						@include flexbox();
+						align-items: $align-items-center;
+						@include flex-wrap($wrap);
+						color: color("grey", "darken-4");
+						@include font-rem(14px, 20px);
+						@include margin-padding(all, null, all, 0 !important);
+					}
+				}
+			}
+		}
+	}
 
-  .printContentSaveHead {
-    width: $full-width;
-    @include margin-padding(all, 8px 0 0 0, all, null);
-    .selectCheck {
-      @include flexbox();
-      align-items: $align-items-center;
-      @include flex-wrap($wrap);
-    }
-  }
-  .selectAll {
-    span {
-      color: color("grey", "darken-4");
-      @include font-rem(13px);
-      @include font-weight(semi-bold);
-      text-transform: $text-uppercase;
-    }
-  }
-  .saveSelect {
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    margin-left: $margin-left-auto;
-    h6 {
-      color: color("grey", "darken-4");
-      @include font-rem(13px);
-      @include font-weight(semi-bold);
-      text-transform: $text-uppercase;
-      @include margin-padding(all, 0, all, null);
-    }
-  }
-  .saveIcon {
-    width: 1.3rem;
-    height: 1.6rem;
-    background: url(../images/common-icons.svg) no-repeat -245px -1227px;
-    margin-right: 0.6875rem;
-  }
-  .saveDropdownIcon {
-    width: 2.9rem;
-    height: 2.9rem;
-    background: url(../images/common-icons.svg) no-repeat -311px -334px;
-    margin-left: 0.6875rem;
-    border-radius: 100%;
-    &:hover {
-      background: #efeff3 url(../images/common-icons.svg) no-repeat -311px -334px;
-    }
-  }
-  .docSaveRow {
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    @include margin-padding(all, 0 0 10px 0, all, 8px 0);
-    .pdfIcon {
-      width: 1.3rem;
-      height: 1.6rem;
-      background: url(../images/common-icons.svg) no-repeat -169px -346px;
-      margin-right: 0.8125rem;
-    }
-    p {
-      color: color("grey", "darken-2");
-      @include font-rem(15px, 24px);
-      @include margin-padding(all, 0, all, null);
-    }
-    .eyeIcon {
-      width: 2.9rem;
-      height: 1.6rem;
-      background: url(../images/common-icons.svg) no-repeat -158px -575px;
-      margin-left: $margin-left-auto;
-    }
-    .check {
-      height: 17px;
-    }
-  }
-  [type="checkbox"] + span:not(.lever) {
-    padding-left: 33px;
-  }
-  .downloadIcon {
-    width: 1.3rem;
-    height: 1.6rem;
-    background: url(../images/common-icons.svg) no-repeat -324px -1227px;
-    margin-right: 0.8125rem;
-  }
-  .printIcon {
-    width: 1.3rem;
-    height: 1.6rem;
-    background: url(../images/common-icons.svg) no-repeat -391px -1227px;
-    margin-right: 0.8125rem;
-  }
+	.printContentSaveHead {
+		width: $full-width;
+		@include margin-padding(all, 8px 0 0 0, all, null);
+		.selectCheck {
+			@include flexbox();
+			align-items: $align-items-center;
+			@include flex-wrap($wrap);
+		}
+	}
+	.selectAll {
+		span {
+			color: color("grey", "darken-4");
+			@include font-rem(13px);
+			@include font-weight(semi-bold);
+			text-transform: $text-uppercase;
+		}
+	}
+	.saveSelect {
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		margin-left: $margin-left-auto;
+		h6 {
+			color: color("grey", "darken-4");
+			@include font-rem(13px);
+			@include font-weight(semi-bold);
+			text-transform: $text-uppercase;
+			@include margin-padding(all, 0, all, null);
+		}
+	}
+	.saveIcon {
+		width: 1.3rem;
+		height: 1.6rem;
+		background: url(../images/common-icons.svg) no-repeat -245px -1227px;
+		margin-right: 0.6875rem;
+	}
+	.saveDropdownIcon {
+		width: 2.9rem;
+		height: 2.9rem;
+		background: url(../images/common-icons.svg) no-repeat -311px -334px;
+		margin-left: 0.6875rem;
+		border-radius: 100%;
+		&:hover {
+			background: #efeff3 url(../images/common-icons.svg) no-repeat -311px -334px;
+		}
+	}
+	.docSaveRow {
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		@include margin-padding(all, 0 0 10px 0, all, 8px 0);
+		.pdfIcon {
+			width: 1.3rem;
+			height: 1.6rem;
+			background: url(../images/common-icons.svg) no-repeat -169px -346px;
+			margin-right: 0.8125rem;
+		}
+		p {
+			color: color("grey", "darken-2");
+			@include font-rem(15px, 24px);
+			@include margin-padding(all, 0, all, null);
+		}
+		.eyeIcon {
+			width: 2.9rem;
+			height: 1.6rem;
+			background: url(../images/common-icons.svg) no-repeat -158px -575px;
+			margin-left: $margin-left-auto;
+		}
+		.check {
+			height: 17px;
+		}
+	}
+	[type="checkbox"] + span:not(.lever) {
+		padding-left: 33px;
+	}
+	.downloadIcon {
+		width: 1.3rem;
+		height: 1.6rem;
+		background: url(../images/common-icons.svg) no-repeat -324px -1227px;
+		margin-right: 0.8125rem;
+	}
+	.printIcon {
+		width: 1.3rem;
+		height: 1.6rem;
+		background: url(../images/common-icons.svg) no-repeat -391px -1227px;
+		margin-right: 0.8125rem;
+	}
 }
 .saveBorder {
-  height: 1px;
-  border-bottom: 1px solid color("grey", "lighten-3");
-  @include margin-padding(all, 12px 0 20px, all, null);
+	height: 1px;
+	border-bottom: 1px solid color("grey", "lighten-3");
+	@include margin-padding(all, 12px 0 20px, all, null);
 }
 
 .printSidebar {
-  height: $height-hundred-per;
+	height: $height-hundred-per;
 }
 .outerScrollViewer {
-  height: calc(100% - 67px);
-  padding: 20px 0;
+	height: calc(100% - 67px);
+	padding: 20px 0;
 }
 .outerScrollViewer .scrollbar-inner > .scroll-element.scroll-y {
-  right: 7px;
+	right: 7px;
 }
 .viewerSidebarCommon.viewerSidebarOpen {
-  left: $zero;
+	left: $zero;
 }
 .commentBox {
-  border-bottom: 1px solid color("grey", "lighten-3");
-  @include margin-padding(all, null, all, 19px 41px 19px 30px);
-  textarea {
-    border: $none;
-    height: 90px;
-    @include margin-padding(all, 0 0 9px, all, null);
-    @include font-rem(14px, 24px);
-    resize: $none;
-    &:focus {
-      outline: $none;
-    }
-    @include input-placeholder {
-      color: color("grey", "darken-1");
-    }
-  }
-  .btn {
-    padding: 0 4rem;
-  }
+	border-bottom: 1px solid color("grey", "lighten-3");
+	@include margin-padding(all, null, all, 19px 41px 19px 30px);
+	textarea {
+		border: $none;
+		height: 90px;
+		@include margin-padding(all, 0 0 9px, all, null);
+		@include font-rem(14px, 24px);
+		resize: $none;
+		&:focus {
+			outline: $none;
+		}
+		@include input-placeholder {
+			color: color("grey", "darken-1");
+		}
+	}
+	.btn {
+		padding: 0 4rem;
+	}
 }
 #Comments {
-  .outerScrollViewer {
-    height: calc(100% - 246px);
-    padding: 20px 0;
-  }
+	.outerScrollViewer {
+		height: calc(100% - 246px);
+		padding: 20px 0;
+	}
 }
 .pastComments {
-  .pastCommentsHeader {
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    @include margin-padding(all, 0 0 13px, all, null);
-    h4 {
-      color: color("grey", "darken-4");
-      @include font-rem(16px, 34px);
-      @include margin-padding(all, 0, all, null);
-      @include font-weight(semi-bold);
-    }
-    .commentIcon {
-      background: url(../images/common-icons.svg) no-repeat -320px -411px;
-      width: 1.5rem;
-      height: 1.85rem;
-      margin-right: 11px;
-    }
-  }
-  .comment-row {
-    border: 1px solid color("grey", "lighten-3");
-    @include margin-padding(all, 0 0 10px, all, 19px 30px);
-    h5 {
-      color: color("grey", "darken-4");
-      @include font-rem(14px, 24px);
-      @include margin-padding(all, 0 0 10px, all, null);
-      @include font-weight(semi-bold);
-    }
-    p {
-      color: color("blue-grey", "darken-1");
-      @include font-rem(14px, 22px);
-      @include margin-padding(all, 0 0 11px, all, null);
-    }
-    .dateComments {
-      h6 {
-        color: color("grey", "darken-1");
-        @include font-rem(14px, 22px);
-        @include margin-padding(all, 0, all, null);
-        @include font-weight(medium);
-      }
-    }
-    .commentlink {
-      color: color("indigo", "base");
-      @include font-weight(medium);
-    }
-  }
+	.pastCommentsHeader {
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		@include margin-padding(all, 0 0 13px, all, null);
+		h4 {
+			color: color("grey", "darken-4");
+			@include font-rem(16px, 34px);
+			@include margin-padding(all, 0, all, null);
+			@include font-weight(semi-bold);
+		}
+		.commentIcon {
+			background: url(../images/common-icons.svg) no-repeat -320px -411px;
+			width: 1.5rem;
+			height: 1.85rem;
+			margin-right: 11px;
+		}
+	}
+	.comment-row {
+		border: 1px solid color("grey", "lighten-3");
+		@include margin-padding(all, 0 0 10px, all, 19px 30px);
+		h5 {
+			color: color("grey", "darken-4");
+			@include font-rem(14px, 24px);
+			@include margin-padding(all, 0 0 10px, all, null);
+			@include font-weight(semi-bold);
+		}
+		p {
+			color: color("blue-grey", "darken-1");
+			@include font-rem(14px, 22px);
+			@include margin-padding(all, 0 0 11px, all, null);
+		}
+		.dateComments {
+			h6 {
+				color: color("grey", "darken-1");
+				@include font-rem(14px, 22px);
+				@include margin-padding(all, 0, all, null);
+				@include font-weight(medium);
+			}
+		}
+		.commentlink {
+			color: color("indigo", "base");
+			@include font-weight(medium);
+		}
+	}
 }
 
 /* Viewer Sidebar end here */
 
 /* Upload Attachement Start here*/
 .uploadAttachement {
-  .uploadAttachementHeader {
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    border-bottom: 1px solid #f2f3f3;
-    @include margin-padding(all, null, all, 0 51px 13px 30px);
-    .attachementIcon {
-      background: url(../images/common-icons.svg) no-repeat -30px -1308px;
-      width: 1.3rem;
-      height: 1.6rem;
-      margin-right: 11px;
-    }
-    h5 {
-      color: color("grey", "darken-4");
-      @include font-rem(16px, 34px);
-      @include margin-padding(all, 0px, all, null);
-      @include font-weight(medium);
-    }
-  }
-  .selectFile {
-    @include margin-padding(all, null, all, 20px 30px);
-    border-bottom: 1px solid #f2f3f3;
-    .file {
-      border: 1px dashed color("grey", "lighten-3");
-      height: 100px;
-      @include relative(top null right null);
-      input[type="file"] {
-        height: 100px;
-        opacity: $zero;
-        width: $full-width;
-        @include relative(top null right null);
-        z-index: 1;
-      }
-      .selectPlaceholder {
-        @include absolute(top 10px left 18px);
-        color: color("indigo", "base");
-        @include font-rem(14px, 26px);
-        @include font-weight(medium);
-        text-decoration: $text-decoration-underline;
-      }
-    }
-  }
-  .addFilesUpload {
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    @include margin-padding(all, 8px 0, all, null);
-    .fileIcon {
-      width: 1.3rem;
-      height: 1.6rem;
-      background: url(../images/common-icons.svg) no-repeat -172px -1227px;
-      margin-right: 1rem;
-    }
-    h5 {
-      @include font-rem(16px, 26px);
-      color: color("grey", "darken-2");
-      @include margin-padding(all, 0, all, null);
-    }
-    .fileSize {
-      @include font-rem(13px);
-      line-height: initial;
-      color: color("grey", "darken-1");
-      text-transform: $text-uppercase;
-      @include margin-padding(all, 0 0 0 13px, all, null);
-    }
-    .removeFile {
-      margin-left: $margin-left-auto;
-      .material-icons {
-        color: color("indigo", "base");
-      }
-    }
-  }
-  .addMoreFile {
-    @include margin-padding(all, 20px 0 0 0, all, 0);
-    letter-spacing: 0.7px;
-    @include font-rem(14px);
-    text-transform: $text-uppercase;
-    @include font-weight(semi-bold);
-    color: color("grey", "darken-4");
-    .material-icons {
-      vertical-align: $verticle-align-middle;
-      color: color("indigo", "base");
-      @include font-rem(20px);
-    }
-  }
-  .uploadText {
-    @include margin-padding(all, 0 0 20px 0, all, 20px 30px);
-    p {
-      color: color("blue-grey", "darken-1");
-      @include font-rem(12px, 15px);
-    }
-    .btn {
-      letter-spacing: 0.7px;
-      padding: 0 3.88rem;
-    }
-  }
+	.uploadAttachementHeader {
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		border-bottom: 1px solid #f2f3f3;
+		@include margin-padding(all, null, all, 0 51px 13px 30px);
+		.attachementIcon {
+			background: url(../images/common-icons.svg) no-repeat -30px -1308px;
+			width: 1.3rem;
+			height: 1.6rem;
+			margin-right: 11px;
+		}
+		h5 {
+			color: color("grey", "darken-4");
+			@include font-rem(16px, 34px);
+			@include margin-padding(all, 0px, all, null);
+			@include font-weight(medium);
+		}
+	}
+	.selectFile {
+		@include margin-padding(all, null, all, 20px 30px);
+		border-bottom: 1px solid #f2f3f3;
+		.file {
+			border: 1px dashed color("grey", "lighten-3");
+			height: 100px;
+			@include relative(top null right null);
+			input[type="file"] {
+				height: 100px;
+				opacity: $zero;
+				width: $full-width;
+				@include relative(top null right null);
+				z-index: 1;
+			}
+			.selectPlaceholder {
+				@include absolute(top 10px left 18px);
+				color: color("indigo", "base");
+				@include font-rem(14px, 26px);
+				@include font-weight(medium);
+				text-decoration: $text-decoration-underline;
+			}
+		}
+	}
+	.addFilesUpload {
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		@include margin-padding(all, 8px 0, all, null);
+		.fileIcon {
+			width: 1.3rem;
+			height: 1.6rem;
+			background: url(../images/common-icons.svg) no-repeat -172px -1227px;
+			margin-right: 1rem;
+		}
+		h5 {
+			@include font-rem(16px, 26px);
+			color: color("grey", "darken-2");
+			@include margin-padding(all, 0, all, null);
+		}
+		.fileSize {
+			@include font-rem(13px);
+			line-height: initial;
+			color: color("grey", "darken-1");
+			text-transform: $text-uppercase;
+			@include margin-padding(all, 0 0 0 13px, all, null);
+		}
+		.removeFile {
+			margin-left: $margin-left-auto;
+			.material-icons {
+				color: color("indigo", "base");
+			}
+		}
+	}
+	.addMoreFile {
+		@include margin-padding(all, 20px 0 0 0, all, 0);
+		letter-spacing: 0.7px;
+		@include font-rem(14px);
+		text-transform: $text-uppercase;
+		@include font-weight(semi-bold);
+		color: color("grey", "darken-4");
+		.material-icons {
+			vertical-align: $verticle-align-middle;
+			color: color("indigo", "base");
+			@include font-rem(20px);
+		}
+	}
+	.uploadText {
+		@include margin-padding(all, 0 0 20px 0, all, 20px 30px);
+		p {
+			color: color("blue-grey", "darken-1");
+			@include font-rem(12px, 15px);
+		}
+		.btn {
+			letter-spacing: 0.7px;
+			padding: 0 3.88rem;
+		}
+	}
 }
 .overlay {
-  @include fixed(top 120px left 0);
-  width: $full-width;
-  height: $height-hundred-per;
-  background: color("shades", "white");
-  opacity: 0.7;
-  z-index: 3;
+	@include fixed(top 120px left 0);
+	width: $full-width;
+	height: $height-hundred-per;
+	background: color("shades", "white");
+	opacity: 0.7;
+	z-index: 3;
 }
 /* Upload Attachement end here*/
 
 .viewerLinks.current {
-  opacity: 1 !important;
+	opacity: 1 !important;
 }
 
 /* Share Viewer Sidebar start here */
 
 .shareProposal {
-  .sharePerposalHeader {
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    border-bottom: 1px solid #f2f3f3;
-    @include margin-padding(all, null, all, 0 51px 13px 30px);
-    .shareIcon {
-      background: url(../images/common-icons.svg) no-repeat -245px -412px;
-      width: 1.6rem;
-      height: 1.6rem;
-      margin-right: 11px;
-    }
-    h5 {
-      color: color("grey", "darken-4");
-      @include font-rem(16px, 34px);
-      @include margin-padding(all, 0px, all, null);
-      @include font-weight(medium);
-    }
-  }
-  .shareEmail {
-    .toSenderRow {
-      @include flexbox();
-      align-items: $align-items-center;
-      @include flex-wrap($wrap);
-      border-bottom: 1px solid #f2f3f3;
-      @include margin-padding(all, null, all, 6px 51px 6px 30px);
-    }
-    .toSend {
-      width: $width-auto;
-      flex: 1;
-      border: $none;
-      margin: $zero;
-      color: color("grey", "darken-4");
-      @include font-rem(14px, 24px);
-      @include input-placeholder {
-        color: color("grey", "darken-1");
-      }
-      &:focus {
-        border: $none !important;
-      }
-    }
-    .toText {
-      @include font-rem(14px, 24px);
-      color: color("blue-grey", "darken-1");
-      @include margin-padding(all, 0 20px 0 0, all, null);
-    }
-  }
-  .writeMsg {
-    border-bottom: 1px solid color("blue-grey", "lighten-5");
-    @include margin-padding(all, null, all, 19px 41px 19px 30px);
-    textarea {
-      border: $none;
-      height: 90px;
-      @include margin-padding(all, 0 0 9px, all, null);
-      @include font-rem(14px, 24px);
-      resize: $none;
-      &:focus {
-        outline: $none;
-      }
-      @include input-placeholder {
-        color: color("grey", "darken-1");
-      }
-    }
-    .btn {
-      padding: 0 4rem;
-    }
-  }
+	.sharePerposalHeader {
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		border-bottom: 1px solid #f2f3f3;
+		@include margin-padding(all, null, all, 0 51px 13px 30px);
+		.shareIcon {
+			background: url(../images/common-icons.svg) no-repeat -245px -412px;
+			width: 1.6rem;
+			height: 1.6rem;
+			margin-right: 11px;
+		}
+		h5 {
+			color: color("grey", "darken-4");
+			@include font-rem(16px, 34px);
+			@include margin-padding(all, 0px, all, null);
+			@include font-weight(medium);
+		}
+	}
+	.shareEmail {
+		.toSenderRow {
+			@include flexbox();
+			align-items: $align-items-center;
+			@include flex-wrap($wrap);
+			border-bottom: 1px solid #f2f3f3;
+			@include margin-padding(all, null, all, 6px 51px 6px 30px);
+		}
+		.toSend {
+			width: $width-auto;
+			flex: 1;
+			border: $none;
+			margin: $zero;
+			color: color("grey", "darken-4");
+			@include font-rem(14px, 24px);
+			@include input-placeholder {
+				color: color("grey", "darken-1");
+			}
+			&:focus {
+				border: $none !important;
+			}
+		}
+		.toText {
+			@include font-rem(14px, 24px);
+			color: color("blue-grey", "darken-1");
+			@include margin-padding(all, 0 20px 0 0, all, null);
+		}
+	}
+	.writeMsg {
+		border-bottom: 1px solid color("blue-grey", "lighten-5");
+		@include margin-padding(all, null, all, 19px 41px 19px 30px);
+		textarea {
+			border: $none;
+			height: 90px;
+			@include margin-padding(all, 0 0 9px, all, null);
+			@include font-rem(14px, 24px);
+			resize: $none;
+			&:focus {
+				outline: $none;
+			}
+			@include input-placeholder {
+				color: color("grey", "darken-1");
+			}
+		}
+		.btn {
+			padding: 0 4rem;
+		}
+	}
 }
 
 /* Share Viewer Sidebar end here */
@@ -2004,114 +2004,134 @@
 /* Viewer Splash screen Start here */
 
 .splashViewer {
-  &:after {
-    content: "";
-    background: url(../images/viewerSplag-bg.jpg) no-repeat 0 0;
-    background-size: 100% 100%;
-    @include fixed(top 0 left 0 right 0);
-    width: $full-width;
-    height: $height-hundred-per;
-  }
-  .splashForm {
-    @include center(both);
-    z-index: 1;
-    max-width: 695px;
-    width: 90%;
-    @include margin-padding(all, auto, all, null);
-  }
-  .splashLogo {
-    text-align: $text-center;
-    @include margin-padding(all, 0 0 60px 0, all, null);
-  }
-  .splashFormCenter {
-    max-width: 695px;
-    @include box-shadow(0, 0px, 20px, rgba(0, 0, 0, 0.2));
-    background: color("shades", "white");
-    @include margin-padding(all, null, all, 88px 98px 88px 117px);
-    @include border-radius(5px);
-    h5 {
-      @include font-rem(20px, 34px);
-      @include font-weight(medium);
-      color: color("grey", "darken-4");
-      @include margin-padding(all, 0 0 30px 0, all, null);
-    }
-  }
-  .input-field {
-    label {
-      text-transform: $text-capitalize;
-      @include font-weight(normal);
-      @include font-rem(14px, 24px);
-      color: $recipentlabelColor;
-    }
-    input {
-      border: $none;
-      border-bottom: 1px solid color("grey", "lighten-3");
-      height: 3.2rem;
-      @include font-rem(14px);
-      &:focus {
-        border-bottom: 1px solid color("green", "base") !important;
-        box-shadow: $none;
-      }
-    }
-  }
-  .btn {
-    width: $full-width;
-    height: 55px;
-    @include font-rem(18px, 55px);
-    text-transform: $text-uppercase;
-    @include font-weight(medium);
-    @include margin-padding(all, 4px 0 0 0, all, null);
-    background: linear-gradient(170.65deg, #5f63ff -7.34%, #d653dd 55.66%, #d8094a 116.59%);
-    letter-spacing: 1px;
-    &:hover {
-      background: linear-gradient(170.65deg, #d8094a -7.34%, #d653dd 55.66%, #5f63ff 116.59%);
-    }
-  }
+	&:after {
+		content: "";
+		background: url(../images/viewerSplag-bg.jpg) no-repeat 0 0;
+		background-size: 100% 100%;
+		@include fixed(top 0 left 0 right 0);
+		width: $full-width;
+		height: $height-hundred-per;
+	}
+	.splashForm {
+		@include center(both);
+		z-index: 1;
+		max-width: 695px;
+		width: 90%;
+		@include margin-padding(all, auto, all, null);
+	}
+	.splashLogo {
+		text-align: $text-center;
+		@include margin-padding(all, 0 0 60px 0, all, null);
+	}
+	.splashFormCenter {
+		max-width: 695px;
+		@include box-shadow(0, 0px, 20px, rgba(0, 0, 0, 0.2));
+		background: color("shades", "white");
+		@include margin-padding(all, null, all, 88px 98px 88px 117px);
+		@include border-radius(5px);
+		h5 {
+			@include font-rem(20px, 34px);
+			@include font-weight(medium);
+			color: color("grey", "darken-4");
+			@include margin-padding(all, 0 0 30px 0, all, null);
+		}
+	}
+	.input-field {
+		label {
+			text-transform: $text-capitalize;
+			@include font-weight(normal);
+			@include font-rem(14px, 24px);
+			color: $recipentlabelColor;
+		}
+		input {
+			border: $none;
+			border-bottom: 1px solid color("grey", "lighten-3");
+			height: 3.2rem;
+			@include font-rem(14px);
+			&:focus {
+				border-bottom: 1px solid color("green", "base") !important;
+				box-shadow: $none;
+			}
+		}
+	}
+	.btn {
+		width: $full-width;
+		height: 55px;
+		@include font-rem(18px, 55px);
+		text-transform: $text-uppercase;
+		@include font-weight(medium);
+		@include margin-padding(all, 4px 0 0 0, all, null);
+		background: linear-gradient(170.65deg, #5f63ff -7.34%, #d653dd 55.66%, #d8094a 116.59%);
+		letter-spacing: 1px;
+		&:hover {
+			background: linear-gradient(170.65deg, #d8094a -7.34%, #d653dd 55.66%, #5f63ff 116.59%);
+		}
+	}
 }
 .mt-0 {
-  @include margin-padding(all, 0, all, null);
+	@include margin-padding(all, 0, all, null);
 }
 .prevNextBtn {
-  @include flexbox();
-  align-items: $align-items-center;
-  @include flex-wrap($wrap);
-  @include absolute(top 0 left 0);
-  width: $full-width;
-  @include box-shadow(0, 5px, 15px, rgba(0, 0, 0, 0.15));
-  z-index: 2;
-  .prevSection,
-  .nextSection {
-    width: $full-width / 2;
-    color: color("shades", "white");
-    @include font-rem(16px, 24px);
-    background: color("deep-purple", "accent-3");
-    @include flexbox();
-    align-items: $align-items-center;
-    @include flex-wrap($wrap);
-    justify-content: $justifycenter;
-    @include margin-padding(all, null, all, 16px 0);
-  }
-  .prevIcon {
-    background: url(../images/common-icons.svg) no-repeat -91px -1158px;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 1rem;
-  }
-  .nextSection {
-    background: color("indigo", "base");
-  }
-  .nextIcon {
-    background: url(../images/common-icons.svg) no-repeat -91px -1306px;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 1rem;
-  }
+	@include flexbox();
+	align-items: $align-items-center;
+	@include flex-wrap($wrap);
+	@include absolute(top 0 left 0);
+	width: $full-width;
+	@include box-shadow(0, 5px, 15px, rgba(0, 0, 0, 0.15));
+	z-index: 2;
+	.prevSection,
+	.nextSection {
+		width: $full-width / 2;
+		color: color("shades", "white");
+		@include font-rem(16px, 24px);
+		background: color("deep-purple", "accent-3");
+		@include flexbox();
+		align-items: $align-items-center;
+		@include flex-wrap($wrap);
+		justify-content: $justifycenter;
+		@include margin-padding(all, null, all, 16px 0);
+	}
+	.prevIcon {
+		background: url(../images/common-icons.svg) no-repeat -91px -1158px;
+		width: 1.5rem;
+		height: 1.5rem;
+		margin-right: 1rem;
+	}
+	.nextSection {
+		background: color("indigo", "base");
+	}
+	.nextIcon {
+		background: url(../images/common-icons.svg) no-repeat -91px -1306px;
+		width: 1.5rem;
+		height: 1.5rem;
+		margin-left: 1rem;
+	}
 }
 .signatureForm {
-  .row {
-    &:last-child {
-      margin-bottom: $zero;
+	.row {
+		&:last-child {
+			margin-bottom: $zero;
+		}
+	}
+}
+/* Viewer Splash screen end here */
+
+/* Save Template Mdoal start here */
+
+#saveTemplateModal {
+	max-width: 41rem;
+	.modal-content {
+    @include margin-padding(all, null, all, 0 3.125rem 0 3.5rem);
+    p {
+      @include font-rem(16px, 24px);
+      color:color('grey','darken-2');
+    }
+  }
+  .modal-footer {
+    .btn-row {
+      @include justify-content(center);
     }
   }
 }
-/* Viewer Splash screen end here */
+
+/* Save Template Mdoal end  here */

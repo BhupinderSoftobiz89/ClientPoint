@@ -431,6 +431,12 @@
 	.intigratInnerContent {
 		flex: 0 0 100%;
 	}
+	#saveTemplateModal .modal-header {
+		padding: 1.875rem 1rem 0 2rem;
+	}
+	.libraryTable {
+		height: calc(100% - 118px);
+	}
 }
 
 // Media for 570px
@@ -450,6 +456,7 @@
 	}
 	.newClientPointTitleBar .clientMenu {
 		width: $full-width;
+		margin-bottom: 17px;
 	}
 	.row.mb-15 {
 		margin: 0;
@@ -497,6 +504,30 @@
     flex: 0 0 100%;
     margin-top: 1.5rem;
 }
+.powerdByToggleInner {
+    padding: 17px 20px 17px 20px;
+}
+.clientpointPreview .clientPointPowerdBy {
+    padding: 0 0 0 20px;
+}
+.clientPoint-file .newperposalclientbar {
+    padding: 1.1rem 1.4rem;
+}
+.newClientPointTitleBar .clientMenuCommon {
+    margin-right: 2rem;
+}
+#saveTemplateModal .modal-footer .btn-row {
+    justify-content: space-around;
+}
+#saveTemplateModal .modal-footer .btn-round {
+    margin-right: 0 !important;
+}
+#saveTemplateModal .modal-content {
+    padding: 0 1.5rem 0 1.5rem;
+}
+.libraryTable {
+    height: calc(100% - 167px);
+}
 }
 
 // Media For extra small 480
@@ -522,6 +553,15 @@
 	}
 	.powerdByToggleInner .SignNow .signUp {
 		padding: 0 2rem;
+	}
+	// .tableOptions .options {
+	// 	margin: 0 2.5rem 1rem 0;
+	// 	&:last-child {
+	// 		margin: 0 2.5rem 0 0;
+	// 	}
+	// }
+	.tableOptions {
+		padding: 2.3125rem 2rem;
 	}
 }
 
