@@ -132,7 +132,8 @@
     .deleteIcon {
         @extend .backArrow;  
         background: url(../images/common-icons.svg) no-repeat -30px -1524px;
-    }
+	}
+
     .tableEditOptions {
         @include flexbox();
         align-items: $align-items-center;
@@ -153,5 +154,11 @@
 }
 .libraryTable .scrollbar-inner > .scroll-element.scroll-y {
     right: 0;
+}
+.exportDownIcons {
+	@include flexbox();
+	.material-icons {
+		color:color('indigo','base');
+	}
 }
 /* Library CSS end here */

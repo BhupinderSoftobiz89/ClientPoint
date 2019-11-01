@@ -165,6 +165,13 @@
 		max-width: 100%;
 		flex: 0 0 100%;
 	}
+	.tableOptionUser {
+		margin: 0;
+		flex: 0 0 100%;
+	}
+	.tableOptionUser .optionsUser {
+		padding: 1.5rem 0 0;
+	}
 }
 
 // Media for 768px
@@ -436,6 +443,15 @@
 	}
 	.libraryTable {
 		height: calc(100% - 118px);
+	}
+	.signInModalContent .modal-content {
+		padding: 0 2rem 0 2rem;
+	}
+	#signNowModal .modal-header {
+		padding: 1rem 1rem 0rem 2rem;
+	}
+	.signInModalContent .modal-content .form-fields {
+		margin: 10px 0 0 0;
 	}
 }
 

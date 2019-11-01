@@ -5,40 +5,101 @@
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
 	background: color("indigo", "accent-4");
-    @include margin-padding(all, null, all, 17px 50px);
-    .addUserLeftpanel {
-        @include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
-    }
+	@include margin-padding(all, null, all, 17px 50px);
+	.addUserLeftpanel {
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+	}
 	.userIcon {
-        background: url(../images/common-icons.svg) no-repeat -174px -1385px;
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-right: 13px;
+		background: url(../images/common-icons.svg) no-repeat -174px -1385px;
+		width: 1.5rem;
+		height: 1.5rem;
+		margin-right: 13px;
 	}
 	h1 {
 		@include font-rem(18px, 34px);
 		@include font-weight(semi-bold);
-        color: color("shades", "white");
-        @include margin-padding(all, 0, all, null);
-    }
-    .addUserButtons {
-        @include margin-padding(all, 0 0 0 auto, all, null);
-        .btn {
-            border: 1px solid color('shades','transparent');
-            @include font-rem(14px);
-            @include font-weight(medium);
-            letter-spacing: 0.4375px;
-            min-width: 175px;
-        }
-        .cancel-btn {
-            border: 1px solid color('shades','white');
-            background: color('shades','transparent');
-            @include margin-padding(all, 0 20px 0 0, all, null);
-            // padding: 0 59px;
-        }
-    }
+		color: color("shades", "white");
+		@include margin-padding(all, 0, all, null);
+	}
+	.addUserButtons {
+		@include margin-padding(all, 0 0 0 auto, all, null);
+		.btn {
+			border: 1px solid color("shades", "transparent");
+			@include font-rem(14px);
+			@include font-weight(medium);
+			letter-spacing: 0.4375px;
+			min-width: 175px;
+		}
+		.cancel-btn {
+			border: 1px solid color("shades", "white");
+			background: color("shades", "transparent");
+			@include margin-padding(all, 0 20px 0 0, all, null);
+			// padding: 0 59px;
+		}
+	}
 }
-
+.addUser {
+	@include margin-padding(all, null, all, 0 3.9rem !important);
+}
+.badge.active {
+	background: color("green", "accent-3");
+	color: color("shades", "white");
+	@include border-radius(3px);
+	@include font-rem(13px, 24px);
+	@include font-weight(medium);
+	height: $auto;
+	@include margin-padding(all, null, all, 0 2rem);
+}
+.userTableHead {
+	@include flexbox();
+	@include flex-wrap($wrap);
+	align-items: $align-items-center;
+	@include margin-padding(all, null, all, 1.25rem 1.875rem);
+}
+.tableOptionUser {
+	@include margin-padding(all, 0 0 0 auto, all, null);
+	@include flexbox();
+	@include flex-wrap($wrap);
+	align-items: $align-items-center;
+	.optionsUser {
+		@include flexbox();
+		@include flex-wrap($wrap);
+        align-items: $align-items-center;
+        @include margin-padding(all, 0 2.1875rem 0 0, all, null);
+        @include font-rem(14px, 16px);
+        @include font-weight(semi-bold);
+        letter-spacing: 0.7px;
+        color:color('grey','darken-4');
+        text-transform: $text-uppercase;
+        &:last-child {
+            @include margin-padding(all, 0, all, null);
+        }
+        &.disabled {
+            @include opacity(0.35);
+            pointer-events: $none;
+            user-select: $none;
+        }
+	}
+	.commonIcons {
+		background: url(../images/common-icons.svg) no-repeat -170px -897px;
+		width: 1.4rem;
+		height: 1.4rem;
+        margin-right: 0.6875rem;
+        &.editIcon {
+            background: url(../images/common-icons.svg) no-repeat -246px -663px; 
+        }
+        &.deleteIcon {
+            background: url(../images/common-icons.svg) no-repeat -30px -1524px; 
+        }
+        &.exportIcon {
+            background: url(../images/common-icons.svg) no-repeat -387px -968px;  
+        }
+        &.resetIcon {
+            background: url(../images/common-icons.svg) no-repeat -27px -1067px;     
+        }
+    }
+    
+}
 /* Add User CSS end here */

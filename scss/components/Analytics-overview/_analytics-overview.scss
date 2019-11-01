@@ -657,7 +657,7 @@
 	height: $height-hundred-per !important;
 }
 .heightAuto {
-	height: $height-auto;
+	height: $height-auto !important;
 }
 .no-bg {
 	background: color("shades", "transparent") !important;

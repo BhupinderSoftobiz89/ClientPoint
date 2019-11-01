@@ -26,6 +26,7 @@
                     <span class="commonIconbg fileIcon"></span>
                     Dashboard
                 </a>
+
             </li>
             <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
                 <a href="#library_nav" class="sidebarclick">
@@ -168,17 +169,18 @@
         </aside>
     </header>
     <!-- Header end here  -->
+
     <!-- Main Content start here  -->
     <div id="content">
         <article class="content-common">
             <div class="clientPoint-file heightAuto">
                 <div class="newClientPointTitleBar">
                     <div class="clientpointTitle">
-                        <h4>Users & Permissions</h4>
+                        <h4>Contacts</h4>
                     </div>
                     <div class="newClientPointTitleBar-right library-header-right">
-                        <a class="waves-effect waves-light btn btn-round addUser">
-                            Add User
+                        <a class="waves-effect waves-light btn btn-round ">
+                            Import Contacts
                         </a>
                     </div>
                 </div>
@@ -189,30 +191,35 @@
                     </div>
                     <div class="tableOptionUser">
                         <a href="javascript:void(0);" class="optionsUser">
-                            <span class="commonIcons editIcon"></span>
-                            Edit
-                        </a>
-                        <a href="javascript:void(0);" class="optionsUser">
-                            <span class="commonIcons deleteIcon"></span>
-                            Delete
-                        </a>
-                        <a href="javascript:void(0);" class="optionsUser">
                             <span class="commonIcons exportIcon"></span>
                             Export CSV
-                        </a>
-                        <a href="javascript:void(0);" class="optionsUser disabled">
-                            <span class="commonIcons resetIcon"></span>
-                            Reset Password
+                            <span class="exportDownIcons">
+                                <i class="material-icons">
+                                    arrow_drop_down
+                                </i>
+                            </span>
                         </a>
                     </div>
                 </div>
-                <div class="libraryTable">
+                <div class="libraryTable heightAuto">
                     <div class="table-responsive dataTable">
                         <table>
                             <thead>
                                 <tr>
                                     <th>
-                                        Name
+                                        name
+                                        <a href="javascript:void(0);" class="sortIcon"></a>
+                                    </th>
+                                    <th>
+                                        Title
+                                        <a href="javascript:void(0);" class="sortIcon"></a>
+                                    </th>
+                                    <th>
+                                        Company
+                                        <a href="javascript:void(0);" class="sortIcon"></a>
+                                    </th>
+                                    <th>
+                                        Address
                                         <a href="javascript:void(0);" class="sortIcon"></a>
                                     </th>
                                     <th>
@@ -220,91 +227,114 @@
                                         <a href="javascript:void(0);" class="sortIcon"></a>
                                     </th>
                                     <th>
-                                        Role
+                                        Phone
                                         <a href="javascript:void(0);" class="sortIcon"></a>
                                     </th>
                                     <th>
-                                        Timezone
+                                        Mobile
                                         <a href="javascript:void(0);" class="sortIcon"></a>
                                     </th>
                                     <th>
-                                        Auth Code
-                                        <a href="javascript:void(0);" class="sortIcon"></a>
-                                    </th>
-                                    <th>
-                                        Status
-                                        <a href="javascript:void(0);" class="sortIcon"></a>
+
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                        Miles Morales
+                                        FirstName LastName
                                     </td>
                                     <td>
-                                        miles@kidarachnid.com
+                                        Job Title
                                     </td>
                                     <td>
-                                        Administrator
+                                        Company Name
                                     </td>
                                     <td>
-                                        North America/Los Angeles
+                                        1234 Streetname, City
+                                        State, Country, Zip
                                     </td>
                                     <td>
-                                        ######
+                                        email@domain.com
                                     </td>
                                     <td>
-                                        <span class="badge active">
-                                            Active
-                                        </span>
+                                        555-555-5555
+                                    </td>
+                                    <td>
+                                        555-555-5555
+                                    </td>
+                                    <td>
+                                        <a data-target="contactDropdown" class="libraryLinks dropdown-trigger"></a>
+                                        <ul id="contactDropdown" class="dropdown-content viewedDropDown-content">
+                                            <li tabindex="0">
+                                                <a href="javascript:void(0);">
+                                                    <span class="deleteIcon"></span>
+                                                    Delete
+                                                </a>
+                                            </li>
+                                            <li tabindex="0">
+                                                <a href="javascript:void(0);">
+                                                    <span class="editIcon"></span>
+                                                    Edit
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        Miles Morales
+                                        FirstName LastName
                                     </td>
                                     <td>
-                                        miles@kidarachnid.com
+                                        Job Title
                                     </td>
                                     <td>
-                                        Administrator
+                                        Company Name
                                     </td>
                                     <td>
-                                        North America/Los Angeles
+                                        1234 Streetname, City
+                                        State, Country, Zip
                                     </td>
                                     <td>
-                                        ######
+                                        email@domain.com
                                     </td>
                                     <td>
-                                        <span class="badge active">
-                                            Active
-                                        </span>
+                                        555-555-5555
+                                    </td>
+                                    <td>
+                                        555-555-5555
+                                    </td>
+                                    <td>
+                                        <a class="libraryLinks"></a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        Miles Morales
+                                        FirstName LastName
                                     </td>
                                     <td>
-                                        miles@kidarachnid.com
+                                        Job Title
                                     </td>
                                     <td>
-                                        Administrator
+                                        Company Name
                                     </td>
                                     <td>
-                                        North America/Los Angeles
+                                        1234 Streetname, City
+                                        State, Country, Zip
                                     </td>
                                     <td>
-                                        ######
+                                        email@domain.com
                                     </td>
                                     <td>
-                                        <span class="badge active">
-                                            Active
-                                        </span>
+                                        555-555-5555
+                                    </td>
+                                    <td>
+                                        555-555-5555
+                                    </td>
+                                    <td>
+                                        <a class="libraryLinks"></a>
                                     </td>
                                 </tr>
-
                             </tbody>
                         </table>
                     </div>
@@ -319,21 +349,10 @@
     <script src="js/materialize.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/jquery.scrollbar.min.js"></script>
-    <script src="js/pikaday.js"></script>
     <script>
         jQuery(document).ready(function () {
             jQuery('.scrollbar-inner').scrollbar();
         });
-    </script>
-    <script>
-        var picker = new Pikaday(
-            {
-                field: document.getElementById('datepicker'),
-                firstDay: 1,
-                minDate: new Date(),
-                maxDate: new Date(2020, 12, 31),
-                yearRange: [2000, 2020]
-            });
     </script>
 </body>
 

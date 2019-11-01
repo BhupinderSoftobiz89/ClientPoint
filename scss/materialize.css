@@ -1183,11 +1183,11 @@
 }
 
 .green.accent-3 {
-  background-color: #00E676 !important;
+  background-color: #19E4B1 !important;
 }
 
 .green-text.text-accent-3 {
-  color: #00E676 !important;
+  color: #19E4B1 !important;
 }
 
 .green.accent-4 {
@@ -14749,7 +14749,7 @@ input[type=range]::-ms-thumb {
 }
 
 .heightAuto {
-  height: auto;
+  height: auto !important;
 }
 
 .no-bg {
@@ -17073,6 +17073,107 @@ input[type=range]::-ms-thumb {
   margin: 0 20px 0 0;
 }
 
+.addUser {
+  padding: 0 3.9rem !important;
+}
+
+.badge.active {
+  background: #19E4B1;
+  color: #FFFFFF;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -ms-border-radius: 3px;
+  font-size: 13px;
+  font-size: 0.92857rem;
+  line-height: 24px;
+  line-height: 1.71429rem;
+  font-weight: 500;
+  height: auto;
+  padding: 0 2rem;
+}
+
+.userTableHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.25rem 1.875rem;
+}
+
+.tableOptionUser {
+  margin: 0 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tableOptionUser .optionsUser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 2.1875rem 0 0;
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 16px;
+  line-height: 1.14286rem;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  color: #181A51;
+  text-transform: uppercase;
+}
+
+.tableOptionUser .optionsUser:last-child {
+  margin: 0;
+}
+
+.tableOptionUser .optionsUser.disabled {
+  opacity: 0.35;
+  filter: alpha(opacity=35);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.tableOptionUser .commonIcons {
+  background: url(../images/common-icons.svg) no-repeat -170px -897px;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.6875rem;
+}
+
+.tableOptionUser .commonIcons.editIcon {
+  background: url(../images/common-icons.svg) no-repeat -246px -663px;
+}
+
+.tableOptionUser .commonIcons.deleteIcon {
+  background: url(../images/common-icons.svg) no-repeat -30px -1524px;
+}
+
+.tableOptionUser .commonIcons.exportIcon {
+  background: url(../images/common-icons.svg) no-repeat -387px -968px;
+}
+
+.tableOptionUser .commonIcons.resetIcon {
+  background: url(../images/common-icons.svg) no-repeat -27px -1067px;
+}
+
 /* Add User CSS end here */
 /* Search CSS start here */
 .searchResult {
@@ -17863,6 +17964,16 @@ input[type=range]::-ms-thumb {
   right: 0;
 }
 
+.exportDownIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.exportDownIcons .material-icons {
+  color: #5F63FF;
+}
+
 /* Library CSS end here */
 /* Comment Expanded CSS start here */
 .comment-expended {
@@ -17922,6 +18033,8 @@ input[type=range]::-ms-thumb {
 }
 
 /* Comment Expanded CSS start here */
+/* Contact CSS start here */
+/* Contact CSS start here */
 /* Responsive CSS start here */
 @media (max-width: 1200px) {
   .page-header .userFetaures {
@@ -18091,6 +18204,15 @@ input[type=range]::-ms-thumb {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+  }
+  .tableOptionUser {
+    margin: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .tableOptionUser .optionsUser {
+    padding: 1.5rem 0 0;
   }
 }
 
@@ -18370,6 +18492,15 @@ input[type=range]::-ms-thumb {
   }
   .libraryTable {
     height: calc(100% - 118px);
+  }
+  .signInModalContent .modal-content {
+    padding: 0 2rem 0 2rem;
+  }
+  #signNowModal .modal-header {
+    padding: 1rem 1rem 0rem 2rem;
+  }
+  .signInModalContent .modal-content .form-fields {
+    margin: 10px 0 0 0;
   }
 }
 
