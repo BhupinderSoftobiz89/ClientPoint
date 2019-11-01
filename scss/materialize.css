@@ -1007,11 +1007,11 @@
 }
 
 .teal.lighten-2 {
-  background-color: #4db6ac !important;
+  background-color: #00B0DC !important;
 }
 
 .teal-text.text-lighten-2 {
-  color: #4db6ac !important;
+  color: #00B0DC !important;
 }
 
 .teal.lighten-1 {
@@ -18035,6 +18035,75 @@ input[type=range]::-ms-thumb {
 /* Comment Expanded CSS start here */
 /* Contact CSS start here */
 /* Contact CSS start here */
+/* Recieved ClientPoint CSS Start Here */
+.filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 2.5rem;
+}
+
+.filters .material-icons {
+  color: #5F63FF;
+}
+
+.calender-padding {
+  padding: 0 2rem 0 2.5rem;
+  border-right: 1px solid #EFEFF3;
+}
+
+.new-btn-clientpoint {
+  padding: 0 4.2rem !important;
+}
+
+.new-btn-clientpoint .material-icons {
+  margin: 0 0.2rem 0 0 !important;
+}
+
+.dark-green-badge {
+  background: #00B0DC !important;
+}
+
+#clientpoint-recieved-dropdwon {
+  padding: 1.2rem 0.6rem;
+}
+
+#clientpoint-recieved-dropdwon li {
+  min-height: inherit;
+  line-height: normal;
+}
+
+#clientpoint-recieved-dropdwon li:hover {
+  background: transparent;
+}
+
+#clientpoint-recieved-dropdwon li a {
+  font-size: 14px;
+  font-size: 1rem;
+  color: #181A51;
+  padding: 0.4375rem 1rem;
+}
+
+.dataTable .userImage {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+  vertical-align: middle;
+}
+
+.dataTable .userImage img {
+  vertical-align: middle;
+}
+
+.recieved-dropdown-arrow {
+  vertical-align: middle;
+}
+
+/* Recieved ClientPoint CSS End Here */
 /* Responsive CSS start here */
 @media (max-width: 1200px) {
   .page-header .userFetaures {
@@ -18213,6 +18282,22 @@ input[type=range]::-ms-thumb {
   }
   .tableOptionUser .optionsUser {
     padding: 1.5rem 0 0;
+  }
+  .calenderDatesCommon.d-flex.ml-auto {
+    margin-left: initial !important;
+  }
+  .newClientPointTitleBar .library-header-right {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .perposalDefaultbar {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .mobile-common-margin {
+    margin-top: 1rem;
   }
 }
 
@@ -18501,6 +18586,9 @@ input[type=range]::-ms-thumb {
   }
   .signInModalContent .modal-content .form-fields {
     margin: 10px 0 0 0;
+  }
+  .signInModalContent .typeIt .clickToSign {
+    height: 74px;
   }
 }
 

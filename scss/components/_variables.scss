@@ -370,7 +370,8 @@ $header-height: 5rem !default;
 $full-width: 100% !default;
 $half-width: 50% !default;
 $width-auto: auto !default;
-$auto: auto;
+$auto: auto !default;
+$normal:normal !default;
 
 // box sizing Variable
 
@@ -498,5 +499,9 @@ $hidden:hidden;
 
 $viewerGradient: 170.65deg, #5f63ff -7.34%, #d653dd 55.66%, #d8094a 116.59% !default;
 
+// Fluid Variables
 
-$red:red !global;
+$min_width: 320px !default;
+$max_width: 1920px !default;
+$min_font: 16px !default;
+$max_font: 20px !default;

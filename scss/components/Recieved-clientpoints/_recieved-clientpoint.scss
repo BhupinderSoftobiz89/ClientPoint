@@ -1,0 +1,55 @@
+/* Recieved ClientPoint CSS Start Here */
+
+.filters {
+	@include flexbox();
+	align-items: $align-items-center;
+	@include flex-wrap($wrap);
+	@include margin-padding(all, null, all, 0 2.5rem);
+	.material-icons {
+		color: color("indigo", "base");
+	}
+}
+.calender-padding {
+	@include margin-padding(all, null, all, 0 2rem 0 2.5rem);
+	border-right: 1px solid color("grey", "lighten-5");
+}
+.new-btn-clientpoint {
+	@include margin-padding(all, null, all, 0 4.2rem !important);
+	.material-icons {
+		@include margin-padding(all, 0 0.2rem 0 0 !important, all, null);
+	}
+}
+.dark-green-badge {
+	background: color("teal", "lighten-2") !important;
+}
+#clientpoint-recieved-dropdwon {
+	@include margin-padding(all, null, all, 1.2rem 0.6rem);
+	li {
+		min-height: inherit;
+		line-height: $normal;
+		&:hover {
+			background: color("shades", "transparent");
+		}
+		a {
+			@include font-rem(14px);
+			color: color("grey", "darken-4");
+			@include margin-padding(all, null, all, 0.4375rem 1rem);
+		}
+	}
+}
+.dataTable {
+	.userImage {
+        display: $display-inline-block;
+        @include margin-padding(all, 0 1rem 0 0, all, null);
+        vertical-align: $verticle-align-middle;
+        img {
+            vertical-align: $verticle-align-middle;
+        }
+	}
+}
+.recieved-dropdown-arrow {
+    vertical-align: $verticle-align-middle;
+}
+
+
+/* Recieved ClientPoint CSS End Here */

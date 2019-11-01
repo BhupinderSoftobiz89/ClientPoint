@@ -172,6 +172,19 @@
 	.tableOptionUser .optionsUser {
 		padding: 1.5rem 0 0;
 	}
+	.calenderDatesCommon.d-flex.ml-auto {
+		margin-left: initial !important;
+	}
+	.newClientPointTitleBar .library-header-right {
+		justify-content: flex-start;
+	}
+	.perposalDefaultbar {
+		flex: 0 0 100%;
+		// @include margin-padding(all, 0 0 1rem 0, all, null);
+	}
+	.mobile-common-margin {
+		margin-top: 1rem;
+	}
 }
 
 // Media for 768px
@@ -452,6 +465,9 @@
 	}
 	.signInModalContent .modal-content .form-fields {
 		margin: 10px 0 0 0;
+	}
+	.signInModalContent .typeIt .clickToSign {
+		height: 74px;
 	}
 }
 
