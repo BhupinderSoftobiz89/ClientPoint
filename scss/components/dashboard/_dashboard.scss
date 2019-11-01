@@ -192,40 +192,35 @@
 		}
 	}
 	.shareIcon {
-		background: url(../images/common-icons.svg) no-repeat -170px -897px;
 		width: 1.4rem;
 		height: 1.4rem;
 		margin-right: 0.8rem;
+		background: url(../images/common-icons.svg) no-repeat -170px -897px ;
 	}
 	.commentIcon {
+		@extend .shareIcon;
 		background: url(../images/common-icons.svg) no-repeat -243px -897px;
-		width: 1.4rem;
-		height: 1.4rem;
-		margin-right: 0.8rem;
 	}
 	.prieviewIcon {
+		@extend .shareIcon;
 		background: url(../images/common-icons.svg) no-repeat -26px -976px;
-		width: 1.4rem;
-		height: 1.4rem;
-		margin-right: 0.8em;
 	}
 	.printIcon {
+		@extend .shareIcon;
 		background: url(../images/common-icons.svg) no-repeat -93px -976px;
-		width: 1.4rem;
-		height: 1.4rem;
-		margin-right: 0.8rem;
 	}
 	.sendIcon {
+		@extend .shareIcon;
 		background: url(../images/common-icons.svg) no-repeat -167px -976px;
-		width: 1.4rem;
-		height: 1.4rem;
-		margin-right: 0.8rem;
 	}
 	.editIcon {
+		@extend .shareIcon;
 		background: url(../images/common-icons.svg) no-repeat -244px -976px;
-		width: 1.4rem;
-		height: 1.4rem;
-		margin-right: 0.8rem;
+	}
+	.archive-icon {
+		@extend .shareIcon;
+		background: url(../images/common-icons.svg) no-repeat -247px -1522px;
+		
 	}
 }
 

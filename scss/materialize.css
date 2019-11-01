@@ -9208,11 +9208,11 @@ input[type=range]::-ms-thumb {
   font-weight: bold;
 }
 
-.modal .shareIcon {
+.modal .shareIcon, .modal .viewedDropDown-content .commentIcon, .viewedDropDown-content .modal .commentIcon, .modal .viewedDropDown-content .prieviewIcon, .viewedDropDown-content .modal .prieviewIcon, .modal .viewedDropDown-content .printIcon, .viewedDropDown-content .modal .printIcon, .modal .viewedDropDown-content .sendIcon, .viewedDropDown-content .modal .sendIcon, .modal .viewedDropDown-content .editIcon, .viewedDropDown-content .modal .editIcon, .modal .viewedDropDown-content .archive-icon, .viewedDropDown-content .modal .archive-icon {
   line-height: normal;
 }
 
-.modal .shareIcon .material-icons {
+.modal .shareIcon .material-icons, .modal .viewedDropDown-content .commentIcon .material-icons, .viewedDropDown-content .modal .commentIcon .material-icons, .modal .viewedDropDown-content .prieviewIcon .material-icons, .viewedDropDown-content .modal .prieviewIcon .material-icons, .modal .viewedDropDown-content .printIcon .material-icons, .viewedDropDown-content .modal .printIcon .material-icons, .modal .viewedDropDown-content .sendIcon .material-icons, .viewedDropDown-content .modal .sendIcon .material-icons, .modal .viewedDropDown-content .editIcon .material-icons, .viewedDropDown-content .modal .editIcon .material-icons, .modal .viewedDropDown-content .archive-icon .material-icons, .viewedDropDown-content .modal .archive-icon .material-icons {
   margin-right: 13px;
   color: #5F63FF;
 }
@@ -9954,7 +9954,7 @@ input[type=range]::-ms-thumb {
   color: #5F63FF;
 }
 
-.UserDropdownLogin li a:hover .profileIcon {
+.UserDropdownLogin li a:hover .profileIcon, .UserDropdownLogin li a:hover .supportIcon, .UserDropdownLogin li a:hover .logoutIcon {
   background: url(../images/common-icons.svg) no-repeat -323px -896px;
 }
 
@@ -9997,7 +9997,7 @@ input[type=range]::-ms-thumb {
   color: #A9A9BE;
 }
 
-.profileIcon {
+.profileIcon, .supportIcon, .logoutIcon {
   background: url(../images/common-icons.svg) no-repeat -323px -816px;
   width: 1.3rem;
   height: 1.85rem;
@@ -10006,16 +10006,10 @@ input[type=range]::-ms-thumb {
 
 .supportIcon {
   background: url(../images/common-icons.svg) no-repeat -388px -816px;
-  width: 1.3rem;
-  height: 1.85rem;
-  margin-right: 10px;
 }
 
 .logoutIcon {
   background: url(../images/common-icons.svg) no-repeat -28px -895px;
-  width: 1.3rem;
-  height: 1.85rem;
-  margin-right: 10px;
 }
 
 /* Header end here */
@@ -10740,7 +10734,7 @@ input[type=range]::-ms-thumb {
   padding: 2.5rem 2.3rem 1.7rem 3.6rem;
 }
 
-.AddRecipientModal .shareIcon {
+.AddRecipientModal .shareIcon, .AddRecipientModal .viewedDropDown-content .commentIcon, .viewedDropDown-content .AddRecipientModal .commentIcon, .AddRecipientModal .viewedDropDown-content .prieviewIcon, .viewedDropDown-content .AddRecipientModal .prieviewIcon, .AddRecipientModal .viewedDropDown-content .printIcon, .viewedDropDown-content .AddRecipientModal .printIcon, .AddRecipientModal .viewedDropDown-content .sendIcon, .viewedDropDown-content .AddRecipientModal .sendIcon, .AddRecipientModal .viewedDropDown-content .editIcon, .viewedDropDown-content .AddRecipientModal .editIcon, .AddRecipientModal .viewedDropDown-content .archive-icon, .viewedDropDown-content .AddRecipientModal .archive-icon {
   background: url(../images/common-icons.svg) no-repeat -23px -263px;
   width: 1.6rem;
   height: 1.85rem;
@@ -11161,7 +11155,7 @@ input[type=range]::-ms-thumb {
   vertical-align: middle;
 }
 
-.clientPoint-file .creatingPerposal .creatingPerposalRight .collapsible-body .downloadIcon {
+.clientPoint-file .creatingPerposal .creatingPerposalRight .collapsible-body .downloadIcon, .clientPoint-file .creatingPerposal .creatingPerposalRight .collapsible-body .viewerSidebarCommon .printIcon, .viewerSidebarCommon .clientPoint-file .creatingPerposal .creatingPerposalRight .collapsible-body .printIcon {
   background: url(../images/common-icons.svg) no-repeat -242px -346px;
   width: 1.75rem;
   height: 1.6rem;
@@ -11222,7 +11216,7 @@ input[type=range]::-ms-thumb {
   overflow: inherit;
 }
 
-.addNotesModal .shareIcon {
+.addNotesModal .shareIcon, .addNotesModal .viewedDropDown-content .commentIcon, .viewedDropDown-content .addNotesModal .commentIcon, .addNotesModal .viewedDropDown-content .prieviewIcon, .viewedDropDown-content .addNotesModal .prieviewIcon, .addNotesModal .viewedDropDown-content .printIcon, .viewedDropDown-content .addNotesModal .printIcon, .addNotesModal .viewedDropDown-content .sendIcon, .viewedDropDown-content .addNotesModal .sendIcon, .addNotesModal .viewedDropDown-content .editIcon, .viewedDropDown-content .addNotesModal .editIcon, .addNotesModal .viewedDropDown-content .archive-icon, .viewedDropDown-content .addNotesModal .archive-icon {
   background: url(../images/common-icons.svg) no-repeat -167px -192px;
   width: 1.5rem;
   height: 1.85rem;
@@ -11784,7 +11778,7 @@ input[type=range]::-ms-thumb {
   max-height: 90%;
 }
 
-#shareModal .shareIcon {
+#shareModal .shareIcon, #shareModal .viewedDropDown-content .commentIcon, .viewedDropDown-content #shareModal .commentIcon, #shareModal .viewedDropDown-content .prieviewIcon, .viewedDropDown-content #shareModal .prieviewIcon, #shareModal .viewedDropDown-content .printIcon, .viewedDropDown-content #shareModal .printIcon, #shareModal .viewedDropDown-content .sendIcon, .viewedDropDown-content #shareModal .sendIcon, #shareModal .viewedDropDown-content .editIcon, .viewedDropDown-content #shareModal .editIcon, #shareModal .viewedDropDown-content .archive-icon, .viewedDropDown-content #shareModal .archive-icon {
   background: url(../images/common-icons.svg) no-repeat -245px -412px;
   width: 1.5rem;
   height: 1.85rem;
@@ -12074,7 +12068,7 @@ input[type=range]::-ms-thumb {
   margin-bottom: 1.9rem;
 }
 
-#commentModal .shareIcon {
+#commentModal .shareIcon, #commentModal .viewedDropDown-content .commentIcon, .viewedDropDown-content #commentModal .commentIcon, #commentModal .viewedDropDown-content .prieviewIcon, .viewedDropDown-content #commentModal .prieviewIcon, #commentModal .viewedDropDown-content .printIcon, .viewedDropDown-content #commentModal .printIcon, #commentModal .viewedDropDown-content .sendIcon, .viewedDropDown-content #commentModal .sendIcon, #commentModal .viewedDropDown-content .editIcon, .viewedDropDown-content #commentModal .editIcon, #commentModal .viewedDropDown-content .archive-icon, .viewedDropDown-content #commentModal .archive-icon {
   background: url(../images/common-icons.svg) no-repeat -320px -411px;
   width: 1.5rem;
   height: 1.85rem;
@@ -12330,7 +12324,7 @@ input[type=range]::-ms-thumb {
   opacity: 0.35;
 }
 
-.powerdByToggleInner .powerdByToggleLinks ul li .powerdCommentIcon {
+.powerdByToggleInner .powerdByToggleLinks ul li .powerdCommentIcon, .powerdByToggleInner .powerdByToggleLinks ul li .powerdUploadIcon, .powerdByToggleInner .powerdByToggleLinks ul li .powerdPrintIcon, .powerdByToggleInner .powerdByToggleLinks ul li .powerdShareIcon {
   background: url(../images/common-icons.svg) no-repeat -93px -1062px;
   width: 1.5rem;
   height: 1.5rem;
@@ -12339,23 +12333,14 @@ input[type=range]::-ms-thumb {
 
 .powerdByToggleInner .powerdByToggleLinks ul li .powerdUploadIcon {
   background: url(../images/common-icons.svg) no-repeat -169px -1061px;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 7px;
 }
 
 .powerdByToggleInner .powerdByToggleLinks ul li .powerdPrintIcon {
   background: url(../images/common-icons.svg) no-repeat -242px -1063px;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 7px;
 }
 
 .powerdByToggleInner .powerdByToggleLinks ul li .powerdShareIcon {
   background: url(../images/common-icons.svg) no-repeat -322px -1063px;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 7px;
 }
 
 .powerdByToggleInner .SignNow {
@@ -12534,7 +12519,7 @@ input[type=range]::-ms-thumb {
   margin: 0 -900px 0 0;
 }
 
-.excelIcon {
+.excelIcon, .powerPointIcon {
   background: url(../images/common-icons.svg) no-repeat -167px -741px;
   width: 1.5rem;
   height: 1.5rem;
@@ -12543,9 +12528,7 @@ input[type=range]::-ms-thumb {
 
 .powerPointIcon {
   background: url(../images/common-icons.svg) no-repeat -241px -740px;
-  width: 1.5rem;
   height: 1.7rem;
-  margin: 0 7px 0 0;
 }
 
 .wordIcon {
@@ -12673,7 +12656,7 @@ input[type=range]::-ms-thumb {
   color: #5F63FF;
 }
 
-.signInModalContent .typeIt .typeIcon {
+.signInModalContent .typeIt .typeIcon, .signInModalContent .typeIt .drawIcon {
   background: url(../images/common-icons.svg) no-repeat -243px -1152px;
   width: 1.4rem;
   height: 1.4rem;
@@ -12682,9 +12665,6 @@ input[type=range]::-ms-thumb {
 
 .signInModalContent .typeIt .drawIcon {
   background: url(../images/common-icons.svg) no-repeat -323px -1152px;
-  width: 1.3rem;
-  height: 1.4rem;
-  margin-right: 5px;
 }
 
 .signInModalContent .typeIt .clickToSign {
@@ -12851,7 +12831,7 @@ input[type=range]::-ms-thumb {
   padding: 0 60px 15px 60px;
 }
 
-.viewerUserDropdownContent .emailIcon {
+.viewerUserDropdownContent .emailIcon, .viewerUserDropdownContent .phoneIcon, .viewerUserDropdownContent .mobileIcon, .viewerUserDropdownContent .linkedInIcon {
   width: 1.3rem;
   height: 1.25rem;
   background: url(../images/common-icons.svg) no-repeat -382px -412px;
@@ -12859,24 +12839,15 @@ input[type=range]::-ms-thumb {
 }
 
 .viewerUserDropdownContent .phoneIcon {
-  width: 1.3rem;
-  height: 1.25rem;
   background: url(../images/common-icons.svg) no-repeat -26px -500px;
-  margin-right: 0.9375rem;
 }
 
 .viewerUserDropdownContent .mobileIcon {
-  width: 1.3rem;
-  height: 1.25rem;
   background: url(../images/common-icons.svg) no-repeat -93px -497px;
-  margin-right: 0.9375rem;
 }
 
 .viewerUserDropdownContent .linkedInIcon {
-  width: 1.3rem;
-  height: 1.25rem;
   background: url(../images/common-icons.svg) no-repeat -30px -1231px;
-  margin-right: 0.9375rem;
 }
 
 .proposalTrial {
@@ -13216,7 +13187,7 @@ input[type=range]::-ms-thumb {
   padding-left: 33px;
 }
 
-.viewerSidebarCommon .downloadIcon {
+.viewerSidebarCommon .downloadIcon, .viewerSidebarCommon .printIcon {
   width: 1.3rem;
   height: 1.6rem;
   background: url(../images/common-icons.svg) no-repeat -324px -1227px;
@@ -13224,10 +13195,7 @@ input[type=range]::-ms-thumb {
 }
 
 .viewerSidebarCommon .printIcon {
-  width: 1.3rem;
-  height: 1.6rem;
   background: url(../images/common-icons.svg) no-repeat -391px -1227px;
-  margin-right: 0.8125rem;
 }
 
 .saveBorder {
@@ -13546,7 +13514,7 @@ input[type=range]::-ms-thumb {
   padding: 0 51px 13px 30px;
 }
 
-.shareProposal .sharePerposalHeader .shareIcon {
+.shareProposal .sharePerposalHeader .shareIcon, .shareProposal .sharePerposalHeader .viewedDropDown-content .commentIcon, .viewedDropDown-content .shareProposal .sharePerposalHeader .commentIcon, .shareProposal .sharePerposalHeader .viewedDropDown-content .prieviewIcon, .viewedDropDown-content .shareProposal .sharePerposalHeader .prieviewIcon, .shareProposal .sharePerposalHeader .viewedDropDown-content .printIcon, .viewedDropDown-content .shareProposal .sharePerposalHeader .printIcon, .shareProposal .sharePerposalHeader .viewedDropDown-content .sendIcon, .viewedDropDown-content .shareProposal .sharePerposalHeader .sendIcon, .shareProposal .sharePerposalHeader .viewedDropDown-content .editIcon, .viewedDropDown-content .shareProposal .sharePerposalHeader .editIcon, .shareProposal .sharePerposalHeader .viewedDropDown-content .archive-icon, .viewedDropDown-content .shareProposal .sharePerposalHeader .archive-icon {
   background: url(../images/common-icons.svg) no-repeat -245px -412px;
   width: 1.6rem;
   height: 1.6rem;
@@ -13976,7 +13944,7 @@ input[type=range]::-ms-thumb {
   line-height: 24px;
 }
 
-.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .emailIcon,
+.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .emailIcon, .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .viewerUserDropdownContent .phoneIcon, .viewerUserDropdownContent .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .phoneIcon, .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .viewerUserDropdownContent .mobileIcon, .viewerUserDropdownContent .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .mobileIcon, .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .viewerUserDropdownContent .linkedInIcon, .viewerUserDropdownContent .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .linkedInIcon,
 .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .phoneIcon,
 .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .mobileIcon {
   width: 1.25rem;
@@ -15074,7 +15042,7 @@ input[type=range]::-ms-thumb {
   max-width: 52.5rem;
 }
 
-.replyModalContent .shareIcon {
+.replyModalContent .shareIcon, .replyModalContent .viewedDropDown-content .commentIcon, .viewedDropDown-content .replyModalContent .commentIcon, .replyModalContent .viewedDropDown-content .prieviewIcon, .viewedDropDown-content .replyModalContent .prieviewIcon, .replyModalContent .viewedDropDown-content .printIcon, .viewedDropDown-content .replyModalContent .printIcon, .replyModalContent .viewedDropDown-content .sendIcon, .viewedDropDown-content .replyModalContent .sendIcon, .replyModalContent .viewedDropDown-content .editIcon, .viewedDropDown-content .replyModalContent .editIcon, .replyModalContent .viewedDropDown-content .archive-icon, .viewedDropDown-content .replyModalContent .archive-icon {
   background: url(../images/common-icons.svg) no-repeat -88px -1523px;
   width: 2rem;
   height: 1.85rem;
@@ -15362,7 +15330,7 @@ input[type=range]::-ms-thumb {
   font-weight: 600;
 }
 
-.themeContent .theme-list .theme-list-row .DuplicateBtn .duplicateIcon {
+.themeContent .theme-list .theme-list-row .DuplicateBtn .duplicateIcon, .themeContent .theme-list .theme-list-row .DuplicateBtn .libraryTable .editIcon, .libraryTable .themeContent .theme-list .theme-list-row .DuplicateBtn .editIcon, .themeContent .theme-list .theme-list-row .DuplicateBtn .libraryTable .downloadIcon, .libraryTable .themeContent .theme-list .theme-list-row .DuplicateBtn .downloadIcon, .themeContent .theme-list .theme-list-row .DuplicateBtn .libraryTable .viewerSidebarCommon .printIcon, .libraryTable .viewerSidebarCommon .themeContent .theme-list .theme-list-row .DuplicateBtn .printIcon, .themeContent .theme-list .theme-list-row .DuplicateBtn .viewerSidebarCommon .libraryTable .printIcon, .viewerSidebarCommon .libraryTable .themeContent .theme-list .theme-list-row .DuplicateBtn .printIcon, .themeContent .theme-list .theme-list-row .DuplicateBtn .libraryTable .templateIcon, .libraryTable .themeContent .theme-list .theme-list-row .DuplicateBtn .templateIcon, .themeContent .theme-list .theme-list-row .DuplicateBtn .libraryTable .deleteIcon, .libraryTable .themeContent .theme-list .theme-list-row .DuplicateBtn .deleteIcon {
   background: url(../images/common-icons.svg) no-repeat -169px -663px;
   width: 1.125rem;
   height: 1.4rem;
@@ -16430,7 +16398,7 @@ input[type=range]::-ms-thumb {
   padding: 2.6rem 2.4375rem 1.3rem 4.9rem;
 }
 
-#fileUploadModal .modal-header .shareIcon {
+#fileUploadModal .modal-header .shareIcon, #fileUploadModal .modal-header .viewedDropDown-content .commentIcon, .viewedDropDown-content #fileUploadModal .modal-header .commentIcon, #fileUploadModal .modal-header .viewedDropDown-content .prieviewIcon, .viewedDropDown-content #fileUploadModal .modal-header .prieviewIcon, #fileUploadModal .modal-header .viewedDropDown-content .printIcon, .viewedDropDown-content #fileUploadModal .modal-header .printIcon, #fileUploadModal .modal-header .viewedDropDown-content .sendIcon, .viewedDropDown-content #fileUploadModal .modal-header .sendIcon, #fileUploadModal .modal-header .viewedDropDown-content .editIcon, .viewedDropDown-content #fileUploadModal .modal-header .editIcon, #fileUploadModal .modal-header .viewedDropDown-content .archive-icon, .viewedDropDown-content #fileUploadModal .modal-header .archive-icon {
   background: url(../images/common-icons.svg) no-repeat -242px -192px;
   width: 1.5rem;
   height: 1.85rem;
@@ -16885,46 +16853,35 @@ input[type=range]::-ms-thumb {
   padding: 0;
 }
 
-.viewedDropDown-content .shareIcon {
-  background: url(../images/common-icons.svg) no-repeat -170px -897px;
+.viewedDropDown-content .shareIcon, .viewedDropDown-content .commentIcon, .viewedDropDown-content .prieviewIcon, .viewedDropDown-content .printIcon, .viewedDropDown-content .sendIcon, .viewedDropDown-content .editIcon, .viewedDropDown-content .archive-icon {
   width: 1.4rem;
   height: 1.4rem;
   margin-right: 0.8rem;
+  background: url(../images/common-icons.svg) no-repeat -170px -897px;
 }
 
 .viewedDropDown-content .commentIcon {
   background: url(../images/common-icons.svg) no-repeat -243px -897px;
-  width: 1.4rem;
-  height: 1.4rem;
-  margin-right: 0.8rem;
 }
 
 .viewedDropDown-content .prieviewIcon {
   background: url(../images/common-icons.svg) no-repeat -26px -976px;
-  width: 1.4rem;
-  height: 1.4rem;
-  margin-right: 0.8em;
 }
 
 .viewedDropDown-content .printIcon {
   background: url(../images/common-icons.svg) no-repeat -93px -976px;
-  width: 1.4rem;
-  height: 1.4rem;
-  margin-right: 0.8rem;
 }
 
 .viewedDropDown-content .sendIcon {
   background: url(../images/common-icons.svg) no-repeat -167px -976px;
-  width: 1.4rem;
-  height: 1.4rem;
-  margin-right: 0.8rem;
 }
 
 .viewedDropDown-content .editIcon {
   background: url(../images/common-icons.svg) no-repeat -244px -976px;
-  width: 1.4rem;
-  height: 1.4rem;
-  margin-right: 0.8rem;
+}
+
+.viewedDropDown-content .archive-icon {
+  background: url(../images/common-icons.svg) no-repeat -247px -1522px;
 }
 
 .dashboardScrollHeight {
@@ -17838,7 +17795,7 @@ input[type=range]::-ms-thumb {
   margin: 0 0.7rem 0 0;
 }
 
-.libraryTable .duplicateIcon {
+.libraryTable .duplicateIcon, .libraryTable .editIcon, .libraryTable .downloadIcon, .libraryTable .viewerSidebarCommon .printIcon, .viewerSidebarCommon .libraryTable .printIcon, .libraryTable .templateIcon, .libraryTable .deleteIcon {
   background: url(../images/common-icons.svg) no-repeat -169px -663px;
   width: 1.4rem;
   height: 1.4rem;
@@ -17848,30 +17805,19 @@ input[type=range]::-ms-thumb {
 
 .libraryTable .editIcon {
   background: url(../images/common-icons.svg) no-repeat -246px -663px;
-  width: 1.4rem;
-  height: 1.4rem;
-  margin-right: 0.8rem;
 }
 
-.libraryTable .downloadIcon {
-  width: 1.4rem;
+.libraryTable .downloadIcon, .libraryTable .viewerSidebarCommon .printIcon, .viewerSidebarCommon .libraryTable .printIcon {
   height: 1.6rem;
   background: url(../images/common-icons.svg) no-repeat -324px -1227px;
-  margin-right: 0.8rem;
 }
 
 .libraryTable .templateIcon {
   background: url(../images/common-icons.svg) no-repeat -390px -1452px;
-  width: 1.4rem;
-  height: 1.4rem;
-  margin-right: 0.8rem;
 }
 
 .libraryTable .deleteIcon {
   background: url(../images/common-icons.svg) no-repeat -30px -1524px;
-  width: 1.4rem;
-  height: 1.4rem;
-  margin-right: 0.8rem;
 }
 
 .tableOptions {
@@ -17892,7 +17838,7 @@ input[type=range]::-ms-thumb {
   transition: all 0.5s;
 }
 
-.tableOptions .backArrow, .tableOptions .editIcon, .tableOptions .downloadIcon, .tableOptions .deleteIcon {
+.tableOptions .backArrow, .tableOptions .editIcon, .tableOptions .downloadIcon, .tableOptions .viewerSidebarCommon .printIcon, .viewerSidebarCommon .tableOptions .printIcon, .tableOptions .deleteIcon {
   background: url(../images/common-icons.svg) no-repeat -176px -1522px;
   width: 1.3rem;
   height: 1.4rem;
@@ -17922,7 +17868,7 @@ input[type=range]::-ms-thumb {
   background: url(../images/common-icons.svg) no-repeat -246px -663px;
 }
 
-.tableOptions .downloadIcon {
+.tableOptions .downloadIcon, .tableOptions .viewerSidebarCommon .printIcon, .viewerSidebarCommon .tableOptions .printIcon {
   background: url(../images/common-icons.svg) no-repeat -324px -1227px;
 }
 

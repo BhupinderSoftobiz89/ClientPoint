@@ -727,18 +727,6 @@
 					color: color("blue-grey", "darken-1");
 				}
 			}
-			// input[type="text"]::placeholder {
-			//   color: color("blue-grey", "darken-1");
-			//   opacity: 1;
-			// }
-
-			// input[type="text"]:-ms-input-placeholder {
-			//   color: color("blue-grey", "darken-1");
-			// }
-
-			// input[type="text"]::-ms-input-placeholder {
-			//   color: color("blue-grey", "darken-1");
-			// }
 		}
 	}
 	.neWindow {
@@ -798,18 +786,6 @@
 				color: color("grey", "darken-1");
 			}
 		}
-		// input[type="text"]::placeholder {
-		//   color: color("grey", "darken-1");
-		//   opacity: 1;
-		// }
-
-		// input[type="text"]:-ms-input-placeholder {
-		//   color: color("grey", "darken-1");
-		// }
-
-		// input[type="text"]::-ms-input-placeholder {
-		//   color: color("grey", "darken-1");
-		// }
 	}
 	.savePasswordBtn {
 		border: $border-none;
@@ -917,18 +893,6 @@
 			outline: $none;
 		}
 	}
-	// textarea::placeholder {
-	//   color: color("grey", "darken-1");
-	//   opacity: 1;
-	// }
-
-	// textarea:-ms-input-placeholder {
-	//   color: color("grey", "darken-1");
-	// }
-
-	// textarea::-ms-input-placeholder {
-	//   color: color("grey", "darken-1");
-	// }
 	.justify-content-end {
 		justify-content: $justify-content-end;
 	}
@@ -1009,9 +973,6 @@
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
 	}
-	// .powerdByToggle {
-	//     display: $diplay-none;
-	// }
 
 	.sentByDropdown.downArrowPowered {
 		.material-icons {
@@ -1076,22 +1037,16 @@
 					margin-right: 7px;
 				}
 				.powerdUploadIcon {
+					@extend .powerdCommentIcon;
 					background: url(../images/common-icons.svg) no-repeat -169px -1061px;
-					width: 1.5rem;
-					height: 1.5rem;
-					margin-right: 7px;
 				}
 				.powerdPrintIcon {
+					@extend .powerdCommentIcon;
 					background: url(../images/common-icons.svg) no-repeat -242px -1063px;
-					width: 1.5rem;
-					height: 1.5rem;
-					margin-right: 7px;
 				}
 				.powerdShareIcon {
+					@extend .powerdCommentIcon;
 					background: url(../images/common-icons.svg) no-repeat -322px -1063px;
-					width: 1.5rem;
-					height: 1.5rem;
-					margin-right: 7px;
 				}
 			}
 		}
@@ -1228,10 +1183,9 @@
 	margin: 0 7px 0 0;
 }
 .powerPointIcon {
+	@extend .excelIcon;
 	background: url(../images/common-icons.svg) no-repeat -241px -740px;
-	width: 1.5rem;
 	height: 1.7rem;
-	margin: 0 7px 0 0;
 }
 .wordIcon {
 	background: url(../images/common-icons.svg) no-repeat -93px -740px;
@@ -1325,10 +1279,8 @@
 			margin-right: 5px;
 		}
 		.drawIcon {
+			@extend .typeIcon;
 			background: url(../images/common-icons.svg) no-repeat -323px -1152px;
-			width: 1.3rem;
-			height: 1.4rem;
-			margin-right: 5px;
 		}
 		.clickToSign {
 			height: 113px;
@@ -1454,22 +1406,16 @@
 		margin-right: 0.9375rem;
 	}
 	.phoneIcon {
-		width: 1.3rem;
-		height: 1.25rem;
+		@extend .emailIcon;
 		background: url(../images/common-icons.svg) no-repeat -26px -500px;
-		margin-right: 0.9375rem;
 	}
 	.mobileIcon {
-		width: 1.3rem;
-		height: 1.25rem;
+		@extend .emailIcon;
 		background: url(../images/common-icons.svg) no-repeat -93px -497px;
-		margin-right: 0.9375rem;
 	}
 	.linkedInIcon {
-		width: 1.3rem;
-		height: 1.25rem;
+		@extend .emailIcon;
 		background: url(../images/common-icons.svg) no-repeat -30px -1231px;
-		margin-right: 0.9375rem;
 	}
 }
 .proposalTrial {
@@ -1707,10 +1653,8 @@
 		margin-right: 0.8125rem;
 	}
 	.printIcon {
-		width: 1.3rem;
-		height: 1.6rem;
+		@extend .downloadIcon; 
 		background: url(../images/common-icons.svg) no-repeat -391px -1227px;
-		margin-right: 0.8125rem;
 	}
 }
 .saveBorder {
@@ -2121,17 +2065,17 @@
 #saveTemplateModal {
 	max-width: 41rem;
 	.modal-content {
-    @include margin-padding(all, null, all, 0 3.125rem 0 3.5rem);
-    p {
-      @include font-rem(16px, 24px);
-      color:color('grey','darken-2');
-    }
-  }
-  .modal-footer {
-    .btn-row {
-      @include justify-content(center);
-    }
-  }
+		@include margin-padding(all, null, all, 0 3.125rem 0 3.5rem);
+		p {
+			@include font-rem(16px, 24px);
+			color: color("grey", "darken-2");
+		}
+	}
+	.modal-footer {
+		.btn-row {
+			@include justify-content(center);
+		}
+	}
 }
 
 /* Save Template Mdoal end  here */

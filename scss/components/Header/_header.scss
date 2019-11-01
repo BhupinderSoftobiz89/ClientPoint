@@ -192,15 +192,11 @@
 	margin-right: 10px;
 }
 .supportIcon {
+	@extend .profileIcon;
 	background: url(../images/common-icons.svg) no-repeat -388px -816px;
-	width: 1.3rem;
-	height: 1.85rem;
-	margin-right: 10px;
 }
 .logoutIcon {
+	@extend .profileIcon;
 	background: url(../images/common-icons.svg) no-repeat -28px -895px;
-	width: 1.3rem;
-	height: 1.85rem;
-	margin-right: 10px;
 }
 /* Header end here */

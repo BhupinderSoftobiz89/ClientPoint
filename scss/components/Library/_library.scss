@@ -70,28 +70,21 @@
 		display: $display-inline-block;
 	}
 	.editIcon {
+		@extend .duplicateIcon;
 		background: url(../images/common-icons.svg) no-repeat -246px -663px;
-		width: 1.4rem;
-		height: 1.4rem;
-		margin-right: 0.8rem;
 	}
 	.downloadIcon {
-		width: 1.4rem;
+		@extend .duplicateIcon;
 		height: 1.6rem;
 		background: url(../images/common-icons.svg) no-repeat -324px -1227px;
-		margin-right: 0.8rem;
 	}
 	.templateIcon {
+		@extend .duplicateIcon;
 		background: url(../images/common-icons.svg) no-repeat -390px -1452px;
-		width: 1.4rem;
-		height: 1.4rem;
-		margin-right: 0.8rem;
 	}
 	.deleteIcon {
+		@extend .duplicateIcon;
 		background: url(../images/common-icons.svg) no-repeat -30px -1524px;
-		width: 1.4rem;
-		height: 1.4rem;
-		margin-right: 0.8rem;
 	}
 }
 
