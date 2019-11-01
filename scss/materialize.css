@@ -14051,8 +14051,8 @@ input[type=range]::-ms-thumb {
 }
 
 .analyticsOverviewView .analyticsOverviewView-row .collapsible li.active .rotateArrow {
-  -webkit-transform: 180deg;
-  transform: 180deg;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .analyticsOverviewView .analyticsOverviewView-row .collapsible .collapsible-header {
@@ -14765,8 +14765,8 @@ input[type=range]::-ms-thumb {
 }
 
 .collapseArrow.rotateArrowdrop .material-icons {
-  -webkit-transform: 180deg;
-  transform: 180deg;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .top-file-row.topFileCollapse {
@@ -14775,8 +14775,8 @@ input[type=range]::-ms-thumb {
 }
 
 .fileArrow.fileArrowRotate {
-  -webkit-transform: 180deg;
-  transform: 180deg;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .ipAddress {
@@ -14858,15 +14858,15 @@ input[type=range]::-ms-thumb {
 
 .ipAddress .q2Marketing .q2Marketing-header .marketingArrow .material-icons {
   font-size: 25px;
-  -webkit-transform: 180deg;
-  transform: 180deg;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .ipAddress .q2Marketing .q2Marketing-header .marketingArrow.current .material-icons {
-  -webkit-transform: 0deg;
-  transform: 0deg;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .ipAddress .q2Marketing .q2Marketing-content {
@@ -14936,13 +14936,13 @@ input[type=range]::-ms-thumb {
 }
 
 .anaytics-overview-row.anaytics-overviewbg .viewMoreClick .material-icons {
-  -webkit-transform: -90deg;
-  transform: -90deg;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .anaytics-overview-row.anaytics-overviewbg.addbg .viewMoreClick .material-icons {
-  -webkit-transform: 0deg;
-  transform: 0deg;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .newClientPointTitleBar {

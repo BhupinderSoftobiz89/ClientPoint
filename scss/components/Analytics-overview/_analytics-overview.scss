@@ -151,7 +151,7 @@
 			}
 			li.active {
 				.rotateArrow {
-					@include transform(180deg);
+					@include transform(rotate(180deg));
 				}
 			}
 			.collapsible-header {
@@ -669,14 +669,14 @@
 	@include transition(all 0.5s);
 }
 .collapseArrow.rotateArrowdrop .material-icons {
-	@include transform(180deg);
+	@include transform(rotate(180deg));
 }
 .top-file-row.topFileCollapse {
 	height: 26px;
 	overflow: hidden;
 }
 .fileArrow.fileArrowRotate {
-	@include transform(180deg);
+	@include transform(rotate(180deg));
 }
 
 .ipAddress {
@@ -736,13 +736,13 @@
 				line-height: 21px;
 				.material-icons {
 					font-size: 25px;
-					@include transform(180deg);
+					@include transform(rotate(180deg));
 					@include transition(all 0.5s);
 				}
 			}
 			.marketingArrow.current {
 				.material-icons {
-					@include transform(0deg);
+					@include transform(rotate(0deg));
 				}
 			}
 		}
@@ -803,10 +803,10 @@
 	background: color("grey", "lighten-4");
 }
 .anaytics-overview-row.anaytics-overviewbg .viewMoreClick .material-icons {
-	@include transform(-90deg);
+	@include transform(rotate(-90deg));
 }
 .anaytics-overview-row.anaytics-overviewbg.addbg .viewMoreClick .material-icons {
-	@include transform(0deg);
+	@include transform(rotate(0deg));
 }
 .newClientPointTitleBar {
 	@include relative();
