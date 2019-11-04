@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/jquery.scrollbar.css" />
     <link type="text/css" rel="stylesheet" href="scss/materialize.css" />
     <title>Welcome To ClientPoint</title>
     <!-- Custom CSS start here  -->
@@ -18,162 +19,162 @@
 
     <!-- Sidebar nav start here -->
     <nav class="sidebarNav sidebarNavClose">
-            <div class="navMenuOuter menu btn6 navMenu" data-menu="6">
-                <div class="icon "></div>
-            </div>
+        <div class="navMenuOuter menu btn6 navMenu" data-menu="6">
+            <div class="icon "></div>
+        </div>
+        <ul>
+            <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="tab-1">
+                <a href="#dashboard_nav" class="sidebarclick">
+                    <span class="commonIconbg fileIcon"></span>
+                    Dashboard
+                </a>
+
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
+                <a href="#library_nav" class="sidebarclick">
+                    <span class="commonIconbg prieviewIcon"></span>
+                    Content Libray
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="tab-3">
+                <a href="#clientPoint_nav" class="sidebarclick">
+                    <span class="commonIconbg clientIcon"></span>
+                    ClientPoints
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="tab-4">
+                <a href="#Setting_nav" class="sidebarclick">
+                    <span class="commonIconbg settingIcon"></span>Settings
+                </a>
+            </li>
+        </ul>
+        <a href="javascript:void(0)" class="clientPointLogo">
+            <img class="logoSmall" src="./images/ClientPoint-Logo.svg" alt="">
+            <img class="logoBig" src="./images/clientpoint-logo-big.svg" alt="">
+        </a>
+    </nav>
+
+    <div class="sidebar_nav">
+        <aside id="tab-1" class="sidebarSubmenu openNav">
             <ul>
-                <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="tab-1">
-                    <a href="#dashboard_nav" class="sidebarclick">
-                        <span class="commonIconbg fileIcon"></span>
-                        Dashboard
-                    </a>
-    
-                </li>
-                <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
-                    <a href="#library_nav" class="sidebarclick">
-                        <span class="commonIconbg prieviewIcon"></span>
-                        Content Libray
+                <li>
+                    <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
                     </a>
                 </li>
-                <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="tab-3">
-                    <a href="#clientPoint_nav" class="sidebarclick">
-                        <span class="commonIconbg clientIcon"></span>
-                        ClientPoints
+                <li><a href="dashboard.html">Analytics</a></li>
+                <li><a href="index.html">ClientPoint</a></li>
+                <li><a href="dashboard-filter-expanded.html" class="active">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-2" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
                     </a>
                 </li>
-                <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="tab-4">
-                    <a href="#Setting_nav" class="sidebarclick">
-                        <span class="commonIconbg settingIcon"></span>Settings
+                <li><a href="search.html">Content Library</a></li>
+                <li><a href="library.html" class="active">Templates</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-3" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="clientpoint-file.html">Analytics</a></li>
+                <li><a href="clientpoint-preview.html">ClientPoint</a></li>
+                <li><a href="clientpoint-top-bar.html">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-4" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="user-permission.html">Users & Permissions</a></li>
+                <li><a href="theme.html">Themes</a></li>
+                <li><a href="intigration.html">Integrations</a></li>
+                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
+                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
+                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="theme-setting.html">Advanced Settings</a></li>
+            </ul>
+        </aside>
+    </div>
+    <!-- Sidebar nav end here  -->
+
+    <!-- Header start here  -->
+    <header class="page-header d-flex">
+        <div class="searchbox">
+            <input type="submit" class="searchBtn" value="">
+            <input type="search" class="searchInput" placeholder="Search">
+        </div>
+        <div class="searchResponsive">
+            <a href="#" class="mobileSearch"></a>
+        </div>
+        <aside class="newClientPoint">
+            <a class="waves-teal btn-flat" href="clientpoint-preview.html">New ClientPoint</a>
+            <a class="userLoginPanel dropdown-trigger" href="#" data-target="userDropDown">
+                <span class="userFetaures"><strong>Upgrade now</strong> to unlock more features!</span>
+                <span class="userAvtar"><img class="responsive-img" src="./images/user-img.png" alt=""></span>
+                <span class="userName">Miles Morales</span>
+                <i class="material-icons">
+                    arrow_drop_down
+                </i>
+            </a>
+            <ul id="userDropDown" class="dropdown-content UserDropdownLogin">
+                <li><a href="#!">
+                        <div class="userLoginHeader">
+                            <img src="./images/user-avtar.png" alt="">
+                            <div class="userInfo">
+                                <h6>Miles Morales</h6>
+                                <p>milesm@arachnid.com</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider" tabindex="-1"></li>
+                <li>
+                    <a href="login.html">
+                        <span class="profileIcon"></span>
+                        View Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="login-dashboard.html">
+                        <span class="supportIcon"></span>
+                        Support
+                    </a>
+                </li>
+                <li>
+                    <a href="login-progress-image.html">
+                        <span class="logoutIcon"></span>
+                        Logout
                     </a>
                 </li>
             </ul>
-            <a href="javascript:void(0)" class="clientPointLogo">
-                <img class="logoSmall" src="./images/ClientPoint-Logo.svg" alt="">
-                <img class="logoBig" src="./images/clientpoint-logo-big.svg" alt="">
-            </a>
-        </nav>
-    
-        <div class="sidebar_nav">
-            <aside id="tab-1" class="sidebarSubmenu openNav">
-                <ul>
-                    <li>
-                        <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
-                            <i class="material-icons">
-                                keyboard_backspace
-                            </i>
-                        </a>
-                    </li>
-                    <li><a href="dashboard.html">Analytics</a></li>
-                    <li><a href="index.html">ClientPoint</a></li>
-                    <li><a href="dashboard-filter-expanded.html" class="active">Details</a></li>
-                </ul>
-            </aside>
-            <aside id="tab-2" class="sidebarSubmenu openNav">
-                <ul>
-                    <li>
-                        <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
-                            <i class="material-icons">
-                                keyboard_backspace
-                            </i>
-                        </a>
-                    </li>
-                    <li><a href="search.html">Content Library</a></li>
-                    <li><a href="library.html" class="active">Templates</a></li>
-                </ul>
-            </aside>
-            <aside id="tab-3" class="sidebarSubmenu openNav">
-                <ul>
-                    <li>
-                        <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
-                            <i class="material-icons">
-                                keyboard_backspace
-                            </i>
-                        </a>
-                    </li>
-                    <li><a href="clientpoint-file.html">Analytics</a></li>
-                    <li><a href="clientpoint-preview.html">ClientPoint</a></li>
-                    <li><a href="clientpoint-top-bar.html">Details</a></li>
-                </ul>
-            </aside>
-            <aside id="tab-4" class="sidebarSubmenu openNav">
-                <ul>
-                    <li>
-                        <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
-                            <i class="material-icons">
-                                keyboard_backspace
-                            </i>
-                        </a>
-                    </li>
-                    <li><a href="user-permission.html">Users & Permissions</a></li>
-                    <li><a href="theme.html">Themes</a></li>
-                    <li><a href="intigration.html">Integrations</a></li>
-                    <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
-                    <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
-                    <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
-                    <li><a href="theme-setting.html">Advanced Settings</a></li>
-                </ul>
-            </aside>
-        </div>
-        <!-- Sidebar nav end here  -->
-    
-        <!-- Header start here  -->
-        <header class="page-header d-flex">
-            <div class="searchbox">
-                <input type="submit" class="searchBtn" value="">
-                <input type="search" class="searchInput" placeholder="Search">
-            </div>
-            <div class="searchResponsive">
-                <a href="#" class="mobileSearch"></a>
-            </div>
-            <aside class="newClientPoint">
-                <a class="waves-teal btn-flat" href="clientpoint-preview.html">New ClientPoint</a>
-                <a class="userLoginPanel dropdown-trigger" href="#" data-target="userDropDown"> 
-                    <span class="userFetaures"><strong>Upgrade now</strong> to unlock more features!</span>
-                    <span class="userAvtar"><img class="responsive-img" src="./images/user-img.png" alt=""></span>
-                    <span class="userName">Miles Morales</span>
-                    <i class="material-icons">
-                        arrow_drop_down
-                    </i>
-                </a>
-                <ul id="userDropDown" class="dropdown-content UserDropdownLogin">
-                    <li><a href="#!">
-                            <div class="userLoginHeader">
-                                <img src="./images/user-avtar.png" alt="">
-                                <div class="userInfo">
-                                    <h6>Miles Morales</h6>
-                                    <p>milesm@arachnid.com</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider" tabindex="-1"></li>
-                    <li>
-                        <a href="login.html">
-                            <span class="profileIcon"></span>
-                            View Profile
-                        </a>
-                    </li>
-                    <li>
-                        <a href="login-dashboard.html">
-                            <span class="supportIcon"></span>
-                            Support
-                        </a>
-                    </li>
-                    <li>
-                        <a href="login-progress-image.html">
-                            <span class="logoutIcon"></span>
-                            Logout
-                        </a>
-                    </li>
-                </ul>
-            </aside>
-        </header>
-        <!-- Header end here  -->
+        </aside>
+    </header>
+    <!-- Header end here  -->
     <!-- Main Content start here  -->
     <div id="content">
         <article class="content-common">
-            <div class="clientPoint-file heightAuto">
+            <div class="clientPoint-file">
                 <article class="newClientPointTitleBar theme-padding">
                     <div class="clientpointTitle">
                         <h4>Advanced Settings</h4>
@@ -195,826 +196,935 @@
                                 <li class="tab"><a href="#ManageScreenSetup">Manage Screen Setup</a></li>
                             </ul>
                             <!-- Advanced Configuration Tab start here  -->
-                            <div id="AdvancedConfiguration" class="col s12">
-                                <div class="advancedTabContent">
-                                    <ul class="collapsible">
-                                        <li>
-                                            <div class="collapsible-header">
-                                                <h4>Create Proposal Configurations</h4> 
-                                                    <span class="tabCollapseArrow">
-                                                        <i class="material-icons">
-                                                            arrow_drop_down
-                                                        </i>
-                                                    </span>
-                                            </div>
-                                            <div class="collapsible-body">
-                                                <div class="advancedTabConfig">
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox" checked>
-                                                                <span class="lever"></span>
-                                                                Enable Proposal Finalization
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Disable Add to My library Option (if disabled then My
-                                                                Template option will also disable)
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Disable My Template Option
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Require Expiration Date on Proposal
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Disable Download receipt when using download and print
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox" checked>
-                                                                <span class="lever"></span>
-                                                                Disable proposal locking
-                                                            </label>
-                                                        </div>
-                                                        <div class="proposanal-locking">
-                                                            <label>PDF Password</label>
-                                                            <input type="password" placeholder="Enter Password...">
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Disable view status update from non official proposal
-                                                                version
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox" checked>
-                                                                <span class="lever"></span>
-                                                                Allow all users to search contacts from selected
-                                                                Workspace
-                                                            </label>
-                                                        </div>
-                                                        <div class="proposanal-locking">
-                                                            <label>Extend Expiration Date After Signature</label>
-                                                            <input type="text" placeholder="Days...">
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Prompt template usage for new proposal
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Enable proposal approval before sending
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Set Revenue Field Optional
-                                                            </label>
-                                                        </div>
+                            <div id="AdvancedConfiguration" class="col s12 tab-content-settings">
+                                <div class="wrapper scrollbar-dynamic">
+                                    <div class="page-content">
+                                        <div class="content">
+                                            <div class="demo">
+                                                <div class="scrollbar-inner">
+                                                    <div class="advancedTabContent">
+                                                        <ul class="collapsible">
+                                                            <li>
+                                                                <div class="collapsible-header">
+                                                                    <h4>Create Proposal Configurations</h4>
+                                                                    <span class="tabCollapseArrow">
+                                                                        <i class="material-icons">
+                                                                            arrow_drop_down
+                                                                        </i>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="collapsible-body">
+                                                                    <div class="advancedTabConfig">
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox" checked>
+                                                                                    <span class="lever"></span>
+                                                                                    Enable Proposal Finalization
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Disable Add to My library Option (if
+                                                                                    disabled then
+                                                                                    My
+                                                                                    Template option will also disable)
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Disable My Template Option
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Require Expiration Date on Proposal
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Disable Download receipt when using
+                                                                                    download and
+                                                                                    print
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox" checked>
+                                                                                    <span class="lever"></span>
+                                                                                    Disable proposal locking
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="proposanal-locking">
+                                                                                <label>PDF Password</label>
+                                                                                <input type="password"
+                                                                                    placeholder="Enter Password...">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Disable view status update from non
+                                                                                    official
+                                                                                    proposal
+                                                                                    version
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox" checked>
+                                                                                    <span class="lever"></span>
+                                                                                    Allow all users to search contacts
+                                                                                    from selected
+                                                                                    Workspace
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="proposanal-locking">
+                                                                                <label>Extend Expiration Date After
+                                                                                    Signature</label>
+                                                                                <input type="text"
+                                                                                    placeholder="Days...">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Prompt template usage for new
+                                                                                    proposal
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Enable proposal approval before
+                                                                                    sending
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Set Revenue Field Optional
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="collapsible-header">
+                                                                    <h4>View Proposal Configuration</h4>
+                                                                    <span class="tabCollapseArrow">
+                                                                        <i class="material-icons">
+                                                                            arrow_drop_down
+                                                                        </i>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="collapsible-body">
+                                                                    <div class="advancedTabConfig">
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox" checked>
+                                                                                    <span class="lever"></span>
+                                                                                    Enable Advanced HTML Viewer
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox" checked>
+                                                                                    <span class="lever"></span>
+                                                                                    Switch to HTML5 viewer
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox" checked>
+                                                                                    <span class="lever"></span>
+                                                                                    Disable Split mode for viewer
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox" checked>
+                                                                                    <span class="lever"></span>
+                                                                                    Default document Fit to Width
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox" checked>
+                                                                                    <span class="lever"></span>
+                                                                                    Enable non printable files show in
+                                                                                    TOC
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox" checked>
+                                                                                    <span class="lever"></span>
+                                                                                    Enable only recipients can unlock
+                                                                                    view proposal
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox" checked>
+                                                                                    <span class="lever"></span>
+                                                                                    All uploads Default to Downloadable
+                                                                                    in Proposal
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="proposanal-locking">
+                                                                                <label class="active">Viewer Idle
+                                                                                    Timeout</label>
+                                                                                <input type="text"
+                                                                                    class="no-bg-Inputtext"
+                                                                                    placeholder="5">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="internetDomain">
+                                                                            <h6>Internal Domains</h6>
+                                                                            <p>You can create multiple internal domains
+                                                                            </p>
+                                                                            <div class="row mb-0">
+                                                                                <div class="col s7">
+                                                                                    <div class="enterDomains">
+                                                                                        <div class="input-field mb-0">
+                                                                                            <input id="last_name"
+                                                                                                type="text"
+                                                                                                class="validate">
+                                                                                            <label for="last_name">Last
+                                                                                                Name</label>
+                                                                                        </div>
+                                                                                        <button type="submit"
+                                                                                            class="addDomainBtn">
+                                                                                            <i class="material-icons">
+                                                                                                add
+                                                                                            </i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="collapsible-header">
+                                                                    <h4>API Configuration</h4>
+                                                                    <span class="tabCollapseArrow">
+                                                                        <i class="material-icons">
+                                                                            arrow_drop_down
+                                                                        </i>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="collapsible-body">
+                                                                    <div class="advancedTabConfig">
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Disable Won/Lost Deal Status Change
+                                                                                    on Hubspot
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="collapsible-header">
+                                                                    <h4>Email Configuration</h4>
+                                                                    <span class="tabCollapseArrow">
+                                                                        <i class="material-icons">
+                                                                            arrow_drop_down
+                                                                        </i>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="collapsible-body">
+                                                                    <div class="advancedTabConfig">
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Open Directly in Your Email button
+                                                                                    will open in same
+                                                                                    tab
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Hide the Schedule Delivery of Your
+                                                                                    Email
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Enable HTML Email
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="collapsible-header">
+                                                                    <h4>Signature Configuration</h4>
+                                                                    <span class="tabCollapseArrow">
+                                                                        <i class="material-icons">
+                                                                            arrow_drop_down
+                                                                        </i>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="collapsible-body">
+                                                                    <div class="advancedTabConfig">
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Hide Counter Signature Button
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Disable E-Signature
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Send signed document as attachement
+                                                                                    in email
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Enable upload signature document on
+                                                                                    file page
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="internetDomain">
+                                                                            <h6>Configuration to send selected
+                                                                                files/pages to right
+                                                                                signature</h6>
+                                                                            <div class="config-radio">
+                                                                                <label>
+                                                                                    <input class="with-gap"
+                                                                                        name="group1" type="radio"
+                                                                                        checked />
+                                                                                    <span>All Files</span>
+                                                                                </label>
+                                                                                <label>
+                                                                                    <input class="with-gap"
+                                                                                        name="group1" type="radio" />
+                                                                                    <span>Signature Files</span>
+                                                                                </label>
+                                                                                <label>
+                                                                                    <input class="with-gap"
+                                                                                        name="group1" type="radio" />
+                                                                                    <span>Signature Pages</span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="collapsible-header">
+                                                                    <h4>Miscellaneous Configuration</h4>
+                                                                    <span class="tabCollapseArrow">
+                                                                        <i class="material-icons">
+                                                                            arrow_drop_down
+                                                                        </i>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="collapsible-body">
+                                                                    <div class="advancedTabConfig">
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Enable Opportunity field show in
+                                                                                    manage page
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Disable merge tool
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Disable Google Docx
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Enable Merge PPT Download
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Enabgle default category select on
+                                                                                    manage screen
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="advancedTabConfig-row">
+                                                                            <div class="switch">
+                                                                                <label>
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Show proposal id on manage center
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="default-language">
+                                                                            <label>Default Language</label>
+                                                                            <select>
+                                                                                <option value="" selected>English
+                                                                                </option>
+                                                                                <option value="1">French</option>
+                                                                                <option value="2">Italian</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="default-language">
+                                                                            <label>Term of Use</label>
+                                                                            <div class="input-field">
+                                                                                <input id="termsUse" type="text"
+                                                                                    class="validate">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="collapsible-header">
+                                                                    <h4>Recipient Viewer Configuration</h4> <span
+                                                                        class="tabCollapseArrow"><i
+                                                                            class="material-icons">
+                                                                            arrow_drop_down
+                                                                        </i></span>
+                                                                </div>
+                                                                <div class="collapsible-body">
+                                                                    <div class="advancedTabConfig">
+                                                                        <div class="tableOverflow">
+                                                                            <table>
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th></th>
+                                                                                        <th>Proposal Options</th>
+                                                                                        <th>Template Options</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>Hide password field on
+                                                                                            Client info</td>
+                                                                                        <td>
+                                                                                            <div class="switch">
+                                                                                                <label>
+                                                                                                    <input
+                                                                                                        type="checkbox">
+                                                                                                    <span
+                                                                                                        class="lever"></span>
+                                                                                                    Hide
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div class="switch">
+                                                                                                <label>
+                                                                                                    <input
+                                                                                                        type="checkbox">
+                                                                                                    <span
+                                                                                                        class="lever"></span>
+                                                                                                    Hide
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Disable recipient downloads
+                                                                                            & print button
+                                                                                        </td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="defaultLink">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="hideLink">Hide</a>
+                                                                                        </td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="hideLink ">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="defaultLink">Hide</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Disable comments</td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="defaultLink">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="hideLink">Hide</a>
+                                                                                        </td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="hideLink ">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="defaultLink">Hide</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Enable Recipient Stats View
+                                                                                        </td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="defaultLink">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="hideLink">Hide</a>
+                                                                                        </td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="hideLink ">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="defaultLink">Hide</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Enable Client Upload</td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="hideLink">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="defaultLink">Hide</a>
+                                                                                        </td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="hideLink ">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class=" defaultLink">Hide</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Disable GDPR</td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="hideLink">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="defaultLink">Hide</a>
+                                                                                        </td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="hideLink ">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="defaultLink">Hide</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Disable propmpt for email
+                                                                                        </td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="defaultLink">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="hideLink">Hide</a>
+                                                                                        </td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="hideLink ">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="defaultLink">Hide</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Propmpt client for Signature
+                                                                                        </td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="defaultLink">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="hideLink">Hide</a>
+                                                                                        </td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="hideLink">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="defaultLink">Hide</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Docx Password</td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="defaultLink hideLink ">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="hideLink">Hide</a>
+                                                                                            <div class="switch">
+                                                                                                <label>
+                                                                                                    <input
+                                                                                                        type="checkbox">
+                                                                                                    <span
+                                                                                                        class="lever"></span>
+                                                                                                    Require
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td><a href="javascript:void(0);"
+                                                                                                class="hideLink ">Default</a>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                class="defaultLink">Hide</a>
+                                                                                            <div class="switch">
+                                                                                                <label>
+                                                                                                    <input
+                                                                                                        type="checkbox">
+                                                                                                    <span
+                                                                                                        class="lever"></span>
+                                                                                                    Require
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li>
-                                            <div class="collapsible-header">
-                                                <h4>View Proposal Configuration</h4> 
-                                                <span class="tabCollapseArrow">
-                                                    <i class="material-icons">
-                                                        arrow_drop_down
-                                                    </i>
-                                                </span>
-                                            </div>
-                                            <div class="collapsible-body">
-                                                <div class="advancedTabConfig">
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox" checked>
-                                                                <span class="lever"></span>
-                                                                Enable Advanced HTML Viewer
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox" checked>
-                                                                <span class="lever"></span>
-                                                                Switch to HTML5 viewer
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox" checked>
-                                                                <span class="lever"></span>
-                                                                Disable Split mode for viewer
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox" checked>
-                                                                <span class="lever"></span>
-                                                                Default document Fit to Width
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox" checked>
-                                                                <span class="lever"></span>
-                                                                Enable non printable files show in TOC
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox" checked>
-                                                                <span class="lever"></span>
-                                                                Enable only recipients can unlock view proposal
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox" checked>
-                                                                <span class="lever"></span>
-                                                                All uploads Default to Downloadable in Proposal
-                                                            </label>
-                                                        </div>
-                                                        <div class="proposanal-locking">
-                                                            <label class="active">Viewer Idle Timeout</label>
-                                                            <input type="text" class="no-bg-Inputtext" placeholder="5">
-                                                        </div>
-                                                    </div>
-                                                    <div class="internetDomain">
-                                                        <h6>Internal Domains</h6>
-                                                        <p>You can create multiple internal domains</p>
-                                                        <div class="row mb-0">
-                                                            <div class="col s7">
-                                                                <div class="enterDomains">
-                                                                    <div class="input-field mb-0">
-                                                                        <input id="last_name" type="text"
-                                                                            class="validate">
-                                                                        <label for="last_name">Last Name</label>
-                                                                    </div>
-                                                                    <button type="submit" class="addDomainBtn">
-                                                                        <i class="material-icons">
-                                                                            add
-                                                                        </i>
-                                                                    </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Advanced Configuration Tab end here  -->
+                            <!-- Locale Tab start here  -->
+                            <div id="Locale" class="col s12 tab-content-settings">
+                                <div class="wrapper scrollbar-dynamic">
+                                    <div class="page-content">
+                                        <div class="content">
+                                            <div class="demo">
+                                                <div class="scrollbar-inner">
+                                                    <div class="advancedTabLocale">
+                                                        <div class="advancedTabConfig">
+                                                            <div class="row">
+                                                                <div class="input-field col l6 m6 s12">
+                                                                    <select>
+                                                                        <option value="" selected>United States-Dolar
+                                                                        </option>
+                                                                        <option value="1">EURO</option>
+                                                                        <option value="2">Pound</option>
+                                                                    </select>
+                                                                    <label>Default Currency</label>
                                                                 </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="input-field col l6 m6 s12">
+                                                                    <select>
+                                                                        <option value="" selected>08/21/2019</option>
+                                                                    </select>
+                                                                    <label>Default Date Format</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="input-field col l6 m6 s12">
+                                                                    <select>
+                                                                        <option value="" selected>21 August 2019
+                                                                        </option>
+                                                                    </select>
+                                                                    <label>Default Date Format For Form Builder</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="input-field col s6">
+                                                                    <select>
+                                                                        <option value="" selected>
+                                                                            https://proposal.clientpoint.net/v/19599/8175
+                                                                        </option>
+                                                                        <option value="1">
+                                                                            https://proposal.clientpoint.net</option>
+                                                                        <option value="2">
+                                                                            https://proposal.clientpoint.net/v/</option>
+                                                                    </select>
+                                                                    <label>Training Link</label>
+                                                                </div>
+
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li>
-                                            <div class="collapsible-header">
-                                                <h4>API Configuration</h4> 
-                                                <span class="tabCollapseArrow">
-                                                    <i class="material-icons">
-                                                        arrow_drop_down
-                                                    </i>
-                                                </span>
-                                            </div>
-                                            <div class="collapsible-body">
-                                                <div class="advancedTabConfig">
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Disable Won/Lost Deal Status Change on Hubspot
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="collapsible-header">
-                                                <h4>Email Configuration</h4> 
-                                                <span class="tabCollapseArrow">
-                                                    <i class="material-icons">
-                                                        arrow_drop_down
-                                                    </i>
-                                                </span>
-                                            </div>
-                                            <div class="collapsible-body">
-                                                <div class="advancedTabConfig">
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Open Directly in Your Email button will open in same tab
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Hide the Schedule Delivery of Your Email
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Enable HTML Email
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="collapsible-header">
-                                                <h4>Signature Configuration</h4> 
-                                                <span class="tabCollapseArrow">
-                                                    <i class="material-icons">
-                                                        arrow_drop_down
-                                                    </i>
-                                                </span>
-                                            </div>
-                                            <div class="collapsible-body">
-                                                <div class="advancedTabConfig">
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Hide Counter Signature Button
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Disable E-Signature
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Send signed document as attachement in email
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Enable upload signature document on file page
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="internetDomain">
-                                                        <h6>Configuration to send selected files/pages to right
-                                                            signature</h6>
-                                                        <div class="config-radio">
-                                                            <label>
-                                                                <input class="with-gap" name="group1" type="radio"
-                                                                    checked />
-                                                                <span>All Files</span>
-                                                            </label>
-                                                            <label>
-                                                                <input class="with-gap" name="group1" type="radio" />
-                                                                <span>Signature Files</span>
-                                                            </label>
-                                                            <label>
-                                                                <input class="with-gap" name="group1" type="radio" />
-                                                                <span>Signature Pages</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="collapsible-header">
-                                                <h4>Miscellaneous Configuration</h4> 
-                                                <span class="tabCollapseArrow">
-                                                    <i class="material-icons">
-                                                        arrow_drop_down
-                                                    </i>
-                                                </span>
-                                            </div>
-                                            <div class="collapsible-body">
-                                                <div class="advancedTabConfig">
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Enable Opportunity field show in manage page
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Disable merge tool
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Disable Google Docx
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Enable Merge PPT Download
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Enabgle default category select on manage screen
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="advancedTabConfig-row">
-                                                        <div class="switch">
-                                                            <label>
-                                                                <input type="checkbox">
-                                                                <span class="lever"></span>
-                                                                Show proposal id on manage center
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="default-language">
-                                                        <label>Default Language</label>
-                                                        <select>
-                                                            <option value="" selected>English
-                                                            </option>
-                                                            <option value="1">French</option>
-                                                            <option value="2">Italian</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="default-language">
-                                                        <label>Term of Use</label>
-                                                        <div class="input-field">
-                                                            <input id="termsUse" type="text" class="validate">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="collapsible-header">
-                                                <h4>Recipient Viewer Configuration</h4> <span
-                                                    class="tabCollapseArrow"><i class="material-icons">
-                                                        arrow_drop_down
-                                                    </i></span>
-                                            </div>
-                                            <div class="collapsible-body">
-                                                <div class="advancedTabConfig">
-                                                    <div class="tableOverflow">
-                                                        <table>
-                                                            <thead>
-                                                                <tr>
-                                                                    <th></th>
-                                                                    <th>Proposal Options</th>
-                                                                    <th>Template Options</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>Hide password field on Client info</td>
-                                                                    <td>
-                                                                        <div class="switch">
-                                                                            <label>
-                                                                                <input type="checkbox">
-                                                                                <span class="lever"></span>
-                                                                                Hide
-                                                                            </label>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="switch">
-                                                                            <label>
-                                                                                <input type="checkbox">
-                                                                                <span class="lever"></span>
-                                                                                Hide
-                                                                            </label>
-                                                                        </div>
-                                                                    </td>
-
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Disable recipient downloads & print button</td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="defaultLink">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="hideLink">Hide</a></td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="hideLink ">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="defaultLink">Hide</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Disable comments</td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="defaultLink">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="hideLink">Hide</a></td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="hideLink ">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="defaultLink">Hide</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Enable Recipient Stats View</td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="defaultLink">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="hideLink">Hide</a></td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="hideLink ">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="defaultLink">Hide</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Enable Client Upload</td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="hideLink">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="defaultLink">Hide</a></td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="hideLink ">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class=" defaultLink">Hide</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Disable GDPR</td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="hideLink">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="defaultLink">Hide</a></td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="hideLink ">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="defaultLink">Hide</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Disable propmpt for email</td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="defaultLink">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="hideLink">Hide</a></td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="hideLink ">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="defaultLink">Hide</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Propmpt client for Signature</td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="defaultLink">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="hideLink">Hide</a></td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="hideLink">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="defaultLink">Hide</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Docx Password</td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="defaultLink hideLink ">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="hideLink">Hide</a>
-                                                                        <div class="switch">
-                                                                            <label>
-                                                                                <input type="checkbox">
-                                                                                <span class="lever"></span>
-                                                                                Require
-                                                                            </label>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td><a href="javascript:void(0);"
-                                                                            class="hideLink ">Default</a> <a
-                                                                            href="javascript:void(0);"
-                                                                            class="defaultLink">Hide</a>
-                                                                        <div class="switch">
-                                                                            <label>
-                                                                                <input type="checkbox">
-                                                                                <span class="lever"></span>
-                                                                                Require
-                                                                            </label>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Advanced Configuration Tab end here  -->
-                            <!-- Locale Tab start here  -->
-                            <div id="Locale" class="col s12">
-                                <div class="advancedTabLocale">
-                                    <div class="advancedTabConfig">
-                                        <div class="row">
-                                            <div class="input-field col l6 m6 s12">
-                                                <select>
-                                                    <option value="" selected>United States-Dolar</option>
-                                                    <option value="1">EURO</option>
-                                                    <option value="2">Pound</option>
-                                                </select>
-                                                <label>Default Currency</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col l6 m6 s12">
-                                                <select>
-                                                    <option value="" selected>08/21/2019</option>
-                                                </select>
-                                                <label>Default Date Format</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col l6 m6 s12">
-                                                <select>
-                                                    <option value="" selected>21 August 2019</option>
-                                                </select>
-                                                <label>Default Date Format For Form Builder</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col l6 m6 s12">
-                                                <select>
-                                                    <option value="" selected>
-                                                        https://proposal.clientpoint.net/v/19599/8175</option>
-                                                </select>
-                                                <label>Training Link</label>
+                        <!-- Locale Tab end here  -->
+                        <!-- Manage Screen Setup Tab start here  -->
+                        <div id="ManageScreenSetup" class="col s12 tab-content-settings">
+                            <div class="wrapper scrollbar-dynamic">
+                                <div class="page-content">
+                                    <div class="content">
+                                        <div class="demo">
+                                            <div class="scrollbar-inner">
+                                                <div class="manageScreenContent">
+                                                    <table>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Name</th>
+                                                                <th>Show on manage Screen list and search</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="disable-text">Client</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" disabled="disabled" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="disable-text">Revenue</td>
+                                                                <td> <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" disabled="disabled" />
+                                                                        <span></span>
+                                                                    </label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="disable-text">Rep</td>
+                                                                <td> <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" disabled="disabled" />
+                                                                        <span></span>
+                                                                    </label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="disable-text">Division</td>
+                                                                <td> <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" disabled="disabled" />
+                                                                        <span></span>
+                                                                    </label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="disable-text">Date Created</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" disabled="disabled" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="disable-text">Sent Date</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" disabled="disabled" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="disable-text">Comments</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" disabled="disabled" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="disable-text">Hand Delivered</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" disabled="disabled" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="disable-text">Status</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" disabled="disabled" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Region</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Market</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Services</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Sub Services</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Category</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Total Time Spent</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>unique View</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Shares</td>
+                                                                <td>
+                                                                    <label>
+                                                                        <input type="checkbox" class="filled-in"
+                                                                            checked="checked" />
+                                                                        <span></span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-                            <!-- Locale Tab end here  -->
-                            <!-- Manage Screen Setup Tab start here  -->
-                            <div id="ManageScreenSetup" class="col s12">
-                                <div class="manageScreenContent">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Show on manage Screen list and search</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="disable-text">Client</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked"
-                                                            disabled="disabled" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="disable-text">Revenue</td>
-                                                <td> <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked"
-                                                            disabled="disabled" />
-                                                        <span></span>
-                                                    </label></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="disable-text">Rep</td>
-                                                <td> <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked"
-                                                            disabled="disabled" />
-                                                        <span></span>
-                                                    </label></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="disable-text">Division</td>
-                                                <td> <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked"
-                                                            disabled="disabled" />
-                                                        <span></span>
-                                                    </label></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="disable-text">Date Created</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked"
-                                                            disabled="disabled" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="disable-text">Sent Date</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked"
-                                                            disabled="disabled" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="disable-text">Comments</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked"
-                                                            disabled="disabled" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="disable-text">Hand Delivered</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked"
-                                                            disabled="disabled" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="disable-text">Status</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked"
-                                                            disabled="disabled" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Region</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Market</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Services</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sub Services</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Category</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Total Time Spent</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>unique View</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Shares</td>
-                                                <td> 
-                                                    <label>
-                                                        <input type="checkbox" class="filled-in" checked="checked" />
-                                                        <span></span>
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <!-- Manage Screen Setup Tab start here  -->
                         </div>
+                        <!-- Manage Screen Setup Tab start here  -->
                     </div>
                 </div>
             </div>
-        </article>
+    </div>
+    </article>
     </div>
 
 

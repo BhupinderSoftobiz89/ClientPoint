@@ -1,4 +1,3 @@
-
 /* Theme Page start here */
 .clientPoint-file {
 	.newClientPointTitleBar-right {
@@ -403,9 +402,9 @@
 	}
 }
 .advancedTabLocale {
-  @include margin-padding(all, null, all, 1.875rem 0);
+	@include margin-padding(all, null, all, 1.875rem 0);
 	.advancedTabConfig {
-    @include margin-padding(all, null, all, 1.7rem 1.8125rem);
+		@include margin-padding(all, null, all, 1.7rem 1.8125rem);
 	}
 	.dropdown-content {
 		top: 100% !important;
@@ -512,6 +511,21 @@
 .intigratInnerContent {
 	flex: 1;
 	@include margin-padding(all, 0 1rem 0 0, all, null);
+}
+.themeContent {
+	height: calc(100% - 83px);
+}
+.themeAdvancedSettings {
+	height: $height-hundred-per;
+}
+.themeAdvancedtabs {
+	height: $height-hundred-per;
+}
+.tab-content-settings {
+	height: calc(100% - 63px);
+}
+.tab-content-settings .scrollbar-inner > .scroll-element.scroll-y {
+	right: $zero;
 }
 /* Intigration Page end here */
 

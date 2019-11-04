@@ -15909,6 +15909,26 @@ input[type=range]::-ms-thumb {
   margin: 0 1rem 0 0;
 }
 
+.themeContent {
+  height: calc(100% - 83px);
+}
+
+.themeAdvancedSettings {
+  height: 100%;
+}
+
+.themeAdvancedtabs {
+  height: 100%;
+}
+
+.tab-content-settings {
+  height: calc(100% - 63px);
+}
+
+.tab-content-settings .scrollbar-inner > .scroll-element.scroll-y {
+  right: 0;
+}
+
 /* Intigration Page end here */
 /* Theme Page end here */
 /* Login page start here  */
