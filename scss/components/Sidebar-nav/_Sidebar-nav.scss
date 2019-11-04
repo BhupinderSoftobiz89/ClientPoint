@@ -144,11 +144,11 @@
 	}
 }
 .fullWidthNav {
-	background: color("indigo", "accent-4");
+	//background: color("indigo", "accent-4");
 	display: $display-block;
 	@include transition($transiton);
 	.navMenu {
-		background: color("shades", "transparent");
+		background: color("indigo", "accent-4");
 	}
 }
 
@@ -158,7 +158,7 @@
 
 .btn6 {
 	position: $position-relative;
-	width: 70px;
+	// width: 70px;
 	height: 70px;
 	top: $zero;
 	left: $zero;
@@ -206,10 +206,12 @@
 .btn6.open .icon:before {
 	-webkit-transform: rotateZ(45deg) scaleX(0.75) translate(14px, -6px);
 	transform: rotateZ(45deg) scaleX(0.75) translate(14px, -6px);
+	left: -2px;
 }
 .btn6.open .icon:after {
 	-webkit-transform: rotateZ(-45deg) scaleX(0.75) translate(14px, 6px);
 	transform: rotateZ(-45deg) scaleX(0.75) translate(14px, 6px);
+	left: -2px;
 }
 .btn6:hover {
 	cursor: pointer;

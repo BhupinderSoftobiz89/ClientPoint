@@ -10193,14 +10193,13 @@ input[type=range]::-ms-thumb {
 }
 
 .fullWidthNav {
-  background: #353898;
   display: block;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .fullWidthNav .navMenu {
-  background: transparent;
+  background: #353898;
 }
 
 #content.contentMargin {
@@ -10209,7 +10208,6 @@ input[type=range]::-ms-thumb {
 
 .btn6 {
   position: relative;
-  width: 70px;
   height: 70px;
   top: 0;
   left: 0;
@@ -10266,11 +10264,13 @@ input[type=range]::-ms-thumb {
 .btn6.open .icon:before {
   -webkit-transform: rotateZ(45deg) scaleX(0.75) translate(14px, -6px);
   transform: rotateZ(45deg) scaleX(0.75) translate(14px, -6px);
+  left: -2px;
 }
 
 .btn6.open .icon:after {
   -webkit-transform: rotateZ(-45deg) scaleX(0.75) translate(14px, 6px);
   transform: rotateZ(-45deg) scaleX(0.75) translate(14px, 6px);
+  left: -2px;
 }
 
 .btn6:hover {

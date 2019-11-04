@@ -19,158 +19,158 @@
 <body>
     <!-- Sidebar nav start here -->
     <nav class="sidebarNav sidebarNavClose">
-            <div class="navMenuOuter menu btn6 navMenu" data-menu="6">
-                <div class="icon "></div>
-            </div>
+        <div class="navMenuOuter menu btn6 navMenu" data-menu="6">
+            <div class="icon "></div>
+        </div>
+        <ul>
+            <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="tab-1">
+                <a href="#dashboard_nav" class="sidebarclick">
+                    <span class="commonIconbg fileIcon"></span>
+                    Dashboard
+                </a>
+
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
+                <a href="#library_nav" class="sidebarclick">
+                    <span class="commonIconbg prieviewIcon"></span>
+                    Content Libray
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="tab-3">
+                <a href="#clientPoint_nav" class="sidebarclick">
+                    <span class="commonIconbg clientIcon"></span>
+                    ClientPoints
+                </a>
+            </li>
+            <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="tab-4">
+                <a href="#Setting_nav" class="sidebarclick">
+                    <span class="commonIconbg settingIcon"></span>Settings
+                </a>
+            </li>
+        </ul>
+        <a href="javascript:void(0)" class="clientPointLogo">
+            <img class="logoSmall" src="./images/ClientPoint-Logo.svg" alt="">
+            <img class="logoBig" src="./images/clientpoint-logo-big.svg" alt="">
+        </a>
+    </nav>
+
+    <div class="sidebar_nav">
+        <aside id="tab-1" class="sidebarSubmenu openNav">
             <ul>
-                <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="tab-1">
-                    <a href="#dashboard_nav" class="sidebarclick">
-                        <span class="commonIconbg fileIcon"></span>
-                        Dashboard
-                    </a>
-    
-                </li>
-                <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
-                    <a href="#library_nav" class="sidebarclick">
-                        <span class="commonIconbg prieviewIcon"></span>
-                        Content Libray
+                <li>
+                    <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
                     </a>
                 </li>
-                <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="tab-3">
-                    <a href="#clientPoint_nav" class="sidebarclick">
-                        <span class="commonIconbg clientIcon"></span>
-                        ClientPoints
+                <li><a href="dashboard.html">Analytics</a></li>
+                <li><a href="index.html">ClientPoint</a></li>
+                <li><a href="dashboard-filter-expanded.html" class="active">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-2" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
                     </a>
                 </li>
-                <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="tab-4">
-                    <a href="#Setting_nav" class="sidebarclick">
-                        <span class="commonIconbg settingIcon"></span>Settings
+                <li><a href="search.html">Content Library</a></li>
+                <li><a href="library.html" class="active">Templates</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-3" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="clientpoint-file.html">Analytics</a></li>
+                <li><a href="clientpoint-preview.html">ClientPoint</a></li>
+                <li><a href="clientpoint-top-bar.html">Details</a></li>
+            </ul>
+        </aside>
+        <aside id="tab-4" class="sidebarSubmenu openNav">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
+                        <i class="material-icons">
+                            keyboard_backspace
+                        </i>
+                    </a>
+                </li>
+                <li><a href="user-permission.html">Users & Permissions</a></li>
+                <li><a href="theme.html">Themes</a></li>
+                <li><a href="intigration.html">Integrations</a></li>
+                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
+                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
+                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="theme-setting.html">Advanced Settings</a></li>
+            </ul>
+        </aside>
+    </div>
+    <!-- Sidebar nav end here  -->
+
+    <!-- Header start here  -->
+    <header class="page-header d-flex">
+        <div class="searchbox">
+            <input type="submit" class="searchBtn" value="">
+            <input type="search" class="searchInput" placeholder="Search">
+        </div>
+        <div class="searchResponsive">
+            <a href="#" class="mobileSearch"></a>
+        </div>
+        <aside class="newClientPoint">
+            <a class="waves-teal btn-flat" href="clientpoint-preview.html">New ClientPoint</a>
+            <a class="userLoginPanel dropdown-trigger" href="#" data-target="userDropDown">
+                <span class="userFetaures"><strong>Upgrade now</strong> to unlock more features!</span>
+                <span class="userAvtar"><img class="responsive-img" src="./images/user-img.png" alt=""></span>
+                <span class="userName">Miles Morales</span>
+                <i class="material-icons">
+                    arrow_drop_down
+                </i>
+            </a>
+            <ul id="userDropDown" class="dropdown-content UserDropdownLogin">
+                <li><a href="#!">
+                        <div class="userLoginHeader">
+                            <img src="./images/user-avtar.png" alt="">
+                            <div class="userInfo">
+                                <h6>Miles Morales</h6>
+                                <p>milesm@arachnid.com</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider" tabindex="-1"></li>
+                <li>
+                    <a href="login.html">
+                        <span class="profileIcon"></span>
+                        View Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="login-dashboard.html">
+                        <span class="supportIcon"></span>
+                        Support
+                    </a>
+                </li>
+                <li>
+                    <a href="login-progress-image.html">
+                        <span class="logoutIcon"></span>
+                        Logout
                     </a>
                 </li>
             </ul>
-            <a href="javascript:void(0)" class="clientPointLogo">
-                <img class="logoSmall" src="./images/ClientPoint-Logo.svg" alt="">
-                <img class="logoBig" src="./images/clientpoint-logo-big.svg" alt="">
-            </a>
-        </nav>
-    
-        <div class="sidebar_nav">
-            <aside id="tab-1" class="sidebarSubmenu openNav">
-                <ul>
-                    <li>
-                        <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
-                            <i class="material-icons">
-                                keyboard_backspace
-                            </i>
-                        </a>
-                    </li>
-                    <li><a href="dashboard.html">Analytics</a></li>
-                    <li><a href="index.html">ClientPoint</a></li>
-                    <li><a href="dashboard-filter-expanded.html" class="active">Details</a></li>
-                </ul>
-            </aside>
-            <aside id="tab-2" class="sidebarSubmenu openNav">
-                <ul>
-                    <li>
-                        <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
-                            <i class="material-icons">
-                                keyboard_backspace
-                            </i>
-                        </a>
-                    </li>
-                    <li><a href="search.html">Content Library</a></li>
-                    <li><a href="library.html" class="active">Templates</a></li>
-                </ul>
-            </aside>
-            <aside id="tab-3" class="sidebarSubmenu openNav">
-                <ul>
-                    <li>
-                        <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
-                            <i class="material-icons">
-                                keyboard_backspace
-                            </i>
-                        </a>
-                    </li>
-                    <li><a href="clientpoint-file.html">Analytics</a></li>
-                    <li><a href="clientpoint-preview.html">ClientPoint</a></li>
-                    <li><a href="clientpoint-top-bar.html">Details</a></li>
-                </ul>
-            </aside>
-            <aside id="tab-4" class="sidebarSubmenu openNav">
-                <ul>
-                    <li>
-                        <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
-                            <i class="material-icons">
-                                keyboard_backspace
-                            </i>
-                        </a>
-                    </li>
-                    <li><a href="user-permission.html">Users & Permissions</a></li>
-                    <li><a href="theme.html">Themes</a></li>
-                    <li><a href="intigration.html">Integrations</a></li>
-                    <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
-                    <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
-                    <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
-                    <li><a href="theme-setting.html">Advanced Settings</a></li>
-                </ul>
-            </aside>
-        </div>
-        <!-- Sidebar nav end here  -->
-    
-        <!-- Header start here  -->
-        <header class="page-header d-flex">
-            <div class="searchbox">
-                <input type="submit" class="searchBtn" value="">
-                <input type="search" class="searchInput" placeholder="Search">
-            </div>
-            <div class="searchResponsive">
-                <a href="#" class="mobileSearch"></a>
-            </div>
-            <aside class="newClientPoint">
-                <a class="waves-teal btn-flat" href="clientpoint-preview.html">New ClientPoint</a>
-                <a class="userLoginPanel dropdown-trigger" href="#" data-target="userDropDown"> 
-                    <span class="userFetaures"><strong>Upgrade now</strong> to unlock more features!</span>
-                    <span class="userAvtar"><img class="responsive-img" src="./images/user-img.png" alt=""></span>
-                    <span class="userName">Miles Morales</span>
-                    <i class="material-icons">
-                        arrow_drop_down
-                    </i>
-                </a>
-                <ul id="userDropDown" class="dropdown-content UserDropdownLogin">
-                    <li><a href="#!">
-                            <div class="userLoginHeader">
-                                <img src="./images/user-avtar.png" alt="">
-                                <div class="userInfo">
-                                    <h6>Miles Morales</h6>
-                                    <p>milesm@arachnid.com</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider" tabindex="-1"></li>
-                    <li>
-                        <a href="login.html">
-                            <span class="profileIcon"></span>
-                            View Profile
-                        </a>
-                    </li>
-                    <li>
-                        <a href="login-dashboard.html">
-                            <span class="supportIcon"></span>
-                            Support
-                        </a>
-                    </li>
-                    <li>
-                        <a href="login-progress-image.html">
-                            <span class="logoutIcon"></span>
-                            Logout
-                        </a>
-                    </li>
-                </ul>
-            </aside>
-        </header>
-        <!-- Header end here  -->
+        </aside>
+    </header>
+    <!-- Header end here  -->
     <!-- Main Content start here  -->
     <div id="content">
         <div class="content-common">
