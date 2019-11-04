@@ -234,5 +234,14 @@ function removeOptions() {
   $(".tableOptions").removeClass('hideOptions');
 }
 
-
+$('.user-toggle').click(function(){
+  $(this).parent().parent().children().find(".user-info").slideToggle();
+  if($(this).hasClass('rotate-arrow')) {
+    $(this).removeClass('rotate-arrow');
+    $(this).parent().parent().addClass('active-row');
+  } else  {
+    $(this).addClass('rotate-arrow');
+    $(this).parent().parent().removeClass('active-row');
+  }
+})
 

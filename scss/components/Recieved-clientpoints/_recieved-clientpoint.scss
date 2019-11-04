@@ -39,17 +39,68 @@
 }
 .dataTable {
 	.userImage {
-        display: $display-inline-block;
-        @include margin-padding(all, 0 1rem 0 0, all, null);
-        vertical-align: $verticle-align-middle;
-        img {
-            vertical-align: $verticle-align-middle;
-        }
+		display: $display-inline-block;
+		@include margin-padding(all, 0 1rem 0 0, all, null);
+		vertical-align: $verticle-align-middle;
+		img {
+			vertical-align: $verticle-align-middle;
+		}
+	}
+	// tr{
+	// 	&.active-row {
+	// 		td {
+	// 			vertical-align: $verticle-align-top;
+	// 		}
+	// 	}
+	// }
+}
+.recieved-dropdown-arrow {
+	vertical-align: $verticle-align-middle;
+}
+.user-info {
+	@include margin-padding(all, null, all, 0 0 0 4.4rem);
+	display: $none;
+	.email-icon {
+		background: url(../images/common-icons.svg) no-repeat -382px -413px;
+		width: 1.2rem;
+		height: 1.4rem;
+		margin-right: 0.4rem;
+		@include margin-padding(all, 0 0.4rem 0 -1.7rem, all, null);
+		display: $display-inline-block;
+		vertical-align: $verticle-align-middle;
+	}
+	.phone-icon {
+		@extend .email-icon;
+		background: url(../images/common-icons.svg) no-repeat -26px -500px;
+	}
+	.mobile-phone-icon {
+		@extend .email-icon;
+		background: url(../images/common-icons.svg) no-repeat -90px -497px;
+	}
+	.location-icon {
+		@extend .email-icon;
+		background: url(../images/common-icons.svg) no-repeat -321px -1522px;
+	}
+	p {
+		@include font-rem(14px, 24px);
+		color: color("grey", "darken-2");
+		@include margin-padding(all, 0 0 0.3125rem 0, all, 0 0 0 1.7rem);
 	}
 }
 .recieved-dropdown-arrow {
-    vertical-align: $verticle-align-middle;
+	&.user-toggle {
+		.material-icons {
+			@include transform(rotate(180deg));
+		}
+	}
 }
 
+.recieved-dropdown-arrow {
+	&.rotate-arrow {
+		.material-icons {
+			@include transform(rotate(0deg));
+		}
+	}
+}
 
 /* Recieved ClientPoint CSS End Here */

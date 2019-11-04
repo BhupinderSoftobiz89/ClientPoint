@@ -136,7 +136,7 @@
                 </i>
             </a>
             <ul id="userDropDown" class="dropdown-content UserDropdownLogin">
-                <li><a href="#!">
+                <li><a href="javascript:void(0);">
                         <div class="userLoginHeader">
                             <img src="./images/user-avtar.png" alt="">
                             <div class="userInfo">
@@ -204,12 +204,12 @@
                         <div class="calenederFilter calender-padding mobile-common-margin">
                             <span class="calenderIconUi"></span>
                             <a href="javascript:void(0);" class="hoverdropdown DropdownArrow dropdown-trigger"
-                                data-alignment="left" data-target='CalenderDropdownUi'>
+                                data-alignment="left" data-target="CalenderDropdownUi">
                                 <i class="material-icons">
                                     arrow_drop_down
                                 </i>
                             </a>
-                            <ul id='CalenderDropdownUi' class='dropdown-content CalenderDropDownContentUi'>
+                            <ul id="CalenderDropdownUi" class="dropdown-content CalenderDropDownContentUi">
                                 <li class="calenderHeader">
                                     <div class="calenderHeader-row">
                                         <span class="from">From</span>
@@ -316,6 +316,20 @@
                                                 arrow_drop_down
                                             </i>
                                         </a>
+                                        <div class="user-info">
+                                            <p>
+                                                <span class="email-icon"></span>
+                                                emailadress@domain.com
+                                            </p>
+                                            <p>
+                                                <span class="phone-icon"></span>
+                                                555-555-5555
+                                            </p>
+                                            <p>
+                                                <span class="mobile-phone-icon"></span>
+                                                555-555-5555
+                                            </p>
+                                        </div>
                                     </td>
                                     <td>
                                         <span class="userImage">
@@ -327,11 +341,16 @@
                                                 arrow_drop_down
                                             </i>
                                         </a>
+                                        <div class="user-info">
+                                            <p>
+                                                <span class="location-icon"></span>123 Streetname<br/>CityName, State<br/>99999
+                                            </p>
+                                        </div>
                                     </td>
                                     <td>MM-DD-YYYY 00:00 AM</td>
                                     <td>
                                         <span class="badge active">
-                                                Viewed
+                                            Viewed
                                         </span>
                                     </td>
                                     <td style="width: 30px; padding-right:0;">
@@ -365,11 +384,10 @@
                                                     </span>
                                                 </a>
                                             </li>
-
                                         </ul>
                                     </td>
                                     <td style="width: 62px; padding-right:0;">
-                                        <a href="javascript:void(0);" class="recieved-dropdown-arrow">
+                                        <a href="javascript:void(0);" class="recieved-dropdown-arrow user-toggle rotate-arrow">
                                             <i class="material-icons">
                                                 arrow_drop_down
                                             </i>
@@ -377,97 +395,195 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="width: 20px; padding-right:0;">
-                                        <label>
-                                            <input type="checkbox" class="filled-in" />
-                                            <span></span>
-                                        </label>
-                                    </td>
-                                    <td style="width: 20px; padding-left:0;">
-                                        <span class="userImage">
-                                            <img src="images/Recipents-Avatar-3.png" alt="img">
-                                        </span>
-                                        <a href="javascript:void(0);" class="linkUser">Kevin Flynn</a>
-                                        <a href="javascript:void(0);" class="recieved-dropdown-arrow">
-                                            <i class="material-icons">
-                                                arrow_drop_down
-                                            </i>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <span class="userImage">
-                                            <img src="images/Recipents-Avatar-3.png" alt="img">
-                                        </span>
-                                        <a href="javascript:void(0);" class="linkUser">Encom International</a>
-                                        <a href="javascript:void(0);" class="recieved-dropdown-arrow">
-                                            <i class="material-icons">
-                                                arrow_drop_down
-                                            </i>
-                                        </a>
-                                    </td>
-                                    <td>MM-DD-YYYY 00:00 AM</td>
-                                    <td>
-                                        <span class="badge active">
+                                        <td style="width: 20px; padding-right:0;">
+                                            <label>
+                                                <input type="checkbox" class="filled-in" />
+                                                <span></span>
+                                            </label>
+                                        </td>
+                                        <td style="width: 20px; padding-left:0;">
+                                            <span class="userImage">
+                                                <img src="images/Recipents-Avatar-3.png" alt="img">
+                                            </span>
+                                            <a href="javascript:void(0);" class="linkUser">Kevin Flynn</a>
+                                            <a href="javascript:void(0);" class="recieved-dropdown-arrow">
+                                                <i class="material-icons">
+                                                    arrow_drop_down
+                                                </i>
+                                            </a>
+                                            <div class="user-info">
+                                                <p>
+                                                    <span class="email-icon"></span>
+                                                    emailadress@domain.com
+                                                </p>
+                                                <p>
+                                                    <span class="phone-icon"></span>
+                                                    555-555-5555
+                                                </p>
+                                                <p>
+                                                    <span class="mobile-phone-icon"></span>
+                                                    555-555-5555
+                                                </p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="userImage">
+                                                <img src="images/Recipents-Avatar-3.png" alt="img">
+                                            </span>
+                                            <a href="javascript:void(0);" class="linkUser">Encom International</a>
+                                            <a href="javascript:void(0);" class="recieved-dropdown-arrow">
+                                                <i class="material-icons">
+                                                    arrow_drop_down
+                                                </i>
+                                            </a>
+                                            <div class="user-info">
+                                                <p>
+                                                    <span class="location-icon"></span>123 Streetname<br/>CityName, State<br/>99999
+                                                </p>
+                                            </div>
+                                        </td>
+                                        <td>MM-DD-YYYY 00:00 AM</td>
+                                        <td>
+                                            <span class="badge active">
                                                 Viewed
-                                        </span>
-                                    </td>
-                                    <td style="width: 30px; padding-right:0;">
-                                        <a class="libraryLinks" href="javascript:void(0);"></a>
-                                    </td>
-                                    <td style="width: 62px; padding-right:0;">
-                                        <a href="javascript:void(0);" class="recieved-dropdown-arrow">
-                                            <i class="material-icons">
-                                                arrow_drop_down
-                                            </i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 20px; padding-right:0;">
-                                        <label>
-                                            <input type="checkbox" class="filled-in" />
-                                            <span></span>
-                                        </label>
-                                    </td>
-                                    <td style="width: 20px; padding-left:0;">
-                                        <span class="userImage">
-                                            <img src="images/Recipents-Avatar-3.png" alt="img">
-                                        </span>
-                                        <a href="javascript:void(0);" class="linkUser">Kevin Flynn</a>
-                                        <a href="javascript:void(0);" class="recieved-dropdown-arrow">
-                                            <i class="material-icons">
-                                                arrow_drop_down
-                                            </i>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <span class="userImage">
-                                            <img src="images/Recipents-Avatar-3.png" alt="img">
-                                        </span>
-                                        <a href="javascript:void(0);" class="linkUser">Encom International</a>
-                                        <a href="javascript:void(0);" class="recieved-dropdown-arrow">
-                                            <i class="material-icons">
-                                                arrow_drop_down
-                                            </i>
-                                        </a>
-                                    </td>
-                                    <td>MM-DD-YYYY 00:00 AM</td>
-                                    <td>
-                                        <span class="badge active">
-                                                Viewed
-                                        </span>
-                                    </td>
-                                    <td style="width: 30px; padding-right:0;">
-                                        <a class="libraryLinks" href="javascript:void(0);"></a>
-                                    </td>
-                                    <td style="width: 62px; padding-right:0;">
-                                        <a href="javascript:void(0);" class="recieved-dropdown-arrow">
-                                            <i class="material-icons">
-                                                arrow_drop_down
-                                            </i>
-                                        </a>
-                                    </td>
-                                </tr>
+                                            </span>
+                                        </td>
+                                        <td style="width: 30px; padding-right:0;">
+                                            <a data-target="recieved-dropdown" class="libraryLinks dropdown-trigger"></a>
+                                            <ul id="recieved-dropdown" class="dropdown-content viewedDropDown-content">
+                                                <li tabindex="0">
+                                                    <a href="javascript:void(0);">
+                                                        <span class="shareIcon"></span>
+                                                        Share
+                                                    </a>
+                                                </li>
+                                                <li tabindex="0">
+                                                    <a href="javascript:void(0);">
+                                                        <span class="prieviewIcon"></span>
+                                                        Preview
+                                                    </a>
+                                                </li>
+                                                <li tabindex="0">
+                                                    <a href="javascript:void(0);">
+                                                        <span class="printIcon"></span>
+                                                        <span>
+                                                            Print
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li tabindex="0">
+                                                    <a href="javascript:void(0);">
+                                                        <span class="archive-icon"></span>
+                                                        <span>
+                                                            Archive
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td style="width: 62px; padding-right:0;">
+                                            <a href="javascript:void(0);" class="recieved-dropdown-arrow user-toggle rotate-arrow">
+                                                <i class="material-icons">
+                                                    arrow_drop_down
+                                                </i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                            <td style="width: 20px; padding-right:0;">
+                                                <label>
+                                                    <input type="checkbox" class="filled-in" />
+                                                    <span></span>
+                                                </label>
+                                            </td>
+                                            <td style="width: 20px; padding-left:0;">
+                                                <span class="userImage">
+                                                    <img src="images/Recipents-Avatar-3.png" alt="img">
+                                                </span>
+                                                <a href="javascript:void(0);" class="linkUser">Kevin Flynn</a>
+                                                <a href="javascript:void(0);" class="recieved-dropdown-arrow">
+                                                    <i class="material-icons">
+                                                        arrow_drop_down
+                                                    </i>
+                                                </a>
+                                                <div class="user-info">
+                                                    <p>
+                                                        <span class="email-icon"></span>
+                                                        emailadress@domain.com
+                                                    </p>
+                                                    <p>
+                                                        <span class="phone-icon"></span>
+                                                        555-555-5555
+                                                    </p>
+                                                    <p>
+                                                        <span class="mobile-phone-icon"></span>
+                                                        555-555-5555
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="userImage">
+                                                    <img src="images/Recipents-Avatar-3.png" alt="img">
+                                                </span>
+                                                <a href="javascript:void(0);" class="linkUser">Encom International</a>
+                                                <a href="javascript:void(0);" class="recieved-dropdown-arrow">
+                                                    <i class="material-icons">
+                                                        arrow_drop_down
+                                                    </i>
+                                                </a>
+                                                <div class="user-info">
+                                                    <p>
+                                                        <span class="location-icon"></span>123 Streetname<br/>CityName, State<br/>99999
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>MM-DD-YYYY 00:00 AM</td>
+                                            <td>
+                                                <span class="badge active">
+                                                    Viewed
+                                                </span>
+                                            </td>
+                                            <td style="width: 30px; padding-right:0;">
+                                                <a data-target="recieved-dropdown" class="libraryLinks dropdown-trigger"></a>
+                                                <ul id="recieved-dropdown" class="dropdown-content viewedDropDown-content">
+                                                    <li tabindex="0">
+                                                        <a href="javascript:void(0);">
+                                                            <span class="shareIcon"></span>
+                                                            Share
+                                                        </a>
+                                                    </li>
+                                                    <li tabindex="0">
+                                                        <a href="javascript:void(0);">
+                                                            <span class="prieviewIcon"></span>
+                                                            Preview
+                                                        </a>
+                                                    </li>
+                                                    <li tabindex="0">
+                                                        <a href="javascript:void(0);">
+                                                            <span class="printIcon"></span>
+                                                            <span>
+                                                                Print
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li tabindex="0">
+                                                        <a href="javascript:void(0);">
+                                                            <span class="archive-icon"></span>
+                                                            <span>
+                                                                Archive
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td style="width: 62px; padding-right:0;">
+                                                <a href="javascript:void(0);" class="recieved-dropdown-arrow user-toggle rotate-arrow">
+                                                    <i class="material-icons">
+                                                        arrow_drop_down
+                                                    </i>
+                                                </a>
+                                            </td>
+                                        </tr>
                             </tbody>
                         </table>
                     </div>

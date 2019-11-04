@@ -13636,9 +13636,6 @@ input[type=range]::-ms-thumb {
 }
 
 /* Share Viewer Sidebar end here */
-/* Clientpoint Preview page end here */
-/* Comment Modal end here */
-/* client Point File page end here */
 /* Viewer Splash screen Start here */
 .splashViewer:after {
   content: "";
@@ -18047,6 +18044,53 @@ input[type=range]::-ms-thumb {
 
 .recieved-dropdown-arrow {
   vertical-align: middle;
+}
+
+.user-info {
+  padding: 0 0 0 4.4rem;
+  display: none;
+}
+
+.user-info .email-icon, .user-info .phone-icon, .user-info .mobile-phone-icon, .user-info .location-icon {
+  background: url(../images/common-icons.svg) no-repeat -382px -413px;
+  width: 1.2rem;
+  height: 1.4rem;
+  margin-right: 0.4rem;
+  margin: 0 0.4rem 0 -1.7rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.user-info .phone-icon {
+  background: url(../images/common-icons.svg) no-repeat -26px -500px;
+}
+
+.user-info .mobile-phone-icon {
+  background: url(../images/common-icons.svg) no-repeat -90px -497px;
+}
+
+.user-info .location-icon {
+  background: url(../images/common-icons.svg) no-repeat -321px -1522px;
+}
+
+.user-info p {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.71429rem;
+  color: #53547D;
+  margin: 0 0 0.3125rem 0;
+  padding: 0 0 0 1.7rem;
+}
+
+.recieved-dropdown-arrow.user-toggle .material-icons {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.recieved-dropdown-arrow.rotate-arrow .material-icons {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 /* Recieved ClientPoint CSS End Here */
