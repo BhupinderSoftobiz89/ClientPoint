@@ -17041,6 +17041,29 @@ input::-ms-clear {
 }
 
 /* Dashboard CSS end here */
+/* DashBoard Empty state start here */
+.dashboard-empty-state {
+  max-width: 40.625rem;
+  width: 100%;
+  margin: 33px auto 0;
+  text-align: center;
+}
+
+.dashboard-empty-state p {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 22px;
+  line-height: 1.57143rem;
+  color: #696A8E;
+  margin: 20px 0 0;
+}
+
+.dashboard-empty-state .link {
+  color: #5F63FF;
+  text-decoration: underline;
+}
+
+/* DashBoard Empty state end here */
 /* Add User CSS start here */
 .addUserHeader {
   display: -webkit-box;

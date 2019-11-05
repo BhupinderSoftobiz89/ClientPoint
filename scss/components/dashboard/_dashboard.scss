@@ -311,7 +311,7 @@
 		}
 	}
 	.anaytics-overview-header {
-		.viewMore  {
+		.viewMore {
 			.material-icons {
 				height: 1rem;
 			}
@@ -319,3 +319,26 @@
 	}
 }
 /* Dashboard CSS end here */
+
+/* DashBoard Empty state start here */
+
+.dashboard-empty-state {
+	max-width: 40.625rem;
+	width: $full-width;
+	@include margin-padding(all, 33px auto 0, all, null);
+	text-align: $text-center;
+	.dashboard-empty-img{
+
+	}
+	p {
+		@include font-rem(14px, 22px);
+		color: color('blue-grey','darken-1');
+		@include margin-padding(all, 20px 0 0, all, null);
+	}
+	.link {
+		color:color('indigo','base');
+		text-decoration: $text-decoration-underline;
+	}
+}
+
+/* DashBoard Empty state end here */
