@@ -17,8 +17,8 @@
 	@include margin-padding(all, null, all, 0 4.2rem !important);
 	.material-icons {
 		@include margin-padding(all, 0 0.2rem 0 0 !important, all, null);
-		height: 39px;
-		line-height: 39px;
+		height: 36px;
+		line-height: 36px;
 		vertical-align: middle;
 	}
 }
@@ -114,4 +114,14 @@
 .flex-none {
 	flex: $none !important;
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+	.new-btn-clientpoint {
+		.material-icons {
+			height: 39px;
+			line-height: 39px;
+		}
+	}
+ }
+
 /* Recieved ClientPoint CSS End Here */

@@ -17490,7 +17490,6 @@ input::-ms-clear {
   margin: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  height: 1.375rem;
 }
 
 .searchResultContent .collapsible li.active .material-icons {
@@ -17790,6 +17789,12 @@ input::-ms-clear {
   top: 5rem;
   left: 6.67rem;
   position: absolute;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .searchResultContent .rotateArrow .material-icons {
+    height: 1.37rem;
+  }
 }
 
 /* Search CSS end here */
@@ -18103,8 +18108,8 @@ input::-ms-clear {
 
 .new-btn-clientpoint .material-icons {
   margin: 0 0.2rem 0 0 !important;
-  height: 39px;
-  line-height: 39px;
+  height: 36px;
+  line-height: 36px;
   vertical-align: middle;
 }
 
@@ -18202,6 +18207,13 @@ input::-ms-clear {
   -webkit-box-flex: 0 !important;
       -ms-flex: none !important;
           flex: none !important;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .new-btn-clientpoint .material-icons {
+    height: 39px;
+    line-height: 39px;
+  }
 }
 
 /* Recieved ClientPoint CSS End Here */
