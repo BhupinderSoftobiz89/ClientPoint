@@ -50,6 +50,7 @@
 		height: 1.6rem;
 		margin-right: 0.625rem;
 		@include transition($transiton);
+		display: $display-inline-block;
 	}
 	.fileIcon {
 		background-position: -14px -15px;

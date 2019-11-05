@@ -139,7 +139,7 @@
 		// border-radius: $border-radius-5;
 		// background: color("shades", "white");
 		// box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
-		.collapsible {
+	
 			li {
 				border-radius: $border-radius-5;
 				background: color("shades", "white");
@@ -156,14 +156,14 @@
 			}
 			.collapsible-header {
 				border-top: $none;
-				border-radius: $zero;
 				background-color: color("shades", "transparent");
 				font-size: $font-size-sixteen;
 				color: color("grey", "darken-4");
 				text-transform: $text-uppercase;
 				font-weight: $font-weight-600;
 				border-bottom: 1px solid color("grey", "lighten-5");
-				padding: 19px 20px;
+				padding: 12px 20px !important;
+				@include border-radius(5px 5px 0 0);
 				.material-icons {
 					margin-left: $margin-left-auto;
 					margin-right: $zero;
@@ -172,7 +172,7 @@
 					@include transition(all 0.5s);
 				}
 			}
-		}
+		
 	}
 	.totalView {
 		padding: 1rem 0;
@@ -411,6 +411,7 @@
 			width: 2.36rem;
 			height: 2.36rem;
 			background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
+			display: $display-inline-block;
 		}
 		.calenderDateText {
 			color: color("grey", "darken-2");
@@ -423,6 +424,7 @@
 			height: 2.36rem;
 			background: #fafafb url(../images/common-icons.svg) no-repeat -86px -192px;
 			@include margin-padding(all, 0 2.3125rem 0 0, all, null);
+			display: $display-inline-block;
 		}
 	}
 	.calenederFilter {
@@ -435,6 +437,7 @@
 			width: 1.5rem;
 			height: 1.4rem;
 			@include margin-padding(all, 0 0 0 0, all, null);
+			display: $display-inline-block;
 		}
 		.DropdownArrow {
 			line-height: 12px;
@@ -700,6 +703,7 @@
 				text-transform: $text-uppercase;
 				font-weight: $font-weight-600;
 				line-height: $line-height-twentyfour;
+				@include margin-padding(all, 0 auto 0 0, all, null);
 			}
 			span {
 				margin-left: $margin-left-auto;
@@ -709,89 +713,91 @@
 			}
 		}
 	}
-	.q2Marketing {
-		background: color("shades", "white");
-		padding: 1.375rem;
-		border: 1px solid color("grey", "lighten-3");
-		margin-top: 1rem;
-		.q2Marketing-header {
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
-			.pdfIcon {
-				background: url(../images/common-icons.svg) no-repeat -168px -345px;
-				width: 1.3rem;
-				height: 1.55em;
-				margin-right: 0.625rem;
-			}
-			h5 {
-				margin: $zero;
-				font-weight: $font-weight-600;
-				line-height: 21px;
-				color: color("grey", "darken-4");
-			}
-			.marketingArrow {
-				margin-left: $margin-left-auto;
-				color: color("indigo", "base");
-				line-height: 21px;
-				.material-icons {
-					font-size: 25px;
-					@include transform(rotate(180deg));
-					@include transition(all 0.5s);
-				}
-			}
-			.marketingArrow.current {
-				.material-icons {
-					@include transform(rotate(0deg));
-				}
-			}
+}
+.q2Marketing {
+	background: color("shades", "white");
+	padding: 1.375rem;
+	border: 1px solid color("grey", "lighten-3");
+	margin-top: 1rem;
+	.q2Marketing-header {
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+		.pdfIcon {
+			background: url(../images/common-icons.svg) no-repeat -168px -345px;
+			width: 1.3rem;
+			height: 1.55em;
+			margin-right: 0.625rem;
 		}
-		.q2Marketing-content {
-			overflow: $auto;
-			@include margin-padding(all, 1.375rem 0 0 0, all, null);
-			table {
-				tr {
-					border: $none;
+		h5 {
+			margin: $zero;
+			font-weight: $font-weight-600;
+			line-height: 21px;
+			color: color("grey", "darken-4");
+			@include margin-padding(all, 0 auto 0 0, all, null);
+		}
+	}
+	.marketingArrow {
+		margin-left: $margin-left-auto;
+		color: color("indigo", "base");
+		line-height: 21px;
+
+		.material-icons {
+			font-size: 25px;
+			@include transform(rotate(180deg));
+			@include transition(all 0.5s);
+		}
+	}
+	.marketingArrow.current {
+		.material-icons {
+			@include transform(rotate(0deg));
+		}
+	}
+	.q2Marketing-content {
+		overflow: $auto;
+		@include margin-padding(all, 1.375rem 0 0 0, all, null);
+		table {
+			tr {
+				border: $none;
+			}
+			th {
+				font-weight: $font-weight-600;
+				text-transform: $text-uppercase;
+				line-height: $line-height-twentyfour;
+				@include margin-padding(all, null, all, 0 10px 0.75rem 10px);
+				border-bottom: 1px solid color("grey", "lighten-5");
+				white-space: $white-spacenowrap;
+				@include font-rem(14px);
+			}
+			td {
+				line-height: $line-height-twentyfour;
+				font-size: $font-size-fifteen;
+				color: color("blue-grey", "darken-1");
+				@include margin-padding(all, null, all, 0 10px);
+				white-space: $white-spacenowrap;
+				.eyeIcon {
+					background: url(../images/common-icons.svg) no-repeat -168px -577px;
+					width: 1.3rem;
+					height: 1.2em;
+					margin-left: 0.5rem;
+					display: $display-inline-block;
+					vertical-align: $verticle-align-middle;
 				}
-				th {
-					font-weight: $font-weight-600;
-					text-transform: $text-uppercase;
-					line-height: $line-height-twentyfour;
-					@include margin-padding(all, null, all, 0 10px 0.75rem 10px);
-					border-bottom: 1px solid color("grey", "lighten-5");
-					white-space: $white-spacenowrap;
-					@include font-rem(14px);
+			}
+			.progress {
+				height: 7px;
+				background-color: #efeff3;
+				@include border-radius(0);
+				margin: 1rem 0 0 0;
+				.determinate {
+					background-color: #19e4b1;
 				}
-				td {
-					line-height: $line-height-twentyfour;
-					font-size: $font-size-fifteen;
-					color: color("blue-grey", "darken-1");
-					@include margin-padding(all, null, all, 0 10px);
-					white-space: $white-spacenowrap;
-					.eyeIcon {
-						background: url(../images/common-icons.svg) no-repeat -168px -577px;
-						width: 1.3rem;
-						height: 1.2em;
-						margin-left: 0.5rem;
-						display: $display-inline-block;
-						vertical-align: $verticle-align-middle;
-					}
-				}
-				.progress {
-					height: 7px;
-					background-color: #efeff3;
-					@include border-radius(0);
-					margin: 1rem 0 0 0;
-					.determinate {
-						background-color: #19e4b1;
-					}
-				}
-				.progressText {
-					font-size: 10px;
-					line-height: $line-height-twentyfour;
-					display: $display-block;
-					color: color("blue-grey", "darken-1");
-				}
+			}
+			.progressText {
+				font-size: 10px;
+				line-height: $line-height-twentyfour;
+				display: $display-block;
+				color: color("blue-grey", "darken-1");
 			}
 		}
 	}
@@ -918,6 +924,7 @@
 		width: 2rem;
 		height: 1.85rem;
 		margin-right: 11px;
+		display: $display-inline-block;
 	}
 	.modal-content {
 		@include margin-padding(all, null, all, 0 3.125rem 1.3rem 3.125rem);
@@ -973,7 +980,7 @@
 			// margin-left: 2.5rem;
 			// margin-right: $zero !important;
 			// margin-top: $zero;
-			@include margin-padding(all, 0 0 0 2.5rem , all, 0 1.4rem);
+			@include margin-padding(all, 0 0 0 2.5rem, all, 0 1.4rem);
 		}
 	}
 	.textReplyArea {
@@ -1031,6 +1038,23 @@
 }
 .analyticsOverviewView {
 	@include margin-padding(all, null, all, 1.25rem);
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.q2Marketing {
+		.marketingArrow {
+			.material-icons {
+				height: 1.1875rem;
+			}
+		}
+	}
+	.analyticsOverviewView-row {
+		.collapsible-header {
+			.material-icons {
+				height: 1.5625rem;
+				line-height: 2.25rem;
+			}
+		}
+	} 
 }
 /* Reply Modal end here */
 

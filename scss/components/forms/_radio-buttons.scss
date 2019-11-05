@@ -30,8 +30,8 @@
   left: 0;
   top: 0;
   margin: 4px;
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   z-index: 0;
   transition: .28s ease;
 }
@@ -43,7 +43,7 @@
 [type="radio"]:checked + span:after,
 [type="radio"].with-gap:checked + span:before,
 [type="radio"].with-gap:checked + span:after {
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 [type="radio"]:not(:checked) + span:before,

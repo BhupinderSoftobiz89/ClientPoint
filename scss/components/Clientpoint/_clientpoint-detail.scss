@@ -215,6 +215,7 @@
 		width: 1.6rem;
 		height: 1.85rem;
 		margin-right: 11px;
+		display:$display-inline-block;
 	}
 	.modal-content {
 		padding: 0 3.6rem;
@@ -327,6 +328,7 @@
 			height: 2.9rem;
 			margin-left: $margin-left-auto;
 			border-radius: $border-radius-thirty;
+			display: $display-inline-block;
 		}
 	}
 	.dropdown-content {
@@ -354,6 +356,7 @@
 					width: 1.2rem;
 					height: 1.5rem;
 					margin-right: 1.1875rem;
+					display: $display-inline-block;
 				}
 			}
 		}

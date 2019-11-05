@@ -4,7 +4,7 @@
 		@include flexbox();
 		//@include flex-wrap($wrap);
 		align-items: $align-items-center;
-		flex: auto;
+		flex: 1;
 		justify-content: flex-end;
 		.commonDefaultSearch {
 			@include margin-padding(all, 0 1.25rem 0 0, all, null);
@@ -103,6 +103,7 @@
 		width: 1.3rem;
 		height: 1.4rem;
 		margin-right: 0.625rem;
+		display: $display-inline-block;
 	}
 	.options {
 		@include font-rem(14px, 16px);
@@ -149,9 +150,11 @@
 	right: 0;
 }
 .exportDownIcons {
+	align-items: $align-items-center;
 	@include flexbox();
 	.material-icons {
 		color: color("indigo", "base");
+		vertical-align: $verticle-align-middle;
 	}
 }
 /* Library CSS end here */

@@ -207,6 +207,7 @@
 		width: 1.5rem;
 		height: 1.85rem;
 		margin-right: 11px;
+		display: $display-inline-block;
 	}
 	.commonDefaultSearch {
 		max-width: 16.5rem;
@@ -467,6 +468,7 @@
 }
 .uploadFilesShow {
 	margin-top: 16px;
+
 	.FileIcon {
 		content: "";
 		display: $display-inline-block;
@@ -495,6 +497,8 @@
 	}
 	.closeFile {
 		margin-left: $margin-left-auto;
+		@include flexbox();
+		align-items: $align-items-center;
 		.material-icons {
 			color: color("indigo", "base");
 			@include flexbox();
@@ -664,6 +668,7 @@
 		width: 1.5rem;
 		height: 1.85rem;
 		margin-right: 11px;
+		display: $display-inline-block;
 	}
 	.modal-header {
 		padding: 2.3rem 1.875rem 2.1rem 3.5rem;
@@ -869,6 +874,7 @@
 		width: 1.5rem;
 		height: 1.85rem;
 		margin-right: 11px;
+		display: $display-inline-block;
 	}
 	.tabs {
 		.tab {
@@ -1403,6 +1409,7 @@
 		height: 1.25rem;
 		background: url(../images/common-icons.svg) no-repeat -382px -412px;
 		margin-right: 0.9375rem;
+		display: $display-inline-block;
 	}
 	.phoneIcon {
 		@extend .emailIcon;
@@ -1461,6 +1468,7 @@
 			letter-spacing: $zero;
 		}
 		.viewerBackArrow {
+			display: $display-inline-block;
 			width: 1.3rem;
 			height: 1.25rem;
 			background: url(../images/common-icons.svg) no-repeat -92px -1231px;
@@ -1478,96 +1486,6 @@
 		@include font-weight(normal);
 		text-transform: $text-capitalize;
 		letter-spacing: normal;
-	}
-	.collapsible {
-		border: $none;
-		box-shadow: $none;
-		li {
-			letter-spacing: normal;
-			text-transform: $text-capitalize;
-			width: $full-width;
-		}
-		li.active {
-			.material-icons {
-				@include transform(rotate(180deg));
-			}
-		}
-		.collapsible-header {
-			border-bottom: $none;
-			@include margin-padding(all, null, all, 1rem 0);
-			@include flex-wrap($wrap);
-			width: $full-width;
-			h6 {
-				@include font-rem(16px, 24px);
-				color: color("grey", "darken-4");
-				@include margin-padding(all, 0, all, null);
-				@include font-weight(medium);
-				text-transform: $text-capitalize;
-			}
-			.fileCount {
-				@include font-rem(14px, 24px);
-				color: color("grey", "darken-1");
-				@include margin-padding(all, 0 0 0 5px, all, null);
-				@include font-weight(normal);
-			}
-			.accordion-arrow {
-				margin-left: $margin-left-auto;
-				@include flexbox();
-				align-items: $align-items-center;
-				@include flex-wrap($wrap);
-
-				.material-icons {
-					width: 40px;
-					color: color("indigo", "base");
-					@include margin-padding(all, 0, all, null);
-					@include font-rem(31px);
-					@include transition(all 0.5s);
-				}
-			}
-			.collapseTopRow {
-				width: $full-width;
-				@include flexbox();
-				align-items: $align-items-center;
-				@include flex-wrap($wrap);
-			}
-		}
-		.fileIcon {
-			width: 1.3rem;
-			height: 1.6rem;
-			background: url(../images/common-icons.svg) no-repeat -172px -1227px;
-			margin-right: 1rem;
-		}
-		.collapsible-body {
-			@include margin-padding(all, null, all, 0);
-			border: $none;
-			width: $full-width;
-			.printDropdownContent {
-				min-width: 192px;
-				@include margin-padding(all, null, all, 28px 34px 27px 30px !important);
-				li {
-					color: color("grey", "darken-4");
-					@include font-rem(14px, 20px);
-					min-height: auto;
-					@include margin-padding(all, 0 0 25px 0, all, 0);
-					text-transform: $text-capitalize;
-					@include font-weight(normal);
-					&:hover {
-						background: color("shades", "transparent");
-					}
-					&:last-child {
-						@include margin-padding(all, 0, all, null);
-					}
-					a {
-						@include flexbox();
-						align-items: $align-items-center;
-						@include flex-wrap($wrap);
-						color: color("grey", "darken-4");
-						@include font-rem(14px, 20px);
-						@include margin-padding(all, null, all, 0 !important);
-					}
-				}
-			}
-		}
 	}
 
 	.printContentSaveHead {
@@ -1650,10 +1568,104 @@
 		height: 1.6rem;
 		background: url(../images/common-icons.svg) no-repeat -324px -1227px;
 		margin-right: 0.8125rem;
+		display: $display-inline-block;
 	}
 	.printIcon {
-		@extend .downloadIcon; 
+		@extend .downloadIcon;
 		background: url(../images/common-icons.svg) no-repeat -391px -1227px;
+	}
+
+	.collapsible {
+		border: $none;
+		box-shadow: $none;
+		li {
+			letter-spacing: normal;
+			text-transform: $text-capitalize;
+			width: $full-width;
+		}
+		li.active {
+			.material-icons {
+				@include transform(rotate(180deg));
+			}
+		}
+		.collapsible-header {
+			border-bottom: $none;
+			@include margin-padding(all, null, all, 1rem 0);
+			@include flex-wrap($wrap);
+			width: $full-width;
+			h6 {
+				@include font-rem(16px, 24px);
+				color: color("grey", "darken-4");
+				@include margin-padding(all, 0, all, null);
+				@include font-weight(medium);
+				text-transform: $text-capitalize;
+			}
+			.fileCount {
+				@include font-rem(14px, 24px);
+				color: color("grey", "darken-1");
+				@include margin-padding(all, 0 0 0 5px, all, null);
+				@include font-weight(normal);
+			}
+
+			.collapseTopRow {
+				width: $full-width;
+				@include flexbox();
+				align-items: $align-items-center;
+				@include flex-wrap($wrap);
+			}
+		}
+		.accordion-arrow {
+			margin-left: $margin-left-auto;
+			@include flexbox();
+			align-items: $align-items-center;
+			@include flex-wrap($wrap);
+
+			.material-icons {
+				width: 40px;
+				color: color("indigo", "base");
+				@include margin-padding(all, 0, all, null);
+				@include font-rem(31px);
+				@include transition(all 0.5s);
+			}
+		}
+		.fileIcon {
+			display: $display-inline-block;
+			width: 1.3rem;
+			height: 1.6rem;
+			background: url(../images/common-icons.svg) no-repeat -172px -1227px;
+			margin-right: 1rem;
+		}
+		.collapsible-body {
+			@include margin-padding(all, null, all, 0);
+			border: $none;
+			width: $full-width;
+			.printDropdownContent {
+				min-width: 192px;
+				@include margin-padding(all, null, all, 28px 34px 27px 30px !important);
+				li {
+					color: color("grey", "darken-4");
+					@include font-rem(14px, 20px);
+					min-height: auto;
+					@include margin-padding(all, 0 0 25px 0, all, 0);
+					text-transform: $text-capitalize;
+					@include font-weight(normal);
+					&:hover {
+						background: color("shades", "transparent");
+					}
+					&:last-child {
+						@include margin-padding(all, 0, all, null);
+					}
+					a {
+						@include flexbox();
+						align-items: $align-items-center;
+						@include flex-wrap($wrap);
+						color: color("grey", "darken-4");
+						@include font-rem(14px, 20px);
+						@include margin-padding(all, null, all, 0 !important);
+					}
+				}
+			}
+		}
 	}
 }
 .saveBorder {
@@ -1819,9 +1831,13 @@
 			@include margin-padding(all, 0 0 0 13px, all, null);
 		}
 		.removeFile {
+			@include flexbox();
+			align-items: $align-items-center;
+			@include flex-wrap($wrap);
 			margin-left: $margin-left-auto;
 			.material-icons {
 				color: color("indigo", "base");
+				height: 1.4rem;
 			}
 		}
 	}
@@ -1878,6 +1894,7 @@
 			width: 1.6rem;
 			height: 1.6rem;
 			margin-right: 11px;
+			display: $display-inline-block;
 		}
 		h5 {
 			color: color("grey", "darken-4");
@@ -1937,7 +1954,6 @@
 }
 
 /* Share Viewer Sidebar end here */
-
 
 /* Viewer Splash screen Start here */
 
@@ -2070,6 +2086,36 @@
 			@include justify-content(center);
 		}
 	}
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.creatingPerposalRight {
+		.collapsible-header {
+			.arrowAccordion {
+				height: 1.6rem;
+				line-height:2.1rem;
+			}
+		}
+	}
+	.accordion-arrow {
+		.material-icons {
+			height: 1.25rem;
+		}
+	}
+	.newperposalclientbar {
+		.fileMenu {
+			.material-icons {
+				height: 12px;
+			}
+		}
+	}
+	.AddRecipientModal  {
+		.modal-footer {
+			.material-icons {
+	height: 1.5rem;
+			}
+		}
+	}
+ 
 }
 
 /* Save Template Mdoal end  here */

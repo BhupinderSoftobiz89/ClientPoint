@@ -70,6 +70,10 @@
 		}
 		.material-icons {
 			color: $default-color;
+			height: 1.4rem;
+			line-height: 1.7rem;
+			// @include flexbox();
+			// align-items: $align-items-center;
 		}
 	}
 	.userLoginPanel {
@@ -82,6 +86,8 @@
 		color: $default-color;
 		font-size: 15px;
 		text-decoration: $text-decoration-underline;
+		display: $display-inline-block;
+		vertical-align: $verticle-align-middle;
 		strong {
 			font-weight: $font-weight-bold;
 		}
@@ -90,6 +96,8 @@
 		width: 3.54rem;
 		height: 3.54rem;
 		margin-right: 7px;
+		display: $display-inline-block;
+		vertical-align: $verticle-align-middle;
 	}
 	.userName {
 		color: color("grey", "darken-4");
@@ -186,6 +194,7 @@
 	}
 }
 .profileIcon {
+	display: $display-inline-block;
 	background: url(../images/common-icons.svg) no-repeat -323px -816px;
 	width: 1.3rem;
 	height: 1.85rem;

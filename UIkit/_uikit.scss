@@ -1,486 +1,490 @@
-@import "../scss/components/variables";
-@import "../scss/components/mixin";
-@import "../scss/components/extend";
+// @import "../scss/components/variables";
+// @import "../scss/components/mixin";
+// @import "../scss/components/extend";
 
 // UI Kit
 
 .uikit {
-  background: color("blue", "lighten-4");
-  //height: $height-hundred-per;
-  padding: 2rem;
-  .uikitinnerbox {
-    background: $whiteBg;
-    padding: 1.5rem;
-    border: 1px solid #eee;
-  }
+	background: color("blue", "lighten-4");
+	//height: $height-hundred-per;
+	padding: 2rem;
+	.uikitinnerbox {
+		background: $whiteBg;
+		padding: 1.5rem;
+		border: 1px solid #eee;
+	}
 }
 .mt-2 {
-  margin-top: 1rem;
+	margin-top: 1rem;
 }
 .mr-2 {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 .spacer {
-  margin-bottom: 3rem;
+	margin-bottom: 3rem;
 }
 .btn {
-  @extend %btnChangebg;
+	@extend %btnChangebg;
 }
 .btn-round {
-  @extend %btn-round;
+	@extend %btn-round;
 }
 .border-btn {
-  @extend %borderbtn;
+	@extend %borderbtn;
 }
 .switch label input[type="checkbox"]:checked + .lever {
-  background: color("indigo", "base");
+	background: color("indigo", "base");
 }
 .input-field {
-  font-weight: $font-weight-500;
-  text-transform: $text-uppercase;
-  @extend %labelCommon;
- 
-  label {
-    font-size: 1rem;
-  }
+	font-weight: $font-weight-500;
+	text-transform: $text-uppercase;
+	@extend %labelCommon;
+
+	label {
+		font-size: 1rem;
+	}
 }
 .select-wrapper li span {
-  color: color("grey", "darken-4");
-  text-transform: $text-capitalize;
-  font-weight: $font-weight-normal;
+	color: color("grey", "darken-4");
+	text-transform: $text-capitalize;
+	font-weight: $font-weight-normal;
 }
 .select-wrapper input.select-dropdown {
-  color: color("grey", "darken-2");
+	color: color("grey", "darken-2");
 }
 
 /* Modal CSS start here */
 
 .modal {
-  .modal-header {
-    padding: 1.875rem 1.875rem 1.3rem 2.9375rem;
-    align-items: $align-items-center;
-    @include flexbox();
-    @include flex-wrap($wrap);
-    h4 {
-      color: color("grey", "darken-4");
-      margin: $zero;
-      font-weight: $font-weight-bold;
-    }
-  }
-  .shareIcon {
-    line-height: $line-height-normal;
-    .material-icons {
-      margin-right: 13px;
-      color: color("indigo", "base");
-    }
-  }
-  .modal-content {
-    padding: $zero;
-  }
-  .modal-close {
-    margin-left: $margin-left-auto;
-    width: 2.5rem;
-    height: 2.5rem;
-    align-items: $align-items-center;
-    @include flexbox();
-    @include flex-wrap($wrap);
-    @include justify-content($justifycenter);
-    .material-icons {
-      color: color("indigo", "base");
-    }
-  }
+	.modal-header {
+		padding: 1.875rem 1.875rem 1.3rem 2.9375rem;
+		align-items: $align-items-center;
+		@include flexbox();
+		@include flex-wrap($wrap);
+		h4 {
+			color: color("grey", "darken-4");
+			margin: $zero;
+			font-weight: $font-weight-bold;
+		}
+	}
+	.shareIcon {
+		line-height: $line-height-normal;
+		display:$display-inline-block;
+		.material-icons {
+			margin-right: 13px;
+			color: color("indigo", "base");
+		}
+	}
+	.modal-content {
+		padding: $zero;
+	}
+	.modal-close {
+		margin-left: $margin-left-auto;
+		width: 2.5rem;
+		height: 2.5rem;
+		align-items: $align-items-center;
+		@include flexbox();
+		@include flex-wrap($wrap);
+		@include justify-content($justifycenter);
+		.material-icons {
+			color: color("indigo", "base");
+		}
+	}
 }
 
 /* Tabs Start here */
 
 .tabs-header {
-  border-bottom: 1px solid color("grey", "lighten-3");
-  margin-bottom: 1.6875rem;
-  padding-left: 40px;
+	border-bottom: 1px solid color("grey", "lighten-3");
+	margin-bottom: 1.6875rem;
+	padding-left: 40px;
 }
 .tabs {
-  overflow: $overflow-y-visible;
-  @include inlineflex();
-  .tab {
-    margin-right: 3.6rem;
-    letter-spacing: 0.7px;
-    a {
-      color: color("grey", "darken-1");
-      padding: $zero;
+	overflow: $overflow-y-visible;
+	@include inlineflex();
+	.tab {
+		margin-right: 3.6rem;
+		letter-spacing: 0.7px;
+		a {
+			color: color("grey", "darken-1");
+			padding: $zero;
 
-      &:hover {
-        color: color("grey", "darken-4");
-      }
-      &:focus.active {
-        background-color: color("shade", "transparent");
-      }
-    }
-    a.active {
-      color: color("grey", "darken-4");
-      font-weight: $font-weight-500;
-      background-color: color("shade", "transparent");
-      text-shadow: 0 1px 0px #000;
-    }
-  }
-  .indicator {
-    background-color: color("indigo", "base");
-    bottom: -3px;
-    //min-width: 50px;
-  }
+			&:hover {
+				color: color("grey", "darken-4");
+			}
+			&:focus.active {
+				background-color: color("shade", "transparent");
+			}
+		}
+		a.active {
+			color: color("grey", "darken-4");
+			font-weight: $font-weight-500;
+			background-color: color("shade", "transparent");
+			text-shadow: 0 1px 0px #000;
+		}
+	}
+	.indicator {
+		background-color: color("indigo", "base");
+		bottom: -3px;
+		z-index: 1;
+		//min-width: 50px;
+	}
 }
 .tabContent {
-  padding: 0 3.125rem 1.875rem;
-  //@include flexbox();
+	padding: 0 3.125rem 1.875rem;
+	//@include flexbox();
 }
 
 /* New Proposal Button Bar */
 
 .newperposalclientbar {
-  @include flexbox();
-  //padding:0.9375rem 1.875rem;
-  align-items: $align-items-center;
-  position: $position-relative;
-  .newperposalclientbar-right {
-    margin-left: $margin-left-auto;
-    @include flex-wrap($wrap);
-    @include flexbox();
-    align-items: $align-items-center;
+	@include flexbox();
+	//padding:0.9375rem 1.875rem;
+	align-items: $align-items-center;
+	position: $position-relative;
+	.newperposalclientbar-right {
+		margin-left: $margin-left-auto;
+		@include flex-wrap($wrap);
+		@include flexbox();
+		align-items: $align-items-center;
 
-    .fileMenu {
-      @include flexbox();
-      align-items: $align-items-center;
-      color: color("grey", "darken-4");
-      font-weight: $font-weight-500;
-      margin-right: 3.3rem;
-    }
-    .material-icons {
-      color: color("indigo", "base");
-      font-size: $font-size-twenty;
-      margin-right: 0.625rem;
-    }
-    .saveFile {
-      width: 40px;
-      height: 40px;
-      border-radius: $border-radius-thirty;
-      @include flexbox();
-      align-items: $align-items-center;
-      justify-content: $justifycenter;
-      margin-right: $zero;
-      background: url(../images/common-icons.svg) no-repeat -311px -335px;
-      display: $display-inline-block;
-      vertical-align: $verticle-align-middle;
-      &:hover,
-      &:focus,
-      &:active {
-        background: #efeff3 url(../images/common-icons.svg) no-repeat -311px -335px;
-      }
-    }
-  }
-  .dropdown-content {
-    top: 80% !important;
-    height: auto !important;
-    // right: 36px !important;
-    // left: auto !important;
-    min-width: 210px;
-    li {
-      a {
-        font-size: $font-size-fourteen;
-        line-height: $line-height-twenty;
-        padding: 23px 25px;
-      }
-    }
-  }
+		.fileMenu {
+			@include flexbox();
+			align-items: $align-items-center;
+			color: color("grey", "darken-4");
+			font-weight: $font-weight-500;
+			margin-right: 3.3rem;
+		}
+		.material-icons {
+			color: color("indigo", "base");
+			font-size: $font-size-twenty;
+			margin-right: 0.625rem;
+		}
+		.saveFile {
+			width: 40px;
+			height: 40px;
+			border-radius: $border-radius-thirty;
+			@include flexbox();
+			align-items: $align-items-center;
+			justify-content: $justifycenter;
+			margin-right: $zero;
+			background: url(../images/common-icons.svg) no-repeat -311px -335px;
+			display: $display-inline-block;
+			vertical-align: $verticle-align-middle;
+			&:hover,
+			&:focus,
+			&:active {
+				background: #efeff3 url(../images/common-icons.svg) no-repeat -311px -335px;
+			}
+		}
+	}
+	.dropdown-content {
+		top: 80% !important;
+		height: auto !important;
+		// right: 36px !important;
+		// left: auto !important;
+		min-width: 210px;
+		li {
+			a {
+				font-size: $font-size-fourteen;
+				line-height: $line-height-twenty;
+				padding: 23px 25px;
+			}
+		}
+	}
 }
 .commonDefaultSearch {
-  @include flexbox();
-  max-width: 16.5rem;
-  width: $full-width;
-  height: 35px;
-  position: $position-relative;
-  border-radius: $border-radius-thirty;
-  border: 1px solid color("grey", "lighten-3");
-  input[type="search"] {
-    height: 33px;
-    font-size: $font-size-fourteen;
-    border: $none;
-    padding: 0 1.25rem 0 2.5rem;
-    margin: $zero;
-    &:focus {
-      border-bottom: $none !important;
-    }
-  }
-  input[type="submit"] {
-    position: $position-absolute;
-    border: $border-none;
-    width: 1.67rem;
-    height: 1.67rem;
-    cursor: pointer;
-    background: url(../images/common-icons.svg) no-repeat -374px -119px;
-    top: 0.3125rem;
-    left: 0.625rem;
-    &:focus {
-      outline: $none;
-    }
-  }
+	@include flexbox();
+	max-width: 16.5rem;
+	width: $full-width;
+	height: 35px;
+	position: $position-relative;
+	border-radius: $border-radius-thirty;
+	border: 1px solid color("grey", "lighten-3");
+	input[type="search"] {
+		height: 33px;
+		font-size: $font-size-fourteen;
+		border: $none;
+		padding: 0 1.25rem 0 2.5rem;
+		margin: $zero;
+		&:focus {
+			border-bottom: $none !important;
+		}
+	}
+	input[type="submit"] {
+		position: $position-absolute;
+		border: $border-none;
+		width: 1.67rem;
+		height: 1.67rem;
+		cursor: pointer;
+		background: url(../images/common-icons.svg) no-repeat -374px -119px;
+		top: 0.3125rem;
+		left: 0.625rem;
+		&:focus {
+			outline: $none;
+		}
+	}
 }
 
 /* New Proposal Button Bar Title */
 
 .newClientPointTitleBar {
-  @include flexbox();
-  @include flex-wrap($wrap);
-  align-items: $align-items-center;
-  h4 {
-    font-weight: $font-weight-500;
-  }
-  .newClientPointTitleBar-right {
-    align-items: $align-items-center;
-    margin-left: $margin-left-auto;
-    @include flexbox();
-    @include flex-wrap($wrap);
-    .btn-round {
-      padding: 0 4.92rem;
-    }
-  }
-  .clientMenu {
-    margin-left: $margin-left-auto;
-    @include flexbox();
-    @include flex-wrap($wrap);
-  }
-  .clientMenuCommon {
-    width: 1.79rem;
-    height: 1.79rem;
-    background: url(../images/common-icons.svg) no-repeat 0 0;
-    margin-right: 2.5rem;
-  }
-  .clientMenuShare {
-    background-position: -16px -127px;
-  }
-  .clientMenuComment {
-    background-position: -89px -127px;
-  }
-  .clientMenuPdf {
-    background-position: -165px -127px;
-  }
-  .clientMenuNewsletter {
-    background-position: -241px -127px;
-  }
+	@include flexbox();
+	@include flex-wrap($wrap);
+	align-items: $align-items-center;
+	h4 {
+		font-weight: $font-weight-500;
+	}
+	.newClientPointTitleBar-right {
+		align-items: $align-items-center;
+		margin-left: $margin-left-auto;
+		@include flexbox();
+		@include flex-wrap($wrap);
+		.btn-round {
+			padding: 0 4.92rem;
+		}
+	}
+	.clientMenu {
+		margin-left: $margin-left-auto;
+		@include flexbox();
+		@include flex-wrap($wrap);
+	}
+	.clientMenuCommon {
+		width: 1.79rem;
+		height: 1.79rem;
+		background: url(../images/common-icons.svg) no-repeat 0 0;
+		margin-right: 2.5rem;
+	}
+	.clientMenuShare {
+		background-position: -16px -127px;
+	}
+	.clientMenuComment {
+		background-position: -89px -127px;
+	}
+	.clientMenuPdf {
+		background-position: -165px -127px;
+	}
+	.clientMenuNewsletter {
+		background-position: -241px -127px;
+	}
 }
 
 /* Title Bar - Proposal */
 
 .perposalDefaultbar {
-  align-items: $align-items-center;
-  @include flexbox();
-  @include flex-wrap($wrap);
-  position: $position-relative;
+	align-items: $align-items-center;
+	@include flexbox();
+	@include flex-wrap($wrap);
+	position: $position-relative;
 
-  .perposalDefaultbar-right {
-    margin-left: $margin-left-auto;
-    @include flexbox();
-    @include flex-wrap($wrap);
-    align-items: $align-items-center;
-  }
-  .calenderDate {
-    @include flexbox();
-    @include flex-wrap($wrap);
-    align-items: $align-items-center;
-  }
-  h4 {
-    @include flexbox();
-    @include flex-wrap($wrap);
-    align-items: $align-items-center;
-    margin: $zero;
-    .material-icons {
-      color: color("indigo", "base");
-      margin-top: 0.25rem;
-      font-size: 1.6rem;
-    }
-  }
+	.perposalDefaultbar-right {
+		margin-left: $margin-left-auto;
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+	}
+	.calenderDate {
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+	}
+	h4 {
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+		margin: $zero;
+		.material-icons {
+			color: color("indigo", "base");
+			margin-top: 0.25rem;
+			font-size: 1.6rem;
+		}
+	}
 
-  .prevDate {
-    border-radius: 0.125rem;
-    border: 1px solid color("grey", "lighten-5");
-    width: 2.36rem;
-    height: 2.36rem;
-    background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
-  }
-  .calenderDateText {
-    color: color("grey", "darken-2");
-    margin: 0 1.6rem;
-  }
-  .nextDate {
-    border-radius: 0.125rem;
-    border: 1px solid color("grey", "lighten-5");
-    width: 2.36rem;
-    height: 2.36rem;
-    background: #fafafb url(../images/common-icons.svg) no-repeat -86px -192px;
-    margin-right: 2.3125rem;
-  }
-  .dropdown-content {
-    top: 50px !important;
-    left: 0 !important;
-  }
+	.prevDate {
+		border-radius: 0.125rem;
+		border: 1px solid color("grey", "lighten-5");
+		width: 2.36rem;
+		height: 2.36rem;
+		background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
+	}
+	.calenderDateText {
+		color: color("grey", "darken-2");
+		margin: 0 1.6rem;
+	}
+	.nextDate {
+		border-radius: 0.125rem;
+		border: 1px solid color("grey", "lighten-5");
+		width: 2.36rem;
+		height: 2.36rem;
+		background: #fafafb url(../images/common-icons.svg) no-repeat -86px -192px;
+		margin-right: 2.3125rem;
+	}
+	.dropdown-content {
+		top: 50px !important;
+		left: 0 !important;
+	}
 }
 
 /* Filter Common */
 .filterIcon {
-  background: url(../images/common-icons.svg) no-repeat -324px -496px;
-  width: 1.2rem;
-  height: 1.2rem;
-  margin-right: 0.6rem;
-  display: $display-inline-block;
+	background: url(../images/common-icons.svg) no-repeat -324px -496px;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-right: 0.6rem;
+	display: $display-inline-block;
 }
 .d-flex {
-  @include flexbox();
-  @include flex-wrap($wrap);
-  align-items: $align-items-center;
+	@include flexbox();
+	@include flex-wrap($wrap);
+	align-items: $align-items-center;
 }
 .type {
-  position: $position-relative;
-  margin-left: 10px;
-  margin-right: 20px;
-  @include flexbox();
-  @include flex-wrap($wrap);
-  align-items: $align-items-center;
-  h5 {
-    margin: $zero;
-  }
+	position: $position-relative;
+	margin-left: 10px;
+	margin-right: 20px;
+	@include flexbox();
+	@include flex-wrap($wrap);
+	align-items: $align-items-center;
+	h5 {
+		margin: $zero;
+	}
 }
 .m-0 {
-  margin: $zero !important;
+	margin: $zero !important;
 }
 .commonDropdownFilter {
-  line-height: 12px;
-  color: color("indigo", "base");
+	line-height: 12px;
+	color: color("indigo", "base");
 }
 .dropdown-content.filterDropdown {
-  padding: 16px 17px;
+	padding: 16px 17px;
 }
 .filterDropdown {
-  min-width: 175px;
-  top: 100% !important;
-  left: auto !important;
-  right: 0;
-  li {
-    min-height: inherit;
-    margin-bottom: 1.3rem;
-    &:hover {
-      background-color: color("shades", "transparent");
-    }
-    label {
-      span {
-        font-size: $font-size-fourteen !important;
-        color: color("grey", "darken-4");
-      }
-    }
-  }
+	min-width: 175px;
+	top: 100% !important;
+	left: auto !important;
+	right: 0;
+	li {
+		min-height: inherit;
+		margin-bottom: 1.3rem;
+		&:hover {
+			background-color: color("shades", "transparent");
+		}
+		label {
+			span {
+				font-size: $font-size-fourteen !important;
+				color: color("grey", "darken-4");
+			}
+		}
+	}
 }
 
 .prevDateIcon {
-  border-radius: 0.125rem;
-  border: 1px solid #efeff3;
-  width: 2.36rem;
-  height: 2.36rem;
-  background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
+	border-radius: 0.125rem;
+	border: 1px solid #efeff3;
+	width: 2.36rem;
+	height: 2.36rem;
+	background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
+	display: $display-inline-block;
 }
 .calenderDateTextUi {
-  color: #53547d;
-  margin: 0 1.6rem;
+	color: #53547d;
+	margin: 0 1.6rem;
 }
 .nextDateUi {
-  border-radius: 0.125rem;
-  border: 1px solid #efeff3;
-  width: 2.36rem;
-  height: 2.36rem;
-  background: #fafafb url(../images/common-icons.svg) no-repeat -86px -192px;
+	border-radius: 0.125rem;
+	border: 1px solid #efeff3;
+	width: 2.36rem;
+	height: 2.36rem;
+	background: #fafafb url(../images/common-icons.svg) no-repeat -86px -192px;
+	display: $display-inline-block;
 }
 .calenderIconUi {
-  background: url(../images/common-icons.svg) no-repeat -243px -495px;
-  width: 1.5rem;
-  height: 1.4rem;
-  margin-right: 0rem;
-  display: $display-inline-block;
+	background: url(../images/common-icons.svg) no-repeat -243px -495px;
+	width: 1.5rem;
+	height: 1.4rem;
+	margin-right: 0rem;
+	display: $display-inline-block;
 }
 
 .CalenderDropDownContentUi {
-  min-width: 255px;
-  li {
-    min-height: inherit;
-    a {
-      text-align: $text-center;
-      font-size: $font-size-fourteen;
-      color: color("grey", "darken-4");
-      padding: 11px 16px;
-    }
-    &:hover {
-      background: color("grey", "lighten-4");
-      color: color("indigo", "base");
-    }
-  }
-  .calenderHeader-row {
-    @include flexbox();
-    @include flex-wrap($wrap);
-    align-items: $align-items-center;
-    border-bottom: 1px solid #efeff3;
-  }
-  .calenderHeader {
-    &:hover {
-      background: color("shades", "transparent");
-    }
-  }
-  .from {
-    width: 4.5rem;
-    height: 3.5625rem;
-    @include flexbox();
-    @include flex-wrap($wrap);
-    align-items: $align-items-center;
-    justify-content: $justifycenter;
-    background: color("grey", "lighten-4");
-    border-right: 1px solid #efeff3;
-    font-size: 12px;
-    text-transform: $text-uppercase;
-    color: #a9a9be;
-    font-weight: $font-weight-500;
-    letter-spacing: 0.25px;
-  }
-  .dateCalenderUi {
-    @include flexbox();
-    @include flex-wrap($wrap);
-    align-items: $align-items-center;
-    font-size: 1rem;
-    color: color("grey", "darken-4");
-    padding: 0 1.25rem;
-  }
+	min-width: 255px;
+	li {
+		min-height: inherit;
+		a {
+			text-align: $text-center;
+			font-size: $font-size-fourteen;
+			color: color("grey", "darken-4");
+			padding: 11px 16px;
+		}
+		&:hover {
+			background: color("grey", "lighten-4");
+			color: color("indigo", "base");
+		}
+	}
+	.calenderHeader-row {
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+		border-bottom: 1px solid #efeff3;
+	}
+	.calenderHeader {
+		&:hover {
+			background: color("shades", "transparent");
+		}
+	}
+	.from {
+		width: 4.5rem;
+		height: 3.5625rem;
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+		justify-content: $justifycenter;
+		background: color("grey", "lighten-4");
+		border-right: 1px solid #efeff3;
+		font-size: 12px;
+		text-transform: $text-uppercase;
+		color: #a9a9be;
+		font-weight: $font-weight-500;
+		letter-spacing: 0.25px;
+	}
+	.dateCalenderUi {
+		@include flexbox();
+		@include flex-wrap($wrap);
+		align-items: $align-items-center;
+		font-size: 1rem;
+		color: color("grey", "darken-4");
+		padding: 0 1.25rem;
+	}
 }
 
 .calenderDateIconUi {
-  background: url(../images/common-icons.svg) no-repeat -239px -573px;
-  width: 29px;
-  height: 27px;
-  margin-right: 0.6rem;
+	background: url(../images/common-icons.svg) no-repeat -239px -573px;
+	width: 29px;
+	height: 27px;
+	margin-right: 0.6rem;
 }
 .calenderDateIconUi:focus {
-  background: #fafafb url(../images/common-icons.svg) no-repeat -239px -491px;
+	background: #fafafb url(../images/common-icons.svg) no-repeat -239px -491px;
 }
 .ml-15 {
-  margin-left: 15px;
+	margin-left: 15px;
 }
 
 .optionBtn {
-  width: 30px;
-  height: 30px;
-  @include flexbox();
-  @include flex-wrap($wrap);
-  align-items: $align-items-center;
-  background: #fafafb url(../images/common-icons.svg) no-repeat -315px -339px;
-  border-radius: $border-radius-hundred;
+	width: 30px;
+	height: 30px;
+	@include flexbox();
+	@include flex-wrap($wrap);
+	align-items: $align-items-center;
+	background: #fafafb url(../images/common-icons.svg) no-repeat -315px -339px;
+	border-radius: $border-radius-hundred;
 }
 .optionDropDownContentUi {
-  li {
-    font-size: $font-size-fourteen;
-    a {
-      font-size: $font-size-fourteen;
-    }
-  }
+	li {
+		font-size: $font-size-fourteen;
+		a {
+			font-size: $font-size-fourteen;
+		}
+	}
 }

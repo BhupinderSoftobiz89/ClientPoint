@@ -23,7 +23,9 @@
     @include flex-wrap($wrap);
     height: $height-hundred-per;
 }
-
+input::-ms-clear {
+    display: none;
+}
 
 // Custom Scrollbar
 

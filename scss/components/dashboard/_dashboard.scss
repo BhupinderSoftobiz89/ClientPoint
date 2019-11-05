@@ -19,13 +19,16 @@
 		align-items: $align-items-center;
 		border-radius: $zero;
 		background-color: color("shades", "transparent");
-		font-size: $font-size-sixteen;
-		color: color("grey", "darken-4");
-		text-transform: $text-uppercase;
-		font-weight: $font-weight-600;
 		border-bottom: 1px solid color("grey", "lighten-5");
 		padding: 19px 20px;
 		width: $full-width;
+		h5 {
+			color: color("grey", "darken-4");
+			font-size: $font-size-sixteen;
+			text-transform: $text-uppercase;
+			font-weight: $font-weight-600;
+			@include margin-padding(all, 0 auto 0 0, all, null);
+		}
 		.material-icons {
 			margin-right: $zero;
 			color: color("indigo", "base");
@@ -195,7 +198,8 @@
 		width: 1.4rem;
 		height: 1.4rem;
 		margin-right: 0.8rem;
-		background: url(../images/common-icons.svg) no-repeat -170px -897px ;
+		background: url(../images/common-icons.svg) no-repeat -170px -897px;
+		display: $display-inline-block;
 	}
 	.commentIcon {
 		@extend .shareIcon;
@@ -263,7 +267,7 @@
 		label {
 			span {
 				@include font-rem(14px);
-				color: color('grey','darken-4');
+				color: color("grey", "darken-4");
 				@include font-weight(medium);
 			}
 		}
@@ -272,26 +276,46 @@
 		padding-left: 27px;
 	}
 	.btn-flat {
-		color:color('indigo','base');
+		color: color("indigo", "base");
 		letter-spacing: 0.7px;
 		@include font-weight(medium);
 	}
 }
 .filterBorder {
-	border:$none;
-	border-bottom:1px solid color('grey','lighten-5');
+	border: $none;
+	border-bottom: 1px solid color("grey", "lighten-5");
 	@include margin-padding(all, 1.875rem 0 0, all, null);
 }
 .filterArrowDropdown {
-	height: 21px;
 	.material-icons {
 		@include transform(rotate(180deg));
 		@include transition(all 0.5s);
+		vertical-align: $verticle-align-middle;
 	}
 }
 .filterArrowDropdown.active {
 	.material-icons {
 		@include transform(rotate(0deg));
+	}
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.filterArrowDropdown {
+		.material-icons {
+			height: 1.2rem;
+			vertical-align: $verticle-align-middle;
+		}
+	}
+	.activityHeader {
+		.material-icons {
+			height: 1.5rem;
+		}
+	}
+	.anaytics-overview-header {
+		.viewMore  {
+			.material-icons {
+				height: 1rem;
+			}
+		}
 	}
 }
 /* Dashboard CSS end here */
