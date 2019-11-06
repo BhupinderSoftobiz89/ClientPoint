@@ -193,6 +193,11 @@
 		}
 	}
 }
+.switcherText {
+	@include font-rem(14px, 16px);
+	letter-spacing: 0.25px;
+	color: color('grey','darken-4');
+}
 .commonDefaultSearch {
 	@include flexbox();
 	max-width: 16.5rem;

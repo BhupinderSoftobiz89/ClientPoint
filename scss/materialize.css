@@ -9307,6 +9307,15 @@ input[type=range]::-ms-thumb {
   padding: 23px 25px;
 }
 
+.switcherText {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 16px;
+  line-height: 1.14286rem;
+  letter-spacing: 0.25px;
+  color: #181A51;
+}
+
 .commonDefaultSearch {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13821,6 +13830,22 @@ input::-ms-clear {
   }
 }
 
+.new-proposal-margin {
+  margin: 0 0 2rem 0 !important;
+}
+
+.empty-state-padding {
+  padding: 2.1875rem 2.8125rem !important;
+}
+
+.empty-state-padding p {
+  margin: 0;
+}
+
+.border-none {
+  border-right: none !important;
+}
+
 /* Save Template Mdoal end  here */
 /* Analytics Overview Page start here */
 .anaytics-overview .anaytics-row h4 {
@@ -15237,6 +15262,29 @@ input::-ms-clear {
   }
 }
 
+.analytics-empty-state {
+  max-width: 37.5rem;
+  width: 100%;
+  margin: 2.6875rem auto;
+  text-align: center;
+}
+
+.analytics-empty-state p {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.71429rem;
+  color: #696A8E;
+}
+
+.analytics-empty-state .link {
+  text-decoration: underline;
+}
+
+.empty-state-height {
+  height: calc(100% - 71px) !important;
+}
+
 /* Reply Modal end here */
 /* Analytics Overview Page end here */
 /* Theme Page start here */
@@ -15250,7 +15298,7 @@ input::-ms-clear {
 }
 
 .clientPoint-file .newClientPointTitleBar-right .themeBtn .material-icons {
-  margin-right: 5px;
+  margin-right: 5px !important;
 }
 
 .clientPoint-file .default {
@@ -17820,6 +17868,28 @@ input::-ms-clear {
   }
 }
 
+.search-empty-state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5625rem 0 0 0;
+  padding: 0 1.875rem;
+}
+
+.search-empty-state p {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.85714rem;
+  color: #696A8E;
+  margin: 0 1rem 0 0;
+}
+
 /* Search CSS end here */
 /* Library CSS start here */
 .newClientPointTitleBar .library-header-right {
@@ -18040,6 +18110,25 @@ input::-ms-clear {
 .exportDownIcons .material-icons {
   color: #5F63FF;
   vertical-align: middle;
+}
+
+.library-empty-state {
+  text-align: center;
+  max-width: 24rem;
+  width: 100%;
+  margin: 5rem auto;
+}
+
+.library-empty-state p {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.71429rem;
+  color: #696A8E;
+}
+
+.library-empty-state .link {
+  text-decoration: underline;
 }
 
 /* Library CSS end here */

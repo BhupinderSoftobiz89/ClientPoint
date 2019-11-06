@@ -1056,6 +1056,23 @@
 		}
 	} 
 }
+
+.analytics-empty-state {
+	max-width: 37.5rem;
+	width: $full-width;
+	@include margin-padding(all, 2.6875rem auto, all, null);
+	text-align: $text-center;
+	p {
+		@include font-rem(14px, 24px);
+		color: color('blue-grey','darken-1');
+	}
+	.link {
+		text-decoration: $text-decoration-underline;
+	}
+}
+.empty-state-height {
+	height: calc(100% - 71px) !important;
+}
 /* Reply Modal end here */
 
 /* Analytics Overview Page end here */

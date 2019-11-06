@@ -157,4 +157,17 @@
 		vertical-align: $verticle-align-middle;
 	}
 }
+.library-empty-state {
+	text-align: $text-center;
+	max-width: 24rem;
+	width: $full-width;
+	@include margin-padding(all, 5rem auto, all, null);
+	p {
+		@include font-rem(14px, 24px);
+		color: color('blue-grey','darken-1');
+	}
+	.link {
+		text-decoration: $text-decoration-underline;
+	}
+}
 /* Library CSS end here */

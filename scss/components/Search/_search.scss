@@ -405,4 +405,15 @@
 	}
 }
 
+.search-empty-state {
+	@include flexbox();
+	@include flex-wrap($wrap);
+	align-items: $align-items-center;
+	@include margin-padding(all, 1.5625rem 0 0 0, all, 0 1.875rem);
+	p {
+		@include font-rem(14px, 26px);
+		color: color("blue-grey", "darken-1");
+		@include margin-padding(all, 0 1rem 0 0, all, null);
+	}
+}
 /* Search CSS end here */

@@ -934,6 +934,7 @@
 
 .clientpointPreview {
 	//@include relative;
+	//display: $none;
 	.clientPointPowerdBy {
 		background: color("grey", "darken-4");
 		width: $full-width;
@@ -2117,5 +2118,16 @@
 	}
  
 }
-
+.new-proposal-margin {
+	@include margin-padding(all, 0 0 2rem 0 !important, all, null);
+}
+.empty-state-padding {
+	@include margin-padding(all, null, all, 2.1875rem 2.8125rem !important);
+	p {
+		@include margin-padding(all, 0, all, null);
+	}
+}
+.border-none {
+	border-right:$none !important;
+}
 /* Save Template Mdoal end  here */
