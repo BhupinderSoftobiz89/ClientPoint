@@ -67,7 +67,7 @@
 			font-weight: $font-weight-bold;
 		}
 	}
-	.shareIcon {
+	.share-icon {
 		line-height: $line-height-normal;
 		display:$display-inline-block;
 		.material-icons {
@@ -130,19 +130,19 @@
 		//min-width: 50px;
 	}
 }
-.tabContent {
+.tab-content {
 	padding: 0 3.125rem 1.875rem;
 	//@include flexbox();
 }
 
 /* New Proposal Button Bar */
 
-.newperposalclientbar {
+.newperposal-client-bar  {
 	@include flexbox();
 	//padding:0.9375rem 1.875rem;
 	align-items: $align-items-center;
 	position: $position-relative;
-	.newperposalclientbar-right {
+	.newperposal-clientbar-right {
 		margin-left: $margin-left-auto;
 		@include flex-wrap($wrap);
 		@include flexbox();
@@ -198,7 +198,7 @@
 	letter-spacing: 0.25px;
 	color: color('grey','darken-4');
 }
-.commonDefaultSearch {
+.common-default-search {
 	@include flexbox();
 	max-width: 16.5rem;
 	width: $full-width;
@@ -233,14 +233,14 @@
 
 /* New Proposal Button Bar Title */
 
-.newClientPointTitleBar {
+.newclientpoint-title-bar {
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
 	h4 {
 		font-weight: $font-weight-500;
 	}
-	.newClientPointTitleBar-right {
+	.newclientpoint-title-bar-right {
 		align-items: $align-items-center;
 		margin-left: $margin-left-auto;
 		@include flexbox();
@@ -288,7 +288,7 @@
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
 	}
-	.calenderDate {
+	.calender-date {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
@@ -305,18 +305,18 @@
 		}
 	}
 
-	.prevDate {
+	.prev-date-calender {
 		border-radius: 0.125rem;
 		border: 1px solid color("grey", "lighten-5");
 		width: 2.36rem;
 		height: 2.36rem;
 		background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
 	}
-	.calenderDateText {
+	.calender-dateText {
 		color: color("grey", "darken-2");
 		margin: 0 1.6rem;
 	}
-	.nextDate {
+	.next-date-calender {
 		border-radius: 0.125rem;
 		border: 1px solid color("grey", "lighten-5");
 		width: 2.36rem;
@@ -331,7 +331,7 @@
 }
 
 /* Filter Common */
-.filterIcon {
+.filter-icon {
 	background: url(../images/common-icons.svg) no-repeat -324px -496px;
 	width: 1.2rem;
 	height: 1.2rem;
@@ -384,7 +384,7 @@
 	}
 }
 
-.prevDateIcon {
+.prev-date-calenderIcon {
 	border-radius: 0.125rem;
 	border: 1px solid #efeff3;
 	width: 2.36rem;
@@ -392,11 +392,11 @@
 	background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
 	display: $display-inline-block;
 }
-.calenderDateTextUi {
+.calender-dateTextUi {
 	color: #53547d;
 	margin: 0 1.6rem;
 }
-.nextDateUi {
+.next-date-calenderUi {
 	border-radius: 0.125rem;
 	border: 1px solid #efeff3;
 	width: 2.36rem;
@@ -463,13 +463,13 @@
 	}
 }
 
-.calenderDateIconUi {
+.calender-dateIconUi {
 	background: url(../images/common-icons.svg) no-repeat -239px -573px;
 	width: 29px;
 	height: 27px;
 	margin-right: 0.6rem;
 }
-.calenderDateIconUi:focus {
+.calender-dateIconUi:focus {
 	background: #fafafb url(../images/common-icons.svg) no-repeat -239px -491px;
 }
 .ml-15 {

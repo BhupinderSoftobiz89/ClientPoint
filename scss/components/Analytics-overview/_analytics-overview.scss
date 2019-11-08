@@ -25,7 +25,7 @@
 				line-height: $line-height-twentyfour;
 				margin: $zero;
 			}
-			.viewMore {
+			.view-more {
 				color: color("indigo", "base");
 				margin-left: $margin-left-auto;
 				line-height: $line-height-twentyfour;
@@ -134,8 +134,8 @@
 		}
 	}
 }
-.analyticsOverviewView {
-	.analyticsOverviewView-row {
+.analytics-overview-view {
+	.analytics-overview-view-row {
 		// border-radius: $border-radius-5;
 		// background: color("shades", "white");
 		// box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
@@ -150,7 +150,7 @@
 				}
 			}
 			li.active {
-				.rotateArrow {
+				.rotate-arrow {
 					@include transform(rotate(180deg));
 				}
 			}
@@ -174,10 +174,10 @@
 			}
 		
 	}
-	.totalView {
+	.total-view {
 		padding: 1rem 0;
 		border-bottom: 1px solid color("grey", "lighten-5");
-		.totalView-row {
+		.total-view-row {
 			@include flexbox();
 			align-items: $align-items-center;
 			padding: 0 2rem;
@@ -201,7 +201,7 @@
 			}
 		}
 	}
-	.topViewers {
+	.top-viewers {
 		padding: 1.75rem 2rem;
 		h5 {
 			text-transform: $text-uppercase;
@@ -249,7 +249,7 @@
 			}
 		}
 	}
-	.topFileViewed {
+	.top-file-viewed {
 		border-top: 1px solid color("grey", "lighten-5");
 		padding: 1.75rem 2rem;
 		h6 {
@@ -274,7 +274,7 @@
 				margin: $zero;
 				color: color("grey", "darken-2");
 			}
-			.fileArrow {
+			.file-arrow {
 				color: color("indigo", "base");
 				font-size: 1.9rem;
 				margin-left: $margin-left-auto;
@@ -282,7 +282,7 @@
 				transition: $transiton;
 			}
 		}
-		.pdfIcon {
+		.pdf-icon {
 			background: url(../images/common-icons.svg) no-repeat -169px -346px;
 			width: 1.3rem;
 			height: 1.6rem;
@@ -326,7 +326,7 @@
 		color: color("grey", "darken-4");
 		margin: $zero;
 	}
-	.filterIcon {
+	.filter-icon {
 		background: url(../images/common-icons.svg) no-repeat -324px -496px;
 		width: 1.2rem;
 		height: 1.2rem;
@@ -344,7 +344,7 @@
 			}
 		}
 	}
-	.allViewers {
+	.all-viewers {
 		position: $position-relative;
 		h5 {
 			@include flexbox();
@@ -400,12 +400,12 @@
 			}
 		}
 	}
-	.calenderDate {
+	.calender-date {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
 		margin-left: $margin-left-auto;
-		.prevDate {
+		.prev-date-calender {
 			border-radius: 0.125rem;
 			border: 1px solid color("grey", "lighten-5");
 			width: 2.36rem;
@@ -413,11 +413,11 @@
 			background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
 			display: $display-inline-block;
 		}
-		.calenderDateText {
+		.calender-dateText {
 			color: color("grey", "darken-2");
 			margin: 0 1.6rem;
 		}
-		.nextDate {
+		.next-date-calender {
 			@include border-radius(0.125rem);
 			border: 1px solid color("grey", "lighten-5");
 			width: 2.36rem;
@@ -427,7 +427,7 @@
 			display: $display-inline-block;
 		}
 	}
-	.calenederFilter {
+	.caleneder-filter {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
@@ -478,7 +478,7 @@
 					font-size: $font-size-fourteen;
 					color: color("grey", "darken-4");
 				}
-				.calenderDateIcon {
+				.calender-dateIcon {
 					background: url(../images/common-icons.svg) no-repeat -239px -573px;
 					width: 29px;
 					height: 27px;
@@ -580,23 +580,23 @@
 		}
 	}
 }
-.contactList-row {
+.contact-list-row {
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
 	margin-top: 10px;
-	.phoneContact,
-	.mobileContact,
-	.linkedInContact {
+	.phone-contact,
+	.mobile-contact,
+	.linkedIn-contact {
 		background: url(../images/common-icons.svg) no-repeat -383px -492px;
 		width: 1.55rem;
 		height: 1.55em;
 		margin-right: 0.625rem;
 	}
-	.mobileContact {
+	.mobile-contact {
 		background-position: -26px -575px;
 	}
-	.linkedInContact {
+	.linkedIn-contact {
 		background-position: -93px -575px;
 	}
 	p {
@@ -605,12 +605,12 @@
 		color: color("grey", "darken-2");
 	}
 }
-.timeSpent {
+.time-spent {
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-item-start;
 	@include margin-padding(all, 0.625rem 0 0 0, all, null);
-	.timeSpentLeft {
+	.time-spent-left {
 		width: 30%;
 		span {
 			line-height: $line-height-twentyfour;
@@ -635,7 +635,7 @@
 			background-color: #19e4b1;
 		}
 	}
-	.timeSpentRight {
+	.time-spent-right {
 		width: 40%;
 		//margin-left: $margin-left-auto;
 		span {
@@ -646,48 +646,48 @@
 		}
 	}
 }
-.topFileViewedContent {
+.top-file-viewedcontent {
 	flex: 1;
 }
 .bottom-border {
 	border-bottom: 1px solid color("grey", "lighten-5");
 }
-.analyticsPadding {
+.analytics-padding{
 	// padding: 20px !important;
 	background: color("grey", "lighten-4");
 }
-.fullHeight {
+.full-height {
 	height: $height-hundred-per !important;
 }
-.heightAuto {
+.height-auto {
 	height: $height-auto !important;
 }
 .no-bg {
 	background: color("shades", "transparent") !important;
 	border: $none !important;
 }
-.viewers-content.contentShow {
+.viewers-content.content-show {
 	height: 49px;
 	overflow: hidden;
 	@include transition(all 0.5s);
 }
-.collapseArrow.rotateArrowdrop .material-icons {
+.collapseArrow.rotate-arrowdrop .material-icons {
 	@include transform(rotate(180deg));
 }
-.top-file-row.topFileCollapse {
+.top-file-row.top-file-collapse {
 	height: 26px;
 	overflow: hidden;
 }
-.fileArrow.fileArrowRotate {
+.file-arrow.file-arrowRotate {
 	@include transform(rotate(180deg));
 }
 
-.ipAddress {
+.ip-address {
 	margin-top: 1.5625rem;
 	padding: 0 2.2rem;
 	display: $diplay-none;
-	.ipAddress-top {
-		.ipAddress-row {
+	.ip-address-top {
+		.ip-address-row {
 			@include flexbox();
 			@include flex-wrap($wrap);
 			align-items: $align-items-center;
@@ -714,16 +714,16 @@
 		}
 	}
 }
-.q2Marketing {
+.q2-marketing {
 	background: color("shades", "white");
 	padding: 1.375rem;
 	border: 1px solid color("grey", "lighten-3");
 	margin-top: 1rem;
-	.q2Marketing-header {
+	.q2-marketing-header {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
-		.pdfIcon {
+		.pdf-icon {
 			background: url(../images/common-icons.svg) no-repeat -168px -345px;
 			width: 1.3rem;
 			height: 1.55em;
@@ -737,7 +737,7 @@
 			@include margin-padding(all, 0 auto 0 0, all, null);
 		}
 	}
-	.marketingArrow {
+	.marketing-arrow  {
 		margin-left: $margin-left-auto;
 		color: color("indigo", "base");
 		line-height: 21px;
@@ -748,12 +748,12 @@
 			@include transition(all 0.5s);
 		}
 	}
-	.marketingArrow.current {
+	.marketing-arrow .current {
 		.material-icons {
 			@include transform(rotate(0deg));
 		}
 	}
-	.q2Marketing-content {
+	.q2-marketing-content {
 		overflow: $auto;
 		@include margin-padding(all, 1.375rem 0 0 0, all, null);
 		table {
@@ -808,13 +808,13 @@
 .anaytics-overview-row.anaytics-overviewbg {
 	background: color("grey", "lighten-4");
 }
-.anaytics-overview-row.anaytics-overviewbg .viewMoreClick .material-icons {
+.anaytics-overview-row.anaytics-overviewbg .view-moreClick .material-icons {
 	@include transform(rotate(-90deg));
 }
-.anaytics-overview-row.anaytics-overviewbg.addbg .viewMoreClick .material-icons {
+.anaytics-overview-row.anaytics-overviewbg.addbg .view-moreClick .material-icons {
 	@include transform(rotate(0deg));
 }
-.newClientPointTitleBar {
+.newclientpoint-title-bar {
 	@include relative();
 
 	&:hover {
@@ -861,7 +861,7 @@
 		}
 	}
 }
-.clientpointTitle {
+.clientpoint-title {
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
@@ -875,7 +875,7 @@
 		visibility: hidden;
 	}
 }
-.filterRightpanel {
+.filter-rightpanel {
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
@@ -890,22 +890,22 @@
 	border-radius: $border-radius-5;
 	border: $none;
 }
-.tabelFixedBody {
+.tabel-fixed-body {
 	height: 240px;
 }
-.tabelFixedBody .scrollbar-inner > .scroll-element.scroll-y {
+.tabel-fixed-body .scrollbar-inner > .scroll-element.scroll-y {
 	right: $zero;
 }
-.tabelFixedHeader th:nth-child(1),
-.tabelFixedBody td:nth-child(1) {
+.tabel-fixed-header  th:nth-child(1),
+.tabel-fixed-body td:nth-child(1) {
 	width: 50px;
 }
-.tabelFixedHeader th:nth-child(2),
-.tabelFixedBody td:nth-child(2) {
+.tabel-fixed-header  th:nth-child(2),
+.tabel-fixed-body td:nth-child(2) {
 	width: 250px;
 }
-.tabelFixedHeader th:nth-child(3),
-.tabelFixedBody td:nth-child(3) {
+.tabel-fixed-header  th:nth-child(3),
+.tabel-fixed-body td:nth-child(3) {
 	width: 250px;
 }
 // .pika-single.is-hidden {
@@ -917,9 +917,9 @@
 
 /* Reply Modal start here */
 
-.replyModalContent {
+.reply-modal-content {
 	max-width: 52.5rem;
-	.shareIcon {
+	.share-icon {
 		background: url(../images/common-icons.svg) no-repeat -88px -1523px;
 		width: 2rem;
 		height: 1.85rem;
@@ -951,7 +951,7 @@
 			}
 		}
 	}
-	.replyText {
+	.reply-text {
 		background: color("grey", "lighten-4");
 		@include margin-padding(all, null, all, 1.25rem 1.875rem);
 		border: 1px solid color("grey", "lighten-3");
@@ -983,7 +983,7 @@
 			@include margin-padding(all, 0 0 0 2.5rem, all, 0 1.4rem);
 		}
 	}
-	.textReplyArea {
+	.textreply-area {
 		height: 12.5rem;
 		@include margin-padding(all, null, all, 1.25rem);
 		border: 1px solid color("grey", "lighten-3");
@@ -1030,24 +1030,24 @@
 	}
 }
 
-.creatingPerposal .scrollbar-inner > .scroll-element.scroll-y {
+.creating-perposal .scrollbar-inner > .scroll-element.scroll-y {
 	right: $zero;
 }
 .anaytics-overview {
 	height: calc(100% - 61px);
 }
-.analyticsOverviewView {
+.analytics-overview-view {
 	@include margin-padding(all, null, all, 1.25rem);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	.q2Marketing {
-		.marketingArrow {
+	.q2-marketing {
+		.marketing-arrow  {
 			.material-icons {
 				height: 1.1875rem;
 			}
 		}
 	}
-	.analyticsOverviewView-row {
+	.analytics-overview-view-row {
 		.collapsible-header {
 			.material-icons {
 				height: 1.5625rem;

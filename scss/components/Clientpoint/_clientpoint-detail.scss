@@ -210,7 +210,7 @@
 		padding: 2.5rem 2.3rem 1.7rem 3.6rem;
 	}
 
-	.shareIcon {
+	.share-icon {
 		background: url(../images/common-icons.svg) no-repeat -23px -263px;
 		width: 1.6rem;
 		height: 1.85rem;
@@ -374,7 +374,7 @@
 	top: $zero;
 	z-index: 4;
 }
-#CommentsClientPoint {
+#commentsClientPoint {
 	.outerScrollViewer {
 		height: calc(100% - 246px);
 	}

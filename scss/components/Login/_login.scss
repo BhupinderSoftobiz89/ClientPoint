@@ -322,7 +322,7 @@
 	max-width: 664px;
 	.modal-header {
 		@include margin-padding(all, null, all, 2.6rem 2.4375rem 1.3rem 4.9rem);
-		.shareIcon {
+		.share-icon {
 			background: url(../images/common-icons.svg) no-repeat -242px -192px;
 			width: 1.5rem;
 			height: 1.85rem;
@@ -409,7 +409,7 @@
 .d-none {
 	display: $diplay-none;
 }
-.loginTabContent {
+.logintab-content {
 	height: calc(100% - 153px);
 	.scrollbar-inner > .scroll-element.scroll-y {
 		right: 0;

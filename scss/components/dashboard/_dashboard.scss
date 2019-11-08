@@ -194,7 +194,7 @@
 			@include margin-padding(all, null, all, 0);
 		}
 	}
-	.shareIcon {
+	.share-icon {
 		width: 1.4rem;
 		height: 1.4rem;
 		margin-right: 0.8rem;
@@ -202,27 +202,27 @@
 		display: $display-inline-block;
 	}
 	.commentIcon {
-		@extend .shareIcon;
+		@extend .share-icon;
 		background: url(../images/common-icons.svg) no-repeat -243px -897px;
 	}
 	.prieviewIcon {
-		@extend .shareIcon;
+		@extend .share-icon;
 		background: url(../images/common-icons.svg) no-repeat -26px -976px;
 	}
 	.printIcon {
-		@extend .shareIcon;
+		@extend .share-icon;
 		background: url(../images/common-icons.svg) no-repeat -93px -976px;
 	}
 	.sendIcon {
-		@extend .shareIcon;
+		@extend .share-icon;
 		background: url(../images/common-icons.svg) no-repeat -167px -976px;
 	}
 	.editIcon {
-		@extend .shareIcon;
+		@extend .share-icon;
 		background: url(../images/common-icons.svg) no-repeat -244px -976px;
 	}
 	.archive-icon {
-		@extend .shareIcon;
+		@extend .share-icon;
 		background: url(../images/common-icons.svg) no-repeat -247px -1522px;
 	}
 }
@@ -311,7 +311,7 @@
 		}
 	}
 	.anaytics-overview-header {
-		.viewMore {
+		.view-more {
 			.material-icons {
 				height: 1rem;
 			}

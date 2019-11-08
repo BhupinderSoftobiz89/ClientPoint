@@ -1,6 +1,6 @@
 /* Search CSS start here */
 
-.searchResult {
+.search-result {
 	@include absolute(top 5rem left 0 right auto bottom auto);
 	width: 25.5rem;
 	box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.1);
@@ -14,7 +14,7 @@
 		@include flex-wrap($wrap);
 		//align-items: $align-items-center;
 	}
-	.resultsIcon {
+	.results-icon {
 		background: #702c63 url(../images/common-icons.svg) no-repeat -322px -1378px;
 		@include w-h-rem(20px, 20px);
 		@include border-radius(0.3125rem);
@@ -31,17 +31,17 @@
 		color: color("grey", "darken-1");
 		@include margin-padding(all, 0, all, null);
 	}
-	.searchResultContent {
+	.search-result-content {
 		flex: 1;
 		height: $height-hundred-per;
 	}
-	.resultsSearchIcon {
+	.results-search-icon {
 		background: url(../images/common-icons.svg) no-repeat -241px -1378px;
 		@include w-h-rem(27px, 27px);
 		@include border-radius(0.3125rem);
 		@include margin-padding(all, 0 0.9375rem 0 0, all, null);
 	}
-	.topSearchRow {
+	.topsearch-row {
 		background: #eaf6ff;
 		@include margin-padding(all, null, all, 0.85rem 1.5625rem);
 		@include flexbox();
@@ -53,41 +53,41 @@
 			@include margin-padding(all, 0, all, null);
 		}
 	}
-	.suitCaseIcon {
+	.suitcase-icon {
 		background: #00b0dc url(../images/common-icons.svg) no-repeat -389px -1380px;
 	}
-	.userIcon {
+	.user-icon {
 		background: #19e4b1 url(../images/common-icons.svg) no-repeat -28px -1456px;
 	}
-	.commentIcon {
+	.comment-icon {
 		background: #676ad4 url(../images/common-icons.svg) no-repeat -91.7px -1455px;
 	}
-	.editIcon {
+	.edit-icon {
 		background: #f7ba0f url(../images/common-icons.svg) no-repeat -176px -1454px;
 	}
 }
 
-.searchResult.open {
+.search-result.open {
 	@include opacity(1);
 	visibility: $visibilty-visible;
 }
 .hidden {
 	display: $none !important;
 }
-.serachArrow {
+.serach-arrow {
 	@include absolute(top 1.8rem left auto right 0.7rem bottom auto);
 	color: color("grey", "darken-1");
 	.material-icons {
 		@include font-rem(20px);
 	}
 }
-.serachArrow.changeColor {
+.serach-arrow.change-color {
 	color: color("indigo", "base");
 }
-.searchResultContent {
+.search-result-content {
 	width: $full-width;
 	height: $height-hundred-per;
-	.searchResultHeader {
+	.search-result-header {
 		@include margin-padding(all, null, all, 1.5rem 2.5rem 1.5rem 1.875rem);
 		@include flexbox();
 		@include flex-wrap($wrap);
@@ -122,7 +122,7 @@
 			margin-right: 2.5rem;
 		}
 	}
-	.tabContent {
+	.tab-content {
 		@include margin-padding(all, null, all, 1.875rem);
 		height: $height-hundred-per;
 	}
@@ -159,7 +159,7 @@
 				@include font-weight(bold);
 			}
 		}
-		.rotateArrow {
+		.rotate-arrow {
 			@include margin-padding(all, 0 0 0 auto, all, null);
 			@include flexbox();
 			@include flex-wrap($wrap);
@@ -186,18 +186,18 @@
 			@include margin-padding(all, null, all, 0);
 		}
 
-		.userImage {
+		.user-image {
 			display: $display-inline-block;
 			vertical-align: $verticle-align-middle;
 			@include margin-padding(all, 0 1rem 0 0, all, null);
 		}
-		.linkUser {
+		.link-user {
 			@include font-rem(15px);
 			color: color("indigo", "base");
 			@include font-weight(medium);
 			vertical-align: $verticle-align-middle;
 		}
-		.linkedIn {
+		.linked-in {
 			display: $display-inline-block;
 			background: url(../images/common-icons.svg) no-repeat -30px -1230px;
 			width: 1.3rem;
@@ -206,23 +206,23 @@
 			vertical-align: $verticle-align-middle;
 		}
 
-		.resultsIcon {
+		.results-icon {
 			background: #702c63 url(../images/common-icons.svg) no-repeat -322px -1378px;
 			@include w-h-rem(20px, 20px);
 			border-radius: 0.3125rem;
 			@include margin-padding(all, 0 0.9375rem 0 0, all, null);
 		}
-		.suitCaseIcon {
+		.suitcase-icon {
 			background: #00b0dc url(../images/common-icons.svg) no-repeat -389px -1380px;
 		}
-		.commentIcon {
+		.comment-icon {
 			background: #676ad4 url(../images/common-icons.svg) no-repeat -91.7px -1455px;
 		}
-		.editIcon {
+		.edit-icon {
 			background: #f7ba0f url(../images/common-icons.svg) no-repeat -176px -1454px;
 		}
 
-		.statusPending {
+		.status-pending {
 			background: color("yellow", "darken-3");
 			color: color("shades", "white");
 			@include border-radius(3px);
@@ -246,7 +246,7 @@
 				color: color("indigo", "base");
 			}
 		}
-		.commentContent {
+		.comment-content {
 			@include flexbox();
 			@include flex-wrap($wrap);
 			p {
@@ -267,10 +267,10 @@
 			color: color("indigo", "base");
 			@include font-weight(medium);
 		}
-		.commentRightText {
+		.comment-right-text {
 			flex: 1;
 		}
-		.replyBtn {
+		.reply-btn {
 			@include flexbox();
 			@include flex-wrap($wrap);
 			@include font-rem(14px, 16px);
@@ -279,7 +279,7 @@
 			@include font-weight(medium);
 			text-transform: $text-uppercase;
 		}
-		.replyArrow {
+		.reply-arrow {
 			background: url(../images/common-icons.svg) no-repeat -170px -500px;
 			width: 1rem;
 			height: 1rem;
@@ -288,19 +288,19 @@
 		}
 	}
 }
-.fullHeightContent {
+.full-height-content {
 	height: $height-hundred-per !important;
 }
-.tabHeight {
+.tab-height {
 	height: calc(100% - 119px);
 }
-.searchTab {
+.search-tab {
 	height: calc(100% - 71px);
 }
-.tabContentHeight {
+.tab-content-height {
 	height: calc(100% - 48px);
 }
-.searchTab .scrollbar-inner > .scroll-element.scroll-y {
+.search-tab .scrollbar-inner > .scroll-element.scroll-y {
 	right: 3px;
 }
 .table-responsive {
@@ -310,7 +310,7 @@
 	}
 }
 
-.dataTable {
+.data-table {
 	background: color("shades", "white");
 	table {
 		tr {
@@ -333,14 +333,14 @@
 			@include w-h-rem(350px);
 		}
 	}
-	.sortIcon {
+	.sort-icon {
 		display: $display-inline-block;
 		background: url(../images/common-icons.svg) no-repeat -252px -1459px;
 		@include w-h-rem(10px, 10px);
 		@include margin-padding(all, 0 0 0 0.5rem, all, null);
 	}
 }
-.libraryTable {
+.library-table {
 	label {
 		@include opacity(0);
 		visibility: $visibilty-hidden;
@@ -353,7 +353,7 @@
 			}
 		}
 	}
-	.viewedDropDown-content {
+	.viewed-dropdown-content {
 		min-width: 15.7rem;
 		@include margin-padding(all, 0, all, 0.8rem 0 0 !important);
 		li {
@@ -362,7 +362,7 @@
 				@include margin-padding(all, null, all, 0.7rem 1.25rem !important);
 			}
 		}
-		.eSignature {
+		.esignature {
 			border-top: 1px solid color("grey", "lighten-5");
 			@include margin-padding(all, 0.5rem 0 0 0, all, null);
 			.switch {
@@ -371,7 +371,7 @@
 		}
 	}
 
-	.eSignatureContent {
+	.esignature-content {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		@include margin-padding(all, null, all, 1.3rem 1.25rem !important);
@@ -386,9 +386,9 @@
 	}
 }
 .page-header {
-	&.addHeaderMargin {
+	&.add-header-margin {
 		@include transition(all 0.5s);
-		.searchResult {
+		.search-result {
 			&.open {
 				@include absolute(top 5rem left 6.67rem right auto bottom auto);
 			}
@@ -396,8 +396,8 @@
 	}
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	.searchResultContent {
-		.rotateArrow {
+	.search-result-content {
+		.rotate-arrow {
 			.material-icons {
 				height: 1.37rem;
 			}

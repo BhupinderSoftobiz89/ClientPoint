@@ -19,11 +19,11 @@
 	.page-header .userName {
 		display: $diplay-none;
 	}
-	.clientPoint-file .creatingPerposal .creatingPerposalLeft,
-	.clientPoint-file .creatingPerposal .creatingPerposalRight {
+	.client-point-file .creating-perposal .creating-perposal-left,
+	.client-point-file .creating-perposal .creating-perposal-rightpanel {
 		width: $full-width !important;
 	}
-	.clientPoint-file .creatingPerposal {
+	.client-point-file .creating-perposal {
 		height: $height-auto;
 	}
 	.dropdown-backdrop {
@@ -50,7 +50,7 @@
 		margin: 10px 0;
 		flex: 0 0 100%;
 	}
-	.creatingPerposalRight.perposalPostionRight {
+	.creating-perposal-rightpanel.perposalPostionRight {
 		right: 0;
 		position: relative;
 		height: $height-auto;
@@ -161,7 +161,7 @@
 			overflow: $auto;
 		}
 	}
-	.ipAddress .replyComment .replyComment-row {
+	.ip-address .replyComment .replyComment-row {
 		max-width: 100%;
 		flex: 0 0 100%;
 	}
@@ -172,10 +172,10 @@
 	.tableOptionUser .optionsUser {
 		padding: 1.5rem 0 0;
 	}
-	.calenderDatesCommon.d-flex.ml-auto {
+	.calender-datesCommon.d-flex.ml-auto {
 		margin-left: initial !important;
 	}
-	.newClientPointTitleBar .library-header-right {
+	.newclientpoint-title-bar .library-header-right {
 		justify-content: flex-start;
 	}
 	.perposalDefaultbar {
@@ -220,35 +220,35 @@
 	.SidebarOpenMargin {
 		margin-left: 5rem !important;
 	}
-	.clientpointTitle {
+	.clientpoint-title {
 		width: $full-width;
 	}
-	.newClientPointTitleBar .clientMenu {
+	.newclientpoint-title-bar .clientMenu {
 		margin-left: inherit;
 	}
-	.newClientPointTitleBar .newClientPointTitleBar-right {
+	.newclientpoint-title-bar .newclientpoint-title-bar-right {
 		width: $full-width;
 		margin-left: inherit;
 	}
-	.clientpointTitle {
+	.clientpoint-title {
 		margin-bottom: 1.25rem;
 	}
-	.newperposalclientbar .newperposalclientbar-right {
+	.newperposal-client-bar  .newperposal-clientbar-right {
 		width: $full-width;
 		margin-top: 1.25rem;
 	}
 	#content.contentMargin {
 		margin-left: 5rem;
 	}
-	.newClientPointTitleBar .clientSearchtitle {
+	.newclientpoint-title-bar .clientSearchtitle {
 		padding: 1rem 1.8125rem;
 		height: 50px;
 	}
-	.analytics-filter .calenderDate {
+	.analytics-filter .calender-date {
 		margin-left: inherit;
 		margin-top: 17px;
 	}
-	.filterRightpanel {
+	.filter-rightpanel {
 		margin-left: inherit;
 		flex: 0 0 100%;
 	}
@@ -261,10 +261,10 @@
 			border-bottom: none;
 		}
 	}
-	.ipAddress {
+	.ip-address {
 		padding: $zero;
 	}
-	.newperposalclientbar .dropdown-content {
+	.newperposal-client-bar  .dropdown-content {
 		top: 100% !important;
 	}
 	.themeAdvancedSettings .themeAdvancedtabs .tabs {
@@ -310,7 +310,7 @@
 		padding: 20px;
 		position: relative;
 	}
-	.fullHeight {
+	.full-height {
 		height: auto !important;
 	}
 	.addUserHeader .addUserLeftpanel {
@@ -341,35 +341,35 @@
 	.loginForm .input-field.col label {
 		left: 0;
 	}
-	#shareModal .tabContent {
+	share-modal .tab-content {
 		padding: 0 2rem 1rem 2rem;
 	}
-	#shareModal .modal-header {
+	share-modal .modal-header {
 		padding: 2.3rem 1.875rem 1rem 2rem;
 	}
-	#shareModal .tabs-header {
+	share-modal .tabs-header {
 		padding-left: 30px;
 	}
-	#commentModal .tabContent {
+	#comment-modal .tab-content {
 		padding: 0 2rem 1.875rem 2rem;
 	}
-	#commentModal .tabs-header {
+	#comment-modal .tabs-header {
 		padding-left: 30px;
 	}
-	#commentModal .modal-header {
+	#comment-modal .modal-header {
 		padding: 2.3rem 1.875rem 1rem 2rem;
 	}
-	#AddSection .modal-content {
+	#add-section .modal-content {
 		padding: 0 1.875rem 0 2rem;
 	}
-	#AddSection .modal-header {
+	#add-section .modal-header {
 		padding: 2.3rem 1.875rem 2.1rem 2rem;
 	}
-	.addNotesModal .searchTabHeader {
+	.add-notes-modal .search-tab-header {
 		padding-right: 3rem;
 		padding-left: 2rem;
 	}
-	.addNotesModal .mylibraryContent p {
+	.add-notes-modal .mylibrary-content p {
 		padding-left: 2rem;
 		padding-right: 3rem;
 	}
@@ -419,29 +419,29 @@
 	.tabs .tab {
 		flex-grow: inherit;
 	}
-	.newClientPointTitleBar .library-header-right {
+	.newclientpoint-title-bar .library-header-right {
 		justify-content: flex-start;
 	}
 	.modal .modal-header {
 		padding: 1.875rem 1rem 1.3rem 2rem;
 	}
-	.replyModalContent .modal-content {
+	.reply-modal-content .modal-content {
 		padding: 0 2rem 1.3rem 2rem;
 	}
-	.replyModalContent .modal-footer {
+	.reply-modal-content .modal-footer {
 		padding: 0 2rem 2.1rem 2rem;
 	}
-	.replyModalContent .modal-footer .btn-round {
+	.reply-modal-content .modal-footer .btn-round {
 		margin-left: 1rem;
 	}
-	.replyModalContent .modal-content textarea {
+	.reply-modal-content .modal-content textarea {
 		height: 9rem;
 		padding: 1rem;
 	}
-	.replyModalContent .replyText {
+	.reply-modal-content .reply-text {
 		padding:1rem;
 	}
-	.replyModalContent .replyText p {
+	.reply-modal-content .reply-text p {
 		font-size: 1rem;
 		line-height: 1.6rem;
 	}
@@ -486,7 +486,7 @@
 			left: 0 !important;
 		}
 	}
-	.newClientPointTitleBar .clientMenu {
+	.newclientpoint-title-bar .clientMenu {
 		width: $full-width;
 		margin-bottom: 17px;
 	}
@@ -529,7 +529,7 @@
   .searchResultContent .comment-row .imgbox {
     flex: 0 0 100%;
 }
-.newClientPointTitleBar .library-header-right .commonDefaultSearch {
+.newclientpoint-title-bar .library-header-right .common-default-search {
     margin: 0 1.25rem 1rem 0;
 }
 .intigration .intigrat-row-content {
@@ -542,10 +542,10 @@
 .clientpointPreview .clientPointPowerdBy {
     padding: 0 0 0 20px;
 }
-.clientPoint-file .newperposalclientbar {
+.client-point-file .newperposal-client-bar  {
     padding: 1.1rem 1.4rem;
 }
-.newClientPointTitleBar .clientMenuCommon {
+.newclientpoint-title-bar .clientMenuCommon {
     margin-right: 2rem;
 }
 #saveTemplateModal .modal-footer .btn-row {
@@ -577,10 +577,10 @@
 		background-color: transparent;
 		background-position: -376px -6px;
 	}
-	.timeSpent .timeSpentRight {
+	.time-spent .time-spent-right {
 		width: 60%;
 	}
-	.timeSpent .timeSpentLeft {
+	.time-spent .time-spent-left {
 		width: 40%;
 	}
 	.powerdByToggleInner .SignNow .signUp {

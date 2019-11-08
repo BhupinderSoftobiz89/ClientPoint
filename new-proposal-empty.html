@@ -18,44 +18,44 @@
 
 <body class="topBarClientPoint">
     <!-- Sidebar nav start here -->
-    <nav class="sidebarNav sidebarNavClose">
-        <div class="navMenuOuter menu btn6 navMenu" data-menu="6">
-            <div class="icon "></div>
+    <nav class="sidebar-nav sidebar-nav-close">
+        <div class="nav-menu-outer menu animate-nav-icon nav-menu" data-menu="6">
+            <div class="icon"></div>
         </div>
         <ul>
             <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="tab-1">
                 <a href="#dashboard_nav" class="sidebarclick">
-                    <span class="commonIconbg fileIcon"></span>
+                    <span class="common-icon-bg file-icon"></span>
                     Dashboard
                 </a>
 
             </li>
             <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
                 <a href="#library_nav" class="sidebarclick">
-                    <span class="commonIconbg prieviewIcon"></span>
+                    <span class="common-icon-bg prieview-icon"></span>
                     Content Libray
                 </a>
             </li>
             <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="tab-3">
                 <a href="#clientPoint_nav" class="sidebarclick">
-                    <span class="commonIconbg clientIcon"></span>
+                    <span class="common-icon-bg client-icon"></span>
                     ClientPoints
                 </a>
             </li>
             <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="tab-4">
                 <a href="#Setting_nav" class="sidebarclick">
-                    <span class="commonIconbg settingIcon"></span>Settings
+                    <span class="common-icon-bg setting-icon"></span>Settings
                 </a>
             </li>
         </ul>
-        <a href="javascript:void(0)" class="clientPointLogo">
-            <img class="logoSmall" src="./images/ClientPoint-Logo.svg" alt="">
-            <img class="logoBig" src="./images/clientpoint-logo-big.svg" alt="">
+        <a href="javascript:void(0)" class="clientpoint-logo">
+            <img class="logo-small" src="./images/ClientPoint-Logo.svg" alt="">
+            <img class="logo-big" src="./images/clientpoint-logo-big.svg" alt="">
         </a>
     </nav>
 
     <div class="sidebar_nav">
-        <aside id="tab-1" class="sidebarSubmenu openNav">
+        <aside id="tab-1" class="sidebar-submenu open-nav">
             <ul>
                 <li>
                     <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
@@ -69,7 +69,7 @@
                 <li><a href="dashboard-filter-expanded.html" class="active">Details</a></li>
             </ul>
         </aside>
-        <aside id="tab-2" class="sidebarSubmenu openNav">
+        <aside id="tab-2" class="sidebar-submenu open-nav">
             <ul>
                 <li>
                     <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
@@ -82,7 +82,7 @@
                 <li><a href="library.html" class="active">Templates</a></li>
             </ul>
         </aside>
-        <aside id="tab-3" class="sidebarSubmenu openNav">
+        <aside id="tab-3" class="sidebar-submenu open-nav">
             <ul>
                 <li>
                     <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
@@ -91,12 +91,12 @@
                         </i>
                     </a>
                 </li>
-                <li><a href="clientpoint-file.html">Analytics</a></li>
+                <li><a href="client-point-file.html">Analytics</a></li>
                 <li><a href="clientpoint-preview.html">ClientPoint</a></li>
                 <li><a href="clientpoint-top-bar.html">Details</a></li>
             </ul>
         </aside>
-        <aside id="tab-4" class="sidebarSubmenu openNav">
+        <aside id="tab-4" class="sidebar-submenu open-nav">
             <ul>
                 <li>
                     <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
@@ -108,10 +108,10 @@
                 <li><a href="user-permission.html">Users & Permissions</a></li>
                 <li><a href="theme.html">Themes</a></li>
                 <li><a href="intigration.html">Integrations</a></li>
-                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
-                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
-                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="#">Workspace <span class="lock-icon"></span></a></li>
+                <li><a href="#">Categorization <span class="lock-icon"></span></a></li>
+                <li><a href="contacts.html">Custom Fields <span class="lock-icon"></span></a></li>
+                <li><a href="#">Contacts</a></li>
                 <li><a href="theme-setting.html">Advanced Settings</a></li>
             </ul>
         </aside>
@@ -121,27 +121,91 @@
     <!-- Header start here  -->
     <header class="page-header d-flex">
         <div class="searchbox">
-            <input type="submit" class="searchBtn" value="">
-            <input type="search" class="searchInput" placeholder="Search">
+            <input type="submit" class="search-btn" value="">
+            <input type="search" class="search-input" placeholder="Search" data-search id="myInput" value="">
+            <a href="javascript:void(0);" class="serach-arrow">
+                <i class="material-icons">
+                    arrow_forward
+                </i>
+            </a>
         </div>
-        <div class="searchResponsive">
-            <a href="#" class="mobileSearch"></a>
+        <div class="search-responsive">
+            <a href="#" class="mobile-search"></a>
         </div>
-        <aside class="newClientPoint">
-            <a class="waves-teal btn-flat" href="clientpoint-preview.html">New ClientPoint</a>
-            <a class="userLoginPanel dropdown-trigger" href="#" data-target="userDropDown">
-                <span class="userFetaures"><strong>Upgrade now</strong> to unlock more features!</span>
-                <span class="userAvtar"><img class="responsive-img" src="./images/user-img.png" alt=""></span>
-                <span class="userName">Miles Morales</span>
+        <div class="search-result">
+            <div class="search-main items">
+                <a data-filter-item data-filter-name="encom" class="topSearchRow">
+                    <span class="results-search-icon"></span>
+                    <h6>“encom”</h6>
+                </a>
+                <a data-filter-item data-filter-name="ClientPoint" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Encom Q2 Marketing ClientPoint</h5>
+                        <p>ClientPoint</p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="Account" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon suitcase-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Encom</h5>
+                        <p>Account</p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="Contact" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon user-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Kevin Flynn</h5>
+                        <p>Contact • <strong>Encom</strong></p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="Edward" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon user-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Edward Dillinger</h5>
+                        <p>Contact • <strong>Encom</strong></p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="Bradley" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon user-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Alan Bradley</h5>
+                        <p>Contact • <strong>Encom</strong></p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="ipsum" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon comment-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed <strong>Encom</strong> dousan…
+                        </h5>
+                        <p>Comment • Kevin Flynn</p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="dolor" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon edit-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed <strong>Encom</strong> dousan…
+                        </h5>
+                        <p>Notes • Peter Parker</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <aside class="clientpoint-heading-bar">
+            <a class="waves-teal btn-flat">New ClientPoint</a>
+            <a class="user-login-panel dropdown-trigger" href="#" data-target="user-dropdown">
+                <span class="user-fetaures"><strong>Upgrade now</strong> to unlock more features!</span>
+                <span class="user-avtar"><img class="responsive-img" src="./images/user-img.png" alt=""></span>
+                <span class="user-name">Miles Morales</span>
                 <i class="material-icons">
                     arrow_drop_down
                 </i>
             </a>
-            <ul id="userDropDown" class="dropdown-content UserDropdownLogin">
+            <ul id="user-dropdown" class="dropdown-content user-dropdown-login">
                 <li><a href="javascript:void(0);">
-                        <div class="userLoginHeader">
+                        <div class="user-login-header">
                             <img src="./images/user-avtar.png" alt="">
-                            <div class="userInfo">
+                            <div class="user-info-header">
                                 <h6>Miles Morales</h6>
                                 <p>milesm@arachnid.com</p>
                             </div>
@@ -151,19 +215,19 @@
                 <li class="divider" tabindex="-1"></li>
                 <li>
                     <a href="login.html">
-                        <span class="profileIcon"></span>
+                        <span class="profile-icon"></span>
                         View Profile
                     </a>
                 </li>
                 <li>
                     <a href="login-dashboard.html">
-                        <span class="supportIcon"></span>
+                        <span class="support-icon"></span>
                         Support
                     </a>
                 </li>
                 <li>
                     <a href="login-progress-image.html">
-                        <span class="logoutIcon"></span>
+                        <span class="logout-icon"></span>
                         Logout
                     </a>
                 </li>
@@ -174,15 +238,15 @@
     <!-- Main Content start here  -->
     <div id="content">
         <div class="content-common">
-            <div class="clientPoint-file">
-                <div class="newClientPointTitleBar">
-                    <div class="clientpointTitle">
+            <div class="client-point-file">
+                <div class="newclientpoint-title-bar">
+                    <div class="clientpoint-title">
                         <h4>ClientPoint Title</h4>
                     </div>
-                    <div class="newClientPointTitleBar-right">
+                    <div class="newclientpoint-title-bar-right">
                         <aside class="clientMenu">
-                            <a href="#shareModal" class="clientMenuCommon clientMenuShare modal-trigger"></a>
-                            <a href="#commentModal" class="clientMenuCommon clientMenuComment modal-trigger"></a>
+                            <a href="share-modal" class="clientMenuCommon clientMenuShare modal-trigger"></a>
+                            <a href="#comment-modal" class="clientMenuCommon clientMenuComment modal-trigger"></a>
                             <a href="#" class="clientMenuCommon clientMenuPdf"></a>
                             <a href="#" class="clientMenuCommon clientMenuNewsletter"></a>
                         </aside>
@@ -190,17 +254,17 @@
                             href="#saveTemplateModal">Save</a>
                     </div>
                 </div>
-                <div class="newperposalclientbar">
-                    <div class="commonDefaultSearch">
-                        <input type="submit" class="searchBtn" value="">
-                        <input type="search" class="searchCommon" placeholder="Search">
+                <div class="newperposal-client-bar ">
+                    <div class="common-default-search">
+                        <input type="submit" class="search-btn" value="">
+                        <input type="search" class="search-input-common" placeholder="Search">
                     </div>
-                    <div class="newperposalclientbar-right">
-                        <a href="#addFile" class="fileMenu modal-trigger">
+                    <div class="newperposal-clientbar-right">
+                        <a href="#add-file" class="fileMenu modal-trigger">
                             <i class="material-icons">
                                 add
                             </i>FILE</a>
-                        <a class="fileMenu modal-trigger" href="#AddSection">
+                        <a class="fileMenu modal-trigger" href="#add-section">
                             <i class="material-icons">
                                 add
                             </i>SECTION</a>
@@ -218,7 +282,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="creatingPerposal">
+                <div class="creating-perposal">
                     <div class="clientpointPreview">
                         <div class="clientPointPowerdBy">
                             <div class="poweredByMarvel">
@@ -302,7 +366,7 @@
                                         </li>
                                         <li>
                                             <a data-tab="Share" href="javascript:void(0);" class="viewerLinks">
-                                                <span class="powerdShareIcon"></span>
+                                                <span class="powerdshare-icon"></span>
                                                 Share
                                             </a>
                                         </li>
@@ -441,8 +505,8 @@
                                                                                     file to upload</span>
                                                                             </div>
                                                                             <div class="addFilesUpload">
-                                                                                <span class="fileIcon"></span>
-                                                                                <h5>filename.docx</h5>
+                                                                                <span class="file-icon"></span>
+                                                                                <h5>file-name.docx</h5>
                                                                                 <span class="fileSize">2MB</span>
                                                                                 <a href="javascript:void(0);"
                                                                                     class="removeFile">
@@ -452,8 +516,8 @@
                                                                                 </a>
                                                                             </div>
                                                                             <div class="addFilesUpload">
-                                                                                <span class="fileIcon"></span>
-                                                                                <h5>filename.docx</h5>
+                                                                                <span class="file-icon"></span>
+                                                                                <h5>file-name.docx</h5>
                                                                                 <span class="fileSize">2MB</span>
                                                                                 <a href="javascript:void(0);"
                                                                                     class="removeFile">
@@ -463,8 +527,8 @@
                                                                                 </a>
                                                                             </div>
                                                                             <div class="addFilesUpload">
-                                                                                <span class="fileIcon"></span>
-                                                                                <h5>filename.docx</h5>
+                                                                                <span class="file-icon"></span>
+                                                                                <h5>file-name.docx</h5>
                                                                                 <span class="fileSize">2MB</span>
                                                                                 <a href="javascript:void(0);"
                                                                                     class="removeFile">
@@ -523,7 +587,7 @@
                                                                             <li class="active">
                                                                                 <div class="collapsible-header">
                                                                                     <div class="collapseTopRow">
-                                                                                        <span class="fileIcon"></span>
+                                                                                        <span class="file-icon"></span>
                                                                                         <h6>ClientPoint Files </h6>
                                                                                         <span class="fileCount">(21
                                                                                             Files)</span>
@@ -581,7 +645,7 @@
                                                                                                 <span></span>
                                                                                             </label>
                                                                                             <span
-                                                                                                class="pdfIcon"></span>
+                                                                                                class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
                                                                                                 class="eyeIcon"></span>
@@ -593,7 +657,7 @@
                                                                                                 <span></span>
                                                                                             </label>
                                                                                             <span
-                                                                                                class="pdfIcon"></span>
+                                                                                                class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
                                                                                                 class="eyeIcon"></span>
@@ -605,7 +669,7 @@
                                                                                                 <span></span>
                                                                                             </label>
                                                                                             <span
-                                                                                                class="pdfIcon"></span>
+                                                                                                class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
                                                                                                 class="eyeIcon"></span>
@@ -617,7 +681,7 @@
                                                                                                 <span></span>
                                                                                             </label>
                                                                                             <span
-                                                                                                class="pdfIcon"></span>
+                                                                                                class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
                                                                                                 class="eyeIcon"></span>
@@ -629,7 +693,7 @@
                                                                                                 <span></span>
                                                                                             </label>
                                                                                             <span
-                                                                                                class="pdfIcon"></span>
+                                                                                                class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
                                                                                                 class="eyeIcon"></span>
@@ -641,7 +705,7 @@
                                                                                                 <span></span>
                                                                                             </label>
                                                                                             <span
-                                                                                                class="pdfIcon"></span>
+                                                                                                class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
                                                                                                 class="eyeIcon"></span>
@@ -653,7 +717,7 @@
                                                                                                 <span></span>
                                                                                             </label>
                                                                                             <span
-                                                                                                class="pdfIcon"></span>
+                                                                                                class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
                                                                                                 class="eyeIcon"></span>
@@ -665,7 +729,7 @@
                                                                                                 <span></span>
                                                                                             </label>
                                                                                             <span
-                                                                                                class="pdfIcon"></span>
+                                                                                                class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
                                                                                                 class="eyeIcon"></span>
@@ -677,7 +741,7 @@
                                                                                                 <span></span>
                                                                                             </label>
                                                                                             <span
-                                                                                                class="pdfIcon"></span>
+                                                                                                class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
                                                                                                 class="eyeIcon"></span>
@@ -689,7 +753,7 @@
                                                                                                 <span></span>
                                                                                             </label>
                                                                                             <span
-                                                                                                class="pdfIcon"></span>
+                                                                                                class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
                                                                                                 class="eyeIcon"></span>
@@ -701,7 +765,7 @@
                                                                                                 <span></span>
                                                                                             </label>
                                                                                             <span
-                                                                                                class="pdfIcon"></span>
+                                                                                                class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
                                                                                                 class="eyeIcon"></span>
@@ -744,7 +808,7 @@
                                                                 <div class="scrollbar-inner">
                                                                     <div class="shareProposal">
                                                                         <div class="sharePerposalHeader">
-                                                                            <span class="shareIcon"></span>
+                                                                            <span class="share-icon"></span>
                                                                             <h5>Share Proposal</h5>
                                                                         </div>
                                                                         <div class="shareEmail">
@@ -832,14 +896,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="creatingPerposalLeft border-none">
+                    <div class="creating-perposal-left border-none">
                         <div class="dashboard-empty-state">
                             <p class="new-proposal-margin">Scans show no files.</p>
                             <img class="responsive-img dashboard-empty-img"
                                 src="./images/scanning_empty@3x.svg" alt="image for empty proposal">
                         </div>
                     </div>
-                    <aside class="creatingPerposalRight empty-state-padding">
+                    <aside class="creating-perposal-rightpanel empty-state-padding">
                         <p>Start by adding a new section to your ClientPoint.</p>
                     </aside>
                 </div>
@@ -848,9 +912,9 @@
 
     </div>
     <!-- Add File Modal start here  -->
-    <div id="addFile" class="modal addNotesModal">
+    <div id="add-file" class="modal add-notes-modal">
         <div class="modal-header">
-            <span class="shareIcon"></span>
+            <span class="share-icon"></span>
             <h4>Add a File</h4>
             <a class="modal-close">
                 <i class="material-icons">
@@ -860,32 +924,32 @@
         </div>
         <div class="tabs-header">
             <ul class="tabs">
-                <li class="tab"><a href="#MyLibrary" class="active">My Library</a></li>
-                <li class="tab"><a href="#Mytemplates">My templates</a></li>
-                <li class="tab"><a href="#Uploads">Uploads</a></li>
-                <li class="tab"><a href="#Recent">Recent</a></li>
-                <li class="tab"><a href="#FromWebsite">From Website</a></li>
-                <li class="tab"><a href="#VideoFromWebcam">Video from Webcam</a></li>
-                <li class="ScrollOuterArrow">
-                    <a href="javascript:void(0);" class="ScrollArrow"></a>
+                <li class="tab"><a href="#my-library" class="active">My Library</a></li>
+                <li class="tab"><a href="#my-templates">My templates</a></li>
+                <li class="tab"><a href="#uploads">Uploads</a></li>
+                <li class="tab"><a href="#recent">Recent</a></li>
+                <li class="tab"><a href="#from-website">From Website</a></li>
+                <li class="tab"><a href="#video-from-webcam">Video from Webcam</a></li>
+                <li class="scroll-tab-arrow">
+                    <a href="javascript:void(0);" class="scroll-arrow"></a>
                 </li>
             </ul>
         </div>
         <!-- My Library Tab start here  -->
-        <div id="MyLibrary">
-            <div class="tabContent">
-                <div class="mylibraryContent">
+        <div id="my-library">
+            <div class="tab-content">
+                <div class="mylibrary-content">
                     <div class="wrapper scrollbar-dynamic">
                         <div class="page-content">
                             <div class="content">
                                 <div class="demo">
                                     <div class="scrollbar-inner">
-                                        <div class="searchTabHeader">
-                                            <div class="commonDefaultSearch">
-                                                <input type="submit" class="searchBtn" value="">
-                                                <input type="search" class="searchCommon" placeholder="Search">
+                                        <div class="search-tab-header">
+                                            <div class="common-default-search">
+                                                <input type="submit" class="search-btn" value="">
+                                                <input type="search" class="search-input-common" placeholder="Search">
                                             </div>
-                                            <a href="javascript:void(0)" class="gridLink"><img
+                                            <a href="javascript:void(0)" class="grid-link"><img
                                                     src="./images/grid-icon.svg" alt=""></a>
                                         </div>
                                         <p>Files</p>
@@ -894,7 +958,7 @@
                                                 <li><span class="arrow"><span class="folder"></span> About</span>
                                                     <ul>
                                                         <li>
-                                                            <span class="fileIcon"></span>
+                                                            <span class="file-icon"></span>
                                                             File
                                                         </li>
                                                     </ul>
@@ -914,11 +978,11 @@
                                                             </span>
                                                             <ul>
                                                                 <li>
-                                                                    <span class="fileIcon"></span>
+                                                                    <span class="file-icon"></span>
                                                                     File Name
                                                                 </li>
                                                                 <li>
-                                                                    <span class="fileIcon"></span>
+                                                                    <span class="file-icon"></span>
                                                                     File Name
                                                                 </li>
                                                             </ul>
@@ -934,7 +998,7 @@
                                                     </span>
                                                     <ul>
                                                         <li>
-                                                            <span class="fileIcon"></span>
+                                                            <span class="file-icon"></span>
                                                             File Name
                                                         </li>
                                                     </ul>
@@ -957,20 +1021,20 @@
         </div>
         <!-- My Library Tab end here  -->
         <!-- My Template Tab start here  -->
-        <div id="Mytemplates">
-            <div class="tabContent">
-                <div class="mylibraryContent">
+        <div id="my-templates">
+            <div class="tab-content">
+                <div class="mylibrary-content">
                     <div class="wrapper scrollbar-dynamic">
                         <div class="page-content">
                             <div class="content">
                                 <div class="demo">
                                     <div class="scrollbar-inner">
-                                        <div class="searchTabHeader">
-                                            <div class="commonDefaultSearch">
-                                                <input type="submit" class="searchBtn" value="">
-                                                <input type="search" class="searchCommon" placeholder="Search">
+                                        <div class="search-tab-header">
+                                            <div class="common-default-search">
+                                                <input type="submit" class="search-btn" value="">
+                                                <input type="search" class="search-input-common" placeholder="Search">
                                             </div>
-                                            <a href="javascript:void(0)" class="gridLink"><img
+                                            <a href="javascript:void(0)" class="grid-link"><img
                                                     src="./images/grid-icon.svg" alt=""></a>
                                         </div>
                                         <p>Templates</p>
@@ -1006,40 +1070,40 @@
         </div>
         <!-- My Template Tab end here  -->
         <!-- Uploads Tab start here  -->
-        <div id="Uploads">
-            <div class="tabContent mb-0">
-                <div class="mylibraryContent">
+        <div id="uploads">
+            <div class="tab-content mb-0">
+                <div class="mylibrary-content">
                     <div class="wrapper scrollbar-dynamic">
                         <div class="page-content">
                             <div class="content">
                                 <div class="demo">
                                     <div class="scrollbar-inner">
-                                        <div class="searchTabHeader">
-                                            <div class="commonDefaultSearch">
-                                                <input type="submit" class="searchBtn" value="">
-                                                <input type="search" class="searchCommon" placeholder="Search">
+                                        <div class="search-tab-header">
+                                            <div class="common-default-search">
+                                                <input type="submit" class="search-btn" value="">
+                                                <input type="search" class="search-input-common" placeholder="Search">
                                             </div>
-                                            <a href="javascript:void(0)" class="gridLink"><img
+                                            <a href="javascript:void(0)" class="grid-link"><img
                                                     src="./images/grid-icon.svg" alt=""></a>
                                         </div>
-                                        <div class="chooseFilePadding">
-                                            <div class="chooseFile">
+                                        <div class="choose-file-padding">
+                                            <div class="choose-file">
                                                 <p> <span><input type="file"> Click to choose a
                                                         file</span> or drag and drop it here.</p>
                                             </div>
                                         </div>
-                                        <div class="uploadFilesShow">
-                                            <div class="fileName">
-                                                <div class="addFilesName-row">
-                                                    <span class="FileIcon"></span>File Name
+                                        <div class="upload-files-show">
+                                            <div class="file-name">
+                                                <div class="add-filesname-row">
+                                                    <span class="file-icon"></span>File Name
 
                                                     <a href="javascript:void(0);" class="closeFile"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
                                                 </div>
-                                                <div class="addFilesName-row">
-                                                    <span class="FileIcon"></span>File Name
+                                                <div class="add-filesname-row">
+                                                    <span class="file-icon"></span>File Name
 
                                                     <a href="javascript:void(0);" class="closeFile"><i
                                                             class="material-icons">
@@ -1047,7 +1111,7 @@
                                                         </i></a>
                                                 </div>
                                             </div>
-                                            <a class="addMoreFiles" href="javascript:void(0);">
+                                            <a class="add-more-files" href="javascript:void(0);">
                                                 <i class="material-icons">
                                                     add
                                                 </i>Add More Files
@@ -1070,30 +1134,30 @@
         </div>
         <!-- Uploads Tab end here  -->
         <!-- Recent Tab start here  -->
-        <div id="Recent">
-            <div class="tabContent heightAuto">
-                <div class="mylibraryContent">
+        <div id="recent">
+            <div class="tab-content height-auto">
+                <div class="mylibrary-content">
                     <div class="wrapper scrollbar-dynamic">
                         <div class="page-content">
                             <div class="content">
                                 <div class="demo">
                                     <div class="scrollbar-inner">
-                                        <div class="searchTabHeader">
-                                            <div class="commonDefaultSearch">
-                                                <input type="submit" class="searchBtn" value="">
-                                                <input type="search" class="searchCommon" placeholder="Search">
+                                        <div class="search-tab-header">
+                                            <div class="common-default-search">
+                                                <input type="submit" class="search-btn" value="">
+                                                <input type="search" class="search-input-common" placeholder="Search">
                                             </div>
-                                            <a href="javascript:void(0)" class="gridLink"><img
+                                            <a href="javascript:void(0)" class="grid-link"><img
                                                     src="./images/grid-icon.svg" alt=""></a>
                                         </div>
                                         <p>Last Week</p>
-                                        <div class="uploadFilesShow">
-                                            <div class="fileName">
-                                                <div class="addFilesName-row">
-                                                    <span class="FileIcon"></span>File Name
+                                        <div class="upload-files-show">
+                                            <div class="file-name">
+                                                <div class="add-filesname-row">
+                                                    <span class="file-icon"></span>File Name
                                                 </div>
-                                                <div class="addFilesName-row">
-                                                    <span class="FileIcon"></span>File Name
+                                                <div class="add-filesname-row">
+                                                    <span class="file-icon"></span>File Name
                                                 </div>
                                             </div>
                                         </div>
@@ -1113,16 +1177,16 @@
         </div>
         <!-- Recent Tab end here  -->
         <!-- From Website Tab end here  -->
-        <div id="FromWebsite">
-            <div class="tabContent webtabheight">
-                <div class="mylibraryContent">
+        <div id="from-website">
+            <div class="tab-content webtab-height">
+                <div class="mylibrary-content">
                     <div class="wrapper scrollbar-dynamic">
                         <div class="page-content">
                             <div class="content">
                                 <div class="demo">
                                     <div class="scrollbar-inner">
 
-                                        <div class="websiteUrlSerach">
+                                        <div class="website-url-serach">
                                             <input type="text" placeholder="Website url...">
                                         </div>
                                     </div>
@@ -1141,41 +1205,41 @@
         </div>
         <!-- From Website Tab end here  -->
         <!-- Video from Webcam Tab end here  -->
-        <div id="VideoFromWebcam">
-            <div class="tabContent mb-0">
-                <div class="mylibraryContent">
+        <div id="video-from-webcam">
+            <div class="tab-content mb-0">
+                <div class="mylibrary-content">
                     <div class="wrapper scrollbar-dynamic">
                         <div class="page-content">
                             <div class="content">
                                 <div class="demo">
                                     <div class="scrollbar-inner">
-                                        <div class="searchTabHeader">
-                                            <div class="commonDefaultSearch">
-                                                <input type="submit" class="searchBtn" value="">
-                                                <input type="search" class="searchCommon" placeholder="Search">
+                                        <div class="search-tab-header">
+                                            <div class="common-default-search">
+                                                <input type="submit" class="search-btn" value="">
+                                                <input type="search" class="search-input-common" placeholder="Search">
                                             </div>
-                                            <a href="javascript:void(0)" class="gridLink"><img
+                                            <a href="javascript:void(0)" class="grid-link"><img
                                                     src="./images/grid-icon.svg" alt=""></a>
                                         </div>
-                                        <div class="chooseFilePadding">
-                                            <div class="chooseFile">
+                                        <div class="choose-file-padding">
+                                            <div class="choose-file">
                                                 <p> <span><input type="file"> Click to choose a
                                                         file</span> or drag and drop it here.</p>
                                             </div>
                                         </div>
 
-                                        <div class="uploadFilesShow">
-                                            <div class="fileName">
-                                                <div class="addFilesName-row">
-                                                    <span class="FileIcon"></span>File Name
+                                        <div class="upload-files-show">
+                                            <div class="file-name">
+                                                <div class="add-filesname-row">
+                                                    <span class="file-icon"></span>File Name
 
                                                     <a href="javascript:void(0);" class="closeFile"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
                                                 </div>
-                                                <div class="addFilesName-row">
-                                                    <span class="FileIcon"></span>File Name
+                                                <div class="add-filesname-row">
+                                                    <span class="file-icon"></span>File Name
 
                                                     <a href="javascript:void(0);" class="closeFile"><i
                                                             class="material-icons">
@@ -1183,7 +1247,7 @@
                                                         </i></a>
                                                 </div>
                                             </div>
-                                            <a class="addMoreFiles" href="javascript:void(0);">
+                                            <a class="add-more-files" href="javascript:void(0);">
                                                 <i class="material-icons">
                                                     add
                                                 </i>Add More Files
@@ -1210,9 +1274,9 @@
 
     <!-- Add A section Modal start here -->
 
-    <div id="AddSection" class="modal">
+    <div id="add-section" class="modal">
         <div class="modal-header">
-            <span class="bookIcon"></span>
+            <span class="book-icon"></span>
             <h4>Add a section</h4>
             <a class="modal-close"><i class="material-icons">
                     close
@@ -1248,9 +1312,9 @@
     <!-- Add A section Modal end here -->
 
     <!-- Share Modal start here  -->
-    <div id="shareModal" class="modal">
+    <div id="share-modal" class="modal">
         <div class="modal-header">
-            <span class="shareIcon"></span>
+            <span class="share-icon"></span>
             <h4>Share</h4>
             <a class="modal-close"><i class="material-icons">
                     close
@@ -1258,21 +1322,21 @@
         </div>
         <div class="tabs-header">
             <ul class="tabs">
-                <li class="tab"><a href="#URL" class="active">URL</a></li>
-                <li class="tab"><a href="#Email">Email</a></li>
+                <li class="tab"><a href="#url" class="active">URL</a></li>
+                <li class="tab"><a href="#email">Email</a></li>
             </ul>
         </div>
         <!-- URL tab start here  -->
-        <div id="URL">
-            <div class="tabContent">
-                <div class="privateShare">
+        <div id="url">
+            <div class="tab-content">
+                <div class="private-share">
                     <h4>Copy this private URL to share:</h4>
-                    <div class="copyUrl">
+                    <div class="copy-url">
                         <input type="text" placeholder="http://clientpoint.net/CMJ111">
                         <input type="submit" class="copybtn" value="Copy">
                     </div>
                     <div class="text-center">
-                        <a href="javascript:void(0);" target="_blank" class="neWindow">Open in new window</a>
+                        <a href="javascript:void(0);" target="_blank" class="new-window-link">Open in new window</a>
                     </div>
                     <div class="settings">
                         <h6>Settings</h6>
@@ -1304,10 +1368,10 @@
         </div>
         <!-- URL tab end here  -->
         <!-- Email Tab start here  -->
-        <div id="Email">
-            <div class="tabContent">
-                <div class="emailContent">
-                    <div class="emailAddress">
+        <div id="email">
+            <div class="tab-content">
+                <div class="email-content">
+                    <div class="email-address">
                         <label>To</label>
                         <input type="text" placeholder="recipient email address...">
                     </div>
@@ -1341,9 +1405,9 @@
 
     <!-- Comment Modal start here -->
     <!-- Modal Structure -->
-    <div id="commentModal" class="modal">
+    <div id="comment-modal" class="modal">
         <div class="modal-header">
-            <span class="shareIcon"></span>
+            <span class="share-icon"></span>
             <h4>Comment</h4>
             <a class="modal-close"><i class="material-icons">
                     close
@@ -1351,14 +1415,14 @@
         </div>
         <div class="tabs-header">
             <ul class="tabs">
-                <li class="tab"><a href="#Comments" class="active">Comments</a></li>
-                <li class="tab"><a href="#Notes">Notes</a></li>
+                <li class="tab"><a href="#comments" class="active">Comments</a></li>
+                <li class="tab"><a href="#notes">Notes</a></li>
             </ul>
         </div>
         <!-- Comment tab start here  -->
-        <div id="Comments">
-            <div class="tabContent">
-                <textarea class="commenteTexarea"
+        <div id="comments">
+            <div class="tab-content">
+                <textarea class="comment-textarea"
                     placeholder="Write your comment here. It will shared external with recipients." name="comments"
                     maxlength="1000" cols="25" rows="6"></textarea>
             </div>
@@ -1372,9 +1436,9 @@
         <!-- Comment tab start here  -->
 
         <!-- Notes tab start here  -->
-        <div id="Notes">
-            <div class="tabContent">
-                <textarea class="commenteTexarea"
+        <div id="notes">
+            <div class="tab-content">
+                <textarea class="comment-textarea"
                     placeholder="Write your note here. It will only be shared internal with your team member."
                     name="comments" maxlength="1000" cols="25" rows="6"></textarea>
             </div>

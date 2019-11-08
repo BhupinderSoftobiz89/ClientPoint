@@ -1,12 +1,12 @@
 /* Library CSS start here */
-.newClientPointTitleBar {
+.newclientpoint-title-bar {
 	.library-header-right {
 		@include flexbox();
 		//@include flex-wrap($wrap);
 		align-items: $align-items-center;
 		flex: 1;
 		justify-content: flex-end;
-		.commonDefaultSearch {
+		.common-default-search {
 			@include margin-padding(all, 0 1.25rem 0 0, all, null);
 		}
 		.btn-round {

@@ -19,7 +19,7 @@
 		width: $full-width;
 		position: $position-relative;
 		border-right: 1px solid #efeff3;
-		.searchInput {
+		.search-input {
 			height: $header-height;
 			border: $border-none;
 			box-sizing: $box-sizing;
@@ -33,7 +33,7 @@
 				box-shadow: $none !important;
 			}
 		}
-		.searchBtn {
+		.search-btn {
 			position: $position-absolute;
 			border: $border-none;
 			width: 1.67rem;
@@ -47,7 +47,7 @@
 			}
 		}
 	}
-	.newClientPoint {
+	.clientpoint-heading-bar {
 		padding: 0 2.1875rem;
 		width: calc(100% - 24rem);
 		@include flexbox();
@@ -76,12 +76,12 @@
 			// align-items: $align-items-center;
 		}
 	}
-	.userLoginPanel {
+	.user-login-panel {
 		@include flexbox();
 		align-items: $align-items-center;
 		margin-left: $margin-left-auto;
 	}
-	.userFetaures {
+	.user-fetaures {
 		margin-right: 20px;
 		color: $default-color;
 		font-size: 15px;
@@ -92,22 +92,22 @@
 			font-weight: $font-weight-bold;
 		}
 	}
-	.userAvtar {
+	.user-avtar {
 		width: 3.54rem;
 		height: 3.54rem;
 		margin-right: 7px;
 		display: $display-inline-block;
 		vertical-align: $verticle-align-middle;
 	}
-	.userName {
+	.user-name {
 		color: color("grey", "darken-4");
 		font-size: $font-size-fourteen;
 	}
 
-	.searchResponsive {
+	.search-responsive {
 		display: $diplay-none;
 	}
-	.mobileSearch {
+	.mobile-search {
 		position: $position-absolute;
 		border: $border-none;
 		width: 1.67rem;
@@ -121,10 +121,10 @@
 		}
 	}
 }
-.page-header.addHeaderMargin {
+.page-header.add-header-margin {
 	padding-left: 6.5rem;
 }
-.UserDropdownLogin {
+.user-dropdown-login {
 	top: 100% !important;
 	min-width: 236px;
 	width: 14.75rem !important;
@@ -154,13 +154,13 @@
 			&:hover {
 				color: color("indigo", "base");
 
-				.profileIcon {
+				.profile-icon {
 					background: url(../images/common-icons.svg) no-repeat -323px -896px;
 				}
-				.supportIcon {
+				.support-icon {
 					background: url(../images/common-icons.svg) no-repeat -388px -896px;
 				}
-				.logoutIcon {
+				.logout-icon {
 					background: url(../images/common-icons.svg) no-repeat -91px -895px;
 				}
 			}
@@ -172,13 +172,13 @@
 		}
 	}
 }
-.userLoginHeader {
+.user-login-header {
 	@include flexbox();
 	align-items: $align-items-center;
 	img {
 		margin-right: 10px;
 	}
-	.userInfo {
+	.user-info-header {
 		h6 {
 			font-size: $font-size-fourteen;
 			line-height: $line-height-twenty;
@@ -193,19 +193,19 @@
 		}
 	}
 }
-.profileIcon {
+.profile-icon {
 	display: $display-inline-block;
 	background: url(../images/common-icons.svg) no-repeat -323px -816px;
 	width: 1.3rem;
 	height: 1.85rem;
 	margin-right: 10px;
 }
-.supportIcon {
-	@extend .profileIcon;
+.support-icon {
+	@extend .profile-icon;
 	background: url(../images/common-icons.svg) no-repeat -388px -816px;
 }
-.logoutIcon {
-	@extend .profileIcon;
+.logout-icon {
+	@extend .profile-icon;
 	background: url(../images/common-icons.svg) no-repeat -28px -895px;
 }
 /* Header end here */

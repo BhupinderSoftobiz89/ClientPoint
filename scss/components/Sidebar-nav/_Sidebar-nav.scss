@@ -1,6 +1,6 @@
 /* Sidebar Nav start here */
 
-.sidebarNav {
+.sidebar-nav {
 	width: 11.67rem;
 	height: $height-hundred-per;
 	@include navGradient(0deg, #8b8eff, #5f63ff);
@@ -8,7 +8,7 @@
 	z-index: 5;
 	top: $top-zero;
 	@include transition($transiton);
-	.navMenuOuter {
+	.nav-menu-outer {
 		background: $navPrimaryBg;
 		flex: 1;
 		display: $display-block;
@@ -28,23 +28,23 @@
 					background-color: $background-none;
 					color: color("indigo", "lighten-5");
 
-					.fileIcon {
+					.file-icon {
 						background-position: -14px -65px;
 					}
-					.prieviewIcon {
+					.prieview-icon {
 						background-position: -90px -64px;
 					}
-					.clientIcon {
+					.client-icon {
 						background-position: -166px -64px;
 					}
-					.settingIcon {
+					.setting-icon {
 						background-position: -242px -64px;
 					}
 				}
 			}
 		}
 	}
-	.commonIconbg {
+	.common-icon-bg {
 		background: url(../images/common-icons.svg) no-repeat 0 0;
 		width: 1.6rem;
 		height: 1.6rem;
@@ -52,25 +52,25 @@
 		@include transition($transiton);
 		display: $display-inline-block;
 	}
-	.fileIcon {
+	.file-icon {
 		background-position: -14px -15px;
 		&:hover {
 			background-position: -14px -65px;
 		}
 	}
-	.prieviewIcon {
+	.prieview-icon {
 		background-position: -90px -14px;
 		&:hover {
 			background-position: -90px -64px;
 		}
 	}
-	.clientIcon {
+	.client-icon {
 		background-position: -166px -14px;
 		&:hover {
 			background-position: -166px -64px;
 		}
 	}
-	.settingIcon {
+	.setting-icon {
 		background-position: -242px -14px;
 		&:hover {
 			background-position: -242px -64px;
@@ -78,7 +78,7 @@
 	}
 }
 
-.sidebarSubmenu {
+.sidebar-submenu {
 	background: $navPrimaryBg;
 	max-width: 14rem;
 	width: $full-width;
@@ -99,7 +99,7 @@
 				color: rgba(255, 255, 255, 0.35);
 				&:hover {
 					color: rgba(255, 255, 255, 1);
-					.lockIcon {
+					.lock-icon {
 						@include opacity(1);
 					}
 				}
@@ -117,10 +117,10 @@
 		}
 	}
 }
-.sidebarSubmenu.openNav {
+.sidebar-submenu.open-nav {
 	left: -15rem;
 }
-.sidebarNav.sidebarNavClose {
+.sidebar-nav.sidebar-nav-close {
 	width: 5rem;
 	ul {
 		li {
@@ -134,7 +134,7 @@
 				padding: $zero;
 				border-radius: $border-radius-hundred;
 				justify-content: $justifycenter;
-				.commonIconbg {
+				.common-icon-bg {
 					margin-right: $zero;
 				}
 				&:hover {
@@ -144,80 +144,66 @@
 		}
 	}
 }
-.fullWidthNav {
+.full-width-nav {
 	//background: color("indigo", "accent-4");
 	display: $display-block;
 	@include transition($transiton);
-	.navMenu {
+	.nav-menu {
 		background: color("indigo", "accent-4");
 	}
 }
-
-#content.contentMargin {
+#content.content-margin {
 	margin-left: 11.65rem;
 }
-
-.btn6 {
-	position: $position-relative;
+.animate-nav-icon {
+	@include relative();
 	// width: 70px;
 	height: 70px;
 	top: $zero;
 	left: $zero;
-	transition: $transiton;
+	@include transition(all 0.5s);
 	background: color("indigo", "base");
+	cursor: $cursor-pointer;
+	.icon {
+		@include transition(all 0.5s);
+		@include absolute(top 34px left 23px);
+		height: 2.23px;
+		width: 20px;
+		background: color("shades", "white");
+		@include border-radius(2px);
+		&:before {
+			@include transition(all 0.5s);
+			@include absolute(top -7px left 3px);
+			width: 15px;
+			height: 2.23px;
+			background: color("shades", "white");
+			content: "";
+			@include border-radius(6px);
+		}
+		&:after {
+			@include transition(all 0.5s);
+			@include absolute(top 7px left 3px);
+			width: 15px;
+			height: 2.23px;
+			background: color("shades", "white");
+			content: "";
+			@include border-radius(6px);
+		}
+	}
+	&.open .icon {
+		@include transition(all 0.5s);
+		@include transform(rotateZ(180deg));
+		&:before {
+			@include transform(rotateZ(45deg) scaleX(0.75) translate(14px, -6px));
+			left: -2px;
+		}
+		&:after {
+			@include transform(rotateZ(-45deg) scaleX(0.75) translate(14px, 6px));
+			left: -2px;
+		}
+	}
 }
-.btn6 .icon {
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	position: absolute;
-	height: 2.23px;
-	width: 20px;
-	top: 34px;
-	background-color: #ffffff;
-	border-radius: 2px;
-	left: 23px;
-}
-.btn6 .icon:before {
-	transition: $transiton;
-	position: absolute;
-	width: 15px;
-	height: 2.23px;
-	background-color: #ffffff;
-	content: "";
-	top: -7px;
-	border-radius: 6px;
-	left: 3px;
-}
-.btn6 .icon:after {
-	transition: $transiton;
-	position: absolute;
-	width: 15px;
-	height: 2.23px;
-	background-color: #ffffff;
-	content: "";
-	top: 7px;
-	border-radius: 6px;
-	left: 3px;
-}
-.btn6.open .icon {
-	transition: $transiton;
-	-webkit-transform: rotateZ(180deg);
-	transform: rotateZ(180deg);
-}
-.btn6.open .icon:before {
-	-webkit-transform: rotateZ(45deg) scaleX(0.75) translate(14px, -6px);
-	transform: rotateZ(45deg) scaleX(0.75) translate(14px, -6px);
-	left: -2px;
-}
-.btn6.open .icon:after {
-	-webkit-transform: rotateZ(-45deg) scaleX(0.75) translate(14px, 6px);
-	transform: rotateZ(-45deg) scaleX(0.75) translate(14px, 6px);
-	left: -2px;
-}
-.btn6:hover {
-	cursor: pointer;
-}
-.lockIcon {
+.lock-icon {
 	background: url(../images/common-icons.svg) no-repeat -29px -745px;
 	width: 1.125rem;
 	height: 1.4rem;
@@ -229,7 +215,7 @@
 .current {
 	left: 70px !important;
 }
-.clientPointLogo {
+.clientpoint-logo {
 	position: $position-absolute;
 	bottom: 20px;
 	left: $zero;
@@ -239,22 +225,22 @@
 	width: $full-width;
 	height: 43px;
 }
-.sidebarNav.sidebarNavClose {
-	.logoBig {
+.sidebar-nav.sidebar-nav-close {
+	.logo-big {
 		display: $diplay-none;
 	}
-	.logoSmall {
+	.logo-small {
 		display: $display-block;
 	}
 }
-.sidebarNav.fullWidthNav {
-	.logoBig {
+.sidebar-nav.full-width-nav {
+	.logo-big {
 		display: $display-block;
 	}
-	.logoSmall {
+	.logo-small {
 		display: $diplay-none;
 	}
-	.clientPointLogo {
+	.clientpoint-logo {
 		max-width: 115px;
 		height: 26px;
 	}
@@ -272,6 +258,5 @@
 	min-height: 30px;
 	padding: 10px 16px !important;
 }
-
 
 /* Sidebar Nav end  here */

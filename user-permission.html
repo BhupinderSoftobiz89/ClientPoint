@@ -16,43 +16,44 @@
 
 <body>
     <!-- Sidebar nav start here -->
-    <nav class="sidebarNav sidebarNavClose">
-        <div class="navMenuOuter menu btn6 navMenu" data-menu="6">
-            <div class="icon "></div>
+    <nav class="sidebar-nav sidebar-nav-close">
+        <div class="nav-menu-outer menu animate-nav-icon nav-menu" data-menu="6">
+            <div class="icon"></div>
         </div>
         <ul>
             <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="tab-1">
                 <a href="#dashboard_nav" class="sidebarclick">
-                    <span class="commonIconbg fileIcon"></span>
+                    <span class="common-icon-bg file-icon"></span>
                     Dashboard
                 </a>
+
             </li>
             <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
                 <a href="#library_nav" class="sidebarclick">
-                    <span class="commonIconbg prieviewIcon"></span>
+                    <span class="common-icon-bg prieview-icon"></span>
                     Content Libray
                 </a>
             </li>
             <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="tab-3">
                 <a href="#clientPoint_nav" class="sidebarclick">
-                    <span class="commonIconbg clientIcon"></span>
+                    <span class="common-icon-bg client-icon"></span>
                     ClientPoints
                 </a>
             </li>
             <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="tab-4">
                 <a href="#Setting_nav" class="sidebarclick">
-                    <span class="commonIconbg settingIcon"></span>Settings
+                    <span class="common-icon-bg setting-icon"></span>Settings
                 </a>
             </li>
         </ul>
-        <a href="javascript:void(0);" class="clientPointLogo">
-            <img class="logoSmall" src="./images/ClientPoint-Logo.svg" alt="">
-            <img class="logoBig" src="./images/clientpoint-logo-big.svg" alt="">
+        <a href="javascript:void(0)" class="clientpoint-logo">
+            <img class="logo-small" src="./images/ClientPoint-Logo.svg" alt="">
+            <img class="logo-big" src="./images/clientpoint-logo-big.svg" alt="">
         </a>
     </nav>
 
     <div class="sidebar_nav">
-        <aside id="tab-1" class="sidebarSubmenu openNav">
+        <aside id="tab-1" class="sidebar-submenu open-nav">
             <ul>
                 <li>
                     <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
@@ -66,7 +67,7 @@
                 <li><a href="dashboard-filter-expanded.html" class="active">Details</a></li>
             </ul>
         </aside>
-        <aside id="tab-2" class="sidebarSubmenu openNav">
+        <aside id="tab-2" class="sidebar-submenu open-nav">
             <ul>
                 <li>
                     <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
@@ -79,7 +80,7 @@
                 <li><a href="library.html" class="active">Templates</a></li>
             </ul>
         </aside>
-        <aside id="tab-3" class="sidebarSubmenu openNav">
+        <aside id="tab-3" class="sidebar-submenu open-nav">
             <ul>
                 <li>
                     <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
@@ -88,12 +89,12 @@
                         </i>
                     </a>
                 </li>
-                <li><a href="clientpoint-file.html">Analytics</a></li>
+                <li><a href="client-point-file.html">Analytics</a></li>
                 <li><a href="clientpoint-preview.html">ClientPoint</a></li>
                 <li><a href="clientpoint-top-bar.html">Details</a></li>
             </ul>
         </aside>
-        <aside id="tab-4" class="sidebarSubmenu openNav">
+        <aside id="tab-4" class="sidebar-submenu open-nav">
             <ul>
                 <li>
                     <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
@@ -105,10 +106,10 @@
                 <li><a href="user-permission.html">Users & Permissions</a></li>
                 <li><a href="theme.html">Themes</a></li>
                 <li><a href="intigration.html">Integrations</a></li>
-                <li><a href="#">Workspace <span class="lockIcon"></span></a></li>
-                <li><a href="#">Categorization <span class="lockIcon"></span></a></li>
-                <li><a href="#">Custom Fields <span class="lockIcon"></span></a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="#">Workspace <span class="lock-icon"></span></a></li>
+                <li><a href="#">Categorization <span class="lock-icon"></span></a></li>
+                <li><a href="contacts.html">Custom Fields <span class="lock-icon"></span></a></li>
+                <li><a href="#">Contacts</a></li>
                 <li><a href="theme-setting.html">Advanced Settings</a></li>
             </ul>
         </aside>
@@ -118,27 +119,91 @@
     <!-- Header start here  -->
     <header class="page-header d-flex">
         <div class="searchbox">
-            <input type="submit" class="searchBtn" value="">
-            <input type="search" class="searchInput" placeholder="Search">
+            <input type="submit" class="search-btn" value="">
+            <input type="search" class="search-input" placeholder="Search" data-search id="myInput" value="">
+            <a href="javascript:void(0);" class="serach-arrow">
+                <i class="material-icons">
+                    arrow_forward
+                </i>
+            </a>
         </div>
-        <div class="searchResponsive">
-            <a href="#" class="mobileSearch"></a>
+        <div class="search-responsive">
+            <a href="#" class="mobile-search"></a>
         </div>
-        <aside class="newClientPoint">
-            <a class="waves-teal btn-flat" href="clientpoint-preview.html">New ClientPoint</a>
-            <a class="userLoginPanel dropdown-trigger" href="#" data-target="userDropDown">
-                <span class="userFetaures"><strong>Upgrade now</strong> to unlock more features!</span>
-                <span class="userAvtar"><img class="responsive-img" src="./images/user-img.png" alt=""></span>
-                <span class="userName">Miles Morales</span>
+        <div class="search-result">
+            <div class="search-main items">
+                <a data-filter-item data-filter-name="encom" class="topSearchRow">
+                    <span class="results-search-icon"></span>
+                    <h6>“encom”</h6>
+                </a>
+                <a data-filter-item data-filter-name="ClientPoint" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Encom Q2 Marketing ClientPoint</h5>
+                        <p>ClientPoint</p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="Account" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon suitcase-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Encom</h5>
+                        <p>Account</p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="Contact" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon user-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Kevin Flynn</h5>
+                        <p>Contact • <strong>Encom</strong></p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="Edward" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon user-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Edward Dillinger</h5>
+                        <p>Contact • <strong>Encom</strong></p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="Bradley" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon user-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Alan Bradley</h5>
+                        <p>Contact • <strong>Encom</strong></p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="ipsum" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon comment-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed <strong>Encom</strong> dousan…
+                        </h5>
+                        <p>Comment • Kevin Flynn</p>
+                    </div>
+                </a>
+                <a data-filter-item data-filter-name="dolor" class="search-row" href="javasvript:void(0);">
+                    <span class="results-icon edit-icon"></span>
+                    <div class="search-result-content">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed <strong>Encom</strong> dousan…
+                        </h5>
+                        <p>Notes • Peter Parker</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <aside class="clientpoint-heading-bar">
+            <a class="waves-teal btn-flat">New ClientPoint</a>
+            <a class="user-login-panel dropdown-trigger" href="#" data-target="user-dropdown">
+                <span class="user-fetaures"><strong>Upgrade now</strong> to unlock more features!</span>
+                <span class="user-avtar"><img class="responsive-img" src="./images/user-img.png" alt=""></span>
+                <span class="user-name">Miles Morales</span>
                 <i class="material-icons">
                     arrow_drop_down
                 </i>
             </a>
-            <ul id="userDropDown" class="dropdown-content UserDropdownLogin">
-                <li><a href="#!">
-                        <div class="userLoginHeader">
+            <ul id="user-dropdown" class="dropdown-content user-dropdown-login">
+                <li><a href="javascript:void(0);">
+                        <div class="user-login-header">
                             <img src="./images/user-avtar.png" alt="">
-                            <div class="userInfo">
+                            <div class="user-info-header">
                                 <h6>Miles Morales</h6>
                                 <p>milesm@arachnid.com</p>
                             </div>
@@ -148,19 +213,19 @@
                 <li class="divider" tabindex="-1"></li>
                 <li>
                     <a href="login.html">
-                        <span class="profileIcon"></span>
+                        <span class="profile-icon"></span>
                         View Profile
                     </a>
                 </li>
                 <li>
                     <a href="login-dashboard.html">
-                        <span class="supportIcon"></span>
+                        <span class="support-icon"></span>
                         Support
                     </a>
                 </li>
                 <li>
                     <a href="login-progress-image.html">
-                        <span class="logoutIcon"></span>
+                        <span class="logout-icon"></span>
                         Logout
                     </a>
                 </li>
@@ -171,21 +236,21 @@
     <!-- Main Content start here  -->
     <div id="content">
         <article class="content-common">
-            <div class="clientPoint-file heightAuto">
-                <div class="newClientPointTitleBar">
-                    <div class="clientpointTitle">
+            <div class="client-point-file height-auto">
+                <div class="newclientpoint-title-bar">
+                    <div class="clientpoint-title">
                         <h4>Users & Permissions</h4>
                     </div>
-                    <div class="newClientPointTitleBar-right library-header-right">
+                    <div class="newclientpoint-title-bar-right library-header-right">
                         <a class="waves-effect waves-light btn btn-round addUser">
                             Add User
                         </a>
                     </div>
                 </div>
                 <div class="userTableHead">
-                    <div class="commonDefaultSearch">
-                        <input type="submit" class="searchBtn" value="">
-                        <input type="search" class="searchCommon" placeholder="Search">
+                    <div class="common-default-search">
+                        <input type="submit" class="search-btn" value="">
+                        <input type="search" class="search-input-common" placeholder="Search">
                     </div>
                     <div class="tableOptionUser">
                         <a href="javascript:void(0);" class="optionsUser">

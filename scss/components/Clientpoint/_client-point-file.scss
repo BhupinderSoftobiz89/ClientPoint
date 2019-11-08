@@ -1,8 +1,8 @@
 /* client Point File page start here */
-.clientPoint-file {
+.client-point-file {
 	width: $full-width;
 	height: $height-hundred-per;
-	.newClientPointTitleBar {
+	.newclientpoint-title-bar {
 		padding: 1.6rem 1.8125rem;
 		margin: $zero;
 		border-bottom: 1px solid color("grey", "lighten-5");
@@ -10,15 +10,15 @@
 			margin: $zero;
 		}
 	}
-	.newperposalclientbar {
+	.newperposal-client-bar  {
 		padding: 1.1rem 1.8125rem;
 		@include flex-wrap($wrap);
 	}
-	.creatingPerposal {
+	.creating-perposal {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		height: calc(100% - 153px);
-		.creatingPerposalLeft {
+		.creating-perposal-left {
 			background: color("grey", "lighten-4");
 			width: 64.7%;
 			padding: 1.875rem;
@@ -37,7 +37,7 @@
 				}
 			}
 		}
-		.creatingPerposalRight {
+		.creating-perposal-rightpanel {
 			width: 35.3%;
 			padding: $zero;
 			p {
@@ -62,7 +62,7 @@
 				align-items: $align-items-center;
 				padding: 0.8rem 2rem 0.8rem 1.8rem;
 				transition: $transiton;
-				.bookIcon {
+				.book-icon {
 					background: url(../images/common-icons.svg) no-repeat -91px -345px;
 					width: 1.125rem;
 					height: 1.5rem;
@@ -139,7 +139,7 @@
 					border-left: 7px solid color("indigo", "base");
 					color: color("grey", "darken-4");
 				}
-				.PDFIcon {
+				.pdf-icon {
 					background: url(../images/common-icons.svg) no-repeat -169px -346px;
 					width: 1.3rem;
 					height: 1.6rem;
@@ -198,33 +198,33 @@
 
 /* Add A File Modal start here  */
 
-.addNotesModal {
+.add-notes-modal {
 	max-width: 64.3rem;
 	max-height: inherit;
 	overflow: inherit;
-	.shareIcon {
+	.share-icon {
 		background: url(../images/common-icons.svg) no-repeat -167px -192px;
 		width: 1.5rem;
 		height: 1.85rem;
 		margin-right: 11px;
 		display: $display-inline-block;
 	}
-	.commonDefaultSearch {
+	.common-default-search {
 		max-width: 16.5rem;
 	}
-	.searchTabHeader {
+	.search-tab-header {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
 		padding-right: 3.6rem;
 		padding-left: 3.125rem;
-		.gridLink {
+		.grid-link {
 			width: 20px;
 			height: 20px;
 			margin-left: auto;
 		}
 	}
-	.mylibraryContent {
+	.mylibrary-content {
 		p {
 			font-weight: $font-weight-500;
 			text-transform: $text-uppercase;
@@ -235,7 +235,7 @@
 			padding-right: 3.6rem;
 		}
 	}
-	.tabContent {
+	.tab-content {
 		height: 333px;
 		//overflow: auto;
 		padding: 0 0 1.875rem 0;
@@ -249,7 +249,7 @@
 	.modal-header {
 		padding: 2.2rem 1.875rem 1.3rem 2.9375rem;
 	}
-	.chooseFile {
+	.choose-file {
 		border: 1px dashed color("grey", "lighten-3");
 		padding: 2.8rem 2.5rem;
 		margin: 2.1rem 0 0;
@@ -271,12 +271,12 @@
 			cursor: $cursor-pointer;
 		}
 	}
-	.webtabheight {
+	.webtab-height {
 		height: $height-auto;
 		padding: $zero;
 		margin: 40px 0;
 	}
-	.mylibraryContent {
+	.mylibrary-content {
 		height: $height-hundred-per;
 	}
 }
@@ -370,7 +370,7 @@
 			margin-right: 0.9375rem;
 		}
 
-		.fileIcon {
+		.file-icon {
 			content: "";
 			display: $display-inline-block;
 			width: 16px;
@@ -379,7 +379,7 @@
 			margin-right: 0.9375rem;
 		}
 	}
-	.rotateArrow {
+	.rotate-arrow {
 		.arrow {
 			&:before {
 				transform: rotate(90deg);
@@ -390,7 +390,7 @@
 		transform: rotate(90deg);
 	}
 }
-.ScrollOuterArrow {
+.scroll-tab-arrow {
 	width: 11rem;
 	height: 3.4rem;
 	background: linear-gradient(to left, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
@@ -401,7 +401,7 @@
 	@include flexbox();
 	justify-content: flex-end;
 }
-.ScrollArrow {
+.scroll-arrow {
 	width: 2.5rem;
 	height: 2.5rem;
 	background: url(../images/common-icons.svg) no-repeat -84px -259px;
@@ -411,7 +411,7 @@
 	@include flexbox();
 	align-items: $align-items-center;
 }
-.tabContent.heightAuto {
+.tab-content.height-auto {
 	height: 195px;
 	margin: $zero;
 }
@@ -449,27 +449,27 @@
 		}
 	}
 }
-.chooseFilePadding {
+.choose-file-padding {
 	padding-right: 3.6rem;
 	padding-left: 3.125rem;
 }
 
-#MyLibrary,
-#Mytemplates,
-#Uploads,
-#Recent,
-#FromWebsite,
-#FromWebsite {
+#my-library,
+#my-templates,
+#uploads,
+#recent,
+#from-website,
+#from-website {
 	.modal-footer {
 		.btn-round {
 			padding: 0 3.4rem;
 		}
 	}
 }
-.uploadFilesShow {
+.upload-files-show {
 	margin-top: 16px;
 
-	.FileIcon {
+	.file-icon {
 		content: "";
 		display: $display-inline-block;
 		width: 22px;
@@ -477,7 +477,7 @@
 		background: url(../images/common-icons.svg) no-repeat -245px -266px;
 		margin-right: 0.9375rem;
 	}
-	.addFilesName-row {
+	.add-filesname-row {
 		padding-right: 3.6rem;
 		padding-left: 3.125rem;
 		padding-top: 0.55rem;
@@ -506,7 +506,7 @@
 		}
 	}
 }
-.addMoreFiles {
+.add-more-files {
 	margin-top: 20px;
 	@include flexbox();
 	align-items: $align-items-center;
@@ -521,7 +521,7 @@
 		margin-right: 10px;
 	}
 }
-.websiteUrlSerach {
+.website-url-serach {
 	padding-left: 3.125rem;
 	padding-right: 3.6rem;
 	input[type="text"] {
@@ -601,9 +601,9 @@
 }
 
 /* Add A section Modal Start here */
-#AddSection {
+#add-section {
 	max-width: 737px;
-	.bookIcon {
+	.book-icon {
 		background: url(../images/common-icons.svg) no-repeat -167px -416px;
 		width: 1.5rem;
 		height: 1.85rem;
@@ -660,10 +660,10 @@
 
 /* Share Modal start here */
 
-#shareModal {
+share-modal {
 	max-width: 737px;
 	max-height: 90%;
-	.shareIcon {
+	.share-icon {
 		background: url(../images/common-icons.svg) no-repeat -245px -412px;
 		width: 1.5rem;
 		height: 1.85rem;
@@ -682,10 +682,10 @@
 	.tabs-header {
 		padding-left: 50px;
 	}
-	.tabContent {
+	.tab-content {
 		padding: 0 3.125rem 1.875rem 3.5rem;
 	}
-	.privateShare {
+	.private-share {
 		h4 {
 			text-align: $text-center;
 			text-transform: $text-uppercase;
@@ -696,7 +696,7 @@
 			margin-bottom: 0.7rem;
 			letter-spacing: 0.291667px;
 		}
-		.copyUrl {
+		.copy-url {
 			position: $position-relative;
 			border: 1px solid color("grey", "lighten-3");
 			border-radius: $border-radius-thirty;
@@ -733,7 +733,7 @@
 			}
 		}
 	}
-	.neWindow {
+	.new-window-link {
 		color: color("indigo", "base");
 		line-height: $line-height-twentyfour;
 		display: $display-inline-block;
@@ -800,9 +800,9 @@
 		color: color("indigo", "base");
 		letter-spacing: 0.7px;
 	}
-	.emailContent {
+	.email-content {
 		border: 1px solid #f2f3f3;
-		.emailAddress,
+		.email-address,
 		.subjectEmail {
 			@include flexbox();
 			align-items: $align-items-center;
@@ -831,7 +831,7 @@
 			color: color("grey", "darken-4");
 		}
 	}
-	#Email {
+	#email {
 		.justify-content-end {
 			justify-content: $justify-content-end;
 		}
@@ -857,19 +857,19 @@
 
 /* Comment Modal start here */
 
-#commentModal {
+#comment-modal {
 	max-width: 737px;
 	.modal-header {
 		padding: 2.3rem 1.875rem 2.1rem 3.5rem;
 	}
-	.tabContent {
+	.tab-content {
 		padding: 0 3.125rem 1.875rem 3.5rem;
 	}
 	.tabs-header {
 		padding-left: 50px;
 		margin-bottom: 1.9rem;
 	}
-	.shareIcon {
+	.share-icon {
 		background: url(../images/common-icons.svg) no-repeat -320px -411px;
 		width: 1.5rem;
 		height: 1.85rem;
@@ -884,7 +884,7 @@
 			}
 		}
 	}
-	.commenteTexarea {
+	.comment-textarea {
 		height: 12.7rem;
 		border: 1px solid color("grey", "lighten-3");
 		font-size: $font-size-fourteen;
@@ -1050,7 +1050,7 @@
 					@extend .powerdCommentIcon;
 					background: url(../images/common-icons.svg) no-repeat -242px -1063px;
 				}
-				.powerdShareIcon {
+				.powerdshare-icon {
 					@extend .powerdCommentIcon;
 					background: url(../images/common-icons.svg) no-repeat -322px -1063px;
 				}
@@ -1114,13 +1114,13 @@
 	@include margin-padding(all, 0 50px 0 50px, all, 2.5rem 4rem 2.5rem 4rem);
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
 }
-.fullHeight {
+.full-height {
 	height: $height-hundred-per;
 	overflow-x: hidden;
 }
 .cereatProposalHeight {
 	height: calc(100% - 120px) !important;
-	.creatingPerposalLeft {
+	.creating-perposal-left {
 		background: color("shades", "transparent") !important;
 	}
 }
@@ -1170,13 +1170,13 @@
 .showtableContentArrow.showArrow {
 	right: 2px;
 }
-.creatingPerposalRight.perposalPostionRight.creatingPerposalRightMove {
+.creating-perposal-rightpanel.perposalPostionRight.creating-perposal-rightpanelMove {
 	right: 0;
 	position: relative;
 	margin-right: $zero;
 	box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.15);
 }
-.creatingPerposalRight.perposalPostionRight {
+.creating-perposal-rightpanel.perposalPostionRight {
 	@include fixed(top auto right 0);
 	height: $height-hundred-per;
 	transition: $transiton;
@@ -1540,7 +1540,7 @@
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
 		@include margin-padding(all, 0 0 10px 0, all, 8px 0);
-		.pdfIcon {
+		.pdf-icon {
 			width: 1.3rem;
 			height: 1.6rem;
 			background: url(../images/common-icons.svg) no-repeat -169px -346px;
@@ -1629,7 +1629,7 @@
 				@include transition(all 0.5s);
 			}
 		}
-		.fileIcon {
+		.file-icon {
 			display: $display-inline-block;
 			width: 1.3rem;
 			height: 1.6rem;
@@ -1708,7 +1708,7 @@
 		padding: 0 4rem;
 	}
 }
-#Comments {
+#comments {
 	.outerScrollViewer {
 		height: calc(100% - 246px);
 		padding: 20px 0;
@@ -1813,7 +1813,7 @@
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
 		@include margin-padding(all, 8px 0, all, null);
-		.fileIcon {
+		.file-icon {
 			width: 1.3rem;
 			height: 1.6rem;
 			background: url(../images/common-icons.svg) no-repeat -172px -1227px;
@@ -1890,7 +1890,7 @@
 		@include flex-wrap($wrap);
 		border-bottom: 1px solid #f2f3f3;
 		@include margin-padding(all, null, all, 0 51px 13px 30px);
-		.shareIcon {
+		.share-icon {
 			background: url(../images/common-icons.svg) no-repeat -245px -412px;
 			width: 1.6rem;
 			height: 1.6rem;
@@ -2089,7 +2089,7 @@
 	}
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	.creatingPerposalRight {
+	.creating-perposal-rightpanel {
 		.collapsible-header {
 			.arrowAccordion {
 				height: 1.6rem;
@@ -2102,7 +2102,7 @@
 			height: 1.25rem;
 		}
 	}
-	.newperposalclientbar {
+	.newperposal-client-bar  {
 		.fileMenu {
 			.material-icons {
 				height: 12px;
