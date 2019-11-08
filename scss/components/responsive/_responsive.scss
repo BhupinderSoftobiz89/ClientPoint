@@ -39,14 +39,14 @@
 		display: $display-block;
 		width: $full-width;
 	}
-	.clientpointPreview .powerdByToggleInner .SignNow {
+	.clientpoint-preview .powerdByToggleInner .SignNow {
 		margin-left: inherit;
 		margin-top: 20px;
 	}
-	.clientpointPreview .PowerdByRightPanel {
+	.clientpoint-preview .powerdby-rightpanel {
 		margin-left: inherit;
 	}
-	.clientpointPreview .poweredByMarvel {
+	.clientpoint-preview .poweredby-marvel {
 		margin: 10px 0;
 		flex: 0 0 100%;
 	}
@@ -62,11 +62,11 @@
 	.outerScroll .clientpointEditing {
 		height: 100% !important;
 	}
-	.splashViewer .splashFormCenter {
+	.splash-viewer .splash-form-center {
 		padding: 30px;
 		margin-bottom: 100px;
 	}
-	.splashViewer .splashForm {
+	.splash-viewer .splash-form {
 		top: 200px;
 		-webkit-transform: translate(-50%, 0%);
 		transform: translate(-50%, 0);
@@ -119,13 +119,13 @@
 		bottom: auto;
 		position: relative;
 	}
-	.splashForm.loginSpace {
+	.splash-form.loginSpace {
 		top: 50px;
 	}
 	.loginPadding {
 		padding: 30px !important;
 	}
-	.splashForm.loginSpace .splashFormCenter {
+	.splash-form.loginSpace .splash-form-center {
 		padding: 30px;
 		margin-bottom: 30px;
 	}
@@ -283,10 +283,10 @@
 	.viewerSidebarCommon {
 		width: 100%;
 	}
-	.splashViewer .splashLogo {
+	.splash-viewer .splash-logo {
 		margin: 0 0 30px 0;
 	}
-	// .proposalTrial {
+	// .proposal-trial {
 	//     position: relative;
 	// }
 	.getting-started .getting-started-row {
@@ -376,9 +376,9 @@
 	.treeview {
 		padding-left: 2rem;
 	}
-	.splashViewer .btn,
-	.splashViewer .btn-large,
-	.splashViewer .btn-small {
+	.splash-viewer .btn,
+	.splash-viewer .btn-large,
+	.splash-viewer .btn-small {
 		height: 49px;
 		font-size: 1.2rem;
 		line-height: 2rem;
@@ -407,7 +407,7 @@
 	.modal-footer {
 		padding: 0 1.5rem 1rem;
 	}
-	.proposalTrial {
+	.proposal-trial {
 		position: relative;
 	}
 	.clientpointEditing {
@@ -457,16 +457,16 @@
 	.libraryTable {
 		height: calc(100% - 118px);
 	}
-	.signInModalContent .modal-content {
+	.signIn-modal-content .modal-content {
 		padding: 0 2rem 0 2rem;
 	}
-	#signNowModal .modal-header {
+	#signnow-modal .modal-header {
 		padding: 1rem 1rem 0rem 2rem;
 	}
-	.signInModalContent .modal-content .form-fields {
+	.signIn-modal-content .modal-content .form-fields {
 		margin: 10px 0 0 0;
 	}
-	.signInModalContent .typeIt .clickToSign {
+	.signIn-modal-content .typeIt .clickto-sign {
 		height: 74px;
 	}
 }
@@ -493,21 +493,21 @@
 	.row.mb-15 {
 		margin: 0;
 	}
-	.clientpointPreview .PowerdByLogo {
+	.clientpoint-preview .powerdby-logo {
 		margin: 0;
 	}
-	.clientpointPreview .powerdByToggleInner .powerdByToggleLinks ul {
+	.clientpoint-preview .powerdByToggleInner .powerdByToggleLinks ul {
 		display: list-item;
 	}
-	.clientpointPreview .powerdByToggleInner .powerdByToggleLinks ul li a {
+	.clientpoint-preview .powerdByToggleInner .powerdByToggleLinks ul li a {
 		padding: 15px 0px 0 0;
 	}
-	.clientpointPreview .PowerdByLogo {
+	.clientpoint-preview .powerdby-logo {
 		margin: 10px 0;
 		display: block;
 		flex: 0 0 100%;
 	}
-	.clientpointPreview .sentByDropdown {
+	.clientpoint-preview .sentby-dropdown {
 		margin: 0;
 	}
 	.themeContent .theme-list .theme-list-row .themebtns {
@@ -539,7 +539,7 @@
 .powerdByToggleInner {
     padding: 17px 20px 17px 20px;
 }
-.clientpointPreview .clientPointPowerdBy {
+.clientpoint-preview .clientPoint-powerd-by {
     padding: 0 0 0 20px;
 }
 .client-point-file .newperposal-client-bar  {

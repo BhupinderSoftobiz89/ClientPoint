@@ -24,7 +24,7 @@ $('.dropdown-trigger').dropdown();
 $('.hoverdropdown').dropdown({
   closeOnClick: false
 });
-$('.downArrowPowered').dropdown({
+$('.downarrow-powered').dropdown({
   coverTrigger: false,
 });
 $('.saveDropdownIcon').dropdown({
@@ -210,11 +210,11 @@ $('.filterArrowDropdown').click(function () {
 
 function valueChnaged() {
   if ($('.switcherChecked').is(":checked")) {
-    $(".clientpointPreview").show();
+    $(".clientpoint-preview").show();
     $('.switcherText').html("Hide Top Bar");
   }
   else {
-    $(".clientpointPreview").hide();
+    $(".clientpoint-preview").hide();
     $('.switcherText').html("Show Top Bar");
   }
 }

@@ -10909,7 +10909,7 @@ input::-ms-clear {
   display: inline-block;
 }
 
-.clientpointPreview {
+.clientpoint-preview {
   width: 100%;
 }
 
@@ -12145,7 +12145,7 @@ share-modal #email .modal-footer .btn-round {
 }
 
 /* Clientpoint Preview page start here */
-.clientpointPreview .clientPointPowerdBy {
+.clientpoint-preview .clientPoint-powerd-by {
   background: #181A51;
   width: 100%;
   min-height: 50px;
@@ -12162,7 +12162,7 @@ share-modal #email .modal-footer .btn-round {
   z-index: 3;
 }
 
-.clientpointPreview .PowerdByRightPanel {
+.clientpoint-preview .powerdby-rightpanel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12174,7 +12174,7 @@ share-modal #email .modal-footer .btn-round {
   margin-left: auto;
 }
 
-.clientpointPreview .sentByDropdown {
+.clientpoint-preview .sentby-dropdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12190,7 +12190,7 @@ share-modal #email .modal-footer .btn-round {
   cursor: pointer;
 }
 
-.clientpointPreview .sentByDropdown h5 {
+.clientpoint-preview .sentby-dropdown h5 {
   color: #FFFFFF;
   font-size: 16px;
   font-size: 1.14286rem;
@@ -12199,7 +12199,7 @@ share-modal #email .modal-footer .btn-round {
   margin: 0;
 }
 
-.clientpointPreview .sentByDropdown .material-icons {
+.clientpoint-preview .sentby-dropdown .material-icons {
   color: #FFFFFF;
   width: 40px;
   text-align: center;
@@ -12208,7 +12208,7 @@ share-modal #email .modal-footer .btn-round {
   margin-right: 28px;
 }
 
-.clientpointPreview .PowerdByLogo {
+.clientpoint-preview .powerdby-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12219,12 +12219,12 @@ share-modal #email .modal-footer .btn-round {
   flex-wrap: wrap;
 }
 
-.clientpointPreview .sentByDropdown.downArrowPowered .material-icons {
+.clientpoint-preview .sentby-dropdown.downarrow-powered .material-icons {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.clientpointPreview .poweredByMarvel {
+.clientpoint-preview .poweredby-marvel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12235,14 +12235,14 @@ share-modal #email .modal-footer .btn-round {
   flex-wrap: wrap;
 }
 
-.clientpointPreview .poweredByMarvel .borderMarvel {
+.clientpoint-preview .poweredby-marvel .border-marvel {
   border-right: 1px solid #353898;
   display: inline-block;
   margin: 0 20px;
   height: 25px;
 }
 
-.clientpointPreview .poweredByMarvel .encomLink {
+.clientpoint-preview .poweredby-marvel .encom-link {
   font-size: 16px;
   font-size: 1rem;
   color: #FFFFFF;
@@ -12530,27 +12530,27 @@ share-modal #email .modal-footer .btn-round {
 }
 
 /* Sign Now Page start here */
-.signInModalContent {
+.signIn-modal-content {
   max-width: 737px;
   max-height: 100%;
 }
 
-.signInModalContent .signatureIcon {
+.signIn-modal-content .signatureIcon {
   background: url(../images/common-icons.svg) no-repeat -168px -1154px;
   width: 1.7rem;
   height: 1.4rem;
   margin-right: 9px;
 }
 
-.signInModalContent .modal-header {
+.signIn-modal-content .modal-header {
   padding: 1.875rem 3.125rem 1.3rem 4rem;
 }
 
-.signInModalContent .modal-content {
+.signIn-modal-content .modal-content {
   padding: 0 3.125rem 0 4rem;
 }
 
-.signInModalContent .modal-content h6 {
+.signIn-modal-content .modal-content h6 {
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 26px;
@@ -12558,11 +12558,11 @@ share-modal #email .modal-footer .btn-round {
   margin: 16px 0 10px 0;
 }
 
-.signInModalContent .modal-content .form-fields {
+.signIn-modal-content .modal-content .form-fields {
   margin: 30px 0 0 0;
 }
 
-.signInModalContent .modal-content .form-fields .fullName {
+.signIn-modal-content .modal-content .form-fields .full-name {
   background: #FAFAFB;
   border-bottom: 1px solid #D4D4DE;
   margin: 0;
@@ -12574,13 +12574,13 @@ share-modal #email .modal-footer .btn-round {
   font-size: 1rem;
 }
 
-.signInModalContent .modal-content .form-fields .fullName:focus {
+.signIn-modal-content .modal-content .form-fields .full-name:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-bottom: 1px solid #4CAF50;
 }
 
-.signInModalContent .modal-content .form-fields label {
+.signIn-modal-content .modal-content .form-fields label {
   text-transform: uppercase;
   font-size: 16px;
   font-size: 1rem;
@@ -12591,7 +12591,7 @@ share-modal #email .modal-footer .btn-round {
   display: block;
 }
 
-.signInModalContent .modal-content .form-fields .phNumber {
+.signIn-modal-content .modal-content .form-fields .ph-number {
   border: 1px solid #D4D4DE !important;
   margin: 0;
   padding: 10px;
@@ -12599,15 +12599,15 @@ share-modal #email .modal-footer .btn-round {
           box-sizing: border-box;
 }
 
-.signInModalContent .modal-content .form-fields .phNumber:focus {
+.signIn-modal-content .modal-content .form-fields .ph-number:focus {
   outline: none;
 }
 
-.signInModalContent .typeIt {
+.signIn-modal-content .typeIt {
   margin: 33px 0 0 0;
 }
 
-.signInModalContent .typeIt .typeItLabelRow {
+.signIn-modal-content .typeIt .typeIt-label-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12619,7 +12619,7 @@ share-modal #email .modal-footer .btn-round {
   margin: 0 0 20px 0;
 }
 
-.signInModalContent .typeIt label {
+.signIn-modal-content .typeIt label {
   font-size: 16px;
   font-size: 1rem;
   font-weight: 500;
@@ -12635,22 +12635,22 @@ share-modal #email .modal-footer .btn-round {
   margin: 0 25px 0 0;
 }
 
-.signInModalContent .typeIt label:first-child {
+.signIn-modal-content .typeIt label:first-child {
   color: #5F63FF;
 }
 
-.signInModalContent .typeIt .typeIcon, .signInModalContent .typeIt .drawIcon {
+.signIn-modal-content .typeIt .type-icon, .signIn-modal-content .typeIt .draw-icon {
   background: url(../images/common-icons.svg) no-repeat -243px -1152px;
   width: 1.4rem;
   height: 1.4rem;
   margin-right: 5px;
 }
 
-.signInModalContent .typeIt .drawIcon {
+.signIn-modal-content .typeIt .draw-icon {
   background: url(../images/common-icons.svg) no-repeat -323px -1152px;
 }
 
-.signInModalContent .typeIt .clickToSign {
+.signIn-modal-content .typeIt .clickto-sign {
   height: 113px;
   border: 1px dashed #5F63FF;
   display: -webkit-box;
@@ -12670,18 +12670,18 @@ share-modal #email .modal-footer .btn-round {
   color: #5F63FF;
 }
 
-.signInModalContent .commentTextarea {
+.signIn-modal-content .comment-textarea {
   height: 75px;
   border: 1px solid #D4D4DE;
   resize: none;
   padding: 10px;
 }
 
-.signInModalContent .commentTextarea:focus {
+.signIn-modal-content .comment-textarea:focus {
   outline: none;
 }
 
-.signInModalContent .termsbtn {
+.signIn-modal-content .termsbtn {
   margin: 20px 0 37px 0;
   letter-spacing: 0.7px;
   font-weight: 500;
@@ -12736,22 +12736,22 @@ share-modal #email .modal-footer .btn-round {
   color: #5F63FF;
 }
 
-.viewerUserDropdownContent {
+.vieweruser-dropdown-content {
   min-width: 292px;
   text-align: center;
 }
 
-.viewerUserDropdownContent .userInfoViewer {
+.vieweruser-dropdown-content .userInfo-viewer {
   padding: 20px;
 }
 
-.viewerUserDropdownContent .userInfoViewer .viewerUserimg {
+.vieweruser-dropdown-content .userInfo-viewer .viewer-user-img {
   width: 100px;
   height: 100px;
   margin: 0 auto 20px;
 }
 
-.viewerUserDropdownContent .userInfoViewer .viewerUserimg img {
+.vieweruser-dropdown-content .userInfo-viewer .viewer-user-img img {
   -webkit-box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
           box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
   border-radius: 100%;
@@ -12759,7 +12759,7 @@ share-modal #email .modal-footer .btn-round {
   height: 100px;
 }
 
-.viewerUserDropdownContent .userInfoViewer h6 {
+.vieweruser-dropdown-content .userInfo-viewer h6 {
   color: #5F63FF;
   text-align: center;
   font-size: 16px;
@@ -12770,7 +12770,7 @@ share-modal #email .modal-footer .btn-round {
   margin: 0 0 9px;
 }
 
-.viewerUserDropdownContent .userInfoViewer p {
+.vieweruser-dropdown-content .userInfo-viewer p {
   font-size: 14px;
   font-size: 1rem;
   line-height: 22px;
@@ -12779,12 +12779,12 @@ share-modal #email .modal-footer .btn-round {
   color: #A9A9BE;
 }
 
-.viewerUserDropdownContent .divider {
+.vieweruser-dropdown-content .divider {
   background: #EFEFF3;
   margin-bottom: 20px;
 }
 
-.viewerUserDropdownContent li {
+.vieweruser-dropdown-content li {
   font-size: 14px;
   font-size: 1rem;
   line-height: 24px;
@@ -12793,11 +12793,11 @@ share-modal #email .modal-footer .btn-round {
   min-height: inherit;
 }
 
-.viewerUserDropdownContent li:hover {
+.vieweruser-dropdown-content li:hover {
   background: transparent;
 }
 
-.viewerUserDropdownContent li a {
+.vieweruser-dropdown-content li a {
   color: #181A51;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12814,7 +12814,7 @@ share-modal #email .modal-footer .btn-round {
   padding: 0 60px 15px 60px;
 }
 
-.viewerUserDropdownContent .emailIcon, .viewerUserDropdownContent .phoneIcon, .viewerUserDropdownContent .mobileIcon, .viewerUserDropdownContent .linkedInIcon {
+.vieweruser-dropdown-content .email-icon, .vieweruser-dropdown-content .phone-icon, .vieweruser-dropdown-content .mobile-icon, .vieweruser-dropdown-content .linkedIn-icon {
   width: 1.3rem;
   height: 1.25rem;
   background: url(../images/common-icons.svg) no-repeat -382px -412px;
@@ -12822,19 +12822,19 @@ share-modal #email .modal-footer .btn-round {
   display: inline-block;
 }
 
-.viewerUserDropdownContent .phoneIcon {
+.vieweruser-dropdown-content .phone-icon {
   background: url(../images/common-icons.svg) no-repeat -26px -500px;
 }
 
-.viewerUserDropdownContent .mobileIcon {
+.vieweruser-dropdown-content .mobile-icon {
   background: url(../images/common-icons.svg) no-repeat -93px -497px;
 }
 
-.viewerUserDropdownContent .linkedInIcon {
+.vieweruser-dropdown-content .linkedIn-icon {
   background: url(../images/common-icons.svg) no-repeat -30px -1231px;
 }
 
-.proposalTrial {
+.proposal-trial {
   background: #5F63FF;
   right: 0;
   bottom: 0;
@@ -12847,7 +12847,7 @@ share-modal #email .modal-footer .btn-round {
   z-index: 1;
 }
 
-.proposalTrial p {
+.proposal-trial p {
   margin: 0;
   font-size: 14px;
   font-size: 1rem;
@@ -12856,7 +12856,7 @@ share-modal #email .modal-footer .btn-round {
   color: #FFFFFF;
 }
 
-.proposalTrial a {
+.proposal-trial a {
   color: #FFFFFF;
   text-decoration: underline;
 }
@@ -13634,7 +13634,7 @@ share-modal #email .modal-footer .btn-round {
 
 /* Share Viewer Sidebar end here */
 /* Viewer Splash screen Start here */
-.splashViewer:after {
+.splash-viewer:after {
   content: "";
   background: url(../images/viewerSplag-bg.jpg) no-repeat 0 0;
   background-size: 100% 100%;
@@ -13646,7 +13646,7 @@ share-modal #email .modal-footer .btn-round {
   height: 100%;
 }
 
-.splashViewer .splashForm {
+.splash-viewer .splash-form {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -13658,12 +13658,12 @@ share-modal #email .modal-footer .btn-round {
   margin: auto;
 }
 
-.splashViewer .splashLogo {
+.splash-viewer .splash-logo {
   text-align: center;
   margin: 0 0 60px 0;
 }
 
-.splashViewer .splashFormCenter {
+.splash-viewer .splash-form-center {
   max-width: 695px;
   -webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
@@ -13675,7 +13675,7 @@ share-modal #email .modal-footer .btn-round {
   -ms-border-radius: 5px;
 }
 
-.splashViewer .splashFormCenter h5 {
+.splash-viewer .splash-form-center h5 {
   font-size: 20px;
   font-size: 1.42857rem;
   line-height: 34px;
@@ -13685,7 +13685,7 @@ share-modal #email .modal-footer .btn-round {
   margin: 0 0 30px 0;
 }
 
-.splashViewer .input-field label {
+.splash-viewer .input-field label {
   text-transform: capitalize;
   font-weight: 400;
   font-size: 14px;
@@ -13695,7 +13695,7 @@ share-modal #email .modal-footer .btn-round {
   color: #474874;
 }
 
-.splashViewer .input-field input {
+.splash-viewer .input-field input {
   border: none;
   border-bottom: 1px solid #D4D4DE;
   height: 3.2rem;
@@ -13703,13 +13703,13 @@ share-modal #email .modal-footer .btn-round {
   font-size: 1rem;
 }
 
-.splashViewer .input-field input:focus {
+.splash-viewer .input-field input:focus {
   border-bottom: 1px solid #4CAF50 !important;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.splashViewer .btn, .splashViewer .btn-large, .splashViewer .btn-small {
+.splash-viewer .btn, .splash-viewer .btn-large, .splash-viewer .btn-small {
   width: 100%;
   height: 55px;
   font-size: 18px;
@@ -13723,7 +13723,7 @@ share-modal #email .modal-footer .btn-round {
   letter-spacing: 1px;
 }
 
-.splashViewer .btn:hover, .splashViewer .btn-large:hover, .splashViewer .btn-small:hover {
+.splash-viewer .btn:hover, .splash-viewer .btn-large:hover, .splash-viewer .btn-small:hover {
   background: linear-gradient(170.65deg, #d8094a -7.34%, #d653dd 55.66%, #5f63ff 116.59%);
 }
 
@@ -13970,20 +13970,20 @@ share-modal #email .modal-footer .btn-round {
   line-height: 24px;
 }
 
-.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .emailIcon, .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .viewerUserDropdownContent .phoneIcon, .viewerUserDropdownContent .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .phoneIcon, .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .viewerUserDropdownContent .mobileIcon, .viewerUserDropdownContent .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .mobileIcon, .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .viewerUserDropdownContent .linkedInIcon, .viewerUserDropdownContent .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .linkedInIcon,
-.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .phoneIcon,
-.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .mobileIcon {
+.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .email-icon, .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .vieweruser-dropdown-content .phone-icon, .vieweruser-dropdown-content .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .phone-icon, .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .vieweruser-dropdown-content .mobile-icon, .vieweruser-dropdown-content .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .mobile-icon, .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .vieweruser-dropdown-content .linkedIn-icon, .vieweruser-dropdown-content .anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .linkedIn-icon,
+.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .phone-icon,
+.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .mobile-icon {
   width: 1.25rem;
   height: 1.25rem;
   background: url(../images/common-icons.svg) no-repeat -382px -412px;
   margin-right: 0.6rem;
 }
 
-.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .phoneIcon {
+.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .phone-icon {
   background: url(../images/common-icons.svg) no-repeat -26px -500px;
 }
 
-.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .mobileIcon {
+.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col .mobile-icon {
   background: url(../images/common-icons.svg) no-repeat -90px -497px;
 }
 
@@ -16400,7 +16400,7 @@ share-modal #email .modal-footer .btn-round {
   border: 2px solid #5F63FF;
 }
 
-.splashFormCenter h1 {
+.splash-form-center h1 {
   text-align: center;
   font-size: 34px;
   font-size: 2.42857rem;
@@ -16411,7 +16411,7 @@ share-modal #email .modal-footer .btn-round {
   color: #181A51;
 }
 
-.splashFormCenter .invalid {
+.splash-form-center .invalid {
   border-bottom: 1px solid #F44336 !important;
 }
 
@@ -18372,14 +18372,14 @@ share-modal #email .modal-footer .btn-round {
     display: block;
     width: 100%;
   }
-  .clientpointPreview .powerdByToggleInner .SignNow {
+  .clientpoint-preview .powerdByToggleInner .SignNow {
     margin-left: inherit;
     margin-top: 20px;
   }
-  .clientpointPreview .PowerdByRightPanel {
+  .clientpoint-preview .powerdby-rightpanel {
     margin-left: inherit;
   }
-  .clientpointPreview .poweredByMarvel {
+  .clientpoint-preview .poweredby-marvel {
     margin: 10px 0;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -18397,11 +18397,11 @@ share-modal #email .modal-footer .btn-round {
   .outerScroll .clientpointEditing {
     height: 100% !important;
   }
-  .splashViewer .splashFormCenter {
+  .splash-viewer .splash-form-center {
     padding: 30px;
     margin-bottom: 100px;
   }
-  .splashViewer .splashForm {
+  .splash-viewer .splash-form {
     top: 200px;
     -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0);
@@ -18459,13 +18459,13 @@ share-modal #email .modal-footer .btn-round {
     bottom: auto;
     position: relative;
   }
-  .splashForm.loginSpace {
+  .splash-form.loginSpace {
     top: 50px;
   }
   .loginPadding {
     padding: 30px !important;
   }
-  .splashForm.loginSpace .splashFormCenter {
+  .splash-form.loginSpace .splash-form-center {
     padding: 30px;
     margin-bottom: 30px;
   }
@@ -18632,7 +18632,7 @@ share-modal #email .modal-footer .btn-round {
   .viewerSidebarCommon {
     width: 100%;
   }
-  .splashViewer .splashLogo {
+  .splash-viewer .splash-logo {
     margin: 0 0 30px 0;
   }
   .getting-started .getting-started-row {
@@ -18722,9 +18722,9 @@ share-modal #email .modal-footer .btn-round {
   .treeview {
     padding-left: 2rem;
   }
-  .splashViewer .btn, .splashViewer .btn-large, .splashViewer .btn-small,
-  .splashViewer .btn-large,
-  .splashViewer .btn-small {
+  .splash-viewer .btn, .splash-viewer .btn-large, .splash-viewer .btn-small,
+  .splash-viewer .btn-large,
+  .splash-viewer .btn-small {
     height: 49px;
     font-size: 1.2rem;
     line-height: 2rem;
@@ -18753,7 +18753,7 @@ share-modal #email .modal-footer .btn-round {
   .modal-footer {
     padding: 0 1.5rem 1rem;
   }
-  .proposalTrial {
+  .proposal-trial {
     position: relative;
   }
   .clientpointEditing {
@@ -18809,16 +18809,16 @@ share-modal #email .modal-footer .btn-round {
   .libraryTable {
     height: calc(100% - 118px);
   }
-  .signInModalContent .modal-content {
+  .signIn-modal-content .modal-content {
     padding: 0 2rem 0 2rem;
   }
-  #signNowModal .modal-header {
+  #signnow-modal .modal-header {
     padding: 1rem 1rem 0rem 2rem;
   }
-  .signInModalContent .modal-content .form-fields {
+  .signIn-modal-content .modal-content .form-fields {
     margin: 10px 0 0 0;
   }
-  .signInModalContent .typeIt .clickToSign {
+  .signIn-modal-content .typeIt .clickto-sign {
     height: 74px;
   }
 }
@@ -18843,23 +18843,23 @@ share-modal #email .modal-footer .btn-round {
   .row.mb-15 {
     margin: 0;
   }
-  .clientpointPreview .PowerdByLogo {
+  .clientpoint-preview .powerdby-logo {
     margin: 0;
   }
-  .clientpointPreview .powerdByToggleInner .powerdByToggleLinks ul {
+  .clientpoint-preview .powerdByToggleInner .powerdByToggleLinks ul {
     display: list-item;
   }
-  .clientpointPreview .powerdByToggleInner .powerdByToggleLinks ul li a {
+  .clientpoint-preview .powerdByToggleInner .powerdByToggleLinks ul li a {
     padding: 15px 0px 0 0;
   }
-  .clientpointPreview .PowerdByLogo {
+  .clientpoint-preview .powerdby-logo {
     margin: 10px 0;
     display: block;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
-  .clientpointPreview .sentByDropdown {
+  .clientpoint-preview .sentby-dropdown {
     margin: 0;
   }
   .themeContent .theme-list .theme-list-row .themebtns {
@@ -18895,7 +18895,7 @@ share-modal #email .modal-footer .btn-round {
   .powerdByToggleInner {
     padding: 17px 20px 17px 20px;
   }
-  .clientpointPreview .clientPointPowerdBy {
+  .clientpoint-preview .clientPoint-powerd-by {
     padding: 0 0 0 20px;
   }
   .client-point-file .newperposal-client-bar {

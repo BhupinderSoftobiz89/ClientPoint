@@ -932,10 +932,10 @@ share-modal {
 
 /* Clientpoint Preview page start here */
 
-.clientpointPreview {
+.clientpoint-preview {
 	//@include relative;
 	//display: $none;
-	.clientPointPowerdBy {
+	.clientPoint-powerd-by {
 		background: color("grey", "darken-4");
 		width: $full-width;
 		min-height: 50px;
@@ -946,13 +946,13 @@ share-modal {
 		@include relative();
 		z-index: 3;
 	}
-	.PowerdByRightPanel {
+	.powerdby-rightpanel {
 		@include flexbox();
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
 		margin-left: $margin-left-auto;
 	}
-	.sentByDropdown {
+	.sentby-dropdown {
 		@include flexbox();
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
@@ -974,28 +974,28 @@ share-modal {
 			margin-right: 28px;
 		}
 	}
-	.PowerdByLogo {
+	.powerdby-logo {
 		@include flexbox();
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
 	}
 
-	.sentByDropdown.downArrowPowered {
+	.sentby-dropdown.downarrow-powered {
 		.material-icons {
 			transform: rotate(180deg);
 		}
 	}
-	.poweredByMarvel {
+	.poweredby-marvel {
 		@include flexbox();
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
-		.borderMarvel {
+		.border-marvel {
 			border-right: 1px solid color("indigo", "accent-4");
 			display: $display-inline-block;
 			@include margin-padding(all, 0 20px, all, null null);
 			height: 25px;
 		}
-		.encomLink {
+		.encom-link {
 			@include font-size(16px);
 			color: color("shades", "white");
 			line-height: $line-height-twentyfour;
@@ -1205,7 +1205,7 @@ share-modal {
 }
 
 /* Sign Now Page start here */
-.signInModalContent {
+.signIn-modal-content {
 	max-width: 737px;
 	max-height: 100%;
 	.signatureIcon {
@@ -1227,7 +1227,7 @@ share-modal {
 		}
 		.form-fields {
 			@include margin-padding(all, 30px 0 0 0, all, null null);
-			.fullName {
+			.full-name {
 				background: color("grey", "lighten-4");
 				border-bottom: 1px solid color("grey", "lighten-3");
 				@include margin-padding(all, 0, all, 10px);
@@ -1248,7 +1248,7 @@ share-modal {
 				@include margin-padding(all, 0 0 5px 0, all, null);
 				display: $display-block;
 			}
-			.phNumber {
+			.ph-number {
 				border: 1px solid color("grey", "lighten-3") !important;
 				@include margin-padding(all, 0, all, 10px);
 				box-sizing: $box-sizing;
@@ -1260,7 +1260,7 @@ share-modal {
 	}
 	.typeIt {
 		@include margin-padding(all, 33px 0 0 0, all, null);
-		.typeItLabelRow {
+		.typeIt-label-row {
 			@include flexbox();
 			align-items: $align-items-center;
 			@include flex-wrap($wrap);
@@ -1278,17 +1278,17 @@ share-modal {
 				color: color("indigo", "base");
 			}
 		}
-		.typeIcon {
+		.type-icon {
 			background: url(../images/common-icons.svg) no-repeat -243px -1152px;
 			width: 1.4rem;
 			height: 1.4rem;
 			margin-right: 5px;
 		}
-		.drawIcon {
-			@extend .typeIcon;
+		.draw-icon {
+			@extend .type-icon;
 			background: url(../images/common-icons.svg) no-repeat -323px -1152px;
 		}
-		.clickToSign {
+		.clickto-sign {
 			height: 113px;
 			border: 1px dashed color("indigo", "base");
 			@include flexbox();
@@ -1300,7 +1300,7 @@ share-modal {
 			color: color("indigo", "base");
 		}
 	}
-	.commentTextarea {
+	.comment-textarea {
 		height: 75px;
 		border: 1px solid color("grey", "lighten-3");
 		resize: $none;
@@ -1355,12 +1355,12 @@ share-modal {
 	}
 }
 
-.viewerUserDropdownContent {
+.vieweruser-dropdown-content {
 	min-width: 292px;
 	text-align: $text-center;
-	.userInfoViewer {
+	.userInfo-viewer {
 		@include margin-padding(all, null null, all, 20px);
-		.viewerUserimg {
+		.viewer-user-img {
 			width: 100px;
 			height: 100px;
 			@include margin-padding(all, 0 auto 20px, all, null null);
@@ -1405,27 +1405,27 @@ share-modal {
 			@include margin-padding(all, null, all, 0 60px 15px 60px);
 		}
 	}
-	.emailIcon {
+	.email-icon {
 		width: 1.3rem;
 		height: 1.25rem;
 		background: url(../images/common-icons.svg) no-repeat -382px -412px;
 		margin-right: 0.9375rem;
 		display: $display-inline-block;
 	}
-	.phoneIcon {
-		@extend .emailIcon;
+	.phone-icon {
+		@extend .email-icon;
 		background: url(../images/common-icons.svg) no-repeat -26px -500px;
 	}
-	.mobileIcon {
-		@extend .emailIcon;
+	.mobile-icon {
+		@extend .email-icon;
 		background: url(../images/common-icons.svg) no-repeat -93px -497px;
 	}
-	.linkedInIcon {
-		@extend .emailIcon;
+	.linkedIn-icon {
+		@extend .email-icon;
 		background: url(../images/common-icons.svg) no-repeat -30px -1231px;
 	}
 }
-.proposalTrial {
+.proposal-trial {
 	background: color("indigo", "base");
 	@include fixed(top auto left 0 right 0 bottom 0);
 	width: $full-width;
@@ -1958,7 +1958,7 @@ share-modal {
 
 /* Viewer Splash screen Start here */
 
-.splashViewer {
+.splash-viewer {
 	&:after {
 		content: "";
 		background: url(../images/viewerSplag-bg.jpg) no-repeat 0 0;
@@ -1967,18 +1967,18 @@ share-modal {
 		width: $full-width;
 		height: $height-hundred-per;
 	}
-	.splashForm {
+	.splash-form {
 		@include center(both);
 		z-index: 1;
 		max-width: 695px;
 		width: 90%;
 		@include margin-padding(all, auto, all, null);
 	}
-	.splashLogo {
+	.splash-logo {
 		text-align: $text-center;
 		@include margin-padding(all, 0 0 60px 0, all, null);
 	}
-	.splashFormCenter {
+	.splash-form-center {
 		max-width: 695px;
 		@include box-shadow(0, 0px, 20px, rgba(0, 0, 0, 0.2));
 		background: color("shades", "white");
