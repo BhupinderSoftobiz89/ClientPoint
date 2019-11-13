@@ -18,19 +18,19 @@
 		}
 	}
 }
-.tileIcon {
+.tile-icon {
 	display: $display-inline-block;
 	background: url(../images/common-icons.svg) no-repeat -320px -1454px;
 	@include w-h-rem(20px, 20px);
 }
-.folderIconLibrary {
+.library-folder-icon {
 	display: $display-inline-block;
 	background: url(../images/common-icons.svg) no-repeat -242px -199px;
 	@include w-h-rem(25px, 18px);
 	@include margin-padding(all, 0 0.3rem 0 0, all, null);
 	vertical-align: $verticle-align-middle;
 }
-.libraryLinks {
+.library-links {
 	background: url(../images/common-icons.svg) no-repeat -315px -339px;
 	display: $display-inline-block;
 	@include w-h-rem(30px, 30px);
@@ -42,7 +42,7 @@
 		background: #efeff3 url(../images/common-icons.svg) no-repeat -315px -339px;
 	}
 }
-.libraryTable {
+.library-table {
 	table {
 		tr {
 			&:hover {
@@ -62,28 +62,28 @@
 			@include margin-padding(all, 0 0.7rem 0 0, all, null);
 		}
 	}
-	.duplicateIcon {
+	.duplicate-icon {
 		background: url(../images/common-icons.svg) no-repeat -169px -663px;
 		width: 1.4rem;
 		height: 1.4rem;
 		margin-right: 0.8rem;
 		display: $display-inline-block;
 	}
-	.editIcon {
-		@extend .duplicateIcon;
+	.edit-icon {
+		@extend .duplicate-icon;
 		background: url(../images/common-icons.svg) no-repeat -246px -663px;
 	}
-	.downloadIcon {
-		@extend .duplicateIcon;
+	.download-icon {
+		@extend .duplicate-icon;
 		height: 1.6rem;
 		background: url(../images/common-icons.svg) no-repeat -324px -1227px;
 	}
-	.templateIcon {
-		@extend .duplicateIcon;
+	.template-icon {
+		@extend .duplicate-icon;
 		background: url(../images/common-icons.svg) no-repeat -390px -1452px;
 	}
-	.deleteIcon {
-		@extend .duplicateIcon;
+	.delete-icon {
+		@extend .duplicate-icon;
 		background: url(../images/common-icons.svg) no-repeat -30px -1524px;
 	}
 }
@@ -115,15 +115,15 @@
 		@include flex-wrap($wrap);
 		@include margin-padding(all, 0 2.5rem 0.5rem 0, all, null);
 	}
-	.editIcon {
+	.edit-icon {
 		@extend .backArrow;
 		background: url(../images/common-icons.svg) no-repeat -246px -663px;
 	}
-	.downloadIcon {
+	.download-icon {
 		@extend .backArrow;
 		background: url(../images/common-icons.svg) no-repeat -324px -1227px;
 	}
-	.deleteIcon {
+	.delete-icon {
 		@extend .backArrow;
 		background: url(../images/common-icons.svg) no-repeat -30px -1524px;
 	}
@@ -140,16 +140,16 @@
 	@include flexbox();
 	bottom: $zero;
 }
-.libraryTable {
+.library-table {
 	height: calc(100% - 82px);
 }
 .scrollHidden {
 	overflow: $hidden;
 }
-.libraryTable .scrollbar-inner > .scroll-element.scroll-y {
+.library-table .scrollbar-inner > .scroll-element.scroll-y {
 	right: 0;
 }
-.exportDownIcons {
+.export-down-icons {
 	align-items: $align-items-center;
 	@include flexbox();
 	.material-icons {

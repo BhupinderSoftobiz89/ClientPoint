@@ -1,6 +1,6 @@
 /* Dashboard CSS start here */
 
-.thisWeek {
+.this-week {
 	@include font-rem(14px, 24px);
 	color: color("grey", "darken-4");
 	text-transform: $text-capitalize;
@@ -10,10 +10,10 @@
 .ml-inherit {
 	margin-left: inherit !important;
 }
-.activityBoard {
+.activity-board {
 	background: color("shades", "white");
 	@include border-radius(5px);
-	.activityHeader {
+	.activity-header {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
@@ -76,7 +76,7 @@
 			}
 		}
 	}
-	.recentylyCreated {
+	.recentyly-created {
 		@include margin-padding(all, null, all, 20px 0 0);
 		h4 {
 			@include font-rem(14px, 24px);
@@ -108,7 +108,7 @@
 				letter-spacing: 0.25px;
 			}
 		}
-		.dropDownicon {
+		.dropdown-icon {
 			width: 30px;
 			height: 30px;
 			border-radius: $border-radius-thirty;
@@ -126,7 +126,7 @@
 				background: #efeff3 url(../images/common-icons.svg) no-repeat -315px -339px;
 			}
 		}
-		.createdContent {
+		.created-content {
 			h6 {
 				@include font-rem(16px, 24px);
 				color: color("grey", "darken-4");
@@ -138,7 +138,7 @@
 		align-items: $align-items-center;
 		@include flexbox();
 		@include flex-wrap($wrap);
-		.statusLeft {
+		.status-leftpanel {
 			@include margin-padding(all, 0 3.375rem 0 0, all, null);
 		}
 		h5 {
@@ -162,7 +162,7 @@
 		.badge-yellow {
 			background: #ffa400;
 		}
-		.lastViewed {
+		.last-viewed {
 			h6 {
 				@include font-rem(14px, 24px);
 				color: color("grey", "darken-2");
@@ -171,7 +171,7 @@
 		}
 	}
 }
-.viewedDropDown-content {
+.viewed-dropdown-content {
 	min-width: 189px;
 	@include margin-padding(all, null, all, 22px 30px 19px !important);
 	li {
@@ -201,23 +201,23 @@
 		background: url(../images/common-icons.svg) no-repeat -170px -897px;
 		display: $display-inline-block;
 	}
-	.commentIcon {
+	.comment-icon {
 		@extend .share-icon;
 		background: url(../images/common-icons.svg) no-repeat -243px -897px;
 	}
-	.prieviewIcon {
+	.prieview-icon {
 		@extend .share-icon;
 		background: url(../images/common-icons.svg) no-repeat -26px -976px;
 	}
-	.printIcon {
+	.print-icon {
 		@extend .share-icon;
 		background: url(../images/common-icons.svg) no-repeat -93px -976px;
 	}
-	.sendIcon {
+	.send-icon {
 		@extend .share-icon;
 		background: url(../images/common-icons.svg) no-repeat -167px -976px;
 	}
-	.editIcon {
+	.edit-icon {
 		@extend .share-icon;
 		background: url(../images/common-icons.svg) no-repeat -244px -976px;
 	}
@@ -227,13 +227,13 @@
 	}
 }
 
-.dashboardScrollHeight {
+.dashboard-scroll-height {
 	height: calc(100% - 62px);
 }
-.dashboardScrollHeight .scrollbar-inner > .scroll-element.scroll-y {
+.dashboard-scroll-height .scrollbar-inner > .scroll-element.scroll-y {
 	right: $zero;
 }
-.activityBoard {
+.activity-board {
 	.collapsible-header {
 		border: $none !important;
 		@include margin-padding(all, null, all, 0 !important);
@@ -254,15 +254,15 @@
 	@include font-rem(14px, 26px);
 	color: color("blue-grey", "darken-1");
 }
-.justLink {
+.just-link {
 	// color:color('indigo','base');
 	text-decoration: $text-decoration-underline;
 	@include font-weight(medium);
 }
-.filterExpended {
+.filter-expended {
 	display: $none;
 	@include margin-padding(all, 0 0 1.875rem, all, null);
-	.fiterExpeded-row {
+	.fiter-expeded-row {
 		@include margin-padding(all, 0 0 1.25rem 0, all, null);
 		label {
 			span {
@@ -281,31 +281,31 @@
 		@include font-weight(medium);
 	}
 }
-.filterBorder {
+.filter-border {
 	border: $none;
 	border-bottom: 1px solid color("grey", "lighten-5");
 	@include margin-padding(all, 1.875rem 0 0, all, null);
 }
-.filterArrowDropdown {
+.filter-arrow-dropdown {
 	.material-icons {
 		@include transform(rotate(180deg));
 		@include transition(all 0.5s);
 		vertical-align: $verticle-align-middle;
 	}
 }
-.filterArrowDropdown.active {
+.filter-arrow-dropdown.active {
 	.material-icons {
 		@include transform(rotate(0deg));
 	}
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	.filterArrowDropdown {
+	.filter-arrow-dropdown {
 		.material-icons {
 			height: 1.2rem;
 			vertical-align: $verticle-align-middle;
 		}
 	}
-	.activityHeader {
+	.activity-header {
 		.material-icons {
 			height: 1.5rem;
 		}

@@ -21,7 +21,7 @@
 .theme-padding {
 	padding: 1.6rem 1.8125rem !important;
 }
-.themeContent {
+.theme-content {
 	padding: 1.875rem 3.125rem;
 	.theme-list {
 		.theme-list-row {
@@ -49,14 +49,14 @@
 				@include flex-wrap($wrap);
 				align-items: $align-items-center;
 			}
-			.editBtn {
+			.edit-btn {
 				@include flexbox();
 				@include flex-wrap($wrap);
 				align-items: $align-items-center;
 				text-transform: $text-uppercase;
 				font-size: $font-size-fourteen;
 				font-weight: $font-weight-600;
-				.editIcon {
+				.edit-icon {
 					background: url(../images/common-icons.svg) no-repeat -246px -663px;
 					width: 1.125rem;
 					height: 1.4rem;
@@ -70,7 +70,7 @@
 				text-transform: $text-uppercase;
 				font-size: $font-size-fourteen;
 				font-weight: $font-weight-600;
-				.duplicateIcon {
+				.duplicate-icon {
 					background: url(../images/common-icons.svg) no-repeat -169px -663px;
 					width: 1.125rem;
 					height: 1.4rem;
@@ -86,7 +86,7 @@
 	padding: 0 25px;
 }
 
-.themeSetting {
+.theme-setting {
 	.collapsible {
 		margin: $zero;
 		box-shadow: $none;
@@ -199,8 +199,8 @@
 	height: 1.6rem;
 	margin-right: 1.2rem;
 }
-.themeAdvancedSettings {
-	.advancedTabConfig-row {
+.theme-advanced-settings {
+	.advanced-tab-config-row {
 		margin-bottom: 1.6rem;
 	}
 	.switch {
@@ -236,7 +236,7 @@
 		}
 	}
 }
-.themeAdvancedtabs {
+.theme-advanced-tabs {
 	.tabs {
 		border-bottom: 1px solid color("grey", "lighten-5");
 		height: $height-auto;
@@ -272,7 +272,7 @@
 		border: $none;
 		@include margin-padding(all, null, all, 0 2rem);
 	}
-	.tabCollapseArrow {
+	.tabcollapse-arrow {
 		margin-left: $margin-left-auto;
 		.material-icons {
 			margin-right: $zero;
@@ -360,7 +360,7 @@
 		width: $full-width;
 	}
 }
-.advancedTabConfig {
+.advanced-tab-config {
 	.tableOverflow {
 		overflow: auto;
 	}
@@ -402,9 +402,9 @@
 		}
 	}
 }
-.advancedTabLocale {
+.advanced-tab-locale {
 	@include margin-padding(all, null, all, 1.875rem 0);
-	.advancedTabConfig {
+	.advanced-tab-config {
 		@include margin-padding(all, null, all, 1.7rem 1.8125rem);
 	}
 	.dropdown-content {
@@ -414,7 +414,7 @@
 		color: color("grey", "darken-4");
 	}
 }
-.manageScreenContent {
+.manage-screen-content {
 	table {
 		tr {
 			border: $none;
@@ -460,7 +460,7 @@
 		color: color("grey", "darken-1");
 		@include margin-padding(all, 0 0 1.25rem 0, all, null);
 	}
-	.intigrationContent {
+	.intigration-content {
 		@include margin-padding(all, 0 0 1.875rem, all, 0 1.875rem 0 0);
 		&:last-child {
 			@include margin-padding(all, 0, all, null);
@@ -513,17 +513,17 @@
 		right: $zero;
 	}
 }
-.intigratInnerContent {
+.intigration-inner-content {
 	flex: 1;
 	@include margin-padding(all, 0 1rem 0 0, all, null);
 }
-.themeContent {
+.theme-content {
 	height: calc(100% - 83px);
 }
-.themeAdvancedSettings {
+.theme-advanced-settings {
 	height: $height-hundred-per;
 }
-.themeAdvancedtabs {
+.theme-advanced-tabs {
 	height: $height-hundred-per;
 }
 .tab-content-settings {
@@ -532,7 +532,7 @@
 .tab-content-settings .scrollbar-inner > .scroll-element.scroll-y {
 	right: $zero;
 }
-.themeAccordionContent {
+.theme-accordion-content {
 	@include margin-padding(all, null, all, 2.2rem);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -547,8 +547,8 @@
 			}
 		} 
 	}
-	.themeAdvancedtabs {
-		.tabCollapseArrow {
+	.theme-advanced-tabs {
+		.tabcollapse-arrow {
 			.material-icons {
 				line-height: 1.875rem;
 				height: 1.25rem;

@@ -4,7 +4,7 @@
 	@include flexbox();
 	@include flex-wrap($wrap);
 	height: $height-hundred-per;
-	.loginLeftPanel {
+	.login-leftpanel {
 		background: url(../images/login-bg.jpg) no-repeat top center;
 		background-size: $full-width $full-width;
 		max-width: 40.9%;
@@ -13,7 +13,7 @@
 		@include margin-padding(all, null, all, 64px 75px 35px 75px);
 		@include relative;
 	}
-	.loginLeftContent {
+	.login-left-content {
 		@include margin-padding(all, 143px 0 0 0, all, null);
 		h1 {
 			@include font-rem(34px, 46px);
@@ -26,7 +26,7 @@
 			color: color("shades", "white");
 			@include margin-padding(all, 0 0 20px 0, all, null);
 		}
-		.nextStepArrow {
+		.next-step-arrow {
 			background: url(../images/common-icons.svg) no-repeat -174px -1308px;
 			width: 1.2rem;
 			height: 1.3rem;
@@ -34,7 +34,7 @@
 			display: $display-inline-block;
 		}
 	}
-	.loginLinks {
+	.login-links {
 		@include absolute(top auto left auto bottom 30px);
 		.links {
 			@include font-rem(14px, 20px);
@@ -42,7 +42,7 @@
 			@include margin-padding(all, 0 15px 0 0, all, null);
 		}
 	}
-	.loginRightPanel {
+	.login-rightpanel {
 		background: color("shades", "white");
 		max-width: 59.1%;
 		flex: 0 0 59.1%;
@@ -50,7 +50,7 @@
 		@include relative;
 		// height: $height-hundred-per;
 		height: 100%;
-		.loginStep {
+		.login-step {
 			ul {
 				@include inlineflex();
 				@include flex-wrap($wrap);
@@ -88,14 +88,14 @@
 					}
 					.active {
 						color: $recipentlabelColor;
-						.stepCount {
+						.step-count {
 							background: color("indigo", "base");
 						}
-						.greyBoreder {
+						.grey-boreder {
 							background: color("indigo", "base");
 						}
 					}
-					.greyBoreder {
+					.grey-boreder {
 						content: "";
 						width: 60px;
 						height: 1px;
@@ -104,7 +104,7 @@
 					}
 				}
 			}
-			.stepCount {
+			.step-count {
 				$size: 33px;
 				width: $size;
 				height: $size;
@@ -117,7 +117,7 @@
 			}
 		}
 	}
-	.loginForm {
+	.login-form {
 		// max-width: 567px;
 		width: $full-width;
 		// @include margin-padding(all, 0 auto 0, all, null);
@@ -263,7 +263,7 @@
 		border-bottom: 1px solid color("red", "base") !important;
 	}
 }
-.loginPadding {
+.login-padding {
 	@include margin-padding(all, null, all, 62px 98px 62px 117px !important);
 }
 .urlexten {
@@ -272,7 +272,7 @@
 	color: $recipentlabelColor;
 	text-transform: $text-capitalize;
 }
-.agreeCheck {
+.agree-check {
 	span {
 		@include font-rem(14px, 24px);
 		color: $recipentlabelColor;
@@ -299,10 +299,10 @@
 		margin-bottom: 2rem !important;
 	}
 }
-.fullWidth {
+.full-width {
 	max-width: $full-width !important;
 }
-.addRecipent {
+.add-recipent {
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
@@ -318,7 +318,7 @@
 .small-space {
 	margin-bottom: 1.6rem !important;
 }
-#fileUploadModal {
+#file-upload-modal {
 	max-width: 664px;
 	.modal-header {
 		@include margin-padding(all, null, all, 2.6rem 2.4375rem 1.3rem 4.9rem);
@@ -342,7 +342,7 @@
 			@include margin-padding(all, 0 0 43px 0, all, null);
 		}
 	}
-	.uploadFileChoose {
+	.upload-file-choose {
 		border: 1px dashed color("grey", "lighten-3");
 		height: 294px;
 		@include flexbox();
@@ -363,7 +363,7 @@
 			@include margin-padding(all, 10px 0 0 0, all, null);
 		}
 	}
-	.uploadChooseContent {
+	.upload-choose-content {
 		text-align: $text-center;
 		padding: 15px;
 		.progress {
@@ -415,24 +415,24 @@
 		right: 0;
 	}
 }
-#LoginInformation,
-#SetupProfile,
-#InviteTeam {
+#login-information,
+#setup-profile,
+#invite-team {
 	height: 100%;
 }
-.loginCommonWidth {
+.login-common-width {
 	max-width: 698px;
 	margin: auto;
 	padding: 120px 64px 80px;
 }
-.teamWidth {
+.team-width {
 	max-width: 100% !important;
 	margin: auto;
 }
-.fullWidth {
+.full-width {
 	width: $full-width;
 }
-.uploadMargin {
+.upload-margin {
 	margin-bottom: 7px !important;
 }
 /* Login page end here  */

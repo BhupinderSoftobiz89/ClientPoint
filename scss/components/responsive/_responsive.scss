@@ -2,376 +2,516 @@
 // Media for 1200px
 
 @media (max-width: 1200px) {
-	.page-header .userFetaures {
-		display: $diplay-none;
-	}
-	.page-header .userLoginPanel {
-		margin-left: inherit;
-	}
-	.page-header .newClientPoint .btn-flat {
-		margin-left: $margin-left-auto;
+	.page-header {
+		.user-fetaures {
+			display: $diplay-none;
+		}
+		.user-login-panel {
+			margin-left: inherit;
+		}
+		.clientpoint-heading-bar {
+			.btn-flat {
+				margin-left: $margin-left-auto;
+			}
+		}
 	}
 }
 
 // Media for 991px
 
 @media (max-width: 991px) {
-	.page-header .userName {
-		display: $diplay-none;
+	.page-header {
+		.user-name {
+			display: $diplay-none;
+		}
 	}
 	.client-point-file .creating-perposal .creating-perposal-left,
 	.client-point-file .creating-perposal .creating-perposal-rightpanel {
 		width: $full-width !important;
 	}
-	.client-point-file .creating-perposal {
-		height: $height-auto;
+	.client-point-file {
+		.creating-perposal {
+			height: $height-auto;
+		}
 	}
 	.dropdown-backdrop {
 		position: static;
-		z-index: 0;
+		z-index: $zero;
 	}
-	.dropdown.custom:hover .dropdown-menu {
-		visibility: visible;
-		display: block;
-		border-radius: 0;
+	.dropdown.custom &:hover {
+		.dropdown-menu {
+			visibility: $visibilty-visible;
+			display: $display-block;
+			@include border-radius(0);
+		}
 	}
-	.powerdByToggleLinks {
+	.powerdby-toggle-links {
 		display: $display-block;
 		width: $full-width;
 	}
-	.clientpoint-preview .powerdByToggleInner .SignNow {
-		margin-left: inherit;
-		margin-top: 20px;
+	.clientpoint-preview {
+		.powerd-by-toggleInner {
+			.sign-now {
+				@include margin-padding(all, 1.2rem 0 0 inherit, all, null);
+			}
+		}
 	}
-	.clientpoint-preview .powerdby-rightpanel {
-		margin-left: inherit;
+	.clientpoint-preview {
+		.powerdby-rightpanel {
+			margin-left: $inherit;
+		}
 	}
-	.clientpoint-preview .poweredby-marvel {
-		margin: 10px 0;
-		flex: 0 0 100%;
+	.clientpoint-preview {
+		.poweredby-marvel {
+			@include margin-padding(all, 1rem 0, all, null);
+			flex: 0 0 100%;
+		}
 	}
-	.creating-perposal-rightpanel.perposalPostionRight {
-		right: 0;
-		position: relative;
-		height: $height-auto;
-		margin: 0;
+	.creating-perposal-rightpanel {
+		&.perposal-postion-right {
+			@include relative(right 0);
+			@include margin-padding(all, 0, all, null);
+			height: $height-auto;
+		}
 	}
-	.showtableContentArrow.showArrow {
-		display: none;
+
+	.showtable-content-arrow {
+		&.showArrow {
+			display: $none;
+		}
 	}
-	.outerScroll .clientpointEditing {
-		height: 100% !important;
+	.outer-scroll {
+		.clientpoint-editing {
+			height: $height-hundred-per !important;
+		}
 	}
-	.splash-viewer .splash-form-center {
-		padding: 30px;
-		margin-bottom: 100px;
-	}
-	.splash-viewer .splash-form {
-		top: 200px;
-		-webkit-transform: translate(-50%, 0%);
-		transform: translate(-50%, 0);
+	.splash-viewer {
+		.splash-form-center {
+			@include margin-padding(all, 0 0 6.25rem 0, all, 1.9rem);
+		}
+		.splash-form {
+			top: 15rem;
+			transform: translate(-50%, 0);
+		}
 	}
 	.overlay {
-		top: 0;
+		top: $zero;
 		z-index: 4;
 	}
-	.viewerSidebarCommon {
-		top: 0;
-		height: 100%;
+	.viewer-sidebar-common {
+		top: $zero;
+		height: $height-hundred-per;
 		z-index: 5;
 	}
-	.login .loginLeftPanel {
-		max-width: 100%;
-		flex: 0 0 100%;
-		padding: 20px;
+	.login {
+		.login-leftpanel {
+			max-width: $full-width;
+			flex: 0 0 $full-width;
+			@include margin-padding(all, null, all, 1.25rem);
+		}
 	}
-	.login .loginRightPanel .loginStep ul li {
-		flex: 0 0 100%;
+	.login {
+		.login-step {
+			ul {
+				li {
+					flex: 0 0 $full-width;
+				}
+			}
+		}
 	}
-	.login .loginRightPanel {
-		max-width: 100%;
-		flex: 0 0 100%;
-		padding: 60px 0;
-		height: 100%;
+	.login {
+		.login-rightpanel {
+			max-width: $full-width;
+			flex: 0 0 $full-width;
+			@include margin-padding(all, null, all, 3.75rem 0);
+			height: $height-hundred-per;
+		}
 	}
-	.login .loginRightPanel .loginStep ul li .border {
+	.login .login-rightpanel .login-step ul li .border {
 		width: 1px;
 		height: 60px;
 	}
-	.login .loginForm {
-		max-width: 100%;
-		width: 100%;
-		margin: 20px auto 0;
-
-		.row {
-			padding: 0;
-			margin-left: 0;
-			margin-right: 0;
+	.login {
+		.login-form {
+			max-width: $full-width;
+			width: $full-width;
+			@include margin-padding(all, 1.25rem auto 0, all, null);
+			.row {
+				@include margin-padding(all, null, all, 0);
+				margin-left: $zero;
+				margin-right: $zero;
+			}
 		}
 	}
-	.login .loginRightPanel .loginStep ul {
-		padding-left: 20px;
+	.login-rightpanel {
+		.login-step {
+			ul {
+				@include margin-padding(all, null, all, 0 0 0 1.25rem);
+			}
+		}
 	}
 	.login {
-		height: auto;
+		height: $auto;
+		.login-links {
+			bottom: $auto;
+			@include relative();
+		}
+		.login-rightpanel {
+			@include margin-padding(all, null, all, 1.25rem 0 0);
+		}
+		.login-left-content {
+			@include margin-padding(all, 3.125rem 0, all, null);
+		}
 	}
-	.login .loginLinks {
-		bottom: auto;
-		position: relative;
+	.splash-form {
+		&.login-space {
+			top: 3.125rem;
+		}
 	}
-	.splash-form.loginSpace {
-		top: 50px;
+
+	.login-padding {
+		@include margin-padding(all, null, all, 1.875rem !important);
 	}
-	.loginPadding {
-		padding: 30px !important;
+	.splash-form {
+		&.login-space {
+			.splash-form-center {
+				@include margin-padding(all, null, all, 1.875rem);
+				margin-bottom: 1.875rem;
+			}
+		}
 	}
-	.splash-form.loginSpace .splash-form-center {
-		padding: 30px;
-		margin-bottom: 30px;
-	}
+
 	.getting-started {
-		margin: 0;
+		@include margin-padding(all, 0, all, null);
 	}
-	.loginCommonWidth {
-		padding: 0px 20px 30px;
-		max-width: 100%;
+	.login-common-width {
+		@include margin-padding(all, 0, all, 0 1.25rem 1.875rem);
+		max-width: $full-width;
 	}
-	.login .loginRightPanel {
-		padding: 20px 0 0;
-	}
-	.login .loginRightPanel .loginStep ul li .greyBoreder {
+
+	.login .login-rightpanel .login-step ul li .grey-boreder {
 		display: $none;
 	}
-	.login .loginForm .btn,
-	.login .loginForm .btn-large,
-	.login .loginForm .btn-small {
-		position: relative;
+	.login .login-form .btn,
+	.login .login-form .btn-large,
+	.login .login-form .btn-small {
+		@include relative();
 	}
-	.themeAdvancedSettings .themeAdvancedtabs .collapsible-body {
-		padding: 0rem 2rem;
+	.theme-advanced-settings {
+		.theme-advanced-tabs {
+			.collapsible-body {
+				@include margin-padding(all, null, all, 0 2rem);
+			}
+		}
 	}
-	.themeSetting .collapsible-header h6 {
-		line-height: normal;
+	.theme-setting {
+		.collapsible-header {
+			h6 {
+				line-height: $normal;
+			}
+		}
 	}
-	.login .loginLeftContent {
-		margin: 50px 0;
-	}
-	.searchTab {
+
+	.search-tab {
 		.tabs {
 			overflow: $auto;
 		}
 	}
-	.ip-address .replyComment .replyComment-row {
-		max-width: 100%;
-		flex: 0 0 100%;
+	.ip-address {
+		.reply-comment {
+			.reply-comment-row {
+				max-width: $full-width;
+				flex: 0 0 $full-width;
+			}
+		}
 	}
-	.tableOptionUser {
-		margin: 0;
-		flex: 0 0 100%;
+	.table-option-user {
+		@include margin-padding(all, 0, all, null);
+		flex: 0 0 $full-width;
 	}
-	.tableOptionUser .optionsUser {
-		padding: 1.5rem 0 0;
+	.table-option-user {
+		.options-user {
+			@include margin-padding(all, null, all, 1.5rem 0 0);
+		}
 	}
-	.calender-datesCommon.d-flex.ml-auto {
-		margin-left: initial !important;
+	.calender-datesCommon {
+		&.d-flex.ml-auto {
+			margin-left: initial !important;
+		}
 	}
 	.newclientpoint-title-bar .library-header-right {
-		justify-content: flex-start;
+		justify-content: $justify-content-start;
 	}
 	.perposalDefaultbar {
-		flex: 0 0 100%;
+		flex: 0 0 $full-width;
 		// @include margin-padding(all, 0 0 1rem 0, all, null);
 	}
 	.mobile-common-margin {
 		margin-top: 1rem;
+	}
+	.clientpoint-title {
+		width: $full-width;
+		margin-bottom: 1.25rem;
+	}
+	.newclientpoint-title-bar {
+		.newclientpoint-title-bar-right {
+			width: $full-width;
+			margin-left: $inherit;
+		}
+	}
+	.login {
+		.login-rightpanel {
+			.login-step {
+				ul {
+					padding: 0 0 0 20px;
+				}
+			}
+		} 
+	} 
+	.newclientpoint-title-bar {
+		.clientMenu {
+			margin-left: $inherit;
+		}
 	}
 }
 
 // Media for 768px
 
 @media (max-width: 768px) {
-	.detailInfo .information,
-	.InfoSidebarRight {
+	.detail-info .information,
+	.info-sidebar-right {
 		max-width: $full-width;
 		flex: 0 0 $full-width;
 	}
-	.page-header .searchbox {
-		display: $diplay-none;
+	.page-header {
+		.searchbox {
+			display: $diplay-none;
+		}
+		.search-responsive {
+			margin-right: $margin-right-auto;
+			display: $display-block;
+		}
+		.clientpoint-heading-bar {
+			@include margin-padding(all, null, all, 0 1.5rem 0 0);
+			width: $auto;
+			margin-left: $auto;
+		}
+
 	}
-	.page-header .searchResponsive {
-		margin-right: $margin-right-auto;
-		display: $display-block;
+	
+	.client-details-content {
+		.titlerow {
+			.new-client-pointInput {
+				width: $full-width;
+				@include margin-padding(all, 0 0 1.5625rem, all, null);
+			}
+		}
 	}
-	.clientDetailsContent .titlerow .newClientPointInput {
-		width: $full-width;
-		margin: 0 0 1.5625rem;
-	}
-	.newClientBtn {
+	.new-client-btn {
 		margin-left: inherit !important;
 	}
-	.page-header .newClientPoint {
-		padding: 0 1.5rem 0 0;
-		width: auto;
-		margin-left: auto;
-	}
+
 	.sidebarSubmenu {
 		z-index: 2;
 	}
 	.SidebarOpenMargin {
 		margin-left: 5rem !important;
 	}
-	.clientpoint-title {
-		width: $full-width;
-	}
-	.newclientpoint-title-bar .clientMenu {
-		margin-left: inherit;
-	}
-	.newclientpoint-title-bar .newclientpoint-title-bar-right {
-		width: $full-width;
-		margin-left: inherit;
-	}
+
+
+
 	.clientpoint-title {
 		margin-bottom: 1.25rem;
 	}
-	.newperposal-client-bar  .newperposal-clientbar-right {
-		width: $full-width;
-		margin-top: 1.25rem;
+	.newperposal-client-bar {
+		.newperposal-clientbar-right {
+			width: $full-width;
+			margin-top: 1.25rem;
+		}
 	}
 	#content.contentMargin {
 		margin-left: 5rem;
 	}
-	.newclientpoint-title-bar .clientSearchtitle {
-		padding: 1rem 1.8125rem;
-		height: 50px;
+	.newclientpoint-title-bar {
+		.client-search-title {
+			padding: 1rem 1.8125rem;
+			height: 3.125rem;
+		}
 	}
-	.analytics-filter .calender-date {
-		margin-left: inherit;
-		margin-top: 17px;
+	.analytics-filter {
+		.calender-date {
+			margin-left: $inherit;
+			margin-top: 1rem;
+		}
 	}
 	.filter-rightpanel {
-		margin-left: inherit;
-		flex: 0 0 100%;
+		margin-left: $inherit;
+		flex: 0 0 $full-width;
 	}
-	.anaytics-overview .anaytics-overview-row .anaytics-overview-footer-row .anaytics-overview-col {
-		max-width: 100%;
-		flex: 0 0 100%;
-		border-right: none;
-		border-bottom: 1px solid #efeff3;
-		&:last-child {
-			border-bottom: none;
+	.anaytics-overview {
+		.anaytics-overview-row {
+			.anaytics-overview-footer-row {
+				.anaytics-overview-col {
+					max-width: $full-width;
+					flex: 0 0 $full-width;
+					border-right: $none;
+					border-bottom: 1px solid #efeff3;
+					&:last-child {
+						border-bottom: $none;
+					}
+				}
+			}
 		}
 	}
 	.ip-address {
 		padding: $zero;
 	}
-	.newperposal-client-bar  .dropdown-content {
-		top: 100% !important;
+	.newperposal-client-bar {
+		.dropdown-content {
+			top: $full-width !important;
+		}
 	}
-	.themeAdvancedSettings .themeAdvancedtabs .tabs {
-		overflow: auto;
+	.theme-advanced-settings {
+		.theme-advanced-tabs {
+			.tabs {
+				overflow: $auto;
+			}
+			.collapsible-body {
+				@include margin-padding(all, null, all, 0 2rem);
+			}
+		}
 	}
-	.themeAdvancedSettings .themeAdvancedtabs .collapsible-body {
-		padding: 0rem 2rem;
+
+	.right-margin-preview {
+		@include margin-padding(all, 0, all, 2.5rem 2rem 2.5rem 2rem);
 	}
-	.rightMarginPreview {
-		margin: 0;
-		padding: 2.5rem 2rem 2.5rem 2rem;
-	}
-	.outerScroll .scrollbar-inner > .scroll-element.scroll-y {
+	.outer-scroll .scrollbar-inner > .scroll-element.scroll-y {
 		right: 6px;
 	}
-	.viewerSidebarCommon {
-		width: 100%;
+	.viewer-sidebar-common {
+		width: $full-width;
 	}
-	.splash-viewer .splash-logo {
-		margin: 0 0 30px 0;
+	.splash-viewer {
+		.splash-logo {
+			@include margin-padding(all, 0 0 1.875rem 0, all, null);
+		}
 	}
 	// .proposal-trial {
 	//     position: relative;
 	// }
-	.getting-started .getting-started-row {
-		display: block;
-		text-align: center;
+	.getting-started {
+		.getting-started-row {
+			display: $display-block;
+			text-align: $text-center;
+		}
 	}
-	.login .loginLeftContent {
-		margin: 40px 0 40px 0;
+	.login {
+		.login-left-content {
+			@include margin-padding(all, 2.5rem 0, all, null);
+			h1 {
+				font-size: 1.5rem;
+				line-height: $normal;
+			}
+		}
 	}
 	.loginContentScroll {
-		height: auto;
+		height: $auto;
 	}
-
-	.login .loginLeftContent h1 {
-		font-size: 2rem;
-	}
-	.login .loginForm .btn,
-	.login .loginForm .btn-large,
-	.login .loginForm .btn-small {
+	.login .login-form .btn,
+	.login .login-form .btn-large,
+	.login .login-form .btn-small {
 		font-size: 1.2rem;
-		padding: 20px;
-		position: relative;
+		@include margin-padding(all, null, all, 1.25rem);
+		@include relative();
 	}
 	.full-height {
-		height: auto !important;
+		height: $auto !important;
 	}
-	.addUserHeader .addUserLeftpanel {
-		flex: 0 0 100%;
+	.addUserHeader {
+		.addUserLeftpanel {
+			flex: 0 0 $full-width;
+		}
 	}
-	.addUserHeader .addUserButtons .btn {
-		margin-top: 15px;
+	.addUserHeader {
+		.addUserButtons {
+			.btn {
+				margin-top: 1rem;
+			}
+		}
 	}
-	.addUserHeader .addUserButtons {
-		margin: 0;
+	.addUserHeader {
+		.addUserButtons {
+			@include margin-padding(all, 0, all, null);
+		}
 	}
-	#fileUploadModal .modal-header {
-		padding: 1.5rem 2rem 1rem 2rem;
-	}
-	#fileUploadModal .modal-content {
-		padding: 0.7rem 2rem 1.3rem 2rem;
-	}
-	#fileUploadModal .modal-footer {
-		padding: 0 2rem 2rem 2rem;
-	}
-	#fileUploadModal .uploadFileChoose {
-		height: 150px;
-	}
-	#fileUploadModal .modal-content h4 {
-		margin: 0 0 20px 0;
+	#file-upload-modal {
+		.modal-header {
+			@include margin-padding(all, null, all, 1.5rem 2rem 1rem 2rem);
+		}
+		.modal-content {
+			@include margin-padding(all, null, all, 0.7rem 2rem 1.3rem 2rem);
+			h4 {
+				@include margin-padding(all, 0 0 1.25rem 0, all, null);
+				font-size: 1.3rem;
+			}
+		}
+		.modal-footer {
+			@include margin-padding(all, null, all, 0 2rem 2rem 2rem);
+		}
+		.upload-file-choose {
+			height: 9.375rem;
+		}
 	}
 
-	.loginForm .input-field.col label {
-		left: 0;
+	.login-form {
+		.input-field {
+			&.col label {
+				left: $zero;
+			}
+		}
 	}
-	share-modal .tab-content {
-		padding: 0 2rem 1rem 2rem;
+	#share-modal {
+		.tab-content {
+			@include margin-padding(all, null, all, 0 2rem 1rem 2rem);
+		}
+		.modal-header {
+			@include margin-padding(all, null, all, 2.3rem 1.875rem 1rem 2rem);
+		}
+		.tabs-header {
+			padding-left: 1.875rem;
+		}
 	}
-	share-modal .modal-header {
-		padding: 2.3rem 1.875rem 1rem 2rem;
+	#comment-modal {
+		.tab-content {
+			@include margin-padding(all, null, all, 0 2rem 1.875rem 2rem);
+		}
+		.tabs-header {
+			padding-left: 1.875rem;
+		}
+		.modal-header {
+			@include margin-padding(all, null, all, 2.3rem 1.875rem 1rem 2rem);
+		}
 	}
-	share-modal .tabs-header {
-		padding-left: 30px;
+
+	#add-section {
+		.modal-content {
+			@include margin-padding(all, null, all, 0 1.875rem 0 2rem);
+		}
+		.modal-header {
+			@include margin-padding(all, null, all, 2.3rem 1.875rem 2.1rem 2rem);
+		}
 	}
-	#comment-modal .tab-content {
-		padding: 0 2rem 1.875rem 2rem;
-	}
-	#comment-modal .tabs-header {
-		padding-left: 30px;
-	}
-	#comment-modal .modal-header {
-		padding: 2.3rem 1.875rem 1rem 2rem;
-	}
-	#add-section .modal-content {
-		padding: 0 1.875rem 0 2rem;
-	}
-	#add-section .modal-header {
-		padding: 2.3rem 1.875rem 2.1rem 2rem;
-	}
-	.add-notes-modal .search-tab-header {
-		padding-right: 3rem;
-		padding-left: 2rem;
-	}
-	.add-notes-modal .mylibrary-content p {
-		padding-left: 2rem;
-		padding-right: 3rem;
+	.add-notes-modal {
+		.search-tab-header {
+			padding-right: 3rem;
+			padding-left: 2rem;
+		}
+		.mylibrary-content {
+			p {
+				padding-left: 2rem;
+				padding-right: 3rem;
+			}
+		}
 	}
 	.treeview {
 		padding-left: 2rem;
@@ -379,96 +519,178 @@
 	.splash-viewer .btn,
 	.splash-viewer .btn-large,
 	.splash-viewer .btn-small {
-		height: 49px;
-		font-size: 1.2rem;
+		height: 46px;
+		font-size: 1.1rem;
 		line-height: 2rem;
 	}
-	.themeSetting .collapsible-header {
-		padding: 1rem;
+	.theme-setting {
+		.collapsible-header {
+			@include margin-padding(all, null, all, 1rem);
+		}
 	}
-	.themeContent .heading-collapse {
-		width: 80%;
+	.theme-content {
+		@include margin-padding(all, null, all, 1.875rem 2rem);
+		.heading-collapse {
+			width: 80%;
+		}
+		.theme-list {
+			.theme-list-row {
+				@include margin-padding(all, null, all, 1rem);
+			}
+		}
 	}
-	.themeContent .theme-list .theme-list-row {
-		padding: 1rem;
-	}
-	.themeContent {
-		padding: 1.875rem 2rem;
-	}
-	.AddRecipientModal .modal-content {
-		padding: 0 1.5rem;
-	}
-	.AddRecipientModal .modal-header {
-		padding: 1.5rem;
-	}
-	.AddRecipientModal .AddRecipientContent-row {
-		padding: 1.5rem 0.5rem 0;
+
+	.add-recipient-modal {
+		.modal-content {
+			@include margin-padding(all, null, all, 0 1.5rem);
+		}
+		.modal-header {
+			@include margin-padding(all, null, all, 1.5rem);
+		}
+		.add-recipient-content-row {
+			@include margin-padding(all, null, all, 1.5rem 0.5rem 0);
+		}
 	}
 	.modal-footer {
-		padding: 0 1.5rem 1rem;
+		@include margin-padding(all, null, all, 0 1.5rem 1rem);
 	}
 	.proposal-trial {
-		position: relative;
+		@include relative();
 	}
-	.clientpointEditing {
-		padding: 1.5rem 0 1.5rem 2rem;
+	.clientpoint-editing {
+		@include margin-padding(all, null, all, 1.5rem 0 1.5rem 2rem);
+		p {
+			padding-right: 1.5rem;
+		}
 	}
-	.clientpointEditing p {
-		padding-right: 1.5rem;
+	.tabs {
+		.tab {
+			flex-grow: $inherit;
+		}
 	}
-	.tabs .tab {
-		flex-grow: inherit;
+	.newclientpoint-title-bar {
+		.library-header-right {
+			justify-content: $justify-content-start;
+		}
 	}
-	.newclientpoint-title-bar .library-header-right {
-		justify-content: flex-start;
+	.modal {
+		.modal-header {
+			@include margin-padding(all, null, all, 1.875rem 1rem 1.3rem 2rem);
+		}
 	}
-	.modal .modal-header {
-		padding: 1.875rem 1rem 1.3rem 2rem;
+	.reply-modal-content {
+		.modal-content {
+			@include margin-padding(all, null, all, 0 2rem 1.3rem 2rem);
+			textarea {
+				height: 9rem;
+				@include margin-padding(all, null, all, 1rem);
+			}
+		}
+		.modal-footer {
+			@include margin-padding(all, null, all, 0 2rem 2.1rem 2rem);
+			.btn-round {
+				margin-left: 1rem;
+			}
+		}
+		.reply-text {
+			@include margin-padding(all, null, all, 1rem);
+			p {
+				font-size: 1rem;
+				line-height: 1.6rem;
+			}
+		}
 	}
-	.reply-modal-content .modal-content {
-		padding: 0 2rem 1.3rem 2rem;
+	.intigration {
+		.intigrat-row-content {
+			.btn {
+				@include margin-padding(all, 1rem 0 0 0, all, null);
+			}
+		}
 	}
-	.reply-modal-content .modal-footer {
-		padding: 0 2rem 2.1rem 2rem;
-	}
-	.reply-modal-content .modal-footer .btn-round {
-		margin-left: 1rem;
-	}
-	.reply-modal-content .modal-content textarea {
-		height: 9rem;
-		padding: 1rem;
-	}
-	.reply-modal-content .reply-text {
-		padding:1rem;
-	}
-	.reply-modal-content .reply-text p {
-		font-size: 1rem;
-		line-height: 1.6rem;
-	}
-	.intigration .intigrat-row-content .btn {
-		margin: 1rem 0 0 0;
-	}
-	.intigratInnerContent {
+	.intigration-inner-content {
 		flex: 0 0 100%;
 	}
-	#saveTemplateModal .modal-header {
-		padding: 1.875rem 1rem 0 2rem;
+	#save-template-modal {
+		.modal-header {
+			@include margin-padding(all, null, all, 1.875rem 1rem 0 2rem);
+		}
 	}
-	.libraryTable {
+	.library-table {
 		height: calc(100% - 118px);
 	}
-	.signIn-modal-content .modal-content {
-		padding: 0 2rem 0 2rem;
+	.signIn-modal-content {
+		.modal-content {
+			@include margin-padding(all, null, all, 0 2rem 0 2rem);
+			.form-fields {
+				@include margin-padding(all, 0.7rem 0 0 0, all, null);
+			}
+		}
 	}
-	#signnow-modal .modal-header {
-		padding: 1rem 1rem 0rem 2rem;
+	#sign-now-modal {
+		.modal-header {
+			@include margin-padding(all, null, all, 1rem 1rem 0rem 2rem);
+		}
 	}
-	.signIn-modal-content .modal-content .form-fields {
-		margin: 10px 0 0 0;
+
+	.signIn-modal-content {
+		.typeIt {
+			.clickto-sign {
+				height: 4.625rem;
+			}
+		}
 	}
-	.signIn-modal-content .typeIt .clickto-sign {
-		height: 74px;
+	.theme-advanced-tabs {
+		.collapsible-header {
+			h4 {
+				font-size: 1rem;
+			}
+		}
+	} 
+	.switch {
+		label {
+			font-size: 1rem;
+		}
+	} 
+	.internetDomain {
+		h6 {
+			font-size: 1.1rem;
+		}
+	} 
+	.input-field, .input-field label {
+		font-size: 0.9rem;
 	}
+	label {
+		font-size: 0.9rem;
+	}
+	.login-common-width {
+		.input-field {
+			@include margin-padding(all, null, all, 0);
+		}
+	}
+	.search-result-content {
+		.collapsible {
+			.collapsible-header {
+				h5 {
+					font-size: 1rem;
+				}
+			} 
+		}
+	}
+	.splash-form-center {
+		h1 {
+			font-size: 1.7rem;
+			@include margin-padding(all, 0 0 1.25rem, all, null);
+		}
+	} 
+	.dashboard-empty-state {
+		width: 90%;
+	}
+	.clientpoint-editing {
+		p {
+			font-size: 1rem;
+			line-height: 2rem;
+		}
+	} 
 }
 
 // Media for 570px
@@ -477,123 +699,211 @@
 	.reciepent {
 		padding: $zero;
 	}
-	.infoCommon {
+	.info-common {
 		padding: $zero;
 	}
-	.paddingNone {
+	.padding-none {
 		padding: $zero !important;
 		label {
-			left: 0 !important;
+			left: $zero !important;
 		}
 	}
-	.newclientpoint-title-bar .clientMenu {
-		width: $full-width;
-		margin-bottom: 17px;
+	.newclientpoint-title-bar {
+		.clientMenu {
+			width: $full-width;
+			margin-bottom: 1rem;
+		}
 	}
 	.row.mb-15 {
-		margin: 0;
+		@include margin-padding(all, 0, all, null);
 	}
-	.clientpoint-preview .powerdby-logo {
-		margin: 0;
+	.clientpoint-preview {
+		.powerdby-logo {
+			@include margin-padding(all, 0, all, null);
+		}
 	}
-	.clientpoint-preview .powerdByToggleInner .powerdByToggleLinks ul {
+	.clientpoint-preview .powerd-by-toggleInner .powerdby-toggle-links ul {
 		display: list-item;
 	}
-	.clientpoint-preview .powerdByToggleInner .powerdByToggleLinks ul li a {
+	.clientpoint-preview .powerd-by-toggleInner .powerdby-toggle-links ul li a {
 		padding: 15px 0px 0 0;
 	}
-	.clientpoint-preview .powerdby-logo {
-		margin: 10px 0;
-		display: block;
-		flex: 0 0 100%;
+	.clientpoint-preview {
+		.powerdby-logo {
+			@include margin-padding(all, 0.625rem 0, all, null);
+			display: $display-block;
+			flex: 0 0 $full-width;
+		}
 	}
-	.clientpoint-preview .sentby-dropdown {
-		margin: 0;
+	.clientpoint-preview {
+		.sentby-dropdown {
+			@include margin-padding(all, 0, all, null);
+		}
 	}
-	.themeContent .theme-list .theme-list-row .themebtns {
+	.theme-content .theme-list .theme-list-row .themebtns {
 		margin-left: inherit;
 	}
-	.themeContent .theme-list .theme-list-row .editBtn,
-	.themeContent .theme-list .theme-list-row .DuplicateBtn {
-		font-size: 0.9rem;
-		padding: 0 7px;
-		height: 30px;
-		line-height: 30px;
+	.theme-content {
+		.theme-list {
+			.theme-list-row {
+				.edit-btn,
+				.DuplicateBtn {
+					font-size: 0.9rem;
+					@include margin-padding(all, null, all, 0 0.4375rem);
+					height: 1.875rem;
+					line-height: 1.875rem;
+				}
+			}
+		}
 	}
-	.login .loginForm .input-field {
-		padding: 0;
+	.login {
+		.login-form {
+			.input-field {
+				@include margin-padding(all, null, all, 0);
+			}
+		}
 	}
 	.btn-row {
-		margin-top: 0;
-  }
-  .searchResultContent .comment-row .imgbox {
-    flex: 0 0 100%;
+		margin-top: $zero;
+	}
+	.search-result-content {
+		.comment-row {
+			.imgbox {
+				flex: 0 0 $full-width;
+			}
+		}
+	}
+	.newclientpoint-title-bar {
+		.library-header-right {
+			.common-default-search {
+				@include margin-padding(all, 0 1.25rem 1rem 0, all, null);
+			}
+		}
+	}
+	.intigration {
+		.intigrat-row-content {
+			flex: 0 0 100%;
+			margin-top: 1.5rem;
+		}
+	}
+	.powerd-by-toggleInner {
+		@include margin-padding(all, null, all, 1.0625rem 1.25rem);
+	}
+	.clientpoint-preview {
+		.clientPoint-powerd-by {
+			@include margin-padding(all, null, all, 0 0 0 1.25rem);
+		}
+	}
+	.client-point-file {
+		.newperposal-client-bar {
+			@include margin-padding(all, null, all, 1.1rem 1.4rem);
+		}
+	}
+	.newclientpoint-title-bar {
+		.client-menu-common {
+			margin-right: 2rem;
+		}
+	}
+	#save-template-modal {
+		.modal-footer {
+			.btn-row {
+				justify-content: space-around;
+			}
+		}
+	}
+	#save-template-modal {
+		.modal-footer {
+			.btn-round {
+				margin-right: 0 !important;
+			}
+		}
+	}
+	#save-template-modal {
+		.modal-content {
+			@include margin-padding(all, null, all, 0 1.5rem 0 1.5rem);
+		}
+	}
+	.library-table {
+		height: calc(100% - 167px);
+	}
+	.new-btn-clientpoint {
+		padding: 0 2.5rem !important;
+	}
+	.login {
+		.login-form {
+			.input-field {
+				label {
+					font-size: 0.9rem;
+				}
+				input {
+					font-size: 0.9rem;
+				}
+			} 
+		}
+		.login-rightpanel {
+			.login-step {
+				ul {
+					li {
+						a {
+							font-size: 0.9rem;
+						}
+					}
+				}
+ 
+			} 
+		} 
+	}
+	.intigration {
+		h5 {
+			font-size: 1.1rem;
+		}
+	} 
+	.intigration {
+		.intigration-row {
+			h6 {
+				font-size: 1.1rem;
+			}
+		} 
+	}
 }
-.newclientpoint-title-bar .library-header-right .common-default-search {
-    margin: 0 1.25rem 1rem 0;
-}
-.intigration .intigrat-row-content {
-    flex: 0 0 100%;
-    margin-top: 1.5rem;
-}
-.powerdByToggleInner {
-    padding: 17px 20px 17px 20px;
-}
-.clientpoint-preview .clientPoint-powerd-by {
-    padding: 0 0 0 20px;
-}
-.client-point-file .newperposal-client-bar  {
-    padding: 1.1rem 1.4rem;
-}
-.newclientpoint-title-bar .clientMenuCommon {
-    margin-right: 2rem;
-}
-#saveTemplateModal .modal-footer .btn-row {
-    justify-content: space-around;
-}
-#saveTemplateModal .modal-footer .btn-round {
-    margin-right: 0 !important;
-}
-#saveTemplateModal .modal-content {
-    padding: 0 1.5rem 0 1.5rem;
-}
-.libraryTable {
-    height: calc(100% - 167px);
-}
-}
-
 // Media For extra small 480
 
 @media (max-width: 480px) {
-	.page-header .newClientPoint .btn-flat {
-		font-size: 0;
-		background-position: -376px -6px;
-		width: 20px;
-		padding: 0;
-		border: $border-none;
-		margin-right: 0.625rem;
+	.page-header {
+		.clientpoint-heading-bar {
+			.btn-flat {
+				font-size: $zero;
+				background-position: -376px -6px;
+				width: 20px;
+				padding: $zero;
+				border: $border-none;
+				margin-right: 0.625rem;
+				&:hover {
+					background-color: transparent;
+					background-position: -376px -6px;
+				}
+			}
+		}
 	}
-	.page-header .newClientPoint .btn-flat:hover {
-		background-color: transparent;
-		background-position: -376px -6px;
-	}
-	.time-spent .time-spent-right {
-		width: 60%;
-	}
-	.time-spent .time-spent-left {
-		width: 40%;
-	}
-	.powerdByToggleInner .SignNow .signUp {
-		padding: 0 2rem;
-	}
-	// .tableOptions .options {
-	// 	margin: 0 2.5rem 1rem 0;
-	// 	&:last-child {
-	// 		margin: 0 2.5rem 0 0;
-	// 	}
-	// }
+	.time-spent {
+		.time-spent-right {
+			width: 60%;
+		}
+	} 
+	.time-spent {
+		.time-spent-left {
+			width: 40%;
+		}
+	} 
+	.powerd-by-toggleInner {
+		.sign-now {
+			.sign-up {
+				@include margin-padding(all, null, all, 0 2rem);
+			}
+		}
+	} 
 	.tableOptions {
-		padding: 2.3125rem 2rem;
+		@include margin-padding(all, null, all, 2.3125rem 2rem);
 	}
 }
 

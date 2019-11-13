@@ -132,7 +132,7 @@
         </div>
         <div class="search-result">
             <div class="search-main items">
-                <a data-filter-item data-filter-name="encom" class="topSearchRow">
+                <a data-filter-item data-filter-name="encom" class="top-search-row">
                     <span class="results-search-icon"></span>
                     <h6>“encom”</h6>
                 </a>
@@ -235,32 +235,32 @@
     <!-- Header end here  -->
     <!-- Main Content start here  -->
 
-    <div id="content" class="">
+    <div id="content">
         <div class="content-common">
-            <div class="clientDetailsContent">
+            <div class="client-details-content">
                 <div class="titlerow">
-                    <input type="text" placeholder="New ClientPoint" class="newClientPointInput">
-                    <aside class="ml-auto newClientBtn">
+                    <input type="text" placeholder="New ClientPoint" class="new-client-pointInput">
+                    <aside class="ml-auto new-client-btn">
                         <a class=" btn-flat">Cancel</a>
                         <a class="waves-effect waves-light btn">Save & Continue</a>
                     </aside>
                 </div>
-                <div class="detailInfo">
+                <div class="detail-info">
                     <article class="information">
                         <div class="information-row">
                             <article class="information-heading">
                                 <img src="./images/info-shape.svg" alt="">
                                 <h6> INFO</h6>
                             </article>
-                            <div class="infoCommon">
-                                <form class="infoForm">
+                            <div class="info-common">
+                                <form class="info-form">
                                     <div class="row mb-15">
-                                        <div class="input-field col l6 m12 s12 paddingNone">
+                                        <div class="input-field col l6 m12 s12 padding-none">
                                             <input placeholder="Client name..." id="first_name" type="text"
                                                 class="validate" value="">
                                             <label for="first_name">Client</label>
                                         </div>
-                                        <div class="input-field col l6 m12 s12 paddingNone">
+                                        <div class="input-field col l6 m12 s12 padding-none">
                                             <select>
                                                 <option value="" selected>New</option>
                                                 <option value="1">Archive</option>
@@ -273,18 +273,17 @@
                                             </select>
                                             <label>Status</label>
                                         </div>
-                                        <div class="input-field col l6 m12 s12 paddingNone">
+                                        <div class="input-field col l6 m12 s12 padding-none">
                                             <input placeholder="Revenue..." id="status" type="text" class="validate"
                                                 value="">
                                             <label for="first_name">Revenue</label>
                                         </div>
-                                        <div class="input-field col l6 m12 s12 paddingNone">
+                                        <div class="input-field col l6 m12 s12 padding-none">
                                             <input placeholder="MM/DD/YYYY" id="date" type="text" class="validate"
                                                 value="">
                                             <label for="first_name">EXPIRATION DATE</label>
                                         </div>
                                     </div>
-
                                 </form>
                             </div>
                         </div>
@@ -292,7 +291,8 @@
                             <article class="information-heading">
                                 <img src="./images/avtar-grey.svg" alt="">
                                 <h6>Recipients (0)</h6>
-                                <a href="#" class="btnImportCrm"><img src="./images/ImportCrmIcon.svg" alt=""> IMPORT
+                                <a href="#" class="btnImportCrm">
+                                    <img src="./images/ImportCrmIcon.svg" alt=""> IMPORT
                                     CRM</a>
                             </article>
                             <div class="reciepent">
@@ -305,12 +305,11 @@
                                             <h6>Kevin Flynn</h6>
                                             <p>flynn@encom.com</p>
                                         </div>
-                                        <a class="dropdown-trigger removeReciepent" href='javascript:void(0);'
-                                            data-target='dropdown1'></a>
-
+                                        <a class="dropdown-trigger remove-reciepent" href='javascript:void(0);'
+                                            data-target="dropdown-recipient"></a>
                                     </div>
-                                    <ul id="dropdown1" class="dropdown-content">
-                                        <li><a href="javascript:void(0);"><span class="deleteIcon"></span>Remove
+                                    <ul id="dropdown-recipient" class="dropdown-content">
+                                        <li><a href="javascript:void(0);"><span class="delete-icon"></span>Remove
                                                 Recipient</a></li>
                                     </ul>
                                     <div class="reciepent-row-repeate">
@@ -321,7 +320,6 @@
                                             <h6>Edward Dillinger</h6>
                                             <p>edward@encom.com</p>
                                         </div>
-
                                     </div>
                                     <div class="reciepent-row-repeate">
                                         <span class="reciepent-user">
@@ -331,7 +329,6 @@
                                             <h6>Alan Bradley</h6>
                                             <p>alan@encom.com</p>
                                         </div>
-
                                     </div>
                                     <a class="waves-effect waves-light btn modal-trigger"
                                         href="#modal1"><span>+</span>Add Recipient</a>
@@ -388,7 +385,7 @@
                                                     <span class="lever"></span>Recipient upload
                                                 </label>
                                             </div>
-                                            <div class="reciepent-Select-margin"></div>
+                                            <div class="reciepent-select-margin"></div>
                                             <div class="input-field">
                                                 <select>
                                                     <option value="" selected>English</option>
@@ -402,7 +399,7 @@
                             </div>
                         </div>
                     </article>
-                    <aside class="InfoSidebarRight">
+                    <aside class="info-sidebar-right">
                     </aside>
                 </div>
             </div>
@@ -416,17 +413,18 @@
     <!-- Add Recipent Modal start here  -->
 
     <!-- Modal Structure -->
-    <div id="modal1" class="modal AddRecipientModal">
+    <div id="modal1" class="modal add-recipient-modal">
         <div class="modal-header">
             <span class="share-icon"></span>
             <h4>Add Recipient</h4>
             <a class="modal-close"><i class="material-icons">
                     close
-                </i></a>
+                </i>
+            </a>
         </div>
         <div class="modal-content">
-            <div class="AddRecipientContent">
-                <div class="AddRecipientContent-row">
+            <div class="add-recipient-content">
+                <div class="add-recipient-content-row">
                     <div class="row">
                         <div class="col l4 m4 s12">
                             <div class="input-field col s12">
@@ -442,8 +440,8 @@
                         </div>
                         <div class="col l4 m4 s12">
                             <div class="input-field col s12">
-                                <input placeholder="Confirm email…" id="confirmEmail" type="email" class="validate">
-                                <label for="confirmEmail">Confirm Email</label>
+                                <input placeholder="Confirm email…" id="confirm-email" type="email" class="validate">
+                                <label for="confirm-email">Confirm Email</label>
                             </div>
                         </div>
                         <div class="col l4 m4 s12">
@@ -466,7 +464,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="AddRecipientContent-row">
+                <div class="add-recipient-content-row">
                     <div class="row">
                         <div class="col l4 m4 s12">
                             <div class="input-field col s12">
@@ -482,8 +480,8 @@
                         </div>
                         <div class="col l4 m4 s12">
                             <div class="input-field col s12">
-                                <input placeholder="Confirm email…" id="confirmEmail_sub" type="email" class="validate">
-                                <label for="confirmEmail_sub">Confirm Email</label>
+                                <input placeholder="Confirm email…" id="confirm-email_sub" type="email" class="validate">
+                                <label for="confirm-email_sub">Confirm Email</label>
                             </div>
                         </div>
                         <div class="col l4 m4 s12 mb-0">
@@ -519,14 +517,11 @@
         </div>
     </div>
 
-
     <!-- Add Recipent Modal end here  -->
-
 
     <!-- Javascript files start here -->
     <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/custom.js"></script>
 </body>
-
 </html>

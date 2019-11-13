@@ -52,7 +52,7 @@
 				}
 			}
 		}
-		.authLink {
+		.auth-link {
 			color: color("indigo", "base");
 			font-weight: $font-weight-500;
 		}
@@ -103,7 +103,7 @@
 		width: $full-width;
 		border-radius: 5px 0 0 5px;
 	}
-	.analyticsShadow {
+	.analytics-shadow {
 		background: linear-gradient(
 			to top,
 			rgba(255, 255, 255, 1) 0%,
@@ -118,7 +118,7 @@
 		@include flexbox();
 		align-items: $align-item-end;
 	}
-	.replyBtn {
+	.reply-btn {
 		font-weight: $font-weight-500;
 		text-transform: $text-uppercase;
 		color: color("grey", "darken-4");
@@ -126,7 +126,7 @@
 		margin-top: 15px;
 		@include inlineflex();
 		align-items: $align-items-center;
-		.replyArrow {
+		.reply-arrow {
 			background: url(../images/common-icons.svg) no-repeat -170px -500px;
 			width: 1rem;
 			height: 1rem;
@@ -233,7 +233,7 @@
 					color: color("grey", "darken-2");
 				}
 			}
-			.collapseArrow {
+			.collapse-arrow {
 				color: color("indigo", "base");
 				font-size: 1.9rem;
 
@@ -338,7 +338,7 @@
 			@include flexbox();
 			@include flex-wrap($wrap);
 			align-items: $align-items-center;
-			.DropdownArrow {
+			.dropdown-arrow {
 				line-height: 12px;
 				color: color("indigo", "base");
 			}
@@ -350,12 +350,12 @@
 			@include flexbox();
 			@include flex-wrap($wrap);
 			align-items: $align-items-center;
-			.DropdownArrow {
+			.dropdown-arrow {
 				line-height: 12px;
 				color: color("indigo", "base");
 			}
 		}
-		.hoverdropdown {
+		.hover-dropdown {
 			margin-left: 3px;
 			@include border-radius(2px);
 			width: 20px;
@@ -413,7 +413,7 @@
 			background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
 			display: $display-inline-block;
 		}
-		.calender-dateText {
+		.calender-date-text {
 			color: color("grey", "darken-2");
 			margin: 0 1.6rem;
 		}
@@ -432,14 +432,14 @@
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
 		position: $position-relative;
-		.calenderIcon {
+		.calender-icon {
 			background: url(../images/common-icons.svg) no-repeat -243px -495px;
 			width: 1.5rem;
 			height: 1.4rem;
 			@include margin-padding(all, 0 0 0 0, all, null);
 			display: $display-inline-block;
 		}
-		.DropdownArrow {
+		.dropdown-arrow {
 			line-height: 12px;
 			color: color("indigo", "base");
 		}
@@ -449,8 +449,8 @@
 			left: auto !important;
 			right: $zero;
 		}
-		.calenderHeader {
-			.calenderHeader-row {
+		.calender-header {
+			.calender-header-row {
 				@include flexbox();
 				@include flex-wrap($wrap);
 				align-items: $align-items-center;
@@ -470,7 +470,7 @@
 					font-weight: $font-weight-500;
 					letter-spacing: 0.25px;
 				}
-				.dateCalender {
+				.date-calender {
 					@include flexbox();
 					@include flex-wrap($wrap);
 					align-items: $align-items-center;
@@ -478,7 +478,7 @@
 					font-size: $font-size-fourteen;
 					color: color("grey", "darken-4");
 				}
-				.calender-dateIcon {
+				.calender-date-icon {
 					background: url(../images/common-icons.svg) no-repeat -239px -573px;
 					width: 29px;
 					height: 27px;
@@ -489,7 +489,7 @@
 				}
 			}
 		}
-		.CalenderDropDownContent {
+		.calender-dropdown-content {
 			li {
 				min-height: inherit;
 				&:hover {
@@ -514,7 +514,7 @@
 			}
 		}
 
-		.hoverdropdown {
+		.hover-dropdown {
 			margin-left: 3px;
 			@include border-radius(2px);
 			width: 20px;
@@ -534,7 +534,7 @@
 		}
 	}
 	.type {
-		.hoverdropdown {
+		.hover-dropdown {
 			@include margin-padding(all, 0 0 0 3px, all, null);
 			@include border-radius(2px);
 			width: 20px;
@@ -671,7 +671,7 @@
 	overflow: hidden;
 	@include transition(all 0.5s);
 }
-.collapseArrow.rotate-arrowdrop .material-icons {
+.collapse-arrow.rotate-arrowdrop .material-icons {
 	@include transform(rotate(180deg));
 }
 .top-file-row.top-file-collapse {
@@ -775,7 +775,7 @@
 				color: color("blue-grey", "darken-1");
 				@include margin-padding(all, null, all, 0 10px);
 				white-space: $white-spacenowrap;
-				.eyeIcon {
+				.eye-icon {
 					background: url(../images/common-icons.svg) no-repeat -168px -577px;
 					width: 1.3rem;
 					height: 1.2em;
@@ -793,7 +793,7 @@
 					background-color: #19e4b1;
 				}
 			}
-			.progressText {
+			.progress-text {
 				font-size: 10px;
 				line-height: $line-height-twentyfour;
 				display: $display-block;
@@ -823,7 +823,7 @@
 			visibility: $visibilty-visible;
 		}
 	}
-	.clientSearchtitle {
+	.client-search-title {
 		background: color("shades", "white");
 		position: $position-absolute;
 		left: $zero;
@@ -995,7 +995,7 @@
 			@include font-rem(16px, 20px);
 		}
 	}
-	#dropdownReply {
+	#dropdown-reply {
 		min-width: 14.5rem;
 		li {
 			border-bottom: 1px solid color("grey", "lighten-5");
@@ -1009,12 +1009,12 @@
 				@include margin-padding(all, null, all, 0.6875rem 1.25rem);
 			}
 		}
-		.userImg {
+		.user-img {
 			max-width: 30px;
 			flex: 0 0 30px;
 			@include margin-padding(all, 0 0.625rem 0 0, all, null);
 		}
-		.userInfo {
+		.user-info {
 			h6 {
 				@include font-rem(13px, 24px);
 				color: color("indigo", "base");

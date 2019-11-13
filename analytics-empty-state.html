@@ -134,7 +134,7 @@
         </div>
         <div class="search-result">
             <div class="search-main items">
-                <a data-filter-item data-filter-name="encom" class="topSearchRow">
+                <a data-filter-item data-filter-name="encom" class="top-search-row">
                     <span class="results-search-icon"></span>
                     <h6>“encom”</h6>
                 </a>
@@ -243,17 +243,17 @@
                     <div class="clientpoint-title">
                         <h4>ClientPoint Title</h4>
                         <a href="javascript:void(0);" class="editTitle"></a>
-                        <div class="clientSearchtitle">
+                        <div class="client-search-title">
                             <input type="text" placeholder="ClientPoint Title">
                             <input type="submit" class="closeBtn" value="">
                         </div>
                     </div>
                     <div class="newclientpoint-title-bar-right">
                         <aside class="clientMenu">
-                            <a href="share-modal" class="clientMenuCommon clientMenuShare modal-trigger"></a>
-                            <a href="#comment-modal" class="clientMenuCommon clientMenuComment modal-trigger"></a>
-                            <a href="#" class="clientMenuCommon clientMenuPdf"></a>
-                            <a href="#" class="clientMenuCommon clientMenuNewsletter mr-0"></a>
+                            <a href="share-modal" class="client-menu-common client-menu-share modal-trigger"></a>
+                            <a href="#comment-modal" class="client-menu-common client-menu-comment modal-trigger"></a>
+                            <a href="#" class="client-menu-common client-menu-pdf"></a>
+                            <a href="#" class="client-menu-common client-menu-newsletter mr-0"></a>
                         </aside>
                         <!-- <a class="waves-effect waves-light btn btn-round">Save</a> -->
                     </div>
@@ -266,14 +266,14 @@
                             <h5>Filter by:</h5>
                             <div class="type">
                                 <h5>Type <a href="javascript:void(0);"
-                                        class="DropdownArrow hoverdropdown dropdown-trigger" data-alignment="left"
-                                        data-target='typeDropDown'>
+                                        class="dropdown-arrow hover-dropdown dropdown-trigger" data-alignment="left"
+                                        data-target="type-dropdown">
                                         <i class="material-icons">
                                             arrow_drop_down
                                         </i>
                                     </a>
                                 </h5>
-                                <ul id='typeDropDown' class='dropdown-content typeDropDownLinks'>
+                                <ul id="type-dropdown" class="dropdown-content type-dropdown-Links">
                                     <li>
                                         <label>
                                             <input type="checkbox" class="filled-in" />
@@ -301,11 +301,11 @@
                                 </ul>
                             </div>
                             <div class="all-viewers">
-                                <h5>All Viewers <a href='#' data-alignment="left" data-target='all-viewersDropdown'
-                                        class="DropdownArrow hoverdropdown dropdown-trigger"><i class="material-icons">
+                                <h5>All Viewers <a href="#" data-alignment="left" data-target="all-viewers-dropdown"
+                                        class="dropdown-arrow hover-dropdown dropdown-trigger"><i class="material-icons">
                                             arrow_drop_down
                                         </i></a></h5>
-                                <ul id='all-viewersDropdown' class='dropdown-content typeDropDownLinks'>
+                                <ul id="all-viewers-dropdown" class="dropdown-content type-dropdown-Links">
                                     <li>
                                         <label>
                                             <input type="checkbox" class="filled-in" />
@@ -348,29 +348,37 @@
                                 <div class="calender-date">
                                     <a href="javasscript:void(0)" class="prev-date-calender">
                                     </a>
-                                    <span class="calender-dateText">Jul 29 - Aug 5</span>
+                                    <span class="calender-date-text">Jul 29 - Aug 5</span>
                                     <a href="javasscript:void(0)" class="next-date-calender">
                                     </a>
                                 </div>
                                 <div class="caleneder-filter">
-                                    <span class="calenderIcon"></span>
-                                    <a href="javascript:void(0);" class="hoverdropdown DropdownArrow dropdown-trigger"
-                                        data-alignment="left" data-target='CalenderDropdown'><i class="material-icons">
+                                    <span class="calender-icon"></span>
+                                    <a href="javascript:void(0);" class="hover-dropdown dropdown-arrow dropdown-trigger"
+                                        data-alignment="left" data-target="calender-dropdown">
+                                        <i class="material-icons">
                                             arrow_drop_down
-                                        </i></a>
-                                    <ul id='CalenderDropdown' class='dropdown-content CalenderDropDownContent'>
-                                        <li class="calenderHeader">
-                                            <div class="calenderHeader-row">
+                                        </i>
+                                    </a>
+                                    <ul id="calender-dropdown" class="dropdown-content calender-dropdown-content">
+                                        <li class="calender-header">
+                                            <div class="calender-header-row">
                                                 <span class="from">From</span>
-                                                <span class="dateCalender"><a class="calender-dateIcon"
-                                                        href="javascript:void(0);"></a>July 29,
-                                                    2019</span>
+                                                <span class="date-calender">
+                                                    <a class="calender-date-icon"
+                                                        href="javascript:void(0);">
+                                                    </a>
+                                                    July 29, 2019
+                                                </span>
                                             </div>
-                                            <div class="calenderHeader-row">
+                                            <div class="calender-header-row">
                                                 <span class="from">To</span>
-                                                <span class="dateCalender"><a class="calender-dateIcon"
-                                                        href="javascript:void(0);" id="datepicker"></a>August 5,
-                                                    2019</span>
+                                                <span class="date-calender">
+                                                    <a class="calender-date-icon"
+                                                        href="javascript:void(0);" id="datepicker">
+                                                    </a>
+                                                    August 5, 2019
+                                                </span>
                                             </div>
                                         </li>
                                         <li>
@@ -403,7 +411,7 @@
                             </div>
                         </div>
                         <div class="analytics-empty-state">
-                            <img src="./images/analytics-empty-state.svg" alt="Image for analytics empty state">
+                            <img class="responsive-img" src="./images/analytics-empty-state.svg" alt="Image for analytics empty state">
                             <p>Connect the dots, see what’s performing best, respond at the speed of light.</p>
                         </div>
                     </div>
@@ -463,7 +471,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="collapseArrow"><i
+                                                                            class="collapse-arrow"><i
                                                                                 class="material-icons">
                                                                                 arrow_drop_down
                                                                             </i></a>
@@ -491,7 +499,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="collapseArrow"><i
+                                                                            class="collapse-arrow"><i
                                                                                 class="material-icons">
                                                                                 arrow_drop_down
                                                                             </i></a>
@@ -519,17 +527,18 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="collapseArrow"><i
+                                                                            class="collapse-arrow"><i
                                                                                 class="material-icons">
                                                                                 arrow_drop_down
                                                                             </i></a>
                                                                     </div>
                                                                     <div class="text-center">
-                                                                        <a
-                                                                            class="waves-effect waves-light btn btn-round"><i
-                                                                                class="material-icons">
+                                                                        <a class="waves-effect waves-light btn btn-round">
+                                                                            <i class="material-icons">
                                                                                 add
-                                                                            </i>Add Recipient</a>
+                                                                            </i>
+                                                                            Add Recipient
+                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                                 <div class="top-file-viewed">
@@ -554,9 +563,37 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="file-arrow"><i class="material-icons">
+                                                                            class="file-arrow">
+                                                                            <i class="material-icons">
                                                                                 arrow_drop_down
-                                                                            </i></a>
+                                                                            </i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="top-file-row top-file-collapse">
+                                                                        <span class="pdf-icon"></span>
+                                                                        <div class="top-file-viewedcontent">
+                                                                            <p>File Name</p>
+                                                                            <div class="time-spent">
+                                                                                <div class="time-spent-left">
+                                                                                    <h5>Time Spent</h5>
+                                                                                    <span>00:02:22</span>
+                                                                                </div>
+                                                                                <div class="time-spent-right">
+                                                                                    <h5>Percentage Spent</h5>
+                                                                                    <div class="progress">
+                                                                                        <div class="determinate"
+                                                                                            style="width: 65%"></div>
+                                                                                    </div>
+                                                                                    <span>65% time spent</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <a href="javascript:void(0);"
+                                                                            class="file-arrow">
+                                                                            <i class="material-icons">
+                                                                                arrow_drop_down
+                                                                            </i>
+                                                                        </a>
                                                                     </div>
                                                                     <div class="top-file-row top-file-collapse">
                                                                         <span class="pdf-icon"></span>
@@ -626,33 +663,11 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="file-arrow"><i class="material-icons">
+                                                                            class="file-arrow">
+                                                                            <i class="material-icons">
                                                                                 arrow_drop_down
-                                                                            </i></a>
-                                                                    </div>
-                                                                    <div class="top-file-row top-file-collapse">
-                                                                        <span class="pdf-icon"></span>
-                                                                        <div class="top-file-viewedcontent">
-                                                                            <p>File Name</p>
-                                                                            <div class="time-spent">
-                                                                                <div class="time-spent-left">
-                                                                                    <h5>Time Spent</h5>
-                                                                                    <span>00:02:22</span>
-                                                                                </div>
-                                                                                <div class="time-spent-right">
-                                                                                    <h5>Percentage Spent</h5>
-                                                                                    <div class="progress">
-                                                                                        <div class="determinate"
-                                                                                            style="width: 65%"></div>
-                                                                                    </div>
-                                                                                    <span>65% time spent</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <a href="javascript:void(0);"
-                                                                            class="file-arrow"><i class="material-icons">
-                                                                                arrow_drop_down
-                                                                            </i></a>
+                                                                            </i>
+                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -822,8 +837,8 @@
                                         <div class="templates">
                                             <ul>
                                                 <li><a href="javascript:void(0);"><span
-                                                            class="templateIcon"></span>Introduction</a></li>
-                                                <li><a href="javascript:void(0);"><span class="templateIcon"></span>Case
+                                                            class="template-icon"></span>Introduction</a></li>
+                                                <li><a href="javascript:void(0);"><span class="template-icon"></span>Case
                                                         Studies</a></li>
                                             </ul>
                                         </div>
@@ -869,7 +884,7 @@
                                             <div class="file-name">
                                                 <div class="add-filesname-row">
                                                     <span class="file-icon"></span>File Name
-                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                    <a href="javascript:void(0);" class="close-file"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
@@ -877,7 +892,7 @@
                                                 <div class="add-filesname-row">
                                                     <span class="file-icon"></span>File Name
 
-                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                    <a href="javascript:void(0);" class="close-file"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
@@ -1002,7 +1017,7 @@
                                                 <div class="add-filesname-row">
                                                     <span class="file-icon"></span>File Name
 
-                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                    <a href="javascript:void(0);" class="close-file"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
@@ -1010,7 +1025,7 @@
                                                 <div class="add-filesname-row">
                                                     <span class="file-icon"></span>File Name
 
-                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                    <a href="javascript:void(0);" class="close-file"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
@@ -1103,7 +1118,7 @@
                     <h4>Copy this private URL to share:</h4>
                     <div class="copy-url">
                         <input type="text" placeholder="http://clientpoint.net/CMJ111">
-                        <input type="submit" class="copybtn" value="Copy">
+                        <input type="submit" class="copy-btn" value="Copy">
                     </div>
                     <div class="text-center">
                         <a href="javascript:void(0);" target="_blank" class="new-window-link">Open in new window</a>
@@ -1127,7 +1142,7 @@
                                     <span class="lever"></span>
                                 </label>
                             </div>
-                            <div class="enterPassword">
+                            <div class="enter-password">
                                 <input type="text" placeholder="Enter Password">
                                 <input type="submit" class="savePasswordBtn" value="Save Password">
                             </div>
@@ -1145,11 +1160,11 @@
                         <label>To</label>
                         <input type="text" placeholder="recipient email address...">
                     </div>
-                    <div class="subjectEmail">
+                    <div class="subject-email">
                         <label>Subject</label>
                         <input type="text" placeholder="ClientPoint Title" value="ClientPoint Title">
                     </div>
-                    <div class="emailText">
+                    <div class="email-text">
                         <p>Hello,</p>
                         <p>1. Please view your document. </p>
                         <p>2. Eros in cursus turpis massa tincidunt dui ut ornare. Urna cursus eget nunc scelerisque.
@@ -1179,9 +1194,11 @@
         <div class="modal-header">
             <span class="share-icon"></span>
             <h4>Comment</h4>
-            <a class="modal-close"><i class="material-icons">
+            <a class="modal-close">
+                <i class="material-icons">
                     close
-                </i></a>
+                </i>
+            </a>
         </div>
         <div class="tabs-header">
             <ul class="tabs">
@@ -1229,7 +1246,8 @@
         <div class="modal-header">
             <span class="share-icon"></span>
             <h4>Comment</h4>
-            <a class="modal-close"><i class="material-icons">
+            <a class="modal-close">
+                <i class="material-icons">
                     close
                 </i></a>
         </div>
@@ -1246,15 +1264,15 @@
                 <p>
                     <a href="javascript:void(0);" class="link">@KevinFlynn</a> Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="javascript:void(0);"
-                        class="link dropdown-trigger" data-target="dropdownReply">@Ed</a>
+                        class="link dropdown-trigger" data-target="dropdown-reply">@Ed</a>
                 </p>
-                <ul id="dropdownReply" class='dropdown-content'>
+                <ul id="dropdown-reply" class='dropdown-content'>
                     <li>
                         <a href="javascript:void(0);">
-                            <span class="userImg">
+                            <span class="user-img">
                                 <img class="responsive-img" src="./images/Recipents-Avatar-3.png" alt="img">
                             </span>
-                            <div class="userInfo">
+                            <div class="user-info">
                                 <h6>Edward Dillinger</h6>
                                 <p>edward@encom.com</p>
                             </div>
@@ -1262,10 +1280,10 @@
                     </li>
                     <li>
                         <a href="javascript:void(0);">
-                            <span class="userImg">
+                            <span class="user-img">
                                 <img class="responsive-img" src="./images/Recipents-Avatar-3.png" alt="img">
                             </span>
-                            <div class="userInfo">
+                            <div class="user-info">
                                 <h6>Eddie Brock</h6>
                                 <p>eddie@symbiote.com</p>
                             </div>

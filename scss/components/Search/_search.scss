@@ -97,7 +97,7 @@
 			color: color("grey", "darken-4");
 			@include margin-padding(all, 0 auto 0 0, all, null);
 		}
-		.closeResult {
+		.close-result {
 			color: color("indigo", "base");
 			@include margin-padding(all, 0 0 0 auto, all, null);
 		}
@@ -138,7 +138,7 @@
 				@include margin-padding(all, 0, all, null);
 			}
 		}
-		.contactIcon {
+		.contact-icon {
 			background: #19e4b1 url(../images/common-icons.svg) no-repeat -28px -1456px;
 			@include w-h-rem(20px, 20px);
 			@include border-radius(0.3125rem);
@@ -362,16 +362,22 @@
 				@include margin-padding(all, null, all, 0.7rem 1.25rem !important);
 			}
 		}
-		.esignature {
+		.e-signature {
 			border-top: 1px solid color("grey", "lighten-5");
 			@include margin-padding(all, 0.5rem 0 0 0, all, null);
 			.switch {
 				margin-left: $margin-left-auto;
 			}
+			&:hover {
+				tr {
+					background: color('shades','transparent');
+				}
+				
+			}
 		}
 	}
 
-	.esignature-content {
+	.e-signature-content {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		@include margin-padding(all, null, all, 1.3rem 1.25rem !important);

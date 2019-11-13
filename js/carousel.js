@@ -7,7 +7,7 @@
     shift: 0, // spacing for center image
     padding: 0, // Padding between non center items
     numVisible: 5, // Number of visible items in carousel
-    fullWidth: false, // Change to full width styles
+    full-width: false, // Change to full width styles
     indicators: false, // Toggle indicators
     noWrap: false, // Don't wrap around and cycle through items.
     onCycleTo: null // Callback for when a new slide is cycled to.
@@ -37,7 +37,7 @@
        * @prop {Number} shift
        * @prop {Number} padding
        * @prop {Number} numVisible
-       * @prop {Boolean} fullWidth
+       * @prop {Boolean} full-width
        * @prop {Boolean} indicators
        * @prop {Boolean} noWrap
        * @prop {Function} onCycleTo
@@ -65,7 +65,7 @@
       this._trackBound = this._track.bind(this);
 
       // Full Width carousel setup
-      if (this.options.fullWidth) {
+      if (this.options.full-width) {
         this.options.dist = 0;
         this._setCarouselHeight();
 
@@ -303,7 +303,7 @@
         e.preventDefault();
         e.stopPropagation();
         return false;
-      } else if (!this.options.fullWidth) {
+      } else if (!this.options.full-width) {
         let clickedIndex = $(e.target)
           .closest('.carousel-item')
           .index();
@@ -336,7 +336,7 @@
      * @param {Event} e
      */
     _handleResize(e) {
-      if (this.options.fullWidth) {
+      if (this.options.full-width) {
         this.itemWidth = this.$el
           .find('.carousel-item')
           .first()
@@ -492,7 +492,7 @@
       tween = -dir * delta * 2 / this.dim;
       half = this.count >> 1;
 
-      if (this.options.fullWidth) {
+      if (this.options.full-width) {
         alignment = 'translateX(0)';
         centerTweenedOpacity = 1;
       } else {
@@ -533,7 +533,7 @@
 
       for (i = 1; i <= half; ++i) {
         // right side
-        if (this.options.fullWidth) {
+        if (this.options.full-width) {
           zTranslation = this.options.dist;
           tweenedOpacity = i === half && delta < 0 ? 1 - tween : 1;
         } else {
@@ -549,7 +549,7 @@
         }
 
         // left side
-        if (this.options.fullWidth) {
+        if (this.options.full-width) {
           zTranslation = this.options.dist;
           tweenedOpacity = i === half && delta > 0 ? 1 - tween : 1;
         } else {

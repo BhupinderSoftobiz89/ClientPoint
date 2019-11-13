@@ -260,7 +260,7 @@
       let activeTabIndex = this.$activeTabLink.closest('.tab').index();
 
       this._tabsCarousel = M.Carousel.init($tabsWrapper[0], {
-        fullWidth: true,
+        full-width: true,
         noWrap: true,
         onCycleTo: (item) => {
           let prevIndex = this.index;

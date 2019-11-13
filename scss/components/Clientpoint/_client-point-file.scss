@@ -68,7 +68,7 @@
 					height: 1.5rem;
 					margin-right: 1.375rem;
 				}
-				.arrowAccordion {
+				.arrow-accordion {
 					margin-left: $margin-left-auto;
 					color: color("indigo", "base");
 					font-size: 31px;
@@ -77,14 +77,14 @@
 				}
 			}
 			li.active {
-				.material-icons.arrowAccordion {
+				.material-icons.arrow-accordion {
 					transform: rotate(180deg);
 				}
 			}
 			.collapsible-body {
 				padding: $zero;
 				border-bottom: $border-radius-thirty;
-				.IntroDuctionRow {
+				.introduction-row {
 					@include flexbox();
 					@include flex-wrap($wrap);
 					font-size: $font-size-fifteen;
@@ -97,7 +97,7 @@
 					&:hover {
 						background: color("grey", "lighten-4");
 
-						.editBtns {
+						.edit-btns {
 							opacity: 1;
 							visibility: $visibilty-visible;
 						}
@@ -147,7 +147,7 @@
 					display: $display-inline-block;
 					vertical-align: $verticle-align-middle;
 				}
-				.downloadIcon {
+				.download-icon {
 					background: url(../images/common-icons.svg) no-repeat -242px -346px;
 					width: 1.75rem;
 					height: 1.6rem;
@@ -156,7 +156,7 @@
 					vertical-align: $verticle-align-middle;
 				}
 			}
-			.editBtns {
+			.edit-btns {
 				margin-left: $margin-left-auto;
 				@include flexbox();
 				@include flex-wrap($wrap);
@@ -164,7 +164,7 @@
 				align-items: $align-items-center;
 				opacity: $zero;
 				visibility: $visibilty-hidden;
-				.editBtn {
+				.edit-btn {
 					background: url(../images/common-icons.svg) no-repeat -382px -346px;
 					width: 1.2rem;
 					height: 1.6rem;
@@ -172,7 +172,7 @@
 					display: $display-inline-block;
 					vertical-align: $verticle-align-middle;
 				}
-				.dotBtn {
+				.dot-btn {
 					background: url(../images/common-icons.svg) no-repeat -23px -423px;
 					width: 18px;
 					height: 18px;
@@ -260,7 +260,10 @@
 			font-weight: $font-weight-normal;
 			text-align: $text-center;
 			margin: $zero;
-			text-decoration: $text-decoration-underline;
+			span {
+				text-decoration: $text-decoration-underline;
+				color: color("indigo", "base");
+			}
 			a {
 				color: color("indigo", "base");
 			}
@@ -269,6 +272,7 @@
 			position: $position-absolute;
 			opacity: $zero;
 			cursor: $cursor-pointer;
+			width: 10.2rem;
 		}
 	}
 	.webtab-height {
@@ -415,7 +419,7 @@
 	height: 195px;
 	margin: $zero;
 }
-.templateIcon {
+.template-icon {
 	content: "";
 	display: $display-inline-block;
 	width: 22px;
@@ -495,7 +499,7 @@
 			font-weight: $font-weight-500;
 		}
 	}
-	.closeFile {
+	.close-file {
 		margin-left: $margin-left-auto;
 		@include flexbox();
 		align-items: $align-items-center;
@@ -545,12 +549,12 @@
 
 /* ClientPoint Content Start here */
 
-.editingHeading {
+.editing-heading {
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
 	margin-bottom: 20px;
-	.pageCount {
+	.page-count {
 		font-size: $font-size-sixteen;
 		color: color("grey", "darken-4");
 		line-height: $line-height-twentysix;
@@ -562,7 +566,7 @@
 		color: color("grey", "darken-4");
 		@include flexbox();
 		align-items: $align-items-center;
-		.EditIcon {
+		.edit-icon {
 			width: 1.2rem;
 			height: 1.2rem;
 			background: url(../images/common-icons.svg) no-repeat -26px -348px;
@@ -570,7 +574,7 @@
 		}
 	}
 }
-.clientpointEditing {
+.clientpoint-editing {
 	border: 1px solid #ededed;
 	background: color("shades", "white");
 	padding: 2.5rem 0 2.5rem 2.5rem;
@@ -594,7 +598,7 @@
 	// .scroll-wrapper{
 	//     max-height: 100% !important;
 	// }
-	.WordSearch {
+	.word-search {
 		background: rgba(247, 186, 15, 0.39);
 		padding: 0 4px;
 	}
@@ -770,7 +774,7 @@ share-modal {
 			}
 		}
 	}
-	.enterPassword {
+	.enter-password {
 		flex: 0 0 100%;
 		max-width: $full-width;
 		@include flexbox();
@@ -803,7 +807,7 @@ share-modal {
 	.email-content {
 		border: 1px solid #f2f3f3;
 		.email-address,
-		.subjectEmail {
+		.subject-email {
 			@include flexbox();
 			align-items: $align-items-center;
 			@include flex-wrap($wrap);
@@ -825,7 +829,7 @@ share-modal {
 			}
 		}
 	}
-	.emailText {
+	.email-text {
 		padding: 1.1rem 2.188rem;
 		p {
 			color: color("grey", "darken-4");
@@ -920,7 +924,7 @@ share-modal {
 		}
 	}
 }
-.switchInline {
+.switch-inline {
 	@include flexbox();
 	align-items: $align-items-center;
 	@include flex-wrap($wrap);
@@ -1003,13 +1007,13 @@ share-modal {
 	}
 }
 
-.powerdByToggleInner {
+.powerd-by-toggleInner {
 	background: color("indigo", "accent-4");
 	@include flexbox();
 	align-items: $align-items-center;
 	@include flex-wrap($wrap);
 	@include margin-padding(all, null, all, 17px 30px 17px 40px);
-	.powerdByToggleLinks {
+	.powerdby-toggle-links {
 		//@include margin-padding(all, null, all, 17px 30px 17px 0);
 
 		ul {
@@ -1033,36 +1037,36 @@ share-modal {
 					align-items: $align-items-center;
 					@include flex-wrap($wrap);
 				}
-				.viewerLinks {
+				.viewer-links {
 					opacity: 0.35;
 				}
-				.powerdCommentIcon {
+				.powerdcomment-icon {
 					background: url(../images/common-icons.svg) no-repeat -93px -1062px;
 					width: 1.5rem;
 					height: 1.5rem;
 					margin-right: 7px;
 				}
-				.powerdUploadIcon {
-					@extend .powerdCommentIcon;
+				.powerdupload-icon {
+					@extend .powerdcomment-icon;
 					background: url(../images/common-icons.svg) no-repeat -169px -1061px;
 				}
-				.powerdPrintIcon {
-					@extend .powerdCommentIcon;
+				.powerdprint-icon {
+					@extend .powerdcomment-icon;
 					background: url(../images/common-icons.svg) no-repeat -242px -1063px;
 				}
 				.powerdshare-icon {
-					@extend .powerdCommentIcon;
+					@extend .powerdcomment-icon;
 					background: url(../images/common-icons.svg) no-repeat -322px -1063px;
 				}
 			}
 		}
 	}
-	.SignNow {
+	.sign-now {
 		margin-left: $margin-left-auto;
 		@include flexbox();
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
-		.signUp {
+		.sign-up {
 			letter-spacing: 0.4375px;
 			padding: 0 3.7rem;
 			@include margin-padding(all, 0 20px 0 0, all, null null);
@@ -1077,8 +1081,8 @@ share-modal {
 		}
 	}
 }
-.clientpointEditing {
-	h6.acceptProposal {
+.clientpoint-editing {
+	h6.accept-proposal {
 		color: color("grey", "darken-2");
 		@include font-size(20px);
 		font-weight: $font-weight-500;
@@ -1086,12 +1090,12 @@ share-modal {
 		@include margin-padding(all, 0 0 39px, all, null null);
 	}
 }
-.signatureForm {
+.signature-form {
 	.input-field label {
 		color: color("grey", "darken-2");
 		font-weight: $font-weight-600;
 	}
-	.clearSignature {
+	.clear-signature {
 		@include absolute(top 0 right 12px);
 		@include font-size(12px);
 		height: 25px;
@@ -1100,17 +1104,17 @@ share-modal {
 		padding: 0 1.2rem;
 	}
 }
-.outerScroll {
+.outer-scroll {
 	height: $height-hundred-per;
 	.scrollbar-inner > .scroll-element.scroll-y {
 		right: $zero;
 	}
-	.clientpointEditing {
+	.clientpoint-editing {
 		height: 100vh !important;
 	}
 }
 
-.rightMarginPreview {
+.right-margin-preview {
 	@include margin-padding(all, 0 50px 0 50px, all, 2.5rem 4rem 2.5rem 4rem);
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
 }
@@ -1118,14 +1122,14 @@ share-modal {
 	height: $height-hundred-per;
 	overflow-x: hidden;
 }
-.cereatProposalHeight {
+.cereatproposal-height {
 	height: calc(100% - 120px) !important;
 	.creating-perposal-left {
 		background: color("shades", "transparent") !important;
 	}
 }
 
-.tableOfContent {
+.table-of-content {
 	@include flexbox();
 	align-items: $align-items-center;
 	@include flex-wrap($wrap);
@@ -1133,20 +1137,20 @@ share-modal {
 	@include font-size(18px);
 	font-weight: $font-weight-500;
 	color: color("grey", "darken-4");
-	.tabelBook {
+	.tabel-book {
 		background: url(../images/common-icons.svg) no-repeat -388px -1063px;
 		width: 1.5rem;
 		height: 1.5rem;
 		margin-right: 7px;
 	}
-	.toggleBackArrow {
+	.toggle-back-arrow {
 		background: url(../images/common-icons.svg) no-repeat -23px -1152px;
 		width: 2.2rem;
 		height: 1.8rem;
 		margin-left: $margin-left-auto;
 	}
 }
-.showtableContentArrow {
+.showtable-content-arrow {
 	@include flexbox();
 	align-items: $align-items-center;
 	@include flex-wrap($wrap);
@@ -1159,7 +1163,7 @@ share-modal {
 	@include margin-padding(all, null null, all, 36px 1px 0);
 	transition: $transiton;
 	cursor: $cursor-pointer;
-	.toggleBackArrow {
+	.toggle-back-arrow {
 		background: url(../images/common-icons.svg) no-repeat -82px -1158px;
 		width: 2.2rem;
 		height: 2rem;
@@ -1167,39 +1171,39 @@ share-modal {
 		@include absolute(top 8px right 6px);
 	}
 }
-.showtableContentArrow.showArrow {
+.showtable-content-arrow.showArrow {
 	right: 2px;
 }
-.creating-perposal-rightpanel.perposalPostionRight.creating-perposal-rightpanelMove {
+.creating-perposal-rightpanel.perposal-postion-right.creating-perposal-rightpanelmove {
 	right: 0;
 	position: relative;
 	margin-right: $zero;
 	box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.15);
 }
-.creating-perposal-rightpanel.perposalPostionRight {
+.creating-perposal-rightpanel.perposal-postion-right {
 	@include fixed(top auto right 0);
 	height: $height-hundred-per;
 	transition: $transiton;
 	@include margin-padding(all, 0 -900px 0 0, all, null null);
 }
-.excelIcon {
+.excel-icon {
 	background: url(../images/common-icons.svg) no-repeat -167px -741px;
 	width: 1.5rem;
 	height: 1.5rem;
 	margin: 0 7px 0 0;
 }
 .powerPointIcon {
-	@extend .excelIcon;
+	@extend .excel-icon;
 	background: url(../images/common-icons.svg) no-repeat -241px -740px;
 	height: 1.7rem;
 }
-.wordIcon {
+.word-icon {
 	background: url(../images/common-icons.svg) no-repeat -93px -740px;
 	width: 2rem;
 	height: 1.8rem;
 	margin: 0 7px 0 0;
 }
-.signImg {
+.sign-img {
 	@include absolute(top 10px left -95px right 0);
 	width: 96px;
 }
@@ -1208,7 +1212,7 @@ share-modal {
 .signIn-modal-content {
 	max-width: 737px;
 	max-height: 100%;
-	.signatureIcon {
+	.signature-icon {
 		background: url(../images/common-icons.svg) no-repeat -168px -1154px;
 		width: 1.7rem;
 		height: 1.4rem;
@@ -1309,7 +1313,7 @@ share-modal {
 			outline: $none;
 		}
 	}
-	.termsbtn {
+	.terms-btn {
 		@include margin-padding(all, 20px 0 37px 0, all, null null);
 		letter-spacing: 0.7px;
 		@include font-weight(medium);
@@ -1327,10 +1331,10 @@ share-modal {
 	height: 1.6rem;
 	margin-left: 9px;
 }
-.IntroDuctionRow.active {
+.introduction-row.active {
 	background: color("grey", "lighten-4");
 }
-.zoomDropDown {
+.zoomdrop-Ddwn {
 	min-width: 180px;
 	box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.1);
 	li {
@@ -1358,7 +1362,7 @@ share-modal {
 .vieweruser-dropdown-content {
 	min-width: 292px;
 	text-align: $text-center;
-	.userInfo-viewer {
+	.user-info-viewer {
 		@include margin-padding(all, null null, all, 20px);
 		.viewer-user-img {
 			width: 100px;
@@ -1446,7 +1450,7 @@ share-modal {
 
 /* Viewer Sidebar start here */
 
-.viewerSidebarCommon {
+.viewer-sidebar-common {
 	@include fixed(top 120px left -900px right null bottom null);
 	height: calc(100% - 120px);
 	width: 450px;
@@ -1454,7 +1458,7 @@ share-modal {
 	box-shadow: 5px -5px 20px rgba(0, 0, 0, 0.2);
 	@include transition(all 0.5s);
 	z-index: 3;
-	.viewerSidebarHeader {
+	.viewer-sidebar-header {
 		@include flexbox();
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
@@ -1468,7 +1472,7 @@ share-modal {
 			text-transform: $text-capitalize;
 			letter-spacing: $zero;
 		}
-		.viewerBackArrow {
+		.viewer-back-arrow {
 			display: $display-inline-block;
 			width: 1.3rem;
 			height: 1.25rem;
@@ -1476,7 +1480,7 @@ share-modal {
 			@include margin-padding(all, 0 1.375rem 0 0, all, 0);
 		}
 	}
-	.viewerSidebarContent {
+	.viewer-sidebar-content {
 		@include margin-padding(all, 0, all, 0 41px 0 30px);
 		height: calc(100% - 67px);
 	}
@@ -1525,7 +1529,7 @@ share-modal {
 		background: url(../images/common-icons.svg) no-repeat -245px -1227px;
 		margin-right: 0.6875rem;
 	}
-	.saveDropdownIcon {
+	.savedropdown-icon {
 		width: 2.9rem;
 		height: 2.9rem;
 		background: url(../images/common-icons.svg) no-repeat -311px -334px;
@@ -1551,7 +1555,7 @@ share-modal {
 			@include font-rem(15px, 24px);
 			@include margin-padding(all, 0, all, null);
 		}
-		.eyeIcon {
+		.eye-icon {
 			width: 2.9rem;
 			height: 1.6rem;
 			background: url(../images/common-icons.svg) no-repeat -158px -575px;
@@ -1564,15 +1568,15 @@ share-modal {
 	[type="checkbox"] + span:not(.lever) {
 		padding-left: 33px;
 	}
-	.downloadIcon {
+	.download-icon {
 		width: 1.3rem;
 		height: 1.6rem;
 		background: url(../images/common-icons.svg) no-repeat -324px -1227px;
 		margin-right: 0.8125rem;
 		display: $display-inline-block;
 	}
-	.printIcon {
-		@extend .downloadIcon;
+	.print-icon {
+		@extend .download-icon;
 		background: url(../images/common-icons.svg) no-repeat -391px -1227px;
 	}
 
@@ -1675,17 +1679,17 @@ share-modal {
 	@include margin-padding(all, 12px 0 20px, all, null);
 }
 
-.printSidebar {
+.print-sidebar {
 	height: $height-hundred-per;
 }
-.outerScrollViewer {
+.outer-scroll-viewer {
 	height: calc(100% - 67px);
 	padding: 20px 0;
 }
-.outerScrollViewer .scrollbar-inner > .scroll-element.scroll-y {
+.outer-scroll-viewer .scrollbar-inner > .scroll-element.scroll-y {
 	right: 7px;
 }
-.viewerSidebarCommon.viewerSidebarOpen {
+.viewer-sidebar-common.viewerSidebarOpen {
 	left: $zero;
 }
 .commentBox {
@@ -1709,13 +1713,13 @@ share-modal {
 	}
 }
 #comments {
-	.outerScrollViewer {
+	.outer-scroll-viewer {
 		height: calc(100% - 246px);
 		padding: 20px 0;
 	}
 }
-.pastComments {
-	.pastCommentsHeader {
+.past-comments {
+	.past-comments-header {
 		@include flexbox();
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
@@ -1726,7 +1730,7 @@ share-modal {
 			@include margin-padding(all, 0, all, null);
 			@include font-weight(semi-bold);
 		}
-		.commentIcon {
+		.comment-icon {
 			background: url(../images/common-icons.svg) no-repeat -320px -411px;
 			width: 1.5rem;
 			height: 1.85rem;
@@ -1747,7 +1751,7 @@ share-modal {
 			@include font-rem(14px, 22px);
 			@include margin-padding(all, 0 0 11px, all, null);
 		}
-		.dateComments {
+		.date-comments {
 			h6 {
 				color: color("grey", "darken-1");
 				@include font-rem(14px, 22px);
@@ -1755,7 +1759,7 @@ share-modal {
 				@include font-weight(medium);
 			}
 		}
-		.commentlink {
+		.comment-link {
 			color: color("indigo", "base");
 			@include font-weight(medium);
 		}
@@ -1765,14 +1769,14 @@ share-modal {
 /* Viewer Sidebar end here */
 
 /* Upload Attachement Start here*/
-.uploadAttachement {
-	.uploadAttachementHeader {
+.upload-attachement {
+	.upload-attachement-Header {
 		@include flexbox();
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
 		border-bottom: 1px solid #f2f3f3;
 		@include margin-padding(all, null, all, 0 51px 13px 30px);
-		.attachementIcon {
+		.attachement-icon {
 			background: url(../images/common-icons.svg) no-repeat -30px -1308px;
 			width: 1.3rem;
 			height: 1.6rem;
@@ -1785,7 +1789,7 @@ share-modal {
 			@include font-weight(medium);
 		}
 	}
-	.selectFile {
+	.select-file {
 		@include margin-padding(all, null, all, 20px 30px);
 		border-bottom: 1px solid #f2f3f3;
 		.file {
@@ -1799,7 +1803,7 @@ share-modal {
 				@include relative(top null right null);
 				z-index: 1;
 			}
-			.selectPlaceholder {
+			.select-placeholder {
 				@include absolute(top 10px left 18px);
 				color: color("indigo", "base");
 				@include font-rem(14px, 26px);
@@ -1808,7 +1812,7 @@ share-modal {
 			}
 		}
 	}
-	.addFilesUpload {
+	.addfiles-upload {
 		@include flexbox();
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
@@ -1824,14 +1828,14 @@ share-modal {
 			color: color("grey", "darken-2");
 			@include margin-padding(all, 0, all, null);
 		}
-		.fileSize {
+		.file-size {
 			@include font-rem(13px);
 			line-height: initial;
 			color: color("grey", "darken-1");
 			text-transform: $text-uppercase;
 			@include margin-padding(all, 0 0 0 13px, all, null);
 		}
-		.removeFile {
+		.remove-file {
 			@include flexbox();
 			align-items: $align-items-center;
 			@include flex-wrap($wrap);
@@ -1842,7 +1846,7 @@ share-modal {
 			}
 		}
 	}
-	.addMoreFile {
+	.add-more-file {
 		@include margin-padding(all, 20px 0 0 0, all, 0);
 		letter-spacing: 0.7px;
 		@include font-rem(14px);
@@ -1855,7 +1859,7 @@ share-modal {
 			@include font-rem(20px);
 		}
 	}
-	.uploadText {
+	.upload-text {
 		@include margin-padding(all, 0 0 20px 0, all, 20px 30px);
 		p {
 			color: color("blue-grey", "darken-1");
@@ -1877,7 +1881,7 @@ share-modal {
 }
 /* Upload Attachement end here*/
 
-.viewerLinks.current {
+.viewer-links.current {
 	opacity: 1 !important;
 }
 
@@ -2026,7 +2030,7 @@ share-modal {
 .mt-0 {
 	@include margin-padding(all, 0, all, null);
 }
-.prevNextBtn {
+.prevnext-btn {
 	@include flexbox();
 	align-items: $align-items-center;
 	@include flex-wrap($wrap);
@@ -2034,8 +2038,8 @@ share-modal {
 	width: $full-width;
 	@include box-shadow(0, 5px, 15px, rgba(0, 0, 0, 0.15));
 	z-index: 2;
-	.prevSection,
-	.nextSection {
+	.prev-section,
+	.next-section {
 		width: $full-width / 2;
 		color: color("shades", "white");
 		@include font-rem(16px, 24px);
@@ -2046,23 +2050,23 @@ share-modal {
 		justify-content: $justifycenter;
 		@include margin-padding(all, null, all, 16px 0);
 	}
-	.prevIcon {
+	.prev-icon {
 		background: url(../images/common-icons.svg) no-repeat -91px -1158px;
 		width: 1.5rem;
 		height: 1.5rem;
 		margin-right: 1rem;
 	}
-	.nextSection {
+	.next-section {
 		background: color("indigo", "base");
 	}
-	.nextIcon {
+	.next-icon {
 		background: url(../images/common-icons.svg) no-repeat -91px -1306px;
 		width: 1.5rem;
 		height: 1.5rem;
 		margin-left: 1rem;
 	}
 }
-.signatureForm {
+.signature-form {
 	.row {
 		&:last-child {
 			margin-bottom: $zero;
@@ -2073,7 +2077,7 @@ share-modal {
 
 /* Save Template Mdoal start here */
 
-#saveTemplateModal {
+#save-template-modal {
 	max-width: 41rem;
 	.modal-content {
 		@include margin-padding(all, null, all, 0 3.125rem 0 3.5rem);
@@ -2091,7 +2095,7 @@ share-modal {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.creating-perposal-rightpanel {
 		.collapsible-header {
-			.arrowAccordion {
+			.arrow-accordion {
 				height: 1.6rem;
 				line-height:2.1rem;
 			}
@@ -2103,13 +2107,13 @@ share-modal {
 		}
 	}
 	.newperposal-client-bar  {
-		.fileMenu {
+		.file-menu {
 			.material-icons {
 				height: 12px;
 			}
 		}
 	}
-	.AddRecipientModal  {
+	.add-recipient-modal  {
 		.modal-footer {
 			.material-icons {
 	height: 1.5rem;

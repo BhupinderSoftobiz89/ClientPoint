@@ -148,7 +148,7 @@
 		@include flexbox();
 		align-items: $align-items-center;
 
-		.fileMenu {
+		.file-menu {
 			@include flexbox();
 			align-items: $align-items-center;
 			color: color("grey", "darken-4");
@@ -160,7 +160,7 @@
 			font-size: $font-size-twenty;
 			margin-right: 0.625rem;
 		}
-		.saveFile {
+		.save-file {
 			width: 40px;
 			height: 40px;
 			border-radius: $border-radius-thirty;
@@ -254,22 +254,22 @@
 		@include flexbox();
 		@include flex-wrap($wrap);
 	}
-	.clientMenuCommon {
+	.client-menu-common {
 		width: 1.79rem;
 		height: 1.79rem;
 		background: url(../images/common-icons.svg) no-repeat 0 0;
 		margin-right: 2.5rem;
 	}
-	.clientMenuShare {
+	.client-menu-share {
 		background-position: -16px -127px;
 	}
-	.clientMenuComment {
+	.client-menu-comment {
 		background-position: -89px -127px;
 	}
-	.clientMenuPdf {
+	.client-menu-pdf {
 		background-position: -165px -127px;
 	}
-	.clientMenuNewsletter {
+	.client-menu-newsletter {
 		background-position: -241px -127px;
 	}
 }
@@ -312,7 +312,7 @@
 		height: 2.36rem;
 		background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
 	}
-	.calender-dateText {
+	.calender-date-text {
 		color: color("grey", "darken-2");
 		margin: 0 1.6rem;
 	}
@@ -384,7 +384,7 @@
 	}
 }
 
-.prev-date-calenderIcon {
+.prev-date-calender-icon {
 	border-radius: 0.125rem;
 	border: 1px solid #efeff3;
 	width: 2.36rem;
@@ -392,7 +392,7 @@
 	background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
 	display: $display-inline-block;
 }
-.calender-dateTextUi {
+.calender-date-textUi {
 	color: #53547d;
 	margin: 0 1.6rem;
 }
@@ -404,7 +404,7 @@
 	background: #fafafb url(../images/common-icons.svg) no-repeat -86px -192px;
 	display: $display-inline-block;
 }
-.calenderIconUi {
+.calender-iconUi {
 	background: url(../images/common-icons.svg) no-repeat -243px -495px;
 	width: 1.5rem;
 	height: 1.4rem;
@@ -412,7 +412,7 @@
 	display: $display-inline-block;
 }
 
-.CalenderDropDownContentUi {
+.calender-dropdown-contentUi {
 	min-width: 255px;
 	li {
 		min-height: inherit;
@@ -427,13 +427,13 @@
 			color: color("indigo", "base");
 		}
 	}
-	.calenderHeader-row {
+	.calender-header-row {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
 		border-bottom: 1px solid #efeff3;
 	}
-	.calenderHeader {
+	.calender-header {
 		&:hover {
 			background: color("shades", "transparent");
 		}
@@ -453,7 +453,7 @@
 		font-weight: $font-weight-500;
 		letter-spacing: 0.25px;
 	}
-	.dateCalenderUi {
+	.date-calenderUi {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
@@ -463,13 +463,13 @@
 	}
 }
 
-.calender-dateIconUi {
+.calender-date-iconUi {
 	background: url(../images/common-icons.svg) no-repeat -239px -573px;
 	width: 29px;
 	height: 27px;
 	margin-right: 0.6rem;
 }
-.calender-dateIconUi:focus {
+.calender-date-iconUi:focus {
 	background: #fafafb url(../images/common-icons.svg) no-repeat -239px -491px;
 }
 .ml-15 {

@@ -35,7 +35,7 @@
        * @prop {Number} dist
        * @prop {number} shift
        * @prop {number} padding
-       * @prop {Boolean} fullWidth
+       * @prop {Boolean} full-width
        * @prop {Boolean} indicators
        * @prop {Boolean} noWrap
        * @prop {Function} onCycleTo

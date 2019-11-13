@@ -1,6 +1,6 @@
 /* Clientpoint Detials page start here */
 
-.clientDetailsContent {
+.client-details-content {
 	flex: 1;
 	.titlerow {
     @include margin-padding(all, null, all, 1.4rem 1.8125rem);
@@ -20,22 +20,22 @@
 			@include flexbox();
 			@include flex-wrap($wrap);
 		}
-		.clientMenuCommon {
+		.client-menu-common {
 			width: 1.68rem;
 			height: 1.68rem;
 			background: url(../images/common-icons.svg) no-repeat 0 0;
 			margin-right: 2.5rem;
 		}
-		.clientMenuShare {
+		.client-menu-share {
 			background-position: -15px -127px;
 		}
-		.clientMenuComment {
+		.client-menu-comment {
 			background-position: -89px -127px;
 		}
-		.clientMenuPdf {
+		.client-menu-pdf {
 			background-position: -165px -127px;
 		}
-		.clientMenuNewsletter {
+		.client-menu-newsletter {
 			background-position: -241px -127px;
 		}
 		.btn {
@@ -49,7 +49,7 @@
 			font-size: $font-size-fourteen;
 			font-weight: $font-weight-500;
 		}
-		.newClientPointInput {
+		.new-client-pointInput {
 			width: $half-width;
 			// max-width:23.4375rem;
 			height: 26px;
@@ -64,7 +64,7 @@
 		}
 	}
 }
-.detailInfo {
+.detail-info {
 	@include flexbox();
 	@include flex-wrap($wrap);
 	height: calc(100% - 5.3rem);
@@ -99,13 +99,13 @@
 		}
 	}
 
-	.infoForm {
+	.info-form {
 		.row.mb-15 {
 			margin-bottom: $mb-15;
 		}
 	}
 }
-.infoCommon {
+.info-common {
 	padding: 0 1.4rem;
 }
 
@@ -187,10 +187,10 @@
 	height: $height-auto !important;
   @include margin-padding(all, 0 0 0 1.3125rem, all, 0.36rem 0.75rem);
 }
-.reciepent-Select-margin {
-	margin-top: $reciepent-Select-margin;
+.reciepent-select-margin {
+	margin-top: $reciepent-select-margin;
 }
-.InfoSidebarRight {
+.info-sidebar-right {
 	background: color("grey", "lighten-5");
 	padding: 20px;
 	max-width: 35.3%;
@@ -202,7 +202,7 @@
 
 // Recipent Modal start here
 
-.AddRecipientModal {
+.add-recipient-modal {
 	max-height: 80%;
 	max-width: 57rem;
 
@@ -220,7 +220,7 @@
 	.modal-content {
 		padding: 0 3.6rem;
 	}
-	.AddRecipientContent-row {
+	.add-recipient-content-row {
 		border: 1px solid color("grey", "lighten-3");
     @include margin-padding(all, 0 0 1.4rem 0, all, 1.9rem 0.7rem 0);
 	}
@@ -322,7 +322,7 @@
 		margin: $zero;
 	}
 	&:hover {
-		.removeReciepent {
+		.remove-reciepent {
 			background: #efeff3 url(../images/common-icons.svg) no-repeat -371px -258px;
 			width: 2.9rem;
 			height: 2.9rem;
@@ -351,7 +351,7 @@
 				@include flexbox();
 				align-items: $align-items-center;
 				padding: 19px 20px;
-				.deleteIcon {
+				.delete-icon {
 					background: url(../images/common-icons.svg) no-repeat -322px -266px;
 					width: 1.2rem;
 					height: 1.5rem;
@@ -365,17 +365,17 @@
 .clientpoint-preview {
 	width: $full-width;
 }
-.removeTopSpace {
+.remove-top-space {
 	top: $zero !important;
 	height: $height-hundred-per !important;
 	z-index: 6 !important;
 }
-.topBarClientPoint .overlay {
+.top-bar-clientpoint .overlay {
 	top: $zero;
 	z-index: 4;
 }
-#commentsClientPoint {
-	.outerScrollViewer {
+#comments-clientpoint {
+	.outer-scroll-viewer {
 		height: calc(100% - 246px);
 	}
 }

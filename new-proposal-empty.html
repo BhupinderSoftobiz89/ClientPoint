@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="topBarClientPoint">
+<body class="top-bar-clientpoint">
     <!-- Sidebar nav start here -->
     <nav class="sidebar-nav sidebar-nav-close">
         <div class="nav-menu-outer menu animate-nav-icon nav-menu" data-menu="6">
@@ -134,7 +134,7 @@
         </div>
         <div class="search-result">
             <div class="search-main items">
-                <a data-filter-item data-filter-name="encom" class="topSearchRow">
+                <a data-filter-item data-filter-name="encom" class="top-search-row">
                     <span class="results-search-icon"></span>
                     <h6>“encom”</h6>
                 </a>
@@ -245,39 +245,40 @@
                     </div>
                     <div class="newclientpoint-title-bar-right">
                         <aside class="clientMenu">
-                            <a href="share-modal" class="clientMenuCommon clientMenuShare modal-trigger"></a>
-                            <a href="#comment-modal" class="clientMenuCommon clientMenuComment modal-trigger"></a>
-                            <a href="#" class="clientMenuCommon clientMenuPdf"></a>
-                            <a href="#" class="clientMenuCommon clientMenuNewsletter"></a>
+                            <a href="share-modal" class="client-menu-common client-menu-share modal-trigger"></a>
+                            <a href="#comment-modal" class="client-menu-common client-menu-comment modal-trigger"></a>
+                            <a href="#" class="client-menu-common client-menu-pdf"></a>
+                            <a href="#" class="client-menu-common client-menu-newsletter"></a>
                         </aside>
                         <a class="waves-effect waves-light btn btn-round modal-trigger"
-                            href="#saveTemplateModal">Save</a>
+                            href="#save-template-modal">Save</a>
                     </div>
                 </div>
-                <div class="newperposal-client-bar ">
+                <div class="newperposal-client-bar">
                     <div class="common-default-search">
                         <input type="submit" class="search-btn" value="">
                         <input type="search" class="search-input-common" placeholder="Search">
                     </div>
                     <div class="newperposal-clientbar-right">
-                        <a href="#add-file" class="fileMenu modal-trigger">
+                        <a href="#add-file" class="file-menu modal-trigger">
                             <i class="material-icons">
                                 add
                             </i>FILE</a>
-                        <a class="fileMenu modal-trigger" href="#add-section">
+                        <a class="file-menu modal-trigger" href="#add-section">
                             <i class="material-icons">
                                 add
                             </i>SECTION</a>
-                        <div class="switch fileMenu">
+                        <div class="switch file-menu">
                             <label>
                                 <input type="checkbox" onclick="valueChnaged();" class="switcherChecked" checked>
                                 <span class="lever"></span>
                                 <span class="switcherText">Hide Top Bar</span>
                             </label>
                         </div>
-                        <a href="javascript:void(0)" class="fileMenu dropdown-trigger saveFile" data-target="dropdown1">
+                        <a href="javascript:void(0)" class="file-menu dropdown-trigger save-file"
+                            data-target="template-dropdown">
                         </a>
-                        <ul id='dropdown1' class='dropdown-content'>
+                        <ul id="template-dropdown" class="dropdown-content">
                             <li><a href="javascript:void(0);">Will be Save as Template</a></li>
                         </ul>
                     </div>
@@ -304,7 +305,7 @@
                                     </i>
                                     <ul id="viewer-user-dropdown" class="dropdown-content vieweruser-dropdown-content">
                                         <li>
-                                            <div class="userInfo-viewer">
+                                            <div class="user-info-viewer">
                                                 <div class="viewer-user-img">
                                                     <img src="./images/viewerUser-img.png" alt="">
                                                 </div>
@@ -340,42 +341,42 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="powerdByToggle">
-                            <div class="powerdByToggleInner">
-                                <div class="powerdByToggleLinks">
+                        <div class="powerd-by-toggle">
+                            <div class="powerd-by-toggleInner">
+                                <div class="powerdby-toggle-links">
                                     <ul>
                                         <li>
-                                            <a data-tab="CommentsClientPoint" href="javascript:void(0);"
-                                                class="viewerLinks">
-                                                <span class="powerdCommentIcon"></span>
+                                            <a data-tab="comments-clientpoint" href="javascript:void(0);"
+                                                class="viewer-links">
+                                                <span class="powerdcomment-icon"></span>
                                                 Comments
                                             </a>
                                         </li>
                                         <li>
-                                            <a data-tab="UploadsClientPoint" href="javascript:void(0);"
-                                                class="viewerLinks">
-                                                <span class="powerdUploadIcon"></span>
+                                            <a data-tab="uploads-clientpoint" href="javascript:void(0);"
+                                                class="viewer-links">
+                                                <span class="powerdupload-icon"></span>
                                                 Uploads
                                             </a>
                                         </li>
                                         <li>
-                                            <a data-tab="Print" href="javascript:void(0);" class="viewerLinks">
-                                                <span class="powerdPrintIcon"></span>
+                                            <a data-tab="Print" href="javascript:void(0);" class="viewer-links">
+                                                <span class="powerdprint-icon"></span>
                                                 Print
                                             </a>
                                         </li>
                                         <li>
-                                            <a data-tab="Share" href="javascript:void(0);" class="viewerLinks">
+                                            <a data-tab="Share" href="javascript:void(0);" class="viewer-links">
                                                 <span class="powerdshare-icon"></span>
                                                 Share
                                             </a>
                                         </li>
                                     </ul>
                                     <!-- Comments Sidebar Start here  -->
-                                    <div class="viewerSidebarCommon removeTopSpace" id="CommentsClientPoint">
-                                        <div class="printSidebar">
-                                            <div class="viewerSidebarHeader">
-                                                <a href="javascript:void(0);" class="viewerBackArrow"
+                                    <div class="viewer-sidebar-common remove-top-space" id="comments-clientpoint">
+                                        <div class="print-sidebar">
+                                            <div class="viewer-sidebar-header">
+                                                <a href="javascript:void(0);" class="viewer-back-arrow"
                                                     onclick="closeSidebar();"></a>
                                                 <h5>Comments</h5>
                                             </div>
@@ -384,87 +385,87 @@
                                                     placeholder="Write your comment here"></textarea>
                                                 <button class="waves-effect waves-light btn btn-round">Submit</button>
                                             </div>
-                                            <div class="outerScrollViewer">
+                                            <div class="outer-scroll-viewer">
                                                 <div class="wrapper scrollbar-dynamic">
                                                     <div class="page-content">
                                                         <div class="content">
                                                             <div class="demo">
                                                                 <div class="scrollbar-inner">
-                                                                    <div class="viewerSidebarContent">
-                                                                        <div class="pastComments">
-                                                                            <div class="pastCommentsHeader">
-                                                                                <span class="commentIcon"></span>
+                                                                    <div class="viewer-sidebar-content">
+                                                                        <div class="past-comments">
+                                                                            <div class="past-comments-header">
+                                                                                <span class="comment-icon"></span>
                                                                                 <h4>Past Comments</h4>
                                                                             </div>
                                                                             <div class="comment-row">
                                                                                 <h5>Miles Morales wrote:</h5>
                                                                                 <p><a href="javascript:void(0);"
-                                                                                        class="commentlink">@KevinFlynn</a>
+                                                                                        class="comment-link">@KevinFlynn</a>
                                                                                     Ut enim ad minim veniam, quis
                                                                                     nostrud exercitation ullamco laboris
                                                                                     nisi ut aliquip ex ea commodo
                                                                                     consequat.
                                                                                     <a href="javascript:void(0);"
-                                                                                        class="commentlink">@EdwardDillinger</a>
+                                                                                        class="comment-link">@EdwardDillinger</a>
                                                                                     Duis aute irure dolor
                                                                                     in reprehenderit in voluptate velit
                                                                                     esse
                                                                                     cillum dolore eu fugiat nulla
                                                                                     pariatur.
                                                                                 </p>
-                                                                                <div class="dateComments">
+                                                                                <div class="date-comments">
                                                                                     <h6>MM/DD/YYYY 00:00 AM • while
                                                                                         viewing
                                                                                         <a href="javascript:void(0);"
-                                                                                            class="commentlink">Services</a>
+                                                                                            class="comment-link">Services</a>
                                                                                     </h6>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="comment-row">
                                                                                 <h5>Kevin Flynn wrote:</h5>
                                                                                 <p><a href="javascript:void(0);"
-                                                                                        class="commentlink">@MilesMorales</a>
+                                                                                        class="comment-link">@MilesMorales</a>
                                                                                     Ut enim ad minim veniam, quis
                                                                                     nostrud exercitation ullamco laboris
                                                                                     nisi ut aliquip ex ea commodo
                                                                                     consequat.
                                                                                     <a href="javascript:void(0);"
-                                                                                        class="commentlink">@EdwardDillinger</a>
+                                                                                        class="comment-link">@EdwardDillinger</a>
                                                                                     Duis aute irure dolor
                                                                                     in reprehenderit in voluptate velit
                                                                                     esse
                                                                                     cillum dolore eu fugiat nulla
                                                                                     pariatur.
                                                                                 </p>
-                                                                                <div class="dateComments">
+                                                                                <div class="date-comments">
                                                                                     <h6>MM/DD/YYYY 00:00 AM • while
                                                                                         viewing
                                                                                         <a href="javascript:void(0);"
-                                                                                            class="commentlink">Services</a>
+                                                                                            class="comment-link">Services</a>
                                                                                     </h6>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="comment-row">
                                                                                 <h5>Miles Morales wrote:</h5>
                                                                                 <p><a href="javascript:void(0);"
-                                                                                        class="commentlink">@KevinFlynn</a>
+                                                                                        class="comment-link">@KevinFlynn</a>
                                                                                     Ut enim ad minim veniam, quis
                                                                                     nostrud exercitation ullamco laboris
                                                                                     nisi ut aliquip ex ea commodo
                                                                                     consequat.
                                                                                     <a href="javascript:void(0);"
-                                                                                        class="commentlink">@EdwardDillinger</a>
+                                                                                        class="comment-link">@EdwardDillinger</a>
                                                                                     Duis aute irure dolor
                                                                                     in reprehenderit in voluptate velit
                                                                                     esse
                                                                                     cillum dolore eu fugiat nulla
                                                                                     pariatur.
                                                                                 </p>
-                                                                                <div class="dateComments">
+                                                                                <div class="date-comments">
                                                                                     <h6>MM/DD/YYYY 00:00 AM • while
                                                                                         viewing
                                                                                         <a href="javascript:void(0);"
-                                                                                            class="commentlink">Services</a>
+                                                                                            class="comment-link">Services</a>
                                                                                     </h6>
                                                                                 </div>
                                                                             </div>
@@ -480,71 +481,72 @@
                                     </div>
                                     <!-- Comments Sidebar Start here  -->
                                     <!-- Uploads Sidebar Start here  -->
-                                    <div class="viewerSidebarCommon removeTopSpace" id="UploadsClientPoint">
-                                        <div class="printSidebar">
-                                            <div class="viewerSidebarHeader">
-                                                <a href="javascript:void(0);" class="viewerBackArrow"
+                                    <div class="viewer-sidebar-common remove-top-space" id="uploads-clientpoint">
+                                        <div class="print-sidebar">
+                                            <div class="viewer-sidebar-header">
+                                                <a href="javascript:void(0);" class="viewer-back-arrow"
                                                     onclick="closeSidebar();"></a>
                                                 <h5>Upload</h5>
                                             </div>
-                                            <div class="outerScrollViewer">
+                                            <div class="outer-scroll-viewer">
                                                 <div class="wrapper scrollbar-dynamic">
                                                     <div class="page-content">
                                                         <div class="content">
                                                             <div class="demo">
                                                                 <div class="scrollbar-inner">
-                                                                    <div class="uploadAttachement">
-                                                                        <div class="uploadAttachementHeader">
-                                                                            <span class="attachementIcon"></span>
+                                                                    <div class="upload-attachement">
+                                                                        <div class="upload-attachement-Header">
+                                                                            <span class="attachement-icon"></span>
                                                                             <h5>Upload an Attachment</h5>
                                                                         </div>
-                                                                        <div class="selectFile">
+                                                                        <div class="select-file">
                                                                             <div class="file">
                                                                                 <input type="file">
-                                                                                <span class="selectPlaceholder">Select a
+                                                                                <span class="select-placeholder">Select
+                                                                                    a
                                                                                     file to upload</span>
                                                                             </div>
-                                                                            <div class="addFilesUpload">
+                                                                            <div class="addfiles-upload">
                                                                                 <span class="file-icon"></span>
                                                                                 <h5>file-name.docx</h5>
-                                                                                <span class="fileSize">2MB</span>
+                                                                                <span class="file-size">2MB</span>
                                                                                 <a href="javascript:void(0);"
-                                                                                    class="removeFile">
+                                                                                    class="remove-file">
                                                                                     <i class="material-icons">
                                                                                         close
                                                                                     </i>
                                                                                 </a>
                                                                             </div>
-                                                                            <div class="addFilesUpload">
+                                                                            <div class="addfiles-upload">
                                                                                 <span class="file-icon"></span>
                                                                                 <h5>file-name.docx</h5>
-                                                                                <span class="fileSize">2MB</span>
+                                                                                <span class="file-size">2MB</span>
                                                                                 <a href="javascript:void(0);"
-                                                                                    class="removeFile">
+                                                                                    class="remove-file">
                                                                                     <i class="material-icons">
                                                                                         close
                                                                                     </i>
                                                                                 </a>
                                                                             </div>
-                                                                            <div class="addFilesUpload">
+                                                                            <div class="addfiles-upload">
                                                                                 <span class="file-icon"></span>
                                                                                 <h5>file-name.docx</h5>
-                                                                                <span class="fileSize">2MB</span>
+                                                                                <span class="file-size">2MB</span>
                                                                                 <a href="javascript:void(0);"
-                                                                                    class="removeFile">
+                                                                                    class="remove-file">
                                                                                     <i class="material-icons">
                                                                                         close
                                                                                     </i>
                                                                                 </a>
                                                                             </div>
-                                                                            <a class="btn-flat addMoreFile">
+                                                                            <a class="btn-flat add-more-file">
                                                                                 <i class="material-icons">
                                                                                     add
                                                                                 </i>
                                                                                 Add More Files
                                                                             </a>
                                                                         </div>
-                                                                        <div class="uploadText">
+                                                                        <div class="upload-text">
                                                                             <p>Attachments are not viewable online, but
                                                                                 can
                                                                                 be up to 1GB and downloaded by the
@@ -564,20 +566,20 @@
                                     </div>
                                     <!-- Uploads Sidebar Start here  -->
                                     <!-- Print Sidebar Start here  -->
-                                    <div class="viewerSidebarCommon removeTopSpace" id="Print">
-                                        <div class="printSidebar">
-                                            <div class="viewerSidebarHeader">
-                                                <a href="javascript:void(0);" class="viewerBackArrow"
+                                    <div class="viewer-sidebar-common remove-top-space" id="print">
+                                        <div class="print-sidebar">
+                                            <div class="viewer-sidebar-header">
+                                                <a href="javascript:void(0);" class="viewer-back-arrow"
                                                     onclick="closeSidebar();"></a>
                                                 <h5>Print & Save</h5>
                                             </div>
-                                            <div class="outerScrollViewer">
+                                            <div class="outer-scroll-viewer">
                                                 <div class="wrapper scrollbar-dynamic">
                                                     <div class="page-content">
                                                         <div class="content">
                                                             <div class="demo">
                                                                 <div class="scrollbar-inner">
-                                                                    <div class="viewerSidebarContent">
+                                                                    <div class="viewer-sidebar-content">
                                                                         <p>Select the files you would like to
                                                                             download and hit save! You can also
                                                                             download or print all the files in this
@@ -619,18 +621,18 @@
                                                                                                     <h6>SAVE SELECT
                                                                                                     </h6>
                                                                                                     <a href="javascript:void(0);"
-                                                                                                        class="saveDropdownIcon dropdown-trigger"
+                                                                                                        class="savedropdown-icon dropdown-trigger"
                                                                                                         data-target="printDropdown"></a>
                                                                                                     <ul id='printDropdown'
                                                                                                         class='dropdown-content printDropdownContent'>
                                                                                                         <li><a
                                                                                                                 href="javascript:void(0);"><span
-                                                                                                                    class="downloadIcon"></span>Download
+                                                                                                                    class="download-icon"></span>Download
                                                                                                                 All</a>
                                                                                                         </li>
                                                                                                         <li><a
                                                                                                                 href="javascript:void(0);"><span
-                                                                                                                    class="printIcon"></span>Print</a>
+                                                                                                                    class="print-icon"></span>Print</a>
                                                                                                         </li>
                                                                                                     </ul>
                                                                                                 </div>
@@ -648,7 +650,7 @@
                                                                                                 class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
-                                                                                                class="eyeIcon"></span>
+                                                                                                class="eye-icon"></span>
                                                                                         </div>
                                                                                         <div class="docSaveRow">
                                                                                             <label class="check">
@@ -660,7 +662,7 @@
                                                                                                 class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
-                                                                                                class="eyeIcon"></span>
+                                                                                                class="eye-icon"></span>
                                                                                         </div>
                                                                                         <div class="docSaveRow">
                                                                                             <label class="check">
@@ -672,7 +674,7 @@
                                                                                                 class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
-                                                                                                class="eyeIcon"></span>
+                                                                                                class="eye-icon"></span>
                                                                                         </div>
                                                                                         <div class="docSaveRow">
                                                                                             <label class="check">
@@ -684,7 +686,7 @@
                                                                                                 class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
-                                                                                                class="eyeIcon"></span>
+                                                                                                class="eye-icon"></span>
                                                                                         </div>
                                                                                         <div class="docSaveRow">
                                                                                             <label class="check">
@@ -696,7 +698,7 @@
                                                                                                 class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
-                                                                                                class="eyeIcon"></span>
+                                                                                                class="eye-icon"></span>
                                                                                         </div>
                                                                                         <div class="docSaveRow">
                                                                                             <label class="check">
@@ -708,7 +710,7 @@
                                                                                                 class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
-                                                                                                class="eyeIcon"></span>
+                                                                                                class="eye-icon"></span>
                                                                                         </div>
                                                                                         <div class="docSaveRow">
                                                                                             <label class="check">
@@ -720,7 +722,7 @@
                                                                                                 class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
-                                                                                                class="eyeIcon"></span>
+                                                                                                class="eye-icon"></span>
                                                                                         </div>
                                                                                         <div class="docSaveRow">
                                                                                             <label class="check">
@@ -732,7 +734,7 @@
                                                                                                 class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
-                                                                                                class="eyeIcon"></span>
+                                                                                                class="eye-icon"></span>
                                                                                         </div>
                                                                                         <div class="docSaveRow">
                                                                                             <label class="check">
@@ -744,7 +746,7 @@
                                                                                                 class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
-                                                                                                class="eyeIcon"></span>
+                                                                                                class="eye-icon"></span>
                                                                                         </div>
                                                                                         <div class="docSaveRow">
                                                                                             <label class="check">
@@ -756,7 +758,7 @@
                                                                                                 class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
-                                                                                                class="eyeIcon"></span>
+                                                                                                class="eye-icon"></span>
                                                                                         </div>
                                                                                         <div class="docSaveRow">
                                                                                             <label class="check">
@@ -768,7 +770,7 @@
                                                                                                 class="pdf-icon"></span>
                                                                                             <p>Document Name</p>
                                                                                             <span
-                                                                                                class="eyeIcon"></span>
+                                                                                                class="eye-icon"></span>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -793,14 +795,14 @@
                                     </div>
                                     <!-- Print Sidebar Start here  -->
                                     <!-- Share Sidebar Start here  -->
-                                    <div class="viewerSidebarCommon removeTopSpace" id="Share">
-                                        <div class="printSidebar">
-                                            <div class="viewerSidebarHeader">
-                                                <a href="javascript:void(0);" class="viewerBackArrow"
+                                    <div class="viewer-sidebar-common remove-top-space" id="share">
+                                        <div class="print-sidebar">
+                                            <div class="viewer-sidebar-header">
+                                                <a href="javascript:void(0);" class="viewer-back-arrow"
                                                     onclick="closeSidebar();"></a>
                                                 <h5>Share</h5>
                                             </div>
-                                            <div class="outerScrollViewer">
+                                            <div class="outer-scroll-viewer">
                                                 <div class="wrapper scrollbar-dynamic">
                                                     <div class="page-content">
                                                         <div class="content">
@@ -841,16 +843,16 @@
                                     </div>
                                     <!-- Share Sidebar Start here  -->
                                 </div>
-                                <div class="SignNow">
-                                    <a class="waves-effect waves-light btn btn-round signUp modal-trigger"
-                                        href="#signnow-modal">Sign Now</a>
+                                <div class="sign-now">
+                                    <a class="waves-effect waves-light btn btn-round sign-up modal-trigger"
+                                        href="#sign-now-modal">Sign Now</a>
                                     <a class="waves-effect waves-light btn btn-round dark-bg-btn dropdown-trigger"
                                         data-target="zoomDropdwon">100%
                                         <i class="material-icons">
                                             arrow_drop_down
                                         </i>
                                     </a>
-                                    <ul id="zoomDropdwon" class="dropdown-content zoomDropDown">
+                                    <ul id="zoomDropdwon" class="dropdown-content zoomdrop-Ddwn">
                                         <li>
                                             <a href="javascript:void(0);">
                                                 Fit
@@ -899,8 +901,8 @@
                     <div class="creating-perposal-left border-none">
                         <div class="dashboard-empty-state">
                             <p class="new-proposal-margin">Scans show no files.</p>
-                            <img class="responsive-img dashboard-empty-img"
-                                src="./images/scanning_empty@3x.svg" alt="image for empty proposal">
+                            <img class="responsive-img dashboard-empty-img" src="./images/scanning_empty@3x.svg"
+                                alt="image for empty proposal">
                         </div>
                     </div>
                     <aside class="creating-perposal-rightpanel empty-state-padding">
@@ -1042,13 +1044,13 @@
                                             <ul>
                                                 <li>
                                                     <a href="javascript:void(0);">
-                                                        <span class="templateIcon"></span>
+                                                        <span class="template-icon"></span>
                                                         Introduction
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="javascript:void(0);">
-                                                        <span class="templateIcon"></span>
+                                                        <span class="template-icon"></span>
                                                         Case Studies
                                                     </a>
                                                 </li>
@@ -1097,7 +1099,7 @@
                                                 <div class="add-filesname-row">
                                                     <span class="file-icon"></span>File Name
 
-                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                    <a href="javascript:void(0);" class="close-file"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
@@ -1105,7 +1107,7 @@
                                                 <div class="add-filesname-row">
                                                     <span class="file-icon"></span>File Name
 
-                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                    <a href="javascript:void(0);" class="close-file"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
@@ -1233,7 +1235,7 @@
                                                 <div class="add-filesname-row">
                                                     <span class="file-icon"></span>File Name
 
-                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                    <a href="javascript:void(0);" class="close-file"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
@@ -1241,7 +1243,7 @@
                                                 <div class="add-filesname-row">
                                                     <span class="file-icon"></span>File Name
 
-                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                    <a href="javascript:void(0);" class="close-file"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
@@ -1333,7 +1335,7 @@
                     <h4>Copy this private URL to share:</h4>
                     <div class="copy-url">
                         <input type="text" placeholder="http://clientpoint.net/CMJ111">
-                        <input type="submit" class="copybtn" value="Copy">
+                        <input type="submit" class="copy-btn" value="Copy">
                     </div>
                     <div class="text-center">
                         <a href="javascript:void(0);" target="_blank" class="new-window-link">Open in new window</a>
@@ -1357,7 +1359,7 @@
                                     <span class="lever"></span>
                                 </label>
                             </div>
-                            <div class="enterPassword">
+                            <div class="enter-password">
                                 <input type="text" placeholder="Enter Password">
                                 <input type="submit" class="savePasswordBtn" value="Save Password">
                             </div>
@@ -1375,11 +1377,11 @@
                         <label>To</label>
                         <input type="text" placeholder="recipient email address...">
                     </div>
-                    <div class="subjectEmail">
+                    <div class="subject-email">
                         <label>Subject</label>
                         <input type="text" placeholder="ClientPoint Title" value="ClientPoint Title">
                     </div>
-                    <div class="emailText">
+                    <div class="email-text">
                         <p>Hello,</p>
                         <p>1. Please view your document. </p>
                         <p>2. Eros in cursus turpis massa tincidunt dui ut ornare. Urna cursus eget nunc scelerisque.
@@ -1409,9 +1411,11 @@
         <div class="modal-header">
             <span class="share-icon"></span>
             <h4>Comment</h4>
-            <a class="modal-close"><i class="material-icons">
+            <a class="modal-close">
+                <i class="material-icons">
                     close
-                </i></a>
+                </i>
+            </a>
         </div>
         <div class="tabs-header">
             <ul class="tabs">
@@ -1456,7 +1460,7 @@
 
 
     <!-- Template Library Modal start -->
-    <div id="saveTemplateModal" class="modal">
+    <div id="save-template-modal" class="modal">
         <div class="modal-header">
             <a class="modal-close"><i class="material-icons">
                     close

@@ -3,8 +3,8 @@
 	@include margin-padding(all, 0 0 2.1875rem, all, null);
 }
 .ip-address {
-	.replyComment {
-		.replyComment-row {
+	.reply-comment {
+		.reply-comment-row {
 			max-width: 76.74%;
 			flex: 0 0 76.74%;
 			border: 1px solid color("grey", "lighten-3");
@@ -36,7 +36,7 @@
 		}
 	}
 }
-.commentLink {
+.comment-link {
 	@include font-weight(medium);
 }
 /* Comment Expanded CSS start here */

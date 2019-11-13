@@ -28,7 +28,6 @@
                     <span class="common-icon-bg file-icon"></span>
                     Dashboard
                 </a>
-
             </li>
             <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
                 <a href="#library_nav" class="sidebarclick">
@@ -134,7 +133,7 @@
         </div>
         <div class="search-result">
             <div class="search-main items">
-                <a data-filter-item data-filter-name="encom" class="topSearchRow">
+                <a data-filter-item data-filter-name="encom" class="top-search-row">
                     <span class="results-search-icon"></span>
                     <h6>“encom”</h6>
                 </a>
@@ -243,17 +242,17 @@
                     <div class="clientpoint-title">
                         <h4>ClientPoint Title</h4>
                         <a href="javascript:void(0);" class="editTitle"></a>
-                        <div class="clientSearchtitle">
+                        <div class="client-search-title">
                             <input type="text" placeholder="ClientPoint Title">
                             <input type="submit" class="closeBtn" value="">
                         </div>
                     </div>
                     <div class="newclientpoint-title-bar-right">
                         <aside class="clientMenu">
-                            <a href="share-modal" class="clientMenuCommon clientMenuShare modal-trigger"></a>
-                            <a href="#comment-modal" class="clientMenuCommon clientMenuComment modal-trigger"></a>
-                            <a href="#" class="clientMenuCommon clientMenuPdf"></a>
-                            <a href="#" class="clientMenuCommon clientMenuNewsletter mr-0"></a>
+                            <a href="share-modal" class="client-menu-common client-menu-share modal-trigger"></a>
+                            <a href="#comment-modal" class="client-menu-common client-menu-comment modal-trigger"></a>
+                            <a href="#" class="client-menu-common client-menu-pdf"></a>
+                            <a href="#" class="client-menu-common client-menu-newsletter mr-0"></a>
                         </aside>
                         <!-- <a class="waves-effect waves-light btn btn-round">Save</a> -->
                     </div>
@@ -264,17 +263,18 @@
                         <input type="search" class="search-input-common" placeholder="Search">
                     </div>
                     <div class="newperposal-clientbar-right">
-                        <a href="#add-file" class="fileMenu modal-trigger">
+                        <a href="#add-file" class="file-menu modal-trigger">
                             <i class="material-icons">
                                 add
                             </i>FILE</a>
-                        <a class="fileMenu modal-trigger" href="#add-section">
+                        <a class="file-menu modal-trigger" href="#add-section">
                             <i class="material-icons">
                                 add
                             </i>SECTION</a>
-                        <a href="javascript:void(0)" class="fileMenu dropdown-trigger saveFile" data-target="dropdown1">
+                        <a href="javascript:void(0)" class="file-menu dropdown-trigger save-file"
+                            data-target="template-dropdown">
                         </a>
-                        <ul id='dropdown1' class='dropdown-content'>
+                        <ul id="template-dropdown" class="dropdown-content">
                             <li><a href="javascript:void(0);">Will be Save as Template</a></li>
                         </ul>
                     </div>
@@ -287,14 +287,14 @@
                             <h5>Filter by:</h5>
                             <div class="type">
                                 <h5>Type <a href="javascript:void(0);"
-                                        class="DropdownArrow hoverdropdown dropdown-trigger" data-alignment="left"
-                                        data-target='typeDropDown'>
+                                        class="dropdown-arrow hover-dropdown dropdown-trigger" data-alignment="left"
+                                        data-target='type-dropdown'>
                                         <i class="material-icons">
                                             arrow_drop_down
                                         </i>
                                     </a>
                                 </h5>
-                                <ul id='typeDropDown' class='dropdown-content typeDropDownLinks'>
+                                <ul id="type-dropdown" class="dropdown-content type-dropdown-Links">
                                     <li>
                                         <label>
                                             <input type="checkbox" class="filled-in" />
@@ -322,11 +322,15 @@
                                 </ul>
                             </div>
                             <div class="all-viewers">
-                                <h5>All Viewers <a href='#' data-alignment="left" data-target='all-viewersDropdown'
-                                        class="DropdownArrow hoverdropdown dropdown-trigger"><i class="material-icons">
+                                <h5>All Viewers
+                                    <a href="#" data-alignment="left" data-target="all-viewers-dropdown"
+                                        class="dropdown-arrow hover-dropdown dropdown-trigger">
+                                        <i class="material-icons">
                                             arrow_drop_down
-                                        </i></a></h5>
-                                <ul id='all-viewersDropdown' class='dropdown-content typeDropDownLinks'>
+                                        </i>
+                                    </a>
+                                </h5>
+                                <ul id="all-viewers-dropdown" class="dropdown-content type-dropdown-Links">
                                     <li>
                                         <label>
                                             <input type="checkbox" class="filled-in" />
@@ -369,27 +373,29 @@
                                 <div class="calender-date">
                                     <a href="javasscript:void(0)" class="prev-date-calender">
                                     </a>
-                                    <span class="calender-dateText">Jul 29 - Aug 5</span>
+                                    <span class="calender-date-text">Jul 29 - Aug 5</span>
                                     <a href="javasscript:void(0)" class="next-date-calender">
                                     </a>
                                 </div>
                                 <div class="caleneder-filter">
-                                    <span class="calenderIcon"></span>
-                                    <a href="javascript:void(0);" class="hoverdropdown DropdownArrow dropdown-trigger"
-                                        data-alignment="left" data-target='CalenderDropdown'><i class="material-icons">
+                                    <span class="calender-icon"></span>
+                                    <a href="javascript:void(0);" class="hover-dropdown dropdown-arrow dropdown-trigger"
+                                        data-alignment="left" data-target="calender-dropdown">
+                                        <i class="material-icons">
                                             arrow_drop_down
-                                        </i></a>
-                                    <ul id='CalenderDropdown' class='dropdown-content CalenderDropDownContent'>
-                                        <li class="calenderHeader">
-                                            <div class="calenderHeader-row">
+                                        </i>
+                                    </a>
+                                    <ul id="calender-dropdown" class="dropdown-content calender-dropdown-content">
+                                        <li class="calender-header">
+                                            <div class="calender-header-row">
                                                 <span class="from">From</span>
-                                                <span class="dateCalender"><a class="calender-dateIcon"
+                                                <span class="date-calender"><a class="calender-date-icon"
                                                         href="javascript:void(0);"></a>July 29,
                                                     2019</span>
                                             </div>
-                                            <div class="calenderHeader-row">
+                                            <div class="calender-header-row">
                                                 <span class="from">To</span>
-                                                <span class="dateCalender"><a class="calender-dateIcon"
+                                                <span class="date-calender"><a class="calender-date-icon"
                                                         href="javascript:void(0);" id="datepicker"></a>August 5,
                                                     2019</span>
                                             </div>
@@ -442,9 +448,9 @@
                                                                     </i></a>
                                                             </div>
                                                             <div class="anaytics-overview-content">
-                                                                <p><a href="javascript:void(0);" class="authLink">Alan
+                                                                <p><a href="javascript:void(0);" class="auth-link">Alan
                                                                         Bradley</a> from <a href="javascript:void(0);"
-                                                                        class="authLink">Encom</a> viewed the
+                                                                        class="auth-link">Encom</a> viewed the
                                                                     ClientPoint.</p>
 
                                                                 <div class="ip-address">
@@ -504,7 +510,7 @@
                                                                                                                 <td>Page
                                                                                                                     Title
                                                                                                                     <a href="javascript:void(0);"
-                                                                                                                        class="eyeIcon"></a>
+                                                                                                                        class="eye-icon"></a>
                                                                                                                 </td>
                                                                                                                 <td>00:00:00
                                                                                                                 </td>
@@ -516,7 +522,7 @@
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     <span
-                                                                                                                        class="progressText">15%
+                                                                                                                        class="progress-text">15%
                                                                                                                         time
                                                                                                                         spent</span>
                                                                                                                 </td>
@@ -527,7 +533,7 @@
                                                                                                                 <td>Page
                                                                                                                     Title
                                                                                                                     <a href="javascript:void(0);"
-                                                                                                                        class="eyeIcon"></a>
+                                                                                                                        class="eye-icon"></a>
                                                                                                                 </td>
                                                                                                                 <td>00:00:00
                                                                                                                 </td>
@@ -539,7 +545,7 @@
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     <span
-                                                                                                                        class="progressText">5%
+                                                                                                                        class="progress-text">5%
                                                                                                                         time
                                                                                                                         spent</span>
                                                                                                                 </td>
@@ -550,7 +556,7 @@
                                                                                                                 <td>Page
                                                                                                                     Title
                                                                                                                     <a href="javascript:void(0);"
-                                                                                                                        class="eyeIcon"></a>
+                                                                                                                        class="eye-icon"></a>
                                                                                                                 </td>
                                                                                                                 <td>00:00:00
                                                                                                                 </td>
@@ -562,7 +568,7 @@
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     <span
-                                                                                                                        class="progressText">65%
+                                                                                                                        class="progress-text">65%
                                                                                                                         time
                                                                                                                         spent</span>
                                                                                                                 </td>
@@ -573,7 +579,7 @@
                                                                                                                 <td>Page
                                                                                                                     Title
                                                                                                                     <a href="javascript:void(0);"
-                                                                                                                        class="eyeIcon"></a>
+                                                                                                                        class="eye-icon"></a>
                                                                                                                 </td>
                                                                                                                 <td>00:00:00
                                                                                                                 </td>
@@ -585,7 +591,7 @@
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     <span
-                                                                                                                        class="progressText">15%
+                                                                                                                        class="progress-text">15%
                                                                                                                         time
                                                                                                                         spent</span>
                                                                                                                 </td>
@@ -596,7 +602,7 @@
                                                                                                                 <td>Page
                                                                                                                     Title
                                                                                                                     <a href="javascript:void(0);"
-                                                                                                                        class="eyeIcon"></a>
+                                                                                                                        class="eye-icon"></a>
                                                                                                                 </td>
                                                                                                                 <td>00:00:00
                                                                                                                 </td>
@@ -608,7 +614,7 @@
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     <span
-                                                                                                                        class="progressText">15%
+                                                                                                                        class="progress-text">15%
                                                                                                                         time
                                                                                                                         spent</span>
                                                                                                                 </td>
@@ -619,7 +625,7 @@
                                                                                                                 <td>Page
                                                                                                                     Title
                                                                                                                     <a href="javascript:void(0);"
-                                                                                                                        class="eyeIcon"></a>
+                                                                                                                        class="eye-icon"></a>
                                                                                                                 </td>
                                                                                                                 <td>00:00:00
                                                                                                                 </td>
@@ -631,7 +637,7 @@
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     <span
-                                                                                                                        class="progressText">15%
+                                                                                                                        class="progress-text">15%
                                                                                                                         time
                                                                                                                         spent</span>
                                                                                                                 </td>
@@ -642,7 +648,7 @@
                                                                                                                 <td>Page
                                                                                                                     Title
                                                                                                                     <a href="javascript:void(0);"
-                                                                                                                        class="eyeIcon"></a>
+                                                                                                                        class="eye-icon"></a>
                                                                                                                 </td>
                                                                                                                 <td>00:00:00
                                                                                                                 </td>
@@ -654,7 +660,7 @@
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     <span
-                                                                                                                        class="progressText">15%
+                                                                                                                        class="progress-text">15%
                                                                                                                         time
                                                                                                                         spent</span>
                                                                                                                 </td>
@@ -665,7 +671,7 @@
                                                                                                                 <td>Page
                                                                                                                     Title
                                                                                                                     <a href="javascript:void(0);"
-                                                                                                                        class="eyeIcon"></a>
+                                                                                                                        class="eye-icon"></a>
                                                                                                                 </td>
                                                                                                                 <td>00:00:00
                                                                                                                 </td>
@@ -677,7 +683,7 @@
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     <span
-                                                                                                                        class="progressText">15%
+                                                                                                                        class="progress-text">15%
                                                                                                                         time
                                                                                                                         spent</span>
                                                                                                                 </td>
@@ -716,14 +722,15 @@
                                                         <div class="border-row">
                                                             <div class="anaytics-overview-header">
                                                                 <h6>MM/DD/YYYY 00:00 AM</h6>
-                                                                <a href="javascript:void(0);" class="view-more">View More
+                                                                <a href="javascript:void(0);" class="view-more">View
+                                                                    More
                                                                     <i class="material-icons">
                                                                         arrow_right
                                                                     </i></a>
                                                             </div>
                                                             <div class="anaytics-overview-content">
                                                                 <p>
-                                                                    <a href="javascript:void(0);" class="authLink">Q2
+                                                                    <a href="javascript:void(0);" class="auth-link">Q2
                                                                         Marketing
                                                                         ClientPoint</a> was hand delivered by
                                                                     <strong>Alan Bradley</strong>
@@ -736,7 +743,8 @@
                                                         <div class="border-row">
                                                             <div class="anaytics-overview-header">
                                                                 <h6>MM/DD/YYYY 00:00 AM</h6>
-                                                                <a href="javascript:void(0);" class="view-more">View More
+                                                                <a href="javascript:void(0);" class="view-more">View
+                                                                    More
                                                                     <i class="material-icons">
                                                                         arrow_right
                                                                     </i></a>
@@ -744,7 +752,7 @@
                                                             <div class="anaytics-overview-content">
                                                                 <h4>Kevin Flynn wrote:</h4>
                                                                 <p><a href="javascript:void(0);"
-                                                                        class="authLink">@MilesMorales</a> Lorem
+                                                                        class="auth-link">@MilesMorales</a> Lorem
                                                                     ipsum dolor sit amet, consectetur adipiscing elit,
                                                                     sed do eiusmod tempor incididunt ut labore et dolore
                                                                     magna aliqua. Ut
@@ -754,11 +762,11 @@
                                                                     dolor in reprehenderit
                                                                     in voluptate velit esse cillum dolore eu fugiat
                                                                     nulla pariatur. </p>
-                                                                <div class="analyticsShadow">
+                                                                <div class="analytics-shadow">
                                                                 </div>
                                                                 <a href="#reply-modal"
-                                                                    class="replyBtn modal-trigger">Reply <span
-                                                                        class="replyArrow"></span></a>
+                                                                    class="reply-btn modal-trigger">Reply <span
+                                                                        class="reply-arrow"></span></a>
                                                             </div>
                                                             <div class="anaytics-overview-footer">
                                                                 <div class="anaytics-overview-footer-row">
@@ -785,7 +793,8 @@
                                                         <div class="border-row">
                                                             <div class="anaytics-overview-header">
                                                                 <h6>MM/DD/YYYY 00:00 AM</h6>
-                                                                <a href="javascript:void(0);" class="view-more">View More
+                                                                <a href="javascript:void(0);" class="view-more">View
+                                                                    More
                                                                     <i class="material-icons">
                                                                         arrow_right
                                                                     </i></a>
@@ -793,7 +802,7 @@
                                                             <div class="anaytics-overview-content">
                                                                 <h4>Kevin Flynn wrote:</h4>
                                                                 <p><a href="javascript:void(0);"
-                                                                        class="authLink">@PeterParker</a> Lorem
+                                                                        class="auth-link">@PeterParker</a> Lorem
                                                                     ipsum dolor sit amet, consectetur adipiscing elit,
                                                                     sed do eiusmod tempor incididunt ut labore et dolore
                                                                     magna aliqua. Ut
@@ -803,10 +812,10 @@
                                                                     dolor in reprehenderit
                                                                     in voluptate velit esse cillum dolore eu fugiat
                                                                     nulla pariatur. </p>
-                                                                <div class="analyticsShadow">
+                                                                <div class="analytics-shadow">
                                                                 </div>
-                                                                <a href="javascript:void(0);" class="replyBtn">Reply
-                                                                    <span class="replyArrow"></span></a>
+                                                                <a href="javascript:void(0);" class="reply-btn">Reply
+                                                                    <span class="reply-arrow"></span></a>
                                                             </div>
                                                             <div class="anaytics-overview-footer">
                                                                 <div class="anaytics-overview-footer-row">
@@ -830,15 +839,16 @@
                                                         <div class="border-row">
                                                             <div class="anaytics-overview-header">
                                                                 <h6>MM/DD/YYYY 00:00 AM</h6>
-                                                                <a href="javascript:void(0);" class="view-more">View More
+                                                                <a href="javascript:void(0);" class="view-more">View
+                                                                    More
                                                                     <i class="material-icons">
                                                                         arrow_right
                                                                     </i></a>
                                                             </div>
                                                             <div class="anaytics-overview-content">
-                                                                <p><a href="javascript:void(0);" class="authLink">Alan
+                                                                <p><a href="javascript:void(0);" class="auth-link">Alan
                                                                         Bradley</a> from <a href="javascript:void(0);"
-                                                                        class="authLink">Encom</a> viewed the
+                                                                        class="auth-link">Encom</a> viewed the
                                                                     ClientPoint.</p>
                                                             </div>
                                                             <div class="anaytics-overview-footer">
@@ -863,15 +873,16 @@
                                                         <div class="border-row">
                                                             <div class="anaytics-overview-header">
                                                                 <h6>MM/DD/YYYY 00:00 AM</h6>
-                                                                <a href="javascript:void(0);" class="view-more">View More
+                                                                <a href="javascript:void(0);" class="view-more">View
+                                                                    More
                                                                     <i class="material-icons">
                                                                         arrow_right
                                                                     </i></a>
                                                             </div>
                                                             <div class="anaytics-overview-content">
-                                                                <p><a href="javascript:void(0);" class="authLink">Kevin
+                                                                <p><a href="javascript:void(0);" class="auth-link">Kevin
                                                                         Flynn</a> from <a href="javascript:void(0);"
-                                                                        class="authLink">Encom</a> viewed the
+                                                                        class="auth-link">Encom</a> viewed the
                                                                     ClientPoint.</p>
                                                             </div>
                                                             <div class="anaytics-overview-footer">
@@ -896,15 +907,16 @@
                                                         <div class="border-row">
                                                             <div class="anaytics-overview-header">
                                                                 <h6>MM/DD/YYYY 00:00 AM</h6>
-                                                                <a href="javascript:void(0);" class="view-more">View More
+                                                                <a href="javascript:void(0);" class="view-more">View
+                                                                    More
                                                                     <i class="material-icons">
                                                                         arrow_right
                                                                     </i></a>
                                                             </div>
                                                             <div class="anaytics-overview-content">
-                                                                <p><a href="javascript:void(0);" class="authLink">Alan
+                                                                <p><a href="javascript:void(0);" class="auth-link">Alan
                                                                         Bradley</a> from <a href="javascript:void(0);"
-                                                                        class="authLink">Encom</a> viewed the
+                                                                        class="auth-link">Encom</a> viewed the
                                                                     ClientPoint.</p>
                                                             </div>
                                                             <div class="anaytics-overview-footer">
@@ -989,7 +1001,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="collapseArrow"><i
+                                                                            class="collapse-arrow"><i
                                                                                 class="material-icons">
                                                                                 arrow_drop_down
                                                                             </i></a>
@@ -1017,7 +1029,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="collapseArrow"><i
+                                                                            class="collapse-arrow"><i
                                                                                 class="material-icons">
                                                                                 arrow_drop_down
                                                                             </i></a>
@@ -1045,7 +1057,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="collapseArrow"><i
+                                                                            class="collapse-arrow"><i
                                                                                 class="material-icons">
                                                                                 arrow_drop_down
                                                                             </i></a>
@@ -1080,7 +1092,8 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="file-arrow"><i class="material-icons">
+                                                                            class="file-arrow"><i
+                                                                                class="material-icons">
                                                                                 arrow_drop_down
                                                                             </i></a>
                                                                     </div>
@@ -1104,7 +1117,8 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="file-arrow"><i class="material-icons">
+                                                                            class="file-arrow"><i
+                                                                                class="material-icons">
                                                                                 arrow_drop_down
                                                                             </i></a>
                                                                     </div>
@@ -1128,7 +1142,8 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="file-arrow"><i class="material-icons">
+                                                                            class="file-arrow"><i
+                                                                                class="material-icons">
                                                                                 arrow_drop_down
                                                                             </i></a>
                                                                     </div>
@@ -1152,7 +1167,8 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="file-arrow"><i class="material-icons">
+                                                                            class="file-arrow"><i
+                                                                                class="material-icons">
                                                                                 arrow_drop_down
                                                                             </i></a>
                                                                     </div>
@@ -1176,7 +1192,8 @@
                                                                             </div>
                                                                         </div>
                                                                         <a href="javascript:void(0);"
-                                                                            class="file-arrow"><i class="material-icons">
+                                                                            class="file-arrow"><i
+                                                                                class="material-icons">
                                                                                 arrow_drop_down
                                                                             </i></a>
                                                                     </div>
@@ -1208,7 +1225,7 @@
                                                         </li>
                                                         <li>
                                                             <div class="collapsible-header">
-                                                                Activity 
+                                                                Activity
                                                                 <i class="material-icons rotate-arrow">
                                                                     arrow_drop_down
                                                                 </i>
@@ -1249,9 +1266,11 @@
         <div class="modal-header">
             <span class="share-icon"></span>
             <h4>Add a File</h4>
-            <a class="modal-close"><i class="material-icons">
+            <a class="modal-close">
+                <i class="material-icons">
                     close
-                </i></a>
+                </i>
+            </a>
         </div>
         <div class="tabs-header">
             <ul class="tabs">
@@ -1349,8 +1368,9 @@
                                         <div class="templates">
                                             <ul>
                                                 <li><a href="javascript:void(0);"><span
-                                                            class="templateIcon"></span>Introduction</a></li>
-                                                <li><a href="javascript:void(0);"><span class="templateIcon"></span>Case
+                                                            class="template-icon"></span>Introduction</a></li>
+                                                <li><a href="javascript:void(0);"><span
+                                                            class="template-icon"></span>Case
                                                         Studies</a></li>
                                             </ul>
                                         </div>
@@ -1396,15 +1416,14 @@
                                             <div class="file-name">
                                                 <div class="add-filesname-row">
                                                     <span class="file-icon"></span>File Name
-                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                    <a href="javascript:void(0);" class="close-file"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
                                                 </div>
                                                 <div class="add-filesname-row">
                                                     <span class="file-icon"></span>File Name
-
-                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                    <a href="javascript:void(0);" class="close-file"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
@@ -1529,15 +1548,14 @@
                                                 <div class="add-filesname-row">
                                                     <span class="file-icon"></span>File Name
 
-                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                    <a href="javascript:void(0);" class="close-file"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
                                                 </div>
                                                 <div class="add-filesname-row">
                                                     <span class="file-icon"></span>File Name
-
-                                                    <a href="javascript:void(0);" class="closeFile"><i
+                                                    <a href="javascript:void(0);" class="close-file"><i
                                                             class="material-icons">
                                                             clear
                                                         </i></a>
@@ -1564,7 +1582,6 @@
             </div>
         </div>
         <!-- Video from Webcam Tab end here  -->
-
     </div>
 
     <!-- Add File Modal end here  -->
@@ -1575,9 +1592,11 @@
         <div class="modal-header">
             <span class="book-icon"></span>
             <h4>Add a section</h4>
-            <a class="modal-close"><i class="material-icons">
+            <a class="modal-close">
+                <i class="material-icons">
                     close
-                </i></a>
+                </i>
+            </a>
         </div>
         <div class="modal-content">
             <h4>Please enter a section title</h4>
@@ -1630,7 +1649,7 @@
                     <h4>Copy this private URL to share:</h4>
                     <div class="copy-url">
                         <input type="text" placeholder="http://clientpoint.net/CMJ111">
-                        <input type="submit" class="copybtn" value="Copy">
+                        <input type="submit" class="copy-btn" value="Copy">
                     </div>
                     <div class="text-center">
                         <a href="javascript:void(0);" target="_blank" class="new-window-link">Open in new window</a>
@@ -1654,7 +1673,7 @@
                                     <span class="lever"></span>
                                 </label>
                             </div>
-                            <div class="enterPassword">
+                            <div class="enter-password">
                                 <input type="text" placeholder="Enter Password">
                                 <input type="submit" class="savePasswordBtn" value="Save Password">
                             </div>
@@ -1672,11 +1691,11 @@
                         <label>To</label>
                         <input type="text" placeholder="recipient email address...">
                     </div>
-                    <div class="subjectEmail">
+                    <div class="subject-email">
                         <label>Subject</label>
                         <input type="text" placeholder="ClientPoint Title" value="ClientPoint Title">
                     </div>
-                    <div class="emailText">
+                    <div class="email-text">
                         <p>Hello,</p>
                         <p>1. Please view your document. </p>
                         <p>2. Eros in cursus turpis massa tincidunt dui ut ornare. Urna cursus eget nunc scelerisque.
@@ -1773,15 +1792,15 @@
                 <p>
                     <a href="javascript:void(0);" class="link">@KevinFlynn</a> Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="javascript:void(0);"
-                        class="link dropdown-trigger" data-target="dropdownReply">@Ed</a>
+                        class="link dropdown-trigger" data-target="dropdown-reply">@Ed</a>
                 </p>
-                <ul id="dropdownReply" class='dropdown-content'>
+                <ul id="dropdown-reply" class="dropdown-content">
                     <li>
                         <a href="javascript:void(0);">
-                            <span class="userImg">
+                            <span class="user-img">
                                 <img class="responsive-img" src="./images/Recipents-Avatar-3.png" alt="img">
                             </span>
-                            <div class="userInfo">
+                            <div class="user-info">
                                 <h6>Edward Dillinger</h6>
                                 <p>edward@encom.com</p>
                             </div>
@@ -1789,10 +1808,10 @@
                     </li>
                     <li>
                         <a href="javascript:void(0);">
-                            <span class="userImg">
+                            <span class="user-img">
                                 <img class="responsive-img" src="./images/Recipents-Avatar-3.png" alt="img">
                             </span>
-                            <div class="userInfo">
+                            <div class="user-info">
                                 <h6>Eddie Brock</h6>
                                 <p>eddie@symbiote.com</p>
                             </div>
@@ -1803,7 +1822,7 @@
             <!-- <textarea class="comment-textarea" placeholder="@KevinFlynn" name="comments" maxlength="1000" cols="25"
                 rows="6"></textarea> -->
         </div>
-        <div class="modal-footer ">
+        <div class="modal-footer">
             <div class="btn-row justify-content-end">
                 <a class="btn-flat">Cancel</a>
                 <a class="waves-effect waves-light btn btn-round mr-2">Send Message</a>

@@ -40,8 +40,8 @@
 		}
 	}
 }
-.dataTable {
-	.userImage {
+.data-table {
+	.user-image {
 		display: $display-inline-block;
 		@include margin-padding(all, 0 1rem 0 0, all, null);
 		vertical-align: $verticle-align-middle;

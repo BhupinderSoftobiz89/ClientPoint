@@ -52,18 +52,18 @@
 	height: $auto;
 	@include margin-padding(all, null, all, 0 2rem);
 }
-.userTableHead {
+.user-table-head {
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
 	@include margin-padding(all, null, all, 1.25rem 1.875rem);
 }
-.tableOptionUser {
+.table-option-user {
 	@include margin-padding(all, 0 0 0 auto, all, null);
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
-	.optionsUser {
+	.options-user {
 		@include flexbox();
 		@include flex-wrap($wrap);
         align-items: $align-items-center;
@@ -82,19 +82,19 @@
             user-select: $none;
         }
 	}
-	.commonIcons {
+	.common-icons {
 		background: url(../images/common-icons.svg) no-repeat -170px -897px;
 		width: 1.4rem;
 		height: 1.4rem;
 		margin-right: 0.6875rem;
 		display: $display-inline-block;
-        &.editIcon {
+        &.edit-icon {
             background: url(../images/common-icons.svg) no-repeat -246px -663px; 
         }
-        &.deleteIcon {
+        &.delete-icon {
             background: url(../images/common-icons.svg) no-repeat -30px -1524px; 
         }
-        &.exportIcon {
+        &.export-icon {
             background: url(../images/common-icons.svg) no-repeat -387px -968px;  
         }
         &.resetIcon {

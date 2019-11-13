@@ -328,7 +328,7 @@ $collection-line-height: 1.5rem !default;
 $progress-bar-color: $secondary-color !default;
 
 // Custom Variables
-$height-hundred-per: 100%;
+$height-hundred-per: 100% !default;
 
 // Position Variables
 
@@ -340,6 +340,7 @@ $right-zero: 0 !default;
 $top-zero: 0 !default;
 $headerleftposition: 4.667rem !default;
 $left-auto: auto !default;
+$inherit:inherit !default;
 
 // Primary color
 
@@ -414,7 +415,7 @@ $text-center: center !default;
 $verticle-align-middle: middle !default;
 $verticle-align-top: top !default;
 $justify-content-end: flex-end !default;
-
+$justify-content-start: flex-start !default;
 // Font weight varibles
 
 $font-weight-500: 500 !default;
@@ -429,7 +430,7 @@ $margin-left-auto: auto !default;
 $margin-right-auto: auto !default;
 $margin-auto: auto !default;
 $mb-15: 15px !important !default;
-$reciepent-Select-margin: 40px !default;
+$reciepent-select-margin: 40px !default;
 
 // Padding Variables
 
