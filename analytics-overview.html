@@ -23,25 +23,26 @@
             <div class="icon"></div>
         </div>
         <ul>
-            <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="tab-1">
+            <li class="current tooltipped" data-position="right" data-tooltip="Dashboard" data-tab="dashboard">
                 <a href="#dashboard_nav" class="sidebarclick">
                     <span class="common-icon-bg file-icon"></span>
                     Dashboard
                 </a>
+
             </li>
-            <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="tab-2">
+            <li class="tooltipped" data-position="right" data-tooltip="Content Libray" data-tab="content-library">
                 <a href="#library_nav" class="sidebarclick">
                     <span class="common-icon-bg prieview-icon"></span>
                     Content Libray
                 </a>
             </li>
-            <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="tab-3">
+            <li class="tooltipped" data-position="right" data-tooltip="ClientPoints" data-tab="clientpoint">
                 <a href="#clientPoint_nav" class="sidebarclick">
                     <span class="common-icon-bg client-icon"></span>
                     ClientPoints
                 </a>
             </li>
-            <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="tab-4">
+            <li class="tooltipped" data-position="right" data-tooltip="Settings" data-tab="settings">
                 <a href="#Setting_nav" class="sidebarclick">
                     <span class="common-icon-bg setting-icon"></span>Settings
                 </a>
@@ -54,7 +55,7 @@
     </nav>
 
     <div class="sidebar_nav">
-        <aside id="tab-1" class="sidebar-submenu open-nav">
+        <aside id="dashboard" class="sidebar-submenu open-nav">
             <ul>
                 <li>
                     <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
@@ -68,7 +69,7 @@
                 <li><a href="dashboard-filter-expanded.html" class="active">Details</a></li>
             </ul>
         </aside>
-        <aside id="tab-2" class="sidebar-submenu open-nav">
+        <aside id="content-library" class="sidebar-submenu open-nav">
             <ul>
                 <li>
                     <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
@@ -81,7 +82,7 @@
                 <li><a href="library.html" class="active">Templates</a></li>
             </ul>
         </aside>
-        <aside id="tab-3" class="sidebar-submenu open-nav">
+        <aside id="clientpoint" class="sidebar-submenu open-nav">
             <ul>
                 <li>
                     <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
@@ -90,12 +91,12 @@
                         </i>
                     </a>
                 </li>
-                <li><a href="client-point-file.html">Analytics</a></li>
+                <li><a href="clientpoint-file.html">Analytics</a></li>
                 <li><a href="clientpoint-preview.html">ClientPoint</a></li>
                 <li><a href="clientpoint-top-bar.html">Details</a></li>
             </ul>
         </aside>
-        <aside id="tab-4" class="sidebar-submenu open-nav">
+        <aside id="settings" class="sidebar-submenu open-nav">
             <ul>
                 <li>
                     <a href="javascript:void(0);" class="arrow-back" onclick="arrowback();">
@@ -249,7 +250,7 @@
                     </div>
                     <div class="newclientpoint-title-bar-right">
                         <aside class="clientMenu">
-                            <a href="share-modal" class="client-menu-common client-menu-share modal-trigger"></a>
+                            <a href="#share-modal" class="client-menu-common client-menu-share modal-trigger"></a>
                             <a href="#comment-modal" class="client-menu-common client-menu-comment modal-trigger"></a>
                             <a href="#" class="client-menu-common client-menu-pdf"></a>
                             <a href="#" class="client-menu-common client-menu-newsletter mr-0"></a>

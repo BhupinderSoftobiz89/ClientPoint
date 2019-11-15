@@ -10,7 +10,7 @@
 			margin: $zero;
 		}
 	}
-	.newperposal-client-bar  {
+	.newperposal-client-bar {
 		padding: 1.1rem 1.8125rem;
 		@include flex-wrap($wrap);
 	}
@@ -664,7 +664,7 @@
 
 /* Share Modal start here */
 
-share-modal {
+#share-modal {
 	max-width: 737px;
 	max-height: 90%;
 	.share-icon {
@@ -864,10 +864,10 @@ share-modal {
 #comment-modal {
 	max-width: 737px;
 	.modal-header {
-		padding: 2.3rem 1.875rem 2.1rem 3.5rem;
+		@include margin-padding(all, null, all, 2.3rem 1.875rem 2.1rem 3.5rem);
 	}
 	.tab-content {
-		padding: 0 3.125rem 1.875rem 3.5rem;
+		@include margin-padding(all, null, all, 0 3.125rem 1.875rem 3.5rem);
 	}
 	.tabs-header {
 		padding-left: 50px;
@@ -884,7 +884,7 @@ share-modal {
 		.tab {
 			margin-right: 3.3rem;
 			a {
-				padding: 0 0.75rem;
+				@include margin-padding(all, null, all, 0 0.75rem);
 			}
 		}
 	}
@@ -908,16 +908,16 @@ share-modal {
 	.modal-footer {
 		padding: 0 3.125rem 2.1rem 3.5rem;
 		.btn-row {
-			margin-top: 0;
+			margin-top: $zero;
 		}
 		.btn-flat {
-			margin-top: 0;
+			margin-top: $zero;
 		}
 		.btn-round {
 			background: color("grey", "lighten-5");
 			color: color("grey", "darken-1");
 			box-shadow: $none;
-			padding: 0 1.4rem;
+			@include margin-padding(all, null, all, 0 1.4rem);
 			margin-left: 2.5rem;
 			margin-right: 0 !important;
 			margin-top: 0;
@@ -930,7 +930,7 @@ share-modal {
 	@include flex-wrap($wrap);
 	padding: 0 25px 21px;
 	.switch {
-		margin-left: auto;
+		margin-left: $auto;
 	}
 }
 
@@ -973,8 +973,8 @@ share-modal {
 		.material-icons {
 			color: color("shades", "white");
 			width: 40px;
-			text-align: center;
-			transition: $transiton;
+			text-align: $text-center;
+			@include transition(all 0.5s);
 			margin-right: 28px;
 		}
 	}
@@ -1069,14 +1069,14 @@ share-modal {
 		.sign-up {
 			letter-spacing: 0.4375px;
 			padding: 0 3.7rem;
-			@include margin-padding(all, 0 20px 0 0, all, null null);
+			@include margin-padding(all, 0 20px 0 0, all, null);
 		}
 		.dark-bg-btn {
 			@include flexbox();
 			align-items: $align-items-center;
 			background: color("indigo", "darken-3");
 			.material-icons {
-				@include margin-padding(all, 0 0 0 8px, all, null null);
+				@include margin-padding(all, 0 0 0 8px, all, null);
 			}
 		}
 	}
@@ -1087,7 +1087,7 @@ share-modal {
 		@include font-size(20px);
 		font-weight: $font-weight-500;
 		line-height: 34px;
-		@include margin-padding(all, 0 0 39px, all, null null);
+		@include margin-padding(all, 0 0 39px, all, null);
 	}
 }
 .signature-form {
@@ -1184,7 +1184,7 @@ share-modal {
 	@include fixed(top auto right 0);
 	height: $height-hundred-per;
 	transition: $transiton;
-	@include margin-padding(all, 0 -900px 0 0, all, null null);
+	@include margin-padding(all, 0 -900px 0 0, all, null);
 }
 .excel-icon {
 	background: url(../images/common-icons.svg) no-repeat -167px -741px;
@@ -1227,10 +1227,10 @@ share-modal {
 			@include font-size(17px);
 			line-height: $line-height-twentysix;
 			color: color("grey", "darken-4");
-			@include margin-padding(all, 16px 0 10px 0, all, null null);
+			@include margin-padding(all, 16px 0 10px 0, all, null);
 		}
 		.form-fields {
-			@include margin-padding(all, 30px 0 0 0, all, null null);
+			@include margin-padding(all, 30px 0 0 0, all, null);
 			.full-name {
 				background: color("grey", "lighten-4");
 				border-bottom: 1px solid color("grey", "lighten-3");
@@ -1314,7 +1314,7 @@ share-modal {
 		}
 	}
 	.terms-btn {
-		@include margin-padding(all, 20px 0 37px 0, all, null null);
+		@include margin-padding(all, 20px 0 37px 0, all, null);
 		letter-spacing: 0.7px;
 		@include font-weight(medium);
 		height: 44px;
@@ -1323,7 +1323,7 @@ share-modal {
 	}
 }
 .mt-20 {
-	@include margin-padding(all, 20px 0 0 0 !important, all, null null);
+	@include margin-padding(all, 20px 0 0 0 !important, all, null);
 }
 .checkIcon {
 	background: url(../images/common-icons.svg) no-repeat -387px -1148px;
@@ -1346,7 +1346,7 @@ share-modal {
 		a {
 			color: color("grey", "darken-4");
 			text-align: $text-center;
-			@include margin-padding(all, null null, all, 9px 16px);
+			@include margin-padding(all, null, all, 9px 16px);
 			&:hover {
 				background: color("grey", "lighten-4");
 				color: color("indigo", "base");
@@ -1363,11 +1363,11 @@ share-modal {
 	min-width: 292px;
 	text-align: $text-center;
 	.user-info-viewer {
-		@include margin-padding(all, null null, all, 20px);
+		@include margin-padding(all, null, all, 20px);
 		.viewer-user-img {
 			width: 100px;
 			height: 100px;
-			@include margin-padding(all, 0 auto 20px, all, null null);
+			@include margin-padding(all, 0 auto 20px, all, null);
 
 			img {
 				box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
@@ -1381,11 +1381,11 @@ share-modal {
 			text-align: $text-center;
 			@include font-rem(16px, 22px);
 			@include font-weight(medium);
-			@include margin-padding(all, 0 0 9px, all, null null);
+			@include margin-padding(all, 0 0 9px, all, null);
 		}
 		p {
 			@include font-rem(14px, 22px);
-			@include margin-padding(all, 0, all, null null);
+			@include margin-padding(all, 0, all, null);
 			color: color("grey", "darken-1");
 		}
 	}
@@ -1438,7 +1438,7 @@ share-modal {
 	z-index: 1;
 	//display:$diplay-none;
 	p {
-		@include margin-padding(all, 0, all, null null);
+		@include margin-padding(all, 0, all, null);
 		@include font-rem(14px, 18px);
 		color: color("shades", "white");
 	}
@@ -2097,7 +2097,7 @@ share-modal {
 		.collapsible-header {
 			.arrow-accordion {
 				height: 1.6rem;
-				line-height:2.1rem;
+				line-height: 2.1rem;
 			}
 		}
 	}
@@ -2106,21 +2106,20 @@ share-modal {
 			height: 1.25rem;
 		}
 	}
-	.newperposal-client-bar  {
+	.newperposal-client-bar {
 		.file-menu {
 			.material-icons {
 				height: 12px;
 			}
 		}
 	}
-	.add-recipient-modal  {
+	.add-recipient-modal {
 		.modal-footer {
 			.material-icons {
-	height: 1.5rem;
+				height: 1.5rem;
 			}
 		}
 	}
- 
 }
 .new-proposal-margin {
 	@include margin-padding(all, 0 0 2rem 0 !important, all, null);
@@ -2132,6 +2131,20 @@ share-modal {
 	}
 }
 .border-none {
-	border-right:$none !important;
+	border-right: $none !important;
 }
+
+// .editing-heading-pagination {
+//     position: absolute;
+//     right: 62px;
+//     background: #5e63ff;
+//     padding: 7px 15px;
+//     color: #fff;
+//     top: 66px;
+//     z-index: 1;
+// }
+// .clientpoint-editing {
+// 	position: relative;
+// 	height: 100%;
+// }
 /* Save Template Mdoal end  here */

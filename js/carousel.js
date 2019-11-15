@@ -7,7 +7,7 @@
     shift: 0, // spacing for center image
     padding: 0, // Padding between non center items
     numVisible: 5, // Number of visible items in carousel
-    full-width: false, // Change to full width styles
+    width: false, // Change to full width styles
     indicators: false, // Toggle indicators
     noWrap: false, // Don't wrap around and cycle through items.
     onCycleTo: null // Callback for when a new slide is cycled to.

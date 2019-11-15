@@ -128,7 +128,7 @@
 		}
 		.input-field {
 			margin-bottom: 2.8rem;
-			.quizIcon {
+			.quiz-icon {
 				background: url(../images/common-icons.svg) no-repeat -245px -1306px;
 				width: 1.2rem;
 				height: 1.3rem;
@@ -397,7 +397,7 @@
 			}
 		}
 		.btn-round {
-			margin-right: 0 !important;
+			margin-right: $zero !important;
 			padding: 0 1.6rem;
 		}
 	}
@@ -412,7 +412,7 @@
 .logintab-content {
 	height: calc(100% - 153px);
 	.scrollbar-inner > .scroll-element.scroll-y {
-		right: 0;
+		right: $zero;
 	}
 }
 #login-information,
@@ -426,8 +426,8 @@
 	padding: 120px 64px 80px;
 }
 .team-width {
-	max-width: 100% !important;
-	margin: auto;
+	max-width: $full-width !important;
+	margin: $auto;
 }
 .full-width {
 	width: $full-width;

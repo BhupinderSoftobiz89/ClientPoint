@@ -1,13 +1,11 @@
 /* Header start here */
 
 .page-header {
+	@include fixed(top 0 left 5rem);
 	position: $position-fixed;
 	height: $header-height;
-	left: 5rem;
-	//width:$full-width;
 	width: calc(100% - 5rem);
-	background: $whiteBg;
-	top: $top-zero;
+	background: color('shades','white');
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
@@ -17,15 +15,14 @@
 	.searchbox {
 		max-width: 24rem;
 		width: $full-width;
-		position: $position-relative;
+		@include relative;
 		border-right: 1px solid #efeff3;
 		.search-input {
 			height: $header-height;
 			border: $border-none;
 			box-sizing: $box-sizing;
-			padding: 1.4375rem 2.3125rem 1.4375rem 4.6rem;
-			margin: $zero;
-			color: $blackColor;
+			@include margin-padding(all, 0, all, 1.4375rem 2.3125rem 1.4375rem 4.6rem);
+			color:color('shades','black');
 			font-size: $font-size-fourteen;
 			&:focus {
 				outline: $none;
@@ -34,14 +31,12 @@
 			}
 		}
 		.search-btn {
-			position: $position-absolute;
+			@include absolute(top 23px left 23px);
 			border: $border-none;
 			width: 1.67rem;
 			height: 1.67rem;
 			cursor: pointer;
 			background: url(../images/common-icons.svg) no-repeat -374px -62px;
-			top: 23px;
-			left: 33px;
 			&:focus {
 				outline: $none;
 			}
@@ -89,7 +84,8 @@
 		display: $display-inline-block;
 		vertical-align: $verticle-align-middle;
 		strong {
-			font-weight: $font-weight-bold;
+			@include font-weight(600);
+			// font-weight: $font-weight-bold;
 		}
 	}
 	.user-avtar {
@@ -108,14 +104,12 @@
 		display: $diplay-none;
 	}
 	.mobile-search {
-		position: $position-absolute;
+		@include absolute(top 23px left 33px);
 		border: $border-none;
 		width: 1.67rem;
 		height: 1.67rem;
 		cursor: pointer;
 		background: url(../images/common-icons.svg) no-repeat -374px -63px;
-		top: 23px;
-		left: 33px;
 		&:focus {
 			outline: $none;
 		}
@@ -150,7 +144,7 @@
 			align-items: $align-items-center;
 			color: color("grey", "darken-4");
 			font-size: $font-size-fourteen;
-			padding: 12px 16px;
+			@include margin-padding(all, null, all, 0.9375rem 1.125rem);
 			&:hover {
 				color: color("indigo", "base");
 
@@ -183,12 +177,12 @@
 			font-size: $font-size-fourteen;
 			line-height: $line-height-twenty;
 			color: color("grey", "darken-4");
-			margin: $zero;
+			@include margin-padding(all, 0, all, null);
 		}
 		p {
 			font-size: 12px;
 			line-height: $line-height-twenty;
-			margin: $zero;
+			@include margin-padding(all, 0, all, null);
 			color: color("grey", "darken-1");
 		}
 	}

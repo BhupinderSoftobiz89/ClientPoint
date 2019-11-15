@@ -19,7 +19,22 @@
 		@include w-h-rem(20px, 20px);
 		@include border-radius(0.3125rem);
 		@include margin-padding(all, 0 0.9375rem 0 0, all, null);
+		//@include icon-radius(1.42857rem, $radius: 0.3125rem);
+		&.suitcase-icon {
+			background: #00b0dc url(../images/common-icons.svg) no-repeat -389px -1380px;
+		}
+		&.user-icon {
+			background: #19e4b1 url(../images/common-icons.svg) no-repeat -28px -1456px;
+		}
+		&.comment-icon {
+			background: #676ad4 url(../images/common-icons.svg) no-repeat -91.7px -1455px;
+		}
+		&.edit-icon {
+			background: #f7ba0f url(../images/common-icons.svg) no-repeat -176px -1454px;
+		}
 	}
+
+
 	h5 {
 		@include font-rem(14px, 18px);
 		@include font-weight(medium);
@@ -41,7 +56,7 @@
 		@include border-radius(0.3125rem);
 		@include margin-padding(all, 0 0.9375rem 0 0, all, null);
 	}
-	.topsearch-row {
+	.top-search-row {
 		background: #eaf6ff;
 		@include margin-padding(all, null, all, 0.85rem 1.5625rem);
 		@include flexbox();
@@ -52,21 +67,8 @@
 			color: color("blue-grey", "darken-1");
 			@include margin-padding(all, 0, all, null);
 		}
-	}
-	.suitcase-icon {
-		background: #00b0dc url(../images/common-icons.svg) no-repeat -389px -1380px;
-	}
-	.user-icon {
-		background: #19e4b1 url(../images/common-icons.svg) no-repeat -28px -1456px;
-	}
-	.comment-icon {
-		background: #676ad4 url(../images/common-icons.svg) no-repeat -91.7px -1455px;
-	}
-	.edit-icon {
-		background: #f7ba0f url(../images/common-icons.svg) no-repeat -176px -1454px;
-	}
+	}	
 }
-
 .search-result.open {
 	@include opacity(1);
 	visibility: $visibilty-visible;
@@ -131,6 +133,7 @@
 		@include margin-padding(all, 0, all, null);
 		box-shadow: $none;
 		li {
+			overflow: $hidden;
 			@include box-shadow(0, 2px, 7px, rgba(84, 86, 90, 0.2));
 			@include border-radius(5px);
 			@include margin-padding(all, 0 0 1.875rem 0, all, null);
@@ -143,6 +146,15 @@
 			@include w-h-rem(20px, 20px);
 			@include border-radius(0.3125rem);
 			@include margin-padding(all, 0 0.9375rem 0 0, all, null);
+			&.suitcase-icon {
+				background: #00b0dc url(../images/common-icons.svg) no-repeat -389px -1380px;
+			}
+			&.comment-icon {
+				background: #676ad4 url(../images/common-icons.svg) no-repeat -91.7px -1455px;
+			}
+			&.edit-icon {
+				background: #f7ba0f url(../images/common-icons.svg) no-repeat -176px -1454px;
+			}
 		}
 		.collapsible-header {
 			@include flexbox();
@@ -212,16 +224,6 @@
 			border-radius: 0.3125rem;
 			@include margin-padding(all, 0 0.9375rem 0 0, all, null);
 		}
-		.suitcase-icon {
-			background: #00b0dc url(../images/common-icons.svg) no-repeat -389px -1380px;
-		}
-		.comment-icon {
-			background: #676ad4 url(../images/common-icons.svg) no-repeat -91.7px -1455px;
-		}
-		.edit-icon {
-			background: #f7ba0f url(../images/common-icons.svg) no-repeat -176px -1454px;
-		}
-
 		.status-pending {
 			background: color("yellow", "darken-3");
 			color: color("shades", "white");

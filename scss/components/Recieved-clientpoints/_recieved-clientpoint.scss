@@ -7,6 +7,8 @@
 	@include margin-padding(all, null, all, 0 2.5rem);
 	.material-icons {
 		color: color("indigo", "base");
+		vertical-align: $verticle-align-middle;
+		height: 1.5rem;
 	}
 }
 .calender-padding {
@@ -19,7 +21,7 @@
 		@include margin-padding(all, 0 0.2rem 0 0 !important, all, null);
 		height: 36px;
 		line-height: 36px;
-		vertical-align: middle;
+		vertical-align: $verticle-align-middle;
 	}
 }
 .dark-green-badge {
@@ -58,13 +60,12 @@
 	// }
 }
 .recieved-dropdown-arrow {
+	vertical-align: $verticle-align-middle;
+	//height: 1.25rem;
+	display: $display-inline-block;
+	.material-icons {
 		vertical-align: $verticle-align-middle;
-		//height: 1.25rem;
-		display: $display-inline-block;
-		.material-icons {
-			vertical-align: $verticle-align-middle;
-		}
-	
+	}
 }
 .user-info {
 	@include margin-padding(all, null, all, 0 0 0 4.4rem);
@@ -115,13 +116,26 @@
 	flex: $none !important;
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.new-btn-clientpoint {
 		.material-icons {
 			height: 39px;
 			line-height: 39px;
 		}
 	}
- }
+
+	.filters {
+		.material-icons {
+			vertical-align: $verticle-align-middle;
+			height: 1.5rem;
+		}
+	}
+	.hover-dropdown {
+		vertical-align: $verticle-align-middle;
+	}
+	.calender-date-iconUi {
+		@include margin-padding(all, null, all, 6px 16px !important);
+	}
+}
 
 /* Recieved ClientPoint CSS End Here */

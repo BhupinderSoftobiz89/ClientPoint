@@ -25,19 +25,20 @@
 			height: 1.68rem;
 			background: url(../images/common-icons.svg) no-repeat 0 0;
 			margin-right: 2.5rem;
+			&.client-menu-share {
+				background-position: -15px -127px;
+			}
+			&.client-menu-comment {
+				background-position: -89px -127px;
+			}
+			&.client-menu-pdf {
+				background-position: -165px -127px;
+			}
+			&.client-menu-newsletter {
+				background-position: -241px -127px;
+			}
 		}
-		.client-menu-share {
-			background-position: -15px -127px;
-		}
-		.client-menu-comment {
-			background-position: -89px -127px;
-		}
-		.client-menu-pdf {
-			background-position: -165px -127px;
-		}
-		.client-menu-newsletter {
-			background-position: -241px -127px;
-		}
+		
 		.btn {
       @extend %btn;
       @include margin-padding(all, null, all, 0 1.4375rem);
@@ -150,7 +151,7 @@
 		}
 		&:hover {
 			background: color("indigo", "base");
-			color: $whiteColor;
+			color:color('shades','white');
 		}
 	}
 	p {
@@ -168,7 +169,8 @@
 	margin-bottom: 30px;
 }
 .select-wrapper + label {
-  transform: scale(1);
+	@include transform(scale(1));
+  //transform: scale(1);
 }
 .advanceHeadingMargin {
 	margin-left: 1.3125rem;
