@@ -71,25 +71,22 @@
 	@include margin-padding(all, null, all, 0 0 0 4.4rem);
 	display: $none;
 	.email-icon {
-		background: url(../images/common-icons.svg) no-repeat -382px -413px;
-		width: 1.2rem;
-		height: 1.4rem;
-		margin-right: 0.4rem;
+		@include icon(17px, 20px, (false));
+		background-position: -382px -413px;
 		@include margin-padding(all, 0 0.4rem 0 -1.7rem, all, null);
-		display: $display-inline-block;
 		vertical-align: $verticle-align-middle;
 	}
 	.phone-icon {
 		@extend .email-icon;
-		background: url(../images/common-icons.svg) no-repeat -26px -500px;
+		background-position: -26px -500px;
 	}
 	.mobile-phone-icon {
 		@extend .email-icon;
-		background: url(../images/common-icons.svg) no-repeat -90px -497px;
+		background-position: -90px -497px;
 	}
 	.location-icon {
 		@extend .email-icon;
-		background: url(../images/common-icons.svg) no-repeat -321px -1522px;
+		background-position: -321px -1522px;
 	}
 	p {
 		@include font-rem(14px, 24px);

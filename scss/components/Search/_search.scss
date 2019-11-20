@@ -34,7 +34,6 @@
 		}
 	}
 
-
 	h5 {
 		@include font-rem(14px, 18px);
 		@include font-weight(medium);
@@ -282,11 +281,8 @@
 			text-transform: $text-uppercase;
 		}
 		.reply-arrow {
-			background: url(../images/common-icons.svg) no-repeat -170px -500px;
-			width: 1rem;
-			height: 1rem;
-			margin-left: 0.6rem;
-			display: $display-inline-block;
+			@include icon(15.5px, 15.5px, (true));
+			background-position: -170px -500px;
 		}
 	}
 }
@@ -336,10 +332,8 @@
 		}
 	}
 	.sort-icon {
-		display: $display-inline-block;
-		background: url(../images/common-icons.svg) no-repeat -252px -1459px;
-		@include w-h-rem(10px, 10px);
-		@include margin-padding(all, 0 0 0 0.5rem, all, null);
+		@include icon(10px, 10px, (true));
+		background-position: -252px -1459px;
 	}
 }
 .library-table {

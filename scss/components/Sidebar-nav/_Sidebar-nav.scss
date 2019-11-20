@@ -45,12 +45,9 @@
 		}
 	}
 	.common-icon-bg {
-		background: url(../images/common-icons.svg) no-repeat 0 0;
-		width: 1.6rem;
-		height: 1.6rem;
-		margin-right: 0.625rem;
+		@include icon(22.5px, 22.5px, (false));
+		background-position: 0 0;
 		@include transition($transiton);
-		display: $display-inline-block;
 	}
 	.file-icon {
 		background-position: -14px -15px;
@@ -201,11 +198,8 @@
 	}
 }
 .lock-icon {
-	background: url(../images/common-icons.svg) no-repeat -29px -745px;
-	width: 1.125rem;
-	height: 1.4rem;
-	margin-left: 0.6rem;
-	display: $display-inline-block;
+	@include icon(16px, 20px, (true));
+	background-position: -29px -745px;
 	vertical-align: $verticle-align-middle;
 	@include opacity(0.35);
 }
@@ -219,6 +213,8 @@
 	height: 43px;
 	@include absolute(left 0 right 0 bottom 20px)
 }
+
+
 .sidebar-nav.sidebar-nav-close {
 	.logo-big {
 		display: $diplay-none;
@@ -227,6 +223,8 @@
 		display: $display-block;
 	}
 }
+
+
 .sidebar-nav.full-width-nav {
 	.logo-big {
 		display: $display-block;
@@ -239,6 +237,8 @@
 		height: 26px;
 	}
 }
+
+
 .arrow-back {
 	padding: 0 !important;
 }

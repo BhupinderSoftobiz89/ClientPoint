@@ -12,10 +12,8 @@
 		align-items: $align-items-center;
 	}
 	.userIcon {
-		background: url(../images/common-icons.svg) no-repeat -174px -1385px;
-		width: 1.5rem;
-		height: 1.5rem;
-		margin-right: 13px;
+		@include icon(24px, 24px, (false));
+		background-position: -174px -1385px;
 	}
 	h1 {
 		@include font-rem(18px, 34px);
@@ -83,22 +81,19 @@
         }
 	}
 	.common-icons {
-		background: url(../images/common-icons.svg) no-repeat -170px -897px;
-		width: 1.4rem;
-		height: 1.4rem;
-		margin-right: 0.6875rem;
-		display: $display-inline-block;
+		@include icon(23px, 23px, (false));
+		background-position: -170px -897px;
         &.edit-icon {
-            background: url(../images/common-icons.svg) no-repeat -246px -663px; 
+			background-position: -246px -663px;
         }
         &.delete-icon {
-            background: url(../images/common-icons.svg) no-repeat -30px -1524px; 
+			background-position: -30px -1524px;
         }
         &.export-icon {
-            background: url(../images/common-icons.svg) no-repeat -387px -968px;  
+			background-position: -387px -968px;
         }
         &.resetIcon {
-            background: url(../images/common-icons.svg) no-repeat -27px -1067px;     
+			background-position: -27px -1067px;
         }
     }
     

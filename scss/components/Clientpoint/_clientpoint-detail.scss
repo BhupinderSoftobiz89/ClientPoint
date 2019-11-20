@@ -3,12 +3,12 @@
 .client-details-content {
 	flex: 1;
 	.titlerow {
-    @include margin-padding(all, null, all, 1.4rem 1.8125rem);
+		@include margin-padding(all, null, all, 1.4rem 1.8125rem);
 		border-bottom: 1px solid #efeff3;
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
-    background: color('shades','white');
+		background: color("shades", "white");
 		h5 {
 			color: #181a51;
 			font-size: $font-size-twenty;
@@ -21,9 +21,7 @@
 			@include flex-wrap($wrap);
 		}
 		.client-menu-common {
-			width: 1.68rem;
-			height: 1.68rem;
-			background: url(../images/common-icons.svg) no-repeat 0 0;
+			@include icon(23.6px, 23.6px, (null));
 			margin-right: 2.5rem;
 			&.client-menu-share {
 				background-position: -15px -127px;
@@ -38,10 +36,10 @@
 				background-position: -241px -127px;
 			}
 		}
-		
+
 		.btn {
-      @extend %btn;
-      @include margin-padding(all, null, all, 0 1.4375rem);
+			@extend %btn;
+			@include margin-padding(all, null, all, 0 1.4375rem);
 			font-size: $font-size-fourteen;
 			font-weight: $font-weight-500;
 		}
@@ -151,17 +149,17 @@
 		}
 		&:hover {
 			background: color("indigo", "base");
-			color:color('shades','white');
+			color: color("shades", "white");
 		}
 	}
 	p {
 		color: #696a8e;
 		font-size: $font-size-fourteen;
 		// line-height: 24px;
-    @include margin-padding(all, 0 0 1.5625rem 0, all, null);
+		@include margin-padding(all, 0 0 1.5625rem 0, all, null);
 	}
 	.switch {
-    @include margin-padding(all, 0 0 1.5625rem 0, all, null);
+		@include margin-padding(all, 0 0 1.5625rem 0, all, null);
 	}
 }
 .reciepent {
@@ -170,7 +168,7 @@
 }
 .select-wrapper + label {
 	@include transform(scale(1));
-  //transform: scale(1);
+	//transform: scale(1);
 }
 .advanceHeadingMargin {
 	margin-left: 1.3125rem;
@@ -187,7 +185,7 @@
 	text-transform: $text-capitalize;
 	line-height: $line-height-normal !important;
 	height: $height-auto !important;
-  @include margin-padding(all, 0 0 0 1.3125rem, all, 0.36rem 0.75rem);
+	@include margin-padding(all, 0 0 0 1.3125rem, all, 0.36rem 0.75rem);
 }
 .reciepent-select-margin {
 	margin-top: $reciepent-select-margin;
@@ -213,18 +211,15 @@
 	}
 
 	.share-icon {
-		background: url(../images/common-icons.svg) no-repeat -23px -263px;
-		width: 1.6rem;
-		height: 1.85rem;
-		margin-right: 11px;
-		display:$display-inline-block;
+		@include icon(23px, 26px, (false));
+		background-position: -23px -263px;
 	}
 	.modal-content {
 		padding: 0 3.6rem;
 	}
 	.add-recipient-content-row {
 		border: 1px solid color("grey", "lighten-3");
-    @include margin-padding(all, 0 0 1.4rem 0, all, 1.9rem 0.7rem 0);
+		@include margin-padding(all, 0 0 1.4rem 0, all, 1.9rem 0.7rem 0);
 	}
 	.modal-close {
 		.material-icons {
@@ -339,7 +334,7 @@
 		right: 0 !important;
 		left: auto !important;
 
-		.RemoveRecipient {
+		.remove-recipient {
 			background: #efeff3 url(../images/common-icons.svg) no-repeat -371px -258px;
 			width: 2.9rem;
 			height: 2.9rem;
@@ -353,14 +348,13 @@
 				@include flexbox();
 				align-items: $align-items-center;
 				padding: 19px 20px;
-				.delete-icon {
-					background: url(../images/common-icons.svg) no-repeat -322px -266px;
-					width: 1.2rem;
-					height: 1.5rem;
-					margin-right: 1.1875rem;
-					display: $display-inline-block;
-				}
+
 			}
+		}
+		.delete-icon {
+			@include icon(17px, 21px, (null));
+			background-position: -322px -266px;
+			margin-right: 1.1875rem;
 		}
 	}
 }

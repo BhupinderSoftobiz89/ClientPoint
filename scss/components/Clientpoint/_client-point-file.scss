@@ -62,19 +62,19 @@
 				align-items: $align-items-center;
 				padding: 0.8rem 2rem 0.8rem 1.8rem;
 				transition: $transiton;
-				.book-icon {
-					background: url(../images/common-icons.svg) no-repeat -91px -345px;
-					width: 1.125rem;
-					height: 1.5rem;
-					margin-right: 1.375rem;
-				}
-				.arrow-accordion {
-					margin-left: $margin-left-auto;
-					color: color("indigo", "base");
-					font-size: 31px;
-					margin-right: $zero;
-					transition: $transiton;
-				}
+				
+			}
+			.book-icon {
+				@include icon(20px, 25px, (null));
+				background-position: -91px -345px;
+				margin-right: 1.375rem;
+			}
+			.arrow-accordion {
+				margin-left: $margin-left-auto;
+				color: color("indigo", "base");
+				font-size: 31px;
+				margin-right: $zero;
+				transition: $transiton;
 			}
 			li.active {
 				.material-icons.arrow-accordion {
@@ -84,68 +84,23 @@
 			.collapsible-body {
 				padding: $zero;
 				border-bottom: $border-radius-thirty;
-				.introduction-row {
-					@include flexbox();
-					@include flex-wrap($wrap);
-					font-size: $font-size-fifteen;
-					color: color("grey", "darken-2");
-					padding: 0.95rem 2rem 0.95rem 1.8rem;
-					border-left: 7px solid color("shades", "transparent");
-					min-height: 50.75px;
-					position: $position-relative;
-
-					&:hover {
-						background: color("grey", "lighten-4");
-
-						.edit-btns {
-							opacity: 1;
-							visibility: $visibilty-visible;
-						}
-					}
-					.dropdown-content {
-						top: 32px !important;
-						height: auto !important;
-						right: -11px !important;
-						left: auto !important;
-						min-width: 230px;
-						padding: 21px 0 0;
-						li {
-							min-height: auto;
-							&:hover {
-								background: color("shades", "transparent");
-							}
-							a {
-								font-size: $font-size-fourteen;
-								line-height: $line-height-normal;
-								padding: 0 25px 21px;
-								color: color("grey", "darken-4");
-								@include flexbox();
-								@include flex-wrap($wrap);
-								align-items: $align-items-center;
-								.switch {
-									margin-left: $margin-left-auto;
-								}
-							}
-						}
-						.divider {
-							background-color: color("grey", "lighten-5");
-							margin-bottom: 20px;
-						}
-					}
-				}
-
 				.active {
 					font-weight: $font-weight-600;
-					border-left: 7px solid color("indigo", "base");
+					//border-left: 7px solid color("indigo", "base");
 					color: color("grey", "darken-4");
+					@include relative;
+					&:before {
+						content: "";
+						width: 0.4375rem;
+						height: $height-hundred-per;
+						@include absolute(top 0 left 0);
+						background: color("indigo", "base");
+					}
 				}
 				.pdf-icon {
-					background: url(../images/common-icons.svg) no-repeat -169px -346px;
-					width: 1.3rem;
-					height: 1.6rem;
-					margin-right: 1rem;
-					display: $display-inline-block;
-					vertical-align: $verticle-align-middle;
+					@include icon(21px, 25px, (null));
+					background-position: -169px -346px;
+					margin-right: 1.2rem;
 				}
 				.download-icon {
 					background: url(../images/common-icons.svg) no-repeat -242px -346px;
@@ -156,40 +111,85 @@
 					vertical-align: $verticle-align-middle;
 				}
 			}
-			.edit-btns {
-				margin-left: $margin-left-auto;
-				@include flexbox();
-				@include flex-wrap($wrap);
-				position: $position-relative;
-				align-items: $align-items-center;
-				opacity: $zero;
-				visibility: $visibilty-hidden;
-				.edit-btn {
-					background: url(../images/common-icons.svg) no-repeat -382px -346px;
-					width: 1.2rem;
-					height: 1.6rem;
-					margin-left: 0.8rem;
-					display: $display-inline-block;
-					vertical-align: $verticle-align-middle;
+		
+		
+		}
+		.introduction-row {
+			@include flexbox();
+			@include flex-wrap($wrap);
+			font-size: $font-size-fifteen;
+			color: color("grey", "darken-2");
+			padding: 0.95rem 2rem 0.95rem 1.8rem;
+			//border-left: 7px solid color("shades", "transparent");
+			min-height: 50.75px;
+			position: $position-relative;
+
+			&:hover {
+				background: color("grey", "lighten-4");
+
+				.edit-btns {
+					opacity: 1;
+					visibility: $visibilty-visible;
 				}
-				.dot-btn {
-					background: url(../images/common-icons.svg) no-repeat -23px -423px;
-					width: 18px;
-					height: 18px;
-					margin-left: 1rem;
-					display: $display-inline-block;
-					vertical-align: $verticle-align-middle;
-					position: $position-relative;
-					&:hover:after {
-						position: $position-absolute;
-						content: "";
-						border-radius: $border-radius-thirty;
-						background: #efeff3 url(../images/common-icons.svg) no-repeat -82px -416px;
-						top: -7px;
-						left: -6px;
-						width: 30px;
-						height: 30px;
+			}
+			.dropdown-content {
+				top: 32px !important;
+				height: auto !important;
+				right: -11px !important;
+				left: auto !important;
+				min-width: 230px;
+				padding: 21px 0 0;
+				li {
+					min-height: auto;
+					&:hover {
+						background: color("shades", "transparent");
 					}
+				}
+				a {
+					font-size: $font-size-fourteen;
+					line-height: $line-height-normal;
+					padding: 0 25px 21px;
+					color: color("grey", "darken-4");
+					@include flexbox();
+					@include flex-wrap($wrap);
+					align-items: $align-items-center;
+					.switch {
+						margin-left: $margin-left-auto;
+					}
+				}
+				.divider {
+					background-color: color("grey", "lighten-5");
+					margin-bottom: 20px;
+				}
+			}
+		}
+		.edit-btns {
+			margin-left: $margin-left-auto;
+			@include flexbox();
+			@include flex-wrap($wrap);
+			position: $position-relative;
+			align-items: $align-items-center;
+			opacity: $zero;
+			visibility: $visibilty-hidden;
+			.edit-btn {
+				@include icon(20px, 26px, (false));
+				background-position: -382px -346px;
+				vertical-align: $verticle-align-middle;
+			}
+			.dot-btn {
+				@include icon(18px, 18px, (false));
+				background-position: -23px -423px;
+				margin-left: 1rem;
+				@include relative;
+				&:hover:after {
+					position: $position-absolute;
+					content: "";
+					border-radius: $border-radius-thirty;
+					background: #efeff3 url(../images/common-icons.svg) no-repeat -82px -416px;
+					top: -7px;
+					left: -6px;
+					width: 30px;
+					height: 30px;
 				}
 			}
 		}
@@ -203,11 +203,8 @@
 	max-height: inherit;
 	overflow: inherit;
 	.share-icon {
-		background: url(../images/common-icons.svg) no-repeat -167px -192px;
-		width: 1.5rem;
-		height: 1.85rem;
-		margin-right: 11px;
-		display: $display-inline-block;
+		@include icon(24px, 30px, (false));
+		background-position: -167px -192px;
 	}
 	.common-default-search {
 		max-width: 16.5rem;
@@ -253,6 +250,7 @@
 		border: 1px dashed color("grey", "lighten-3");
 		padding: 2.8rem 2.5rem;
 		margin: 2.1rem 0 0;
+		
 		p {
 			color: $recipentlabelColor;
 			line-height: $line-height-twenty;
@@ -260,12 +258,14 @@
 			font-weight: $font-weight-normal;
 			text-align: $text-center;
 			margin: $zero;
+
 			span {
 				text-decoration: $text-decoration-underline;
 				color: color("indigo", "base");
 			}
 			a {
 				color: color("indigo", "base");
+				text-decoration: $text-decoration-underline;
 			}
 		}
 		input[type="file"] {
@@ -367,40 +367,33 @@
 		}
 		.folder {
 			content: "";
-			display: $display-inline-block;
-			width: 22px;
-			height: 20px;
-			background: url(../images/common-icons.svg) no-repeat -242px -199px;
+			@include icon(22px, 20px, (false));
+			background-position: -242px -199px;
 			margin-right: 0.9375rem;
 		}
 
 		.file-icon {
-			content: "";
-			display: $display-inline-block;
-			width: 16px;
-			height: 20px;
-			background: url(../images/common-icons.svg) no-repeat -382px -196px;
+			@include icon(16px, 20px, (false));
+			background-position: -382px -196px;
 			margin-right: 0.9375rem;
 		}
 	}
 	.rotate-arrow {
 		.arrow {
 			&:before {
-				transform: rotate(90deg);
+				@include transform(rotate(90deg));
 			}
 		}
 	}
 	.arrow.arrowDown:before {
-		transform: rotate(90deg);
+		@include transform(rotate(90deg));
 	}
 }
 .scroll-tab-arrow {
 	width: 11rem;
 	height: 3.4rem;
 	background: linear-gradient(to left, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
-	position: $position-absolute;
-	top: $zero;
-	right: 0;
+	@include absolute(top 0 right 0);
 	padding-right: 30px;
 	@include flexbox();
 	justify-content: flex-end;
@@ -409,9 +402,7 @@
 	width: 2.5rem;
 	height: 2.5rem;
 	background: url(../images/common-icons.svg) no-repeat -84px -259px;
-	position: $position-relative;
-	right: $zero;
-	top: 6px;
+	@include relative(top 6px right 0);
 	@include flexbox();
 	align-items: $align-items-center;
 }
@@ -421,10 +412,8 @@
 }
 .template-icon {
 	content: "";
-	display: $display-inline-block;
-	width: 22px;
-	height: 20px;
-	background: url(../images/common-icons.svg) no-repeat -166px -266px;
+	@include icon(22px, 20px, (false));
+	background-position: -166px -266px;
 	margin-right: 0.9375rem;
 }
 .templates {
@@ -447,7 +436,7 @@
 				&:hover,
 				&:active {
 					background: $hoverColor;
-					font-weight: $font-weight-500;
+					@include font-weight(medium);
 				}
 			}
 		}
@@ -475,10 +464,8 @@
 
 	.file-icon {
 		content: "";
-		display: $display-inline-block;
-		width: 22px;
-		height: 20px;
-		background: url(../images/common-icons.svg) no-repeat -245px -266px;
+		@include icon(22px, 20px, (false));
+		background-position: -245px -266px;
 		margin-right: 0.9375rem;
 	}
 	.add-filesname-row {
@@ -567,10 +554,8 @@
 		@include flexbox();
 		align-items: $align-items-center;
 		.edit-icon {
-			width: 1.2rem;
-			height: 1.2rem;
-			background: url(../images/common-icons.svg) no-repeat -26px -348px;
-			margin-right: 0.75rem;
+			@include icon(20px, 20px, (false));
+			background-position: -26px -348px;
 		}
 	}
 }
@@ -590,14 +575,13 @@
 		height: 100%;
 	}
 	.content {
-		height: 100%;
+		@extend .page-content;
+		//height: 100%;
 	}
 	.demo {
-		height: 100%;
+		@extend .page-content;
+		// height: 100%;
 	}
-	// .scroll-wrapper{
-	//     max-height: 100% !important;
-	// }
 	.word-search {
 		background: rgba(247, 186, 15, 0.39);
 		padding: 0 4px;
@@ -608,10 +592,8 @@
 #add-section {
 	max-width: 737px;
 	.book-icon {
-		background: url(../images/common-icons.svg) no-repeat -167px -416px;
-		width: 1.5rem;
-		height: 1.85rem;
-		margin-right: 11px;
+		@include icon(24px, 30px, (false));
+		background-position: -167px -416px;
 	}
 	.modal-header {
 		padding: 2.3rem 1.875rem 2.1rem 3.5rem;
@@ -668,11 +650,8 @@
 	max-width: 737px;
 	max-height: 90%;
 	.share-icon {
-		background: url(../images/common-icons.svg) no-repeat -245px -412px;
-		width: 1.5rem;
-		height: 1.85rem;
-		margin-right: 11px;
-		display: $display-inline-block;
+		@include icon(24px, 30px, (false));
+		background-position: -245px -412px;
 	}
 	.modal-header {
 		padding: 2.3rem 1.875rem 2.1rem 3.5rem;
@@ -694,9 +673,8 @@
 			text-align: $text-center;
 			text-transform: $text-uppercase;
 			color: color("grey", "darken-1");
-			font-size: $font-size-fourteen;
-			font-weight: $font-weight-500;
-			line-height: $line-height-twentyfour;
+			@include font-rem(14px, 24px);
+			@include font-weight(medium);
 			margin-bottom: 0.7rem;
 			letter-spacing: 0.291667px;
 		}
@@ -707,14 +685,12 @@
 			margin-bottom: 16px;
 			height: 55px;
 			input[type="submit"] {
-				position: $position-absolute;
-				right: -1px;
-				top: -1px;
+				@include absolute(top -1px right -1px);
 				max-width: 150px;
 				width: $full-width;
 				border: $border-none;
 				height: 55px;
-				border-radius: 0 30px 30px 0;
+				@include border-radius(0 30px 30px 0);
 				background: color("indigo", "base");
 				color: color("shades", "white");
 				text-transform: $text-uppercase;
@@ -874,11 +850,8 @@
 		margin-bottom: 1.9rem;
 	}
 	.share-icon {
-		background: url(../images/common-icons.svg) no-repeat -320px -411px;
-		width: 1.5rem;
-		height: 1.85rem;
-		margin-right: 11px;
-		display: $display-inline-block;
+		@include icon(24px, 30px, (false));
+		background-position: -320px -411px;
 	}
 	.tabs {
 		.tab {
@@ -1041,22 +1014,20 @@
 					opacity: 0.35;
 				}
 				.powerdcomment-icon {
-					background: url(../images/common-icons.svg) no-repeat -93px -1062px;
-					width: 1.5rem;
-					height: 1.5rem;
-					margin-right: 7px;
+					@include icon(24px, 24px, (false));
+					background-position: -93px -1062px;
 				}
 				.powerdupload-icon {
 					@extend .powerdcomment-icon;
-					background: url(../images/common-icons.svg) no-repeat -169px -1061px;
+					background-position:-169px -1061px;
 				}
 				.powerdprint-icon {
 					@extend .powerdcomment-icon;
-					background: url(../images/common-icons.svg) no-repeat -242px -1063px;
+					background-position:-242px -1063px;
 				}
 				.powerdshare-icon {
 					@extend .powerdcomment-icon;
-					background: url(../images/common-icons.svg) no-repeat -322px -1063px;
+					background-position:-322px -1063px;
 				}
 			}
 		}
@@ -1138,15 +1109,12 @@
 	font-weight: $font-weight-500;
 	color: color("grey", "darken-4");
 	.tabel-book {
-		background: url(../images/common-icons.svg) no-repeat -388px -1063px;
-		width: 1.5rem;
-		height: 1.5rem;
-		margin-right: 7px;
+		@include icon(24px, 24px, (false));
+		background-position: -388px -1063px;
 	}
 	.toggle-back-arrow {
-		background: url(../images/common-icons.svg) no-repeat -23px -1152px;
-		width: 2.2rem;
-		height: 1.8rem;
+		@include icon(36px, 30px, (null));
+		background-position: -23px -1152px;
 		margin-left: $margin-left-auto;
 	}
 }
@@ -1161,12 +1129,11 @@
 	background: color("indigo", "base");
 	color: color("shades", "white");
 	@include margin-padding(all, null null, all, 36px 1px 0);
-	transition: $transiton;
+	@include transition(all 0.5s);
 	cursor: $cursor-pointer;
 	.toggle-back-arrow {
-		background: url(../images/common-icons.svg) no-repeat -82px -1158px;
-		width: 2.2rem;
-		height: 2rem;
+		@include icon(36px, 32px, (null));
+		background-position: -82px -1158px;
 		margin-left: $margin-left-auto;
 		@include absolute(top 8px right 6px);
 	}
@@ -1175,8 +1142,8 @@
 	right: 2px;
 }
 .creating-perposal-rightpanel.perposal-postion-right.creating-perposal-rightpanelmove {
-	right: 0;
-	position: relative;
+	right: $zero;
+	@include relative;
 	margin-right: $zero;
 	box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.15);
 }
@@ -1187,21 +1154,19 @@
 	@include margin-padding(all, 0 -900px 0 0, all, null);
 }
 .excel-icon {
-	background: url(../images/common-icons.svg) no-repeat -167px -741px;
-	width: 1.5rem;
-	height: 1.5rem;
-	margin: 0 7px 0 0;
+	@include icon(25px, 25px, (false));
+	background-position: -167px -741px;
+	margin-right: 1rem;
 }
-.powerPointIcon {
+.power-point-icon {
 	@extend .excel-icon;
-	background: url(../images/common-icons.svg) no-repeat -241px -740px;
+	background-position: -241px -740px;
 	height: 1.7rem;
+	margin-right: 1rem;
 }
 .word-icon {
-	background: url(../images/common-icons.svg) no-repeat -93px -740px;
-	width: 2rem;
-	height: 1.8rem;
-	margin: 0 7px 0 0;
+	@include icon(32px, 30px, (false));
+	background-position: -167px -741px;
 }
 .sign-img {
 	@include absolute(top 10px left -95px right 0);
@@ -1213,10 +1178,8 @@
 	max-width: 737px;
 	max-height: 100%;
 	.signature-icon {
-		background: url(../images/common-icons.svg) no-repeat -168px -1154px;
-		width: 1.7rem;
-		height: 1.4rem;
-		margin-right: 9px;
+		@include icon(26px, 20px, (false));
+		background-position: -167px -741px;
 	}
 	.modal-header {
 		@include margin-padding(all, null null, all, 1.875rem 3.125rem 1.3rem 4rem);
@@ -1283,14 +1246,12 @@
 			}
 		}
 		.type-icon {
-			background: url(../images/common-icons.svg) no-repeat -243px -1152px;
-			width: 1.4rem;
-			height: 1.4rem;
-			margin-right: 5px;
+			@include icon(20px, 20px, (false));
+			background-position: -243px -1152px;
 		}
 		.draw-icon {
 			@extend .type-icon;
-			background: url(../images/common-icons.svg) no-repeat -323px -1152px;
+			background-position:-323px -1152px;
 		}
 		.clickto-sign {
 			height: 113px;
@@ -1325,11 +1286,9 @@
 .mt-20 {
 	@include margin-padding(all, 20px 0 0 0 !important, all, null);
 }
-.checkIcon {
-	background: url(../images/common-icons.svg) no-repeat -387px -1148px;
-	width: 1.7rem;
-	height: 1.6rem;
-	margin-left: 9px;
+.check-icon {
+	@include icon(25px, 23px, (true));
+	background-position: -387px -1148px;
 }
 .introduction-row.active {
 	background: color("grey", "lighten-4");
@@ -1410,23 +1369,21 @@
 		}
 	}
 	.email-icon {
-		width: 1.3rem;
-		height: 1.25rem;
-		background: url(../images/common-icons.svg) no-repeat -382px -412px;
+		@include icon(20px, 18px, (false));
+		background-position: -382px -412px;
 		margin-right: 0.9375rem;
-		display: $display-inline-block;
 	}
 	.phone-icon {
 		@extend .email-icon;
-		background: url(../images/common-icons.svg) no-repeat -26px -500px;
+		background-position: -26px -500px;
 	}
 	.mobile-icon {
 		@extend .email-icon;
-		background: url(../images/common-icons.svg) no-repeat -93px -497px;
+		background-position:-93px -497px;
 	}
 	.linkedIn-icon {
 		@extend .email-icon;
-		background: url(../images/common-icons.svg) no-repeat -30px -1231px;
+		background-position: -30px -1231px;
 	}
 }
 .proposal-trial {
@@ -1473,10 +1430,8 @@
 			letter-spacing: $zero;
 		}
 		.viewer-back-arrow {
-			display: $display-inline-block;
-			width: 1.3rem;
-			height: 1.25rem;
-			background: url(../images/common-icons.svg) no-repeat -92px -1231px;
+			@include icon(19px, 18px, (false));
+			background-position: -92px -1231px;
 			@include margin-padding(all, 0 1.375rem 0 0, all, 0);
 		}
 	}
@@ -1493,7 +1448,7 @@
 		letter-spacing: normal;
 	}
 
-	.printContentSaveHead {
+	.print-content-savehead {
 		width: $full-width;
 		@include margin-padding(all, 8px 0 0 0, all, null);
 		.selectCheck {
@@ -1502,7 +1457,7 @@
 			@include flex-wrap($wrap);
 		}
 	}
-	.selectAll {
+	.select-all {
 		span {
 			color: color("grey", "darken-4");
 			@include font-rem(13px);
@@ -1510,7 +1465,7 @@
 			text-transform: $text-uppercase;
 		}
 	}
-	.saveSelect {
+	.save-select {
 		@include flexbox();
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
@@ -1523,32 +1478,26 @@
 			@include margin-padding(all, 0, all, null);
 		}
 	}
-	.saveIcon {
-		width: 1.3rem;
-		height: 1.6rem;
-		background: url(../images/common-icons.svg) no-repeat -245px -1227px;
-		margin-right: 0.6875rem;
+	.save-icon {
+		@include icon(19px, 23px, (false));
+		background-position: -245px -1227px;
 	}
 	.savedropdown-icon {
-		width: 2.9rem;
-		height: 2.9rem;
-		background: url(../images/common-icons.svg) no-repeat -311px -334px;
-		margin-left: 0.6875rem;
+		@include icon(41px, 41px, (true));
+		background-position: -311px -334px;
 		border-radius: 100%;
 		&:hover {
 			background: #efeff3 url(../images/common-icons.svg) no-repeat -311px -334px;
 		}
 	}
-	.docSaveRow {
+	.doc-save-row {
 		@include flexbox();
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
 		@include margin-padding(all, 0 0 10px 0, all, 8px 0);
 		.pdf-icon {
-			width: 1.3rem;
-			height: 1.6rem;
-			background: url(../images/common-icons.svg) no-repeat -169px -346px;
-			margin-right: 0.8125rem;
+			@include icon(19px, 23px, (false));
+			background-position: -169px -346px;
 		}
 		p {
 			color: color("grey", "darken-2");
@@ -1556,9 +1505,8 @@
 			@include margin-padding(all, 0, all, null);
 		}
 		.eye-icon {
-			width: 2.9rem;
-			height: 1.6rem;
-			background: url(../images/common-icons.svg) no-repeat -158px -575px;
+			@include icon(41px, 23px, (null));
+			background-position: -158px -575px;
 			margin-left: $margin-left-auto;
 		}
 		.check {
@@ -1569,15 +1517,12 @@
 		padding-left: 33px;
 	}
 	.download-icon {
-		width: 1.3rem;
-		height: 1.6rem;
-		background: url(../images/common-icons.svg) no-repeat -324px -1227px;
-		margin-right: 0.8125rem;
-		display: $display-inline-block;
+		@include icon(19px, 23px, (false));
+		background-position: -324px -1227px;
 	}
 	.print-icon {
 		@extend .download-icon;
-		background: url(../images/common-icons.svg) no-repeat -391px -1227px;
+		background-position: -391px -1227px;
 	}
 
 	.collapsible {
@@ -1605,14 +1550,14 @@
 				@include font-weight(medium);
 				text-transform: $text-capitalize;
 			}
-			.fileCount {
+			.file-count {
 				@include font-rem(14px, 24px);
 				color: color("grey", "darken-1");
 				@include margin-padding(all, 0 0 0 5px, all, null);
 				@include font-weight(normal);
 			}
 
-			.collapseTopRow {
+			.collapse-top-row {
 				width: $full-width;
 				@include flexbox();
 				align-items: $align-items-center;
@@ -1624,7 +1569,6 @@
 			@include flexbox();
 			align-items: $align-items-center;
 			@include flex-wrap($wrap);
-
 			.material-icons {
 				width: 40px;
 				color: color("indigo", "base");
@@ -1634,23 +1578,21 @@
 			}
 		}
 		.file-icon {
-			display: $display-inline-block;
-			width: 1.3rem;
-			height: 1.6rem;
-			background: url(../images/common-icons.svg) no-repeat -172px -1227px;
+			@include icon(19px, 23px, (false));
+			background-position: -172px -1227px;
 			margin-right: 1rem;
 		}
 		.collapsible-body {
 			@include margin-padding(all, null, all, 0);
 			border: $none;
 			width: $full-width;
-			.printDropdownContent {
+			.print-dropdown-content {
 				min-width: 192px;
 				@include margin-padding(all, null, all, 28px 34px 27px 30px !important);
 				li {
 					color: color("grey", "darken-4");
 					@include font-rem(14px, 20px);
-					min-height: auto;
+					min-height: $auto;
 					@include margin-padding(all, 0 0 25px 0, all, 0);
 					text-transform: $text-capitalize;
 					@include font-weight(normal);
@@ -1673,7 +1615,7 @@
 		}
 	}
 }
-.saveBorder {
+.save-border {
 	height: 1px;
 	border-bottom: 1px solid color("grey", "lighten-3");
 	@include margin-padding(all, 12px 0 20px, all, null);
@@ -1689,10 +1631,10 @@
 .outer-scroll-viewer .scrollbar-inner > .scroll-element.scroll-y {
 	right: 7px;
 }
-.viewer-sidebar-common.viewerSidebarOpen {
+.viewer-sidebar-common.viewer-sidebar-open {
 	left: $zero;
 }
-.commentBox {
+.comment-box {
 	border-bottom: 1px solid color("grey", "lighten-3");
 	@include margin-padding(all, null, all, 19px 41px 19px 30px);
 	textarea {
@@ -1731,10 +1673,8 @@
 			@include font-weight(semi-bold);
 		}
 		.comment-icon {
-			background: url(../images/common-icons.svg) no-repeat -320px -411px;
-			width: 1.5rem;
-			height: 1.85rem;
-			margin-right: 11px;
+			@include icon(21px, 26px, (false));
+			background-position: -320px -411px;
 		}
 	}
 	.comment-row {
@@ -1777,10 +1717,8 @@
 		border-bottom: 1px solid #f2f3f3;
 		@include margin-padding(all, null, all, 0 51px 13px 30px);
 		.attachement-icon {
-			background: url(../images/common-icons.svg) no-repeat -30px -1308px;
-			width: 1.3rem;
-			height: 1.6rem;
-			margin-right: 11px;
+			@include icon(19px, 23px, (false));
+			background-position: -30px -1308px;
 		}
 		h5 {
 			color: color("grey", "darken-4");
@@ -1818,9 +1756,8 @@
 		@include flex-wrap($wrap);
 		@include margin-padding(all, 8px 0, all, null);
 		.file-icon {
-			width: 1.3rem;
-			height: 1.6rem;
-			background: url(../images/common-icons.svg) no-repeat -172px -1227px;
+			@include icon(19px, 23px, (false));
+			background-position: -172px -1227px;
 			margin-right: 1rem;
 		}
 		h5 {
@@ -1887,19 +1824,17 @@
 
 /* Share Viewer Sidebar start here */
 
-.shareProposal {
-	.sharePerposalHeader {
+.share-proposal {
+	.share-perposal-header {
 		@include flexbox();
 		align-items: $align-items-center;
 		@include flex-wrap($wrap);
 		border-bottom: 1px solid #f2f3f3;
 		@include margin-padding(all, null, all, 0 51px 13px 30px);
 		.share-icon {
-			background: url(../images/common-icons.svg) no-repeat -245px -412px;
-			width: 1.6rem;
-			height: 1.6rem;
+			@include icon(23px, 23px, (null));
+			background-position: -245px -412px;
 			margin-right: 11px;
-			display: $display-inline-block;
 		}
 		h5 {
 			color: color("grey", "darken-4");
@@ -1908,15 +1843,15 @@
 			@include font-weight(medium);
 		}
 	}
-	.shareEmail {
-		.toSenderRow {
+	.share-email {
+		.to-sender-row {
 			@include flexbox();
 			align-items: $align-items-center;
 			@include flex-wrap($wrap);
 			border-bottom: 1px solid #f2f3f3;
 			@include margin-padding(all, null, all, 6px 51px 6px 30px);
 		}
-		.toSend {
+		.to-send {
 			width: $width-auto;
 			flex: 1;
 			border: $none;
@@ -1930,13 +1865,13 @@
 				border: $none !important;
 			}
 		}
-		.toText {
+		.to-text {
 			@include font-rem(14px, 24px);
 			color: color("blue-grey", "darken-1");
 			@include margin-padding(all, 0 20px 0 0, all, null);
 		}
 	}
-	.writeMsg {
+	.write-msg {
 		border-bottom: 1px solid color("blue-grey", "lighten-5");
 		@include margin-padding(all, null, all, 19px 41px 19px 30px);
 		textarea {
@@ -2051,18 +1986,16 @@
 		@include margin-padding(all, null, all, 16px 0);
 	}
 	.prev-icon {
-		background: url(../images/common-icons.svg) no-repeat -91px -1158px;
-		width: 1.5rem;
-		height: 1.5rem;
+		@include icon(21px, 21px, (null));
+		background-position: -91px -1158px;
 		margin-right: 1rem;
 	}
 	.next-section {
 		background: color("indigo", "base");
 	}
 	.next-icon {
-		background: url(../images/common-icons.svg) no-repeat -91px -1306px;
-		width: 1.5rem;
-		height: 1.5rem;
+		@include icon(21px, 21px, (null));
+		background-position: -91px -1306px;
 		margin-left: 1rem;
 	}
 }

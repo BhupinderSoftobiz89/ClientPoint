@@ -9,7 +9,7 @@
 		}
 	}
 	.anaytics-overview-row {
-		border-radius: 5px;
+		@include border-radius(5px);
 		border: 1px solid color("grey", "lighten-5");
 		margin-bottom: 15px;
 		.anaytics-overview-header {
@@ -34,13 +34,13 @@
 			}
 		}
 		.anaytics-overview-content {
-			padding: 0 1.375rem 1.3125rem 1.75rem;
+			@include margin-padding(all, null, all, 0 1.375rem 1.3125rem 1.75rem);
 			position: $position-relative;
 			h4 {
 				font-weight: $font-weight-500;
 				color: color("grey", "darken-4");
 				line-height: $line-height-twentyfour;
-				margin: 0 0 15px 0;
+				@include margin-padding(all, 0 0 1rem 0, all, null);
 			}
 			p {
 				color: color("blue-grey", "darken-1");
@@ -62,39 +62,36 @@
 			align-items: $align-items-center;
 			justify-content: $justifycenter;
 			border-top: 1px solid color("grey", "lighten-5");
-
-			.anaytics-overview-col {
-				max-width: 33.33%;
-				flex: 0 0 33.33%;
-				@include flexbox();
-				align-items: $align-items-center;
-				justify-content: $justifycenter;
-				border-right: 1px solid color("grey", "lighten-5");
-				background: color("shades", "white");
-				padding: 5px;
-				&:last-child {
-					border-right: $none;
-				}
-				h6 {
-					margin: $zero;
-					color: color("grey", "darken-4");
-					line-height: $line-height-twentyfour;
-				}
-				.email-icon,
-				.phone-icon,
-				.mobile-icon {
-					width: 1.25rem;
-					height: 1.25rem;
-					background: url(../images/common-icons.svg) no-repeat -382px -412px;
-					margin-right: 0.6rem;
-				}
-				.phone-icon {
-					background: url(../images/common-icons.svg) no-repeat -26px -500px;
-				}
-				.mobile-icon {
-					background: url(../images/common-icons.svg) no-repeat -90px -497px;
-				}
-			}
+		}
+	}
+	.anaytics-overview-col {
+		max-width: 33.33%;
+		flex: 0 0 33.33%;
+		@include flexbox();
+		align-items: $align-items-center;
+		justify-content: $justifycenter;
+		border-right: 1px solid color("grey", "lighten-5");
+		background: color("shades", "white");
+		padding: 5px;
+		&:last-child {
+			border-right: $none;
+		}
+		h6 {
+			margin: $zero;
+			color: color("grey", "darken-4");
+			line-height: $line-height-twentyfour;
+		}
+		.email-icon {
+			@include icon(20px, 20px, (false));
+			background-position: -382px -412px;
+		}
+		.phone-icon {
+			@extend .email-icon;
+			background: url(../images/common-icons.svg) no-repeat -26px -500px;
+		}
+		.mobile-icon {
+			@extend .email-icon;
+			background: url(../images/common-icons.svg) no-repeat -90px -497px;
 		}
 	}
 	.border-row {
@@ -127,10 +124,8 @@
 		@include inlineflex();
 		align-items: $align-items-center;
 		.reply-arrow {
-			background: url(../images/common-icons.svg) no-repeat -170px -500px;
-			width: 1rem;
-			height: 1rem;
-			margin-left: 0.6rem;
+			@include icon(16px, 16px, (true));
+			background-position: -170px -500px;
 		}
 	}
 }
@@ -141,7 +136,7 @@
 		// box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
 	
 			li {
-				border-radius: $border-radius-5;
+				@include border-radius(5px);
 				background: color("shades", "white");
 				box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
 				margin-bottom: 1.375rem;
@@ -187,7 +182,7 @@
 			}
 			h6 {
 				font-size: 13px;
-				font-weight: $font-weight-600;
+				@include font-weight(bold);
 				text-transform: $text-uppercase;
 				line-height: $line-height-twentyfour;
 				margin: $zero;
@@ -251,7 +246,7 @@
 	}
 	.top-file-viewed {
 		border-top: 1px solid color("grey", "lighten-5");
-		padding: 1.75rem 2rem;
+		@include margin-padding(all, null, all, 1.75rem 2rem);
 		h6 {
 			text-transform: $text-uppercase;
 			font-weight: $font-weight-600;
@@ -279,7 +274,7 @@
 				font-size: 1.9rem;
 				margin-left: $margin-left-auto;
 				line-height: $line-height-twentyfour;
-				transition: $transiton;
+				@include transition(all 0.5s);
 			}
 		}
 		.pdf-icon {
@@ -327,10 +322,8 @@
 		margin: $zero;
 	}
 	.filter-icon {
-		background: url(../images/common-icons.svg) no-repeat -324px -496px;
-		width: 1.2rem;
-		height: 1.2rem;
-		@include margin-padding(all, 0 0.6rem 0 0, all, null);
+		@include icon(20px, 20px, (false));
+		background-position: -324px -496px;
 	}
 	.type {
 		@include margin-padding(all, 0 1.25rem 0 0.625rem, all, null);
@@ -479,10 +472,8 @@
 					color: color("grey", "darken-4");
 				}
 				.calender-date-icon {
-					background: url(../images/common-icons.svg) no-repeat -239px -573px;
-					width: 29px;
-					height: 27px;
-					margin-right: 0.6rem;
+					@include icon(20px, 20px, (false));
+					background-position: -239px -573px;
 					&:focus {
 						background: #fafafb url(../images/common-icons.svg) no-repeat -239px -491px;
 					}
@@ -588,10 +579,8 @@
 	.phone-contact,
 	.mobile-contact,
 	.linkedIn-contact {
-		background: url(../images/common-icons.svg) no-repeat -383px -492px;
-		width: 1.55rem;
-		height: 1.55em;
-		margin-right: 0.625rem;
+		@include icon(25px, 25px, (true));
+		background-position: -383px -492px;
 	}
 	.mobile-contact {
 		background-position: -26px -575px;
@@ -724,10 +713,8 @@
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
 		.pdf-icon {
-			background: url(../images/common-icons.svg) no-repeat -168px -345px;
-			width: 1.3rem;
-			height: 1.55em;
-			margin-right: 0.625rem;
+			@include icon(21px, 25px, (false));
+			background-position: -168px -345px;
 		}
 		h5 {
 			margin: $zero;
@@ -777,20 +764,13 @@
 				color: color("blue-grey", "darken-1");
 				@include margin-padding(all, null, all, 0 10px);
 				white-space: $white-spacenowrap;
-				.eye-icon {
-					background: url(../images/common-icons.svg) no-repeat -168px -577px;
-					width: 1.3rem;
-					height: 1.2em;
-					margin-left: 0.5rem;
-					display: $display-inline-block;
-					vertical-align: $verticle-align-middle;
-				}
+
 			}
 			.progress {
 				height: 7px;
 				background-color: #efeff3;
 				@include border-radius(0);
-				margin: 1rem 0 0 0;
+				@include margin-padding(all, 1rem 0 0 0, all, null);
 				.determinate {
 					background-color: #19e4b1;
 				}
@@ -801,6 +781,11 @@
 				display: $display-block;
 				color: color("blue-grey", "darken-1");
 			}
+		}
+		.eye-icon {
+			@include icon(21px, 20px, (true));
+			background-position: -168px -577px;
+			vertical-align: $verticle-align-middle;
 		}
 	}
 }
@@ -820,7 +805,7 @@
 	@include relative();
 
 	&:hover {
-		.editTitle {
+		.edit-title {
 			@include opacity(1);
 			visibility: $visibilty-visible;
 		}
@@ -848,7 +833,7 @@
 				box-shadow: $none;
 			}
 		}
-		.closeBtn {
+		.close-btn {
 			background: url(../images/common-icons.svg) no-repeat -384px -576px;
 			width: 1.5rem;
 			height: 1.5rem;
@@ -868,7 +853,7 @@
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
 
-	.editTitle {
+	.edit-title {
 		background: url(../images/common-icons.svg) no-repeat -320px -576px;
 		width: 1.5rem;
 		height: 1.5rem;
@@ -922,11 +907,8 @@
 .reply-modal-content {
 	max-width: 52.5rem;
 	.share-icon {
-		background: url(../images/common-icons.svg) no-repeat -88px -1523px;
-		width: 2rem;
-		height: 1.85rem;
-		margin-right: 11px;
-		display: $display-inline-block;
+		@include icon(32px, 30px, (false));
+		background-position: -88px -1523px;
 	}
 	.modal-content {
 		@include margin-padding(all, null, all, 0 3.125rem 1.3rem 3.125rem);
@@ -998,7 +980,7 @@
 		}
 	}
 	#dropdown-reply {
-		min-width: 14.5rem;
+		min-width: 16rem;
 		li {
 			border-bottom: 1px solid color("grey", "lighten-5");
 			&:hover {
@@ -1017,6 +999,8 @@
 			@include margin-padding(all, 0 0.625rem 0 0, all, null);
 		}
 		.user-info {
+			display: $display-block;
+			@include margin-padding(all, null, all, 0);
 			h6 {
 				@include font-rem(13px, 24px);
 				color: color("indigo", "base");
@@ -1026,7 +1010,7 @@
 			p {
 				@include font-rem(11px, 18px);
 				color: color("blue-grey", "darken-1");
-				@include margin-padding(all, 0, all, null);
+				@include margin-padding(all, 0, all, 0);
 			}
 		}
 	}

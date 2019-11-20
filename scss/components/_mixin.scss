@@ -1,16 +1,5 @@
 // Mixin Start here 
 
-
-// Border Radius Mixin
-
-// @mixin border-radius($top-left, $top-right, $bottom-right, $bottom-left){
-//     -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
-//        -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;
-//         -ms-border-radius: $top-left $top-right $bottom-right $bottom-left;
-//             border-radius: $top-left $top-right $bottom-right $bottom-left;  
-//   }
-
-
 // Gradient Mixin
 
 @mixin navGradient($args...) {
@@ -40,9 +29,9 @@
 }
 
 @mixin align-items-center($align-items-center) {
-  -webkit-transform: $align-items-center;
-  -ms-transform: $align-items-center;
-  transform: $align-items-center;
+  -webkit-align-items: $align-items-center;
+  -ms-align-items: $align-items-center;
+  align-items: $align-items-center;
 }
 
 @mixin flex-wrap($wrap) {
@@ -120,43 +109,13 @@
   }
 }
 
-// Clearfix Mixin
-
-%clearfix {
-  *zoom: 1;
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
-}
-
-
 // Pixels Mixin
-
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return $remSize * 1rem;
-}
 
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);
 }
 
-// // Width and Height Px to Rem
-
-// @function whPxtoRem($size) {
-//   $remSize: $size / 16px;
-//   @return $remSize * 1rem;
-// }
-
-// @mixin whPxtoRem($size) {
-//   font-size: $size;
-//   font-size: calculateRem($size);
-// }
 
 // Gradient Mixin
 
@@ -190,6 +149,12 @@
   margin: $margin;
   border: $border;
   padding: $padding;
+}
+
+@mixin common-properties($properties...) {
+  @include flexbox();
+  @include align-items-center($align-items-center);
+  @include flex-wrap($wrap);
 }
 
 // Opacity Mixin
@@ -486,9 +451,6 @@
 
 // Fluid Font Mixin
 
-@function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
-}
 
 @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
   $u1: unit($min-vw);
@@ -509,27 +471,24 @@
   }
 }
 
+// Icons for all page
+
+@mixin icon($width,$height, $icon: false) {
+  display: $display-inline-block;
+  width: $width;
+  width: ($width / $rem-base-font) * 1rem;
+  height: $height;
+  height: ($height / $rem-base-font) * 1rem;
+  background: url(../images/common-icons.svg) no-repeat 0 0;
+  @if $icon == true {
+    margin-left: 0.6rem;
+  } @else if $icon == false {
+    margin-right: 0.6rem;
+  } @else if $icon == null {
+    
+  }
+}
+
 // Usage
 
-// @include fluid-type($min_width, $max_width, $min_font, $max_font);
-
-// @mixin icon-radius($size, $radius: 0) {
-//   width: $size;
-//   height: $size;
-
-//   @if $radius != 0 {
-//     -moz-border-radius: $radius;
-//     -webkit-border-radius: $radius;
-//     -ms-border-radius: $radius;
-//     border-radius: $radius;
-//   }
-// }
-
-
-// Usage
-
-// .avatar {
-//   @include icon-radius(100px, $radius: 4px);
-// }
-
-
+// @include icon(10px, 10px, (true));

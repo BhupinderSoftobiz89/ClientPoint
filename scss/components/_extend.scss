@@ -61,3 +61,16 @@
     text-transform:$text-uppercase;
     color: color("grey", "darken-1");
 }
+
+// Clearfix Mixin
+
+%clearfix {
+    *zoom: 1;
+    &:before, &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }

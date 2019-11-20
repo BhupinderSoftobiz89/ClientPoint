@@ -350,12 +350,10 @@
 		align-items: $align-items-center;
 		justify-content: $justifycenter;
 		@include relative();
-		.fileImage {
-			background: url(../images/common-icons.svg) no-repeat -380px -1287px;
-			width: 2.8rem;
-			height: 2.8rem;
+		.file-image {
+			@include icon(39.5px, 39.5px, (null));
+			background-position:  -380px -1287px;
 			margin-right: 1rem;
-			display: $display-inline-block;
 		}
 		p {
 			@include font-rem(16px, 28px);

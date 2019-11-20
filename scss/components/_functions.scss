@@ -1,0 +1,14 @@
+
+// Fluid Font Function
+
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+  }
+  
+// Pixels Convertion
+
+  @function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+  }
+  

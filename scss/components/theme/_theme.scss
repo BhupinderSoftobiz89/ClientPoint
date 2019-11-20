@@ -43,39 +43,36 @@
 					margin-left: 15px;
 				}
 			}
-			.themebtns {
-				margin-left: $margin-left-auto;
-				@include flexbox();
-				@include flex-wrap($wrap);
-				align-items: $align-items-center;
-			}
-			.edit-btn {
-				@include flexbox();
-				@include flex-wrap($wrap);
-				align-items: $align-items-center;
-				text-transform: $text-uppercase;
-				font-size: $font-size-fourteen;
-				font-weight: $font-weight-600;
-				.edit-icon {
-					background: url(../images/common-icons.svg) no-repeat -246px -663px;
-					width: 1.125rem;
-					height: 1.4rem;
-					margin-right: 0.6rem;
-				}
-			}
-			.DuplicateBtn {
-				@include flexbox();
-				@include flex-wrap($wrap);
-				align-items: $align-items-center;
-				text-transform: $text-uppercase;
-				font-size: $font-size-fourteen;
-				font-weight: $font-weight-600;
-				.duplicate-icon {
-					background: url(../images/common-icons.svg) no-repeat -169px -663px;
-					width: 1.125rem;
-					height: 1.4rem;
-					margin-right: 0.6rem;
-				}
+		}
+		.themebtns {
+			margin-left: $margin-left-auto;
+			@include flexbox();
+			@include flex-wrap($wrap);
+			align-items: $align-items-center;
+		}
+		.edit-btn {
+			@include flexbox();
+			@include flex-wrap($wrap);
+			align-items: $align-items-center;
+			text-transform: $text-uppercase;
+			font-size: $font-size-fourteen;
+			font-weight: $font-weight-600;
+			
+		}
+		.edit-icon {
+			@include icon(15.8px, 20px, (false));
+			background-position: -246px -663px;
+		}
+		.duplicate-btn {
+			@include flexbox();
+			@include flex-wrap($wrap);
+			align-items: $align-items-center;
+			text-transform: $text-uppercase;
+			font-size: $font-size-fourteen;
+			font-weight: $font-weight-600;
+			.duplicate-icon {
+				@include icon(15.8px, 20px, (false));
+				background-position: -169px -663px;
 			}
 		}
 	}
@@ -176,7 +173,7 @@
 .p-0 {
 	padding: $zero !important;
 }
-.inputFileUpload {
+.input-file-upload {
 	width: 68px;
 	height: 20px;
 	position: $position-absolute;
@@ -193,10 +190,9 @@
 		cursor: pointer;
 	}
 }
-.backArrowNav {
-	background: url(../images/common-icons.svg) no-repeat -384px -662px;
-	width: 2.1rem;
-	height: 1.6rem;
+.back-arrow-nav {
+	@include icon(30px, 22.5px, (null));
+	background-position: -384px -662px;
 	margin-right: 1.2rem;
 }
 .theme-advanced-settings {
@@ -256,7 +252,7 @@
 		box-shadow: $none;
 		li.active {
 			.material-icons {
-				transform: rotate(180deg);
+				@include transform(rotate(180deg));
 			}
 		}
 	}

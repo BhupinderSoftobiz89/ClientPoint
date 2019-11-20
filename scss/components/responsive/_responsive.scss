@@ -747,7 +747,7 @@
 		.theme-list {
 			.theme-list-row {
 				.edit-btn,
-				.DuplicateBtn {
+				.duplicate-btn {
 					font-size: 0.9rem;
 					@include margin-padding(all, null, all, 0 0.4375rem);
 					height: 1.875rem;
@@ -902,7 +902,7 @@
 			}
 		}
 	} 
-	.tableOptions {
+	.table-options {
 		@include margin-padding(all, null, all, 2.3125rem 2rem);
 	}
 }
