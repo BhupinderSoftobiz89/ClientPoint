@@ -1,9 +1,8 @@
 /* Dashboard CSS start here */
-
 .this-week {
 	@include font-rem(14px, 24px);
 	color: color("grey", "darken-4");
-	text-transform: $text-capitalize;
+	text-transform: text-map("text-transform","capitalize");
 	@include font-weight(normal);
 	@include margin-padding(all, 0 0 0 auto, all, null);
 }
@@ -17,23 +16,23 @@
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
-		border-radius: $zero;
+		@include border-radius(0);
 		background-color: color("shades", "transparent");
 		border-bottom: 1px solid color("grey", "lighten-5");
 		padding: 19px 20px;
 		width: $full-width;
 		h5 {
 			color: color("grey", "darken-4");
-			font-size: $font-size-sixteen;
-			text-transform: $text-uppercase;
-			font-weight: $font-weight-600;
+			@include font-rem(16px);
+			text-transform: text-map("text-transform","uppercase");
+			@include font-weight(semi-bold);
 			@include margin-padding(all, 0 auto 0 0, all, null);
 		}
 		.material-icons {
 			margin-right: $zero;
 			color: color("indigo", "base");
 			font-size: 1.9rem;
-			transition: $transiton;
+			@include transition(all 0.5s);
 		}
 	}
 	.activity-list {
@@ -81,7 +80,7 @@
 		h4 {
 			@include font-rem(14px, 24px);
 			color: color("grey", "darken-4");
-			text-transform: $text-uppercase;
+			text-transform: text-map("text-transform","uppercase");
 			@include font-weight(bold);
 			@include margin-padding(all, 0 0 10px, all, 0 20px);
 		}
@@ -104,21 +103,21 @@
 				@include font-rem(12px, 24px);
 				color: color("grey", "darken-1");
 				@include font-weight(500);
-				text-transform: $text-uppercase;
-				letter-spacing: 0.25px;
+				text-transform: text-map("text-transform","uppercase");
+				 letter-spacing: 0.25px;
 			}
 		}
 		.dropdown-icon {
 			width: 30px;
 			height: 30px;
-			border-radius: $border-radius-thirty;
+			@include border-radius(30px);
 			@include flexbox();
 			align-items: $align-items-center;
 			justify-content: $justifycenter;
 			margin-right: $zero;
 			background: url(../images/common-icons.svg) no-repeat -315px -339px;
 			display: $display-inline-block;
-			vertical-align: $verticle-align-middle;
+			@include vertical-align(middle);
 			@include margin-padding(all, 0 0 0 auto, all, null);
 			&:hover,
 			&:focus,
@@ -128,7 +127,7 @@
 		}
 		.created-content {
 			h6 {
-				@include font-rem(16px, 24px);
+				@include font-rem(15px, 24px);
 				color: color("grey", "darken-4");
 				@include margin-padding(all, 0 0 10px, all, null);
 			}
@@ -146,7 +145,7 @@
 			@include font-rem(12px, 24px);
 			color: color("grey", "darken-1");
 			@include font-weight(500);
-			text-transform: $text-uppercase;
+			text-transform: text-map("text-transform","uppercase");
 			letter-spacing: 0.25px;
 		}
 		.badge {
@@ -256,7 +255,7 @@
 }
 .just-link {
 	// color:color('indigo','base');
-	text-decoration: $text-decoration-underline;
+	@include text-decoration(underline);
 	@include font-weight(medium);
 }
 .filter-expended {
@@ -290,7 +289,7 @@
 	.material-icons {
 		@include transform(rotate(180deg));
 		@include transition(all 0.5s);
-		vertical-align: $verticle-align-middle;
+		@include vertical-align(middle);
 	}
 }
 .filter-arrow-dropdown.active {
@@ -302,7 +301,7 @@
 	.filter-arrow-dropdown {
 		.material-icons {
 			height: 1.2rem;
-			vertical-align: $verticle-align-middle;
+			@include vertical-align(middle);
 		}
 	}
 	.activity-header {
@@ -326,7 +325,7 @@
 	max-width: 40.625rem;
 	width: $full-width;
 	@include margin-padding(all, 33px auto 0, all, null);
-	text-align: $text-center;
+	text-align:text-map("text-align","center");
 	p {
 		@include font-rem(14px, 22px);
 		color: color('blue-grey','darken-1');
@@ -334,7 +333,7 @@
 	}
 	.link {
 		color:color('indigo','base');
-		text-decoration: $text-decoration-underline;
+		text-decoration: text-map("text-decoration","underline");
 	}
 }
 

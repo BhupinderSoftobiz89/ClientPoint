@@ -11,15 +11,15 @@
 		}
 	}
 	.default {
-		font-size: 12px;
-		text-transform: $text-uppercase;
-		font-weight: $font-weight-600;
+		@include font-rem(12px);
+		text-transform: text-map("text-transform","uppercase");
+		@include font-weight(semi-bold);
 		color: color("grey", "base");
 		margin-left: 15px;
 	}
 }
 .theme-padding {
-	padding: 1.6rem 1.8125rem !important;
+	@include margin-padding(all, null, all, 1.5625rem !important);
 }
 .theme-content {
 	padding: 1.875rem 3.125rem;
@@ -29,23 +29,22 @@
 			@include flex-wrap($wrap);
 			align-items: $align-items-center;
 			border: 1px solid color("grey", "lighten-5");
-			padding: 1.5625rem;
+			@include margin-padding(all, null, all, 1.5625rem);
 			h5 {
-				margin: $zero;
-				font-size: $font-size-sixteen;
+				@include margin-padding(all, 0, all, null);
 				color: color("grey", "darken-3");
-				line-height: $line-height-twentyfour;
+				@include font-rem(16px, 24px);
 				span {
-					font-size: 12px;
-					text-transform: $text-uppercase;
-					font-weight: $font-weight-500;
+					@include font-rem(12px);
+					text-transform: text-map("text-transform","uppercase");
+					@include font-weight(medium);
 					color: color("grey", "base");
 					margin-left: 15px;
 				}
 			}
 		}
 		.themebtns {
-			margin-left: $margin-left-auto;
+			@include margin-direction(left);
 			@include flexbox();
 			@include flex-wrap($wrap);
 			align-items: $align-items-center;
@@ -54,9 +53,9 @@
 			@include flexbox();
 			@include flex-wrap($wrap);
 			align-items: $align-items-center;
-			text-transform: $text-uppercase;
-			font-size: $font-size-fourteen;
-			font-weight: $font-weight-600;
+			text-transform: text-map("text-transform","uppercase");
+			@include font-rem(14px);
+			@include font-weight(semi-bold);
 			
 		}
 		.edit-icon {
@@ -64,12 +63,7 @@
 			background-position: -246px -663px;
 		}
 		.duplicate-btn {
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
-			text-transform: $text-uppercase;
-			font-size: $font-size-fourteen;
-			font-weight: $font-weight-600;
+			@extend .edit-btn;
 			.duplicate-icon {
 				@include icon(15.8px, 20px, (false));
 				background-position: -169px -663px;
@@ -79,13 +73,13 @@
 }
 
 .cancel-btn {
-	font-weight: $font-weight-600;
-	padding: 0 25px;
+	@include font-weight(semi-bold);
+	@include margin-padding(all, null, all, 0 1.6875rem);
 }
 
 .theme-setting {
 	.collapsible {
-		margin: $zero;
+		@include margin-padding(all, 0, all, null);
 		box-shadow: $none;
 		border-top: $none;
 		.active {
@@ -104,17 +98,16 @@
 		h4 {
 			max-width: $full-width;
 			flex: 0 0 100%;
-			margin: $zero;
-			line-height: $line-height-twentyfour;
-			font-size: $font-size-sixteen;
-			font-weight: $font-weight-500;
+			@include margin-padding(all, 0, all, null);
+			@include font-rem(16px, 24px);
+			@include font-weight(medium);
 		}
 		h6 {
 			color: color("grey", "darken-1");
 		}
 	}
 	.accordionBtn {
-		margin-left: $margin-left-auto;
+		@include margin-direction(left);
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
@@ -124,7 +117,7 @@
 			align-items: $align-items-center;
 			.material-icons {
 				color: color("indigo", "base");
-				font-weight: $font-weight-600;
+				@include font-weight(semi-bold);
 				margin-right: $zero;
 			}
 		}
@@ -134,20 +127,20 @@
 			align-items: $align-items-center;
 			.material-icons {
 				color: color("indigo", "base");
-				font-weight: $font-weight-600;
+				@include font-weight(semi-bold);
 				margin-right: $zero;
 			}
 		}
 	}
 	.input-field {
-		position: $position-relative;
+		@include relative();
 		input[type="text"] {
 			color: color("grey", "darken-4");
 		}
 	}
 	.input-field {
 		label {
-			text-transform: $text-capitalize;
+			text-transform: text-map("text-transform","capitalize");
 		}
 	}
 	.collapsible-body {
@@ -157,15 +150,14 @@
 		h4 {
 			max-width: $full-width;
 			flex: 0 0 100%;
-			margin: $zero;
-			line-height: $line-height-twentyfour;
-			font-size: $font-size-sixteen;
-			font-weight: $font-weight-500;
+			@include margin-padding(all, 0, all, null);
+			@include font-rem(16px, 24px);
+			@include font-weight(medium);
 		}
 		h6 {
 			color: color("grey", "darken-1");
 			line-height: $line-height-twentyfour;
-			margin: 1rem 0 0.4rem 0;
+			@include margin-padding(all, 1rem 0 0.4rem 0, all, null);
 		}
 	}
 }
@@ -176,17 +168,14 @@
 .input-file-upload {
 	width: 68px;
 	height: 20px;
-	position: $position-absolute;
-	right: 11px;
+	@include absolute(top 0.75rem right 0.875rem);
 	background: url(../images/common-icons.svg) no-repeat -271px -662px;
-	top: 10px;
 	cursor: pointer;
 	input[type="file"] {
-		width: 100%;
+		width: $full-width;
 		height: 20px;
 		@include opacity(0);
-		position: $position-absolute;
-		right: $zero;
+		@include absolute(right 0);
 		cursor: pointer;
 	}
 }
@@ -202,7 +191,7 @@
 	.switch {
 		label {
 			.lever {
-				margin: -3px 20px 0 0;
+				@include margin-padding(all, -3px 20px 0 0, all, null);
 			}
 		}
 	}
@@ -213,22 +202,22 @@
 		padding-left: 4.55rem;
 		margin-top: 0.9375rem;
 		label {
-			text-transform: $text-uppercase;
-			font-weight: $font-weight-500;
+			text-transform: text-map("text-transform","uppercase");
+			@include font-weight(medium);
 			color: color("grey", "darken-1");
 			margin-right: 2rem;
 		}
 		input[type="password"] {
-			width: 100%;
+			width: $full-width;
 			max-width: 23rem;
 			background: #fafafc;
-			margin: $zero;
+			@include margin-padding(all, 0, all, null);
 		}
 		input[type="text"] {
-			width: 100%;
+			width: $full-width;
 			max-width: 7rem;
 			background: #fafafc;
-			margin: $zero;
+			@include margin-padding(all, 0, all, null);
 		}
 	}
 }
@@ -241,14 +230,13 @@
 			line-height: $line-height-normal;
 			height: $height-auto;
 			a {
-				padding: 1.5625rem 0.625rem;
+				@include margin-padding(all, 0, all, 1.5625rem 0.625rem);
 			}
 		}
 	}
 	.collapsible {
-		margin: $zero;
 		border: $none;
-		padding: 1.875rem 0;
+		@include margin-padding(all, 0, all, 1.875rem 0);
 		box-shadow: $none;
 		li.active {
 			.material-icons {
@@ -258,7 +246,7 @@
 	}
 	.collapsible-header {
 		border: $none;
-		padding: 1.6rem 1.8125rem;
+		@include margin-padding(all, null, all, 1.6rem 1.8125rem);
 		h4 {
 			color: color("grey", "darken-2");
 			margin:0 $auto 0 0;
@@ -269,36 +257,34 @@
 		@include margin-padding(all, null, all, 0 2rem);
 	}
 	.tabcollapse-arrow {
-		margin-left: $margin-left-auto;
+		@include margin-direction(left);
 		.material-icons {
 			margin-right: $zero;
 			font-size: 1.9rem;
 			color: color("indigo", "base");
-			transition: $transiton;
+			@include transition(all 0.5s);
 		}
 	}
 }
-.no-bg-Inputtext {
+.no-bg-inputtext {
 	background: $none !important;
 	border-bottom: 2px solid color("grey", "lighten-5") !important;
 }
-.internetDomain {
+.internet-domain {
 	border: 1px solid color("grey", "lighten-5");
-	padding: 1.5625rem;
+	@include margin-padding(all, null, all, 1.5625rem);
 	h6 {
-		font-weight: $font-weight-500;
+		@include font-weight(medium);
 		color: color("grey", "darken-4");
-		margin: $zero;
-		line-height: $line-height-twentyfour;
-		font-size: $font-size-sixteen;
+		@include margin-padding(all, 0, all, null);
+		@include font-rem(16px, 24px);
 	}
 	p {
-		line-height: $line-height-twentyfour;
-		font-size: $font-size-fourteen;
+		@include font-rem(14px, 24px);
+		@include margin-padding(all, 0.5rem 0 0 0, all, null);
 		color: color("grey", "darken-1");
-		margin: 0.5rem 0 0 0;
 	}
-	.enterDomains {
+	.enter-domains {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
@@ -309,7 +295,7 @@
 				flex: 1;
 			}
 		}
-		.addDomainBtn {
+		.add-domain-btn {
 			border: 1px solid color("indigo", "base");
 			background: color("shades", "transparent");
 			cursor: $cursor-pointer;
@@ -341,9 +327,9 @@
 	align-items: $align-items-center;
 	label {
 		color: color("grey", "darken-1");
-		font-size: $font-size-fourteen;
-		text-transform: $text-uppercase;
-		font-weight: $font-weight-500;
+		@include font-rem(14px);
+		text-transform: text-map("text-transform","uppercase");
+		@include font-weight(medium);
 		max-width: 170px;
 		width: $full-width;
 	}
@@ -365,33 +351,33 @@
 			border: $border-none;
 		}
 		th {
-			text-transform: $text-uppercase;
-			font-weight: $font-weight-600;
+			text-transform: text-map("text-transform","uppercase");
+			@include font-weight(semi-bold);
 			color: color("grey", "darken-4");
 			margin-right: 2rem;
-			font-size: $font-size-fifteen;
+			@include font-rem(15px);
 			white-space: nowrap;
 		}
 		td {
-			font-size: $font-size-sixteen;
+			@include font-rem(16px);
 			white-space: nowrap;
 		}
 		.switch label .lever {
 			margin: -3px 8px 0 0;
 		}
 		.defaultLink {
-			text-transform: $text-uppercase;
-			font-weight: $font-weight-600;
+			text-transform: text-map("text-transform","uppercase");
+			@include font-weight(semi-bold);
 			color: color("indigo", "base");
 			margin-right: 2rem;
-			font-size: $font-size-fourteen;
+			@include font-rem(14px);
 		}
 		.hideLink {
-			text-transform: $text-uppercase;
-			font-weight: $font-weight-600;
+			text-transform: text-map("text-transform","uppercase");
+			@include font-weight(semi-bold);
 			color: color("grey", "lighten-1");
 			margin-right: 2rem;
-			font-size: $font-size-fourteen;
+			@include font-rem(14px);
 		}
 		.switch {
 			display: $display-inline-block;
@@ -416,16 +402,16 @@
 			border: $none;
 			th {
 				background: #fafafc;
-				text-transform: $text-uppercase;
-				font-weight: $font-weight-600;
+				text-transform: text-map("text-transform","uppercase");
+				@include font-weight(semi-bold);
 				color: color("grey", "darken-4");
-				padding: 20px 28px;
+				@include margin-padding(all, null, all, 0.75rem 1.875rem);
 				border-right: 1px solid #f4f4f7;
 			}
 			td {
-				padding: 10px 28px;
-				text-transform: $text-uppercase;
-				font-weight: $font-weight-500;
+				@include margin-padding(all, null, all, 0.75rem 1.875rem);
+				text-transform: text-map("text-transform","uppercase");
+				@include font-weight(medium);
 				color: color("grey", "darken-2");
 				border-right: 1px solid #f7f6f9;
 			}
@@ -451,7 +437,7 @@
 	@include margin-padding(all, null, all, 1.875rem 0 1.875rem 1.875rem);
 	height: calc(100% - 65px);
 	h5 {
-		@include font-rem(18px, 24px);
+		@include font-rem(16px, 24px);
 		@include font-weight(medium);
 		color: color("grey", "darken-1");
 		@include margin-padding(all, 0 0 1.25rem 0, all, null);
@@ -500,7 +486,7 @@
 		.btn {
 			@include margin-padding(all, 0 0 0 auto, all, null);
 			box-shadow: $none;
-			padding: 0 1.8rem;
+			@include margin-padding(all, null, all, 0 1.8rem);
 			max-width: 12rem;
 			flex: 0 0 12rem;
 		}
@@ -532,9 +518,9 @@
 	@include margin-padding(all, null, all, 2.2rem);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	.internetDomain {
-		.enterDomains {
-			.addDomainBtn {
+	.internet-domain {
+		.enter-domains {
+			.add-domain-btn {
 				height: 3.75rem;
 			}
 			.material-icons {

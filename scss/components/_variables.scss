@@ -163,7 +163,7 @@ $input-background: #fff !default;
 $input-error-color: $error-color !default;
 $input-success-color: $success-color !default;
 $input-focus-color: $input-color !default;
-$input-font-size: 16px !default;
+$input-font-size: 15px !default;
 $input-margin-bottom: 8px;
 $input-margin: 0 0 $input-margin-bottom 0 !default;
 $input-padding: 0 !default;
@@ -507,3 +507,16 @@ $min_width: 320px !default;
 $max_width: 1920px !default;
 $min_font: 16px !default;
 $max_font: 20px !default;
+
+
+// Breakepoints
+
+$lg-breakepoint:1200px !default;
+$md-breakepoint:991px !default;
+$sm-breakepoint:768px !default;
+$xs-breakepoint:570px !default;
+$vs-breakepoint:480px !default;
+
+$top-align:top !default;
+$middle-align:middle !default;
+$bottom-align:bottom  !default;

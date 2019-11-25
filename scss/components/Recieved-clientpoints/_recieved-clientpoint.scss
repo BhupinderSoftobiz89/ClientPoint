@@ -7,7 +7,7 @@
 	@include margin-padding(all, null, all, 0 2.5rem);
 	.material-icons {
 		color: color("indigo", "base");
-		vertical-align: $verticle-align-middle;
+		@include vertical-align(middle);
 		height: 1.5rem;
 	}
 }
@@ -21,7 +21,7 @@
 		@include margin-padding(all, 0 0.2rem 0 0 !important, all, null);
 		height: 36px;
 		line-height: 36px;
-		vertical-align: $verticle-align-middle;
+		@include vertical-align(middle);
 	}
 }
 .dark-green-badge {
@@ -46,25 +46,17 @@
 	.user-image {
 		display: $display-inline-block;
 		@include margin-padding(all, 0 1rem 0 0, all, null);
-		vertical-align: $verticle-align-middle;
+		@include vertical-align(middle);
 		img {
-			vertical-align: $verticle-align-middle;
+			@include vertical-align(middle);
 		}
 	}
-	// tr{
-	// 	&.active-row {
-	// 		td {
-	// 			vertical-align: $verticle-align-top;
-	// 		}
-	// 	}
-	// }
 }
 .recieved-dropdown-arrow {
-	vertical-align: $verticle-align-middle;
-	//height: 1.25rem;
+	@include vertical-align(middle);
 	display: $display-inline-block;
 	.material-icons {
-		vertical-align: $verticle-align-middle;
+		@include vertical-align(middle);
 	}
 }
 .user-info {
@@ -74,7 +66,7 @@
 		@include icon(17px, 20px, (false));
 		background-position: -382px -413px;
 		@include margin-padding(all, 0 0.4rem 0 -1.7rem, all, null);
-		vertical-align: $verticle-align-middle;
+		@include vertical-align(middle);
 	}
 	.phone-icon {
 		@extend .email-icon;
@@ -123,12 +115,12 @@
 
 	.filters {
 		.material-icons {
-			vertical-align: $verticle-align-middle;
+			@include vertical-align(middle);
 			height: 1.5rem;
 		}
 	}
 	.hover-dropdown {
-		vertical-align: $verticle-align-middle;
+		@include vertical-align(middle);
 	}
 	.calender-date-iconUi {
 		@include margin-padding(all, null, all, 6px 16px !important);

@@ -16,37 +16,35 @@
 			padding: 1.375rem 1.375rem 1.0625rem 1.75rem;
 			@include flexbox();
 			@include flex-wrap($wrap);
+			text-transform: text-map("text-align","center");
+		}
+		h6 {
+			color: color("grey", "darken-1");
+			text-transform: text-map("text-transform","uppercase");
+			@include font-weight(medium);
+			line-height: $line-height-twentyfour;
+			margin: $zero;
+		}
+		.view-more {
+			color: color("indigo", "base");
+			@include margin-direction(left);
+			line-height: $line-height-twentyfour;
+			@include flexbox();
 			align-items: $align-items-center;
-
-			h6 {
-				color: color("grey", "darken-1");
-				text-transform: $text-uppercase;
-				font-weight: $font-weight-500;
-				line-height: $line-height-twentyfour;
-				margin: $zero;
-			}
-			.view-more {
-				color: color("indigo", "base");
-				margin-left: $margin-left-auto;
-				line-height: $line-height-twentyfour;
-				@include flexbox();
-				align-items: $align-items-center;
-			}
 		}
 		.anaytics-overview-content {
 			@include margin-padding(all, null, all, 0 1.375rem 1.3125rem 1.75rem);
-			position: $position-relative;
+			@include relative();
 			h4 {
-				font-weight: $font-weight-500;
+				@include font-weight(medium);
 				color: color("grey", "darken-4");
 				line-height: $line-height-twentyfour;
 				@include margin-padding(all, 0 0 1rem 0, all, null);
 			}
 			p {
 				color: color("blue-grey", "darken-1");
-				font-size: $font-size-sixteen;
+				@include font-rem(16px, 24px);
 				margin: $zero;
-				line-height: $line-height-twentyfour;
 				strong {
 					color: color("grey", "darken-2");
 				}
@@ -54,7 +52,7 @@
 		}
 		.auth-link {
 			color: color("indigo", "base");
-			font-weight: $font-weight-500;
+			@include font-weight(medium);
 		}
 		.anaytics-overview-footer-row {
 			@include flex-wrap($wrap);
@@ -87,11 +85,11 @@
 		}
 		.phone-icon {
 			@extend .email-icon;
-			background: url(../images/common-icons.svg) no-repeat -26px -500px;
+			background-position: -26px -500px;
 		}
 		.mobile-icon {
 			@extend .email-icon;
-			background: url(../images/common-icons.svg) no-repeat -90px -497px;
+			background-position: -90px -497px;
 		}
 	}
 	.border-row {
@@ -116,10 +114,10 @@
 		align-items: $align-item-end;
 	}
 	.reply-btn {
-		font-weight: $font-weight-500;
-		text-transform: $text-uppercase;
+		@include font-weight(medium);
+		text-transform: text-map("text-transform","uppercase");
 		color: color("grey", "darken-4");
-		position: $position-relative;
+		@include relative();
 		margin-top: 15px;
 		@include inlineflex();
 		align-items: $align-items-center;
@@ -152,15 +150,15 @@
 			.collapsible-header {
 				border-top: $none;
 				background-color: color("shades", "transparent");
-				font-size: $font-size-sixteen;
+				@include font-rem(16px);
 				color: color("grey", "darken-4");
-				text-transform: $text-uppercase;
-				font-weight: $font-weight-600;
+				text-transform: text-map("text-transform","uppercase");
+				@include font-weight(semi-bold);
 				border-bottom: 1px solid color("grey", "lighten-5");
 				padding: 12px 20px !important;
 				@include border-radius(5px 5px 0 0);
 				.material-icons {
-					margin-left: $margin-left-auto;
+					@include margin-direction(left);
 					margin-right: $zero;
 					color: color("indigo", "base");
 					font-size: 1.9rem;
@@ -170,40 +168,37 @@
 		
 	}
 	.total-view {
-		padding: 1rem 0;
+		@include margin-padding(all, null, all, 1rem 0);
 		border-bottom: 1px solid color("grey", "lighten-5");
 		.total-view-row {
 			@include flexbox();
-			align-items: $align-items-center;
+			text-align: text-map("text-align","center");
 			padding: 0 2rem;
 			margin-bottom: 1.375rem;
 			&:last-child {
 				margin-bottom: $zero;
 			}
 			h6 {
-				font-size: 13px;
+				@include font-rem(13px, 24px);
 				@include font-weight(bold);
-				text-transform: $text-uppercase;
-				line-height: $line-height-twentyfour;
+				text-transform: text-map("text-transform","uppercase");
 				margin: $zero;
 				color: color("grey", "darken-4");
 			}
 			.count {
-				margin-left: $margin-left-auto;
-				font-size: $font-size-fifteen;
-				line-height: $line-height-twentyfour;
+				@include margin-direction(left);
+				@include font-rem(15px, 24px);
 				color: color("blue-grey", "darken-1");
 			}
 		}
 	}
 	.top-viewers {
-		padding: 1.75rem 2rem;
+		@include margin-padding(all, null, all, 1.75rem 2rem);
 		h5 {
-			text-transform: $text-uppercase;
-			font-weight: $font-weight-600;
+			text-transform: text-map("text-transform","uppercase");
+			@include font-weight(semi-bold);
 			color: color("grey", "darken-4");
-			font-size: $font-size-fourteen;
-			line-height: $line-height-twentyfour;
+			@include font-rem(14px, 24px);
 			margin: 0 0 20px;
 		}
 		.viewers-row {
@@ -219,8 +214,7 @@
 				h6 {
 					color: color("indigo", "base");
 					margin: $zero;
-					font-size: $font-size-sixteen;
-					line-height: $line-height-twentyfour;
+					@include font-rem(16px, 24px);
 				}
 				p {
 					margin: $zero;
@@ -248,11 +242,10 @@
 		border-top: 1px solid color("grey", "lighten-5");
 		@include margin-padding(all, null, all, 1.75rem 2rem);
 		h6 {
-			text-transform: $text-uppercase;
-			font-weight: $font-weight-600;
+			text-transform:text-map("text-transform","uppercase");
+			@include font-weight(semi-bold);
 			color: color("grey", "darken-4");
-			font-size: $font-size-fourteen;
-			line-height: $line-height-twentyfour;
+			@include font-rem(14px, 24px);
 			@include margin-padding(all, 0 0 1.25rem 0, all, null);
 		}
 		.top-file-row {
@@ -264,16 +257,14 @@
 				margin-bottom: $zero;
 			}
 			p {
-				font-size: $font-size-sixteen;
-				line-height: $line-height-twentyfour;
+				@include font-rem(16px, 24px);
 				margin: $zero;
 				color: color("grey", "darken-2");
 			}
 			.file-arrow {
 				color: color("indigo", "base");
-				font-size: 1.9rem;
-				margin-left: $margin-left-auto;
-				line-height: $line-height-twentyfour;
+				@include font-rem(31px, 24px);
+				@include margin-direction(left);
 				@include transition(all 0.5s);
 			}
 		}
@@ -294,19 +285,17 @@
 				margin-bottom: $zero;
 			}
 			h6 {
-				font-size: 14px;
-				font-weight: $font-weight-600;
-				text-transform: $text-uppercase;
-				line-height: $line-height-twentyfour;
+				@include font-rem(14px, 24px);
+				@include font-weight(semi-bold);
+				text-transform: text-map("text-transform","uppercase");
 				margin: $zero;
 				color: color("grey", "darken-4");
 			}
-			.count {
-				margin-left: $margin-left-auto;
-				font-size: $font-size-fifteen;
-				line-height: $line-height-twentyfour;
-				color: color("blue-grey", "darken-1");
-			}
+		}
+		.count {
+			@include margin-direction(left);
+			@include font-rem(14px, 24px);
+			color: color("blue-grey", "darken-1");
 		}
 	}
 }
@@ -316,8 +305,7 @@
 	align-items: $align-items-center;
 	@include margin-padding(all, null, all, 0 0 1.75rem 0);
 	h5 {
-		font-size: $font-size-sixteen;
-		line-height: $line-height-twentyfour;
+		@include font-rem(16px, 24px);
 		color: color("grey", "darken-4");
 		margin: $zero;
 	}
@@ -338,7 +326,7 @@
 		}
 	}
 	.all-viewers {
-		position: $position-relative;
+		@include relative;
 		h5 {
 			@include flexbox();
 			@include flex-wrap($wrap);
@@ -386,7 +374,7 @@
 				}
 				label {
 					span {
-						font-size: $font-size-fifteen;
+						@include font-rem(15px);
 						color: color("grey", "darken-4");
 					}
 				}
@@ -397,9 +385,9 @@
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
-		margin-left: $margin-left-auto;
+		@include margin-direction(left);
 		.prev-date-calender {
-			border-radius: 0.125rem;
+			@include border-radius(0.125rem);
 			border: 1px solid color("grey", "lighten-5");
 			width: 2.36rem;
 			height: 2.36rem;
@@ -424,7 +412,7 @@
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
-		position: $position-relative;
+		@include relative();
 		.calender-icon {
 			background: url(../images/common-icons.svg) no-repeat -243px -495px;
 			width: 1.5rem;
@@ -457,10 +445,10 @@
 					justify-content: $justifycenter;
 					background: color("grey", "lighten-4");
 					border-right: 1px solid color("grey", "lighten-5");
-					font-size: 12px;
-					text-transform: $text-uppercase;
+					@include font-rem(12px);
+					text-transform: text-map("text-transform","uppercase");
 					color: color("grey", "darken-1");
-					font-weight: $font-weight-500;
+					@include font-weight(medium);
 					letter-spacing: 0.25px;
 				}
 				.date-calender {
@@ -468,7 +456,7 @@
 					@include flex-wrap($wrap);
 					align-items: $align-items-center;
 					padding: 0 1.25rem;
-					font-size: $font-size-fourteen;
+					@include font-rem(14px);
 					color: color("grey", "darken-4");
 				}
 				.calender-date-icon {
@@ -497,8 +485,8 @@
 					}
 				}
 				a {
-					text-align: $text-center;
-					font-size: $font-size-fourteen;
+					text-align:text-map("text-align","center");
+					@include font-rem(14px);
 					color: color("grey", "darken-4");
 					padding: 11px 16px;
 				}
@@ -542,7 +530,7 @@
 				}
 			}
 		}
-		position: $position-relative;
+		@include relative();
 		.dropdown-content {
 			min-width: 175px;
 			top: 100% !important;
@@ -559,11 +547,11 @@
 					background: color("shades", "transparent");
 				}
 				a {
-					padding: $zero;
+					@include margin-padding(all, null, all, 0);
 				}
 				label {
 					span {
-						font-size: $font-size-fifteen;
+						@include font-rem(15px);
 						color: color("grey", "darken-4");
 					}
 				}
@@ -589,7 +577,7 @@
 		background-position: -93px -575px;
 	}
 	p {
-		margin: $zero;
+		@include margin-padding(all, 0, all, null);
 		line-height: $line-height-twentyfour;
 		color: color("grey", "darken-2");
 	}
@@ -603,22 +591,21 @@
 		width: 30%;
 		span {
 			line-height: $line-height-twentyfour;
-			margin: $zero;
+			@include margin-padding(all, 0, all, null);
 			display: $display-block;
 		}
 	}
 	h5 {
-		font-size: 12px;
-		font-weight: $font-weight-500;
+		@include font-rem(12px, 24px);
+		@include font-weight(medium);
 		color: color("grey", "darken-1");
-		text-transform: $text-uppercase;
-		line-height: $line-height-twentyfour;
-		margin: $zero;
+		text-transform: text-map("text-transform","uppercase");
+		@include margin-padding(all, 0, all, null);
 	}
 	.progress {
 		height: 7px;
 		background-color: color("grey", "lighten-5");
-		border-radius: $zero;
+		@include border-radius(0);
 		margin: 0.5rem 0 0 0;
 		.determinate {
 			background-color: #19e4b1;
@@ -628,9 +615,8 @@
 		width: 40%;
 		//margin-left: $margin-left-auto;
 		span {
-			line-height: $line-height-twentyfour;
-			margin: $zero;
-			font-size: 10px;
+			@include font-rem(10px, 24px);
+			@include margin-padding(all, 0, all, null);
 			color: color("blue-grey", "darken-1");
 		}
 	}
@@ -686,18 +672,16 @@
 				border-bottom: $none;
 			}
 			h6 {
-				font-size: 13px;
-				margin: $zero;
+				@include font-rem(13px, 24px);
+				@include margin-padding(all, 0, all, null);
 				color: color("grey", "darken-4");
-				text-transform: $text-uppercase;
-				font-weight: $font-weight-600;
-				line-height: $line-height-twentyfour;
+				@include font-weight(semi-bold);
+				text-transform: text-map("text-transform","uppercase");
 				@include margin-padding(all, 0 auto 0 0, all, null);
 			}
 			span {
-				margin-left: $margin-left-auto;
-				font-size: $font-size-fifteen;
-				line-height: $line-height-twentyfour;
+				@include margin-direction(left);
+				@include font-rem(15px, 24px);
 				color: color("blue-grey", "darken-1");
 			}
 		}
@@ -705,7 +689,7 @@
 }
 .q2-marketing {
 	background: color("shades", "white");
-	padding: 1.375rem;
+	@include margin-padding(all, null, all, 1.375rem);
 	border: 1px solid color("grey", "lighten-3");
 	margin-top: 1rem;
 	.q2-marketing-header {
@@ -717,20 +701,19 @@
 			background-position: -168px -345px;
 		}
 		h5 {
-			margin: $zero;
-			font-weight: $font-weight-600;
+			@include font-weight(semi-bold);
 			line-height: 21px;
 			color: color("grey", "darken-4");
 			@include margin-padding(all, 0 auto 0 0, all, null);
 		}
 	}
 	.marketing-arrow  {
-		margin-left: $margin-left-auto;
+		@include margin-direction(left);
 		color: color("indigo", "base");
 		line-height: 21px;
 
 		.material-icons {
-			font-size: 25px;
+			@include font-rem(25px);
 			@include transform(rotate(0deg));
 			@include transition(all 0.5s);
 		}
@@ -750,17 +733,15 @@
 				border: $none;
 			}
 			th {
-				font-weight: $font-weight-600;
-				text-transform: $text-uppercase;
-				line-height: $line-height-twentyfour;
+				@include font-weight(semi-bold);
+				text-transform: text-map("text-transform","uppercase");
 				@include margin-padding(all, null, all, 0 10px 0.75rem 10px);
 				border-bottom: 1px solid color("grey", "lighten-5");
 				white-space: $white-spacenowrap;
-				@include font-rem(14px);
+				@include font-rem(14px, 24px);
 			}
 			td {
-				line-height: $line-height-twentyfour;
-				font-size: $font-size-fifteen;
+				@include font-rem(15px, 24px);
 				color: color("blue-grey", "darken-1");
 				@include margin-padding(all, null, all, 0 10px);
 				white-space: $white-spacenowrap;
@@ -776,8 +757,7 @@
 				}
 			}
 			.progress-text {
-				font-size: 10px;
-				line-height: $line-height-twentyfour;
+				@include font-rem(10px, 24px);
 				display: $display-block;
 				color: color("blue-grey", "darken-1");
 			}
@@ -785,7 +765,7 @@
 		.eye-icon {
 			@include icon(21px, 20px, (true));
 			background-position: -168px -577px;
-			vertical-align: $verticle-align-middle;
+			@include vertical-align(middle);
 		}
 	}
 }
@@ -795,8 +775,14 @@
 .anaytics-overview-row.anaytics-overviewbg {
 	background: color("grey", "lighten-4");
 }
-.anaytics-overview-row.anaytics-overviewbg .view-moreClick .material-icons {
-	@include transform(rotate(-90deg));
+.anaytics-overview-row {
+	&.anaytics-overviewbg {
+		.view-moreClick {
+			.material-icons {
+				@include transform(rotate(-90deg));
+			}
+		}
+	}
 }
 .anaytics-overview-row.anaytics-overviewbg.addbg .view-moreClick .material-icons {
 	@include transform(rotate(0deg));
@@ -812,14 +798,12 @@
 	}
 	.client-search-title {
 		background: color("shades", "white");
-		position: $position-absolute;
-		left: $zero;
-		top: $zero;
+		@include absolute(top 0 left 0);
 		height: $height-hundred-per;
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
-		padding: 1.52rem 1.8125rem;
+		@include margin-padding(all, null, all, 1.52rem 1.8125rem);
 		display: $diplay-none;
 		input[type="text"] {
 			border: $none;
@@ -840,7 +824,7 @@
 			margin-left: 1rem;
 			border: $none;
 			display: $display-inline-block;
-			vertical-align: $verticle-align-middle;
+			@include vertical-align(middle);
 			cursor: $cursor-pointer;
 			&:focus {
 				outline: $none;
@@ -858,8 +842,8 @@
 		width: 1.5rem;
 		height: 1.5rem;
 		margin-left: 1rem;
-		opacity: 0;
-		visibility: hidden;
+		@include opacity(0);
+		visibility: $hidden;
 	}
 }
 .filter-rightpanel {
@@ -874,7 +858,7 @@
 
 .pika-single {
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-	border-radius: $border-radius-5;
+	@include border-radius(5px);
 	border: $none;
 }
 .tabel-fixed-body {
@@ -895,6 +879,7 @@
 .tabel-fixed-body td:nth-child(3) {
 	width: 250px;
 }
+
 // .pika-single.is-hidden {
 //     display: block !important;
 //     position: absolute !important;
@@ -916,7 +901,7 @@
 			@include font-rem(12px, 24px);
 			letter-spacing: 0.25px;
 			color: color("grey", "darken-1");
-			text-transform: $text-uppercase;
+			text-transform: text-map("text-transform","uppercase");
 			@include font-weight(medium);
 			@include margin-padding(all, 1.25rem 0 0.625rem 0, all, null);
 		}
@@ -961,9 +946,6 @@
 			background: color("grey", "lighten-5");
 			color: color("grey", "darken-1");
 			box-shadow: $none;
-			// margin-left: 2.5rem;
-			// margin-right: $zero !important;
-			// margin-top: $zero;
 			@include margin-padding(all, 0 0 0 2.5rem, all, 0 1.4rem);
 		}
 	}
@@ -1005,7 +987,7 @@
 				@include font-rem(13px, 24px);
 				color: color("indigo", "base");
 				@include margin-padding(all, 0, all, null);
-				text-transform: $text-capitalize;
+				text-transform: text-map("text-transform","capitalize");
 			}
 			p {
 				@include font-rem(11px, 18px);
@@ -1047,13 +1029,13 @@
 	max-width: 37.5rem;
 	width: $full-width;
 	@include margin-padding(all, 2.6875rem auto, all, null);
-	text-align: $text-center;
+	text-align:text-map("text-align","center");
 	p {
 		@include font-rem(14px, 24px);
 		color: color('blue-grey','darken-1');
 	}
 	.link {
-		text-decoration: $text-decoration-underline;
+		text-decoration:text-map("text-decoration","underline");
 	}
 }
 .empty-state-height {

@@ -28,13 +28,13 @@
 	background: url(../images/common-icons.svg) no-repeat -242px -199px;
 	@include w-h-rem(25px, 18px);
 	@include margin-padding(all, 0 0.3rem 0 0, all, null);
-	vertical-align: $verticle-align-middle;
+	@include vertical-align(middle);
 }
 .library-links {
 	background: url(../images/common-icons.svg) no-repeat -315px -339px;
 	display: $display-inline-block;
 	@include w-h-rem(30px, 30px);
-	vertical-align: $verticle-align-middle;
+	@include vertical-align(middle);
 	@include border-radius(100%);
 	&:hover,
 	&:focus,
@@ -56,7 +56,7 @@
 			@include margin-padding(all, null, all, 0.7rem 1.875rem);
 		}
 		label {
-			vertical-align: $verticle-align-middle;
+			@include vertical-align(middle);
 			display: $display-inline-block;
 			@include w-h-rem(17px, 17px);
 			@include margin-padding(all, 0 0.7rem 0 0, all, null);
@@ -102,7 +102,7 @@
 	.options {
 		@include font-rem(14px, 16px);
 		@include font-weight(medium);
-		text-transform: $text-uppercase;
+		text-transform: text-map("text-transform","uppercase");
 		color: color("grey", "darken-4");
 		@include flexbox();
 		align-items: $align-items-center;
@@ -148,11 +148,11 @@
 	@include flexbox();
 	.material-icons {
 		color: color("indigo", "base");
-		vertical-align: $verticle-align-middle;
+		@include vertical-align(middle);
 	}
 }
 .library-empty-state {
-	text-align: $text-center;
+	text-align: text-map("text-align","center");
 	max-width: 24rem;
 	width: $full-width;
 	@include margin-padding(all, 5rem auto, all, null);
@@ -161,7 +161,7 @@
 		color: color('blue-grey','darken-1');
 	}
 	.link {
-		text-decoration: $text-decoration-underline;
+		@include text-decoration(underline);
 	}
 }
 /* Library CSS end here */

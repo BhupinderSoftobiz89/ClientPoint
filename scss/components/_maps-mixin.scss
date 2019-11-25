@@ -1,0 +1,47 @@
+// Text decoration Maps
+
+@mixin text-decoration($decoration) {
+    $decorations: (
+        overline:overline,
+        line-through:line-through,
+        underline:underline,
+        none:none
+    );
+    $output:$decoration;
+
+    @if map-has-key($decorations , $decoration) {
+        $output:map-get($decorations , $decoration);
+    }
+
+    text-decoration:$output;
+}
+
+
+// Font weight maps
+
+@mixin font-weight($weight) {
+	$weights: (
+		thin: 100,
+		extra-light: 200,
+		ultra-light: 200,
+		light: 300,
+		normal: 400,
+		book: 400,
+		regular: 400,
+		medium: 500,
+		semi-bold: 600,
+		demi-bold: 600,
+		bold: 700,
+		extra-bold: 800,
+		ultra-bold: 900,
+		heavy: 900,
+		black: 900
+	);
+
+	$output: $weight;
+	@if map-has-key($weights, $weight) {
+		$output: map-get($weights, $weight);
+	}
+
+	font-weight: $output;
+}

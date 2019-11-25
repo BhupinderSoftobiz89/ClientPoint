@@ -1,12 +1,12 @@
 /* Add User CSS start here */
 
-.addUserHeader {
+.add-userHeader {
 	@include flexbox();
 	@include flex-wrap($wrap);
 	align-items: $align-items-center;
 	background: color("indigo", "accent-4");
 	@include margin-padding(all, null, all, 17px 50px);
-	.addUserLeftpanel {
+	.add-userLeftpanel {
 		@include flexbox();
 		@include flex-wrap($wrap);
 		align-items: $align-items-center;
@@ -21,7 +21,7 @@
 		color: color("shades", "white");
 		@include margin-padding(all, 0, all, null);
 	}
-	.addUserButtons {
+	.add-user-buttons {
 		@include margin-padding(all, 0 0 0 auto, all, null);
 		.btn {
 			border: 1px solid color("shades", "transparent");
@@ -38,7 +38,7 @@
 		}
 	}
 }
-.addUser {
+.add-user {
 	@include margin-padding(all, null, all, 0 3.9rem !important);
 }
 .badge.active {

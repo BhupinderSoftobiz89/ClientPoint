@@ -68,9 +68,11 @@
 		}
 	}	
 }
-.search-result.open {
-	@include opacity(1);
-	visibility: $visibilty-visible;
+.search-result {
+	&.open {
+		@include opacity(1);
+		visibility: $visibilty-visible;
+	}
 }
 .hidden {
 	display: $none !important;
@@ -115,7 +117,7 @@
 		}
 		.badge {
 			background: color("grey", "lighten-5");
-			border-radius: 1.875rem;
+			@include border-radius(1.875rem);
 			text-shadow: $none;
 			color: color("blue-grey", "darken-1");
 		}
@@ -164,7 +166,7 @@
 			h5 {
 				@include font-rem(16px, 26px);
 				@include margin-padding(all, 0, all, null);
-				text-transform: $text-uppercase;
+				text-transform: text-map("text-transform","uppercase");
 				letter-spacing: 0.5px;
 				color: color("grey", "darken-4");
 				@include font-weight(bold);
@@ -199,14 +201,14 @@
 
 		.user-image {
 			display: $display-inline-block;
-			vertical-align: $verticle-align-middle;
+			@include vertical-align(middle);
 			@include margin-padding(all, 0 1rem 0 0, all, null);
 		}
 		.link-user {
 			@include font-rem(15px);
 			color: color("indigo", "base");
 			@include font-weight(medium);
-			vertical-align: $verticle-align-middle;
+			@include vertical-align(middle);
 		}
 		.linked-in {
 			display: $display-inline-block;
@@ -214,7 +216,7 @@
 			width: 1.3rem;
 			height: 1.4rem;
 			margin-left: 0.6875rem;
-			vertical-align: $verticle-align-middle;
+			@include vertical-align(middle);
 		}
 
 		.results-icon {
@@ -278,7 +280,7 @@
 			letter-spacing: 0.7px;
 			color: color("grey", "darken-4");
 			@include font-weight(medium);
-			text-transform: $text-uppercase;
+			text-transform: text-map("text-transform","uppercase");
 		}
 		.reply-arrow {
 			@include icon(15.5px, 15.5px, (true));
@@ -317,7 +319,7 @@
 		th {
 			@include margin-padding(all, null, all, 1rem);
 			border-bottom: 1px solid color("grey", "lighten-5");
-			text-transform: $text-uppercase;
+			text-transform: text-map("text-transform","uppercase");
 			@include font-rem(13px);
 			color: color("grey", "darken-4");
 		}
@@ -362,7 +364,7 @@
 			border-top: 1px solid color("grey", "lighten-5");
 			@include margin-padding(all, 0.5rem 0 0 0, all, null);
 			.switch {
-				margin-left: $margin-left-auto;
+				@include margin-direction(left);
 			}
 			&:hover {
 				tr {

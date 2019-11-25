@@ -11,7 +11,7 @@
 	align-items: $align-items-center;
 	border-bottom: 1px solid #efeff3;
 	z-index: 4;
-	@include transition($transiton);
+	@include transition(0.5s);
 	.searchbox {
 		max-width: 24rem;
 		width: $full-width;
@@ -23,7 +23,7 @@
 			box-sizing: $box-sizing;
 			@include margin-padding(all, 0, all, 1.4375rem 2.3125rem 1.4375rem 4.6rem);
 			color:color('shades','black');
-			font-size: $font-size-fourteen;
+			@include font-rem(14px);
 			&:focus {
 				outline: $none;
 				border: $none !important;
@@ -50,8 +50,8 @@
 			color: $btnPrimaryColor;
 			font-size: $font-size-fourteen;
 			border: 1px solid $btnPrimaryColor;
-			border-radius: $border-radius-thirty;
-			font-weight: $font-weight-500;
+			@include border-radius(30px);
+			@include font-weight(medium);
 			background: url(../images/common-icons.svg) no-repeat -361px -6px;
 			height: 2.67rem;
 			line-height: 2.67rem;
@@ -78,10 +78,10 @@
 	.user-fetaures {
 		margin-right: 20px;
 		color: $default-color;
-		font-size: 15px;
-		text-decoration: $text-decoration-underline;
+		@include font-rem(15px);
+		text-decoration:text-map("text-decoration","underline");
 		display: $display-inline-block;
-		vertical-align: $verticle-align-middle;
+		@include vertical-align(middle);
 		strong {
 			@include font-weight(600);
 			// font-weight: $font-weight-bold;
@@ -92,11 +92,11 @@
 		height: 3.54rem;
 		margin-right: 7px;
 		display: $display-inline-block;
-		vertical-align: $verticle-align-middle;
+		@include vertical-align(middle);
 	}
 	.user-name {
 		color: color("grey", "darken-4");
-		font-size: $font-size-fourteen;
+		@include font-rem(14px);
 	}
 
 	.search-responsive {
@@ -126,8 +126,7 @@
 		background-color: color("grey", "lighten-5");
 	}
 	li {
-		font-size: $font-size-fourteen;
-		line-height: $line-height-twenty;
+		@include font-rem(14px, 20px);
 		color: color("grey", "darken-4");
 		min-height: $auto;
 		&:hover {
@@ -141,7 +140,7 @@
 			@include flexbox();
 			align-items: $align-items-center;
 			color: color("grey", "darken-4");
-			font-size: $font-size-fourteen;
+			@include font-rem(14px);
 			@include margin-padding(all, null, all, 0.9375rem 1.125rem);
 			&:hover {
 				color: color("indigo", "base");

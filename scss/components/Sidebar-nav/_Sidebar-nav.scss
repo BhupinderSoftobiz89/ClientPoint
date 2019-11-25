@@ -7,7 +7,7 @@
 	position: $position-fixed;
 	z-index: 5;
 	top: $top-zero;
-	@include transition($transiton);
+	@include transition(all 0.5s);
 	.nav-menu-outer {
 		background: $navPrimaryBg;
 		flex: 1;
@@ -23,7 +23,7 @@
 				align-items: $align-items-center;
 				padding: 0 0 0 1.5625rem;
 				color: color("indigo", "lighten-3");
-				@include transition($transiton);
+				@include transition(all 0.5s);
 				&:hover {
 					background-color: $background-none;
 					color: color("indigo", "lighten-5");
@@ -47,7 +47,7 @@
 	.common-icon-bg {
 		@include icon(22.5px, 22.5px, (false));
 		background-position: 0 0;
-		@include transition($transiton);
+		@include transition(all 0.5s);
 	}
 	.file-icon {
 		background-position: -14px -15px;
@@ -84,12 +84,12 @@
 	height: calc(100% - 5rem);
 	// top: 5rem;
 	@include fixed(top 5rem left 5rem);
-	@include transition($transiton);
+	@include transition(all 0.5s);
 	ul {
 		@include margin-padding(all, 0, all, 2.5rem 0);
 		li {
 			a {
-				font-size: 1rem;
+				@include font-rem(16px);
 				display: $display-block;
 				@include margin-padding(all, null, all, 1.2rem 1.875rem);
 				color: rgba(255, 255, 255, 0.35);
@@ -143,7 +143,7 @@
 .full-width-nav {
 	//background: color("indigo", "accent-4");
 	display: $display-block;
-	@include transition($transiton);
+	@include transition(all 0.5s);
 	.nav-menu {
 		background: color("indigo", "accent-4");
 	}
@@ -200,7 +200,7 @@
 .lock-icon {
 	@include icon(16px, 20px, (true));
 	background-position: -29px -745px;
-	vertical-align: $verticle-align-middle;
+	@include vertical-align(middle);
 	@include opacity(0.35);
 }
 .current {

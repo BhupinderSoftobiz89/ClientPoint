@@ -11,12 +11,11 @@
 		background: color("shades", "white");
 		h5 {
 			color: #181a51;
-			font-size: $font-size-twenty;
+			@include font-rem(20px, 26px);
 			margin: $zero;
-			line-height: 26px;
 		}
-		.clientMenu {
-			margin-left: $margin-left-auto;
+		.client-menu {
+			@include margin-direction(left);
 			@include flexbox();
 			@include flex-wrap($wrap);
 		}
@@ -40,13 +39,13 @@
 		.btn {
 			@extend %btn;
 			@include margin-padding(all, null, all, 0 1.4375rem);
-			font-size: $font-size-fourteen;
-			font-weight: $font-weight-500;
+			@include font-rem(14px);
+			@include font-weight(medium);
 		}
 		.btn-flat {
 			color: #181a51;
-			font-size: $font-size-fourteen;
-			font-weight: $font-weight-500;
+			@include font-rem(14px);
+			@include font-weight(medium);
 		}
 		.new-client-pointInput {
 			width: $half-width;
@@ -54,6 +53,7 @@
 			height: 26px;
 			border: $border-none;
 			font-size: $font-size-twenty;
+			@include font-rem(14px);
 			margin: $zero;
 			&:focus {
 				outline: $none;
@@ -88,13 +88,12 @@
 		align-items: $align-items-center;
 		margin-bottom: 2rem;
 		h6 {
-			font-size: $font-size-sixteen;
+			@include font-rem(16px, 26px);
 			color: #181a51;
 			margin: $zero;
-			font-weight: $font-weight-500;
-			line-height: 26px;
+			@include font-weight(medium);
 			margin-left: 11px;
-			text-transform: $text-uppercase;
+			text-transform: text-map("text-transform", "uppercase");
 		}
 	}
 
@@ -105,7 +104,7 @@
 	}
 }
 .info-common {
-	padding: 0 1.4rem;
+	@include margin-padding(all, null, all, 0 1.4rem);
 }
 
 .input-field {
@@ -122,11 +121,11 @@
 		}
 	}
 }
-.btnImportCrm {
+.btn-import-crm {
 	color: $default-color;
 	margin-left: $margin-left-auto;
-	font-size: 12px;
-	font-weight: $font-weight-500;
+	@include font-rem(12px);
+	@include font-weight(medium);
 	img {
 		margin-right: 5px;
 	}
@@ -144,7 +143,7 @@
 		height: 33px;
 		margin-top: 1.5rem;
 		span {
-			font-size: $font-size-twenty;
+			@include font-rem(20px);
 			margin-right: 6px;
 		}
 		&:hover {
@@ -154,8 +153,7 @@
 	}
 	p {
 		color: #696a8e;
-		font-size: $font-size-fourteen;
-		// line-height: 24px;
+		@include font-rem(14px);
 		@include margin-padding(all, 0 0 1.5625rem 0, all, null);
 	}
 	.switch {
@@ -163,26 +161,25 @@
 	}
 }
 .reciepent {
-	padding: 0 0 0 2.1rem;
+	@include margin-padding(all, null, all, 0 0 0 2.1rem);
 	margin-bottom: 30px;
 }
 .select-wrapper + label {
 	@include transform(scale(1));
-	//transform: scale(1);
 }
 .advanceHeadingMargin {
 	margin-left: 1.3125rem;
 }
 .btn-round {
 	@extend %btn;
-	padding: 0 1.4375rem;
-	font-size: $font-size-fourteen;
-	font-weight: $font-weight-500;
+	@include margin-padding(all, null, all, 0 1.4375rem);
+	@include font-rem(13px);
+	@include font-weight(medium);
 }
 
 .information-heading .btn-round {
-	font-size: $font-size-tweleve;
-	text-transform: $text-capitalize;
+	@include font-rem(12px);
+	text-transform: text-map("text-transform", "capitalize");
 	line-height: $line-height-normal !important;
 	height: $height-auto !important;
 	@include margin-padding(all, 0 0 0 1.3125rem, all, 0.36rem 0.75rem);
@@ -192,12 +189,16 @@
 }
 .info-sidebar-right {
 	background: color("grey", "lighten-5");
-	padding: 20px;
+	@include margin-padding(all, null, all, 1.375rem);
 	max-width: 35.3%;
 	flex: 0 0 35.3%;
 }
-.select-wrapper input.select-dropdown {
-	color: color("grey", "darken-2");
+.select-wrapper {
+	input {
+		&.select-dropdown {
+			color: color("grey", "darken-2");
+		}
+	}
 }
 
 // Recipent Modal start here
@@ -207,7 +208,7 @@
 	max-width: 57rem;
 
 	.modal-header {
-		padding: 2.5rem 2.3rem 1.7rem 3.6rem;
+		@include margin-padding(all, null, all, 2.5rem 2.3rem 1.7rem 3.6rem);
 	}
 
 	.share-icon {
@@ -215,7 +216,7 @@
 		background-position: -23px -263px;
 	}
 	.modal-content {
-		padding: 0 3.6rem;
+		@include margin-padding(all, null, all, 0 3.6rem);
 	}
 	.add-recipient-content-row {
 		border: 1px solid color("grey", "lighten-3");
@@ -230,7 +231,7 @@
 		margin-bottom: 1.2rem;
 		label {
 			font-size: 1rem;
-			text-transform: $text-capitalize;
+			text-transform: text-map("text-transform","capitalize");
 			color: $recipentlabelColor;
 		}
 		input,
@@ -255,14 +256,13 @@
 
 .modal-footer {
 	background-color: color("shades", "transparent");
-	padding: 0 3.5rem 3.8125rem;
+	@include margin-padding(all, null, all, 0 3.5rem 3.8125rem);
 	height: $height-auto;
-	text-align: $text-left;
+	text-align: text-map("text-align","left");
 	.btn-flat {
-		margin: $zero;
-		padding: $zero;
+		@include margin-padding(all, 0, all, 0);
+		@include font-weight(medium);
 		font-size: 0.95rem;
-		font-weight: 500;
 		@include flexbox();
 		align-items: $align-items-center;
 		color: color("indigo", "base");
@@ -284,9 +284,8 @@
 	margin-top: 1.2rem;
 	.btn-flat {
 		color: color("grey", "darken-4");
-		font-weight: $font-weight-500;
-		font-size: 14px;
-		//margin-left: 1.875rem;
+		@include font-weight(medium);
+		@include font-rem(14px);
 	}
 }
 .mb-0 {
@@ -296,9 +295,9 @@
 	@include flexbox();
 	align-items: $align-items-center;
 	@include flex-wrap($wrap);
-	padding: 9px 12px 9px;
-	transition: $transiton;
-	position: $position-relative;
+	@include margin-padding(all, null, all, 0.625rem 0.8125rem 0.625rem);
+	@include transition(0.5s);
+	@include relative;
 	&:hover {
 		background: color("grey", "lighten-4");
 	}
@@ -308,13 +307,12 @@
 		flex: 0 0 44px;
 	}
 	h6 {
-		font-size: $font-size-sixteen;
+		@include font-rem(16px, 26px);
 		color: color("indigo", "base");
-		line-height: $line-height-twentysix;
 		margin: $zero;
 	}
 	p {
-		font-size: $font-size-fourteen;
+		@include font-rem(14px);
 		color: color("grey", "darken-2");
 		margin: $zero;
 	}
@@ -323,8 +321,8 @@
 			background: #efeff3 url(../images/common-icons.svg) no-repeat -371px -258px;
 			width: 2.9rem;
 			height: 2.9rem;
-			margin-left: $margin-left-auto;
-			border-radius: $border-radius-thirty;
+			@include margin-direction(left);
+			@include border-radius(30px);
 			display: $display-inline-block;
 		}
 	}
@@ -338,17 +336,16 @@
 			background: #efeff3 url(../images/common-icons.svg) no-repeat -371px -258px;
 			width: 2.9rem;
 			height: 2.9rem;
-			margin-left: $margin-left-auto;
-			border-radius: $border-radius-thirty;
+			@include margin-direction(left);
+			@include border-radius(30px);
 		}
 		li {
 			a {
-				font-size: $font-size-fourteen;
+				@include font-rem(14px);
 				color: color("grey", "darken-4");
 				@include flexbox();
 				align-items: $align-items-center;
 				padding: 19px 20px;
-
 			}
 		}
 		.delete-icon {

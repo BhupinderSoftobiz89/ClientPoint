@@ -1,0 +1,33 @@
+// Text property maps
+
+$text-maps: (
+    'text-align': (
+        left:left,
+        center:center,
+        right:right,
+        justify:justify
+    ),
+    'text-transform': (
+        uppercase:uppercase,
+        lowercase:lowercase,
+        capitalize:capitalize,
+        none:none,
+        inherit:inherit,
+        initial:initial,
+        unset:unset
+    ),
+    'text-decoration': (
+        overline:overline,
+        line-through:line-through,
+        underline:underline
+    ),
+) !default;
+
+@function text-map($text-property, $text-value) {
+    @return map-get(map-get($text-maps, $text-property), $text-value);
+}
+
+// Usage
+
+// text-transform:text-map("text-transform","uppercase");
+

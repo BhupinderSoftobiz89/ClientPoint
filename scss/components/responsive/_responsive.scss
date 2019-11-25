@@ -269,7 +269,7 @@
 		} 
 	} 
 	.newclientpoint-title-bar {
-		.clientMenu {
+		.client-menu {
 			margin-left: $inherit;
 		}
 	}
@@ -427,20 +427,20 @@
 	.full-height {
 		height: $auto !important;
 	}
-	.addUserHeader {
-		.addUserLeftpanel {
+	.add-userHeader {
+		.add-userLeftpanel {
 			flex: 0 0 $full-width;
 		}
 	}
-	.addUserHeader {
-		.addUserButtons {
+	.add-userHeader {
+		.add-user-buttons {
 			.btn {
 				margin-top: 1rem;
 			}
 		}
 	}
-	.addUserHeader {
-		.addUserButtons {
+	.add-userHeader {
+		.add-user-buttons {
 			@include margin-padding(all, 0, all, null);
 		}
 	}
@@ -651,7 +651,7 @@
 			font-size: 1rem;
 		}
 	} 
-	.internetDomain {
+	.internet-domain {
 		h6 {
 			font-size: 1.1rem;
 		}
@@ -709,7 +709,7 @@
 		}
 	}
 	.newclientpoint-title-bar {
-		.clientMenu {
+		.client-menu {
 			width: $full-width;
 			margin-bottom: 1rem;
 		}
