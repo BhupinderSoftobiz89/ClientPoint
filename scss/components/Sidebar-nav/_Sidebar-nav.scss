@@ -4,24 +4,23 @@
 	width: 11.67rem;
 	height: $height-hundred-per;
 	@include navGradient(0deg, #8b8eff, #5f63ff);
-	position: $position-fixed;
 	z-index: 5;
-	top: $top-zero;
+	@include fixed(top 0);
 	@include transition(all 0.5s);
 	.nav-menu-outer {
 		background: $navPrimaryBg;
 		flex: 1;
-		display: $display-block;
+		@include flex(block);
 	}
 	ul {
 		li {
-			display: $display-list-item;
+			@include flex(list-item);
 			float: $none;
 			a {
 				white-space: $white-spacenowrap;
-				@include flexbox();
-				align-items: $align-items-center;
-				padding: 0 0 0 1.5625rem;
+				@include flex(flex);
+				@include flex-align-items(center);
+				@include margin-padding(all, null, all, 0 0 0 1.5625rem);
 				color: color("indigo", "lighten-3");
 				@include transition(all 0.5s);
 				&:hover {
@@ -79,10 +78,7 @@
 	background: $navPrimaryBg;
 	max-width: 14rem;
 	width: $full-width;
-	// position: $position-fixed;
-	// left: 5rem;
 	height: calc(100% - 5rem);
-	// top: 5rem;
 	@include fixed(top 5rem left 5rem);
 	@include transition(all 0.5s);
 	ul {
@@ -90,7 +86,7 @@
 		li {
 			a {
 				@include font-rem(16px);
-				display: $display-block;
+				@include flex(block);
 				@include margin-padding(all, null, all, 1.2rem 1.875rem);
 				color: rgba(255, 255, 255, 0.35);
 				&:hover {
@@ -122,14 +118,14 @@
 		li {
 			height: 50px;
 			width: 50px;
-			margin: $margin-auto;
+			@include margin-direction(auto);
 			margin-top: 15px;
 			a {
 				height: 50px;
 				font-size: $zero;
 				@include margin-padding(all, null, all, 0);
 				@include border-radius($border-radius-hundred);
-				justify-content: $justifycenter;
+				@include flex-justify(center);
 				.common-icon-bg {
 					margin-right: $zero;
 				}
@@ -142,7 +138,7 @@
 }
 .full-width-nav {
 	//background: color("indigo", "accent-4");
-	display: $display-block;
+	@include flex(block);
 	@include transition(all 0.5s);
 	.nav-menu {
 		background: color("indigo", "accent-4");
@@ -217,20 +213,20 @@
 
 .sidebar-nav.sidebar-nav-close {
 	.logo-big {
-		display: $diplay-none;
+		@include flex(none);
 	}
 	.logo-small {
-		display: $display-block;
+		@include flex(block);
 	}
 }
 
 
 .sidebar-nav.full-width-nav {
 	.logo-big {
-		display: $display-block;
+		@include flex(block);
 	}
 	.logo-small {
-		display: $diplay-none;
+		@include flex(none);
 	}
 	.clientpoint-logo {
 		max-width: 115px;

@@ -1,16 +1,15 @@
 /* Library CSS start here */
 .newclientpoint-title-bar {
 	.library-header-right {
-		@include flexbox();
-		//@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-justify(flex-end);
 		flex: 1;
-		justify-content: flex-end;
 		.common-default-search {
 			@include margin-padding(all, 0 1.25rem 0 0, all, null);
 		}
 		.btn-round {
-			@include flexbox();
+			@include flex(flex);
 			@include margin-padding(all, null, all, 0 1.625rem);
 			.material-icons {
 				@include margin-padding(all, 0 0 0 0.5rem, all, null);
@@ -19,12 +18,12 @@
 	}
 }
 .tile-icon {
-	display: $display-inline-block;
+	@include flex(inline-block);
 	background: url(../images/common-icons.svg) no-repeat -320px -1454px;
 	@include w-h-rem(20px, 20px);
 }
 .library-folder-icon {
-	display: $display-inline-block;
+	@include flex(inline-block);
 	background: url(../images/common-icons.svg) no-repeat -242px -199px;
 	@include w-h-rem(25px, 18px);
 	@include margin-padding(all, 0 0.3rem 0 0, all, null);
@@ -32,7 +31,7 @@
 }
 .library-links {
 	background: url(../images/common-icons.svg) no-repeat -315px -339px;
-	display: $display-inline-block;
+	@include flex(inline-block);
 	@include w-h-rem(30px, 30px);
 	@include vertical-align(middle);
 	@include border-radius(100%);
@@ -57,7 +56,7 @@
 		}
 		label {
 			@include vertical-align(middle);
-			display: $display-inline-block;
+			@include flex(inline-block);
 			@include w-h-rem(17px, 17px);
 			@include margin-padding(all, 0 0.7rem 0 0, all, null);
 		}
@@ -86,9 +85,8 @@
 }
 
 .table-options {
-	@include flexbox();
-	//align-items: $align-items-center;
-	@include flex-wrap($wrap);
+	@include flex(flex);
+	@include flex-wrap(wrap);
 	@include absolute(top auto left 0 bottom -15rem right auto);
 	width: $full-width;
 	background: color("shades", "white");
@@ -104,9 +102,9 @@
 		@include font-weight(medium);
 		text-transform: text-map("text-transform","uppercase");
 		color: color("grey", "darken-4");
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		@include margin-padding(all, 0 2.5rem 0.5rem 0, all, null);
 	}
 	.edit-icon {
@@ -123,15 +121,15 @@
 	}
 
 	.table-edit-options {
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		flex: 1;
 		@include margin-padding(all, 0 0 0 0.625rem, all, null);
 	}
 }
 .table-options.hideOptions {
-	@include flexbox();
+	@include flex(flex);
 	bottom: $zero;
 }
 .library-table {
@@ -144,8 +142,8 @@
 	right: 0;
 }
 .export-down-icons {
-	align-items: $align-items-center;
-	@include flexbox();
+	@include flex-align-items(center);
+	@include flex(flex);
 	.material-icons {
 		color: color("indigo", "base");
 		@include vertical-align(middle);

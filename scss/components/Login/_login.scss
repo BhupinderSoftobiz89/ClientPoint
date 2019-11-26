@@ -1,8 +1,8 @@
 /* Login page start here  */
 
 .login {
-	@include flexbox();
-	@include flex-wrap($wrap);
+	@include flex(flex);
+	@include flex-wrap(wrap);
 	height: $height-hundred-per;
 	.login-leftpanel {
 		background: url(../images/login-bg.jpg) no-repeat top center;
@@ -31,7 +31,7 @@
 			width: 1.2rem;
 			height: 1.3rem;
 			margin-right: 1rem;
-			display: $display-inline-block;
+			@include flex(inline-block);
 		}
 	}
 	.login-links {
@@ -52,23 +52,22 @@
 		height: 100%;
 		.login-step {
 			ul {
-				@include inlineflex();
-				@include flex-wrap($wrap);
-				align-items: $align-items-center;
+				@include flex(inline-flex);
+				@include flex-wrap(wrap);
+				@include flex-align-items(center);
 				@include relative();
 				@include margin-padding(all, null, all, 0 0 0 64px);
 				background: color("shades", "white");
 				height: $height-hundred-per;
 				li {
 					@include margin-padding(all, 0 0 10px 0, all, null);
-					@include flexbox();
-					@include flex-wrap($wrap);
-					align-items: $align-items-center;
+					@include flex(flex);
+					@include flex-wrap(wrap);
+					@include flex-align-items(center);
 					a {
-						@include flexbox();
-						@include flex-wrap($wrap);
-						align-items: $align-items-center;
-						//justify-content: $justifycenter;
+						@include flex(flex);
+						@include flex-wrap(wrap);
+						@include flex-align-items(center);
 						@include font-rem(14px, 20px);
 						color: color("grey", "lighten-3");
 						@include relative();
@@ -77,10 +76,10 @@
 						text-shadow: $none;
 						@include font-weight(normal);
 						span {
-							justify-content: $justifycenter;
-							@include flexbox();
-							@include flex-wrap($wrap);
-							align-items: $align-items-center;
+							@include flex-justify(center);
+							@include flex(flex);
+							@include flex-wrap(wrap);
+							@include flex-align-items(center);
 							color: color("shades", "white");
 							@include font-weight(medium);
 							@include margin-padding(all, 0 16px 0 0, all, null);
@@ -167,10 +166,10 @@
 			background: #dfdfdf !important;
 		}
 		.btn {
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
-			justify-content: $justifycenter;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(center);
+			@include flex-justify(center);
 			width: $full-width;
 			@include absolute(top auto left 0 bottom 0);
 			@include font-rem(22px, 26px);
@@ -205,10 +204,10 @@
 		@include margin-padding(all, 0 0 20px 0, all, null);
 	}
 	.getting-started-row {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
-		justify-content: $justifycenter;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
+		@include flex-justify(center);
 		.btn {
 			max-width: 288px;
 		}
@@ -275,10 +274,10 @@
 	width: 65px;
 	height: 65px;
 	line-height: 65px;
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
-	justify-content: $justifycenter;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
+	@include flex-justify(center);
 	border: 1px dashed color("grey", "lighten-3");
 	@include absolute(top 29px);
 	// top: 29px;
@@ -296,9 +295,9 @@
 	max-width: $full-width !important;
 }
 .add-recipent {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	@include font-rem(13px, 20px);
 	color: color("indigo", "base");
 	text-transform: text-map("text-transform","uppercase");
@@ -320,7 +319,7 @@
 			width: 1.5rem;
 			height: 1.85rem;
 			margin-right: 11px;
-			display:$display-inline-block;
+			@include flex(inline-block);
 		}
 		.material-icons {
 			color: color("grey", "darken-4");
@@ -338,10 +337,10 @@
 	.upload-file-choose {
 		border: 1px dashed color("grey", "lighten-3");
 		height: 294px;
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
-		justify-content: $justifycenter;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
+		@include flex-justify(center);
 		@include relative();
 		.file-image {
 			@include icon(39.5px, 39.5px, (null));
@@ -375,9 +374,9 @@
 		@include opacity(0);
 	}
 	.modal-footer {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		@include margin-padding(all, null, all, 0 4.375rem 3.375rem 4.9rem);
 		.btn-flat {
 			@include font-rem(14px, 16px);
@@ -398,7 +397,7 @@
 	}
 }
 .d-none {
-	display: $diplay-none;
+	@include flex(none);
 }
 .logintab-content {
 	height: calc(100% - 153px);

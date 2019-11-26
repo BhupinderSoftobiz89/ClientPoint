@@ -13,9 +13,9 @@
 	background: color("shades", "white");
 	@include border-radius(5px);
 	.activity-header {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		@include border-radius(0);
 		background-color: color("shades", "transparent");
 		border-bottom: 1px solid color("grey", "lighten-5");
@@ -39,9 +39,9 @@
 		@include margin-padding(all, null, all, 20px 0);
 		border-bottom: 2px solid color("grey", "lighten-5");
 		.activity-row {
-			align-items: $align-items-center;
-			@include flexbox();
-			@include flex-wrap($wrap);
+			@include flex-align-items(center);
+			@include flex(flex);
+			@include flex-wrap(wrap);
 			@include margin-padding(all, 0 0 15px 0, all, 0 30px 0 20px);
 			border-left: 3px solid color("shades", "transparent");
 			&:last-child {
@@ -57,7 +57,7 @@
 				@include margin-padding(all, 0, all, null);
 			}
 			.count {
-				margin-left: $margin-left-auto;
+				@include margin-direction(left);
 				@include font-rem(16px, 24px);
 				@include font-weight(normal);
 				color: color("blue-grey", "darken-1");
@@ -95,9 +95,9 @@
 			border-bottom: $none;
 		}
 		.created-row-head {
-			align-items: $align-items-center;
-			@include flexbox();
-			@include flex-wrap($wrap);
+			@include flex-align-items(center);
+			@include flex(flex);
+			@include flex-wrap(wrap);
 			h5 {
 				@include margin-padding(all, 0, all, null);
 				@include font-rem(12px, 24px);
@@ -111,9 +111,9 @@
 			width: 30px;
 			height: 30px;
 			@include border-radius(30px);
-			@include flexbox();
-			align-items: $align-items-center;
-			justify-content: $justifycenter;
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-justify(center);
 			margin-right: $zero;
 			background: url(../images/common-icons.svg) no-repeat -315px -339px;
 			display: $display-inline-block;
@@ -134,9 +134,9 @@
 		}
 	}
 	.status {
-		align-items: $align-items-center;
-		@include flexbox();
-		@include flex-wrap($wrap);
+		@include flex-align-items(center);
+		@include flex(flex);
+		@include flex-wrap(wrap);
 		.status-leftpanel {
 			@include margin-padding(all, 0 3.375rem 0 0, all, null);
 		}
@@ -185,9 +185,9 @@
 			@include margin-padding(all, 0, all, null);
 		}
 		a {
-			align-items: $align-items-center;
-			@include flexbox();
-			@include flex-wrap($wrap);
+			@include flex-align-items(center);
+			@include flex(flex);
+			@include flex-wrap(wrap);
 			@include font-rem(14px, 20px);
 			color: color("grey", "darken-4");
 			@include margin-padding(all, null, all, 0);
@@ -244,12 +244,12 @@
 		.active {
 			border-left: 3px solid #5f63ff !important;
 			&:before {
-				display: $none;
+				@include flex(none);
 			}
 		}
 	}
 }
-.justYetPara {
+.just-yet-para {
 	@include font-rem(14px, 26px);
 	color: color("blue-grey", "darken-1");
 }

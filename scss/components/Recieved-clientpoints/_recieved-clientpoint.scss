@@ -1,9 +1,9 @@
 /* Recieved ClientPoint CSS Start Here */
 
 .filters {
-	@include flexbox();
-	align-items: $align-items-center;
-	@include flex-wrap($wrap);
+	@include flex(flex);
+	@include flex-align-items(center);
+	@include flex-wrap(wrap);
 	@include margin-padding(all, null, all, 0 2.5rem);
 	.material-icons {
 		color: color("indigo", "base");
@@ -44,7 +44,7 @@
 }
 .data-table {
 	.user-image {
-		display: $display-inline-block;
+		@include flex(inline-block);
 		@include margin-padding(all, 0 1rem 0 0, all, null);
 		@include vertical-align(middle);
 		img {
@@ -54,14 +54,14 @@
 }
 .recieved-dropdown-arrow {
 	@include vertical-align(middle);
-	display: $display-inline-block;
+	@include flex(inline-block);
 	.material-icons {
 		@include vertical-align(middle);
 	}
 }
 .user-info {
 	@include margin-padding(all, null, all, 0 0 0 4.4rem);
-	display: $none;
+	@include flex(none);
 	.email-icon {
 		@include icon(17px, 20px, (false));
 		background-position: -382px -413px;

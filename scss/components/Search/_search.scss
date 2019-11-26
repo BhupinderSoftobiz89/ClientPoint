@@ -10,8 +10,8 @@
 
 	.search-row {
 		@include margin-padding(all, null, all, 0.9rem 1.5625rem);
-		@include flexbox();
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-wrap(wrap);
 		//align-items: $align-items-center;
 	}
 	.results-icon {
@@ -19,7 +19,6 @@
 		@include w-h-rem(20px, 20px);
 		@include border-radius(0.3125rem);
 		@include margin-padding(all, 0 0.9375rem 0 0, all, null);
-		//@include icon-radius(1.42857rem, $radius: 0.3125rem);
 		&.suitcase-icon {
 			background: #00b0dc url(../images/common-icons.svg) no-repeat -389px -1380px;
 		}
@@ -58,15 +57,16 @@
 	.top-search-row {
 		background: #eaf6ff;
 		@include margin-padding(all, null, all, 0.85rem 1.5625rem);
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
+
 		h6 {
 			@include font-rem(14px, 20px);
 			color: color("blue-grey", "darken-1");
 			@include margin-padding(all, 0, all, null);
 		}
-	}	
+	}
 }
 .search-result {
 	&.open {
@@ -92,9 +92,9 @@
 	height: $height-hundred-per;
 	.search-result-header {
 		@include margin-padding(all, null, all, 1.5rem 2.5rem 1.5rem 1.875rem);
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		h1 {
 			@include font-rem(18px, 24px);
 			color: color("grey", "darken-4");
@@ -110,9 +110,9 @@
 		@include margin-padding(all, null, all, 0 0 0 1.875rem);
 		li {
 			a {
-				@include flexbox();
-				@include flex-wrap($wrap);
-				align-items: $align-items-center;
+				@include flex(flex);
+				@include flex-wrap(wrap);
+				@include flex-align-items(center);
 			}
 		}
 		.badge {
@@ -158,15 +158,15 @@
 			}
 		}
 		.collapsible-header {
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(center);
 			@include border-radius(5px);
 			border-bottom: 1px solid color("grey", "lighten-5");
 			h5 {
 				@include font-rem(16px, 26px);
 				@include margin-padding(all, 0, all, null);
-				text-transform: text-map("text-transform","uppercase");
+				text-transform: text-map("text-transform", "uppercase");
 				letter-spacing: 0.5px;
 				color: color("grey", "darken-4");
 				@include font-weight(bold);
@@ -174,9 +174,9 @@
 		}
 		.rotate-arrow {
 			@include margin-padding(all, 0 0 0 auto, all, null);
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(center);
 			@include transition(all 0.5s);
 			.material-icons {
 				@include font-rem(31px);
@@ -200,7 +200,7 @@
 		}
 
 		.user-image {
-			display: $display-inline-block;
+			@include flex(inline-block);
 			@include vertical-align(middle);
 			@include margin-padding(all, 0 1rem 0 0, all, null);
 		}
@@ -211,7 +211,7 @@
 			@include vertical-align(middle);
 		}
 		.linked-in {
-			display: $display-inline-block;
+			@include flex(inline-block);
 			background: url(../images/common-icons.svg) no-repeat -30px -1230px;
 			width: 1.3rem;
 			height: 1.4rem;
@@ -250,8 +250,8 @@
 			}
 		}
 		.comment-content {
-			@include flexbox();
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-wrap(wrap);
 			p {
 				@include font-rem(16px, 24px);
 				color: color("grey", "darken-4");
@@ -274,13 +274,13 @@
 			flex: 1;
 		}
 		.reply-btn {
-			@include flexbox();
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-wrap(wrap);
 			@include font-rem(14px, 16px);
 			letter-spacing: 0.7px;
 			color: color("grey", "darken-4");
 			@include font-weight(medium);
-			text-transform: text-map("text-transform","uppercase");
+			text-transform: text-map("text-transform", "uppercase");
 		}
 		.reply-arrow {
 			@include icon(15.5px, 15.5px, (true));
@@ -319,7 +319,7 @@
 		th {
 			@include margin-padding(all, null, all, 1rem);
 			border-bottom: 1px solid color("grey", "lighten-5");
-			text-transform: text-map("text-transform","uppercase");
+			text-transform: text-map("text-transform", "uppercase");
 			@include font-rem(13px);
 			color: color("grey", "darken-4");
 		}
@@ -368,16 +368,15 @@
 			}
 			&:hover {
 				tr {
-					background: color('shades','transparent');
+					background: color("shades", "transparent");
 				}
-				
 			}
 		}
 	}
 
 	.e-signature-content {
-		@include flexbox();
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-wrap(wrap);
 		@include margin-padding(all, null, all, 1.3rem 1.25rem !important);
 		label {
 			opacity: 1 !important;
@@ -410,9 +409,9 @@
 }
 
 .search-empty-state {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	@include margin-padding(all, 1.5625rem 0 0 0, all, 0 1.875rem);
 	p {
 		@include font-rem(14px, 26px);

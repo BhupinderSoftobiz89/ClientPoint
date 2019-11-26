@@ -242,7 +242,7 @@
 	.newclientpoint-title-bar .library-header-right {
 		justify-content: $justify-content-start;
 	}
-	.perposalDefaultbar {
+	.perposal-defaultbar {
 		flex: 0 0 $full-width;
 		// @include margin-padding(all, 0 0 1rem 0, all, null);
 	}
@@ -295,8 +295,8 @@
 			@include margin-padding(all, null, all, 0 1.5rem 0 0);
 			width: $auto;
 			margin-left: $auto;
+			
 		}
-
 	}
 	
 	.client-details-content {
@@ -310,16 +310,12 @@
 	.new-client-btn {
 		margin-left: inherit !important;
 	}
-
 	.sidebarSubmenu {
 		z-index: 2;
 	}
 	.SidebarOpenMargin {
 		margin-left: 5rem !important;
 	}
-
-
-
 	.clientpoint-title {
 		margin-bottom: 1.25rem;
 	}
@@ -364,7 +360,7 @@
 		}
 	}
 	.ip-address {
-		padding: $zero;
+		@include margin-padding(all, null, all, 0);
 	}
 	.newperposal-client-bar {
 		.dropdown-content {
@@ -401,8 +397,8 @@
 	// }
 	.getting-started {
 		.getting-started-row {
-			display: $display-block;
-			text-align: $text-center;
+			@include flex(block);
+			text-align: text-maps("text-align","center");
 		}
 	}
 	.login {
@@ -731,7 +727,7 @@
 	.clientpoint-preview {
 		.powerdby-logo {
 			@include margin-padding(all, 0.625rem 0, all, null);
-			display: $display-block;
+			@include flex(block); 
 			flex: 0 0 $full-width;
 		}
 	}

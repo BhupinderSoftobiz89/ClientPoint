@@ -10,7 +10,7 @@
 	padding: 2rem;
 	.uikitinnerbox {
 		background: $whiteBg;
-		padding: 1.5rem;
+		@include margin-padding(all, null, all, 1.5rem);
 		border: 1px solid #eee;
 	}
 }
@@ -36,8 +36,8 @@
 	background: color("indigo", "base");
 }
 .input-field {
-	font-weight: $font-weight-500;
-	text-transform: $text-uppercase;
+	@include font-weight(medium);
+	text-transform: text-maps("text-transform","uppercase");
 	@extend %labelCommon;
 
 	label {
@@ -46,8 +46,8 @@
 }
 .select-wrapper li span {
 	color: color("grey", "darken-4");
-	text-transform: $text-capitalize;
-	font-weight: $font-weight-normal;
+	text-transform: text-maps("text-transform","capitalize");
+	@include font-weight(normal);
 }
 .select-wrapper input.select-dropdown {
 	color: color("grey", "darken-2");
@@ -57,35 +57,35 @@
 
 .modal {
 	.modal-header {
-		padding: 1.875rem 1.875rem 1.3rem 2.9375rem;
-		align-items: $align-items-center;
-		@include flexbox();
-		@include flex-wrap($wrap);
+		@include margin-padding(all, null, all, 1.875rem 1.875rem 1.3rem 2.9375rem);
+		@include flex-align-items(center);
+		@include flex(flex);
+		@include flex-wrap(wrap);
 		h4 {
 			color: color("grey", "darken-4");
-			margin: $zero;
-			font-weight: $font-weight-bold;
+			@include margin-padding(all, 0, all, null);
+			@include font-weight(semi-bold);
 		}
 	}
 	.share-icon {
 		line-height: $line-height-normal;
-		display:$display-inline-block;
+		@include flex(inline-block);
 		.material-icons {
 			margin-right: 13px;
 			color: color("indigo", "base");
 		}
 	}
 	.modal-content {
-		padding: $zero;
+		@include margin-padding(all, null, all, 0);
 	}
 	.modal-close {
-		margin-left: $margin-left-auto;
+		@include margin-direction(left);
 		width: 2.5rem;
 		height: 2.5rem;
-		align-items: $align-items-center;
-		@include flexbox();
-		@include flex-wrap($wrap);
-		@include justify-content($justifycenter);
+		@include flex-align-items(center);
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-justify(center);
 		.material-icons {
 			color: color("indigo", "base");
 		}
@@ -101,14 +101,13 @@
 }
 .tabs {
 	overflow: $overflow-y-visible;
-	@include inlineflex();
+	@include flex(inline-flex);
 	.tab {
 		margin-right: 3.6rem;
 		letter-spacing: 0.7px;
 		a {
 			color: color("grey", "darken-1");
-			padding: $zero;
-
+			@include margin-padding(all, null, all, 0);
 			&:hover {
 				color: color("grey", "darken-4");
 			}
@@ -118,7 +117,7 @@
 		}
 		a.active {
 			color: color("grey", "darken-4");
-			font-weight: $font-weight-500;
+			@include font-weight(medium);
 			background-color: color("shade", "transparent");
 			text-shadow: 0 1px 0px #000;
 		}
@@ -127,50 +126,48 @@
 		background-color: color("indigo", "base");
 		bottom: -3px;
 		z-index: 1;
-		//min-width: 50px;
 	}
 }
 .tab-content {
-	padding: 0 3.125rem 1.875rem;
-	//@include flexbox();
+	@include margin-padding(all, null, all, 0 3.125rem 1.875rem);
 }
 
 /* New Proposal Button Bar */
 
 .newperposal-client-bar  {
-	@include flexbox();
+	@include flex(flex);
 	//padding:0.9375rem 1.875rem;
-	align-items: $align-items-center;
-	position: $position-relative;
+	@include flex-align-items(center);
+	@include relative();
 	.newperposal-clientbar-right {
-		margin-left: $margin-left-auto;
-		@include flex-wrap($wrap);
-		@include flexbox();
-		align-items: $align-items-center;
+		@include margin-direction(left);
+		@include flex-wrap(wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
 
 		.file-menu {
-			@include flexbox();
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-align-items(center);
 			color: color("grey", "darken-4");
-			font-weight: $font-weight-500;
+			@include font-weight(medium);
 			margin-right: 3.3rem;
 		}
 		.material-icons {
 			color: color("indigo", "base");
-			font-size: $font-size-twenty;
+			@include font-rem(20px);
 			margin-right: 0.625rem;
 		}
 		.save-file {
 			width: 40px;
 			height: 40px;
-			border-radius: $border-radius-thirty;
-			@include flexbox();
-			align-items: $align-items-center;
-			justify-content: $justifycenter;
+			@include border-radius(30px);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-justify(center);
 			margin-right: $zero;
 			background: url(../images/common-icons.svg) no-repeat -311px -335px;
-			display: $display-inline-block;
-			vertical-align: $verticle-align-middle;
+			@include flex(inline-block);
+			@include vertical-align(middle);
 			&:hover,
 			&:focus,
 			&:active {
@@ -186,9 +183,8 @@
 		min-width: 210px;
 		li {
 			a {
-				font-size: $font-size-fourteen;
-				line-height: $line-height-twenty;
-				padding: 23px 25px;
+				@include font-rem(14px, 20px);
+				@include margin-padding(all, null, all, 1.4375rem 1.5625rem);
 			}
 		}
 	}
@@ -199,32 +195,29 @@
 	color: color('grey','darken-4');
 }
 .common-default-search {
-	@include flexbox();
+	@include flex(flex);
 	max-width: 16.5rem;
 	width: $full-width;
 	height: 35px;
-	position: $position-relative;
-	border-radius: $border-radius-thirty;
+	@include relative();
+	@include border-radius(30px);
 	border: 1px solid color("grey", "lighten-3");
 	input[type="search"] {
 		height: 33px;
-		font-size: $font-size-fourteen;
+		@include font-rem(14px);
 		border: $none;
-		padding: 0 1.25rem 0 2.5rem;
-		margin: $zero;
+		@include margin-padding(all, 0, all, 0 1.25rem 0 2.5rem);
 		&:focus {
 			border-bottom: $none !important;
 		}
 	}
 	input[type="submit"] {
-		position: $position-absolute;
+		@include absolute(top 0.3125rem left 0.625rem);
 		border: $border-none;
 		width: 1.67rem;
 		height: 1.67rem;
 		cursor: pointer;
 		background: url(../images/common-icons.svg) no-repeat -374px -119px;
-		top: 0.3125rem;
-		left: 0.625rem;
 		&:focus {
 			outline: $none;
 		}
@@ -234,25 +227,25 @@
 /* New Proposal Button Bar Title */
 
 .newclientpoint-title-bar {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	h4 {
-		font-weight: $font-weight-500;
+		@include font-weight(medium);
 	}
 	.newclientpoint-title-bar-right {
-		align-items: $align-items-center;
-		margin-left: $margin-left-auto;
-		@include flexbox();
-		@include flex-wrap($wrap);
+		@include flex-align-items(center);
+		@include margin-direction(left);
+		@include flex(flex);
+		@include flex-wrap(wrap);
 		.btn-round {
 			padding: 0 4.92rem;
 		}
 	}
 	.client-menu {
-		margin-left: $margin-left-auto;
-		@include flexbox();
-		@include flex-wrap($wrap);
+		@include margin-direction(left);
+		@include flex(flex);
+		@include flex-wrap(wrap);
 	}
 	.client-menu-common {
 		width: 1.79rem;
@@ -276,28 +269,27 @@
 
 /* Title Bar - Proposal */
 
-.perposalDefaultbar {
-	align-items: $align-items-center;
-	@include flexbox();
-	@include flex-wrap($wrap);
-	position: $position-relative;
-
-	.perposalDefaultbar-right {
-		margin-left: $margin-left-auto;
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+.perposal-defaultbar {
+	@include flex-align-items(center);
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include relative();
+	.perposal-defaultbar-right {
+		@include margin-direction(left);
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 	}
 	.calender-date {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 	}
 	h4 {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
-		margin: $zero;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
+		@include margin-padding(all, 0, all, null);
 		.material-icons {
 			color: color("indigo", "base");
 			margin-top: 0.25rem;
@@ -336,20 +328,20 @@
 	width: 1.2rem;
 	height: 1.2rem;
 	margin-right: 0.6rem;
-	display: $display-inline-block;
+	@include flex(inline-block);
 }
 .d-flex {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 }
 .type {
-	position: $position-relative;
+	@include relative();
 	margin-left: 10px;
 	margin-right: 20px;
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	h5 {
 		margin: $zero;
 	}
@@ -390,7 +382,7 @@
 	width: 2.36rem;
 	height: 2.36rem;
 	background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
-	display: $display-inline-block;
+	@include flex(inline-block);
 }
 .calender-date-textUi {
 	color: #53547d;
@@ -402,14 +394,14 @@
 	width: 2.36rem;
 	height: 2.36rem;
 	background: #fafafb url(../images/common-icons.svg) no-repeat -86px -192px;
-	display: $display-inline-block;
+	@include flex(inline-block);
 }
 .calender-iconUi {
 	background: url(../images/common-icons.svg) no-repeat -243px -495px;
 	width: 1.5rem;
 	height: 1.4rem;
 	margin-right: 0rem;
-	display: $display-inline-block;
+	@include flex(inline-block);
 }
 
 .calender-dropdown-contentUi {
@@ -417,10 +409,10 @@
 	li {
 		min-height: inherit;
 		a {
-			text-align: $text-center;
-			font-size: $font-size-fourteen;
+			text-align:text-map("text-align","center");
+			@include font-rem(14px);
 			color: color("grey", "darken-4");
-			padding: 11px 16px;
+			@include margin-padding(all, nul, all, 0.6875rem 1rem);
 		}
 		&:hover {
 			background: color("grey", "lighten-4");
@@ -428,9 +420,9 @@
 		}
 	}
 	.calender-header-row {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		border-bottom: 1px solid #efeff3;
 	}
 	.calender-header {
@@ -441,25 +433,25 @@
 	.from {
 		width: 4.5rem;
 		height: 3.5625rem;
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
-		justify-content: $justifycenter;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
+		@include flex-justify(center);
 		background: color("grey", "lighten-4");
 		border-right: 1px solid #efeff3;
-		font-size: 12px;
-		text-transform: $text-uppercase;
+		@include font-rem(12px);
+		text-transform: text-maps("text-transform","uppercase");
 		color: #a9a9be;
-		font-weight: $font-weight-500;
+		@include font-weight(medium);
 		letter-spacing: 0.25px;
 	}
 	.date-calenderUi {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		font-size: 1rem;
 		color: color("grey", "darken-4");
-		padding: 0 1.25rem;
+		@include margin-padding(all, null, all, 0 1.25rem);
 	}
 }
 
@@ -479,17 +471,17 @@
 .optionBtn {
 	width: 30px;
 	height: 30px;
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	background: #fafafb url(../images/common-icons.svg) no-repeat -315px -339px;
-	border-radius: $border-radius-hundred;
+	@include border-radius(100%);
 }
 .optionDropDownContentUi {
 	li {
-		font-size: $font-size-fourteen;
+		@include font-rem(14px);
 		a {
-			font-size: $font-size-fourteen;
+			@include font-rem(14px);
 		}
 	}
 }

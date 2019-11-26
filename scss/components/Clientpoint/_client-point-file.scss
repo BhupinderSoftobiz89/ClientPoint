@@ -3,20 +3,19 @@
 	width: $full-width;
 	height: $height-hundred-per;
 	.newclientpoint-title-bar {
-		padding: 1.6rem 1.8125rem;
-		margin: $zero;
+		@include margin-padding(all, 0, all, 1.6rem 1.8125rem);
 		border-bottom: 1px solid color("grey", "lighten-5");
 		h4 {
-			margin: $zero;
+			@include margin-padding(all, 0, all, null);
 		}
 	}
 	.newperposal-client-bar {
-		padding: 1.1rem 1.8125rem;
+		@include margin-padding(all, null, all, 1.1rem 1.8125rem);
 		@include flex-wrap($wrap);
 	}
 	.creating-perposal {
-		@include flexbox();
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-wrap(wrap);
 		height: calc(100% - 153px);
 		.creating-perposal-left {
 			background: color("grey", "lighten-4");
@@ -57,10 +56,10 @@
 				border-top: 2px solid #efeff3;
 				border-bottom: $none;
 				@include font-rem(14px);
-				@include flexbox();
-				@include flex-wrap($wrap);
-				align-items: $align-items-center;
-				padding: 0.8rem 2rem 0.8rem 1.8rem;
+				@include flex(flex);
+				@include flex-wrap(wrap);
+				@include flex-align-items(center);
+				@include margin-padding(all, null, all, 0.8rem 2rem 0.8rem 1.8rem);
 				@include transition(all 0.5s);
 				
 			}
@@ -78,7 +77,7 @@
 			}
 			li.active {
 				.material-icons.arrow-accordion {
-					transform: rotate(180deg);
+					@include transform(rotate(180deg));
 				}
 			}
 			.collapsible-body {
@@ -105,7 +104,7 @@
 					width: 1.75rem;
 					height: 1.6rem;
 					margin-left: 0.8rem;
-					display: $display-inline-block;
+					@include flex(inline-block);
 					@include vertical-align(middle);
 				}
 			}
@@ -113,12 +112,11 @@
 		
 		}
 		.introduction-row {
-			@include flexbox();
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-wrap(wrap);
 			@include font-rem(14px);
 			color: color("grey", "darken-2");
-			padding: 0.95rem 2rem 0.95rem 1.8rem;
-			//border-left: 7px solid color("shades", "transparent");
+			@include margin-padding(all, null, all, 0.95rem 2rem 0.95rem 1.8rem);
 			min-height: 50.75px;
 			@include relative();
 
@@ -126,7 +124,7 @@
 				background: color("grey", "lighten-4");
 
 				.edit-btns {
-					opacity: 1;
+					@include opacity(1);
 					visibility: $visibilty-visible;
 				}
 			}
@@ -148,11 +146,11 @@
 					line-height: $line-height-normal;
 					@include margin-padding(all, null, all, 0 1.6875rem 1.375rem);
 					color: color("grey", "darken-4");
-					@include flexbox();
-					@include flex-wrap($wrap);
-					align-items: $align-items-center;
+					@include flex(flex);
+					@include flex-wrap(wrap);
+					@include flex-align-items(center);
 					.switch {
-						margin-left: $margin-left-auto;
+						@include margin-direction(left);
 					}
 				}
 				.divider {
@@ -162,11 +160,11 @@
 			}
 		}
 		.edit-btns {
-			margin-left: $margin-left-auto;
-			@include flexbox();
-			@include flex-wrap($wrap);
+			@include margin-direction(left);
+			@include flex(flex);
+			@include flex-wrap(wrap);
 			@include relative();
-			align-items: $align-items-center;
+			@include flex-align-items(center);
 			@include fade(hide);
 			.edit-btn {
 				@include icon(20px, 26px, (false));
@@ -205,9 +203,9 @@
 		max-width: 16.5rem;
 	}
 	.search-tab-header {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		padding-right: 3.6rem;
 		padding-left: 3.125rem;
 		.grid-link {
@@ -243,9 +241,7 @@
 	}
 	.choose-file {
 		border: 1px dashed color("grey", "lighten-3");
-		padding: 2.8rem 2.5rem;
-		margin: 2.1rem 0 0;
-		
+		@include margin-padding(all, 2.1rem 0 0, all, 2.8rem 2.5rem);
 		p {
 			color: $recipentlabelColor;
 			line-height: $line-height-twenty;
@@ -290,11 +286,9 @@
 		color: color("grey", "darken-2");
 		@include font-rem(16px);
 		ul {
-			display: $diplay-none;
+			@include flex(none);
 
 			li {
-				// @include  flexbox();
-				// align-items: $align-items-center;
 				padding-left: 34px;
 				line-height: 40px;
 				@include relative();
@@ -325,13 +319,13 @@
 		.arrow {
 			@include relative();
 			line-height: 40px;
-			@include flexbox();
+			@include flex(flex);
 			cursor: pointer;
-			align-items: $align-items-center;
+			@include flex-align-items(center);
 			&:before {
 				@include transition(all 0.5s);
 				content: "";
-				display: $display-inline-block;
+				@include flex(inline-block);
 				width: 15px;
 				height: 18px;
 				background: url(../images/common-icons.svg) no-repeat -327px -199px;
@@ -378,16 +372,16 @@
 	background: linear-gradient(to left, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
 	@include absolute(top 0 right 0);
 	padding-right: 30px;
-	@include flexbox();
-	justify-content: flex-end;
+	@include flex(flex);
+	@include flex-justify(flex-end);
 }
 .scroll-arrow {
 	width: 2.5rem;
 	height: 2.5rem;
 	background: url(../images/common-icons.svg) no-repeat -84px -259px;
 	@include relative(top 6px right 0);
-	@include flexbox();
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-align-items(center);
 }
 .tab-content.height-auto {
 	height: 195px;
@@ -408,8 +402,8 @@
 			a {
 				color: color("grey", "darken-2");
 				@include font-rem(16px);
-				@include flexbox();
-				align-items: $align-items-center;
+				@include flex(flex);
+				@include flex-align-items(center);
 				line-height: 40px;
 				@include margin-padding(all, null, all, 0 3.6rem 0 3.125rem);
 				&:hover {
@@ -452,8 +446,8 @@
 	}
 	.add-filesname-row {
 		@include margin-padding(all, null, all, 0.55rem 3.6rem 0.55rem 3.125rem);
-		@include flexbox();
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-align-items(center);
 		color: color("grey", "darken-2");
 		@include font-rem(16px);
 
@@ -467,20 +461,20 @@
 		}
 	}
 	.close-file {
-		margin-left: $margin-left-auto;
-		@include flexbox();
-		align-items: $align-items-center;
+		@include margin-direction(left);
+		@include flex(flex);
+		@include flex-align-items(center);
 		.material-icons {
 			color: color("indigo", "base");
-			@include flexbox();
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-align-items(center);
 		}
 	}
 }
 .add-more-files {
 	margin-top: 20px;
-	@include flexbox();
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-align-items(center);
 	padding-right: 3.6rem;
 	padding-left: 3.125rem;
 	@include font-weight(semi-bold);
@@ -516,21 +510,21 @@
 /* ClientPoint Content Start here */
 
 .editing-heading {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	margin-bottom: 20px;
 	.page-count {
 		@include font-rem(16px, 26px);
 		color: color("grey", "darken-4");
 	}
 	.editing {
-		margin-left: $margin-left-auto;
+		@include margin-direction(left);
 		@include font-weight(semi-bold);
 		text-transform: text-map("text-transform","uppercase");
 		color: color("grey", "darken-4");
-		@include flexbox();
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-align-items(center);
 		.edit-icon {
 			@include icon(20px, 20px, (false));
 			background-position: -26px -348px;
@@ -540,7 +534,7 @@
 .clientpoint-editing {
 	border: 1px solid #ededed;
 	background: color("shades", "white");
-	padding: 2.5rem 0 2.5rem 2.5rem;
+	@include margin-padding(all, null, all, 2.5rem 0 2.5rem 2.5rem);
 	height: calc(100% - 56px);
 	p {
 		@include font-rem(16px);
@@ -554,11 +548,9 @@
 	}
 	.content {
 		@extend .page-content;
-		//height: 100%;
 	}
 	.demo {
 		@extend .page-content;
-		// height: 100%;
 	}
 	.word-search {
 		background: rgba(247, 186, 15, 0.39);
@@ -587,7 +579,7 @@
 		}
 		input[type="text"] {
 			background: color("grey", "lighten-4");
-			padding: 10px;
+			@include margin-padding(all, null, all, 0.625rem);
 			box-sizing: $box-sizing;
 			height: 44px;
 			border-bottom: 1px solid color("grey", "lighten-3");
@@ -693,7 +685,7 @@
 	.new-window-link {
 		color: color("indigo", "base");
 		line-height: $line-height-twentyfour;
-		display: $display-inline-block;
+		@include flex(inline-block);
 	}
 	.settings {
 		margin-top: 1.563rem;
@@ -705,9 +697,9 @@
 			margin-bottom: 1.5rem;
 		}
 		.setting-row {
-			@include flexbox();
-			align-items: $align-items-center;
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
 			border-bottom: 1px solid color("grey", "lighten-3");
 			padding-bottom: 15px;
 			margin-bottom: 15px;
@@ -728,9 +720,9 @@
 	.enter-password {
 		flex: 0 0 100%;
 		max-width: $full-width;
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		margin-top: 1.563rem;
 		input[type="text"] {
 			max-width: 300px;
@@ -759,9 +751,9 @@
 		border: 1px solid #f2f3f3;
 		.email-address,
 		.subject-email {
-			@include flexbox();
-			align-items: $align-items-center;
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
 			@include margin-padding(all, null, all, 1.1rem 2.188rem);
 			border-bottom: 1px solid #f2f3f3;
 			label {
@@ -787,9 +779,6 @@
 		}
 	}
 	#email {
-		.justify-content-end {
-			justify-content: $justify-content-end;
-		}
 		.modal-footer {
 			@include margin-padding(all, null, all, 0 3.125rem 2.1rem 3.5rem);
 			.btn-row {
@@ -873,10 +862,10 @@
 	}
 }
 .switch-inline {
-	@include flexbox();
-	align-items: $align-items-center;
-	@include flex-wrap($wrap);
-	padding: 0 1.6875rem 1.375rem;
+	@include flex(flex);
+	@include flex-align-items(center);
+	@include flex-wrap(wrap);
+	@include margin-padding(all, null, all, 0 1.6875rem 1.375rem);
 	.switch {
 		@include margin-direction(left);
 	}
@@ -891,23 +880,23 @@
 		background: color("grey", "darken-4");
 		width: $full-width;
 		min-height: 50px;
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		@include margin-padding(all, null null, all, 0 0 0 40px);
 		@include relative();
 		z-index: 3;
 	}
 	.powerdby-rightpanel {
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		@include margin-direction(left);
 	}
 	.sentby-dropdown {
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		background: color("indigo", "accent-4");
 		min-height: 50px;
 		@include margin-padding(all, 0 0 0 29px, all, 0px 0 0 30px);
@@ -915,7 +904,6 @@
 		h5 {
 			color: color("shades", "white");
 			@include font-rem(15px, 50px);
-			//line-height: $line-height-twenty;
 			@include margin-padding(all, 0, null, null);
 		}
 		.material-icons {
@@ -927,9 +915,9 @@
 		}
 	}
 	.powerdby-logo {
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 	}
 
 	.sentby-dropdown.downarrow-powered {
@@ -938,12 +926,12 @@
 		}
 	}
 	.poweredby-marvel {
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		.border-marvel {
 			border-right: 1px solid color("indigo", "accent-4");
-			display: $display-inline-block;
+			@include flex(inline-block);
 			@include margin-padding(all, 0 20px, all, null null);
 			height: 25px;
 		}
@@ -956,22 +944,22 @@
 
 .powerd-by-toggleInner {
 	background: color("indigo", "accent-4");
-	@include flexbox();
-	align-items: $align-items-center;
-	@include flex-wrap($wrap);
+	@include flex(flex);
+	@include flex-align-items(center);
+	@include flex-wrap(wrap);
 	@include margin-padding(all, null, all, 17px 30px 17px 40px);
 	.powerdby-toggle-links {
 		//@include margin-padding(all, null, all, 17px 30px 17px 0);
 
 		ul {
-			@include flexbox();
-			align-items: $align-items-center;
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
 			@include margin-padding(all, 0, null, null);
 			li {
-				@include flexbox();
-				align-items: $align-items-center;
-				@include flex-wrap($wrap);
+				@include flex(flex);
+				@include flex-align-items(center);
+				@include flex-wrap(wrap);
 				@include font-weight(medium);
 				text-transform: text-map("text-transform","uppercase");
 				@include font-rem(14px);
@@ -979,9 +967,9 @@
 				a {
 					color: color("shades", "white");
 					@include margin-padding(all, null, all, 0 40px 0 0);
-					@include flexbox();
-					align-items: $align-items-center;
-					@include flex-wrap($wrap);
+					@include flex(flex);
+					@include flex-align-items(center);
+					@include flex-wrap(wrap);
 				}
 				.viewer-links {
 					@include opacity(0.36);
@@ -1006,17 +994,17 @@
 		}
 	}
 	.sign-now {
-		margin-left: $margin-left-auto;
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include margin-direction(left);
+		@include flex(center);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		.sign-up {
 			letter-spacing: 0.4375px;
 			@include margin-padding(all, 0 20px 0 0, all, 0 3.7rem);
 		}
 		.dark-bg-btn {
-			@include flexbox();
-			align-items: $align-items-center;
+			@include flex(center);
+			@include flex-align-items(center);
 			background: color("indigo", "darken-3");
 			.material-icons {
 				@include margin-padding(all, 0 0 0 8px, all, null);
@@ -1072,9 +1060,9 @@
 }
 
 .table-of-content {
-	@include flexbox();
-	align-items: $align-items-center;
-	@include flex-wrap($wrap);
+	@include flex(flex);
+	@include flex-align-items(center);
+	@include flex-wrap(wrap);
 	@include margin-padding(all, null null, all, 1rem 2rem 1rem 1.8rem);
 	@include font-rem(18px);
 	@include font-weight(medium);
@@ -1090,9 +1078,9 @@
 	}
 }
 .showtable-content-arrow {
-	@include flexbox();
-	align-items: $align-items-center;
-	@include flex-wrap($wrap);
+	@include flex(flex);
+	@include flex-align-items(center);
+	@include flex-wrap(wrap);
 	@include fixed(top 200px right -35px);
 	writing-mode: vertical-rl;
 	width: 35px;
@@ -1200,18 +1188,18 @@
 	.typeIt {
 		@include margin-padding(all, 33px 0 0 0, all, null);
 		.typeIt-label-row {
-			@include flexbox();
-			align-items: $align-items-center;
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
 			@include margin-padding(all, 0 0 20px 0, all, null);
 		}
 		label {
 			@include font-rem(14px);
 			@include font-weight(medium);
 			line-height: 16px;
-			@include flexbox();
-			align-items: $align-items-center;
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
 			@include margin-padding(all, 0 25px 0 0, all, null);
 			&:first-child {
 				color: color("indigo", "base");
@@ -1228,10 +1216,10 @@
 		.clickto-sign {
 			height: 113px;
 			border: 1px dashed color("indigo", "base");
-			@include flexbox();
-			align-items: $align-items-center;
-			@include flex-wrap($wrap);
-			justify-content: $justifycenter;
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
+			@include flex-justify(center);
 			@include font-rem(14px);
 			@include font-weight(medium);
 			color: color("indigo", "base");
@@ -1252,9 +1240,8 @@
 		@include font-weight(medium);
 		height: 44px;
 		line-height: 44px;
-		padding: 0 1.8rem;
+		@include margin-padding(all, null, all, 0 1.8rem);
 		@include font-rem(13px);
-		letter-spacing: 0.7px;
 	}
 }
 .mt-20 {
@@ -1334,9 +1321,9 @@
 		}
 		a {
 			color: color("grey", "darken-4");
-			@include flexbox();
-			align-items: $align-items-center;
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
 			@include font-rem(14px, 24px);
 			@include margin-padding(all, null, all, 0 60px 15px 60px);
 		}
@@ -1389,9 +1376,9 @@
 	@include transition(all 0.5s);
 	z-index: 3;
 	.viewer-sidebar-header {
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		@include margin-padding(all, null, all, 21px 32px);
 		border-bottom: 1px solid color("grey", "lighten-3");
 		h5 {
@@ -1425,9 +1412,9 @@
 		width: $full-width;
 		@include margin-padding(all, 8px 0 0 0, all, null);
 		.select-check {
-			@include flexbox();
-			align-items: $align-items-center;
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
 		}
 	}
 	.select-all {
@@ -1439,9 +1426,9 @@
 		}
 	}
 	.save-select {
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		@include margin-direction(left);
 		h6 {
 			color: color("grey", "darken-4");
@@ -1464,9 +1451,9 @@
 		}
 	}
 	.doc-save-row {
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		@include margin-padding(all, 0 0 10px 0, all, 8px 0);
 		.pdf-icon {
 			@include icon(19px, 23px, (false));
@@ -1533,15 +1520,15 @@
 
 		.collapse-top-row {
 			width: $full-width;
-			@include flexbox();
-			align-items: $align-items-center;
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
 		}
 		.accordion-arrow {
 			@include margin-direction(left);
-			@include flexbox();
-			align-items: $align-items-center;
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
 			.material-icons {
 				width: 40px;
 				color: color("indigo", "base");
@@ -1578,9 +1565,9 @@
 				}
 			}
 			a {
-				@include flexbox();
-				align-items: $align-items-center;
-				@include flex-wrap($wrap);
+				@include flex(flex);
+				@include flex-align-items(center);
+				@include flex-wrap(wrap);
 				color: color("grey", "darken-4");
 				@include font-rem(14px, 20px);
 				@include margin-padding(all, null, all, 0 !important);
@@ -1635,9 +1622,9 @@
 }
 .past-comments {
 	.past-comments-header {
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		@include margin-padding(all, 0 0 13px, all, null);
 		h4 {
 			color: color("grey", "darken-4");
@@ -1684,9 +1671,9 @@
 /* Upload Attachement Start here*/
 .upload-attachement {
 	.upload-attachement-Header {
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		border-bottom: 1px solid #f2f3f3;
 		@include margin-padding(all, null, all, 0 51px 13px 30px);
 		.attachement-icon {
@@ -1724,9 +1711,9 @@
 		}
 	}
 	.addfiles-upload {
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		@include margin-padding(all, 8px 0, all, null);
 		.file-icon {
 			@include icon(19px, 23px, (false));
@@ -1746,9 +1733,9 @@
 			@include margin-padding(all, 0 0 0 13px, all, null);
 		}
 		.remove-file {
-			@include flexbox();
-			align-items: $align-items-center;
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
 			@include margin-direction(left);
 			.material-icons {
 				color: color("indigo", "base");
@@ -1799,9 +1786,9 @@
 
 .share-proposal {
 	.share-perposal-header {
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
 		border-bottom: 1px solid #f2f3f3;
 		@include margin-padding(all, null, all, 0 51px 13px 30px);
 		.share-icon {
@@ -1818,9 +1805,9 @@
 	}
 	.share-email {
 		.to-sender-row {
-			@include flexbox();
-			align-items: $align-items-center;
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
 			border-bottom: 1px solid #f2f3f3;
 			@include margin-padding(all, null, all, 6px 51px 6px 30px);
 		}
@@ -1939,9 +1926,9 @@
 	@include margin-padding(all, 0, all, null);
 }
 .prevnext-btn {
-	@include flexbox();
-	align-items: $align-items-center;
-	@include flex-wrap($wrap);
+	@include flex(flex);
+	@include flex-align-items(center);
+	@include flex-wrap(wrap);
 	@include absolute(top 0 left 0);
 	width: $full-width;
 	@include box-shadow(0, 5px, 15px, rgba(0, 0, 0, 0.15));
@@ -1952,10 +1939,10 @@
 		color: color("shades", "white");
 		@include font-rem(16px, 24px);
 		background: color("deep-purple", "accent-3");
-		@include flexbox();
-		align-items: $align-items-center;
-		@include flex-wrap($wrap);
-		justify-content: $justifycenter;
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-wrap(wrap);
+		@include flex-justify(center);
 		@include margin-padding(all, null, all, 16px 0);
 	}
 	.prev-icon {
@@ -1994,7 +1981,7 @@
 	}
 	.modal-footer {
 		.btn-row {
-			@include justify-content(center);
+			@include flex-justify(center);
 		}
 	}
 }

@@ -1,0 +1,87 @@
+/* Brp signature start here */
+
+
+#brp-modal .brp-checkbox {
+	color: #737373;
+}
+.brp-modal {
+	@include flex(flex);
+    @include flex-wrap(wrap);
+    @include margin-padding(all, null, all, 1rem 0);
+	.brp-modal-doc {
+        max-width: 35%;
+        flex: 0 0 35%;
+        @include margin-padding(all, null, all, 0 0 0 2rem);
+        h6 {
+            @include font-rem(15px, 26px);
+			color: color("grey", "darken-4");
+			@include margin-padding(all, 16px 0 10px 0, all, null);
+        }
+    }
+    .modal-content {
+        max-width: 65%;
+        flex: 0 0 65%;
+        @include margin-padding(all, null, all, 0 2rem 0 3rem);
+    }
+    .brp-modal-header {
+        @include flex(flex);
+        @include flex-wrap(wrap);
+        @include flex-align-items(center);
+        background: color('grey','lighten-4');
+        @include margin-padding(all, null, all, 1rem 1.4rem);
+        h5 {
+            @include margin-padding(all, 0, all, null);
+            @include font-rem(14px);
+            @include font-weight(500);
+        }
+        span {
+            @include margin-direction(left);
+            @include font-rem(14px);
+            @include font-weight(500);
+        }
+    }
+    .brp-modal-doc-row {
+        @include flex(flex);
+        @include flex-wrap(wrap);
+        @include flex-align-items(center);
+        @include margin-padding(all, null, all, 1.3rem 1.4rem 0);
+
+        &:last-child {
+            @include margin-padding(all, null, all, 1.3rem 1.4rem 0.9rem);  
+        }
+    }
+    .eye-icon {
+        @include icon(21px, 20px, (flase));
+        background-position: -168px -577px;
+        @include vertical-align(middle);
+        @include margin-direction(left);
+    }
+    .word-icon {
+        @include icon(24px, 26px, (false));
+        background-position: -93px -740px;
+        @include vertical-align(middle);
+
+            // background: url(../images/common-icons.svg) no-repeat -93px -740px;
+            // width: 2rem;
+            // height: 1.8rem;
+    }
+    
+    .brp-list-text {
+        @include font-rem(14px);
+    }
+    [type="checkbox"] + span:not(.lever) {
+        @include font-rem(13px);
+        @include vertical-align(middle);
+    }
+}
+.brp-modal-list-content {
+    background: #fdfdfd;
+    border-left: 1px solid color('grey','lighten-4');
+    border-right: 1px solid color('grey','lighten-4');
+    border-bottom: 1px solid color('grey','lighten-4');
+}
+#brp-modal {
+	max-width: 1150px;
+	max-height: 100%;
+}
+/* Brp signature end here */

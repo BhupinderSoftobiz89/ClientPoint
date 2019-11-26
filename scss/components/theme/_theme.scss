@@ -2,8 +2,8 @@
 .client-point-file {
 	.newclientpoint-title-bar-right {
 		.themeBtn {
-			@include flexbox();
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-wrap(wrap);
 			padding: 0 2.5rem;
 			.material-icons {
 				margin-right: 5px !important;
@@ -25,9 +25,9 @@
 	padding: 1.875rem 3.125rem;
 	.theme-list {
 		.theme-list-row {
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(center);
 			border: 1px solid color("grey", "lighten-5");
 			@include margin-padding(all, null, all, 1.5625rem);
 			h5 {
@@ -45,14 +45,14 @@
 		}
 		.themebtns {
 			@include margin-direction(left);
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(center);
 		}
 		.edit-btn {
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(center);
 			text-transform: text-map("text-transform","uppercase");
 			@include font-rem(14px);
 			@include font-weight(semi-bold);
@@ -84,7 +84,7 @@
 		border-top: $none;
 		.active {
 			.minus {
-				@include flexbox();
+				@include flex(flex);
 			}
 			.plus {
 				display: $diplay-none;
@@ -93,7 +93,7 @@
 	}
 	.collapsible-header {
 		padding: 2rem;
-		@include flex-wrap($wrap);
+		@include flex-wrap(wrap);
 		border-bottom: 1px solid color("grey", "lighten-5");
 		h4 {
 			max-width: $full-width;
@@ -108,13 +108,13 @@
 	}
 	.accordionBtn {
 		@include margin-direction(left);
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		.minus {
 			display: $diplay-none;
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
+			@include flex-wrap(wrap);
+			@include flex-align-items(center);
 			.material-icons {
 				color: color("indigo", "base");
 				@include font-weight(semi-bold);
@@ -122,9 +122,9 @@
 			}
 		}
 		.plus {
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(center);
 			.material-icons {
 				color: color("indigo", "base");
 				@include font-weight(semi-bold);
@@ -196,9 +196,9 @@
 		}
 	}
 	.proposanal-locking {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		padding-left: 4.55rem;
 		margin-top: 0.9375rem;
 		label {
@@ -285,9 +285,9 @@
 		color: color("grey", "darken-1");
 	}
 	.enter-domains {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		.input-field {
 			width: auto;
 			flex: 1;
@@ -300,9 +300,9 @@
 			background: color("shades", "transparent");
 			cursor: $cursor-pointer;
 			color: color("indigo", "base");
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(center);
 			margin-left: 1.5rem;
 			.material-icons {
 				font-size: 33px;
@@ -322,9 +322,9 @@
 }
 
 .default-language {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	label {
 		color: color("grey", "darken-1");
 		@include font-rem(14px);
@@ -449,9 +449,9 @@
 		}
 	}
 	.intigration-row {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		border: 1px solid color("grey", "lighten-5");
 		@include margin-padding(all, 0 0 0.625rem, all, 0.9375rem 1.875rem);
 		&:last-child {
@@ -472,17 +472,17 @@
 	.logo {
 		max-width: 8rem;
 		flex: 0 0 8rem;
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
-		@include justify-content(center);
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
+		@include flex-justify(center);
 		@include margin-padding(all, 0 2.125rem 0 0, all, null);
 	}
 	.intigrat-row-content {
 		flex: 1;
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		.btn {
 			@include margin-padding(all, 0 0 0 auto, all, null);
 			box-shadow: $none;

@@ -4,8 +4,8 @@
 
 
 #content {
-    margin: 5rem 0 0 5rem;
-    @include transition($transiton);
+    @include margin-padding(all, 5rem 0 0 5rem, all, null);
+    @include transition(all 0.5s);
     height: $height-hundred-per;
     @include relative();
 }
@@ -19,8 +19,8 @@
     margin-left: 19rem !important;
 }
 .content-common {
-    @include flexbox();
-    @include flex-wrap($wrap);
+    @include flex(flex);
+    @include flex-wrap(wrap);
     height: $height-hundred-per;
 }
 input::-ms-clear {

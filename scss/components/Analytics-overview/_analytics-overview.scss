@@ -13,9 +13,9 @@
 		border: 1px solid color("grey", "lighten-5");
 		margin-bottom: 15px;
 		.anaytics-overview-header {
-			padding: 1.375rem 1.375rem 1.0625rem 1.75rem;
-			@include flexbox();
-			@include flex-wrap($wrap);
+			@include margin-padding(all, null, all, 1.375rem 1.375rem 1.0625rem 1.75rem);
+			@include flex(flex);
+			@include flex-wrap(wrap);
 			text-transform: text-map("text-align","center");
 		}
 		h6 {
@@ -23,14 +23,14 @@
 			text-transform: text-map("text-transform","uppercase");
 			@include font-weight(medium);
 			line-height: $line-height-twentyfour;
-			margin: $zero;
+			@include margin-padding(all, 0, all, null);
 		}
 		.view-more {
 			color: color("indigo", "base");
 			@include margin-direction(left);
 			line-height: $line-height-twentyfour;
-			@include flexbox();
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-align-items(center);
 		}
 		.anaytics-overview-content {
 			@include margin-padding(all, null, all, 0 1.375rem 1.3125rem 1.75rem);
@@ -44,7 +44,7 @@
 			p {
 				color: color("blue-grey", "darken-1");
 				@include font-rem(16px, 24px);
-				margin: $zero;
+				@include margin-padding(all, 0, all, null);
 				strong {
 					color: color("grey", "darken-2");
 				}
@@ -55,19 +55,19 @@
 			@include font-weight(medium);
 		}
 		.anaytics-overview-footer-row {
-			@include flex-wrap($wrap);
-			@include flexbox();
-			align-items: $align-items-center;
-			justify-content: $justifycenter;
+			@include flex-wrap(wrap);
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-justify(center);
 			border-top: 1px solid color("grey", "lighten-5");
 		}
 	}
 	.anaytics-overview-col {
 		max-width: 33.33%;
 		flex: 0 0 33.33%;
-		@include flexbox();
-		align-items: $align-items-center;
-		justify-content: $justifycenter;
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-justify(center);
 		border-right: 1px solid color("grey", "lighten-5");
 		background: color("shades", "white");
 		padding: 5px;
@@ -94,9 +94,9 @@
 	}
 	.border-row {
 		border-left: 5px solid#0086DC;
-		display: $display-inline-block;
+		@include flex(inline-block);
 		width: $full-width;
-		border-radius: 5px 0 0 5px;
+		@include border-radius(5px 0 0 5px)
 	}
 	.analytics-shadow {
 		background: linear-gradient(
@@ -107,11 +107,10 @@
 			rgba(255, 255, 255, 0) 100%
 		);
 		height: 60%;
-		position: $position-absolute;
-		bottom: $zero;
+		@include absolute(bottom 0);
 		width: $full-width;
-		@include flexbox();
-		align-items: $align-item-end;
+		@include flex(flex);
+		@include flex-align-items(flex-end);
 	}
 	.reply-btn {
 		@include font-weight(medium);
@@ -119,8 +118,7 @@
 		color: color("grey", "darken-4");
 		@include relative();
 		margin-top: 15px;
-		@include inlineflex();
-		align-items: $align-items-center;
+		@include flex(inline-flex);
 		.reply-arrow {
 			@include icon(16px, 16px, (true));
 			background-position: -170px -500px;
@@ -171,9 +169,9 @@
 		@include margin-padding(all, null, all, 1rem 0);
 		border-bottom: 1px solid color("grey", "lighten-5");
 		.total-view-row {
-			@include flexbox();
+			@include flex(flex);
 			text-align: text-map("text-align","center");
-			padding: 0 2rem;
+			@include margin-padding(all, null, all, 0 2rem);
 			margin-bottom: 1.375rem;
 			&:last-child {
 				margin-bottom: $zero;
@@ -193,18 +191,17 @@
 		}
 	}
 	.top-viewers {
-		@include margin-padding(all, null, all, 1.75rem 2rem);
+		@include margin-padding(all, 0 0 1.25rem, all, 1.75rem 2rem);
 		h5 {
 			text-transform: text-map("text-transform","uppercase");
 			@include font-weight(semi-bold);
 			color: color("grey", "darken-4");
 			@include font-rem(14px, 24px);
-			margin: 0 0 20px;
 		}
 		.viewers-row {
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-item-start;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(flex-start);
 			margin-bottom: 1.375rem;
 			.viewer-img {
 				margin-right: 1.125rem;
@@ -213,11 +210,11 @@
 				flex: 1;
 				h6 {
 					color: color("indigo", "base");
-					margin: $zero;
+					@include margin-padding(all, 0, all, null); 
 					@include font-rem(16px, 24px);
 				}
 				p {
-					margin: $zero;
+					@include margin-padding(all, 0, all, null); 
 					line-height: $line-height-twentyfour;
 					color: color("grey", "darken-2");
 				}
@@ -232,7 +229,7 @@
 			}
 		}
 		.btn-round {
-			@include inlineflex();
+			@include flex(inline-flex);
 			.material-icons {
 				@include margin-padding(all, 0 5px 0 0, all, null);
 			}
@@ -249,16 +246,16 @@
 			@include margin-padding(all, 0 0 1.25rem 0, all, null);
 		}
 		.top-file-row {
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-item-start;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(flex-start);
 			@include margin-padding(all, 0 0 1.375rem 0, all, null);
 			&:last-child {
 				margin-bottom: $zero;
 			}
 			p {
 				@include font-rem(16px, 24px);
-				margin: $zero;
+				@include margin-padding(all, 0, all, null);
 				color: color("grey", "darken-2");
 			}
 			.file-arrow {
@@ -276,10 +273,10 @@
 		}
 	}
 	.engagement {
-		padding: 1rem 0;
+		@include margin-padding(all, null, all, 1rem 0);
 		.engagement-row {
-			@include flexbox();
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-align-items(center);
 			@include margin-padding(all, 0 0 1.375rem 0, all, 0 2rem);
 			&:last-child {
 				margin-bottom: $zero;
@@ -300,9 +297,9 @@
 	}
 }
 .analytics-filter {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	@include margin-padding(all, null, all, 0 0 1.75rem 0);
 	h5 {
 		@include font-rem(16px, 24px);
@@ -316,9 +313,9 @@
 	.type {
 		@include margin-padding(all, 0 1.25rem 0 0.625rem, all, null);
 		h5 {
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(center);
 			.dropdown-arrow {
 				line-height: 12px;
 				color: color("indigo", "base");
@@ -328,9 +325,9 @@
 	.all-viewers {
 		@include relative;
 		h5 {
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(center);
 			.dropdown-arrow {
 				line-height: 12px;
 				color: color("indigo", "base");
@@ -341,9 +338,9 @@
 			@include border-radius(2px);
 			width: 20px;
 			height: 20px;
-			@include flexbox();
-			align-items: $align-items-center;
-			justify-content: $justifycenter;
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-justify(center);
 			color: color("indigo", "base");
 			&:hover,
 			&:focus {
@@ -382,9 +379,9 @@
 		}
 	}
 	.calender-date {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		@include margin-direction(left);
 		.prev-date-calender {
 			@include border-radius(0.125rem);
@@ -392,11 +389,11 @@
 			width: 2.36rem;
 			height: 2.36rem;
 			background: #fafafb url(../images/common-icons.svg) no-repeat -13px -192px;
-			display: $display-inline-block;
+			@include flex(inline-block);
 		}
 		.calender-date-text {
 			color: color("grey", "darken-2");
-			margin: 0 1.6rem;
+			@include margin-padding(all, 0 1.6rem, all, null);
 		}
 		.next-date-calender {
 			@include border-radius(0.125rem);
@@ -405,20 +402,20 @@
 			height: 2.36rem;
 			background: #fafafb url(../images/common-icons.svg) no-repeat -86px -192px;
 			@include margin-padding(all, 0 2.3125rem 0 0, all, null);
-			display: $display-inline-block;
+			@include flex(inline-block);
 		}
 	}
 	.caleneder-filter {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		@include relative();
 		.calender-icon {
 			background: url(../images/common-icons.svg) no-repeat -243px -495px;
 			width: 1.5rem;
 			height: 1.4rem;
-			@include margin-padding(all, 0 0 0 0, all, null);
-			display: $display-inline-block;
+			@include margin-padding(all, 0, all, null);
+			@include flex(inline-block);
 		}
 		.dropdown-arrow {
 			line-height: 12px;
@@ -432,17 +429,17 @@
 		}
 		.calender-header {
 			.calender-header-row {
-				@include flexbox();
-				@include flex-wrap($wrap);
-				align-items: $align-items-center;
+				@include flex(flex);
+				@include flex-wrap(wrap);
+				@include flex-align-items(center);
 				border-bottom: 1px solid color("grey", "lighten-5");
 				.from {
 					width: 4.5rem;
 					height: 3.5625rem;
-					@include flexbox();
-					@include flex-wrap($wrap);
-					align-items: $align-items-center;
-					justify-content: $justifycenter;
+					@include flex(flex);
+					@include flex-wrap(wrap);
+					@include flex-align-items(center);
+					@include flex-justify(center);
 					background: color("grey", "lighten-4");
 					border-right: 1px solid color("grey", "lighten-5");
 					@include font-rem(12px);
@@ -452,10 +449,10 @@
 					letter-spacing: 0.25px;
 				}
 				.date-calender {
-					@include flexbox();
-					@include flex-wrap($wrap);
-					align-items: $align-items-center;
-					padding: 0 1.25rem;
+					@include flex(flex);
+					@include flex-wrap(wrap);
+					@include flex-align-items(center);
+					@include margin-padding(all, null, all, 0 1.25rem);
 					@include font-rem(14px);
 					color: color("grey", "darken-4");
 				}
@@ -498,9 +495,9 @@
 			@include border-radius(2px);
 			width: 20px;
 			height: 20px;
-			@include flexbox();
-			align-items: $align-items-center;
-			justify-content: $justifycenter;
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-justify(center);
 			color: color("indigo", "base");
 			&:hover,
 			&:focus {
@@ -518,9 +515,9 @@
 			@include border-radius(2px);
 			width: 20px;
 			height: 20px;
-			@include flexbox();
-			align-items: $align-items-center;
-			justify-content: $justifycenter;
+			@include flex(flex);
+			@include flex-align-items(center);
+			@include flex-justify(center);
 			&:hover,
 			&:focus {
 				background: color("grey", "lighten-4");
@@ -534,9 +531,9 @@
 		.dropdown-content {
 			min-width: 175px;
 			top: 100% !important;
-			padding: 16px 17px;
+			@include margin-padding(all, null, all, 1.0625rem 1.125rem);
 			left: auto !important;
-			right: 0;
+			right: $zero;
 			li {
 				min-height: inherit;
 				margin-bottom: 1.3rem;
@@ -560,9 +557,9 @@
 	}
 }
 .contact-list-row {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	margin-top: 10px;
 	.phone-contact,
 	.mobile-contact,
@@ -583,16 +580,16 @@
 	}
 }
 .time-spent {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-item-start;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(flex-start);
 	@include margin-padding(all, 0.625rem 0 0 0, all, null);
 	.time-spent-left {
 		width: 30%;
 		span {
 			line-height: $line-height-twentyfour;
 			@include margin-padding(all, 0, all, null);
-			display: $display-block;
+			@include flex(block);
 		}
 	}
 	h5 {
@@ -606,7 +603,7 @@
 		height: 7px;
 		background-color: color("grey", "lighten-5");
 		@include border-radius(0);
-		margin: 0.5rem 0 0 0;
+		@include margin-padding(all, 0.5rem 0 0 0, all, null);
 		.determinate {
 			background-color: #19e4b1;
 		}
@@ -660,12 +657,12 @@
 .ip-address {
 	margin-top: 1.5625rem;
 	padding: 0 2.2rem;
-	display: $diplay-none;
+	@include flex(none);
 	.ip-address-top {
 		.ip-address-row {
-			@include flexbox();
-			@include flex-wrap($wrap);
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-wrap(wrap);
+			@include flex-align-items(center);
 			border-bottom: 1px solid color("grey", "lighten-5");
 			@include margin-padding(all, null, all, 0.625rem 0);
 			&:last-child {
@@ -693,9 +690,9 @@
 	border: 1px solid color("grey", "lighten-3");
 	margin-top: 1rem;
 	.q2-marketing-header {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		.pdf-icon {
 			@include icon(21px, 25px, (false));
 			background-position: -168px -345px;
@@ -758,7 +755,7 @@
 			}
 			.progress-text {
 				@include font-rem(10px, 24px);
-				display: $display-block;
+				@include flex(block);
 				color: color("blue-grey", "darken-1");
 			}
 		}
@@ -800,11 +797,11 @@
 		background: color("shades", "white");
 		@include absolute(top 0 left 0);
 		height: $height-hundred-per;
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		@include margin-padding(all, null, all, 1.52rem 1.8125rem);
-		display: $diplay-none;
+		@include flex(none);
 		input[type="text"] {
 			border: $none;
 			height: 34px;
@@ -823,7 +820,7 @@
 			height: 1.5rem;
 			margin-left: 1rem;
 			border: $none;
-			display: $display-inline-block;
+			@include flex(inline-block);
 			@include vertical-align(middle);
 			cursor: $cursor-pointer;
 			&:focus {
@@ -833,10 +830,9 @@
 	}
 }
 .clientpoint-title {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
-
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	.edit-title {
 		background: url(../images/common-icons.svg) no-repeat -320px -576px;
 		width: 1.5rem;
@@ -847,10 +843,10 @@
 	}
 }
 .filter-rightpanel {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
-	margin-left: $margin-left-auto;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
+	@include margin-direction(left);
 }
 .mr-0 {
 	margin-right: $zero !important;
@@ -934,7 +930,7 @@
 		color: color("indigo", "base");
 	}
 	.modal-footer {
-		padding: 0 3.125rem 2.1rem 3.5rem;
+		@include margin-padding(all, null, all, 0 3.125rem 2.1rem 3.5rem);
 		.btn-row {
 			margin-top: $zero;
 			justify-content: $justify-content-end;
@@ -969,9 +965,9 @@
 				background: color("shades", "transparent");
 			}
 			a {
-				@include flexbox();
-				@include flex-wrap($wrap);
-				align-items: $align-items-center;
+				@include flex(flex);
+				@include flex-wrap(wrap);
+				@include flex-align-items(center);
 				@include margin-padding(all, null, all, 0.6875rem 1.25rem);
 			}
 		}

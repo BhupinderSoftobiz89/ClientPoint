@@ -5,19 +5,19 @@
 	.titlerow {
 		@include margin-padding(all, null, all, 1.4rem 1.8125rem);
 		border-bottom: 1px solid #efeff3;
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		background: color("shades", "white");
 		h5 {
 			color: #181a51;
 			@include font-rem(20px, 26px);
-			margin: $zero;
+			@include margin-padding(all, 0, all, null);
 		}
 		.client-menu {
 			@include margin-direction(left);
-			@include flexbox();
-			@include flex-wrap($wrap);
+			@include flex(flex);
+			@include flex-wrap(wrap);
 		}
 		.client-menu-common {
 			@include icon(23.6px, 23.6px, (null));
@@ -52,9 +52,8 @@
 			// max-width:23.4375rem;
 			height: 26px;
 			border: $border-none;
-			font-size: $font-size-twenty;
 			@include font-rem(14px);
-			margin: $zero;
+			@include margin-padding(all, 0, all, null);
 			&:focus {
 				outline: $none;
 				border: $none;
@@ -64,15 +63,15 @@
 	}
 }
 .detail-info {
-	@include flexbox();
-	@include flex-wrap($wrap);
+	@include flex(flex);
+	@include flex-wrap(wrap);
 	height: calc(100% - 5.3rem);
 
 	.information {
 		padding: 2.5rem 1.875rem 0;
 		max-width: 64.7%;
 		flex: 0 0 64.7%;
-		background: $whiteBg;
+		background: color('shades','white');
 	}
 	.information-row {
 		border-bottom: 1px solid $border-color;
@@ -83,14 +82,14 @@
 		}
 	}
 	.information-heading {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 		margin-bottom: 2rem;
 		h6 {
 			@include font-rem(16px, 26px);
 			color: #181a51;
-			margin: $zero;
+			@include margin-padding(all, 0, all, null);
 			@include font-weight(medium);
 			margin-left: 11px;
 			text-transform: text-map("text-transform", "uppercase");
@@ -123,7 +122,7 @@
 }
 .btn-import-crm {
 	color: $default-color;
-	margin-left: $margin-left-auto;
+	@include margin-direction(left);
 	@include font-rem(12px);
 	@include font-weight(medium);
 	img {
@@ -137,8 +136,8 @@
 	// }
 	.btn {
 		@extend %border-btn;
-		@include inlineflex();
-		align-items: $align-items-center;
+		@include flex(inline-flex);
+		@include flex-align-items(center);
 		line-height: 33px;
 		height: 33px;
 		margin-top: 1.5rem;
@@ -167,7 +166,7 @@
 .select-wrapper + label {
 	@include transform(scale(1));
 }
-.advanceHeadingMargin {
+.advance-heading-margin {
 	margin-left: 1.3125rem;
 }
 .btn-round {
@@ -239,16 +238,7 @@
 			font-size: 1rem;
 			border-bottom: 2px solid color("grey", "lighten-3");
 		}
-		input[type="text"]::placeholder {
-			color: color("grey", "lighten-3");
-			opacity: 1;
-		}
-
-		input[type="text"]:-ms-input-placeholder {
-			color: color("grey", "lighten-3");
-		}
-
-		input[type="text"]::-ms-input-placeholder {
+		@include input-placeholder {
 			color: color("grey", "lighten-3");
 		}
 	}
@@ -263,24 +253,23 @@
 		@include margin-padding(all, 0, all, 0);
 		@include font-weight(medium);
 		font-size: 0.95rem;
-		@include flexbox();
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-align-items(center);
 		color: color("indigo", "base");
 		.material-icons {
-			font-size: 1.26rem;
-			line-height: $line-height-twentysix;
+			@include font-rem(20px, 26px);
 			margin-right: 5px;
 		}
 	}
 	.btn-round {
-		padding: 0 2.62rem;
+		@include margin-padding(all, null, all, 0 2.62rem);
 		margin-right: 2.5rem !important;
 	}
 }
 .btn-row {
-	@include flexbox();
-	align-items: $align-items-center;
-	@include flex-wrap($wrap);
+	@include flex(flex);
+	@include flex-align-items(center);
+	@include flex-wrap(wrap);
 	margin-top: 1.2rem;
 	.btn-flat {
 		color: color("grey", "darken-4");
@@ -292,9 +281,9 @@
 	margin-bottom: 0 !important;
 }
 .reciepent-row-repeate {
-	@include flexbox();
-	align-items: $align-items-center;
-	@include flex-wrap($wrap);
+	@include flex(flex);
+	@include flex-align-items(center);
+	@include flex-wrap(wrap);
 	@include margin-padding(all, null, all, 0.625rem 0.8125rem 0.625rem);
 	@include transition(0.5s);
 	@include relative;
@@ -309,12 +298,12 @@
 	h6 {
 		@include font-rem(16px, 26px);
 		color: color("indigo", "base");
-		margin: $zero;
+		@include margin-padding(all, 0, all, null);
 	}
 	p {
 		@include font-rem(14px);
 		color: color("grey", "darken-2");
-		margin: $zero;
+		@include margin-padding(all, 0, all, null);
 	}
 	&:hover {
 		.remove-reciepent {
@@ -323,7 +312,7 @@
 			height: 2.9rem;
 			@include margin-direction(left);
 			@include border-radius(30px);
-			display: $display-inline-block;
+			@include flex(inline-block);
 		}
 	}
 	.dropdown-content {
@@ -343,9 +332,9 @@
 			a {
 				@include font-rem(14px);
 				color: color("grey", "darken-4");
-				@include flexbox();
-				align-items: $align-items-center;
-				padding: 19px 20px;
+				@include flex(flex);
+				@include flex-align-items(center);
+				@include margin-padding(all, null, all, 1.1875rem 1.25rem);
 			}
 		}
 		.delete-icon {

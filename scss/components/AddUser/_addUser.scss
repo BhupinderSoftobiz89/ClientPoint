@@ -1,15 +1,15 @@
 /* Add User CSS start here */
 
 .add-userHeader {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	background: color("indigo", "accent-4");
 	@include margin-padding(all, null, all, 17px 50px);
 	.add-userLeftpanel {
-		@include flexbox();
-		@include flex-wrap($wrap);
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
 	}
 	.userIcon {
 		@include icon(24px, 24px, (false));
@@ -51,20 +51,20 @@
 	@include margin-padding(all, null, all, 0 2rem);
 }
 .user-table-head {
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	@include margin-padding(all, null, all, 1.25rem 1.875rem);
 }
 .table-option-user {
 	@include margin-padding(all, 0 0 0 auto, all, null);
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	.options-user {
-		@include flexbox();
-		@include flex-wrap($wrap);
-        align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
         @include margin-padding(all, 0 2.1875rem 0 0, all, null);
         @include font-rem(14px, 16px);
         @include font-weight(semi-bold);

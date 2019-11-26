@@ -6,9 +6,9 @@
 	height: $header-height;
 	width: calc(100% - 5rem);
 	background: color('shades','white');
-	@include flexbox();
-	@include flex-wrap($wrap);
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-wrap(wrap);
+	@include flex-align-items(center);
 	border-bottom: 1px solid #efeff3;
 	z-index: 4;
 	@include transition(0.5s);
@@ -42,20 +42,19 @@
 		}
 	}
 	.clientpoint-heading-bar {
-		padding: 0 2.1875rem;
+		@include margin-padding(all, null, all, 0 2.1875rem);
 		width: calc(100% - 24rem);
-		@include flexbox();
-		align-items: $align-items-center;
+		@include flex(flex);
+		@include flex-align-items(center);
 		.btn-flat {
 			color: $btnPrimaryColor;
-			font-size: $font-size-fourteen;
+			@include font-rem(14px, 43px);
 			border: 1px solid $btnPrimaryColor;
 			@include border-radius(30px);
 			@include font-weight(medium);
 			background: url(../images/common-icons.svg) no-repeat -361px -6px;
 			height: 2.67rem;
-			line-height: 2.67rem;
-			padding: 0 2.2rem 0 2.9rem;
+			@include margin-padding(all, null, all, 0 2.2rem 0 2.9rem);
 			white-space: nowrap;
 			&:hover {
 				border: 1px solid #efeff3;
@@ -71,16 +70,16 @@
 		}
 	}
 	.user-login-panel {
-		@include flexbox();
-		align-items: $align-items-center;
-		margin-left: $margin-left-auto;
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include margin-direction(left);
 	}
 	.user-fetaures {
 		margin-right: 20px;
 		color: $default-color;
 		@include font-rem(15px);
 		text-decoration:text-map("text-decoration","underline");
-		display: $display-inline-block;
+		@include flex(inline-block);
 		@include vertical-align(middle);
 		strong {
 			@include font-weight(600);
@@ -91,7 +90,7 @@
 		width: 3.54rem;
 		height: 3.54rem;
 		margin-right: 7px;
-		display: $display-inline-block;
+		@include flex(inline-block);
 		@include vertical-align(middle);
 	}
 	.user-name {
@@ -100,7 +99,7 @@
 	}
 
 	.search-responsive {
-		display: $diplay-none;
+		@include flex(none);
 	}
 	.mobile-search {
 		@include absolute(top 23px left 33px);
@@ -137,8 +136,8 @@
 		}
 
 		a {
-			@include flexbox();
-			align-items: $align-items-center;
+			@include flex(flex);
+			@include flex-align-items(center);
 			color: color("grey", "darken-4");
 			@include font-rem(14px);
 			@include margin-padding(all, null, all, 0.9375rem 1.125rem);
@@ -164,8 +163,8 @@
 	}
 }
 .user-login-header {
-	@include flexbox();
-	align-items: $align-items-center;
+	@include flex(flex);
+	@include flex-align-items(center);
 	img {
 		margin-right: 10px;
 	}
