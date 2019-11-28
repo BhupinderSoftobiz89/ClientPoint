@@ -183,11 +183,11 @@
 				margin: $zero;
 				color: color("grey", "darken-4");
 			}
-			.count {
-				@include margin-direction(left);
-				@include font-rem(15px, 24px);
-				color: color("blue-grey", "darken-1");
-			}
+		}
+		.count {
+			@include margin-direction(left);
+			@include font-rem(15px, 24px);
+			color: color("blue-grey", "darken-1");
 		}
 	}
 	.top-viewers {
@@ -219,13 +219,13 @@
 					color: color("grey", "darken-2");
 				}
 			}
-			.collapse-arrow {
-				color: color("indigo", "base");
-				font-size: 1.9rem;
+		}
+		.collapse-arrow {
+			color: color("indigo", "base");
+			font-size: 1.9rem;
 
-				.material-icons {
-					@include transition(all 0.5s);
-				}
+			.material-icons {
+				@include transition(all 0.5s);
 			}
 		}
 		.btn-round {
@@ -805,7 +805,7 @@
 		input[type="text"] {
 			border: $none;
 			height: 34px;
-			margin: $zero;
+			@include margin-padding(all, 0, all, null);
 			width: $width-auto;
 			max-width: 126px;
 			font-size: 1.25rem;

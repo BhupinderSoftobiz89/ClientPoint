@@ -266,8 +266,8 @@
 					padding: 0 0 0 20px;
 				}
 			}
-		} 
-	} 
+		}
+	}
 	.newclientpoint-title-bar {
 		.client-menu {
 			margin-left: $inherit;
@@ -295,10 +295,9 @@
 			@include margin-padding(all, null, all, 0 1.5rem 0 0);
 			width: $auto;
 			margin-left: $auto;
-			
 		}
 	}
-	
+
 	.client-details-content {
 		.titlerow {
 			.new-client-pointInput {
@@ -398,7 +397,7 @@
 	.getting-started {
 		.getting-started-row {
 			@include flex(block);
-			text-align: text-maps("text-align","center");
+			text-align: text-maps("text-align", "center");
 		}
 	}
 	.login {
@@ -641,18 +640,19 @@
 				font-size: 1rem;
 			}
 		}
-	} 
+	}
 	.switch {
 		label {
 			font-size: 1rem;
 		}
-	} 
+	}
 	.internet-domain {
 		h6 {
 			font-size: 1.1rem;
 		}
-	} 
-	.input-field, .input-field label {
+	}
+	.input-field,
+	.input-field label {
 		font-size: 0.9rem;
 	}
 	label {
@@ -669,7 +669,7 @@
 				h5 {
 					font-size: 1rem;
 				}
-			} 
+			}
 		}
 	}
 	.splash-form-center {
@@ -677,7 +677,7 @@
 			font-size: 1.7rem;
 			@include margin-padding(all, 0 0 1.25rem, all, null);
 		}
-	} 
+	}
 	.dashboard-empty-state {
 		width: 90%;
 	}
@@ -686,7 +686,7 @@
 			font-size: 1rem;
 			line-height: 2rem;
 		}
-	} 
+	}
 }
 
 // Media for 570px
@@ -727,7 +727,7 @@
 	.clientpoint-preview {
 		.powerdby-logo {
 			@include margin-padding(all, 0.625rem 0, all, null);
-			@include flex(block); 
+			@include flex(block);
 			flex: 0 0 $full-width;
 		}
 	}
@@ -834,7 +834,7 @@
 				input {
 					font-size: 0.9rem;
 				}
-			} 
+			}
 		}
 		.login-rightpanel {
 			.login-step {
@@ -845,21 +845,20 @@
 						}
 					}
 				}
- 
-			} 
-		} 
+			}
+		}
 	}
 	.intigration {
 		h5 {
 			font-size: 1.1rem;
 		}
-	} 
+	}
 	.intigration {
 		.intigration-row {
 			h6 {
 				font-size: 1.1rem;
 			}
-		} 
+		}
 	}
 }
 // Media For extra small 480
@@ -885,19 +884,19 @@
 		.time-spent-right {
 			width: 60%;
 		}
-	} 
+	}
 	.time-spent {
 		.time-spent-left {
 			width: 40%;
 		}
-	} 
+	}
 	.powerd-by-toggleInner {
 		.sign-now {
 			.sign-up {
 				@include margin-padding(all, null, all, 0 2rem);
 			}
 		}
-	} 
+	}
 	.table-options {
 		@include margin-padding(all, null, all, 2.3125rem 2rem);
 	}

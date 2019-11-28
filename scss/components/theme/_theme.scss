@@ -87,7 +87,7 @@
 				@include flex(flex);
 			}
 			.plus {
-				display: $diplay-none;
+				@include flex(none);
 			}
 		}
 	}
@@ -112,7 +112,7 @@
 		@include flex-wrap(wrap);
 		@include flex-align-items(center);
 		.minus {
-			display: $diplay-none;
+			@include flex(none);
 			@include flex-wrap(wrap);
 			@include flex-align-items(center);
 			.material-icons {

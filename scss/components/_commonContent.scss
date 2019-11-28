@@ -1,6 +1,6 @@
-@import "../components/variables";
-@import "../components/mixin";
-@import "../components/extend";
+// @import "../components/variables";
+// @import "../components/mixin";
+// @import "../components/extend";
 
 
 #content {
@@ -24,7 +24,7 @@
     height: $height-hundred-per;
 }
 input::-ms-clear {
-    display: none;
+    @include flex(none);
 }
 
 // Custom Scrollbar

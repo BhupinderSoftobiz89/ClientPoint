@@ -9089,6 +9089,7 @@ input[type=range]::-ms-thumb {
 }
 
 .uikit .uikitinnerbox {
+  background: #FFFFFF;
   background: #fff;
   padding: 1.5rem;
   border: 1px solid #eee;
@@ -9301,7 +9302,7 @@ input[type=range]::-ms-thumb {
   min-width: 210px;
 }
 
-.newperposal-client-bar .dropdown-content li a {
+.newperposal-client-bar .dropdown-content a {
   font-size: 14px;
   font-size: 1rem;
   line-height: 20px;
@@ -9481,6 +9482,9 @@ input[type=range]::-ms-thumb {
 
 .perposal-defaultbar .prev-date-calender {
   border-radius: 0.125rem;
+  -moz-border-radius: 0.125rem;
+  -webkit-border-radius: 0.125rem;
+  -ms-border-radius: 0.125rem;
   border: 1px solid #EFEFF3;
   width: 2.36rem;
   height: 2.36rem;
@@ -9580,6 +9584,9 @@ input[type=range]::-ms-thumb {
 
 .prev-date-calender-icon {
   border-radius: 0.125rem;
+  -moz-border-radius: 0.125rem;
+  -webkit-border-radius: 0.125rem;
+  -ms-border-radius: 0.125rem;
   border: 1px solid #efeff3;
   width: 2.36rem;
   height: 2.36rem;
@@ -9594,6 +9601,9 @@ input[type=range]::-ms-thumb {
 
 .next-date-calenderUi {
   border-radius: 0.125rem;
+  -moz-border-radius: 0.125rem;
+  -webkit-border-radius: 0.125rem;
+  -ms-border-radius: 0.125rem;
   border: 1px solid #efeff3;
   width: 2.36rem;
   height: 2.36rem;
@@ -10362,66 +10372,6 @@ input[type=range]::-ms-thumb {
 }
 
 /* Sidebar Nav end  here */
-.client-details-content .titlerow .btn, .client-details-content .titlerow .btn-large, .client-details-content .titlerow .btn-small, .btn-round {
-  background: #5f63ff;
-  border-radius: 30rem;
-  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
-  font-size: 1rem;
-}
-
-.client-details-content .titlerow .btn:hover, .client-details-content .titlerow .btn-large:hover, .client-details-content .titlerow .btn-small:hover, .btn-round:hover {
-  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
-}
-
-.reciepent-row .btn, .reciepent-row .btn-large, .reciepent-row .btn-small {
-  border: 1px solid #5f63ff;
-  border-radius: 30rem;
-  background: transparent;
-  color: #5f63ff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-weight: 500;
-}
-
-.input-field input[type="text"] {
-  border-bottom: 2px solid #EFEFF3;
-  margin: 0;
-}
-
-.btn, .btn-large, .btn-small {
-  background: #5F63FF;
-}
-
-.btn:hover, .btn-large:hover, .btn-small:hover {
-  background: #777AFC;
-}
-
-.btn-round {
-  border-radius: 30rem;
-  font-size: 1rem;
-}
-
-.border-btn {
-  background: transparent;
-  border: 1px solid #777AFC;
-  color: #777AFC;
-  padding: 0 1.5rem;
-}
-
-.border-btn:hover {
-  color: #FFFFFF;
-}
-
-.input-field, .input-field label {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #a9a9be;
-  text-transform: uppercase;
-  color: #A9A9BE;
-}
-
 #content {
   margin: 5rem 0 0 5rem;
   -webkit-transition: all 0.5s;
@@ -12274,8 +12224,8 @@ input::-ms-clear {
 }
 
 #comment-modal .justify-content-end {
+  -ms-flex-pack: end;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
@@ -14396,7 +14346,7 @@ input::-ms-clear {
   color: #181A51;
 }
 
-.analytics-overview-view .total-view .total-view-row .count {
+.analytics-overview-view .total-view .count {
   margin-left: auto;
   font-size: 15px;
   font-size: 1.07143rem;
@@ -14457,12 +14407,12 @@ input::-ms-clear {
   color: #53547D;
 }
 
-.analytics-overview-view .top-viewers .viewers-row .collapse-arrow {
+.analytics-overview-view .top-viewers .collapse-arrow {
   color: #5F63FF;
   font-size: 1.9rem;
 }
 
-.analytics-overview-view .top-viewers .viewers-row .collapse-arrow .material-icons {
+.analytics-overview-view .top-viewers .collapse-arrow .material-icons {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -19412,7 +19362,8 @@ input::-ms-clear {
   .internet-domain h6 {
     font-size: 1.1rem;
   }
-  .input-field, .input-field label {
+  .input-field,
+  .input-field label {
     font-size: 0.9rem;
   }
   label {

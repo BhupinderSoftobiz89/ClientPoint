@@ -840,7 +840,7 @@
 		}
 	}
 	.justify-content-end {
-		justify-content: $justify-content-end;
+		@include flex-justify(flex-end);
 	}
 	.modal-footer {
 		@include margin-padding(all, null, all, 0 3.125rem 2.1rem 3.5rem);
@@ -1172,7 +1172,7 @@
 				@include font-weight(medium);
 				color: color("grey", "darken-2");
 				@include margin-padding(all, 0 0 5px 0, all, null);
-				display: $display-block;
+				@include flex(block);
 			}
 			.ph-number {
 				border: 1px solid color("grey", "lighten-3") !important;

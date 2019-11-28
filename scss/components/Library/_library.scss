@@ -63,7 +63,7 @@
 	}
 	.duplicate-icon {
 		@include icon(19.5px, 19.5px, (false));
-		background-position:  -169px -663px;
+		background-position: -169px -663px;
 	}
 	.edit-icon {
 		@extend .duplicate-icon;
@@ -100,7 +100,7 @@
 	.options {
 		@include font-rem(14px, 16px);
 		@include font-weight(medium);
-		text-transform: text-map("text-transform","uppercase");
+		text-transform: text-map("text-transform", "uppercase");
 		color: color("grey", "darken-4");
 		@include flex(flex);
 		@include flex-align-items(center);
@@ -139,7 +139,7 @@
 	overflow: $hidden;
 }
 .library-table .scrollbar-inner > .scroll-element.scroll-y {
-	right: 0;
+	right: $zero;
 }
 .export-down-icons {
 	@include flex-align-items(center);
@@ -150,13 +150,13 @@
 	}
 }
 .library-empty-state {
-	text-align: text-map("text-align","center");
+	text-align: text-map("text-align", "center");
 	max-width: 24rem;
 	width: $full-width;
 	@include margin-padding(all, 5rem auto, all, null);
 	p {
 		@include font-rem(14px, 24px);
-		color: color('blue-grey','darken-1');
+		color: color("blue-grey", "darken-1");
 	}
 	.link {
 		@include text-decoration(underline);

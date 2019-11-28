@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <title>Welcome To ClientPoint signature certificate</title>
+    <!-- Custom CSS start here  -->
+
+    <style>
+        .timestamp {
+            display: table;
+            width: 100%;
+            border: 3px solid #752861;
+            border-radius: 5px;
+        }
+
+        .timestamp-header {
+            background: #752861;
+        }
+
+        .timestamp-header-row {
+            box-sizing: border-box;
+        }
+
+        .timestamp-header-row span {
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 20px 26px;
+            display: inline-block;
+            border-right: 1px solid #682557;
+            box-sizing: border-box;
+        }
+
+        .timestamp-header-row span:last-child {
+            border-right: none;
+        }
+
+        .timestamp-header-row .timestamp-text {
+            width: 30%;
+        }
+
+        .timestamp-header-row .audit-text {
+            width: 69.5%;
+        }
+
+        .timestamp-row span {
+            padding: 20px 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            font-size: 17px;
+            color: #333333;
+        }
+
+        .timestamp-row .timestamp-date {
+            border-right: 1px solid #e5e5e5;
+            width: 30%;
+            box-sizing: border-box;
+            vertical-align: middle;
+        }
+
+        .timestamp-row .dot-icon {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            display: inline-block;
+            margin-right: 12px;
+            box-sizing: border-box;
+            padding: 0;
+            background: #cccccc;
+            margin-top: -2px;
+            vertical-align: middle;
+        }
+
+        .timestamp-row:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .signatutre-container {
+            width: 95%;
+            max-width: 1170px;
+            margin: 30px auto;
+            display: block;
+            border: 5px solid #e1e1e6;
+            overflow: hidden;
+        }
+
+        .signature-header {
+            padding: 30px;
+            border-bottom: 7px solid #752861;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+
+        .signature-header-leftpanel h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-size: 35px;
+            margin: 0 0 20px;
+        }
+
+        .doc-refrence img {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .refrence-number h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-size: 20px;
+            margin: 0 0 8px;
+        }
+
+        .refrence-number h6 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .signature-header-rightpanel {
+            margin-left: auto;
+        }
+
+        .signature-content {
+            border-top: 2px solid #752861;
+            border-bottom: 2px solid #752861;
+            margin-top: 2px;
+            width: 100%;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .energy-row {
+            float: left;
+            width: 100%;
+            border: 3px solid #752861;
+            padding: 25px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .energy-row h2 {
+            margin: 0 0 15px;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .energy-row-leftpanel {
+            float: left;
+            width: 60%;
+        }
+
+        .energy-row-inner {
+            float: left;
+            width: 60%;
+        }
+
+        .energy-row-inner p {
+            margin: 0 0 15px;
+            font-size: 18px;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333333;
+        }
+
+        .energy-row-inner p a {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        .energy-row-rightpanel {
+            float: right;
+            width: 38%;
+            border: 3px solid #e1e1e6;
+            padding: 30px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 28px;
+        }
+
+        .energy-row {
+            width: 100%;
+            border: 3px solid #752861;
+            padding: 25px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .energy-row h2 {
+            margin: 0 0 15px;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .energy-row-leftpanel {
+            float: left;
+            width: 60%;
+        }
+
+        .energy-row-inner {
+            float: left;
+            width: 60%;
+        }
+
+        .energy-row-inner p {
+            margin: 0 0 15px;
+            font-size: 18px;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333333;
+        }
+
+        .energy-row-inner a {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        .energy-row-rightpanel {
+            float: right;
+            width: 38%;
+            border: 3px solid #e1e1e6;
+            padding: 30px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .signature-footer {
+            display: flex;
+            align-items: center;
+            padding: 33px;
+            background: #752861;
+        }
+
+        .signature-footer .barcode {
+            margin-right: 30px;
+        }
+
+        .signature-footer h6 {
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .footer-top-border {
+            border: none;
+            height: 7px;
+            background: #752861;
+            margin-bottom: 3px;
+            margin-top: 2px;
+        }
+
+        .timestamp-row {
+            display: flex;
+        }
+
+        span.utc {
+            padding: 0 !important;
+            font-size: 12px;
+            vertical-align: super;
+        }
+
+        span.stamp-utc {
+            padding: 0;
+            font-size: 11px;
+            vertical-align: super;
+        }
+
+        @media(max-width:768px) {
+            .energy-row-leftpanel {
+                width: 100%;
+            }
+
+            .energy-row-rightpanel {
+                width: 100%;
+            }
+
+            .energy-row-inner {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Signature certificate start here  -->
+
+    <div class="signatutre-certificate">
+        <div class="signatutre-container">
+            <div class="signature-header">
+                <div class="signature-header-leftpanel">
+                    <h1>Signature Certificate</h1>
+                    <div class="doc-refrence">
+                        <img src="./images/signature-lock.png" alt="">
+                        <div class="refrence-number">
+                            <h5>Document Reference:</h5>
+                            <h6>1234567</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="signature-header-rightpanel">
+                    <a href="javascript:void(0);" class="logo">
+                        <img src="./images/signature-clientpoint-logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="signature-content">
+                <div class="energy-row">
+                    <div class="energy-row-leftpanel">
+                        <h2>EnergyCo</h2>
+                        <div class="energy-row-inner">
+                            <p>Signer Email: <a href="javascript:void(0);">energyco@clientpoint.net</a></p>
+                            <p>IP Address: 112.196.20.252</p>
+                            <hr style="border:none; border-bottom:1px solid #e5e5e5; margin:20px 0;">
+                            <p>Multi-Factor: <strong>Digital Fingerprint Checksum</strong></p>
+                            <p>2489fa4abaec0f6f32a3365da63wer</p>
+                        </div>
+                    </div>
+                    <div class="energy-row-rightpanel">
+                        <img style="max-width: 100%;" src="./images/computer-value.png" alt="">
+                    </div>
+                </div>
+                <div class="energy-row">
+                    <div class="energy-row-leftpanel">
+                        <h2>Customer</h2>
+                        <div class="energy-row-inner">
+                            0<p>Signer Email: <a href="javascript:void(0);">customer@domainname.com</a></p>
+                            <p>IP Address: 192.168.1.10</p>
+                            <hr style="border:none; border-bottom:1px solid #e5e5e5; margin:20px 0;">
+                            <p>Multi-Factor: <strong>Digital Fingerprint Checksum</strong></p>
+                            <p>2489fa4abaec0f6f32a3365da63wer</p>
+                        </div>
+                    </div>
+                    <div class="energy-row-rightpanel">
+                        <img style="max-width: 100%;" src="./images/computer-value.png" alt="">
+                    </div>
+                </div>
+                <div class="timestamp">
+                    <div class="timestamp-header">
+                        <div class="timestamp-header-row">
+                            <span class="timestamp-text">Timestamp <span class="stamp-utc">UTC</span></span>
+                            <span class="audit-text">Audit</span>
+                        </div>
+                    </div>
+                    <div class="timestamp-body">
+                        <div class="timestamp-row">
+                            <span class="timestamp-date"><span class="dot-icon"></span>2019-06-14 04:02:25 <span
+                                    class="utc">UTC</span></span>
+                            <span class="timestamp-ip">ClientPoint was sent by Body James (bjames@energyco.com) -
+                                112.196.20.252</span>
+                        </div>
+                        <div class="timestamp-row">
+                            <span class="timestamp-date"><span class="dot-icon"></span>2019-06-14 04:02:25 <span
+                                    class="utc">UTC</span></span>
+                            <span class="timestamp-ip">ClientPoint was sent by Body James (bjames@energyco.com) -
+                                112.196.20.252</span>
+                        </div>
+                        <div class="timestamp-row">
+                            <span class="timestamp-date"><span class="dot-icon"></span>2019-06-14 04:02:25 <span
+                                    class="utc">UTC</span></span>
+                            <span class="timestamp-ip">ClientPoint was sent by Body James (bjames@energyco.com) -
+                                112.196.20.252</span>
+                        </div>
+                        <div class="timestamp-row">
+                            <span class="timestamp-date"><span class="dot-icon"></span>2019-06-14 04:02:25 <span
+                                    class="utc">UTC</span></span>
+                            <span class="timestamp-ip">ClientPoint was sent by Body James (bjames@energyco.com) -
+                                112.196.20.252</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-top-border">
+            <div class="signature-footer">
+                <div class="barcode">
+                    <img src="./images/barcode-img.png" alt="">
+                </div>
+                <h6>This signature page provides a record of the online activity<br />
+                    excuting this contract.</h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signature certificate end here  -->
+</body>
+</html>

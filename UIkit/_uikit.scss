@@ -6,9 +6,9 @@
 
 .uikit {
 	background: color("blue", "lighten-4");
-	//height: $height-hundred-per;
 	padding: 2rem;
 	.uikitinnerbox {
+		background:color("shades","white");
 		background: $whiteBg;
 		@include margin-padding(all, null, all, 1.5rem);
 		border: 1px solid #eee;
@@ -181,12 +181,10 @@
 		// right: 36px !important;
 		// left: auto !important;
 		min-width: 210px;
-		li {
 			a {
 				@include font-rem(14px, 20px);
 				@include margin-padding(all, null, all, 1.4375rem 1.5625rem);
 			}
-		}
 	}
 }
 .switcherText {
@@ -298,7 +296,7 @@
 	}
 
 	.prev-date-calender {
-		border-radius: 0.125rem;
+		@include border-radius(0.125rem);
 		border: 1px solid color("grey", "lighten-5");
 		width: 2.36rem;
 		height: 2.36rem;
@@ -343,7 +341,7 @@
 	@include flex-wrap(wrap);
 	@include flex-align-items(center);
 	h5 {
-		margin: $zero;
+		@include margin-padding(all, 0, all, null);
 	}
 }
 .m-0 {
@@ -377,7 +375,7 @@
 }
 
 .prev-date-calender-icon {
-	border-radius: 0.125rem;
+	@include border-radius(0.125rem);
 	border: 1px solid #efeff3;
 	width: 2.36rem;
 	height: 2.36rem;
@@ -386,10 +384,10 @@
 }
 .calender-date-textUi {
 	color: #53547d;
-	margin: 0 1.6rem;
+	@include margin-padding(all, 0 1.6rem, all, null);
 }
 .next-date-calenderUi {
-	border-radius: 0.125rem;
+	@include border-radius(0.125rem);
 	border: 1px solid #efeff3;
 	width: 2.36rem;
 	height: 2.36rem;

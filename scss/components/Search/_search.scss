@@ -12,7 +12,6 @@
 		@include margin-padding(all, null, all, 0.9rem 1.5625rem);
 		@include flex(flex);
 		@include flex-wrap(wrap);
-		//align-items: $align-items-center;
 	}
 	.results-icon {
 		background: #702c63 url(../images/common-icons.svg) no-repeat -322px -1378px;
@@ -183,7 +182,6 @@
 				color: color("indigo", "base");
 				@include margin-padding(all, 0, all, null);
 				@include transition(all 0.5s);
-				//height: 1.375rem;
 			}
 		}
 		li.active {
@@ -382,7 +380,7 @@
 			opacity: 1 !important;
 			visibility: visible !important;
 			@include margin-padding(all, 0 1.7rem 0 0, all, null);
-		}
+			}
 		.switch label .lever {
 			@include margin-padding(all, -5px 0 0 0, all, null);
 		}
