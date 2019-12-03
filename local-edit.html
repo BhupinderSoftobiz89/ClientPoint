@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/pikaday.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery.scrollbar.css" />
     <link type="text/css" rel="stylesheet" href="scss/materialize.css" />
     <title>Welcome To ClientPoint</title>
     <!-- Custom CSS start here  -->
@@ -200,8 +202,7 @@
                 </i>
             </a>
             <ul id="user-dropdown" class="dropdown-content user-dropdown-login">
-                <li>
-                    <a href="javascript:void(0);">
+                <li><a href="javascript:void(0);">
                         <div class="user-login-header">
                             <img src="./images/user-avtar.png" alt="">
                             <div class="user-info-header">
@@ -236,57 +237,203 @@
     <!-- Header end here  -->
     <!-- Main Content start here  -->
     <div id="content">
-        <article class="content-common">
-            <div class="client-point-file height-auto">
-                <div class="newclientpoint-title-bar">
-                    <div class="clientpoint-title">
-                        <h4>Templates</h4>
-                    </div>
-                    <div class="newclientpoint-title-bar-right library-header-right">
-                        <div class="common-default-search">
-                            <input type="submit" class="search-btn" value="">
-                            <input type="search" class="search-input-common" placeholder="Search">
+        <div class="content-common">
+            <div class="client-point-file">
+                <a class="waves-effect waves-light btn modal-trigger" href="#local-edit">Local edit</a>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Local edit page start here -->
+
+    <div id="local-edit" class="modal local-edit-modal">
+        <div class="modal-header">
+            <span class="share-icon"></span>
+            <h4>Document Version Control and Editing</h4>
+            <a class="modal-close"><i class="material-icons">
+                    close
+                </i>
+            </a>
+        </div>
+        <div class="modal-content">
+            <div class="local-edit-checkout" style="display: none;">
+                <form action="#" class="input-file">
+                    <div class="file-field input-field">
+                        <div class="btn btn-round edit-checkout">
+                            <span>Edit (checkout)</span>
+                            <input type="file">
                         </div>
-                        <a class="waves-effect waves-light btn btn-round themeBtn">
-                            <i class="material-icons">
-                                add
-                            </i>
-                            New Template
-                        </a>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
                     </div>
+                </form>
+                <div class="responsive-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Version </th>
+                                <th>File Name</th>
+                                <th>User</th>
+                                <th>Date/Time</th>
+                                <th>Comment</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>3</td>
+                                <td>PENDING-Chapter V 5th Section</td>
+                                <td>padmin@test.com </td>
+                                <td>2019-11-19 07:20:27 </td>
+                                <td>Current Version - 3rd</td>
+                                <td><a href="javascript:void(0)" class="download-link"><span
+                                            class="download-icon"></span>Download</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>OnBoarding Timeline-372413</td>
+                                <td>padmin@test.com </td>
+                                <td>2019-11-19 07:20:04 </td>
+                                <td>2nddd</td>
+                                <td><a href="javascript:void(0)" class="download-link"><span
+                                            class="download-icon"></span>Download</a></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>ClientPoint Onboarding</td>
+                                <td>padmin@test.com </td>
+                                <td>2019-11-19 07:20:04 </td>
+                                <td>--</td>
+                                <td><a href="javascript:void(0)" class="download-link"><span
+                                            class="download-icon"></span>Download</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="library-table">
-                    <div class="table-responsive data-table">
+                <div class="responsive-table">
+                    <table class="local-table-margin">
+                        <thead>
+                            <tr>
+                                <th style="width: 84.9%;">Original File </th>
+                                <th style="width: 15%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pending- Chapter v 5th Section Sales Agreement-8578689</td>
+                                <td><a href="javascript:void(0)" class="download-link"><span
+                                            class="download-icon"></span>Download</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="local-edit-editing">
+                <form action="#" class="input-file">
+                    <h6>Edit the downloaded document then upload it here</h6>
+                    <div class="file-field input-field">
+                        <div class="btn btn-round select-edit-file">
+                            <span><i class="upload-icon"></i>Select Edited File</span>
+                            <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+                </form>
+                <div class="responsive-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th># </th>
+                                <th>Type</th>
+                                <th>File Name</th>
+                                <th style="width: 60%;"></th>
+                                <th>Size</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-none">
+                                <td colspan="5">
+                                    <p>Comments for File Version</p>
+                                    <textarea name="" cols="30" rows="10"></textarea>
+                                    <a class="waves-effect waves-light btn btn-round checkin-btn">Check In</a>
+                                    <a class="waves-effect waves-teal btn-flat checkout-btn">Cancel Checkout</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="responsive-table">
                         <table>
                             <thead>
                                 <tr>
-                                    <th>
-                                        <label>
-                                            <input type="checkbox" class="filled-in" />
-                                            <span></span>
-                                        </label>
-                                        Name
-                                        <a href="javascript:void(0);" class="sort-icon"></a>
-                                    </th>
-                                    <th>
-                                        Date Modified
-                                        <a href="javascript:void(0);" class="sort-icon"></a>
-                                    </th>
-                                    <th style="padding:0 30px;width:20px; text-align: right;">
-                                        <a class="tile-icon" href="javascript:void(0);"></a>
-                                    </th>
+                                    <th>Version </th>
+                                    <th>File Name</th>
+                                    <th>User</th>
+                                    <th>Date/Time</th>
+                                    <th>Comment</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
+                            <tbody>
+                                <tr>
+                                    <td>3</td>
+                                    <td>PENDING-Chapter V 5th Section</td>
+                                    <td>padmin@test.com </td>
+                                    <td>2019-11-19 07:20:27 </td>
+                                    <td>Current Version - 3rd</td>
+                                    <td><a href="javascript:void(0)" class="download-link"><span
+                                                class="download-icon"></span>Download</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>OnBoarding Timeline-372413</td>
+                                    <td>padmin@test.com </td>
+                                    <td>2019-11-19 07:20:04 </td>
+                                    <td>2nddd</td>
+                                    <td><a href="javascript:void(0)" class="download-link"><span
+                                                class="download-icon"></span>Download</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ClientPoint Onboarding</td>
+                                    <td>padmin@test.com </td>
+                                    <td>2019-11-19 07:20:04 </td>
+                                    <td>--</td>
+                                    <td><a href="javascript:void(0)" class="download-link"><span
+                                                class="download-icon"></span>Download</a></td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
-                    <div class="library-empty-state">
-                        <img src="./images/ufo@3x.svg" alt="Image for library empty state">
-                        <p>We’re not detecting anything here. <a href="jvascript:void(0);" class="link">Create a proposal</a> and save it as a template!</p>
+                    <div class="responsive-table">
+                        <table class="local-table-margin">
+                            <thead>
+                                <tr>
+                                    <th style="width: 84.9%;">Original File </th>
+                                    <th style="width: 15%;"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pending- Chapter v 5th Section Sales Agreement-8578689</td>
+                                    <td><a href="javascript:void(0)" class="download-link"><span
+                                                class="download-icon"></span>Download</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
             </div>
-        </article>
+        </div>
     </div>
+
+    <!-- Local edit page end here -->
+
     <!-- Main Content end here  -->
 
     <!-- Javascript files start here -->
@@ -294,21 +441,10 @@
     <script src="js/materialize.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/jquery.scrollbar.min.js"></script>
-    <script src="js/pikaday.js"></script>
     <script>
         jQuery(document).ready(function () {
             jQuery('.scrollbar-inner').scrollbar();
         });
-    </script>
-    <script>
-        var picker = new Pikaday(
-            {
-                field: document.getElementById('datepicker'),
-                firstDay: 1,
-                minDate: new Date(),
-                maxDate: new Date(2020, 12, 31),
-                yearRange: [2000, 2020]
-            });
     </script>
 </body>
 

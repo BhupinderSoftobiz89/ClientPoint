@@ -37,7 +37,7 @@
 }
 .input-field {
 	@include font-weight(medium);
-	text-transform: text-maps("text-transform","uppercase");
+	text-transform: text-map("text-transform","uppercase");
 	@extend %labelCommon;
 
 	label {
@@ -46,7 +46,7 @@
 }
 .select-wrapper li span {
 	color: color("grey", "darken-4");
-	text-transform: text-maps("text-transform","capitalize");
+	text-transform: text-map("text-transform","capitalize");
 	@include font-weight(normal);
 }
 .select-wrapper input.select-dropdown {
@@ -237,7 +237,7 @@
 		@include flex(flex);
 		@include flex-wrap(wrap);
 		.btn-round {
-			padding: 0 4.92rem;
+			@include margin-padding(all, null, all, 0 4.92rem);
 		}
 	}
 	.client-menu {
@@ -438,7 +438,7 @@
 		background: color("grey", "lighten-4");
 		border-right: 1px solid #efeff3;
 		@include font-rem(12px);
-		text-transform: text-maps("text-transform","uppercase");
+		text-transform: text-map("text-transform","uppercase");
 		color: #a9a9be;
 		@include font-weight(medium);
 		letter-spacing: 0.25px;
@@ -475,7 +475,7 @@
 	background: #fafafb url(../images/common-icons.svg) no-repeat -315px -339px;
 	@include border-radius(100%);
 }
-.optionDropDownContentUi {
+.optiondrop-down-contentui {
 	li {
 		@include font-rem(14px);
 		a {

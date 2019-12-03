@@ -48,7 +48,6 @@
 		flex: 0 0 59.1%;
 		@include margin-padding(all, null, all, 64px 0 0 0);
 		@include relative;
-		// height: $height-hundred-per;
 		height: 100%;
 		.login-step {
 			ul {
@@ -112,15 +111,12 @@
 			}
 
 			.indicator {
-				display: $none;
+				@include flex(none);
 			}
 		}
 	}
 	.login-form {
-		// max-width: 567px;
 		width: $full-width;
-		// @include margin-padding(all, 0 auto 0, all, null);
-
 		height: $height-hundred-per;
 		form {
 			height: $height-hundred-per;
@@ -158,10 +154,6 @@
 				border-bottom: 2px solid color("red", "base");
 			}
 		}
-		// .input-field > label:not(.label-icon).active {
-		// 	-webkit-transform: translateY(-31px);
-		// 	transform: translateY(-31px);
-		// }
 		.btn.disabled {
 			background: #dfdfdf !important;
 		}
@@ -280,7 +272,6 @@
 	@include flex-justify(center);
 	border: 1px dashed color("grey", "lighten-3");
 	@include absolute(top 29px);
-	// top: 29px;
 	.material-icons {
 		color: color("indigo", "base");
 	}
@@ -388,7 +379,7 @@
 		}
 		.btn-round {
 			margin-right: $zero !important;
-			padding: 0 1.6rem;
+			@include margin-padding(all, null, all, 0 1.6rem);
 		}
 	}
 	.btn.disabled {
@@ -413,7 +404,7 @@
 .login-common-width {
 	max-width: 698px;
 	margin: auto;
-	padding: 120px 64px 80px;
+	@include margin-padding(all, null, all, 120px 64px 80px);
 }
 .team-width {
 	max-width: $full-width !important;

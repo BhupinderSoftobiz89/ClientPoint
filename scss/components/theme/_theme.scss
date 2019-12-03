@@ -1,18 +1,18 @@
 /* Theme Page start here */
 .client-point-file {
 	.newclientpoint-title-bar-right {
-		.themeBtn {
-			@include flex(flex);
-			@include flex-wrap(wrap);
-			padding: 0 2.5rem;
-			.material-icons {
-				margin-right: 5px !important;
-			}
+	}
+	.themeBtn {
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		padding: 0 2.5rem;
+		.material-icons {
+			margin-right: 5px !important;
 		}
 	}
 	.default {
 		@include font-rem(12px);
-		text-transform: text-map("text-transform","uppercase");
+		text-transform: text-map("text-transform", "uppercase");
 		@include font-weight(semi-bold);
 		color: color("grey", "base");
 		margin-left: 15px;
@@ -23,51 +23,48 @@
 }
 .theme-content {
 	padding: 1.875rem 3.125rem;
-	.theme-list {
-		.theme-list-row {
-			@include flex(flex);
-			@include flex-wrap(wrap);
-			@include flex-align-items(center);
-			border: 1px solid color("grey", "lighten-5");
-			@include margin-padding(all, null, all, 1.5625rem);
-			h5 {
-				@include margin-padding(all, 0, all, null);
-				color: color("grey", "darken-3");
-				@include font-rem(16px, 24px);
-				span {
-					@include font-rem(12px);
-					text-transform: text-map("text-transform","uppercase");
-					@include font-weight(medium);
-					color: color("grey", "base");
-					margin-left: 15px;
-				}
+	.theme-list-row {
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
+		border: 1px solid color("grey", "lighten-5");
+		@include margin-padding(all, null, all, 1.5625rem);
+		h5 {
+			@include margin-padding(all, 0, all, null);
+			color: color("grey", "darken-3");
+			@include font-rem(16px, 24px);
+			span {
+				@include font-rem(12px);
+				text-transform: text-map("text-transform", "uppercase");
+				@include font-weight(medium);
+				color: color("grey", "base");
+				margin-left: 15px;
 			}
 		}
-		.themebtns {
-			@include margin-direction(left);
-			@include flex(flex);
-			@include flex-wrap(wrap);
-			@include flex-align-items(center);
-		}
-		.edit-btn {
-			@include flex(flex);
-			@include flex-wrap(wrap);
-			@include flex-align-items(center);
-			text-transform: text-map("text-transform","uppercase");
-			@include font-rem(14px);
-			@include font-weight(semi-bold);
-			
-		}
-		.edit-icon {
+	}
+	.themebtns {
+		@include margin-direction(left);
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
+	}
+	.edit-btn {
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(center);
+		text-transform: text-map("text-transform", "uppercase");
+		@include font-rem(14px);
+		@include font-weight(semi-bold);
+	}
+	.edit-icon {
+		@include icon(15.8px, 20px, (false));
+		background-position: -246px -663px;
+	}
+	.duplicate-btn {
+		@extend .edit-btn;
+		.duplicate-icon {
 			@include icon(15.8px, 20px, (false));
-			background-position: -246px -663px;
-		}
-		.duplicate-btn {
-			@extend .edit-btn;
-			.duplicate-icon {
-				@include icon(15.8px, 20px, (false));
-				background-position: -169px -663px;
-			}
+			background-position: -169px -663px;
 		}
 	}
 }
@@ -140,7 +137,7 @@
 	}
 	.input-field {
 		label {
-			text-transform: text-map("text-transform","capitalize");
+			text-transform: text-map("text-transform", "capitalize");
 		}
 	}
 	.collapsible-body {
@@ -187,11 +184,12 @@
 .theme-advanced-settings {
 	.advanced-tab-config-row {
 		margin-bottom: 1.6rem;
+		padding-left: 60px;
 	}
 	.switch {
 		label {
 			.lever {
-				@include margin-padding(all, -3px 20px 0 0, all, null);
+				@include margin-padding(all, -3px 20px 0 -62px, all, null);
 			}
 		}
 	}
@@ -202,7 +200,7 @@
 		padding-left: 4.55rem;
 		margin-top: 0.9375rem;
 		label {
-			text-transform: text-map("text-transform","uppercase");
+			text-transform: text-map("text-transform", "uppercase");
 			@include font-weight(medium);
 			color: color("grey", "darken-1");
 			margin-right: 2rem;
@@ -249,7 +247,7 @@
 		@include margin-padding(all, null, all, 1.6rem 1.8125rem);
 		h4 {
 			color: color("grey", "darken-2");
-			margin:0 $auto 0 0;
+			margin: 0 $auto 0 0;
 		}
 	}
 	.collapsible-body {
@@ -328,7 +326,7 @@
 	label {
 		color: color("grey", "darken-1");
 		@include font-rem(14px);
-		text-transform: text-map("text-transform","uppercase");
+		text-transform: text-map("text-transform", "uppercase");
 		@include font-weight(medium);
 		max-width: 170px;
 		width: $full-width;
@@ -351,7 +349,7 @@
 			border: $border-none;
 		}
 		th {
-			text-transform: text-map("text-transform","uppercase");
+			text-transform: text-map("text-transform", "uppercase");
 			@include font-weight(semi-bold);
 			color: color("grey", "darken-4");
 			margin-right: 2rem;
@@ -366,14 +364,14 @@
 			margin: -3px 8px 0 0;
 		}
 		.defaultLink {
-			text-transform: text-map("text-transform","uppercase");
+			text-transform: text-map("text-transform", "uppercase");
 			@include font-weight(semi-bold);
 			color: color("indigo", "base");
 			margin-right: 2rem;
 			@include font-rem(14px);
 		}
 		.hideLink {
-			text-transform: text-map("text-transform","uppercase");
+			text-transform: text-map("text-transform", "uppercase");
 			@include font-weight(semi-bold);
 			color: color("grey", "lighten-1");
 			margin-right: 2rem;
@@ -402,7 +400,7 @@
 			border: $none;
 			th {
 				background: #fafafc;
-				text-transform: text-map("text-transform","uppercase");
+				text-transform: text-map("text-transform", "uppercase");
 				@include font-weight(semi-bold);
 				color: color("grey", "darken-4");
 				@include margin-padding(all, null, all, 0.75rem 1.875rem);
@@ -410,7 +408,7 @@
 			}
 			td {
 				@include margin-padding(all, null, all, 0.75rem 1.875rem);
-				text-transform: text-map("text-transform","uppercase");
+				text-transform: text-map("text-transform", "uppercase");
 				@include font-weight(medium);
 				color: color("grey", "darken-2");
 				border-right: 1px solid #f7f6f9;
@@ -427,9 +425,7 @@
 	}
 }
 
-
 /* Theme Page end here */
-
 
 /* Intigration Page start here */
 
@@ -527,7 +523,7 @@
 				height: 3.2rem;
 				line-height: 3.75rem;
 			}
-		} 
+		}
 	}
 	.theme-advanced-tabs {
 		.tabcollapse-arrow {
@@ -535,7 +531,7 @@
 				line-height: 1.875rem;
 				height: 1.25rem;
 			}
-		} 
+		}
 	}
 	.themeBtn {
 		.material-icons {

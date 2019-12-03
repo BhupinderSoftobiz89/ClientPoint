@@ -85,7 +85,7 @@
 		@include margin-padding(all, 0, all, 2.5rem 0);
 		li {
 			a {
-				@include font-rem(16px);
+				@include font-rem(14.5px);
 				@include flex(block);
 				@include margin-padding(all, null, all, 1.2rem 1.875rem);
 				color: rgba(255, 255, 255, 0.35);

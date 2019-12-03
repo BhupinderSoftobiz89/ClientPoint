@@ -19,7 +19,8 @@ $text-maps: (
     'text-decoration': (
         overline:overline,
         line-through:line-through,
-        underline:underline
+        underline:underline,
+        none:none
     ),
 ) !default;
 

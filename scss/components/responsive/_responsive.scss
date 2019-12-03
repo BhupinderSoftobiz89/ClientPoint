@@ -397,7 +397,7 @@
 	.getting-started {
 		.getting-started-row {
 			@include flex(block);
-			text-align: text-maps("text-align", "center");
+			text-align: text-map("text-align", "center");
 		}
 	}
 	.login {
@@ -687,6 +687,59 @@
 			line-height: 2rem;
 		}
 	}
+	.advanced-tab-config {
+		table {
+			td {
+				font-size: 1rem;
+			}
+		}
+	}
+
+	.splash-viewer {
+		.splash-form-center {
+			h5 {
+				font-size: 1.2rem;
+				line-height: 1.8rem;
+			}
+		} 
+	} 
+	.client-point-file {
+		.newclientpoint-title-bar {
+			h4 {
+				font-size: 1.1rem;
+			}
+		} 
+	} 
+	.theme-setting {
+		.collapsible-header {
+			h4 {
+				font-size: 1.1rem;
+			}
+		} 
+	}
+	.theme-setting {
+		.collapsible-body {
+			h4 {
+				font-size: 1.1rem;
+			}
+		} 
+	}
+	.anaytics-overview {
+		.anaytics-overview-col {
+			@include flex-justify(flex-start);
+			padding: 5px 25px;
+		}
+	}
+	.client-point-file {
+		.creating-perposal {
+			.creating-perposal-left {
+				@include margin-padding(all, null, all, 1.875rem 1.875rem 0 1.875rem);
+			} 
+		} 
+	} 
+	.new-btn-clientpoint {
+		padding: 0 2.5rem !important;
+	}
 }
 
 // Media for 570px
@@ -860,6 +913,11 @@
 			}
 		}
 	}
+	.filters {
+		h5 {
+			font-size: 1rem;
+		}
+	} 
 }
 // Media For extra small 480
 
@@ -899,6 +957,33 @@
 	}
 	.table-options {
 		@include margin-padding(all, null, all, 2.3125rem 2rem);
+	}
+	.back-arrow-nav {
+		margin-right: 1rem;
+	}
+	.anaytics-overview {
+		.anaytics-overview-row {
+			.view-more {
+				margin-left: inherit;
+			}
+		} 
+	}
+	.anaytics-overview-header {
+		h6 {
+			flex: 0 0 100%;
+		}
+	} 
+	.calender-padding {
+		@include margin-padding(all, null, all, 0 1rem 0 0);
+	}
+	.filters {
+		@include margin-padding(all, null, all, 0 0 0 2.5rem);
+	}
+	.calender-datesCommon.d-flex.ml-auto {
+		flex: 0 0 100%;
+	}
+	.filters {
+		@include margin-padding(all, null, all, 0 0 0 1rem);
 	}
 }
 

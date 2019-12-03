@@ -1,0 +1,117 @@
+/* Local edit start here */
+
+.local-edit-modal {
+	width: 90%;
+	max-width: 1209px;
+	.modal-header {
+		h4 {
+			flex: 1;
+		}
+	}
+	.share-icon {
+		@include icon(25px, 25px, (false));
+		background-position: -319px -1789px;
+		margin-right: 1.2rem;
+	}
+	table {
+		white-space: nowrap;
+		th {
+			border-bottom: 1px solid #efeff3;
+			text-transform: text-map("text-transform", "uppercase");
+		}
+		td {
+			color: #53547d;
+			@include font-rem(14px);
+		}
+		th,
+		td {
+			padding: 15px 35px;
+		}
+		tbody {
+			tr {
+				border: none;
+				&:hover {
+					background: color("grey", "lighten-4");
+				}
+			}
+		}
+	}
+	.download-link {
+		@include flex(flex);
+		text-transform: text-map("text-transform", "uppercase");
+		@include font-weight(medium);
+		.download-icon {
+			@include icon(20px, 20px, (false));
+			background-position: -246px -346px;
+		}
+	}
+	.input-file {
+		@include margin-padding(all, null, all, 0 1.875rem 0 2.9375rem);
+		.edit-checkout {
+			height: 2.85rem;
+			line-height: 2.85rem;
+			padding: 0 2.3rem;
+		}
+	}
+	.input-field {
+		@include margin-padding(all, 0.5rem 0, all, null);
+		input[type="text"] {
+			border-bottom: none;
+			margin: 0;
+		}
+	}
+	.local-table-margin {
+		@include margin-padding(all, 4.375rem 0 0 0, all, null);
+	}
+	.responsive-table {
+		overflow: auto;
+	}
+	.local-edit-editing {
+		h6 {
+			@include font-rem(14px, 34px);
+			@include font-weight(medium);
+		}
+		.upload-icon {
+			@include icon(20px, 20px, (false));
+			background-position: -169px -1060px;
+			@include vertical-align(middle);
+		}
+		.input-file {
+			@include margin-padding(all, 0 0 1.875rem 0, all, null);
+		}
+		.select-edit-file {
+			height: 3rem;
+			line-height: 3rem;
+			padding: 0 2.3rem;
+			text-transform: text-map("text-transform", "capitalize");
+			@include font-weight(medium);
+			input[type="file"] {
+				height: 2.85rem;
+			}
+		}
+		textarea {
+			height: 8rem;
+			border: 1px solid color("grey", "lighten-3");
+			resize: $none;
+			@include margin-padding(all, 0 0 2.1875rem 0, all, 1rem);
+			@include flex(block);
+			&:focus {
+				outline: $none;
+			}
+		}
+	}
+}
+tr {
+	&.bg-none {
+		background: none !important;
+	}
+	.checkin-btn {
+		height: 40px;
+		line-height: 40px;
+		@include margin-padding(all, null, all, 0 3rem);
+	}
+	.checkout-btn {
+        @include font-weight(semi-bold);
+	}
+}
+/* Local edit end here */

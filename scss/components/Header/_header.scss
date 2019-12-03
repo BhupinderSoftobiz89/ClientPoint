@@ -48,7 +48,7 @@
 		@include flex-align-items(center);
 		.btn-flat {
 			color: $btnPrimaryColor;
-			@include font-rem(14px, 43px);
+			@include font-rem(14px, 35px);
 			border: 1px solid $btnPrimaryColor;
 			@include border-radius(30px);
 			@include font-weight(medium);
@@ -65,8 +65,6 @@
 			color: $default-color;
 			height: 1.4rem;
 			line-height: 1.7rem;
-			// @include flexbox();
-			// align-items: $align-items-center;
 		}
 	}
 	.user-login-panel {
@@ -82,8 +80,7 @@
 		@include flex(inline-block);
 		@include vertical-align(middle);
 		strong {
-			@include font-weight(600);
-			// font-weight: $font-weight-bold;
+			@include font-weight(semi-bold);
 		}
 	}
 	.user-avtar {

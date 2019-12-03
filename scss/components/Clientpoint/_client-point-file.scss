@@ -28,14 +28,16 @@
 			p {
 				color: color("blue-grey", "darken-1");
 			}
-			.templateLink {
-				color: color("indigo", "base");
-				@include text-decoration(underline);
-				&:hover {
-					@include text-decoration(none);
-				}
+			
+		}
+		.templateLink {
+			color: color("indigo", "base");
+			text-decoration: text-map("text-decoration","underline");
+			&:hover {
+				text-decoration: text-map("text-decoration","none");
 			}
 		}
+	}
 		.creating-perposal-rightpanel {
 			width: 35.3%;
 			@include margin-padding(all, null, all, 0);
@@ -134,7 +136,7 @@
 				right: -11px !important;
 				left: auto !important;
 				min-width: 230px;
-				padding: 21px 0 0;
+				@include margin-padding(all, null, all, 1.3125rem 0 0);
 				li {
 					min-height: auto;
 					&:hover {
@@ -186,7 +188,7 @@
 				}
 			}
 		}
-	}
+	
 }
 
 /* Add A File Modal start here  */
@@ -401,10 +403,9 @@
 			@include font-rem(16px);
 			a {
 				color: color("grey", "darken-2");
-				@include font-rem(16px);
+				@include font-rem(16px, 40px);
 				@include flex(flex);
 				@include flex-align-items(center);
-				line-height: 40px;
 				@include margin-padding(all, null, all, 0 3.6rem 0 3.125rem);
 				&:hover {
 					background: $hoverColor;
@@ -537,9 +538,8 @@
 	@include margin-padding(all, null, all, 2.5rem 0 2.5rem 2.5rem);
 	height: calc(100% - 56px);
 	p {
-		@include font-rem(16px);
+		@include font-rem(16px, 34px);
 		color: color("blue-grey", "darken-2") !important;
-		line-height: 34px;
 		padding-right: 2.5rem;
 	}
 
@@ -554,7 +554,7 @@
 	}
 	.word-search {
 		background: rgba(247, 186, 15, 0.39);
-		padding: 0 4px;
+		@include margin-padding(all, null, all, 0 0.25rem);
 	}
 }
 
@@ -1007,7 +1007,9 @@
 			@include flex-align-items(center);
 			background: color("indigo", "darken-3");
 			.material-icons {
-				@include margin-padding(all, 0 0 0 8px, all, null);
+				@include margin-padding(all, 0 0 0 2px, all, null);
+				@include vertical-align(top);
+				height: 36px;
 			}
 		}
 	}
@@ -1361,7 +1363,7 @@
 	}
 	a {
 		color: color("shades", "white");
-		@include text-decoration(underline);
+		text-decoration: text-map("text-decoration","underline");
 	}
 }
 
@@ -1617,7 +1619,7 @@
 #comments {
 	.outer-scroll-viewer {
 		height: calc(100% - 246px);
-		padding: 20px 0;
+		@include margin-padding(all, null, all, 20px 0);
 	}
 }
 .past-comments {
@@ -1706,7 +1708,7 @@
 				color: color("indigo", "base");
 				@include font-rem(14px, 26px);
 				@include font-weight(medium);
-				@include text-decoration(underline);
+				text-decoration: text-map("text-decoration","underline");
 			}
 		}
 	}

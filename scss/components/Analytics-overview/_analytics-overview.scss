@@ -16,11 +16,11 @@
 			@include margin-padding(all, null, all, 1.375rem 1.375rem 1.0625rem 1.75rem);
 			@include flex(flex);
 			@include flex-wrap(wrap);
-			text-transform: text-map("text-align","center");
+			text-transform: text-map("text-align", "center");
 		}
 		h6 {
 			color: color("grey", "darken-1");
-			text-transform: text-map("text-transform","uppercase");
+			text-transform: text-map("text-transform", "uppercase");
 			@include font-weight(medium);
 			line-height: $line-height-twentyfour;
 			@include margin-padding(all, 0, all, null);
@@ -32,35 +32,37 @@
 			@include flex(flex);
 			@include flex-align-items(center);
 		}
-		.anaytics-overview-content {
-			@include margin-padding(all, null, all, 0 1.375rem 1.3125rem 1.75rem);
-			@include relative();
-			h4 {
-				@include font-weight(medium);
-				color: color("grey", "darken-4");
-				line-height: $line-height-twentyfour;
-				@include margin-padding(all, 0 0 1rem 0, all, null);
-			}
-			p {
-				color: color("blue-grey", "darken-1");
-				@include font-rem(16px, 24px);
-				@include margin-padding(all, 0, all, null);
-				strong {
-					color: color("grey", "darken-2");
-				}
-			}
-		}
-		.auth-link {
-			color: color("indigo", "base");
+		
+	}
+
+	.anaytics-overview-content {
+		@include margin-padding(all, null, all, 0 1.375rem 1.3125rem 1.75rem);
+		@include relative();
+		h4 {
 			@include font-weight(medium);
+			color: color("grey", "darken-4");
+			line-height: $line-height-twentyfour;
+			@include margin-padding(all, 0 0 1rem 0, all, null);
 		}
-		.anaytics-overview-footer-row {
-			@include flex-wrap(wrap);
-			@include flex(flex);
-			@include flex-align-items(center);
-			@include flex-justify(center);
-			border-top: 1px solid color("grey", "lighten-5");
+		p {
+			color: color("blue-grey", "darken-1");
+			@include font-rem(16px, 24px);
+			@include margin-padding(all, 0, all, null);
+			strong {
+				color: color("grey", "darken-2");
+			}
 		}
+	}
+	.auth-link {
+		color: color("indigo", "base");
+		@include font-weight(medium);
+	}
+	.anaytics-overview-footer-row {
+		@include flex-wrap(wrap);
+		@include flex(flex);
+		@include flex-align-items(center);
+		@include flex-justify(center);
+		border-top: 1px solid color("grey", "lighten-5");
 	}
 	.anaytics-overview-col {
 		max-width: 33.33%;
@@ -75,7 +77,7 @@
 			border-right: $none;
 		}
 		h6 {
-			margin: $zero;
+			@include margin-padding(all, 0, all, null);
 			color: color("grey", "darken-4");
 			line-height: $line-height-twentyfour;
 		}
@@ -96,7 +98,7 @@
 		border-left: 5px solid#0086DC;
 		@include flex(inline-block);
 		width: $full-width;
-		@include border-radius(5px 0 0 5px)
+		@include border-radius(5px 0 0 5px);
 	}
 	.analytics-shadow {
 		background: linear-gradient(
@@ -114,7 +116,7 @@
 	}
 	.reply-btn {
 		@include font-weight(medium);
-		text-transform: text-map("text-transform","uppercase");
+		text-transform: text-map("text-transform", "uppercase");
 		color: color("grey", "darken-4");
 		@include relative();
 		margin-top: 15px;
@@ -125,52 +127,51 @@
 		}
 	}
 }
-.analytics-overview-view {
+
 	.analytics-overview-view-row {
 		// border-radius: $border-radius-5;
 		// background: color("shades", "white");
 		// box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
-	
-			li {
-				@include border-radius(5px);
-				background: color("shades", "white");
-				box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
-				margin-bottom: 1.375rem;
-				&:last-child {
-					@include margin-padding(all, 0, all, null);
-				}
+
+		li {
+			@include border-radius(5px);
+			background: color("shades", "white");
+			box-shadow: 0px 2px 7px rgba(84, 86, 90, 0.2);
+			margin-bottom: 1.375rem;
+			&:last-child {
+				@include margin-padding(all, 0, all, null);
 			}
-			li.active {
-				.rotate-arrow {
-					@include transform(rotate(180deg));
-				}
+		}
+		li.active {
+			.rotate-arrow {
+				@include transform(rotate(180deg));
 			}
-			.collapsible-header {
-				border-top: $none;
-				background-color: color("shades", "transparent");
-				@include font-rem(16px);
-				color: color("grey", "darken-4");
-				text-transform: text-map("text-transform","uppercase");
-				@include font-weight(semi-bold);
-				border-bottom: 1px solid color("grey", "lighten-5");
-				padding: 12px 20px !important;
-				@include border-radius(5px 5px 0 0);
-				.material-icons {
-					@include margin-direction(left);
-					margin-right: $zero;
-					color: color("indigo", "base");
-					font-size: 1.9rem;
-					@include transition(all 0.5s);
-				}
+		}
+		.collapsible-header {
+			border-top: $none;
+			background-color: color("shades", "transparent");
+			@include font-rem(16px);
+			color: color("grey", "darken-4");
+			text-transform: text-map("text-transform", "uppercase");
+			@include font-weight(semi-bold);
+			border-bottom: 1px solid color("grey", "lighten-5");
+			padding: 12px 20px !important;
+			@include border-radius(5px 5px 0 0);
+			.material-icons {
+				@include margin-direction(left);
+				margin-right: $zero;
+				color: color("indigo", "base");
+				font-size: 1.9rem;
+				@include transition(all 0.5s);
 			}
-		
+		}
 	}
 	.total-view {
 		@include margin-padding(all, null, all, 1rem 0);
 		border-bottom: 1px solid color("grey", "lighten-5");
 		.total-view-row {
 			@include flex(flex);
-			text-align: text-map("text-align","center");
+			text-align: text-map("text-align", "center");
 			@include margin-padding(all, null, all, 0 2rem);
 			margin-bottom: 1.375rem;
 			&:last-child {
@@ -179,8 +180,8 @@
 			h6 {
 				@include font-rem(13px, 24px);
 				@include font-weight(bold);
-				text-transform: text-map("text-transform","uppercase");
-				margin: $zero;
+				text-transform: text-map("text-transform", "uppercase");
+				@include margin-padding(all, 0, all, null);
 				color: color("grey", "darken-4");
 			}
 		}
@@ -193,33 +194,12 @@
 	.top-viewers {
 		@include margin-padding(all, 0 0 1.25rem, all, 1.75rem 2rem);
 		h5 {
-			text-transform: text-map("text-transform","uppercase");
+			text-transform: text-map("text-transform", "uppercase");
 			@include font-weight(semi-bold);
 			color: color("grey", "darken-4");
 			@include font-rem(14px, 24px);
 		}
-		.viewers-row {
-			@include flex(flex);
-			@include flex-wrap(wrap);
-			@include flex-align-items(flex-start);
-			margin-bottom: 1.375rem;
-			.viewer-img {
-				margin-right: 1.125rem;
-			}
-			.viewers-content {
-				flex: 1;
-				h6 {
-					color: color("indigo", "base");
-					@include margin-padding(all, 0, all, null); 
-					@include font-rem(16px, 24px);
-				}
-				p {
-					@include margin-padding(all, 0, all, null); 
-					line-height: $line-height-twentyfour;
-					color: color("grey", "darken-2");
-				}
-			}
-		}
+		
 		.collapse-arrow {
 			color: color("indigo", "base");
 			font-size: 1.9rem;
@@ -235,11 +215,33 @@
 			}
 		}
 	}
+	.viewers-row {
+		@include flex(flex);
+		@include flex-wrap(wrap);
+		@include flex-align-items(flex-start);
+		margin-bottom: 1.375rem;
+		.viewer-img {
+			margin-right: 1.125rem;
+		}
+		.viewers-content {
+			flex: 1;
+			h6 {
+				color: color("indigo", "base");
+				@include margin-padding(all, 0, all, null);
+				@include font-rem(16px, 24px);
+			}
+			p {
+				@include margin-padding(all, 0, all, null);
+				line-height: $line-height-twentyfour;
+				color: color("grey", "darken-2");
+			}
+		}
+	}
 	.top-file-viewed {
 		border-top: 1px solid color("grey", "lighten-5");
 		@include margin-padding(all, null, all, 1.75rem 2rem);
 		h6 {
-			text-transform:text-map("text-transform","uppercase");
+			text-transform: text-map("text-transform", "uppercase");
 			@include font-weight(semi-bold);
 			color: color("grey", "darken-4");
 			@include font-rem(14px, 24px);
@@ -284,8 +286,8 @@
 			h6 {
 				@include font-rem(14px, 24px);
 				@include font-weight(semi-bold);
-				text-transform: text-map("text-transform","uppercase");
-				margin: $zero;
+				text-transform: text-map("text-transform", "uppercase");
+				@include margin-padding(all, 0, all, null);
 				color: color("grey", "darken-4");
 			}
 		}
@@ -295,7 +297,7 @@
 			color: color("blue-grey", "darken-1");
 		}
 	}
-}
+
 .analytics-filter {
 	@include flex(flex);
 	@include flex-wrap(wrap);
@@ -304,7 +306,7 @@
 	h5 {
 		@include font-rem(16px, 24px);
 		color: color("grey", "darken-4");
-		margin: $zero;
+		@include margin-padding(all, 0, all, null);
 	}
 	.filter-icon {
 		@include icon(20px, 20px, (false));
@@ -354,7 +356,7 @@
 		.dropdown-content {
 			min-width: 185px;
 			top: 100% !important;
-			padding: 16px 17px;
+			@include margin-padding(all, null, all, 1rem 1.0625rem);
 			left: auto !important;
 			right: $zero;
 			li {
@@ -378,6 +380,7 @@
 			}
 		}
 	}
+}
 	.calender-date {
 		@include flex(flex);
 		@include flex-wrap(wrap);
@@ -427,7 +430,7 @@
 			left: auto !important;
 			right: $zero;
 		}
-		.calender-header {
+		
 			.calender-header-row {
 				@include flex(flex);
 				@include flex-wrap(wrap);
@@ -443,7 +446,7 @@
 					background: color("grey", "lighten-4");
 					border-right: 1px solid color("grey", "lighten-5");
 					@include font-rem(12px);
-					text-transform: text-map("text-transform","uppercase");
+					text-transform: text-map("text-transform", "uppercase");
 					color: color("grey", "darken-1");
 					@include font-weight(medium);
 					letter-spacing: 0.25px;
@@ -464,7 +467,7 @@
 					}
 				}
 			}
-		}
+		
 		.calender-dropdown-content {
 			li {
 				min-height: inherit;
@@ -482,7 +485,7 @@
 					}
 				}
 				a {
-					text-align:text-map("text-align","center");
+					text-align: text-map("text-align", "center");
 					@include font-rem(14px);
 					color: color("grey", "darken-4");
 					padding: 11px 16px;
@@ -555,7 +558,7 @@
 			}
 		}
 	}
-}
+
 .contact-list-row {
 	@include flex(flex);
 	@include flex-wrap(wrap);
@@ -596,7 +599,7 @@
 		@include font-rem(12px, 24px);
 		@include font-weight(medium);
 		color: color("grey", "darken-1");
-		text-transform: text-map("text-transform","uppercase");
+		text-transform: text-map("text-transform", "uppercase");
 		@include margin-padding(all, 0, all, null);
 	}
 	.progress {
@@ -624,7 +627,7 @@
 .bottom-border {
 	border-bottom: 1px solid color("grey", "lighten-5");
 }
-.analytics-padding{
+.analytics-padding {
 	// padding: 20px !important;
 	background: color("grey", "lighten-4");
 }
@@ -656,7 +659,7 @@
 
 .ip-address {
 	margin-top: 1.5625rem;
-	padding: 0 2.2rem;
+	@include margin-padding(all, null, all, 0 2.2rem);
 	@include flex(none);
 	.ip-address-top {
 		.ip-address-row {
@@ -673,7 +676,7 @@
 				@include margin-padding(all, 0, all, null);
 				color: color("grey", "darken-4");
 				@include font-weight(semi-bold);
-				text-transform: text-map("text-transform","uppercase");
+				text-transform: text-map("text-transform", "uppercase");
 				@include margin-padding(all, 0 auto 0 0, all, null);
 			}
 			span {
@@ -704,7 +707,7 @@
 			@include margin-padding(all, 0 auto 0 0, all, null);
 		}
 	}
-	.marketing-arrow  {
+	.marketing-arrow {
 		@include margin-direction(left);
 		color: color("indigo", "base");
 		line-height: 21px;
@@ -731,7 +734,7 @@
 			}
 			th {
 				@include font-weight(semi-bold);
-				text-transform: text-map("text-transform","uppercase");
+				text-transform: text-map("text-transform", "uppercase");
 				@include margin-padding(all, null, all, 0 10px 0.75rem 10px);
 				border-bottom: 1px solid color("grey", "lighten-5");
 				white-space: $white-spacenowrap;
@@ -742,7 +745,6 @@
 				color: color("blue-grey", "darken-1");
 				@include margin-padding(all, null, all, 0 10px);
 				white-space: $white-spacenowrap;
-
 			}
 			.progress {
 				height: 7px;
@@ -863,15 +865,15 @@
 .tabel-fixed-body .scrollbar-inner > .scroll-element.scroll-y {
 	right: $zero;
 }
-.tabel-fixed-header  th:nth-child(1),
+.tabel-fixed-header th:nth-child(1),
 .tabel-fixed-body td:nth-child(1) {
 	width: 50px;
 }
-.tabel-fixed-header  th:nth-child(2),
+.tabel-fixed-header th:nth-child(2),
 .tabel-fixed-body td:nth-child(2) {
 	width: 250px;
 }
-.tabel-fixed-header  th:nth-child(3),
+.tabel-fixed-header th:nth-child(3),
 .tabel-fixed-body td:nth-child(3) {
 	width: 250px;
 }
@@ -897,7 +899,7 @@
 			@include font-rem(12px, 24px);
 			letter-spacing: 0.25px;
 			color: color("grey", "darken-1");
-			text-transform: text-map("text-transform","uppercase");
+			text-transform: text-map("text-transform", "uppercase");
 			@include font-weight(medium);
 			@include margin-padding(all, 1.25rem 0 0.625rem 0, all, null);
 		}
@@ -977,13 +979,13 @@
 			@include margin-padding(all, 0 0.625rem 0 0, all, null);
 		}
 		.user-info {
-			display: $display-block;
+			@include flex(block);
 			@include margin-padding(all, null, all, 0);
 			h6 {
 				@include font-rem(13px, 24px);
 				color: color("indigo", "base");
 				@include margin-padding(all, 0, all, null);
-				text-transform: text-map("text-transform","capitalize");
+				text-transform: text-map("text-transform", "capitalize");
 			}
 			p {
 				@include font-rem(11px, 18px);
@@ -1005,7 +1007,7 @@
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.q2-marketing {
-		.marketing-arrow  {
+		.marketing-arrow {
 			.material-icons {
 				height: 1.1875rem;
 			}
@@ -1018,25 +1020,56 @@
 				line-height: 2.25rem;
 			}
 		}
-	} 
+	}
+	.analytics-filter .caleneder-filter .hover-dropdown .material-icons,
+	.analytics-filter .caleneder-filter .hover-dropdown .material-icons, .analytics-filter .all-viewers .hover-dropdown .material-icons, .analytics-filter .all-viewers .hover-dropdown .material-icons, .analytics-filter .type .hover-dropdown .material-icons {
+		color: #d4d4de;
+		line-height: 26px;
+		height: 21px;
+	}
+	.analytics-filter {
+		.caleneder-filter {
+			.hover-dropdown {
+				width: auto;
+				height: auto;
+			}
+		}
+	}
+	.analytics-filter {
+		.type {
+			.hover-dropdown {
+				width: auto;
+				height: auto;
+			}
+		}
+	}
+	.analytics-filter {
+		.all-viewers {
+			.hover-dropdown {
+				width: auto;
+				height: auto;
+			}
+		} 
+	}
 }
 
 .analytics-empty-state {
 	max-width: 37.5rem;
 	width: $full-width;
 	@include margin-padding(all, 2.6875rem auto, all, null);
-	text-align:text-map("text-align","center");
+	text-align: text-map("text-align", "center");
 	p {
 		@include font-rem(14px, 24px);
-		color: color('blue-grey','darken-1');
+		color: color("blue-grey", "darken-1");
 	}
 	.link {
-		text-decoration:text-map("text-decoration","underline");
+		text-decoration: text-map("text-decoration", "underline");
 	}
 }
 .empty-state-height {
 	height: calc(100% - 71px) !important;
 }
+
 /* Reply Modal end here */
 
 /* Analytics Overview Page end here */
